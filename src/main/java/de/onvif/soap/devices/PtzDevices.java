@@ -41,7 +41,7 @@ import org.onvif.ver20.ptz.wsdl.SetPresetResponse;
 import org.onvif.ver20.ptz.wsdl.Stop;
 import org.onvif.ver20.ptz.wsdl.StopResponse;
 
-import de.onvif.soap.onvifDevice;
+import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 
 
@@ -52,14 +52,14 @@ import de.onvif.soap.SOAP;
 public class PtzDevices 
         implements de.onvif.Logger
 {
-	private final onvifDevice onvifDevice;
+	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
 
     /**
      *
      * @param onvifDevice
      */
-    public PtzDevices(onvifDevice onvifDevice) {
+    public PtzDevices(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}

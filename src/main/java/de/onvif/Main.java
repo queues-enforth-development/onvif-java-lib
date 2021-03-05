@@ -10,7 +10,7 @@ import javax.xml.soap.SOAPException;
 
 import org.onvif.ver10.schema.Profile;
 
-import de.onvif.soap.onvifDevice;
+import de.onvif.soap.OnvifDevice;
 
 /**
  *
@@ -42,9 +42,9 @@ public class Main {
 		}
 
 		System.out.println("Connect to camera, please wait ...");
-		onvifDevice cam;
+		OnvifDevice cam;
 		try {
-			cam = new onvifDevice(cameraAddress, user, password);
+			cam = new OnvifDevice(cameraAddress, user, password);
 		} catch (ConnectException | SOAPException e1) {
 			System.err.println("No connection to camera, please try again.");
 			return;

@@ -17,7 +17,7 @@ import org.onvif.ver20.imaging.wsdl.MoveResponse;
 import org.onvif.ver20.imaging.wsdl.SetImagingSettings;
 import org.onvif.ver20.imaging.wsdl.SetImagingSettingsResponse;
 
-import de.onvif.soap.onvifDevice;
+import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -30,7 +30,7 @@ public class ImagingDevices {
     private static final Logger LOGGER = Logger.getLogger(ImagingDevices.class.getPackage().getName());
     
 	@SuppressWarnings("unused")
-	private final onvifDevice onvifDevice;
+	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
 
     /**
@@ -38,7 +38,7 @@ public class ImagingDevices {
      * @param onvifDevice
 
      */
-    public ImagingDevices(onvifDevice onvifDevice) {
+    public ImagingDevices(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}

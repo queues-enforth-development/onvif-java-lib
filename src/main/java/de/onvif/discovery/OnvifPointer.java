@@ -8,7 +8,7 @@ import javax.xml.soap.SOAPException;
 
 import org.onvif.ver10.schema.Profile;
 
-import de.onvif.soap.onvifDevice;
+import de.onvif.soap.OnvifDevice;
 
 /**
  * @author th
@@ -51,7 +51,7 @@ public class OnvifPointer {
     public OnvifPointer(String address) {
 		this.address = address;
 		try {
-			final onvifDevice device = new onvifDevice(address);
+			final OnvifDevice device = new OnvifDevice(address);
 			this.name = device.getName();
 			final List<Profile> profiles = device.getDevices().getProfiles();
 			final Profile profile = profiles.get(0);
@@ -75,8 +75,8 @@ public class OnvifPointer {
      * @throws SOAPException
      * @throws ConnectException
      */
-    public onvifDevice getOnvifDevice() throws SOAPException, ConnectException {
-		return new onvifDevice(address);
+    public OnvifDevice getOnvifDevice() throws SOAPException, ConnectException {
+		return new OnvifDevice(address);
 	}
 
     @Override

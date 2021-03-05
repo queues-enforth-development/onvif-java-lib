@@ -32,7 +32,7 @@ import java.util.logging.Level;
  * 
  */
 @SuppressWarnings("OverridableMethodCallInConstructor")
-public class onvifDevice {
+public class OnvifDevice {
 	private final String HOST_IP;
 	private String originalIp;
 
@@ -56,7 +56,7 @@ public class onvifDevice {
 	private MediaDevices mediaDevices;
 	private ImagingDevices imagingDevices;
 
-    private static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(onvifDevice.class.getPackage().getName());
+    private static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(OnvifDevice.class.getPackage().getName());
 
 	/**
 	 * Initializes an ONVIF device, e.g.a Network Video Transmitter (NVT) with logindata.
@@ -69,7 +69,7 @@ public class onvifDevice {
 	 *             and doesn't answer to SOAP messages
 	 * @throws SOAPException 
 	 */
-	public onvifDevice(String hostIp, String user, String password) throws ConnectException, SOAPException {
+	public OnvifDevice(String hostIp, String user, String password) throws ConnectException, SOAPException {
 		this.HOST_IP = hostIp;
 
 		if (!isOnline()) {
@@ -99,7 +99,7 @@ public class onvifDevice {
 	 *             and doesn't answer to SOAP messages
 	 * @throws SOAPException 
 	 */
-	public onvifDevice(String hostIp) throws ConnectException, SOAPException {
+	public OnvifDevice(String hostIp) throws ConnectException, SOAPException {
 		this(hostIp, null, null);
 	}
 
@@ -314,7 +314,7 @@ public class onvifDevice {
 	}
 
 	/**
-	 * Can be used to get media data from onvifDevice
+	 * Can be used to get media data from OnvifDevice
 	 * @return
 	 */
 	public MediaDevices getMedia() {
@@ -322,7 +322,7 @@ public class onvifDevice {
 	}
 
 	/**
-	 * Can be used to get media data from onvifDevice
+	 * Can be used to get media data from OnvifDevice
 	 * @return
 	 */
 	public ImagingDevices getImaging() {

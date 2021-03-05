@@ -33,14 +33,14 @@ public class SOAP {
 
 	private boolean logging = true;
 
-	private final onvifDevice onvifDevice;
+	private final OnvifDevice onvifDevice;
 
     /**
      *
      * @param onvifDevice
 
      */
-    public SOAP(onvifDevice onvifDevice) {
+    public SOAP(OnvifDevice onvifDevice) {
 		super();
 
 		this.onvifDevice = onvifDevice;

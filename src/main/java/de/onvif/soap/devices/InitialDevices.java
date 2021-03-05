@@ -39,7 +39,7 @@ import org.onvif.ver10.schema.Scope;
 import org.onvif.ver10.schema.Time;
 import org.onvif.ver10.schema.User;
 
-import de.onvif.soap.onvifDevice;
+import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -52,13 +52,13 @@ public class InitialDevices {
     private static final Logger LOGGER = Logger.getLogger(InitialDevices.class.getPackage().getName());
 
 	private final SOAP soap;
-	private final onvifDevice onvifDevice;
+	private final OnvifDevice onvifDevice;
 
     /**
      *
      * @param onvifDevice
      */
-    public InitialDevices(onvifDevice onvifDevice) {
+    public InitialDevices(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}

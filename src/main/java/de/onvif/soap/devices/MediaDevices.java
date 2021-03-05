@@ -24,7 +24,7 @@ import org.onvif.ver10.schema.VideoEncoderConfiguration;
 import org.onvif.ver10.schema.VideoEncoderConfigurationOptions;
 import org.onvif.ver10.schema.VideoSource;
 
-import de.onvif.soap.onvifDevice;
+import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 
 /**
@@ -32,14 +32,14 @@ import de.onvif.soap.SOAP;
  *
  */
 public class MediaDevices {
-	private final onvifDevice onvifDevice;
+	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
 
     /**
      *
      * @param onvifDevice
      */
-    public MediaDevices(onvifDevice onvifDevice) {
+    public MediaDevices(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}
