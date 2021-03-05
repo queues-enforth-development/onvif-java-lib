@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -27,13 +27,13 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r RecordingInformation complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="RecordingInformation">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="RecordingToken" type="{http://www.onvif.org/ver10/schema}RecordingReference"/>
  *         <element name="Source" type="{http://www.onvif.org/ver10/schema}RecordingSourceInformation"/>
  *         <element name="EarliestRecording" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -41,13 +41,13 @@ import org.w3c.dom.Element;
  *         <element name="Content" type="{http://www.onvif.org/ver10/schema}Description"/>
  *         <element name="Track" type="{http://www.onvif.org/ver10/schema}TrackInformation" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="RecordingStatus" type="{http://www.onvif.org/ver10/schema}RecordingStatus"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -56,26 +56,57 @@ import org.w3c.dom.Element;
 		"recordingStatus", "any" })
 public class RecordingInformation {
 
-	@XmlElement(name = "RecordingToken", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "RecordingToken", required = true)
 	protected String recordingToken;
-	@XmlElement(name = "Source", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Source", required = true)
 	protected RecordingSourceInformation source;
-	@XmlElement(name = "EarliestRecording")
+
+    /**
+     *
+     */
+    @XmlElement(name = "EarliestRecording")
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar earliestRecording;
-	@XmlElement(name = "LatestRecording")
+
+    /**
+     *
+     */
+    @XmlElement(name = "LatestRecording")
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar latestRecording;
-	@XmlElement(name = "Content", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Content", required = true)
 	protected String content;
-	@XmlElement(name = "Track")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Track")
 	protected List<TrackInformation> track;
-	@XmlElement(name = "RecordingStatus", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "RecordingStatus", required = true)
 	protected RecordingStatus recordingStatus;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der recordingToken-Eigenschaft ab.
@@ -192,19 +223,20 @@ public class RecordingInformation {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getTrack().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link TrackInformation }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<TrackInformation> getTrack() {
 		if (track == null) {
-			track = new ArrayList<TrackInformation>();
+			track = new ArrayList<>();
 		}
 		return this.track;
 	}
@@ -240,19 +272,20 @@ public class RecordingInformation {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

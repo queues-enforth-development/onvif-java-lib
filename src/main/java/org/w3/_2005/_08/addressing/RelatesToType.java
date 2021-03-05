@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.w3._2005._08.addressing;
@@ -23,18 +23,18 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r RelatesToType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="RelatesToType">
  *   <simpleContent>
  *     <extension base="<http://www.w3.org/2001/XMLSchema>anyURI">
  *       <attribute name="RelationshipType" type="{http://www.w3.org/2005/08/addressing}RelationshipTypeOpenEnum" default="http://www.w3.org/2005/08/addressing/reply" />
- *       <anyAttribute processContents='lax' namespace='##other'/>
+         <anyAttribute processContents='lax' namespace='##other'/>
  *     </extension>
  *   </simpleContent>
- * </complexType>
- * </pre>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -42,13 +42,20 @@ import javax.xml.namespace.QName;
 @XmlType(name = "RelatesToType", propOrder = { "value" })
 public class RelatesToType {
 
-	@XmlValue
+    /**
+     *
+     */
+    @XmlValue
 	@XmlSchemaType(name = "anyURI")
 	protected String value;
-	@XmlAttribute(name = "RelationshipType")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "RelationshipType")
 	protected String relationshipType;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der value-Eigenschaft ab.

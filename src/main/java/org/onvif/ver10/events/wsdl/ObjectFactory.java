@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -44,6 +44,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CreatePullPointSubscription }
      * 
+     * @return 
      */
     public CreatePullPointSubscription createCreatePullPointSubscription() {
         return new CreatePullPointSubscription();
@@ -52,6 +53,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SeekResponse }
      * 
+     * @return 
      */
     public SeekResponse createSeekResponse() {
         return new SeekResponse();
@@ -60,6 +62,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PullMessages }
      * 
+     * @return 
      */
     public PullMessages createPullMessages() {
         return new PullMessages();
@@ -68,6 +71,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PullMessagesResponse }
      * 
+     * @return 
      */
     public PullMessagesResponse createPullMessagesResponse() {
         return new PullMessagesResponse();
@@ -76,6 +80,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CreatePullPointSubscriptionResponse }
      * 
+     * @return 
      */
     public CreatePullPointSubscriptionResponse createCreatePullPointSubscriptionResponse() {
         return new CreatePullPointSubscriptionResponse();
@@ -84,6 +89,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServiceCapabilitiesResponse }
      * 
+     * @return 
      */
     public GetServiceCapabilitiesResponse createGetServiceCapabilitiesResponse() {
         return new GetServiceCapabilitiesResponse();
@@ -92,6 +98,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Capabilities }
      * 
+     * @return 
      */
     public Capabilities createCapabilities() {
         return new Capabilities();
@@ -100,6 +107,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetSynchronizationPointResponse }
      * 
+     * @return 
      */
     public SetSynchronizationPointResponse createSetSynchronizationPointResponse() {
         return new SetSynchronizationPointResponse();
@@ -108,6 +116,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventProperties }
      * 
+     * @return 
      */
     public GetEventProperties createGetEventProperties() {
         return new GetEventProperties();
@@ -116,6 +125,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServiceCapabilities }
      * 
+     * @return 
      */
     public GetServiceCapabilities createGetServiceCapabilities() {
         return new GetServiceCapabilities();
@@ -124,6 +134,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventPropertiesResponse }
      * 
+     * @return 
      */
     public GetEventPropertiesResponse createGetEventPropertiesResponse() {
         return new GetEventPropertiesResponse();
@@ -132,6 +143,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetSynchronizationPoint }
      * 
+     * @return 
      */
     public SetSynchronizationPoint createSetSynchronizationPoint() {
         return new SetSynchronizationPoint();
@@ -140,6 +152,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CreatePullPointSubscription.SubscriptionPolicy }
      * 
+     * @return 
      */
     public CreatePullPointSubscription.SubscriptionPolicy createCreatePullPointSubscriptionSubscriptionPolicy() {
         return new CreatePullPointSubscription.SubscriptionPolicy();
@@ -148,6 +161,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PullMessagesFaultResponse }
      * 
+     * @return 
      */
     public PullMessagesFaultResponse createPullMessagesFaultResponse() {
         return new PullMessagesFaultResponse();
@@ -156,6 +170,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Seek }
      * 
+     * @return 
      */
     public Seek createSeek() {
         return new Seek();
@@ -164,6 +179,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link org.onvif.ver10.events.wsdl.SubscriptionPolicy }
      * 
+     * @return 
      */
     public org.onvif.ver10.events.wsdl.SubscriptionPolicy createSubscriptionPolicy() {
         return new org.onvif.ver10.events.wsdl.SubscriptionPolicy();
@@ -172,19 +188,23 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Capabilities }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver10/events/wsdl", name = "Capabilities")
     public JAXBElement<Capabilities> createCapabilities(Capabilities value) {
-        return new JAXBElement<Capabilities>(_Capabilities_QNAME, Capabilities.class, null, value);
+        return new JAXBElement<>(_Capabilities_QNAME, Capabilities.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver10/events/wsdl", name = "InitialTerminationTime", scope = CreatePullPointSubscription.class)
     public JAXBElement<String> createCreatePullPointSubscriptionInitialTerminationTime(String value) {
-        return new JAXBElement<String>(_CreatePullPointSubscriptionInitialTerminationTime_QNAME, String.class, CreatePullPointSubscription.class, value);
+        return new JAXBElement<>(_CreatePullPointSubscriptionInitialTerminationTime_QNAME, String.class, CreatePullPointSubscription.class, value);
     }
 
 }

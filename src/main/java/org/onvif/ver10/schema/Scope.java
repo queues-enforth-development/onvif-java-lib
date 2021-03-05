@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -18,20 +18,20 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r Scope complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Scope">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="ScopeDef" type="{http://www.onvif.org/ver10/schema}ScopeDefinition"/>
  *         <element name="ScopeItem" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,9 +39,16 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Scope", propOrder = { "scopeDef", "scopeItem" })
 public class Scope {
 
-	@XmlElement(name = "ScopeDef", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "ScopeDef", required = true)
 	protected ScopeDefinition scopeDef;
-	@XmlElement(name = "ScopeItem", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "ScopeItem", required = true)
 	@XmlSchemaType(name = "anyURI")
 	protected String scopeItem;
 

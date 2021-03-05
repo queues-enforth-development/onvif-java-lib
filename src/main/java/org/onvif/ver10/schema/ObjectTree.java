@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,24 +23,24 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r ObjectTree complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ObjectTree">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Rename" type="{http://www.onvif.org/ver10/schema}Rename" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Split" type="{http://www.onvif.org/ver10/schema}Split" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Merge" type="{http://www.onvif.org/ver10/schema}Merge" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Delete" type="{http://www.onvif.org/ver10/schema}ObjectId" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ObjectTreeExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -48,18 +48,37 @@ import javax.xml.namespace.QName;
 @XmlType(name = "ObjectTree", propOrder = { "rename", "split", "merge", "delete", "extension" })
 public class ObjectTree {
 
-	@XmlElement(name = "Rename")
+    /**
+     *
+     */
+    @XmlElement(name = "Rename")
 	protected List<Rename> rename;
-	@XmlElement(name = "Split")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Split")
 	protected List<Split> split;
-	@XmlElement(name = "Merge")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Merge")
 	protected List<Merge> merge;
-	@XmlElement(name = "Delete")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Delete")
 	protected List<ObjectId> delete;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ObjectTreeExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the rename property.
@@ -71,19 +90,20 @@ public class ObjectTree {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getRename().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Rename }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Rename> getRename() {
 		if (rename == null) {
-			rename = new ArrayList<Rename>();
+			rename = new ArrayList<>();
 		}
 		return this.rename;
 	}
@@ -98,19 +118,20 @@ public class ObjectTree {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSplit().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Split }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Split> getSplit() {
 		if (split == null) {
-			split = new ArrayList<Split>();
+			split = new ArrayList<>();
 		}
 		return this.split;
 	}
@@ -125,19 +146,20 @@ public class ObjectTree {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getMerge().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Merge }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Merge> getMerge() {
 		if (merge == null) {
-			merge = new ArrayList<Merge>();
+			merge = new ArrayList<>();
 		}
 		return this.merge;
 	}
@@ -152,19 +174,20 @@ public class ObjectTree {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getDelete().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ObjectId }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ObjectId> getDelete() {
 		if (delete == null) {
-			delete = new ArrayList<ObjectId>();
+			delete = new ArrayList<>();
 		}
 		return this.delete;
 	}

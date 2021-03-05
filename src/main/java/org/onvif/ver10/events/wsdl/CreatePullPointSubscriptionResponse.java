@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -23,11 +23,11 @@ import org.w3c.dom.Element;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -40,7 +40,7 @@ import org.w3c.dom.Element;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -54,14 +54,29 @@ import org.w3c.dom.Element;
 @XmlRootElement(name = "CreatePullPointSubscriptionResponse")
 public class CreatePullPointSubscriptionResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "SubscriptionReference", required = true)
     protected EndpointReferenceType subscriptionReference;
+
+    /**
+     *
+     */
     @XmlElement(name = "CurrentTime", namespace = "http://docs.oasis-open.org/wsn/b-2", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar currentTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "TerminationTime", namespace = "http://docs.oasis-open.org/wsn/b-2", required = true, nillable = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar terminationTime;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -148,9 +163,9 @@ public class CreatePullPointSubscriptionResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -159,10 +174,11 @@ public class CreatePullPointSubscriptionResponse {
      * {@link Element }
      * 
      * 
+     * @return 
      */
     public List<Object> getAny() {
         if (any == null) {
-            any = new ArrayList<Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

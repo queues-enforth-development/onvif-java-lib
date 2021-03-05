@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -25,9 +25,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für Capabilities complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="Capabilities">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -44,7 +44,7 @@ import org.w3c.dom.Element;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -54,22 +54,49 @@ import org.w3c.dom.Element;
 })
 public class Capabilities {
 
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<Object> any;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "WSSubscriptionPolicySupport")
     protected Boolean wsSubscriptionPolicySupport;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "WSPullPointSupport")
     protected Boolean wsPullPointSupport;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "WSPausableSubscriptionManagerInterfaceSupport")
     protected Boolean wsPausableSubscriptionManagerInterfaceSupport;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "MaxNotificationProducers")
     protected Integer maxNotificationProducers;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "MaxPullPoints")
     protected Integer maxPullPoints;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "PersistentNotificationStorage")
     protected Boolean persistentNotificationStorage;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Gets the value of the any property.
@@ -82,9 +109,9 @@ public class Capabilities {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -93,10 +120,11 @@ public class Capabilities {
      * {@link Element }
      * 
      * 
+     * @return 
      */
     public List<Object> getAny() {
         if (any == null) {
-            any = new ArrayList<Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

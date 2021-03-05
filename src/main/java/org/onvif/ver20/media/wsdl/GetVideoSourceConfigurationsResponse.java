@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -19,11 +19,11 @@ import org.onvif.ver10.schema.VideoSourceConfiguration;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -33,7 +33,7 @@ import org.onvif.ver10.schema.VideoSourceConfiguration;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -44,6 +44,9 @@ import org.onvif.ver10.schema.VideoSourceConfiguration;
 @XmlRootElement(name = "GetVideoSourceConfigurationsResponse")
 public class GetVideoSourceConfigurationsResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Configurations")
     protected List<VideoSourceConfiguration> configurations;
 
@@ -58,9 +61,9 @@ public class GetVideoSourceConfigurationsResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getConfigurations().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -68,10 +71,11 @@ public class GetVideoSourceConfigurationsResponse {
      * {@link VideoSourceConfiguration }
      * 
      * 
+     * @return 
      */
     public List<VideoSourceConfiguration> getConfigurations() {
         if (configurations == null) {
-            configurations = new ArrayList<VideoSourceConfiguration>();
+            configurations = new ArrayList<>();
         }
         return this.configurations;
     }

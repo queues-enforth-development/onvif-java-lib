@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -20,11 +20,11 @@ import javax.xml.datatype.Duration;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -36,7 +36,7 @@ import javax.xml.datatype.Duration;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -49,10 +49,21 @@ import javax.xml.datatype.Duration;
 @XmlRootElement(name = "PullMessagesFaultResponse")
 public class PullMessagesFaultResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "MaxTimeout", required = true)
     protected Duration maxTimeout;
+
+    /**
+     *
+     */
     @XmlElement(name = "MaxMessageLimit")
     protected int maxMessageLimit;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -83,6 +94,7 @@ public class PullMessagesFaultResponse {
     /**
      * Ruft den Wert der maxMessageLimit-Eigenschaft ab.
      * 
+     * @return 
      */
     public int getMaxMessageLimit() {
         return maxMessageLimit;
@@ -91,6 +103,7 @@ public class PullMessagesFaultResponse {
     /**
      * Legt den Wert der maxMessageLimit-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setMaxMessageLimit(int value) {
         this.maxMessageLimit = value;
@@ -107,9 +120,9 @@ public class PullMessagesFaultResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -117,10 +130,11 @@ public class PullMessagesFaultResponse {
      * {@link Object }
      * 
      * 
+     * @return 
      */
     public List<Object> getAny() {
         if (any == null) {
-            any = new ArrayList<Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

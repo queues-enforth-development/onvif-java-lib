@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,22 +25,22 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r AACDecOptions complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="AACDecOptions">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Bitrate" type="{http://www.onvif.org/ver10/schema}IntList"/>
  *         <element name="SampleRateRange" type="{http://www.onvif.org/ver10/schema}IntList"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -48,14 +48,25 @@ import org.w3c.dom.Element;
 @XmlType(name = "AACDecOptions", propOrder = { "bitrate", "sampleRateRange", "any" })
 public class AACDecOptions {
 
-	@XmlElement(name = "Bitrate", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Bitrate", required = true)
 	protected IntList bitrate;
-	@XmlElement(name = "SampleRateRange", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "SampleRateRange", required = true)
 	protected IntList sampleRateRange;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der bitrate-Eigenschaft ab.
@@ -109,19 +120,20 @@ public class AACDecOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

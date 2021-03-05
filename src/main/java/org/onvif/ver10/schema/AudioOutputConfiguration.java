@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,23 +26,23 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r AudioOutputConfiguration complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="AudioOutputConfiguration">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}ConfigurationEntity">
- *       <sequence>
+         <sequence>
  *         <element name="OutputToken" type="{http://www.onvif.org/ver10/schema}ReferenceToken"/>
  *         <element name="SendPrimacy" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
  *         <element name="OutputLevel" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -50,17 +50,32 @@ import org.w3c.dom.Element;
 @XmlType(name = "AudioOutputConfiguration", propOrder = { "outputToken", "sendPrimacy", "outputLevel", "any" })
 public class AudioOutputConfiguration extends ConfigurationEntity {
 
-	@XmlElement(name = "OutputToken", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "OutputToken", required = true)
 	protected String outputToken;
-	@XmlElement(name = "SendPrimacy")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SendPrimacy")
 	@XmlSchemaType(name = "anyURI")
 	protected String sendPrimacy;
-	@XmlElement(name = "OutputLevel")
+
+    /**
+     *
+     */
+    @XmlElement(name = "OutputLevel")
 	protected int outputLevel;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der outputToken-Eigenschaft ab.
@@ -107,6 +122,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der outputLevel-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getOutputLevel() {
 		return outputLevel;
@@ -115,6 +131,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der outputLevel-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setOutputLevel(int value) {
 		this.outputLevel = value;
@@ -130,19 +147,20 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

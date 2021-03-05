@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Java-Klasse für StartStopMulticastStreaming complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="StartStopMulticastStreaming">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -39,6 +39,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StartStopMulticastStreaming {
 
+    /**
+     *
+     */
     @XmlElement(name = "ProfileToken", required = true)
     protected String profileToken;
 

@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -26,9 +26,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für LensDescription complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="LensDescription">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -43,7 +43,7 @@ import org.w3c.dom.Element;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -56,18 +56,37 @@ import org.w3c.dom.Element;
 })
 public class LensDescription {
 
+    /**
+     *
+     */
     @XmlElement(name = "Offset", required = true)
     protected LensOffset offset;
+
+    /**
+     *
+     */
     @XmlElement(name = "Projection", required = true)
     protected List<LensProjection> projection;
+
+    /**
+     *
+     */
     @XmlElement(name = "XFactor")
     protected float xFactor;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<java.lang.Object> any;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "FocalLength")
     protected Float focalLength;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der offset-Eigenschaft ab.
@@ -104,9 +123,9 @@ public class LensDescription {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getProjection().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -114,10 +133,11 @@ public class LensDescription {
      * {@link LensProjection }
      * 
      * 
+     * @return 
      */
     public List<LensProjection> getProjection() {
         if (projection == null) {
-            projection = new ArrayList<LensProjection>();
+            projection = new ArrayList<>();
         }
         return this.projection;
     }
@@ -125,6 +145,7 @@ public class LensDescription {
     /**
      * Ruft den Wert der xFactor-Eigenschaft ab.
      * 
+     * @return 
      */
     public float getXFactor() {
         return xFactor;
@@ -133,6 +154,7 @@ public class LensDescription {
     /**
      * Legt den Wert der xFactor-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setXFactor(float value) {
         this.xFactor = value;
@@ -149,9 +171,9 @@ public class LensDescription {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -160,10 +182,11 @@ public class LensDescription {
      * {@link java.lang.Object }
      * 
      * 
+     * @return 
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
-            any = new ArrayList<java.lang.Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsn.t_1;
@@ -25,33 +25,33 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r TopicNamespaceType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="TopicNamespaceType">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://docs.oasis-open.org/wsn/t-1}ExtensibleDocumented">
- *       <sequence>
+         <sequence>
  *         <element name="Topic" maxOccurs="unbounded" minOccurs="0">
  *           <complexType>
- *             <complexContent>
+               <complexContent>
  *               <extension base="{http://docs.oasis-open.org/wsn/t-1}TopicType">
  *                 <attribute name="parent" type="{http://docs.oasis-open.org/wsn/t-1}ConcreteTopicExpression" />
- *                 <anyAttribute processContents='lax' namespace='##other'/>
+                   <anyAttribute processContents='lax' namespace='##other'/>
  *               </extension>
- *             </complexContent>
+               </complexContent>
  *           </complexType>
  *         </element>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
  *       <attribute name="name" type="{http://www.w3.org/2001/XMLSchema}NCName" />
  *       <attribute name="targetNamespace" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
  *       <attribute name="final" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" />
- *       <anyAttribute processContents='lax' namespace='##other'/>
+         <anyAttribute processContents='lax' namespace='##other'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -59,18 +59,37 @@ import org.w3c.dom.Element;
 @XmlType(name = "TopicNamespaceType", propOrder = { "topic", "any" })
 public class TopicNamespaceType extends ExtensibleDocumented {
 
-	@XmlElement(name = "Topic")
+    /**
+     *
+     */
+    @XmlElement(name = "Topic")
 	protected List<TopicNamespaceType.Topic> topic;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
-	@XmlAttribute(name = "name")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "name")
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	@XmlSchemaType(name = "NCName")
 	protected String name;
-	@XmlAttribute(name = "targetNamespace", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "targetNamespace", required = true)
 	@XmlSchemaType(name = "anyURI")
 	protected String targetNamespace;
-	@XmlAttribute(name = "final")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "final")
 	protected Boolean _final;
 
 	/**
@@ -83,19 +102,20 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getTopic().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link TopicNamespaceType.Topic }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<TopicNamespaceType.Topic> getTopic() {
 		if (topic == null) {
-			topic = new ArrayList<TopicNamespaceType.Topic>();
+			topic = new ArrayList<>();
 		}
 		return this.topic;
 	}
@@ -110,19 +130,20 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}
@@ -197,21 +218,21 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
 	 *     <extension base="{http://docs.oasis-open.org/wsn/t-1}TopicType">
 	 *       <attribute name="parent" type="{http://docs.oasis-open.org/wsn/t-1}ConcreteTopicExpression" />
-	 *       <anyAttribute processContents='lax' namespace='##other'/>
+	         <anyAttribute processContents='lax' namespace='##other'/>
 	 *     </extension>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -219,7 +240,10 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	@XmlType(name = "")
 	public static class Topic extends TopicType {
 
-		@XmlAttribute(name = "parent")
+        /**
+         *
+         */
+        @XmlAttribute(name = "parent")
 		@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 		protected String parent;
 

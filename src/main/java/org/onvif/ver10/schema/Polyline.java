@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -19,19 +19,19 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r Polyline complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Polyline">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Point" type="{http://www.onvif.org/ver10/schema}Vector" maxOccurs="unbounded" minOccurs="2"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,7 +39,10 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Polyline", propOrder = { "point" })
 public class Polyline {
 
-	@XmlElement(name = "Point", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Point", required = true)
 	protected List<Vector> point;
 
 	/**
@@ -52,19 +55,20 @@ public class Polyline {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getPoint().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Vector }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Vector> getPoint() {
 		if (point == null) {
-			point = new ArrayList<Vector>();
+			point = new ArrayList<>();
 		}
 		return this.point;
 	}

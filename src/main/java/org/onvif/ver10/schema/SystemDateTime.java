@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,25 +23,25 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r SystemDateTime complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SystemDateTime">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="DateTimeType" type="{http://www.onvif.org/ver10/schema}SetDateTimeType"/>
  *         <element name="DaylightSavings" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="TimeZone" type="{http://www.onvif.org/ver10/schema}TimeZone" minOccurs="0"/>
  *         <element name="UTCDateTime" type="{http://www.onvif.org/ver10/schema}DateTime" minOccurs="0"/>
  *         <element name="LocalDateTime" type="{http://www.onvif.org/ver10/schema}DateTime" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}SystemDateTimeExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,20 +49,43 @@ import javax.xml.namespace.QName;
 @XmlType(name = "SystemDateTime", propOrder = { "dateTimeType", "daylightSavings", "timeZone", "utcDateTime", "localDateTime", "extension" })
 public class SystemDateTime {
 
-	@XmlElement(name = "DateTimeType", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "DateTimeType", required = true)
 	protected SetDateTimeType dateTimeType;
-	@XmlElement(name = "DaylightSavings")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DaylightSavings")
 	protected boolean daylightSavings;
-	@XmlElement(name = "TimeZone")
+
+    /**
+     *
+     */
+    @XmlElement(name = "TimeZone")
 	protected TimeZone timeZone;
-	@XmlElement(name = "UTCDateTime")
+
+    /**
+     *
+     */
+    @XmlElement(name = "UTCDateTime")
 	protected DateTime utcDateTime;
-	@XmlElement(name = "LocalDateTime")
+
+    /**
+     *
+     */
+    @XmlElement(name = "LocalDateTime")
 	protected DateTime localDateTime;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected SystemDateTimeExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der dateTimeType-Eigenschaft ab.
@@ -88,6 +111,7 @@ public class SystemDateTime {
 	/**
 	 * Ruft den Wert der daylightSavings-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isDaylightSavings() {
 		return daylightSavings;
@@ -96,6 +120,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der daylightSavings-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDaylightSavings(boolean value) {
 		this.daylightSavings = value;

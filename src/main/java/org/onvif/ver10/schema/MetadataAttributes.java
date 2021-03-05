@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,24 +26,24 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r MetadataAttributes complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="MetadataAttributes">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="CanContainPTZ" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="CanContainAnalytics" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="CanContainNotifications" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
  *       <attribute name="PtzSpaces" type="{http://www.onvif.org/ver10/schema}StringAttrList" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,22 +51,42 @@ import org.w3c.dom.Element;
 @XmlType(name = "MetadataAttributes", propOrder = { "canContainPTZ", "canContainAnalytics", "canContainNotifications", "any" })
 public class MetadataAttributes {
 
-	@XmlElement(name = "CanContainPTZ")
+    /**
+     *
+     */
+    @XmlElement(name = "CanContainPTZ")
 	protected boolean canContainPTZ;
-	@XmlElement(name = "CanContainAnalytics")
+
+    /**
+     *
+     */
+    @XmlElement(name = "CanContainAnalytics")
 	protected boolean canContainAnalytics;
-	@XmlElement(name = "CanContainNotifications")
+
+    /**
+     *
+     */
+    @XmlElement(name = "CanContainNotifications")
 	protected boolean canContainNotifications;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
-	@XmlAttribute(name = "PtzSpaces")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "PtzSpaces")
 	protected List<String> ptzSpaces;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der canContainPTZ-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isCanContainPTZ() {
 		return canContainPTZ;
@@ -75,6 +95,7 @@ public class MetadataAttributes {
 	/**
 	 * Legt den Wert der canContainPTZ-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setCanContainPTZ(boolean value) {
 		this.canContainPTZ = value;
@@ -83,6 +104,7 @@ public class MetadataAttributes {
 	/**
 	 * Ruft den Wert der canContainAnalytics-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isCanContainAnalytics() {
 		return canContainAnalytics;
@@ -91,6 +113,7 @@ public class MetadataAttributes {
 	/**
 	 * Legt den Wert der canContainAnalytics-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setCanContainAnalytics(boolean value) {
 		this.canContainAnalytics = value;
@@ -99,6 +122,7 @@ public class MetadataAttributes {
 	/**
 	 * Ruft den Wert der canContainNotifications-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isCanContainNotifications() {
 		return canContainNotifications;
@@ -107,6 +131,7 @@ public class MetadataAttributes {
 	/**
 	 * Legt den Wert der canContainNotifications-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setCanContainNotifications(boolean value) {
 		this.canContainNotifications = value;
@@ -122,19 +147,20 @@ public class MetadataAttributes {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}
@@ -149,19 +175,20 @@ public class MetadataAttributes {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getPtzSpaces().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getPtzSpaces() {
 		if (ptzSpaces == null) {
-			ptzSpaces = new ArrayList<String>();
+			ptzSpaces = new ArrayList<>();
 		}
 		return this.ptzSpaces;
 	}

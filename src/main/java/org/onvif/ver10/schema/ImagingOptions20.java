@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,13 +23,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r ImagingOptions20 complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ImagingOptions20">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="BacklightCompensation" type="{http://www.onvif.org/ver10/schema}BacklightCompensationOptions20" minOccurs="0"/>
  *         <element name="Brightness" type="{http://www.onvif.org/ver10/schema}FloatRange" minOccurs="0"/>
  *         <element name="ColorSaturation" type="{http://www.onvif.org/ver10/schema}FloatRange" minOccurs="0"/>
@@ -41,12 +41,12 @@ import javax.xml.namespace.QName;
  *         <element name="WideDynamicRange" type="{http://www.onvif.org/ver10/schema}WideDynamicRangeOptions20" minOccurs="0"/>
  *         <element name="WhiteBalance" type="{http://www.onvif.org/ver10/schema}WhiteBalanceOptions20" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ImagingOptions20Extension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -55,30 +55,73 @@ import javax.xml.namespace.QName;
 		"irCutFilterModes", "sharpness", "wideDynamicRange", "whiteBalance", "extension" })
 public class ImagingOptions20 {
 
-	@XmlElement(name = "BacklightCompensation")
+    /**
+     *
+     */
+    @XmlElement(name = "BacklightCompensation")
 	protected BacklightCompensationOptions20 backlightCompensation;
-	@XmlElement(name = "Brightness")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Brightness")
 	protected FloatRange brightness;
-	@XmlElement(name = "ColorSaturation")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ColorSaturation")
 	protected FloatRange colorSaturation;
-	@XmlElement(name = "Contrast")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Contrast")
 	protected FloatRange contrast;
-	@XmlElement(name = "Exposure")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Exposure")
 	protected ExposureOptions20 exposure;
-	@XmlElement(name = "Focus")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Focus")
 	protected FocusOptions20 focus;
-	@XmlElement(name = "IrCutFilterModes")
+
+    /**
+     *
+     */
+    @XmlElement(name = "IrCutFilterModes")
 	protected List<IrCutFilterMode> irCutFilterModes;
-	@XmlElement(name = "Sharpness")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Sharpness")
 	protected FloatRange sharpness;
-	@XmlElement(name = "WideDynamicRange")
+
+    /**
+     *
+     */
+    @XmlElement(name = "WideDynamicRange")
 	protected WideDynamicRangeOptions20 wideDynamicRange;
-	@XmlElement(name = "WhiteBalance")
+
+    /**
+     *
+     */
+    @XmlElement(name = "WhiteBalance")
 	protected WhiteBalanceOptions20 whiteBalance;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ImagingOptions20Extension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der backlightCompensation-Eigenschaft ab.
@@ -216,19 +259,20 @@ public class ImagingOptions20 {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getIrCutFilterModes().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link IrCutFilterMode }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<IrCutFilterMode> getIrCutFilterModes() {
 		if (irCutFilterModes == null) {
-			irCutFilterModes = new ArrayList<IrCutFilterMode>();
+			irCutFilterModes = new ArrayList<>();
 		}
 		return this.irCutFilterModes;
 	}

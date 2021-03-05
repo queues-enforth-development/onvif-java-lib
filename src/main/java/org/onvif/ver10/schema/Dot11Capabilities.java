@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,25 +25,25 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r Dot11Capabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Dot11Capabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="TKIP" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="ScanAvailableNetworks" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="MultipleConfiguration" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="AdHocStationMode" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="WEP" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,24 +51,48 @@ import org.w3c.dom.Element;
 @XmlType(name = "Dot11Capabilities", propOrder = { "tkip", "scanAvailableNetworks", "multipleConfiguration", "adHocStationMode", "wep", "any" })
 public class Dot11Capabilities {
 
-	@XmlElement(name = "TKIP")
+    /**
+     *
+     */
+    @XmlElement(name = "TKIP")
 	protected boolean tkip;
-	@XmlElement(name = "ScanAvailableNetworks")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ScanAvailableNetworks")
 	protected boolean scanAvailableNetworks;
-	@XmlElement(name = "MultipleConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "MultipleConfiguration")
 	protected boolean multipleConfiguration;
-	@XmlElement(name = "AdHocStationMode")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AdHocStationMode")
 	protected boolean adHocStationMode;
-	@XmlElement(name = "WEP")
+
+    /**
+     *
+     */
+    @XmlElement(name = "WEP")
 	protected boolean wep;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der tkip-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isTKIP() {
 		return tkip;
@@ -77,6 +101,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der tkip-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setTKIP(boolean value) {
 		this.tkip = value;
@@ -85,6 +110,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der scanAvailableNetworks-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isScanAvailableNetworks() {
 		return scanAvailableNetworks;
@@ -93,6 +119,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der scanAvailableNetworks-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setScanAvailableNetworks(boolean value) {
 		this.scanAvailableNetworks = value;
@@ -101,6 +128,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der multipleConfiguration-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isMultipleConfiguration() {
 		return multipleConfiguration;
@@ -109,6 +137,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der multipleConfiguration-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMultipleConfiguration(boolean value) {
 		this.multipleConfiguration = value;
@@ -117,6 +146,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der adHocStationMode-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isAdHocStationMode() {
 		return adHocStationMode;
@@ -125,6 +155,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der adHocStationMode-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setAdHocStationMode(boolean value) {
 		this.adHocStationMode = value;
@@ -133,6 +164,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der wep-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isWEP() {
 		return wep;
@@ -141,6 +173,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der wep-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setWEP(boolean value) {
 		this.wep = value;
@@ -156,19 +189,20 @@ public class Dot11Capabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

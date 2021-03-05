@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.device.wsdl;
@@ -21,12 +21,12 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r SystemCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SystemCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="DiscoveryResolve" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="DiscoveryBye" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="RemoteDiscovery" type="{http://www.w3.org/2001/XMLSchema}boolean" />
@@ -37,11 +37,11 @@ import javax.xml.namespace.QName;
  *       <attribute name="HttpSystemBackup" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="HttpSystemLogging" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="HttpSupportInformation" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,28 +49,67 @@ import javax.xml.namespace.QName;
 @XmlType(name = "SystemCapabilities")
 public class SystemCapabilities {
 
-	@XmlAttribute(name = "DiscoveryResolve")
+    /**
+     *
+     */
+    @XmlAttribute(name = "DiscoveryResolve")
 	protected Boolean discoveryResolve;
-	@XmlAttribute(name = "DiscoveryBye")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "DiscoveryBye")
 	protected Boolean discoveryBye;
-	@XmlAttribute(name = "RemoteDiscovery")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "RemoteDiscovery")
 	protected Boolean remoteDiscovery;
-	@XmlAttribute(name = "SystemBackup")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "SystemBackup")
 	protected Boolean systemBackup;
-	@XmlAttribute(name = "SystemLogging")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "SystemLogging")
 	protected Boolean systemLogging;
-	@XmlAttribute(name = "FirmwareUpgrade")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "FirmwareUpgrade")
 	protected Boolean firmwareUpgrade;
-	@XmlAttribute(name = "HttpFirmwareUpgrade")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "HttpFirmwareUpgrade")
 	protected Boolean httpFirmwareUpgrade;
-	@XmlAttribute(name = "HttpSystemBackup")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "HttpSystemBackup")
 	protected Boolean httpSystemBackup;
-	@XmlAttribute(name = "HttpSystemLogging")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "HttpSystemLogging")
 	protected Boolean httpSystemLogging;
-	@XmlAttribute(name = "HttpSupportInformation")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "HttpSupportInformation")
 	protected Boolean httpSupportInformation;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der discoveryResolve-Eigenschaft ab.

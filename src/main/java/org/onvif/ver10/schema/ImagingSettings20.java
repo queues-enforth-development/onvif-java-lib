@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,13 +23,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r ImagingSettings20 complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ImagingSettings20">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="BacklightCompensation" type="{http://www.onvif.org/ver10/schema}BacklightCompensation20" minOccurs="0"/>
  *         <element name="Brightness" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         <element name="ColorSaturation" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
@@ -41,12 +41,12 @@ import javax.xml.namespace.QName;
  *         <element name="WideDynamicRange" type="{http://www.onvif.org/ver10/schema}WideDynamicRange20" minOccurs="0"/>
  *         <element name="WhiteBalance" type="{http://www.onvif.org/ver10/schema}WhiteBalance20" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ImagingSettingsExtension20" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -55,30 +55,73 @@ import javax.xml.namespace.QName;
 		"sharpness", "wideDynamicRange", "whiteBalance", "extension" })
 public class ImagingSettings20 {
 
-	@XmlElement(name = "BacklightCompensation")
+    /**
+     *
+     */
+    @XmlElement(name = "BacklightCompensation")
 	protected BacklightCompensation20 backlightCompensation;
-	@XmlElement(name = "Brightness")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Brightness")
 	protected Float brightness;
-	@XmlElement(name = "ColorSaturation")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ColorSaturation")
 	protected Float colorSaturation;
-	@XmlElement(name = "Contrast")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Contrast")
 	protected Float contrast;
-	@XmlElement(name = "Exposure")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Exposure")
 	protected Exposure20 exposure;
-	@XmlElement(name = "Focus")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Focus")
 	protected FocusConfiguration20 focus;
-	@XmlElement(name = "IrCutFilter")
+
+    /**
+     *
+     */
+    @XmlElement(name = "IrCutFilter")
 	protected IrCutFilterMode irCutFilter;
-	@XmlElement(name = "Sharpness")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Sharpness")
 	protected Float sharpness;
-	@XmlElement(name = "WideDynamicRange")
+
+    /**
+     *
+     */
+    @XmlElement(name = "WideDynamicRange")
 	protected WideDynamicRange20 wideDynamicRange;
-	@XmlElement(name = "WhiteBalance")
+
+    /**
+     *
+     */
+    @XmlElement(name = "WhiteBalance")
 	protected WhiteBalance20 whiteBalance;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ImagingSettingsExtension20 extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der backlightCompensation-Eigenschaft ab.

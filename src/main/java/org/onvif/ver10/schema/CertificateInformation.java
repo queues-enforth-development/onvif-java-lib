@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -24,13 +24,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r CertificateInformation complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="CertificateInformation">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="CertificateID" type="{http://www.w3.org/2001/XMLSchema}token"/>
  *         <element name="IssuerDN" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="SubjectDN" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -42,12 +42,12 @@ import javax.xml.namespace.QName;
  *         <element name="SignatureAlgorithm" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="Validity" type="{http://www.onvif.org/ver10/schema}DateTimeRange" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}CertificateInformationExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -56,32 +56,75 @@ import javax.xml.namespace.QName;
 		"serialNum", "signatureAlgorithm", "validity", "extension" })
 public class CertificateInformation {
 
-	@XmlElement(name = "CertificateID", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "CertificateID", required = true)
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	@XmlSchemaType(name = "token")
 	protected String certificateID;
-	@XmlElement(name = "IssuerDN")
+
+    /**
+     *
+     */
+    @XmlElement(name = "IssuerDN")
 	protected String issuerDN;
-	@XmlElement(name = "SubjectDN")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SubjectDN")
 	protected String subjectDN;
-	@XmlElement(name = "KeyUsage")
+
+    /**
+     *
+     */
+    @XmlElement(name = "KeyUsage")
 	protected CertificateUsage keyUsage;
-	@XmlElement(name = "ExtendedKeyUsage")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ExtendedKeyUsage")
 	protected CertificateUsage extendedKeyUsage;
-	@XmlElement(name = "KeyLength")
+
+    /**
+     *
+     */
+    @XmlElement(name = "KeyLength")
 	protected Integer keyLength;
-	@XmlElement(name = "Version")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Version")
 	protected String version;
-	@XmlElement(name = "SerialNum")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SerialNum")
 	protected String serialNum;
-	@XmlElement(name = "SignatureAlgorithm")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SignatureAlgorithm")
 	protected String signatureAlgorithm;
-	@XmlElement(name = "Validity")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Validity")
 	protected DateTimeRange validity;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected CertificateInformationExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der certificateID-Eigenschaft ab.

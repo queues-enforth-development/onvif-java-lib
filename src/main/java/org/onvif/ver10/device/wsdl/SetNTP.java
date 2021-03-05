@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.device.wsdl;
@@ -18,23 +18,23 @@ import org.onvif.ver10.schema.NetworkHost;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="FromDHCP" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="NTPManual" type="{http://www.onvif.org/ver10/schema}NetworkHost" maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -43,14 +43,22 @@ import org.onvif.ver10.schema.NetworkHost;
 @XmlRootElement(name = "SetNTP")
 public class SetNTP {
 
-	@XmlElement(name = "FromDHCP")
+    /**
+     *
+     */
+    @XmlElement(name = "FromDHCP")
 	protected boolean fromDHCP;
-	@XmlElement(name = "NTPManual")
+
+    /**
+     *
+     */
+    @XmlElement(name = "NTPManual")
 	protected List<NetworkHost> ntpManual;
 
 	/**
 	 * Ruft den Wert der fromDHCP-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isFromDHCP() {
 		return fromDHCP;
@@ -59,6 +67,7 @@ public class SetNTP {
 	/**
 	 * Legt den Wert der fromDHCP-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setFromDHCP(boolean value) {
 		this.fromDHCP = value;
@@ -74,19 +83,20 @@ public class SetNTP {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getNTPManual().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link NetworkHost }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<NetworkHost> getNTPManual() {
 		if (ntpManual == null) {
-			ntpManual = new ArrayList<NetworkHost>();
+			ntpManual = new ArrayList<>();
 		}
 		return this.ntpManual;
 	}

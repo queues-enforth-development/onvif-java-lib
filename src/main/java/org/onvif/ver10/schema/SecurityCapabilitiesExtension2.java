@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,22 +21,22 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r SecurityCapabilitiesExtension2 complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SecurityCapabilitiesExtension2">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Dot1X" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="SupportedEAPMethod" type="{http://www.w3.org/2001/XMLSchema}int" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="RemoteUserHandling" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         <any processContents='lax' namespace='http://www.onvif.org/ver10/schema' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' namespace='http://www.onvif.org/ver10/schema' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -44,18 +44,34 @@ import org.w3c.dom.Element;
 @XmlType(name = "SecurityCapabilitiesExtension2", propOrder = { "dot1X", "supportedEAPMethod", "remoteUserHandling", "any" })
 public class SecurityCapabilitiesExtension2 {
 
-	@XmlElement(name = "Dot1X")
+    /**
+     *
+     */
+    @XmlElement(name = "Dot1X")
 	protected boolean dot1X;
-	@XmlElement(name = "SupportedEAPMethod", type = Integer.class)
+
+    /**
+     *
+     */
+    @XmlElement(name = "SupportedEAPMethod", type = Integer.class)
 	protected List<Integer> supportedEAPMethod;
-	@XmlElement(name = "RemoteUserHandling")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RemoteUserHandling")
 	protected boolean remoteUserHandling;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 
 	/**
 	 * Ruft den Wert der dot1X-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isDot1X() {
 		return dot1X;
@@ -64,6 +80,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Legt den Wert der dot1X-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDot1X(boolean value) {
 		this.dot1X = value;
@@ -79,19 +96,20 @@ public class SecurityCapabilitiesExtension2 {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSupportedEAPMethod().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Integer }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Integer> getSupportedEAPMethod() {
 		if (supportedEAPMethod == null) {
-			supportedEAPMethod = new ArrayList<Integer>();
+			supportedEAPMethod = new ArrayList<>();
 		}
 		return this.supportedEAPMethod;
 	}
@@ -99,6 +117,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Ruft den Wert der remoteUserHandling-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isRemoteUserHandling() {
 		return remoteUserHandling;
@@ -107,6 +126,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Legt den Wert der remoteUserHandling-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setRemoteUserHandling(boolean value) {
 		this.remoteUserHandling = value;
@@ -122,19 +142,20 @@ public class SecurityCapabilitiesExtension2 {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

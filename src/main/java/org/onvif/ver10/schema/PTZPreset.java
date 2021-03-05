@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -22,22 +22,22 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r PTZPreset complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="PTZPreset">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Name" type="{http://www.onvif.org/ver10/schema}Name" minOccurs="0"/>
  *         <element name="PTZPosition" type="{http://www.onvif.org/ver10/schema}PTZVector" minOccurs="0"/>
- *       </sequence>
+         </sequence>
  *       <attribute name="token" type="{http://www.onvif.org/ver10/schema}ReferenceToken" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -45,14 +45,25 @@ import javax.xml.namespace.QName;
 @XmlType(name = "PTZPreset", propOrder = { "name", "ptzPosition" })
 public class PTZPreset {
 
-	@XmlElement(name = "Name")
+    /**
+     *
+     */
+    @XmlElement(name = "Name")
 	protected String name;
-	@XmlElement(name = "PTZPosition")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PTZPosition")
 	protected PTZVector ptzPosition;
-	@XmlAttribute(name = "token")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "token")
 	protected String token;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der name-Eigenschaft ab.

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -16,19 +16,19 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r SearchState.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * <p>
  * 
- * <pre>
+ * <pre>{@code
  * <simpleType name="SearchState">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     <enumeration value="Queued"/>
  *     <enumeration value="Searching"/>
  *     <enumeration value="Completed"/>
  *     <enumeration value="Unknown"/>
- *   </restriction>
+     </restriction>
  * </simpleType>
- * </pre>
+ * }</pre>
  * 
  */
 @XmlType(name = "SearchState")
@@ -68,11 +68,20 @@ public enum SearchState {
 		value = v;
 	}
 
-	public String value() {
+    /**
+     *
+     * @return
+     */
+    public String value() {
 		return value;
 	}
 
-	public static SearchState fromValue(String v) {
+    /**
+     *
+     * @param v
+     * @return
+     */
+    public static SearchState fromValue(String v) {
 		for (SearchState c : SearchState.values()) {
 			if (c.value.equals(v)) {
 				return c;

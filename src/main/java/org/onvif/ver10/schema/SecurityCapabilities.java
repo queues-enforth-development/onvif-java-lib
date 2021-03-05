@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,13 +25,13 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r SecurityCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SecurityCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="TLS1.1" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="TLS1.2" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="OnboardKeyGeneration" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
@@ -40,14 +40,14 @@ import org.w3c.dom.Element;
  *         <element name="SAMLToken" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="KerberosToken" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="RELToken" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}SecurityCapabilitiesExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -56,32 +56,72 @@ import org.w3c.dom.Element;
 		"kerberosToken", "relToken", "any", "extension" })
 public class SecurityCapabilities {
 
-	@XmlElement(name = "TLS1.1")
+    /**
+     *
+     */
+    @XmlElement(name = "TLS1.1")
 	protected boolean tls11;
-	@XmlElement(name = "TLS1.2")
+
+    /**
+     *
+     */
+    @XmlElement(name = "TLS1.2")
 	protected boolean tls12;
-	@XmlElement(name = "OnboardKeyGeneration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "OnboardKeyGeneration")
 	protected boolean onboardKeyGeneration;
-	@XmlElement(name = "AccessPolicyConfig")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AccessPolicyConfig")
 	protected boolean accessPolicyConfig;
-	@XmlElement(name = "X.509Token")
+
+    /**
+     *
+     */
+    @XmlElement(name = "X.509Token")
 	protected boolean x509Token;
-	@XmlElement(name = "SAMLToken")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SAMLToken")
 	protected boolean samlToken;
-	@XmlElement(name = "KerberosToken")
+
+    /**
+     *
+     */
+    @XmlElement(name = "KerberosToken")
 	protected boolean kerberosToken;
-	@XmlElement(name = "RELToken")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RELToken")
 	protected boolean relToken;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected SecurityCapabilitiesExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der tls11-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isTLS11() {
 		return tls11;
@@ -90,6 +130,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls11-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setTLS11(boolean value) {
 		this.tls11 = value;
@@ -98,6 +139,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der tls12-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isTLS12() {
 		return tls12;
@@ -106,6 +148,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls12-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setTLS12(boolean value) {
 		this.tls12 = value;
@@ -114,6 +157,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der onboardKeyGeneration-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isOnboardKeyGeneration() {
 		return onboardKeyGeneration;
@@ -122,6 +166,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der onboardKeyGeneration-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setOnboardKeyGeneration(boolean value) {
 		this.onboardKeyGeneration = value;
@@ -130,6 +175,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der accessPolicyConfig-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isAccessPolicyConfig() {
 		return accessPolicyConfig;
@@ -138,6 +184,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der accessPolicyConfig-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setAccessPolicyConfig(boolean value) {
 		this.accessPolicyConfig = value;
@@ -146,6 +193,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der x509Token-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isX509Token() {
 		return x509Token;
@@ -154,6 +202,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der x509Token-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setX509Token(boolean value) {
 		this.x509Token = value;
@@ -162,6 +211,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der samlToken-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isSAMLToken() {
 		return samlToken;
@@ -170,6 +220,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der samlToken-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setSAMLToken(boolean value) {
 		this.samlToken = value;
@@ -178,6 +229,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der kerberosToken-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isKerberosToken() {
 		return kerberosToken;
@@ -186,6 +238,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der kerberosToken-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setKerberosToken(boolean value) {
 		this.kerberosToken = value;
@@ -194,6 +247,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der relToken-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isRELToken() {
 		return relToken;
@@ -202,6 +256,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der relToken-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setRELToken(boolean value) {
 		this.relToken = value;
@@ -217,19 +272,20 @@ public class SecurityCapabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

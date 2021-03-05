@@ -17,20 +17,38 @@ import org.onvif.ver20.imaging.wsdl.MoveResponse;
 import org.onvif.ver20.imaging.wsdl.SetImagingSettings;
 import org.onvif.ver20.imaging.wsdl.SetImagingSettingsResponse;
 
-import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.onvifDevice;
 import de.onvif.soap.SOAP;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+/**
+ *
+ *
+ */
 public class ImagingDevices {
+    private static final Logger LOGGER = Logger.getLogger(ImagingDevices.class.getPackage().getName());
+    
 	@SuppressWarnings("unused")
-	private OnvifDevice onvifDevice;
-	private SOAP soap;
+	private final onvifDevice onvifDevice;
+	private final SOAP soap;
 
-	public ImagingDevices(OnvifDevice onvifDevice) {
+    /**
+     *
+     * @param onvifDevice
+
+     */
+    public ImagingDevices(onvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}
 
-	public ImagingOptions20 getOptions(String videoSourceToken) {
+    /**
+     *
+     * @param videoSourceToken
+     * @return
+     */
+    public ImagingOptions20 getOptions(String videoSourceToken) {
 		if (videoSourceToken == null) {
 			return null;
 		}
@@ -42,9 +60,8 @@ public class ImagingDevices {
 
 		try {
 			response = (GetOptionsResponse) soap.createSOAPImagingRequest(request, response, false);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in getOptions.",e);
 			return null;
 		}
 
@@ -55,7 +72,13 @@ public class ImagingDevices {
 		return response.getImagingOptions();
 	}
 
-	public boolean moveFocus(String videoSourceToken, float absoluteFocusValue) {
+    /**
+     *
+     * @param videoSourceToken
+     * @param absoluteFocusValue
+     * @return
+     */
+    public boolean moveFocus(String videoSourceToken, float absoluteFocusValue) {
 		if (videoSourceToken == null) {
 			return false;
 		}
@@ -74,20 +97,20 @@ public class ImagingDevices {
 
 		try {
 			response = (MoveResponse) soap.createSOAPImagingRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in moveFucus.",e);
 			return false;
 		}
 
-		if (response == null) {
-			return false;
-		}
-
-		return true;
+		return response != null;
 	}
 
-	public ImagingSettings20 getImagingSettings(String videoSourceToken) {
+    /**
+     *
+     * @param videoSourceToken
+     * @return
+     */
+    public ImagingSettings20 getImagingSettings(String videoSourceToken) {
 		if (videoSourceToken == null) {
 			return null;
 		}
@@ -99,9 +122,8 @@ public class ImagingDevices {
 
 		try {
 			response = (GetImagingSettingsResponse) soap.createSOAPImagingRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in getImageSettings.",e);
 			return null;
 		}
 
@@ -112,7 +134,13 @@ public class ImagingDevices {
 		return response.getImagingSettings();
 	}
 
-	public boolean setImagingSettings(String videoSourceToken, ImagingSettings20 imagingSettings) {
+    /**
+     *
+     * @param videoSourceToken
+     * @param imagingSettings
+     * @return
+     */
+    public boolean setImagingSettings(String videoSourceToken, ImagingSettings20 imagingSettings) {
 		if (videoSourceToken == null) {
 			return false;
 		}
@@ -125,16 +153,11 @@ public class ImagingDevices {
 
 		try {
 			response = (SetImagingSettingsResponse) soap.createSOAPImagingRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in setImageSettings.",e);
 			return false;
 		}
 
-		if (response == null) {
-			return false;
-		}
-
-		return true;
+		return response != null;
 	}
 }

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -17,21 +17,21 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r VideoRateControl complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="VideoRateControl">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="FrameRateLimit" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="EncodingInterval" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="BitrateLimit" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,16 +39,28 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "VideoRateControl", propOrder = { "frameRateLimit", "encodingInterval", "bitrateLimit" })
 public class VideoRateControl {
 
-	@XmlElement(name = "FrameRateLimit")
+    /**
+     *
+     */
+    @XmlElement(name = "FrameRateLimit")
 	protected int frameRateLimit;
-	@XmlElement(name = "EncodingInterval")
+
+    /**
+     *
+     */
+    @XmlElement(name = "EncodingInterval")
 	protected int encodingInterval;
-	@XmlElement(name = "BitrateLimit")
+
+    /**
+     *
+     */
+    @XmlElement(name = "BitrateLimit")
 	protected int bitrateLimit;
 
 	/**
 	 * Ruft den Wert der frameRateLimit-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getFrameRateLimit() {
 		return frameRateLimit;
@@ -57,6 +69,7 @@ public class VideoRateControl {
 	/**
 	 * Legt den Wert der frameRateLimit-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setFrameRateLimit(int value) {
 		this.frameRateLimit = value;
@@ -65,6 +78,7 @@ public class VideoRateControl {
 	/**
 	 * Ruft den Wert der encodingInterval-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getEncodingInterval() {
 		return encodingInterval;
@@ -73,6 +87,7 @@ public class VideoRateControl {
 	/**
 	 * Legt den Wert der encodingInterval-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setEncodingInterval(int value) {
 		this.encodingInterval = value;
@@ -81,6 +96,7 @@ public class VideoRateControl {
 	/**
 	 * Ruft den Wert der bitrateLimit-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getBitrateLimit() {
 		return bitrateLimit;
@@ -89,6 +105,7 @@ public class VideoRateControl {
 	/**
 	 * Legt den Wert der bitrateLimit-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setBitrateLimit(int value) {
 		this.bitrateLimit = value;

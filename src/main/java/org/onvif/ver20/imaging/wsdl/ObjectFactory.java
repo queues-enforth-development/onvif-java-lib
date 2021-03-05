@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2014.04.25 um 04:22:13 PM CEST 
 //
 
@@ -43,6 +43,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOptions }
      * 
+     * @return 
      */
     public GetOptions createGetOptions() {
         return new GetOptions();
@@ -51,6 +52,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveResponse }
      * 
+     * @return 
      */
     public MoveResponse createMoveResponse() {
         return new MoveResponse();
@@ -59,6 +61,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetImagingSettings }
      * 
+     * @return 
      */
     public GetImagingSettings createGetImagingSettings() {
         return new GetImagingSettings();
@@ -67,6 +70,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetStatus }
      * 
+     * @return 
      */
     public GetStatus createGetStatus() {
         return new GetStatus();
@@ -75,6 +79,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOptionsResponse }
      * 
+     * @return 
      */
     public GetOptionsResponse createGetOptionsResponse() {
         return new GetOptionsResponse();
@@ -83,6 +88,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServiceCapabilitiesResponse }
      * 
+     * @return 
      */
     public GetServiceCapabilitiesResponse createGetServiceCapabilitiesResponse() {
         return new GetServiceCapabilitiesResponse();
@@ -91,6 +97,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Capabilities }
      * 
+     * @return 
      */
     public Capabilities createCapabilities() {
         return new Capabilities();
@@ -99,6 +106,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Stop }
      * 
+     * @return 
      */
     public Stop createStop() {
         return new Stop();
@@ -107,6 +115,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetImagingSettingsResponse }
      * 
+     * @return 
      */
     public SetImagingSettingsResponse createSetImagingSettingsResponse() {
         return new SetImagingSettingsResponse();
@@ -115,6 +124,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StopResponse }
      * 
+     * @return 
      */
     public StopResponse createStopResponse() {
         return new StopResponse();
@@ -123,6 +133,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetStatusResponse }
      * 
+     * @return 
      */
     public GetStatusResponse createGetStatusResponse() {
         return new GetStatusResponse();
@@ -131,6 +142,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServiceCapabilities }
      * 
+     * @return 
      */
     public GetServiceCapabilities createGetServiceCapabilities() {
         return new GetServiceCapabilities();
@@ -139,6 +151,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Move }
      * 
+     * @return 
      */
     public Move createMove() {
         return new Move();
@@ -147,6 +160,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetImagingSettingsResponse }
      * 
+     * @return 
      */
     public GetImagingSettingsResponse createGetImagingSettingsResponse() {
         return new GetImagingSettingsResponse();
@@ -155,6 +169,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetImagingSettings }
      * 
+     * @return 
      */
     public SetImagingSettings createSetImagingSettings() {
         return new SetImagingSettings();
@@ -163,6 +178,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMoveOptions }
      * 
+     * @return 
      */
     public GetMoveOptions createGetMoveOptions() {
         return new GetMoveOptions();
@@ -171,6 +187,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMoveOptionsResponse }
      * 
+     * @return 
      */
     public GetMoveOptionsResponse createGetMoveOptionsResponse() {
         return new GetMoveOptionsResponse();
@@ -179,10 +196,12 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Capabilities }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/imaging/wsdl", name = "Capabilities")
     public JAXBElement<Capabilities> createCapabilities(Capabilities value) {
-        return new JAXBElement<Capabilities>(_Capabilities_QNAME, Capabilities.class, null, value);
+        return new JAXBElement<>(_Capabilities_QNAME, Capabilities.class, null, value);
     }
 
 }

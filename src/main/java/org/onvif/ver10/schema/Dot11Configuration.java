@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -27,25 +27,25 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r Dot11Configuration complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Dot11Configuration">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="SSID" type="{http://www.onvif.org/ver10/schema}Dot11SSIDType"/>
  *         <element name="Mode" type="{http://www.onvif.org/ver10/schema}Dot11StationMode"/>
  *         <element name="Alias" type="{http://www.onvif.org/ver10/schema}Name"/>
  *         <element name="Priority" type="{http://www.onvif.org/ver10/schema}NetworkInterfaceConfigPriority"/>
  *         <element name="Security" type="{http://www.onvif.org/ver10/schema}Dot11SecurityConfiguration"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -53,21 +53,44 @@ import org.w3c.dom.Element;
 @XmlType(name = "Dot11Configuration", propOrder = { "ssid", "mode", "alias", "priority", "security", "any" })
 public class Dot11Configuration {
 
-	@XmlElement(name = "SSID", required = true, type = String.class)
+    /**
+     *
+     */
+    @XmlElement(name = "SSID", required = true, type = String.class)
 	@XmlJavaTypeAdapter(HexBinaryAdapter.class)
 	protected byte[] ssid;
-	@XmlElement(name = "Mode", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Mode", required = true)
 	protected Dot11StationMode mode;
-	@XmlElement(name = "Alias", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Alias", required = true)
 	protected String alias;
-	@XmlElement(name = "Priority")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Priority")
 	protected int priority;
-	@XmlElement(name = "Security", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Security", required = true)
 	protected Dot11SecurityConfiguration security;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der ssid-Eigenschaft ab.
@@ -135,6 +158,7 @@ public class Dot11Configuration {
 	/**
 	 * Ruft den Wert der priority-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getPriority() {
 		return priority;
@@ -143,6 +167,7 @@ public class Dot11Configuration {
 	/**
 	 * Legt den Wert der priority-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setPriority(int value) {
 		this.priority = value;
@@ -179,19 +204,20 @@ public class Dot11Configuration {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

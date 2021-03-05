@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.device.wsdl;
@@ -23,12 +23,12 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r SecurityCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SecurityCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="TLS1.0" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="TLS1.1" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="TLS1.2" type="{http://www.w3.org/2001/XMLSchema}boolean" />
@@ -45,11 +45,11 @@ import javax.xml.namespace.QName;
  *       <attribute name="RELToken" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="SupportedEAPMethods" type="{http://www.onvif.org/ver10/device/wsdl}EAPMethodTypes" />
  *       <attribute name="MaxUsers" type="{http://www.w3.org/2001/XMLSchema}int" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -57,40 +57,103 @@ import javax.xml.namespace.QName;
 @XmlType(name = "SecurityCapabilities")
 public class SecurityCapabilities {
 
-	@XmlAttribute(name = "TLS1.0")
+    /**
+     *
+     */
+    @XmlAttribute(name = "TLS1.0")
 	protected Boolean tls10;
-	@XmlAttribute(name = "TLS1.1")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "TLS1.1")
 	protected Boolean tls11;
-	@XmlAttribute(name = "TLS1.2")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "TLS1.2")
 	protected Boolean tls12;
-	@XmlAttribute(name = "OnboardKeyGeneration")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "OnboardKeyGeneration")
 	protected Boolean onboardKeyGeneration;
-	@XmlAttribute(name = "AccessPolicyConfig")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "AccessPolicyConfig")
 	protected Boolean accessPolicyConfig;
-	@XmlAttribute(name = "DefaultAccessPolicy")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "DefaultAccessPolicy")
 	protected Boolean defaultAccessPolicy;
-	@XmlAttribute(name = "Dot1X")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Dot1X")
 	protected Boolean dot1X;
-	@XmlAttribute(name = "RemoteUserHandling")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "RemoteUserHandling")
 	protected Boolean remoteUserHandling;
-	@XmlAttribute(name = "X.509Token")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "X.509Token")
 	protected Boolean x509Token;
-	@XmlAttribute(name = "SAMLToken")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "SAMLToken")
 	protected Boolean samlToken;
-	@XmlAttribute(name = "KerberosToken")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "KerberosToken")
 	protected Boolean kerberosToken;
-	@XmlAttribute(name = "UsernameToken")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "UsernameToken")
 	protected Boolean usernameToken;
-	@XmlAttribute(name = "HttpDigest")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "HttpDigest")
 	protected Boolean httpDigest;
-	@XmlAttribute(name = "RELToken")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "RELToken")
 	protected Boolean relToken;
-	@XmlAttribute(name = "SupportedEAPMethods")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "SupportedEAPMethods")
 	protected List<Integer> supportedEAPMethods;
-	@XmlAttribute(name = "MaxUsers")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "MaxUsers")
 	protected Integer maxUsers;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der tls10-Eigenschaft ab.
@@ -396,19 +459,20 @@ public class SecurityCapabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSupportedEAPMethods().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Integer }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Integer> getSupportedEAPMethods() {
 		if (supportedEAPMethods == null) {
-			supportedEAPMethods = new ArrayList<Integer>();
+			supportedEAPMethods = new ArrayList<>();
 		}
 		return this.supportedEAPMethods;
 	}

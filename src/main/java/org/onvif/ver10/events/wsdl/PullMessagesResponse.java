@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -21,11 +21,11 @@ import org.oasis_open.docs.wsn.b_2.NotificationMessageHolderType;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -37,7 +37,7 @@ import org.oasis_open.docs.wsn.b_2.NotificationMessageHolderType;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -50,12 +50,23 @@ import org.oasis_open.docs.wsn.b_2.NotificationMessageHolderType;
 @XmlRootElement(name = "PullMessagesResponse")
 public class PullMessagesResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "CurrentTime", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar currentTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "TerminationTime", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar terminationTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "NotificationMessage", namespace = "http://docs.oasis-open.org/wsn/b-2")
     protected List<NotificationMessageHolderType> notificationMessage;
 
@@ -108,9 +119,7 @@ public class PullMessagesResponse {
     }
 
     /**
-     * List of messages. This list shall be empty in case of a timeout.Gets the value of the notificationMessage property.
-     * 
-     * <p>
+     * List of messages.This list shall be empty in case of a timeout.Gets the value of the notificationMessage property.<p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
@@ -118,9 +127,9 @@ public class PullMessagesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getNotificationMessage().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -128,10 +137,11 @@ public class PullMessagesResponse {
      * {@link NotificationMessageHolderType }
      * 
      * 
+     * @return 
      */
     public List<NotificationMessageHolderType> getNotificationMessage() {
         if (notificationMessage == null) {
-            notificationMessage = new ArrayList<NotificationMessageHolderType>();
+            notificationMessage = new ArrayList<>();
         }
         return this.notificationMessage;
     }

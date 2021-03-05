@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -17,20 +17,20 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r AbsoluteFocus complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="AbsoluteFocus">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Position" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         <element name="Speed" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -38,14 +38,22 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AbsoluteFocus", propOrder = { "position", "speed" })
 public class AbsoluteFocus {
 
-	@XmlElement(name = "Position")
+    /**
+     *
+     */
+    @XmlElement(name = "Position")
 	protected float position;
-	@XmlElement(name = "Speed")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Speed")
 	protected Float speed;
 
 	/**
 	 * Ruft den Wert der position-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getPosition() {
 		return position;
@@ -54,6 +62,7 @@ public class AbsoluteFocus {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setPosition(float value) {
 		this.position = value;

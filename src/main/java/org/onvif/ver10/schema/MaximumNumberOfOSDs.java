@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,23 +21,23 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r MaximumNumberOfOSDs complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="MaximumNumberOfOSDs">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="Total" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="Image" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="PlainText" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="Date" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="Time" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="DateAndTime" type="{http://www.w3.org/2001/XMLSchema}int" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -45,24 +45,48 @@ import javax.xml.namespace.QName;
 @XmlType(name = "MaximumNumberOfOSDs")
 public class MaximumNumberOfOSDs {
 
-	@XmlAttribute(name = "Total", required = true)
+    /**
+     *
+     */
+    @XmlAttribute(name = "Total", required = true)
 	protected int total;
-	@XmlAttribute(name = "Image")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Image")
 	protected Integer image;
-	@XmlAttribute(name = "PlainText")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "PlainText")
 	protected Integer plainText;
-	@XmlAttribute(name = "Date")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Date")
 	protected Integer date;
-	@XmlAttribute(name = "Time")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Time")
 	protected Integer time;
-	@XmlAttribute(name = "DateAndTime")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "DateAndTime")
 	protected Integer dateAndTime;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der total-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getTotal() {
 		return total;
@@ -71,6 +95,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der total-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setTotal(int value) {
 		this.total = value;

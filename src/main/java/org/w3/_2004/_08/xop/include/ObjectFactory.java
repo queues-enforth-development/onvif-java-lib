@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.w3._2004._08.xop.include;
@@ -35,6 +35,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Include }
 	 * 
+     * @return 
 	 */
 	public Include createInclude() {
 		return new Include();
@@ -43,10 +44,12 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Include }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2004/08/xop/include", name = "Include")
 	public JAXBElement<Include> createInclude(Include value) {
-		return new JAXBElement<Include>(_Include_QNAME, Include.class, null, value);
+		return new JAXBElement<>(_Include_QNAME, Include.class, null, value);
 	}
 
 }

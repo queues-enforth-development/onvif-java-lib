@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,24 +25,24 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r FocusConfiguration complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="FocusConfiguration">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="AutoFocusMode" type="{http://www.onvif.org/ver10/schema}AutoFocusMode"/>
  *         <element name="DefaultSpeed" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         <element name="NearLimit" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         <element name="FarLimit" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -50,18 +50,37 @@ import org.w3c.dom.Element;
 @XmlType(name = "FocusConfiguration", propOrder = { "autoFocusMode", "defaultSpeed", "nearLimit", "farLimit", "any" })
 public class FocusConfiguration {
 
-	@XmlElement(name = "AutoFocusMode", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "AutoFocusMode", required = true)
 	protected AutoFocusMode autoFocusMode;
-	@XmlElement(name = "DefaultSpeed")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DefaultSpeed")
 	protected float defaultSpeed;
-	@XmlElement(name = "NearLimit")
+
+    /**
+     *
+     */
+    @XmlElement(name = "NearLimit")
 	protected float nearLimit;
-	@XmlElement(name = "FarLimit")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FarLimit")
 	protected float farLimit;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der autoFocusMode-Eigenschaft ab.
@@ -87,6 +106,7 @@ public class FocusConfiguration {
 	/**
 	 * Ruft den Wert der defaultSpeed-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getDefaultSpeed() {
 		return defaultSpeed;
@@ -95,6 +115,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der defaultSpeed-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDefaultSpeed(float value) {
 		this.defaultSpeed = value;
@@ -103,6 +124,7 @@ public class FocusConfiguration {
 	/**
 	 * Ruft den Wert der nearLimit-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getNearLimit() {
 		return nearLimit;
@@ -111,6 +133,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der nearLimit-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setNearLimit(float value) {
 		this.nearLimit = value;
@@ -119,6 +142,7 @@ public class FocusConfiguration {
 	/**
 	 * Ruft den Wert der farLimit-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getFarLimit() {
 		return farLimit;
@@ -127,6 +151,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der farLimit-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setFarLimit(float value) {
 		this.farLimit = value;
@@ -142,19 +167,20 @@ public class FocusConfiguration {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

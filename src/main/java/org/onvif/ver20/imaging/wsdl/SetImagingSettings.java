@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2014.04.25 um 04:22:13 PM CEST 
 //
 
@@ -17,11 +17,11 @@ import org.onvif.ver10.schema.ImagingSettings20;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -33,7 +33,7 @@ import org.onvif.ver10.schema.ImagingSettings20;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -46,10 +46,21 @@ import org.onvif.ver10.schema.ImagingSettings20;
 @XmlRootElement(name = "SetImagingSettings")
 public class SetImagingSettings {
 
+    /**
+     *
+     */
     @XmlElement(name = "VideoSourceToken", required = true)
     protected String videoSourceToken;
+
+    /**
+     *
+     */
     @XmlElement(name = "ImagingSettings", required = true)
     protected ImagingSettings20 imagingSettings;
+
+    /**
+     *
+     */
     @XmlElement(name = "ForcePersistence")
     protected Boolean forcePersistence;
 

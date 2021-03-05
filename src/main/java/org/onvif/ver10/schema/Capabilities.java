@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,13 +21,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r Capabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Capabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Analytics" type="{http://www.onvif.org/ver10/schema}AnalyticsCapabilities" minOccurs="0"/>
  *         <element name="Device" type="{http://www.onvif.org/ver10/schema}DeviceCapabilities" minOccurs="0"/>
  *         <element name="Events" type="{http://www.onvif.org/ver10/schema}EventCapabilities" minOccurs="0"/>
@@ -35,12 +35,12 @@ import javax.xml.namespace.QName;
  *         <element name="Media" type="{http://www.onvif.org/ver10/schema}MediaCapabilities" minOccurs="0"/>
  *         <element name="PTZ" type="{http://www.onvif.org/ver10/schema}PTZCapabilities" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}CapabilitiesExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -48,22 +48,49 @@ import javax.xml.namespace.QName;
 @XmlType(name = "Capabilities", propOrder = { "analytics", "device", "events", "imaging", "media", "ptz", "extension" })
 public class Capabilities {
 
-	@XmlElement(name = "Analytics")
+    /**
+     *
+     */
+    @XmlElement(name = "Analytics")
 	protected AnalyticsCapabilities analytics;
-	@XmlElement(name = "Device")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Device")
 	protected DeviceCapabilities device;
-	@XmlElement(name = "Events")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Events")
 	protected EventCapabilities events;
-	@XmlElement(name = "Imaging")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Imaging")
 	protected ImagingCapabilities imaging;
-	@XmlElement(name = "Media")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Media")
 	protected MediaCapabilities media;
-	@XmlElement(name = "PTZ")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PTZ")
 	protected PTZCapabilities ptz;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected CapabilitiesExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der analytics-Eigenschaft ab.

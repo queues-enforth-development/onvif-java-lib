@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -17,21 +17,21 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r NetworkInterfaceConnectionSetting complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="NetworkInterfaceConnectionSetting">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="AutoNegotiation" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="Speed" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="Duplex" type="{http://www.onvif.org/ver10/schema}Duplex"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,16 +39,28 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "NetworkInterfaceConnectionSetting", propOrder = { "autoNegotiation", "speed", "duplex" })
 public class NetworkInterfaceConnectionSetting {
 
-	@XmlElement(name = "AutoNegotiation")
+    /**
+     *
+     */
+    @XmlElement(name = "AutoNegotiation")
 	protected boolean autoNegotiation;
-	@XmlElement(name = "Speed")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Speed")
 	protected int speed;
-	@XmlElement(name = "Duplex", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Duplex", required = true)
 	protected Duplex duplex;
 
 	/**
 	 * Ruft den Wert der autoNegotiation-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isAutoNegotiation() {
 		return autoNegotiation;
@@ -57,6 +69,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Legt den Wert der autoNegotiation-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setAutoNegotiation(boolean value) {
 		this.autoNegotiation = value;
@@ -65,6 +78,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Ruft den Wert der speed-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getSpeed() {
 		return speed;
@@ -73,6 +87,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setSpeed(int value) {
 		this.speed = value;

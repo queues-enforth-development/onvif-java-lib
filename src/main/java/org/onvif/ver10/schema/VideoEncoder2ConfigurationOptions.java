@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -26,9 +26,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für VideoEncoder2ConfigurationOptions complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="VideoEncoder2ConfigurationOptions">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -48,7 +48,7 @@ import org.w3c.dom.Element;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -62,28 +62,67 @@ import org.w3c.dom.Element;
 })
 public class VideoEncoder2ConfigurationOptions {
 
+    /**
+     *
+     */
     @XmlElement(name = "Encoding", required = true)
     protected String encoding;
+
+    /**
+     *
+     */
     @XmlElement(name = "QualityRange", required = true)
     protected IntRange qualityRange;
+
+    /**
+     *
+     */
     @XmlElement(name = "ResolutionsAvailable", required = true)
     protected List<VideoResolution2> resolutionsAvailable;
+
+    /**
+     *
+     */
     @XmlElement(name = "BitrateRange", required = true)
     protected IntRange bitrateRange;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<java.lang.Object> any;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "GovLengthRange")
     protected List<Integer> govLengthRange;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "FrameRatesSupported")
     protected List<Float> frameRatesSupported;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "ProfilesSupported")
     protected List<String> profilesSupported;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "ConstantBitRateSupported")
     protected Boolean constantBitRateSupported;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "GuaranteedInstances")
     protected Integer guaranteedInstances;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der encoding-Eigenschaft ab.
@@ -144,9 +183,9 @@ public class VideoEncoder2ConfigurationOptions {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getResolutionsAvailable().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -154,10 +193,11 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link VideoResolution2 }
      * 
      * 
+     * @return 
      */
     public List<VideoResolution2> getResolutionsAvailable() {
         if (resolutionsAvailable == null) {
-            resolutionsAvailable = new ArrayList<VideoResolution2>();
+            resolutionsAvailable = new ArrayList<>();
         }
         return this.resolutionsAvailable;
     }
@@ -197,9 +237,9 @@ public class VideoEncoder2ConfigurationOptions {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -208,10 +248,11 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link java.lang.Object }
      * 
      * 
+     * @return 
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
-            any = new ArrayList<java.lang.Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }
@@ -227,9 +268,9 @@ public class VideoEncoder2ConfigurationOptions {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getGovLengthRange().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -237,10 +278,11 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link Integer }
      * 
      * 
+     * @return 
      */
     public List<Integer> getGovLengthRange() {
         if (govLengthRange == null) {
-            govLengthRange = new ArrayList<Integer>();
+            govLengthRange = new ArrayList<>();
         }
         return this.govLengthRange;
     }
@@ -256,9 +298,9 @@ public class VideoEncoder2ConfigurationOptions {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getFrameRatesSupported().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -266,10 +308,11 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link Float }
      * 
      * 
+     * @return 
      */
     public List<Float> getFrameRatesSupported() {
         if (frameRatesSupported == null) {
-            frameRatesSupported = new ArrayList<Float>();
+            frameRatesSupported = new ArrayList<>();
         }
         return this.frameRatesSupported;
     }
@@ -285,9 +328,9 @@ public class VideoEncoder2ConfigurationOptions {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getProfilesSupported().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -295,10 +338,11 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getProfilesSupported() {
         if (profilesSupported == null) {
-            profilesSupported = new ArrayList<String>();
+            profilesSupported = new ArrayList<>();
         }
         return this.profilesSupported;
     }

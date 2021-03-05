@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
 // Generiert: 2014.02.17 um 11:33:29 AM CET 
 //
 
@@ -25,23 +25,23 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r Capabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Capabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
  *       <attribute name="EFlip" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="Reverse" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="GetCompatibleConfigurations" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,16 +49,31 @@ import org.w3c.dom.Element;
 @XmlType(name = "Capabilities", propOrder = { "any" })
 public class Capabilities {
 
-	@XmlAnyElement(lax = true)
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
-	@XmlAttribute(name = "EFlip")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "EFlip")
 	protected Boolean eFlip;
-	@XmlAttribute(name = "Reverse")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Reverse")
 	protected Boolean reverse;
-	@XmlAttribute(name = "GetCompatibleConfigurations")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "GetCompatibleConfigurations")
 	protected Boolean getCompatibleConfigurations;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the any property.
@@ -70,19 +85,20 @@ public class Capabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

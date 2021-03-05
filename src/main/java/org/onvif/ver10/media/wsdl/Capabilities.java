@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
 // Generiert: 2014.02.19 um 02:35:56 PM CET 
 //
 
@@ -26,26 +26,26 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r Capabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Capabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="ProfileCapabilities" type="{http://www.onvif.org/ver10/media/wsdl}ProfileCapabilities"/>
  *         <element name="StreamingCapabilities" type="{http://www.onvif.org/ver10/media/wsdl}StreamingCapabilities"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
  *       <attribute name="SnapshotUri" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="Rotation" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="VideoSourceMode" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="OSD" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -53,22 +53,49 @@ import org.w3c.dom.Element;
 @XmlType(name = "Capabilities", propOrder = { "profileCapabilities", "streamingCapabilities", "any" })
 public class Capabilities {
 
-	@XmlElement(name = "ProfileCapabilities", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "ProfileCapabilities", required = true)
 	protected ProfileCapabilities profileCapabilities;
-	@XmlElement(name = "StreamingCapabilities", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "StreamingCapabilities", required = true)
 	protected StreamingCapabilities streamingCapabilities;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
-	@XmlAttribute(name = "SnapshotUri")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "SnapshotUri")
 	protected Boolean snapshotUri;
-	@XmlAttribute(name = "Rotation")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Rotation")
 	protected Boolean rotation;
-	@XmlAttribute(name = "VideoSourceMode")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "VideoSourceMode")
 	protected Boolean videoSourceMode;
-	@XmlAttribute(name = "OSD")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "OSD")
 	protected Boolean osd;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der profileCapabilities-Eigenschaft ab.
@@ -122,19 +149,20 @@ public class Capabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Object } {@link Element }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

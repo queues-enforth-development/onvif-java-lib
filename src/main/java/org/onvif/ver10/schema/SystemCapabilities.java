@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,13 +23,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r SystemCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SystemCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="DiscoveryResolve" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="DiscoveryBye" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="RemoteDiscovery" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
@@ -38,12 +38,12 @@ import javax.xml.namespace.QName;
  *         <element name="FirmwareUpgrade" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="SupportedVersions" type="{http://www.onvif.org/ver10/schema}OnvifVersion" maxOccurs="unbounded"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}SystemCapabilitiesExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -52,28 +52,60 @@ import javax.xml.namespace.QName;
 		"supportedVersions", "extension" })
 public class SystemCapabilities {
 
-	@XmlElement(name = "DiscoveryResolve")
+    /**
+     *
+     */
+    @XmlElement(name = "DiscoveryResolve")
 	protected boolean discoveryResolve;
-	@XmlElement(name = "DiscoveryBye")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DiscoveryBye")
 	protected boolean discoveryBye;
-	@XmlElement(name = "RemoteDiscovery")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RemoteDiscovery")
 	protected boolean remoteDiscovery;
-	@XmlElement(name = "SystemBackup")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SystemBackup")
 	protected boolean systemBackup;
-	@XmlElement(name = "SystemLogging")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SystemLogging")
 	protected boolean systemLogging;
-	@XmlElement(name = "FirmwareUpgrade")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FirmwareUpgrade")
 	protected boolean firmwareUpgrade;
-	@XmlElement(name = "SupportedVersions", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "SupportedVersions", required = true)
 	protected List<OnvifVersion> supportedVersions;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected SystemCapabilitiesExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der discoveryResolve-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isDiscoveryResolve() {
 		return discoveryResolve;
@@ -82,6 +114,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der discoveryResolve-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDiscoveryResolve(boolean value) {
 		this.discoveryResolve = value;
@@ -90,6 +123,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der discoveryBye-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isDiscoveryBye() {
 		return discoveryBye;
@@ -98,6 +132,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der discoveryBye-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDiscoveryBye(boolean value) {
 		this.discoveryBye = value;
@@ -106,6 +141,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der remoteDiscovery-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isRemoteDiscovery() {
 		return remoteDiscovery;
@@ -114,6 +150,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der remoteDiscovery-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setRemoteDiscovery(boolean value) {
 		this.remoteDiscovery = value;
@@ -122,6 +159,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der systemBackup-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isSystemBackup() {
 		return systemBackup;
@@ -130,6 +168,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der systemBackup-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setSystemBackup(boolean value) {
 		this.systemBackup = value;
@@ -138,6 +177,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der systemLogging-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isSystemLogging() {
 		return systemLogging;
@@ -146,6 +186,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der systemLogging-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setSystemLogging(boolean value) {
 		this.systemLogging = value;
@@ -154,6 +195,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der firmwareUpgrade-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isFirmwareUpgrade() {
 		return firmwareUpgrade;
@@ -162,6 +204,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der firmwareUpgrade-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setFirmwareUpgrade(boolean value) {
 		this.firmwareUpgrade = value;
@@ -177,19 +220,20 @@ public class SystemCapabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSupportedVersions().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link OnvifVersion }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<OnvifVersion> getSupportedVersions() {
 		if (supportedVersions == null) {
-			supportedVersions = new ArrayList<OnvifVersion>();
+			supportedVersions = new ArrayList<>();
 		}
 		return this.supportedVersions;
 	}

@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -25,9 +25,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für FileProgress complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="FileProgress">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -40,7 +40,7 @@ import org.w3c.dom.Element;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -52,14 +52,25 @@ import org.w3c.dom.Element;
 })
 public class FileProgress {
 
+    /**
+     *
+     */
     @XmlElement(name = "FileName", required = true)
     protected String fileName;
+
+    /**
+     *
+     */
     @XmlElement(name = "Progress")
     protected float progress;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<java.lang.Object> any;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der fileName-Eigenschaft ab.
@@ -88,6 +99,7 @@ public class FileProgress {
     /**
      * Ruft den Wert der progress-Eigenschaft ab.
      * 
+     * @return 
      */
     public float getProgress() {
         return progress;
@@ -96,6 +108,7 @@ public class FileProgress {
     /**
      * Legt den Wert der progress-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setProgress(float value) {
         this.progress = value;
@@ -112,9 +125,9 @@ public class FileProgress {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -123,10 +136,11 @@ public class FileProgress {
      * {@link java.lang.Object }
      * 
      * 
+     * @return 
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
-            any = new ArrayList<java.lang.Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

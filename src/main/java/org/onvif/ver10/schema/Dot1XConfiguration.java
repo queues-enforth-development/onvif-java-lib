@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,13 +26,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r Dot1XConfiguration complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Dot1XConfiguration">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Dot1XConfigurationToken" type="{http://www.onvif.org/ver10/schema}ReferenceToken"/>
  *         <element name="Identity" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         <element name="AnonymousID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -40,12 +40,12 @@ import javax.xml.namespace.QName;
  *         <element name="CACertificateID" type="{http://www.w3.org/2001/XMLSchema}token" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="EAPMethodConfiguration" type="{http://www.onvif.org/ver10/schema}EAPMethodConfiguration" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}Dot1XConfigurationExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -54,24 +54,51 @@ import javax.xml.namespace.QName;
 		"eapMethodConfiguration", "extension" })
 public class Dot1XConfiguration {
 
-	@XmlElement(name = "Dot1XConfigurationToken", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Dot1XConfigurationToken", required = true)
 	protected String dot1XConfigurationToken;
-	@XmlElement(name = "Identity", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Identity", required = true)
 	protected String identity;
-	@XmlElement(name = "AnonymousID")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AnonymousID")
 	protected String anonymousID;
-	@XmlElement(name = "EAPMethod")
+
+    /**
+     *
+     */
+    @XmlElement(name = "EAPMethod")
 	protected int eapMethod;
-	@XmlElement(name = "CACertificateID")
+
+    /**
+     *
+     */
+    @XmlElement(name = "CACertificateID")
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	@XmlSchemaType(name = "token")
 	protected List<String> caCertificateID;
-	@XmlElement(name = "EAPMethodConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "EAPMethodConfiguration")
 	protected EAPMethodConfiguration eapMethodConfiguration;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected Dot1XConfigurationExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der dot1XConfigurationToken-Eigenschaft ab.
@@ -139,6 +166,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Ruft den Wert der eapMethod-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getEAPMethod() {
 		return eapMethod;
@@ -147,6 +175,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der eapMethod-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setEAPMethod(int value) {
 		this.eapMethod = value;
@@ -162,19 +191,20 @@ public class Dot1XConfiguration {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getCACertificateID().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getCACertificateID() {
 		if (caCertificateID == null) {
-			caCertificateID = new ArrayList<String>();
+			caCertificateID = new ArrayList<>();
 		}
 		return this.caCertificateID;
 	}

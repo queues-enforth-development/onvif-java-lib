@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,17 +21,17 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r OSDReference complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="OSDReference">
  *   <simpleContent>
  *     <extension base="<http://www.onvif.org/ver10/schema>ReferenceToken">
- *       <anyAttribute processContents='lax'/>
+         <anyAttribute processContents='lax'/>
  *     </extension>
  *   </simpleContent>
- * </complexType>
- * </pre>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,10 +39,13 @@ import javax.xml.namespace.QName;
 @XmlType(name = "OSDReference", propOrder = { "value" })
 public class OSDReference {
 
-	@XmlValue
+    /**
+     *
+     */
+    @XmlValue
 	protected String value;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Unique identifier for a physical or logical resource. Tokens should be assigned such that they are unique within a device. Tokens must be at least unique within its class.

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsn.b_2;
@@ -27,21 +27,21 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r TopicExpressionType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="TopicExpressionType">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
- *         <any processContents='lax' minOccurs="0"/>
- *       </sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
+           <any processContents='lax' minOccurs="0"/>
+         </sequence>
  *       <attribute name="Dialect" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       <anyAttribute/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,14 +49,21 @@ import org.w3c.dom.Element;
 @XmlType(name = "TopicExpressionType", propOrder = { "content" })
 public class TopicExpressionType {
 
-	@XmlMixed
+    /**
+     *
+     */
+    @XmlMixed
 	@XmlAnyElement(lax = true)
 	protected List<Object> content;
-	@XmlAttribute(name = "Dialect", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Dialect", required = true)
 	@XmlSchemaType(name = "anyURI")
 	protected String dialect;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the content property.
@@ -68,19 +75,20 @@ public class TopicExpressionType {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getContent().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Object } {@link Element } {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getContent() {
 		if (content == null) {
-			content = new ArrayList<Object>();
+			content = new ArrayList<>();
 		}
 		return this.content;
 	}

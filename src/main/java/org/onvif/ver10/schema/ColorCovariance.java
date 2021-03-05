@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -18,12 +18,12 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r ColorCovariance complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ColorCovariance">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="XX" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="YY" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="ZZ" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
@@ -31,10 +31,10 @@ import javax.xml.bind.annotation.XmlType;
  *       <attribute name="XZ" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="YZ" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="Colorspace" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -42,25 +42,53 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ColorCovariance")
 public class ColorCovariance {
 
-	@XmlAttribute(name = "XX", required = true)
+    /**
+     *
+     */
+    @XmlAttribute(name = "XX", required = true)
 	protected float xx;
-	@XmlAttribute(name = "YY", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "YY", required = true)
 	protected float yy;
-	@XmlAttribute(name = "ZZ", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "ZZ", required = true)
 	protected float zz;
-	@XmlAttribute(name = "XY")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "XY")
 	protected Float xy;
-	@XmlAttribute(name = "XZ")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "XZ")
 	protected Float xz;
-	@XmlAttribute(name = "YZ")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "YZ")
 	protected Float yz;
-	@XmlAttribute(name = "Colorspace")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Colorspace")
 	@XmlSchemaType(name = "anyURI")
 	protected String colorspace;
 
 	/**
 	 * Ruft den Wert der xx-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getXX() {
 		return xx;
@@ -69,6 +97,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der xx-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setXX(float value) {
 		this.xx = value;
@@ -77,6 +106,7 @@ public class ColorCovariance {
 	/**
 	 * Ruft den Wert der yy-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getYY() {
 		return yy;
@@ -85,6 +115,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der yy-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setYY(float value) {
 		this.yy = value;
@@ -93,6 +124,7 @@ public class ColorCovariance {
 	/**
 	 * Ruft den Wert der zz-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getZZ() {
 		return zz;
@@ -101,6 +133,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der zz-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setZZ(float value) {
 		this.zz = value;

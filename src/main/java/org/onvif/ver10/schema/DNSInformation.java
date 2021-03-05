@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,24 +26,24 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r DNSInformation complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="DNSInformation">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="FromDHCP" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="SearchDomain" type="{http://www.w3.org/2001/XMLSchema}token" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="DNSFromDHCP" type="{http://www.onvif.org/ver10/schema}IPAddress" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="DNSManual" type="{http://www.onvif.org/ver10/schema}IPAddress" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}DNSInformationExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,24 +51,44 @@ import javax.xml.namespace.QName;
 @XmlType(name = "DNSInformation", propOrder = { "fromDHCP", "searchDomain", "dnsFromDHCP", "dnsManual", "extension" })
 public class DNSInformation {
 
-	@XmlElement(name = "FromDHCP")
+    /**
+     *
+     */
+    @XmlElement(name = "FromDHCP")
 	protected boolean fromDHCP;
-	@XmlElement(name = "SearchDomain")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SearchDomain")
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	@XmlSchemaType(name = "token")
 	protected List<String> searchDomain;
-	@XmlElement(name = "DNSFromDHCP")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DNSFromDHCP")
 	protected List<IPAddress> dnsFromDHCP;
-	@XmlElement(name = "DNSManual")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DNSManual")
 	protected List<IPAddress> dnsManual;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected DNSInformationExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der fromDHCP-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isFromDHCP() {
 		return fromDHCP;
@@ -77,6 +97,7 @@ public class DNSInformation {
 	/**
 	 * Legt den Wert der fromDHCP-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setFromDHCP(boolean value) {
 		this.fromDHCP = value;
@@ -92,19 +113,20 @@ public class DNSInformation {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSearchDomain().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getSearchDomain() {
 		if (searchDomain == null) {
-			searchDomain = new ArrayList<String>();
+			searchDomain = new ArrayList<>();
 		}
 		return this.searchDomain;
 	}
@@ -119,19 +141,20 @@ public class DNSInformation {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getDNSFromDHCP().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link IPAddress }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<IPAddress> getDNSFromDHCP() {
 		if (dnsFromDHCP == null) {
-			dnsFromDHCP = new ArrayList<IPAddress>();
+			dnsFromDHCP = new ArrayList<>();
 		}
 		return this.dnsFromDHCP;
 	}
@@ -146,19 +169,20 @@ public class DNSInformation {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getDNSManual().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link IPAddress }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<IPAddress> getDNSManual() {
 		if (dnsManual == null) {
-			dnsManual = new ArrayList<IPAddress>();
+			dnsManual = new ArrayList<>();
 		}
 		return this.dnsManual;
 	}

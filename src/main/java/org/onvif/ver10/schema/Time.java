@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -17,21 +17,21 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r Time complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Time">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Hour" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="Minute" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="Second" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,16 +39,28 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Time", propOrder = { "hour", "minute", "second" })
 public class Time {
 
-	@XmlElement(name = "Hour")
+    /**
+     *
+     */
+    @XmlElement(name = "Hour")
 	protected int hour;
-	@XmlElement(name = "Minute")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Minute")
 	protected int minute;
-	@XmlElement(name = "Second")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Second")
 	protected int second;
 
 	/**
 	 * Ruft den Wert der hour-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getHour() {
 		return hour;
@@ -57,6 +69,7 @@ public class Time {
 	/**
 	 * Legt den Wert der hour-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setHour(int value) {
 		this.hour = value;
@@ -65,6 +78,7 @@ public class Time {
 	/**
 	 * Ruft den Wert der minute-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getMinute() {
 		return minute;
@@ -73,6 +87,7 @@ public class Time {
 	/**
 	 * Legt den Wert der minute-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMinute(int value) {
 		this.minute = value;
@@ -81,6 +96,7 @@ public class Time {
 	/**
 	 * Ruft den Wert der second-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getSecond() {
 		return second;
@@ -89,6 +105,7 @@ public class Time {
 	/**
 	 * Legt den Wert der second-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setSecond(int value) {
 		this.second = value;

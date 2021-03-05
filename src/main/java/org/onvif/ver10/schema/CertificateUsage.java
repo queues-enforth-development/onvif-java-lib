@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -18,17 +18,17 @@ import javax.xml.bind.annotation.XmlValue;
  * Java-Klasse f�r CertificateUsage complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="CertificateUsage">
  *   <simpleContent>
  *     <extension base="<http://www.w3.org/2001/XMLSchema>string">
  *       <attribute name="Critical" use="required" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *     </extension>
  *   </simpleContent>
- * </complexType>
- * </pre>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -36,9 +36,16 @@ import javax.xml.bind.annotation.XmlValue;
 @XmlType(name = "CertificateUsage", propOrder = { "value" })
 public class CertificateUsage {
 
-	@XmlValue
+    /**
+     *
+     */
+    @XmlValue
 	protected String value;
-	@XmlAttribute(name = "Critical", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Critical", required = true)
 	protected boolean critical;
 
 	/**
@@ -65,6 +72,7 @@ public class CertificateUsage {
 	/**
 	 * Ruft den Wert der critical-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isCritical() {
 		return critical;
@@ -73,6 +81,7 @@ public class CertificateUsage {
 	/**
 	 * Legt den Wert der critical-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setCritical(boolean value) {
 		this.critical = value;

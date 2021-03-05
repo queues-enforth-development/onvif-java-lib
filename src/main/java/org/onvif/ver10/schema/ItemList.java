@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -30,42 +30,42 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r ItemList complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ItemList">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="SimpleItem" maxOccurs="unbounded" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *                 <attribute name="Value" use="required" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
- *               </restriction>
- *             </complexContent>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
  *         <element name="ElementItem" maxOccurs="unbounded" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 <sequence>
- *                   <any/>
- *                 </sequence>
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                   <sequence>
+                     <any/>
+                   </sequence>
  *                 <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *               </restriction>
- *             </complexContent>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ItemListExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -73,14 +73,25 @@ import javax.xml.namespace.QName;
 @XmlType(name = "ItemList", propOrder = { "simpleItem", "elementItem", "extension" })
 public class ItemList {
 
-	@XmlElement(name = "SimpleItem")
+    /**
+     *
+     */
+    @XmlElement(name = "SimpleItem")
 	protected List<ItemList.SimpleItem> simpleItem;
-	@XmlElement(name = "ElementItem")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ElementItem")
 	protected List<ItemList.ElementItem> elementItem;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ItemListExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the simpleItem property.
@@ -92,19 +103,20 @@ public class ItemList {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSimpleItem().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ItemList.SimpleItem }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ItemList.SimpleItem> getSimpleItem() {
 		if (simpleItem == null) {
-			simpleItem = new ArrayList<ItemList.SimpleItem>();
+			simpleItem = new ArrayList<>();
 		}
 		return this.simpleItem;
 	}
@@ -119,19 +131,20 @@ public class ItemList {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getElementItem().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ItemList.ElementItem }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ItemList.ElementItem> getElementItem() {
 		if (elementItem == null) {
-			elementItem = new ArrayList<ItemList.ElementItem>();
+			elementItem = new ArrayList<>();
 		}
 		return this.elementItem;
 	}
@@ -174,23 +187,23 @@ public class ItemList {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-	 *       <sequence>
-	 *         <any/>
-	 *       </sequence>
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	         <sequence>
+	           <any/>
+	         </sequence>
 	 *       <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -198,9 +211,16 @@ public class ItemList {
 	@XmlType(name = "", propOrder = { "any" })
 	public static class ElementItem {
 
-		@XmlAnyElement(lax = true)
+        /**
+         *
+         */
+        @XmlAnyElement(lax = true)
 		protected java.lang.Object any;
-		@XmlAttribute(name = "Name", required = true)
+
+        /**
+         *
+         */
+        @XmlAttribute(name = "Name", required = true)
 		protected String name;
 
 		/**
@@ -249,21 +269,21 @@ public class ItemList {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
 	 *       <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
 	 *       <attribute name="Value" use="required" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -271,9 +291,16 @@ public class ItemList {
 	@XmlType(name = "")
 	public static class SimpleItem {
 
-		@XmlAttribute(name = "Name", required = true)
+        /**
+         *
+         */
+        @XmlAttribute(name = "Name", required = true)
 		protected String name;
-		@XmlAttribute(name = "Value", required = true)
+
+        /**
+         *
+         */
+        @XmlAttribute(name = "Value", required = true)
 		@XmlSchemaType(name = "anySimpleType")
 		protected String value;
 

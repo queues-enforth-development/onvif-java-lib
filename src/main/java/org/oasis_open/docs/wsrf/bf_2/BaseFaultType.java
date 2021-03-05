@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsrf.bf_2;
@@ -52,24 +52,24 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r BaseFaultType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="BaseFaultType">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Timestamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
  *         <element name="Originator" type="{http://www.w3.org/2005/08/addressing}EndpointReferenceType" minOccurs="0"/>
  *         <element name="ErrorCode" minOccurs="0">
  *           <complexType>
- *             <complexContent>
+               <complexContent>
  *               <extension base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 <attribute name="dialect" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *                 <anyAttribute processContents='skip'/>
+                   <anyAttribute processContents='skip'/>
  *               </extension>
- *             </complexContent>
+               </complexContent>
  *           </complexType>
  *         </element>
  *         <element name="Description" maxOccurs="unbounded" minOccurs="0">
@@ -83,21 +83,21 @@ import org.w3c.dom.Element;
  *         </element>
  *         <element name="FaultCause" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 <sequence>
- *                   <any processContents='lax' namespace='##other'/>
- *                 </sequence>
- *               </restriction>
- *             </complexContent>
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                   <sequence>
+                     <any processContents='lax' namespace='##other'/>
+                   </sequence>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
- *       </sequence>
- *       <anyAttribute processContents='lax' namespace='##other'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax' namespace='##other'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -112,21 +112,44 @@ import org.w3c.dom.Element;
 		UnacceptableTerminationTimeFaultType.class })
 public class BaseFaultType {
 
-	@XmlAnyElement(lax = true)
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
-	@XmlElement(name = "Timestamp", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Timestamp", required = true)
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar timestamp;
-	@XmlElement(name = "Originator")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Originator")
 	protected EndpointReferenceType originator;
-	@XmlElement(name = "ErrorCode")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ErrorCode")
 	protected BaseFaultType.ErrorCode errorCode;
-	@XmlElement(name = "Description")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Description")
 	protected List<BaseFaultType.Description> description;
-	@XmlElement(name = "FaultCause")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FaultCause")
 	protected BaseFaultType.FaultCause faultCause;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the any property.
@@ -138,19 +161,20 @@ public class BaseFaultType {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}
@@ -228,19 +252,20 @@ public class BaseFaultType {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getDescription().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link BaseFaultType.Description }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<BaseFaultType.Description> getDescription() {
 		if (description == null) {
-			description = new ArrayList<BaseFaultType.Description>();
+			description = new ArrayList<>();
 		}
 		return this.description;
 	}
@@ -283,20 +308,20 @@ public class BaseFaultType {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
+	 * <pre>{@code
+	   <complexType>
 	 *   <simpleContent>
 	 *     <extension base="<http://www.w3.org/2001/XMLSchema>string">
 	 *       <attribute ref="{http://www.w3.org/XML/1998/namespace}lang"/>
 	 *     </extension>
 	 *   </simpleContent>
-	 * </complexType>
-	 * </pre>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -304,9 +329,16 @@ public class BaseFaultType {
 	@XmlType(name = "", propOrder = { "value" })
 	public static class Description {
 
-		@XmlValue
+        /**
+         *
+         */
+        @XmlValue
 		protected String value;
-		@XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
+
+        /**
+         *
+         */
+        @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
 		protected String lang;
 
 		/**
@@ -355,21 +387,21 @@ public class BaseFaultType {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
 	 *     <extension base="{http://www.w3.org/2001/XMLSchema}anyType">
 	 *       <attribute name="dialect" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
-	 *       <anyAttribute processContents='skip'/>
+	         <anyAttribute processContents='skip'/>
 	 *     </extension>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -377,14 +409,21 @@ public class BaseFaultType {
 	@XmlType(name = "", propOrder = { "content" })
 	public static class ErrorCode {
 
-		@XmlMixed
+        /**
+         *
+         */
+        @XmlMixed
 		@XmlAnyElement
 		protected List<Object> content;
-		@XmlAttribute(name = "dialect", required = true)
+
+        /**
+         *
+         */
+        @XmlAttribute(name = "dialect", required = true)
 		@XmlSchemaType(name = "anyURI")
 		protected String dialect;
 		@XmlAnyAttribute
-		private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+		private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 		/**
 		 * Gets the value of the content property.
@@ -396,19 +435,20 @@ public class BaseFaultType {
 		 * <p>
 		 * For example, to add a new item, do as follows:
 		 * 
-		 * <pre>
+		 * <pre>{@code
 		 * getContent().add(newItem);
-		 * </pre>
+		 * }</pre>
 		 * 
 		 * 
 		 * <p>
 		 * Objects of the following type(s) are allowed in the list {@link Element } {@link String }
 		 * 
 		 * 
+         * @return 
 		 */
 		public List<Object> getContent() {
 			if (content == null) {
-				content = new ArrayList<Object>();
+				content = new ArrayList<>();
 			}
 			return this.content;
 		}
@@ -453,22 +493,22 @@ public class BaseFaultType {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-	 *       <sequence>
-	 *         <any processContents='lax' namespace='##other'/>
-	 *       </sequence>
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	         <sequence>
+	           <any processContents='lax' namespace='##other'/>
+	         </sequence>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -476,7 +516,10 @@ public class BaseFaultType {
 	@XmlType(name = "", propOrder = { "any" })
 	public static class FaultCause {
 
-		@XmlAnyElement(lax = true)
+        /**
+         *
+         */
+        @XmlAnyElement(lax = true)
 		protected Object any;
 
 		/**

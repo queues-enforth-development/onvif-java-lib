@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,24 +21,24 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r FocusConfiguration20 complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="FocusConfiguration20">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="AutoFocusMode" type="{http://www.onvif.org/ver10/schema}AutoFocusMode"/>
  *         <element name="DefaultSpeed" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         <element name="NearLimit" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         <element name="FarLimit" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}FocusConfiguration20Extension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -46,18 +46,37 @@ import javax.xml.namespace.QName;
 @XmlType(name = "FocusConfiguration20", propOrder = { "autoFocusMode", "defaultSpeed", "nearLimit", "farLimit", "extension" })
 public class FocusConfiguration20 {
 
-	@XmlElement(name = "AutoFocusMode", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "AutoFocusMode", required = true)
 	protected AutoFocusMode autoFocusMode;
-	@XmlElement(name = "DefaultSpeed")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DefaultSpeed")
 	protected Float defaultSpeed;
-	@XmlElement(name = "NearLimit")
+
+    /**
+     *
+     */
+    @XmlElement(name = "NearLimit")
 	protected Float nearLimit;
-	@XmlElement(name = "FarLimit")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FarLimit")
 	protected Float farLimit;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected FocusConfiguration20Extension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der autoFocusMode-Eigenschaft ab.

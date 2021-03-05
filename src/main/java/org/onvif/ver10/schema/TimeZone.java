@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -19,82 +19,82 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  * The TZ format is specified by POSIX, please refer to POSIX 1003.1 section 8.3
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * Example: Europe, Paris TZ=CET-1CEST,M3.5.0/2,M10.5.0/3
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * CET = designation for standard time when daylight saving is not in force
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * -1 = offset in hours = negative so 1 hour east of Greenwich meridian
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * CEST = designation when daylight saving is in force ("Central European Summer Time")
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * , = no offset number between code and comma, so default to one hour ahead for daylight saving
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * M3.5.0 = when daylight saving starts = the last Sunday in March (the "5th" week means the last in the month)
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * /2, = the local time when the switch occurs = 2 a.m. in this case
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * M10.5.0 = when daylight saving ends = the last Sunday in October.
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * /3, = the local time when the switch occurs = 3 a.m. in this case
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * 
  * <p>
  * Java-Klasse f�r TimeZone complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="TimeZone">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="TZ" type="{http://www.w3.org/2001/XMLSchema}token"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -102,7 +102,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlType(name = "TimeZone", propOrder = { "tz" })
 public class TimeZone {
 
-	@XmlElement(name = "TZ", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "TZ", required = true)
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	@XmlSchemaType(name = "token")
 	protected String tz;

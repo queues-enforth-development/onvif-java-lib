@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,25 +26,25 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r AudioEncoderConfiguration complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="AudioEncoderConfiguration">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}ConfigurationEntity">
- *       <sequence>
+         <sequence>
  *         <element name="Encoding" type="{http://www.onvif.org/ver10/schema}AudioEncoding"/>
  *         <element name="Bitrate" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="SampleRate" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="Multicast" type="{http://www.onvif.org/ver10/schema}MulticastConfiguration"/>
  *         <element name="SessionTimeout" type="{http://www.w3.org/2001/XMLSchema}duration"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -52,20 +52,43 @@ import org.w3c.dom.Element;
 @XmlType(name = "AudioEncoderConfiguration", propOrder = { "encoding", "bitrate", "sampleRate", "multicast", "sessionTimeout", "any" })
 public class AudioEncoderConfiguration extends ConfigurationEntity {
 
-	@XmlElement(name = "Encoding", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Encoding", required = true)
 	protected AudioEncoding encoding;
-	@XmlElement(name = "Bitrate")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Bitrate")
 	protected int bitrate;
-	@XmlElement(name = "SampleRate")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SampleRate")
 	protected int sampleRate;
-	@XmlElement(name = "Multicast", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Multicast", required = true)
 	protected MulticastConfiguration multicast;
-	@XmlElement(name = "SessionTimeout", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "SessionTimeout", required = true)
 	protected Duration sessionTimeout;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der encoding-Eigenschaft ab.
@@ -91,6 +114,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der bitrate-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getBitrate() {
 		return bitrate;
@@ -99,6 +123,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der bitrate-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setBitrate(int value) {
 		this.bitrate = value;
@@ -107,6 +132,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der sampleRate-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getSampleRate() {
 		return sampleRate;
@@ -115,6 +141,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sampleRate-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setSampleRate(int value) {
 		this.sampleRate = value;
@@ -172,19 +199,20 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

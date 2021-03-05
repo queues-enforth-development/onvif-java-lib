@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -17,21 +17,21 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r Date complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Date">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Year" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="Month" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="Day" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,16 +39,28 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Date", propOrder = { "year", "month", "day" })
 public class Date {
 
-	@XmlElement(name = "Year")
+    /**
+     *
+     */
+    @XmlElement(name = "Year")
 	protected int year;
-	@XmlElement(name = "Month")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Month")
 	protected int month;
-	@XmlElement(name = "Day")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Day")
 	protected int day;
 
 	/**
 	 * Ruft den Wert der year-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getYear() {
 		return year;
@@ -57,6 +69,7 @@ public class Date {
 	/**
 	 * Legt den Wert der year-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setYear(int value) {
 		this.year = value;
@@ -65,6 +78,7 @@ public class Date {
 	/**
 	 * Ruft den Wert der month-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getMonth() {
 		return month;
@@ -73,6 +87,7 @@ public class Date {
 	/**
 	 * Legt den Wert der month-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMonth(int value) {
 		this.month = value;
@@ -81,6 +96,7 @@ public class Date {
 	/**
 	 * Ruft den Wert der day-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getDay() {
 		return day;
@@ -89,6 +105,7 @@ public class Date {
 	/**
 	 * Legt den Wert der day-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDay(int value) {
 		this.day = value;

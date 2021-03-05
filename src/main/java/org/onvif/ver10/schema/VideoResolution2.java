@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -25,9 +25,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für VideoResolution2 complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="VideoResolution2">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -40,7 +40,7 @@ import org.w3c.dom.Element;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -52,18 +52,30 @@ import org.w3c.dom.Element;
 })
 public class VideoResolution2 {
 
+    /**
+     *
+     */
     @XmlElement(name = "Width")
     protected int width;
+
+    /**
+     *
+     */
     @XmlElement(name = "Height")
     protected int height;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<java.lang.Object> any;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der width-Eigenschaft ab.
      * 
+     * @return 
      */
     public int getWidth() {
         return width;
@@ -72,6 +84,7 @@ public class VideoResolution2 {
     /**
      * Legt den Wert der width-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setWidth(int value) {
         this.width = value;
@@ -80,6 +93,7 @@ public class VideoResolution2 {
     /**
      * Ruft den Wert der height-Eigenschaft ab.
      * 
+     * @return 
      */
     public int getHeight() {
         return height;
@@ -88,6 +102,7 @@ public class VideoResolution2 {
     /**
      * Legt den Wert der height-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setHeight(int value) {
         this.height = value;
@@ -104,9 +119,9 @@ public class VideoResolution2 {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -115,10 +130,11 @@ public class VideoResolution2 {
      * {@link java.lang.Object }
      * 
      * 
+     * @return 
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
-            any = new ArrayList<java.lang.Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

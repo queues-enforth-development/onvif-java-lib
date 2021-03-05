@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,24 +23,24 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r VideoOutput complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="VideoOutput">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}DeviceEntity">
- *       <sequence>
+         <sequence>
  *         <element name="Layout" type="{http://www.onvif.org/ver10/schema}Layout"/>
  *         <element name="Resolution" type="{http://www.onvif.org/ver10/schema}VideoResolution" minOccurs="0"/>
  *         <element name="RefreshRate" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         <element name="AspectRatio" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}VideoOutputExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -48,18 +48,37 @@ import javax.xml.namespace.QName;
 @XmlType(name = "VideoOutput", propOrder = { "layout", "resolution", "refreshRate", "aspectRatio", "extension" })
 public class VideoOutput extends DeviceEntity {
 
-	@XmlElement(name = "Layout", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Layout", required = true)
 	protected Layout layout;
-	@XmlElement(name = "Resolution")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Resolution")
 	protected VideoResolution resolution;
-	@XmlElement(name = "RefreshRate")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RefreshRate")
 	protected Float refreshRate;
-	@XmlElement(name = "AspectRatio")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AspectRatio")
 	protected Float aspectRatio;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected VideoOutputExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der layout-Eigenschaft ab.

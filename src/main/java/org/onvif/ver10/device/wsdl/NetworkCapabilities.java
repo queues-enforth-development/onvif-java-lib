@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.device.wsdl;
@@ -21,12 +21,12 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r NetworkCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="NetworkCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="IPFilter" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="ZeroConfiguration" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="IPVersion6" type="{http://www.w3.org/2001/XMLSchema}boolean" />
@@ -36,11 +36,11 @@ import javax.xml.namespace.QName;
  *       <attribute name="HostnameFromDHCP" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *       <attribute name="NTP" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="DHCPv6" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -48,26 +48,61 @@ import javax.xml.namespace.QName;
 @XmlType(name = "NetworkCapabilities")
 public class NetworkCapabilities {
 
-	@XmlAttribute(name = "IPFilter")
+    /**
+     *
+     */
+    @XmlAttribute(name = "IPFilter")
 	protected Boolean ipFilter;
-	@XmlAttribute(name = "ZeroConfiguration")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "ZeroConfiguration")
 	protected Boolean zeroConfiguration;
-	@XmlAttribute(name = "IPVersion6")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "IPVersion6")
 	protected Boolean ipVersion6;
-	@XmlAttribute(name = "DynDNS")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "DynDNS")
 	protected Boolean dynDNS;
-	@XmlAttribute(name = "Dot11Configuration")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Dot11Configuration")
 	protected Boolean dot11Configuration;
-	@XmlAttribute(name = "Dot1XConfigurations")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Dot1XConfigurations")
 	protected Integer dot1XConfigurations;
-	@XmlAttribute(name = "HostnameFromDHCP")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "HostnameFromDHCP")
 	protected Boolean hostnameFromDHCP;
-	@XmlAttribute(name = "NTP")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "NTP")
 	protected Integer ntp;
-	@XmlAttribute(name = "DHCPv6")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "DHCPv6")
 	protected Boolean dhcPv6;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der ipFilter-Eigenschaft ab.

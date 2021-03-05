@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.w3._2005._08.addressing;
@@ -48,6 +48,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EndpointReferenceType }
 	 * 
+     * @return 
 	 */
 	public EndpointReferenceType createEndpointReferenceType() {
 		return new EndpointReferenceType();
@@ -56,6 +57,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ProblemActionType }
 	 * 
+     * @return 
 	 */
 	public ProblemActionType createProblemActionType() {
 		return new ProblemActionType();
@@ -64,6 +66,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedAnyType }
 	 * 
+     * @return 
 	 */
 	public AttributedAnyType createAttributedAnyType() {
 		return new AttributedAnyType();
@@ -72,6 +75,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedURIType }
 	 * 
+     * @return 
 	 */
 	public AttributedURIType createAttributedURIType() {
 		return new AttributedURIType();
@@ -80,6 +84,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedQNameType }
 	 * 
+     * @return 
 	 */
 	public AttributedQNameType createAttributedQNameType() {
 		return new AttributedQNameType();
@@ -88,6 +93,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedUnsignedLongType }
 	 * 
+     * @return 
 	 */
 	public AttributedUnsignedLongType createAttributedUnsignedLongType() {
 		return new AttributedUnsignedLongType();
@@ -96,6 +102,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataType }
 	 * 
+     * @return 
 	 */
 	public MetadataType createMetadataType() {
 		return new MetadataType();
@@ -104,6 +111,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelatesToType }
 	 * 
+     * @return 
 	 */
 	public RelatesToType createRelatesToType() {
 		return new RelatesToType();
@@ -112,6 +120,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReferenceParametersType }
 	 * 
+     * @return 
 	 */
 	public ReferenceParametersType createReferenceParametersType() {
 		return new ReferenceParametersType();
@@ -120,127 +129,155 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "EndpointReference")
 	public JAXBElement<EndpointReferenceType> createEndpointReference(EndpointReferenceType value) {
-		return new JAXBElement<EndpointReferenceType>(_EndpointReference_QNAME, EndpointReferenceType.class, null, value);
+		return new JAXBElement<>(_EndpointReference_QNAME, EndpointReferenceType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedQNameType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemHeaderQName")
 	public JAXBElement<AttributedQNameType> createProblemHeaderQName(AttributedQNameType value) {
-		return new JAXBElement<AttributedQNameType>(_ProblemHeaderQName_QNAME, AttributedQNameType.class, null, value);
+		return new JAXBElement<>(_ProblemHeaderQName_QNAME, AttributedQNameType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedUnsignedLongType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "RetryAfter")
 	public JAXBElement<AttributedUnsignedLongType> createRetryAfter(AttributedUnsignedLongType value) {
-		return new JAXBElement<AttributedUnsignedLongType>(_RetryAfter_QNAME, AttributedUnsignedLongType.class, null, value);
+		return new JAXBElement<>(_RetryAfter_QNAME, AttributedUnsignedLongType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "To")
 	public JAXBElement<AttributedURIType> createTo(AttributedURIType value) {
-		return new JAXBElement<AttributedURIType>(_To_QNAME, AttributedURIType.class, null, value);
+		return new JAXBElement<>(_To_QNAME, AttributedURIType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedAnyType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemHeader")
 	public JAXBElement<AttributedAnyType> createProblemHeader(AttributedAnyType value) {
-		return new JAXBElement<AttributedAnyType>(_ProblemHeader_QNAME, AttributedAnyType.class, null, value);
+		return new JAXBElement<>(_ProblemHeader_QNAME, AttributedAnyType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MetadataType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "Metadata")
 	public JAXBElement<MetadataType> createMetadata(MetadataType value) {
-		return new JAXBElement<MetadataType>(_Metadata_QNAME, MetadataType.class, null, value);
+		return new JAXBElement<>(_Metadata_QNAME, MetadataType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "MessageID")
 	public JAXBElement<AttributedURIType> createMessageID(AttributedURIType value) {
-		return new JAXBElement<AttributedURIType>(_MessageID_QNAME, AttributedURIType.class, null, value);
+		return new JAXBElement<>(_MessageID_QNAME, AttributedURIType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemIRI")
 	public JAXBElement<AttributedURIType> createProblemIRI(AttributedURIType value) {
-		return new JAXBElement<AttributedURIType>(_ProblemIRI_QNAME, AttributedURIType.class, null, value);
+		return new JAXBElement<>(_ProblemIRI_QNAME, AttributedURIType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "From")
 	public JAXBElement<EndpointReferenceType> createFrom(EndpointReferenceType value) {
-		return new JAXBElement<EndpointReferenceType>(_From_QNAME, EndpointReferenceType.class, null, value);
+		return new JAXBElement<>(_From_QNAME, EndpointReferenceType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ReplyTo")
 	public JAXBElement<EndpointReferenceType> createReplyTo(EndpointReferenceType value) {
-		return new JAXBElement<EndpointReferenceType>(_ReplyTo_QNAME, EndpointReferenceType.class, null, value);
+		return new JAXBElement<>(_ReplyTo_QNAME, EndpointReferenceType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "Action")
 	public JAXBElement<AttributedURIType> createAction(AttributedURIType value) {
-		return new JAXBElement<AttributedURIType>(_Action_QNAME, AttributedURIType.class, null, value);
+		return new JAXBElement<>(_Action_QNAME, AttributedURIType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "FaultTo")
 	public JAXBElement<EndpointReferenceType> createFaultTo(EndpointReferenceType value) {
-		return new JAXBElement<EndpointReferenceType>(_FaultTo_QNAME, EndpointReferenceType.class, null, value);
+		return new JAXBElement<>(_FaultTo_QNAME, EndpointReferenceType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link ProblemActionType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemAction")
 	public JAXBElement<ProblemActionType> createProblemAction(ProblemActionType value) {
-		return new JAXBElement<ProblemActionType>(_ProblemAction_QNAME, ProblemActionType.class, null, value);
+		return new JAXBElement<>(_ProblemAction_QNAME, ProblemActionType.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link RelatesToType }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "RelatesTo")
 	public JAXBElement<RelatesToType> createRelatesTo(RelatesToType value) {
-		return new JAXBElement<RelatesToType>(_RelatesTo_QNAME, RelatesToType.class, null, value);
+		return new JAXBElement<>(_RelatesTo_QNAME, RelatesToType.class, null, value);
 	}
 
 }

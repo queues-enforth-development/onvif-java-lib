@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -26,9 +26,9 @@ import org.onvif.ver10.schema.VideoResolution;
 /**
  * <p>Java-Klasse für VideoSourceMode complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="VideoSourceMode">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -46,7 +46,7 @@ import org.onvif.ver10.schema.VideoResolution;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -61,29 +61,61 @@ import org.onvif.ver10.schema.VideoResolution;
 })
 public class VideoSourceMode {
 
+    /**
+     *
+     */
     @XmlElement(name = "MaxFramerate")
     protected float maxFramerate;
+
+    /**
+     *
+     */
     @XmlElement(name = "MaxResolution", required = true)
     protected VideoResolution maxResolution;
+
+    /**
+     *
+     */
     @XmlList
     @XmlElement(name = "Encodings", required = true)
     protected List<String> encodings;
+
+    /**
+     *
+     */
     @XmlElement(name = "Reboot")
     protected boolean reboot;
+
+    /**
+     *
+     */
     @XmlElement(name = "Description")
     protected String description;
+
+    /**
+     *
+     */
     @XmlElement(name = "Extension")
     protected VideoSourceModeExtension extension;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "token", required = true)
     protected String token;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "Enabled")
     protected Boolean enabled;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der maxFramerate-Eigenschaft ab.
      * 
+     * @return 
      */
     public float getMaxFramerate() {
         return maxFramerate;
@@ -92,6 +124,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der maxFramerate-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setMaxFramerate(float value) {
         this.maxFramerate = value;
@@ -132,9 +165,9 @@ public class VideoSourceMode {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getEncodings().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -142,10 +175,11 @@ public class VideoSourceMode {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getEncodings() {
         if (encodings == null) {
-            encodings = new ArrayList<String>();
+            encodings = new ArrayList<>();
         }
         return this.encodings;
     }
@@ -153,6 +187,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der reboot-Eigenschaft ab.
      * 
+     * @return 
      */
     public boolean isReboot() {
         return reboot;
@@ -161,6 +196,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der reboot-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setReboot(boolean value) {
         this.reboot = value;

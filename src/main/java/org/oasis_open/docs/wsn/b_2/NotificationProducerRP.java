@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsn.b_2;
@@ -19,25 +19,25 @@ import org.oasis_open.docs.wsn.t_1.TopicSetType;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element ref="{http://docs.oasis-open.org/wsn/b-2}TopicExpression" maxOccurs="unbounded" minOccurs="0"/>
  *         <element ref="{http://docs.oasis-open.org/wsn/b-2}FixedTopicSet" minOccurs="0"/>
  *         <element ref="{http://docs.oasis-open.org/wsn/b-2}TopicExpressionDialect" maxOccurs="unbounded" minOccurs="0"/>
  *         <element ref="{http://docs.oasis-open.org/wsn/t-1}TopicSet" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -46,14 +46,29 @@ import org.oasis_open.docs.wsn.t_1.TopicSetType;
 @XmlRootElement(name = "NotificationProducerRP")
 public class NotificationProducerRP {
 
-	@XmlElement(name = "TopicExpression")
+    /**
+     *
+     */
+    @XmlElement(name = "TopicExpression")
 	protected List<TopicExpressionType> topicExpression;
-	@XmlElement(name = "FixedTopicSet", defaultValue = "true")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FixedTopicSet", defaultValue = "true")
 	protected Boolean fixedTopicSet;
-	@XmlElement(name = "TopicExpressionDialect")
+
+    /**
+     *
+     */
+    @XmlElement(name = "TopicExpressionDialect")
 	@XmlSchemaType(name = "anyURI")
 	protected List<String> topicExpressionDialect;
-	@XmlElement(name = "TopicSet", namespace = "http://docs.oasis-open.org/wsn/t-1")
+
+    /**
+     *
+     */
+    @XmlElement(name = "TopicSet", namespace = "http://docs.oasis-open.org/wsn/t-1")
 	protected TopicSetType topicSet;
 
 	/**
@@ -66,19 +81,20 @@ public class NotificationProducerRP {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getTopicExpression().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link TopicExpressionType }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<TopicExpressionType> getTopicExpression() {
 		if (topicExpression == null) {
-			topicExpression = new ArrayList<TopicExpressionType>();
+			topicExpression = new ArrayList<>();
 		}
 		return this.topicExpression;
 	}
@@ -114,19 +130,20 @@ public class NotificationProducerRP {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getTopicExpressionDialect().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getTopicExpressionDialect() {
 		if (topicExpressionDialect == null) {
-			topicExpressionDialect = new ArrayList<String>();
+			topicExpressionDialect = new ArrayList<>();
 		}
 		return this.topicExpressionDialect;
 	}

@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
 // Generiert: 2014.02.17 um 11:33:29 AM CET 
 //
 
@@ -16,23 +16,23 @@ import org.onvif.ver10.schema.PTZSpeed;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="ProfileToken" type="{http://www.onvif.org/ver10/schema}ReferenceToken"/>
  *         <element name="Speed" type="{http://www.onvif.org/ver10/schema}PTZSpeed" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -41,9 +41,16 @@ import org.onvif.ver10.schema.PTZSpeed;
 @XmlRootElement(name = "GotoHomePosition")
 public class GotoHomePosition {
 
-	@XmlElement(name = "ProfileToken", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "ProfileToken", required = true)
 	protected String profileToken;
-	@XmlElement(name = "Speed")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Speed")
 	protected PTZSpeed speed;
 
 	/**

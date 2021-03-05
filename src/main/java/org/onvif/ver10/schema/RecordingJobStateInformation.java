@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,23 +23,23 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r RecordingJobStateInformation complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="RecordingJobStateInformation">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="RecordingToken" type="{http://www.onvif.org/ver10/schema}RecordingReference"/>
  *         <element name="State" type="{http://www.onvif.org/ver10/schema}RecordingJobState"/>
  *         <element name="Sources" type="{http://www.onvif.org/ver10/schema}RecordingJobStateSource" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}RecordingJobStateInformationExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,16 +47,31 @@ import javax.xml.namespace.QName;
 @XmlType(name = "RecordingJobStateInformation", propOrder = { "recordingToken", "state", "sources", "extension" })
 public class RecordingJobStateInformation {
 
-	@XmlElement(name = "RecordingToken", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "RecordingToken", required = true)
 	protected String recordingToken;
-	@XmlElement(name = "State", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "State", required = true)
 	protected String state;
-	@XmlElement(name = "Sources")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Sources")
 	protected List<RecordingJobStateSource> sources;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected RecordingJobStateInformationExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der recordingToken-Eigenschaft ab.
@@ -110,19 +125,20 @@ public class RecordingJobStateInformation {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSources().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link RecordingJobStateSource }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<RecordingJobStateSource> getSources() {
 		if (sources == null) {
-			sources = new ArrayList<RecordingJobStateSource>();
+			sources = new ArrayList<>();
 		}
 		return this.sources;
 	}

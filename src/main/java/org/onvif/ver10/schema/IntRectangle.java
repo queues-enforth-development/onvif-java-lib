@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -19,20 +19,20 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r IntRectangle complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="IntRectangle">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="x" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="y" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="width" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
  *       <attribute name="height" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -40,18 +40,34 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "IntRectangle")
 public class IntRectangle {
 
-	@XmlAttribute(name = "x", required = true)
+    /**
+     *
+     */
+    @XmlAttribute(name = "x", required = true)
 	protected int x;
-	@XmlAttribute(name = "y", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "y", required = true)
 	protected int y;
-	@XmlAttribute(name = "width", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "width", required = true)
 	protected int width;
-	@XmlAttribute(name = "height", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "height", required = true)
 	protected int height;
 
 	/**
 	 * Ruft den Wert der x-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getX() {
 		return x;
@@ -60,6 +76,7 @@ public class IntRectangle {
 	/**
 	 * Legt den Wert der x-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setX(int value) {
 		this.x = value;
@@ -68,6 +85,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der y-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getY() {
 		return y;
@@ -76,6 +94,7 @@ public class IntRectangle {
 	/**
 	 * Legt den Wert der y-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setY(int value) {
 		this.y = value;
@@ -84,6 +103,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der width-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getWidth() {
 		return width;
@@ -92,6 +112,7 @@ public class IntRectangle {
 	/**
 	 * Legt den Wert der width-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setWidth(int value) {
 		this.width = value;
@@ -100,6 +121,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der height-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getHeight() {
 		return height;
@@ -108,6 +130,7 @@ public class IntRectangle {
 	/**
 	 * Legt den Wert der height-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setHeight(int value) {
 		this.height = value;

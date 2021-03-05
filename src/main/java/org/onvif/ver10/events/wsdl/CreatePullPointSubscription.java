@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -23,34 +23,34 @@ import org.w3c.dom.Element;
 
 
 /**
- * <p>Java-Klasse for anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Filter" type="{http://docs.oasis-open.org/wsn/b-2}FilterType" minOccurs="0"/>
  *         <element name="InitialTerminationTime" type="{http://docs.oasis-open.org/wsn/b-2}AbsoluteOrRelativeTimeType" minOccurs="0"/>
  *         <element name="SubscriptionPolicy" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 <sequence>
- *                   <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *                 </sequence>
- *               </restriction>
- *             </complexContent>
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                   <sequence>
+                     <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+                   </sequence>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -64,12 +64,27 @@ import org.w3c.dom.Element;
 @XmlRootElement(name = "CreatePullPointSubscription")
 public class CreatePullPointSubscription {
 
+    /**
+     *
+     */
     @XmlElement(name = "Filter")
     protected FilterType filter;
+
+    /**
+     *
+     */
     @XmlElementRef(name = "InitialTerminationTime", namespace = "http://www.onvif.org/ver10/events/wsdl", type = JAXBElement.class, required = false)
     protected JAXBElement<String> initialTerminationTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubscriptionPolicy")
     protected CreatePullPointSubscription.SubscriptionPolicy subscriptionPolicy;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -156,9 +171,9 @@ public class CreatePullPointSubscription {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -167,31 +182,32 @@ public class CreatePullPointSubscription {
      * {@link Element }
      * 
      * 
+     * @return 
      */
     public List<Object> getAny() {
         if (any == null) {
-            any = new ArrayList<Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }
 
 
     /**
-     * <p>Java-Klasse for anonymous complex type.
+     * <p>Java-Class for anonymous complex type.
      * 
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+     * <p>The following schema fragment indicates the expected content contained in this class.
      * 
-     * <pre>
-     * <complexType>
-     *   <complexContent>
-     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       <sequence>
-     *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
-     *       </sequence>
-     *     </restriction>
-     *   </complexContent>
-     * </complexType>
-     * </pre>
+     * <pre>{@code
+       <complexType>
+         <complexContent>
+           <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             <sequence>
+               <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+             </sequence>
+           </restriction>
+         </complexContent>
+       </complexType>
+     * }</pre>
      * 
      * 
      */
@@ -201,6 +217,9 @@ public class CreatePullPointSubscription {
     })
     public static class SubscriptionPolicy {
 
+        /**
+         *
+         */
         @XmlAnyElement(lax = true)
         protected List<Object> any;
 
@@ -215,9 +234,9 @@ public class CreatePullPointSubscription {
          * 
          * <p>
          * For example, to add a new item, do as follows:
-         * <pre>
+         * <pre>{@code
          *    getAny().add(newItem);
-         * </pre>
+         * }</pre>
          * 
          * 
          * <p>
@@ -226,10 +245,11 @@ public class CreatePullPointSubscription {
          * {@link Element }
          * 
          * 
+         * @return 
          */
         public List<Object> getAny() {
             if (any == null) {
-                any = new ArrayList<Object>();
+                any = new ArrayList<>();
             }
             return this.any;
         }

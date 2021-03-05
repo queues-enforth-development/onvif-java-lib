@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -19,20 +19,20 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * Java-Klasse f�r PrefixedIPv4Address complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="PrefixedIPv4Address">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Address" type="{http://www.onvif.org/ver10/schema}IPv4Address"/>
  *         <element name="PrefixLength" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -40,10 +40,17 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlType(name = "PrefixedIPv4Address", propOrder = { "address", "prefixLength" })
 public class PrefixedIPv4Address {
 
-	@XmlElement(name = "Address", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Address", required = true)
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	protected String address;
-	@XmlElement(name = "PrefixLength")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PrefixLength")
 	protected int prefixLength;
 
 	/**
@@ -70,6 +77,7 @@ public class PrefixedIPv4Address {
 	/**
 	 * Ruft den Wert der prefixLength-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getPrefixLength() {
 		return prefixLength;
@@ -78,6 +86,7 @@ public class PrefixedIPv4Address {
 	/**
 	 * Legt den Wert der prefixLength-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setPrefixLength(int value) {
 		this.prefixLength = value;

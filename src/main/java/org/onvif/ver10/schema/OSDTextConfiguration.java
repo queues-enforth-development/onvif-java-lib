@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,13 +21,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r OSDTextConfiguration complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="OSDTextConfiguration">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         <element name="DateFormat" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="TimeFormat" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -36,12 +36,12 @@ import javax.xml.namespace.QName;
  *         <element name="BackgroundColor" type="{http://www.onvif.org/ver10/schema}OSDColor" minOccurs="0"/>
  *         <element name="PlainText" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}OSDTextConfigurationExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,24 +49,55 @@ import javax.xml.namespace.QName;
 @XmlType(name = "OSDTextConfiguration", propOrder = { "type", "dateFormat", "timeFormat", "fontSize", "fontColor", "backgroundColor", "plainText", "extension" })
 public class OSDTextConfiguration {
 
-	@XmlElement(name = "Type", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Type", required = true)
 	protected String type;
-	@XmlElement(name = "DateFormat")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DateFormat")
 	protected String dateFormat;
-	@XmlElement(name = "TimeFormat")
+
+    /**
+     *
+     */
+    @XmlElement(name = "TimeFormat")
 	protected String timeFormat;
-	@XmlElement(name = "FontSize")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FontSize")
 	protected Integer fontSize;
-	@XmlElement(name = "FontColor")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FontColor")
 	protected OSDColor fontColor;
-	@XmlElement(name = "BackgroundColor")
+
+    /**
+     *
+     */
+    @XmlElement(name = "BackgroundColor")
 	protected OSDColor backgroundColor;
-	@XmlElement(name = "PlainText")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PlainText")
 	protected String plainText;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected OSDTextConfigurationExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der type-Eigenschaft ab.

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,13 +23,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r PTZSpaces complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="PTZSpaces">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="AbsolutePanTiltPositionSpace" type="{http://www.onvif.org/ver10/schema}Space2DDescription" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="AbsoluteZoomPositionSpace" type="{http://www.onvif.org/ver10/schema}Space1DDescription" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="RelativePanTiltTranslationSpace" type="{http://www.onvif.org/ver10/schema}Space2DDescription" maxOccurs="unbounded" minOccurs="0"/>
@@ -39,12 +39,12 @@ import javax.xml.namespace.QName;
  *         <element name="PanTiltSpeedSpace" type="{http://www.onvif.org/ver10/schema}Space1DDescription" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="ZoomSpeedSpace" type="{http://www.onvif.org/ver10/schema}Space1DDescription" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}PTZSpacesExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -53,26 +53,61 @@ import javax.xml.namespace.QName;
 		"relativeZoomTranslationSpace", "continuousPanTiltVelocitySpace", "continuousZoomVelocitySpace", "panTiltSpeedSpace", "zoomSpeedSpace", "extension" })
 public class PTZSpaces {
 
-	@XmlElement(name = "AbsolutePanTiltPositionSpace")
+    /**
+     *
+     */
+    @XmlElement(name = "AbsolutePanTiltPositionSpace")
 	protected List<Space2DDescription> absolutePanTiltPositionSpace;
-	@XmlElement(name = "AbsoluteZoomPositionSpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AbsoluteZoomPositionSpace")
 	protected List<Space1DDescription> absoluteZoomPositionSpace;
-	@XmlElement(name = "RelativePanTiltTranslationSpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RelativePanTiltTranslationSpace")
 	protected List<Space2DDescription> relativePanTiltTranslationSpace;
-	@XmlElement(name = "RelativeZoomTranslationSpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RelativeZoomTranslationSpace")
 	protected List<Space1DDescription> relativeZoomTranslationSpace;
-	@XmlElement(name = "ContinuousPanTiltVelocitySpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ContinuousPanTiltVelocitySpace")
 	protected List<Space2DDescription> continuousPanTiltVelocitySpace;
-	@XmlElement(name = "ContinuousZoomVelocitySpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ContinuousZoomVelocitySpace")
 	protected List<Space1DDescription> continuousZoomVelocitySpace;
-	@XmlElement(name = "PanTiltSpeedSpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PanTiltSpeedSpace")
 	protected List<Space1DDescription> panTiltSpeedSpace;
-	@XmlElement(name = "ZoomSpeedSpace")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ZoomSpeedSpace")
 	protected List<Space1DDescription> zoomSpeedSpace;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected PTZSpacesExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the absolutePanTiltPositionSpace property.
@@ -84,19 +119,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAbsolutePanTiltPositionSpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space2DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space2DDescription> getAbsolutePanTiltPositionSpace() {
 		if (absolutePanTiltPositionSpace == null) {
-			absolutePanTiltPositionSpace = new ArrayList<Space2DDescription>();
+			absolutePanTiltPositionSpace = new ArrayList<>();
 		}
 		return this.absolutePanTiltPositionSpace;
 	}
@@ -111,19 +147,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAbsoluteZoomPositionSpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space1DDescription> getAbsoluteZoomPositionSpace() {
 		if (absoluteZoomPositionSpace == null) {
-			absoluteZoomPositionSpace = new ArrayList<Space1DDescription>();
+			absoluteZoomPositionSpace = new ArrayList<>();
 		}
 		return this.absoluteZoomPositionSpace;
 	}
@@ -138,19 +175,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getRelativePanTiltTranslationSpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space2DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space2DDescription> getRelativePanTiltTranslationSpace() {
 		if (relativePanTiltTranslationSpace == null) {
-			relativePanTiltTranslationSpace = new ArrayList<Space2DDescription>();
+			relativePanTiltTranslationSpace = new ArrayList<>();
 		}
 		return this.relativePanTiltTranslationSpace;
 	}
@@ -165,19 +203,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getRelativeZoomTranslationSpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space1DDescription> getRelativeZoomTranslationSpace() {
 		if (relativeZoomTranslationSpace == null) {
-			relativeZoomTranslationSpace = new ArrayList<Space1DDescription>();
+			relativeZoomTranslationSpace = new ArrayList<>();
 		}
 		return this.relativeZoomTranslationSpace;
 	}
@@ -192,19 +231,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getContinuousPanTiltVelocitySpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space2DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space2DDescription> getContinuousPanTiltVelocitySpace() {
 		if (continuousPanTiltVelocitySpace == null) {
-			continuousPanTiltVelocitySpace = new ArrayList<Space2DDescription>();
+			continuousPanTiltVelocitySpace = new ArrayList<>();
 		}
 		return this.continuousPanTiltVelocitySpace;
 	}
@@ -219,19 +259,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getContinuousZoomVelocitySpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space1DDescription> getContinuousZoomVelocitySpace() {
 		if (continuousZoomVelocitySpace == null) {
-			continuousZoomVelocitySpace = new ArrayList<Space1DDescription>();
+			continuousZoomVelocitySpace = new ArrayList<>();
 		}
 		return this.continuousZoomVelocitySpace;
 	}
@@ -246,19 +287,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getPanTiltSpeedSpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space1DDescription> getPanTiltSpeedSpace() {
 		if (panTiltSpeedSpace == null) {
-			panTiltSpeedSpace = new ArrayList<Space1DDescription>();
+			panTiltSpeedSpace = new ArrayList<>();
 		}
 		return this.panTiltSpeedSpace;
 	}
@@ -273,19 +315,20 @@ public class PTZSpaces {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getZoomSpeedSpace().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Space1DDescription> getZoomSpeedSpace() {
 		if (zoomSpeedSpace == null) {
-			zoomSpeedSpace = new ArrayList<Space1DDescription>();
+			zoomSpeedSpace = new ArrayList<>();
 		}
 		return this.zoomSpeedSpace;
 	}

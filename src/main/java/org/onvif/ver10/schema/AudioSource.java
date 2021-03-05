@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -27,21 +27,21 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r AudioSource complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="AudioSource">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}DeviceEntity">
- *       <sequence>
+         <sequence>
  *         <element name="Channels" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,16 +49,24 @@ import org.w3c.dom.Element;
 @XmlType(name = "AudioSource", propOrder = { "channels", "any" })
 public class AudioSource extends DeviceEntity {
 
-	@XmlElement(name = "Channels")
+    /**
+     *
+     */
+    @XmlElement(name = "Channels")
 	protected int channels;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der channels-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getChannels() {
 		return channels;
@@ -67,6 +75,7 @@ public class AudioSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der channels-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setChannels(int value) {
 		this.channels = value;
@@ -82,19 +91,20 @@ public class AudioSource extends DeviceEntity {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

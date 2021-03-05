@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,25 +25,25 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r PTZStatusFilterOptions complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="PTZStatusFilterOptions">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="PanTiltStatusSupported" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="ZoomStatusSupported" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="PanTiltPositionSupported" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         <element name="ZoomPositionSupported" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}PTZStatusFilterOptionsExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -52,24 +52,48 @@ import org.w3c.dom.Element;
 		"zoomPositionSupported", "extension" })
 public class PTZStatusFilterOptions {
 
-	@XmlElement(name = "PanTiltStatusSupported")
+    /**
+     *
+     */
+    @XmlElement(name = "PanTiltStatusSupported")
 	protected boolean panTiltStatusSupported;
-	@XmlElement(name = "ZoomStatusSupported")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ZoomStatusSupported")
 	protected boolean zoomStatusSupported;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
-	@XmlElement(name = "PanTiltPositionSupported")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PanTiltPositionSupported")
 	protected Boolean panTiltPositionSupported;
-	@XmlElement(name = "ZoomPositionSupported")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ZoomPositionSupported")
 	protected Boolean zoomPositionSupported;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected PTZStatusFilterOptionsExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der panTiltStatusSupported-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isPanTiltStatusSupported() {
 		return panTiltStatusSupported;
@@ -78,6 +102,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der panTiltStatusSupported-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setPanTiltStatusSupported(boolean value) {
 		this.panTiltStatusSupported = value;
@@ -86,6 +111,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Ruft den Wert der zoomStatusSupported-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isZoomStatusSupported() {
 		return zoomStatusSupported;
@@ -94,6 +120,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der zoomStatusSupported-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setZoomStatusSupported(boolean value) {
 		this.zoomStatusSupported = value;
@@ -109,19 +136,20 @@ public class PTZStatusFilterOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

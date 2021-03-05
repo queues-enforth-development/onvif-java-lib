@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -29,40 +29,40 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r ItemListDescription complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ItemListDescription">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="SimpleItemDescription" maxOccurs="unbounded" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *                 <attribute name="Type" use="required" type="{http://www.w3.org/2001/XMLSchema}QName" />
- *               </restriction>
- *             </complexContent>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
  *         <element name="ElementItemDescription" maxOccurs="unbounded" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *                 <attribute name="Type" use="required" type="{http://www.w3.org/2001/XMLSchema}QName" />
- *               </restriction>
- *             </complexContent>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ItemListDescriptionExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -70,14 +70,25 @@ import javax.xml.namespace.QName;
 @XmlType(name = "ItemListDescription", propOrder = { "simpleItemDescription", "elementItemDescription", "extension" })
 public class ItemListDescription {
 
-	@XmlElement(name = "SimpleItemDescription")
+    /**
+     *
+     */
+    @XmlElement(name = "SimpleItemDescription")
 	protected List<ItemListDescription.SimpleItemDescription> simpleItemDescription;
-	@XmlElement(name = "ElementItemDescription")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ElementItemDescription")
 	protected List<ItemListDescription.ElementItemDescription> elementItemDescription;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ItemListDescriptionExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the simpleItemDescription property.
@@ -89,19 +100,20 @@ public class ItemListDescription {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getSimpleItemDescription().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ItemListDescription.SimpleItemDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ItemListDescription.SimpleItemDescription> getSimpleItemDescription() {
 		if (simpleItemDescription == null) {
-			simpleItemDescription = new ArrayList<ItemListDescription.SimpleItemDescription>();
+			simpleItemDescription = new ArrayList<>();
 		}
 		return this.simpleItemDescription;
 	}
@@ -116,19 +128,20 @@ public class ItemListDescription {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getElementItemDescription().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ItemListDescription.ElementItemDescription }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ItemListDescription.ElementItemDescription> getElementItemDescription() {
 		if (elementItemDescription == null) {
-			elementItemDescription = new ArrayList<ItemListDescription.ElementItemDescription>();
+			elementItemDescription = new ArrayList<>();
 		}
 		return this.elementItemDescription;
 	}
@@ -171,21 +184,21 @@ public class ItemListDescription {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
 	 *       <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
 	 *       <attribute name="Type" use="required" type="{http://www.w3.org/2001/XMLSchema}QName" />
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -193,9 +206,16 @@ public class ItemListDescription {
 	@XmlType(name = "")
 	public static class ElementItemDescription {
 
-		@XmlAttribute(name = "Name", required = true)
+        /**
+         *
+         */
+        @XmlAttribute(name = "Name", required = true)
 		protected String name;
-		@XmlAttribute(name = "Type", required = true)
+
+        /**
+         *
+         */
+        @XmlAttribute(name = "Type", required = true)
 		protected QName type;
 
 		/**
@@ -244,21 +264,21 @@ public class ItemListDescription {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
 	 *       <attribute name="Name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
 	 *       <attribute name="Type" use="required" type="{http://www.w3.org/2001/XMLSchema}QName" />
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -266,9 +286,16 @@ public class ItemListDescription {
 	@XmlType(name = "")
 	public static class SimpleItemDescription {
 
-		@XmlAttribute(name = "Name", required = true)
+        /**
+         *
+         */
+        @XmlAttribute(name = "Name", required = true)
 		protected String name;
-		@XmlAttribute(name = "Type", required = true)
+
+        /**
+         *
+         */
+        @XmlAttribute(name = "Type", required = true)
 		protected QName type;
 
 		/**

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,22 +23,22 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r PTZPresetTourSupported complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="PTZPresetTourSupported">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="MaximumNumberOfPresetTours" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="PTZPresetTourOperation" type="{http://www.onvif.org/ver10/schema}PTZPresetTourOperation" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}PTZPresetTourSupportedExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -46,18 +46,30 @@ import javax.xml.namespace.QName;
 @XmlType(name = "PTZPresetTourSupported", propOrder = { "maximumNumberOfPresetTours", "ptzPresetTourOperation", "extension" })
 public class PTZPresetTourSupported {
 
-	@XmlElement(name = "MaximumNumberOfPresetTours")
+    /**
+     *
+     */
+    @XmlElement(name = "MaximumNumberOfPresetTours")
 	protected int maximumNumberOfPresetTours;
-	@XmlElement(name = "PTZPresetTourOperation")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PTZPresetTourOperation")
 	protected List<PTZPresetTourOperation> ptzPresetTourOperation;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected PTZPresetTourSupportedExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der maximumNumberOfPresetTours-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getMaximumNumberOfPresetTours() {
 		return maximumNumberOfPresetTours;
@@ -66,6 +78,7 @@ public class PTZPresetTourSupported {
 	/**
 	 * Legt den Wert der maximumNumberOfPresetTours-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMaximumNumberOfPresetTours(int value) {
 		this.maximumNumberOfPresetTours = value;
@@ -81,19 +94,20 @@ public class PTZPresetTourSupported {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getPTZPresetTourOperation().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link PTZPresetTourOperation }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<PTZPresetTourOperation> getPTZPresetTourOperation() {
 		if (ptzPresetTourOperation == null) {
-			ptzPresetTourOperation = new ArrayList<PTZPresetTourOperation>();
+			ptzPresetTourOperation = new ArrayList<>();
 		}
 		return this.ptzPresetTourOperation;
 	}

@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -18,20 +18,20 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r Color complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Color">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="X" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="Y" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="Z" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
  *       <attribute name="Colorspace" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,19 +39,35 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Color")
 public class Color {
 
-	@XmlAttribute(name = "X", required = true)
+    /**
+     *
+     */
+    @XmlAttribute(name = "X", required = true)
 	protected float x;
-	@XmlAttribute(name = "Y", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Y", required = true)
 	protected float y;
-	@XmlAttribute(name = "Z", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Z", required = true)
 	protected float z;
-	@XmlAttribute(name = "Colorspace")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "Colorspace")
 	@XmlSchemaType(name = "anyURI")
 	protected String colorspace;
 
 	/**
 	 * Ruft den Wert der x-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getX() {
 		return x;
@@ -60,6 +76,7 @@ public class Color {
 	/**
 	 * Legt den Wert der x-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setX(float value) {
 		this.x = value;
@@ -68,6 +85,7 @@ public class Color {
 	/**
 	 * Ruft den Wert der y-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getY() {
 		return y;
@@ -76,6 +94,7 @@ public class Color {
 	/**
 	 * Legt den Wert der y-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setY(float value) {
 		this.y = value;
@@ -84,6 +103,7 @@ public class Color {
 	/**
 	 * Ruft den Wert der z-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getZ() {
 		return z;
@@ -92,6 +112,7 @@ public class Color {
 	/**
 	 * Legt den Wert der z-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setZ(float value) {
 		this.z = value;

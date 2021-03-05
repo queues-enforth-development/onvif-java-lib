@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,13 +25,13 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r ImagingOptions complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ImagingOptions">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="BacklightCompensation" type="{http://www.onvif.org/ver10/schema}BacklightCompensationOptions"/>
  *         <element name="Brightness" type="{http://www.onvif.org/ver10/schema}FloatRange"/>
  *         <element name="ColorSaturation" type="{http://www.onvif.org/ver10/schema}FloatRange"/>
@@ -42,13 +42,13 @@ import org.w3c.dom.Element;
  *         <element name="Sharpness" type="{http://www.onvif.org/ver10/schema}FloatRange"/>
  *         <element name="WideDynamicRange" type="{http://www.onvif.org/ver10/schema}WideDynamicRangeOptions"/>
  *         <element name="WhiteBalance" type="{http://www.onvif.org/ver10/schema}WhiteBalanceOptions"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -57,30 +57,73 @@ import org.w3c.dom.Element;
 		"sharpness", "wideDynamicRange", "whiteBalance", "any" })
 public class ImagingOptions {
 
-	@XmlElement(name = "BacklightCompensation", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "BacklightCompensation", required = true)
 	protected BacklightCompensationOptions backlightCompensation;
-	@XmlElement(name = "Brightness", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Brightness", required = true)
 	protected FloatRange brightness;
-	@XmlElement(name = "ColorSaturation", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "ColorSaturation", required = true)
 	protected FloatRange colorSaturation;
-	@XmlElement(name = "Contrast", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Contrast", required = true)
 	protected FloatRange contrast;
-	@XmlElement(name = "Exposure", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Exposure", required = true)
 	protected ExposureOptions exposure;
-	@XmlElement(name = "Focus", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Focus", required = true)
 	protected FocusOptions focus;
-	@XmlElement(name = "IrCutFilterModes", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "IrCutFilterModes", required = true)
 	protected List<IrCutFilterMode> irCutFilterModes;
-	@XmlElement(name = "Sharpness", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Sharpness", required = true)
 	protected FloatRange sharpness;
-	@XmlElement(name = "WideDynamicRange", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "WideDynamicRange", required = true)
 	protected WideDynamicRangeOptions wideDynamicRange;
-	@XmlElement(name = "WhiteBalance", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "WhiteBalance", required = true)
 	protected WhiteBalanceOptions whiteBalance;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der backlightCompensation-Eigenschaft ab.
@@ -218,19 +261,20 @@ public class ImagingOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getIrCutFilterModes().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link IrCutFilterMode }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<IrCutFilterMode> getIrCutFilterModes() {
 		if (irCutFilterModes == null) {
-			irCutFilterModes = new ArrayList<IrCutFilterMode>();
+			irCutFilterModes = new ArrayList<>();
 		}
 		return this.irCutFilterModes;
 	}
@@ -308,19 +352,20 @@ public class ImagingOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

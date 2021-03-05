@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,32 +21,32 @@ import javax.xml.namespace.QName;
 /**
  * Describe the option of the color supported. Either list each color or define the range of color value. The following values are acceptable for Colourspace attribute.
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<ul xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;<li&gt;http://www.onvif.org/ver10/colorspace/YCbCr - YCbCr colourspace</li&gt;<li&gt;http://www.onvif.org/ver10/colorspace/CIELUV - CIE LUV</li&gt;<li&gt;http://www.onvif.org/ver10/colorspace/CIELAB - CIE 1976 (L*a*b*)</li&gt;<li&gt;http://www.onvif.org/ver10/colorspace/HSV - HSV colourspace</li&gt;</ul&gt;
- * </pre>
+ * }</pre>
  * 
  * 
  * <p>
  * Java-Klasse f�r ColorOptions complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ColorOptions">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <choice>
  *           <element name="ColorList" type="{http://www.onvif.org/ver10/schema}Color" maxOccurs="unbounded"/>
  *           <element name="ColorspaceRange" type="{http://www.onvif.org/ver10/schema}ColorspaceRange" maxOccurs="unbounded"/>
  *         </choice>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -54,12 +54,19 @@ import javax.xml.namespace.QName;
 @XmlType(name = "ColorOptions", propOrder = { "colorList", "colorspaceRange" })
 public class ColorOptions {
 
-	@XmlElement(name = "ColorList")
+    /**
+     *
+     */
+    @XmlElement(name = "ColorList")
 	protected List<Color> colorList;
-	@XmlElement(name = "ColorspaceRange")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ColorspaceRange")
 	protected List<ColorspaceRange> colorspaceRange;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the colorList property.
@@ -71,19 +78,20 @@ public class ColorOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getColorList().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Color }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Color> getColorList() {
 		if (colorList == null) {
-			colorList = new ArrayList<Color>();
+			colorList = new ArrayList<>();
 		}
 		return this.colorList;
 	}
@@ -98,19 +106,20 @@ public class ColorOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getColorspaceRange().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ColorspaceRange }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ColorspaceRange> getColorspaceRange() {
 		if (colorspaceRange == null) {
-			colorspaceRange = new ArrayList<ColorspaceRange>();
+			colorspaceRange = new ArrayList<>();
 		}
 		return this.colorspaceRange;
 	}

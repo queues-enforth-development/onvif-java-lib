@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.w3._2005._08.addressing;
@@ -25,23 +25,23 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r EndpointReferenceType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="EndpointReferenceType">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Address" type="{http://www.w3.org/2005/08/addressing}AttributedURIType"/>
  *         <element name="ReferenceParameters" type="{http://www.w3.org/2005/08/addressing}ReferenceParametersType" minOccurs="0"/>
  *         <element ref="{http://www.w3.org/2005/08/addressing}Metadata" minOccurs="0"/>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax' namespace='##other'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax' namespace='##other'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,16 +49,31 @@ import org.w3c.dom.Element;
 @XmlType(name = "EndpointReferenceType", propOrder = { "address", "referenceParameters", "metadata", "any" })
 public class EndpointReferenceType {
 
-	@XmlElement(name = "Address", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Address", required = true)
 	protected AttributedURIType address;
-	@XmlElement(name = "ReferenceParameters")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ReferenceParameters")
 	protected ReferenceParametersType referenceParameters;
-	@XmlElement(name = "Metadata")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Metadata")
 	protected MetadataType metadata;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der address-Eigenschaft ab.
@@ -133,19 +148,20 @@ public class EndpointReferenceType {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

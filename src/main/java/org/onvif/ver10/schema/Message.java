@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -22,28 +22,28 @@ import javax.xml.namespace.QName;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Source" type="{http://www.onvif.org/ver10/schema}ItemList" minOccurs="0"/>
  *         <element name="Key" type="{http://www.onvif.org/ver10/schema}ItemList" minOccurs="0"/>
  *         <element name="Data" type="{http://www.onvif.org/ver10/schema}ItemList" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}MessageExtension" minOccurs="0"/>
- *       </sequence>
+         </sequence>
  *       <attribute name="UtcTime" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
  *       <attribute name="PropertyOperation" type="{http://www.onvif.org/ver10/schema}PropertyOperation" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -52,21 +52,44 @@ import javax.xml.namespace.QName;
 @XmlRootElement(name = "Message")
 public class Message {
 
-	@XmlElement(name = "Source")
+    /**
+     *
+     */
+    @XmlElement(name = "Source")
 	protected ItemList source;
-	@XmlElement(name = "Key")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Key")
 	protected ItemList key;
-	@XmlElement(name = "Data")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Data")
 	protected ItemList data;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected MessageExtension extension;
-	@XmlAttribute(name = "UtcTime", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "UtcTime", required = true)
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar utcTime;
-	@XmlAttribute(name = "PropertyOperation")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "PropertyOperation")
 	protected PropertyOperation propertyOperation;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der source-Eigenschaft ab.

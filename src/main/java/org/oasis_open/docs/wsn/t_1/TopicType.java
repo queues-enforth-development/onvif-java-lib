@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsn.t_1;
@@ -26,17 +26,17 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r TopicType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="TopicType">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://docs.oasis-open.org/wsn/t-1}ExtensibleDocumented">
- *       <sequence>
+         <sequence>
  *         <element name="MessagePattern" type="{http://docs.oasis-open.org/wsn/t-1}QueryExpressionType" minOccurs="0"/>
  *         <element name="Topic" type="{http://docs.oasis-open.org/wsn/t-1}TopicType" maxOccurs="unbounded" minOccurs="0"/>
- *         <any namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
+           <any namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
  *       <attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" />
  *       <attribute name="messageTypes">
  *         <simpleType>
@@ -44,11 +44,11 @@ import javax.xml.namespace.QName;
  *         </simpleType>
  *       </attribute>
  *       <attribute name="final" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" />
- *       <anyAttribute processContents='lax' namespace='##other'/>
+         <anyAttribute processContents='lax' namespace='##other'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -57,19 +57,42 @@ import javax.xml.namespace.QName;
 @XmlSeeAlso({ org.oasis_open.docs.wsn.t_1.TopicNamespaceType.Topic.class })
 public class TopicType extends ExtensibleDocumented {
 
-	@XmlElement(name = "MessagePattern")
+    /**
+     *
+     */
+    @XmlElement(name = "MessagePattern")
 	protected QueryExpressionType messagePattern;
-	@XmlElement(name = "Topic")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Topic")
 	protected List<TopicType> topic;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
-	@XmlAttribute(name = "name", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "name", required = true)
 	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
 	@XmlSchemaType(name = "NCName")
 	protected String name;
-	@XmlAttribute(name = "messageTypes")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "messageTypes")
 	protected List<QName> messageTypes;
-	@XmlAttribute(name = "final")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "final")
 	protected Boolean _final;
 
 	/**
@@ -103,19 +126,20 @@ public class TopicType extends ExtensibleDocumented {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getTopic().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link TopicType }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<TopicType> getTopic() {
 		if (topic == null) {
-			topic = new ArrayList<TopicType>();
+			topic = new ArrayList<>();
 		}
 		return this.topic;
 	}
@@ -130,19 +154,20 @@ public class TopicType extends ExtensibleDocumented {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}
@@ -178,19 +203,20 @@ public class TopicType extends ExtensibleDocumented {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getMessageTypes().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link QName }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<QName> getMessageTypes() {
 		if (messageTypes == null) {
-			messageTypes = new ArrayList<QName>();
+			messageTypes = new ArrayList<>();
 		}
 		return this.messageTypes;
 	}

@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -26,9 +26,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für VideoEncoder2Configuration complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="VideoEncoder2Configuration">
  *   &lt;complexContent>
  *     &lt;extension base="{http://www.onvif.org/ver10/schema}ConfigurationEntity">
@@ -46,7 +46,7 @@ import org.w3c.dom.Element;
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -63,24 +63,55 @@ public class VideoEncoder2Configuration
     extends ConfigurationEntity
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "Encoding", required = true)
     protected String encoding;
+
+    /**
+     *
+     */
     @XmlElement(name = "Resolution", required = true)
     protected VideoResolution2 resolution;
+
+    /**
+     *
+     */
     @XmlElement(name = "RateControl")
     protected VideoRateControl2 rateControl;
+
+    /**
+     *
+     */
     @XmlElement(name = "Multicast")
     protected MulticastConfiguration multicast;
+
+    /**
+     *
+     */
     @XmlElement(name = "Quality")
     protected float quality;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<java.lang.Object> any;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "GovLength")
     protected Integer govLength;
+
+    /**
+     *
+     */
     @XmlAttribute(name = "Profile")
     protected String profile;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der encoding-Eigenschaft ab.
@@ -181,6 +212,7 @@ public class VideoEncoder2Configuration
     /**
      * Ruft den Wert der quality-Eigenschaft ab.
      * 
+     * @return 
      */
     public float getQuality() {
         return quality;
@@ -189,6 +221,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der quality-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setQuality(float value) {
         this.quality = value;
@@ -205,9 +238,9 @@ public class VideoEncoder2Configuration
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -216,10 +249,11 @@ public class VideoEncoder2Configuration
      * {@link java.lang.Object }
      * 
      * 
+     * @return 
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
-            any = new ArrayList<java.lang.Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

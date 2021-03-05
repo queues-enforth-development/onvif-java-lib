@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
 // Generiert: 2014.02.19 um 02:35:56 PM CET 
 //
 
@@ -18,22 +18,22 @@ import org.onvif.ver10.schema.VideoSource;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="VideoSources" type="{http://www.onvif.org/ver10/schema}VideoSource" maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -42,7 +42,10 @@ import org.onvif.ver10.schema.VideoSource;
 @XmlRootElement(name = "GetVideoSourcesResponse")
 public class GetVideoSourcesResponse {
 
-	@XmlElement(name = "VideoSources")
+    /**
+     *
+     */
+    @XmlElement(name = "VideoSources")
 	protected List<VideoSource> videoSources;
 
 	/**
@@ -55,19 +58,20 @@ public class GetVideoSourcesResponse {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getVideoSources().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link VideoSource }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<VideoSource> getVideoSources() {
 		if (videoSources == null) {
-			videoSources = new ArrayList<VideoSource>();
+			videoSources = new ArrayList<>();
 		}
 		return this.videoSources;
 	}

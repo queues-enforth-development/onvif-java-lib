@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,26 +26,26 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r RecordingCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="RecordingCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="XAddr" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
  *         <element name="ReceiverSource" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="MediaProfileSource" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="DynamicRecordings" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="DynamicTracks" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="MaxStringLength" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -54,23 +54,50 @@ import org.w3c.dom.Element;
 		"maxStringLength", "any" })
 public class RecordingCapabilities {
 
-	@XmlElement(name = "XAddr", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "XAddr", required = true)
 	@XmlSchemaType(name = "anyURI")
 	protected String xAddr;
-	@XmlElement(name = "ReceiverSource")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ReceiverSource")
 	protected boolean receiverSource;
-	@XmlElement(name = "MediaProfileSource")
+
+    /**
+     *
+     */
+    @XmlElement(name = "MediaProfileSource")
 	protected boolean mediaProfileSource;
-	@XmlElement(name = "DynamicRecordings")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DynamicRecordings")
 	protected boolean dynamicRecordings;
-	@XmlElement(name = "DynamicTracks")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DynamicTracks")
 	protected boolean dynamicTracks;
-	@XmlElement(name = "MaxStringLength")
+
+    /**
+     *
+     */
+    @XmlElement(name = "MaxStringLength")
 	protected int maxStringLength;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der xAddr-Eigenschaft ab.
@@ -96,6 +123,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der receiverSource-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isReceiverSource() {
 		return receiverSource;
@@ -104,6 +132,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der receiverSource-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setReceiverSource(boolean value) {
 		this.receiverSource = value;
@@ -112,6 +141,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der mediaProfileSource-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isMediaProfileSource() {
 		return mediaProfileSource;
@@ -120,6 +150,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der mediaProfileSource-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMediaProfileSource(boolean value) {
 		this.mediaProfileSource = value;
@@ -128,6 +159,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der dynamicRecordings-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isDynamicRecordings() {
 		return dynamicRecordings;
@@ -136,6 +168,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der dynamicRecordings-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDynamicRecordings(boolean value) {
 		this.dynamicRecordings = value;
@@ -144,6 +177,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der dynamicTracks-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isDynamicTracks() {
 		return dynamicTracks;
@@ -152,6 +186,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der dynamicTracks-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setDynamicTracks(boolean value) {
 		this.dynamicTracks = value;
@@ -160,6 +195,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der maxStringLength-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getMaxStringLength() {
 		return maxStringLength;
@@ -168,6 +204,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der maxStringLength-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMaxStringLength(int value) {
 		this.maxStringLength = value;
@@ -183,19 +220,20 @@ public class RecordingCapabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

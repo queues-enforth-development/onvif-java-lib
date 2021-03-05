@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,25 +21,25 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r NetworkInterface complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="NetworkInterface">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}DeviceEntity">
- *       <sequence>
+         <sequence>
  *         <element name="Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="Info" type="{http://www.onvif.org/ver10/schema}NetworkInterfaceInfo" minOccurs="0"/>
  *         <element name="Link" type="{http://www.onvif.org/ver10/schema}NetworkInterfaceLink" minOccurs="0"/>
  *         <element name="IPv4" type="{http://www.onvif.org/ver10/schema}IPv4NetworkInterface" minOccurs="0"/>
  *         <element name="IPv6" type="{http://www.onvif.org/ver10/schema}IPv6NetworkInterface" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}NetworkInterfaceExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,24 +47,48 @@ import javax.xml.namespace.QName;
 @XmlType(name = "NetworkInterface", propOrder = { "enabled", "info", "link", "iPv4", "iPv6", "extension" })
 public class NetworkInterface extends DeviceEntity {
 
-	@XmlElement(name = "Enabled")
+    /**
+     *
+     */
+    @XmlElement(name = "Enabled")
 	protected boolean enabled;
-	@XmlElement(name = "Info")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Info")
 	protected NetworkInterfaceInfo info;
-	@XmlElement(name = "Link")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Link")
 	protected NetworkInterfaceLink link;
-	@XmlElement(name = "IPv4")
+
+    /**
+     *
+     */
+    @XmlElement(name = "IPv4")
 	protected IPv4NetworkInterface iPv4;
-	@XmlElement(name = "IPv6")
+
+    /**
+     *
+     */
+    @XmlElement(name = "IPv6")
 	protected IPv6NetworkInterface iPv6;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected NetworkInterfaceExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der enabled-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isEnabled() {
 		return enabled;
@@ -73,6 +97,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setEnabled(boolean value) {
 		this.enabled = value;

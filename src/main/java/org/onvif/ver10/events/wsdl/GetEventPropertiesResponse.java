@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
@@ -21,11 +21,11 @@ import org.oasis_open.docs.wsn.t_1.TopicSetType;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java-Class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -42,7 +42,7 @@ import org.oasis_open.docs.wsn.t_1.TopicSetType;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -60,25 +60,56 @@ import org.oasis_open.docs.wsn.t_1.TopicSetType;
 @XmlRootElement(name = "GetEventPropertiesResponse")
 public class GetEventPropertiesResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "TopicNamespaceLocation", required = true)
     @XmlSchemaType(name = "anyURI")
     protected List<String> topicNamespaceLocation;
+
+    /**
+     *
+     */
     @XmlElement(name = "FixedTopicSet", namespace = "http://docs.oasis-open.org/wsn/b-2", defaultValue = "true")
     protected boolean fixedTopicSet;
+
+    /**
+     *
+     */
     @XmlElement(name = "TopicSet", namespace = "http://docs.oasis-open.org/wsn/t-1", required = true)
     protected TopicSetType topicSet;
+
+    /**
+     *
+     */
     @XmlElement(name = "TopicExpressionDialect", namespace = "http://docs.oasis-open.org/wsn/b-2", required = true)
     @XmlSchemaType(name = "anyURI")
     protected List<String> topicExpressionDialect;
+
+    /**
+     *
+     */
     @XmlElement(name = "MessageContentFilterDialect", required = true)
     @XmlSchemaType(name = "anyURI")
     protected List<String> messageContentFilterDialect;
+
+    /**
+     *
+     */
     @XmlElement(name = "ProducerPropertiesFilterDialect")
     @XmlSchemaType(name = "anyURI")
     protected List<String> producerPropertiesFilterDialect;
+
+    /**
+     *
+     */
     @XmlElement(name = "MessageContentSchemaLocation", required = true)
     @XmlSchemaType(name = "anyURI")
     protected List<String> messageContentSchemaLocation;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -93,9 +124,9 @@ public class GetEventPropertiesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getTopicNamespaceLocation().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -103,10 +134,11 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getTopicNamespaceLocation() {
         if (topicNamespaceLocation == null) {
-            topicNamespaceLocation = new ArrayList<String>();
+            topicNamespaceLocation = new ArrayList<>();
         }
         return this.topicNamespaceLocation;
     }
@@ -114,6 +146,7 @@ public class GetEventPropertiesResponse {
     /**
      * True when topicset is fixed for all times.
      * 
+     * @return 
      */
     public boolean isFixedTopicSet() {
         return fixedTopicSet;
@@ -122,6 +155,7 @@ public class GetEventPropertiesResponse {
     /**
      * Legt den Wert der fixedTopicSet-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setFixedTopicSet(boolean value) {
         this.fixedTopicSet = value;
@@ -154,15 +188,15 @@ public class GetEventPropertiesResponse {
     /**
      * 
      * 							Defines the XPath expression syntax supported for matching topic expressions. 
-     * <pre>
+     * <pre>{@code
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;br xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
-     * </pre>
+     * }</pre>
      * 
      * 							The following TopicExpressionDialects are mandatory for an ONVIF compliant device :
      * 							
-     * <pre>
+     * <pre>{@code
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ul xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:xs="http://www.w3.org/2001/XMLSchema" type="disc"&gt;&lt;li&gt;http://docs.oasis-open.org/wsn/t-1/TopicExpression/Concrete&lt;/li&gt;&lt;li&gt;http://www.onvif.org/ver10/tev/topicExpression/ConcreteSet.&lt;/li&gt;&lt;/ul&gt;
-     * </pre>
+     * }</pre>
      * Gets the value of the topicExpressionDialect property.
      * 
      * <p>
@@ -173,9 +207,9 @@ public class GetEventPropertiesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getTopicExpressionDialect().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -183,10 +217,11 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getTopicExpressionDialect() {
         if (topicExpressionDialect == null) {
-            topicExpressionDialect = new ArrayList<String>();
+            topicExpressionDialect = new ArrayList<>();
         }
         return this.topicExpressionDialect;
     }
@@ -202,9 +237,9 @@ public class GetEventPropertiesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getMessageContentFilterDialect().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -212,10 +247,11 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getMessageContentFilterDialect() {
         if (messageContentFilterDialect == null) {
-            messageContentFilterDialect = new ArrayList<String>();
+            messageContentFilterDialect = new ArrayList<>();
         }
         return this.messageContentFilterDialect;
     }
@@ -231,9 +267,9 @@ public class GetEventPropertiesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getProducerPropertiesFilterDialect().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -241,10 +277,11 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getProducerPropertiesFilterDialect() {
         if (producerPropertiesFilterDialect == null) {
-            producerPropertiesFilterDialect = new ArrayList<String>();
+            producerPropertiesFilterDialect = new ArrayList<>();
         }
         return this.producerPropertiesFilterDialect;
     }
@@ -260,9 +297,9 @@ public class GetEventPropertiesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getMessageContentSchemaLocation().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -270,10 +307,11 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getMessageContentSchemaLocation() {
         if (messageContentSchemaLocation == null) {
-            messageContentSchemaLocation = new ArrayList<String>();
+            messageContentSchemaLocation = new ArrayList<>();
         }
         return this.messageContentSchemaLocation;
     }
@@ -289,9 +327,9 @@ public class GetEventPropertiesResponse {
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -299,10 +337,11 @@ public class GetEventPropertiesResponse {
      * {@link Object }
      * 
      * 
+     * @return 
      */
     public List<Object> getAny() {
         if (any == null) {
-            any = new ArrayList<Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

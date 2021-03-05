@@ -39,29 +39,43 @@ import org.onvif.ver10.schema.Scope;
 import org.onvif.ver10.schema.Time;
 import org.onvif.ver10.schema.User;
 
-import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.onvifDevice;
 import de.onvif.soap.SOAP;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+/**
+ *
+ *
+ */
 public class InitialDevices {
+    private static final Logger LOGGER = Logger.getLogger(InitialDevices.class.getPackage().getName());
 
-	private SOAP soap;
-	private OnvifDevice onvifDevice;
+	private final SOAP soap;
+	private final onvifDevice onvifDevice;
 
-	public InitialDevices(OnvifDevice onvifDevice) {
+    /**
+     *
+     * @param onvifDevice
+     */
+    public InitialDevices(onvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}
 
-	public java.util.Date getDate() {
-		Calendar cal = null;
+    /**
+     *
+     * @return
+     */
+    public java.util.Date getDate() {
+		Calendar cal;
 
 		GetSystemDateAndTimeResponse response = new GetSystemDateAndTimeResponse();
 
 		try {
 			response = (GetSystemDateAndTimeResponse) soap.createSOAPDeviceRequest(new GetSystemDateAndTime(), response, false);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDate.",e);
 			return null;
 		}
 
@@ -72,57 +86,70 @@ public class InitialDevices {
 		return cal.getTime();
 	}
 
-	public GetDeviceInformationResponse getDeviceInformation() {
+    /**
+     *
+     * @return
+     */
+    public GetDeviceInformationResponse getDeviceInformation() {
 		GetDeviceInformation getHostname = new GetDeviceInformation();
 		GetDeviceInformationResponse response = new GetDeviceInformationResponse();
 		try {
 			response = (GetDeviceInformationResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDeviceInformation.",e);
 			return null;
 		}
 
 		return response;
 	}
 
-	public String getHostname() {
+    /**
+     *
+     * @return
+     */
+    public String getHostname() {
 		GetHostname getHostname = new GetHostname();
 		GetHostnameResponse response = new GetHostnameResponse();
 		try {
 			response = (GetHostnameResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getHostname.",e);
 			return null;
 		}
 
 		return response.getHostnameInformation().getName();
 	}
 
-	public boolean setHostname(String hostname) {
+    /**
+     *
+     * @param hostname
+     * @return
+     */
+    public boolean setHostname(String hostname) {
 		SetHostname setHostname = new SetHostname();
 		setHostname.setName(hostname);
 		SetHostnameResponse response = new SetHostnameResponse();
 		try {
-			response = (SetHostnameResponse) soap.createSOAPDeviceRequest(setHostname, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+			soap.createSOAPDeviceRequest(setHostname, response, true);
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.setHostname.",e);
 			return false;
 		}
 
 		return true;
 	}
 
-	public List<User> getUsers() {
+    /**
+     *
+     * @return
+     */
+    public List<User> getUsers() {
 		GetUsers getUsers = new GetUsers();
 		GetUsersResponse response = new GetUsersResponse();
 		try {
 			response = (GetUsersResponse) soap.createSOAPDeviceRequest(getUsers, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getUsers.",e);
 			return null;
 		}
 
@@ -133,14 +160,20 @@ public class InitialDevices {
 		return response.getUser();
 	}
 
-	public Capabilities getCapabilities() throws ConnectException, SOAPException {
+    /**
+     *
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     */
+    public Capabilities getCapabilities() throws ConnectException, SOAPException {
 		GetCapabilities getCapabilities = new GetCapabilities();
 		GetCapabilitiesResponse response = new GetCapabilitiesResponse();
 
 		try {
 			response = (GetCapabilitiesResponse) soap.createSOAPRequest(getCapabilities, response, onvifDevice.getDeviceUri(), false);
-		}
-		catch (SOAPException e) {
+		} catch (SOAPException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getgetCapabilities.",e);
 			throw e;
 		}
 
@@ -151,15 +184,18 @@ public class InitialDevices {
 		return response.getCapabilities();
 	}
 
-	public List<Profile> getProfiles() {
+    /**
+     *
+     * @return
+     */
+    public List<Profile> getProfiles() {
 		GetProfiles request = new GetProfiles();
 		GetProfilesResponse response = new GetProfilesResponse();
 
 		try {
 			response = (GetProfilesResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfiles.",e);
 			return null;
 		}
 
@@ -170,7 +206,12 @@ public class InitialDevices {
 		return response.getProfiles();
 	}
 
-	public Profile getProfile(String profileToken) {
+    /**
+     *
+     * @param profileToken
+     * @return
+     */
+    public Profile getProfile(String profileToken) {
 		GetProfile request = new GetProfile();
 		GetProfileResponse response = new GetProfileResponse();
 
@@ -178,9 +219,8 @@ public class InitialDevices {
 
 		try {
 			response = (GetProfileResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfile.",e);
 			return null;
 		}
 
@@ -191,7 +231,12 @@ public class InitialDevices {
 		return response.getProfile();
 	}
 
-	public Profile createProfile(String name) {
+    /**
+     *
+     * @param name
+     * @return
+     */
+    public Profile createProfile(String name) {
 		CreateProfile request = new CreateProfile();
 		CreateProfileResponse response = new CreateProfileResponse();
 
@@ -199,9 +244,8 @@ public class InitialDevices {
 
 		try {
 			response = (CreateProfileResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.createProfile.",e);
 			return null;
 		}
 
@@ -212,7 +256,12 @@ public class InitialDevices {
 		return response.getProfile();
 	}
 
-	public List<Service> getServices(boolean includeCapability) {
+    /**
+     *
+     * @param includeCapability
+     * @return
+     */
+    public List<Service> getServices(boolean includeCapability) {
 		GetServices request = new GetServices();
 		GetServicesResponse response = new GetServicesResponse();
 
@@ -220,9 +269,8 @@ public class InitialDevices {
 
 		try {
 			response = (GetServicesResponse) soap.createSOAPDeviceRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getServices.",e);
 			return null;
 		}
 
@@ -233,15 +281,18 @@ public class InitialDevices {
 		return response.getService();
 	}
 
-	public List<Scope> getScopes() {
+    /**
+     *
+     * @return
+     */
+    public List<Scope> getScopes() {
 		GetScopes request = new GetScopes();
 		GetScopesResponse response = new GetScopesResponse();
 
 		try {
 			response = (GetScopesResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
-			e.printStackTrace();
+		} catch (SOAPException | ConnectException e) {
+            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getScope.",e);
 			return null;
 		}
 
@@ -252,14 +303,19 @@ public class InitialDevices {
 		return response.getScopes();
 	}
 
-	public String reboot() throws ConnectException, SOAPException {
+    /**
+     *
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     */
+    public String reboot() throws ConnectException, SOAPException {
 		SystemReboot request = new SystemReboot();
 		SystemRebootResponse response = new SystemRebootResponse();
 
 		try {
 			response = (SystemRebootResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
 

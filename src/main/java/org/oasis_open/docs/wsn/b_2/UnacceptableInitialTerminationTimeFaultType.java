@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsn.b_2;
@@ -20,21 +20,21 @@ import org.oasis_open.docs.wsrf.bf_2.BaseFaultType;
  * Java-Klasse f�r UnacceptableInitialTerminationTimeFaultType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="UnacceptableInitialTerminationTimeFaultType">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://docs.oasis-open.org/wsrf/bf-2}BaseFaultType">
- *       <sequence>
+         <sequence>
  *         <element name="MinimumTime" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
  *         <element name="MaximumTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax' namespace='##other'/>
+         </sequence>
+         <anyAttribute processContents='lax' namespace='##other'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -42,10 +42,17 @@ import org.oasis_open.docs.wsrf.bf_2.BaseFaultType;
 @XmlType(name = "UnacceptableInitialTerminationTimeFaultType", propOrder = { "minimumTime", "maximumTime" })
 public class UnacceptableInitialTerminationTimeFaultType extends BaseFaultType {
 
-	@XmlElement(name = "MinimumTime", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "MinimumTime", required = true)
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar minimumTime;
-	@XmlElement(name = "MaximumTime")
+
+    /**
+     *
+     */
+    @XmlElement(name = "MaximumTime")
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar maximumTime;
 

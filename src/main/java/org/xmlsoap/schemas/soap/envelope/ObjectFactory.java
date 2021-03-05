@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.xmlsoap.schemas.soap.envelope;
@@ -38,6 +38,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Body }
 	 * 
+     * @return 
 	 */
 	public Body createBody() {
 		return new Body();
@@ -46,6 +47,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Header }
 	 * 
+     * @return 
 	 */
 	public Header createHeader() {
 		return new Header();
@@ -54,6 +56,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Envelope }
 	 * 
+     * @return 
 	 */
 	public Envelope createEnvelope() {
 		return new Envelope();
@@ -62,6 +65,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Fault }
 	 * 
+     * @return 
 	 */
 	public Fault createFault() {
 		return new Fault();
@@ -70,6 +74,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Detail }
 	 * 
+     * @return 
 	 */
 	public Detail createDetail() {
 		return new Detail();
@@ -78,37 +83,45 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Body }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Body")
 	public JAXBElement<Body> createBody(Body value) {
-		return new JAXBElement<Body>(_Body_QNAME, Body.class, null, value);
+		return new JAXBElement<>(_Body_QNAME, Body.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Envelope }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Envelope")
 	public JAXBElement<Envelope> createEnvelope(Envelope value) {
-		return new JAXBElement<Envelope>(_Envelope_QNAME, Envelope.class, null, value);
+		return new JAXBElement<>(_Envelope_QNAME, Envelope.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Fault }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Fault")
 	public JAXBElement<Fault> createFault(Fault value) {
-		return new JAXBElement<Fault>(_Fault_QNAME, Fault.class, null, value);
+		return new JAXBElement<>(_Fault_QNAME, Fault.class, null, value);
 	}
 
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Header }{@code >}
 	 * 
+     * @param value
+     * @return 
 	 */
 	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Header")
 	public JAXBElement<Header> createHeader(Header value) {
-		return new JAXBElement<Header>(_Header_QNAME, Header.class, null, value);
+		return new JAXBElement<>(_Header_QNAME, Header.class, null, value);
 	}
 
 }

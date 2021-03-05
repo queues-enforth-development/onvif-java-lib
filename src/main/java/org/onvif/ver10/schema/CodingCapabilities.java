@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -27,23 +27,23 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r CodingCapabilities complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="CodingCapabilities">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="AudioEncodingCapabilities" type="{http://www.onvif.org/ver10/schema}AudioEncoderConfigurationOptions" minOccurs="0"/>
  *         <element name="AudioDecodingCapabilities" type="{http://www.onvif.org/ver10/schema}AudioDecoderConfigurationOptions" minOccurs="0"/>
  *         <element name="VideoDecodingCapabilities" type="{http://www.onvif.org/ver10/schema}VideoDecoderConfigurationOptions"/>
- *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,16 +51,31 @@ import org.w3c.dom.Element;
 @XmlType(name = "CodingCapabilities", propOrder = { "audioEncodingCapabilities", "audioDecodingCapabilities", "videoDecodingCapabilities", "any" })
 public class CodingCapabilities {
 
-	@XmlElement(name = "AudioEncodingCapabilities")
+    /**
+     *
+     */
+    @XmlElement(name = "AudioEncodingCapabilities")
 	protected AudioEncoderConfigurationOptions audioEncodingCapabilities;
-	@XmlElement(name = "AudioDecodingCapabilities")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AudioDecodingCapabilities")
 	protected AudioDecoderConfigurationOptions audioDecodingCapabilities;
-	@XmlElement(name = "VideoDecodingCapabilities", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "VideoDecodingCapabilities", required = true)
 	protected VideoDecoderConfigurationOptions videoDecodingCapabilities;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<java.lang.Object> any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der audioEncodingCapabilities-Eigenschaft ab.
@@ -135,19 +150,20 @@ public class CodingCapabilities {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<java.lang.Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}

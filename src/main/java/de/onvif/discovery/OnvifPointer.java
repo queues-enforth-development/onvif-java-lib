@@ -8,7 +8,7 @@ import javax.xml.soap.SOAPException;
 
 import org.onvif.ver10.schema.Profile;
 
-import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.onvifDevice;
 
 /**
  * @author th
@@ -18,42 +18,68 @@ public class OnvifPointer {
 	private final String address;
 	private final String name;
 
-	public String getSnapshotUrl() {
+    /**
+     *
+     * @return
+     */
+    public String getSnapshotUrl() {
 		return snapshotUrl;
 	}
 
-	public String getName() {
+    /**
+     *
+     * @return
+     */
+    public String getName() {
 		return name;
 	}
 
-	public String getAddress() {
+    /**
+     *
+     * @return
+     */
+    public String getAddress() {
 		return address;
 	}
 
 	private final String snapshotUrl;
 
-	public OnvifPointer(String address) {
+    /**
+     *
+     * @param address
+     */
+    public OnvifPointer(String address) {
 		this.address = address;
 		try {
-			final OnvifDevice device = new OnvifDevice(address);
+			final onvifDevice device = new onvifDevice(address);
 			this.name = device.getName();
 			final List<Profile> profiles = device.getDevices().getProfiles();
 			final Profile profile = profiles.get(0);
 			this.snapshotUrl = device.getMedia().getSnapshotUri(profile.getToken());
-		}
-		catch (Exception e) {
+		} catch (ConnectException | SOAPException e) {
 			throw new RuntimeException("no onvif device or device not configured", e);
 		}
 	}
 
-	public OnvifPointer(URL service) {
+    /**
+     *
+     * @param service
+     */
+    public OnvifPointer(URL service) {
 		this(service.getHost());
 	}
 
-	public OnvifDevice getOnvifDevice() throws SOAPException, ConnectException {
-		return new OnvifDevice(address);
+    /**
+     *
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public onvifDevice getOnvifDevice() throws SOAPException, ConnectException {
+		return new onvifDevice(address);
 	}
 
+    @Override
 	public String toString() {
 		return "ONVIF: " + name + "@" + address;
 	}

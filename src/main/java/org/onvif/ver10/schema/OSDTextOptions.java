@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,13 +23,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r OSDTextOptions complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="OSDTextOptions">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Type" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         <element name="FontSizeRange" type="{http://www.onvif.org/ver10/schema}IntRange" minOccurs="0"/>
  *         <element name="DateFormat" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
@@ -37,12 +37,12 @@ import javax.xml.namespace.QName;
  *         <element name="FontColor" type="{http://www.onvif.org/ver10/schema}OSDColorOptions" minOccurs="0"/>
  *         <element name="BackgroundColor" type="{http://www.onvif.org/ver10/schema}OSDColorOptions" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}OSDTextOptionsExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -50,22 +50,49 @@ import javax.xml.namespace.QName;
 @XmlType(name = "OSDTextOptions", propOrder = { "type", "fontSizeRange", "dateFormat", "timeFormat", "fontColor", "backgroundColor", "extension" })
 public class OSDTextOptions {
 
-	@XmlElement(name = "Type", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Type", required = true)
 	protected List<String> type;
-	@XmlElement(name = "FontSizeRange")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FontSizeRange")
 	protected IntRange fontSizeRange;
-	@XmlElement(name = "DateFormat")
+
+    /**
+     *
+     */
+    @XmlElement(name = "DateFormat")
 	protected List<String> dateFormat;
-	@XmlElement(name = "TimeFormat")
+
+    /**
+     *
+     */
+    @XmlElement(name = "TimeFormat")
 	protected List<String> timeFormat;
-	@XmlElement(name = "FontColor")
+
+    /**
+     *
+     */
+    @XmlElement(name = "FontColor")
 	protected OSDColorOptions fontColor;
-	@XmlElement(name = "BackgroundColor")
+
+    /**
+     *
+     */
+    @XmlElement(name = "BackgroundColor")
 	protected OSDColorOptions backgroundColor;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected OSDTextOptionsExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the type property.
@@ -77,19 +104,20 @@ public class OSDTextOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getType().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getType() {
 		if (type == null) {
-			type = new ArrayList<String>();
+			type = new ArrayList<>();
 		}
 		return this.type;
 	}
@@ -125,19 +153,20 @@ public class OSDTextOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getDateFormat().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getDateFormat() {
 		if (dateFormat == null) {
-			dateFormat = new ArrayList<String>();
+			dateFormat = new ArrayList<>();
 		}
 		return this.dateFormat;
 	}
@@ -152,19 +181,20 @@ public class OSDTextOptions {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getTimeFormat().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getTimeFormat() {
 		if (timeFormat == null) {
-			timeFormat = new ArrayList<String>();
+			timeFormat = new ArrayList<>();
 		}
 		return this.timeFormat;
 	}

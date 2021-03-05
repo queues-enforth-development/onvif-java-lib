@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -21,15 +21,15 @@ import javax.xml.namespace.QName;
  * 
  * A media profile consists of a set of media configurations. Media profiles are used by a client to configure properties of a media stream from an NVT.
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * An NVT shall provide at least one media profile at boot. An NVT should provide �ready to use� profiles for the most common media configurations that the device offers.
  * 
- * <pre>
+ * <pre>{@code
  * <?xml version="1.0" encoding="UTF-8"?&gt;<br xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:xs="http://www.w3.org/2001/XMLSchema"/&gt;
- * </pre>
+ * }</pre>
  * 
  * A profile consists of a set of interconnected configuration entities. Configurations are provided by the NVT and can be either static or created dynamically by the NVT. For
  * example, the dynamic configurations can be created by the NVT depending on current available encoding resources.
@@ -38,13 +38,13 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r Profile complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Profile">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Name" type="{http://www.onvif.org/ver10/schema}Name"/>
  *         <element name="VideoSourceConfiguration" type="{http://www.onvif.org/ver10/schema}VideoSourceConfiguration" minOccurs="0"/>
  *         <element name="AudioSourceConfiguration" type="{http://www.onvif.org/ver10/schema}AudioSourceConfiguration" minOccurs="0"/>
@@ -54,14 +54,14 @@ import javax.xml.namespace.QName;
  *         <element name="PTZConfiguration" type="{http://www.onvif.org/ver10/schema}PTZConfiguration" minOccurs="0"/>
  *         <element name="MetadataConfiguration" type="{http://www.onvif.org/ver10/schema}MetadataConfiguration" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ProfileExtension" minOccurs="0"/>
- *       </sequence>
+         </sequence>
  *       <attribute name="token" use="required" type="{http://www.onvif.org/ver10/schema}ReferenceToken" />
  *       <attribute name="fixed" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -70,30 +70,73 @@ import javax.xml.namespace.QName;
 		"audioEncoderConfiguration", "videoAnalyticsConfiguration", "ptzConfiguration", "metadataConfiguration", "extension" })
 public class Profile {
 
-	@XmlElement(name = "Name", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "Name", required = true)
 	protected String name;
-	@XmlElement(name = "VideoSourceConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "VideoSourceConfiguration")
 	protected VideoSourceConfiguration videoSourceConfiguration;
-	@XmlElement(name = "AudioSourceConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AudioSourceConfiguration")
 	protected AudioSourceConfiguration audioSourceConfiguration;
-	@XmlElement(name = "VideoEncoderConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "VideoEncoderConfiguration")
 	protected VideoEncoderConfiguration videoEncoderConfiguration;
-	@XmlElement(name = "AudioEncoderConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AudioEncoderConfiguration")
 	protected AudioEncoderConfiguration audioEncoderConfiguration;
-	@XmlElement(name = "VideoAnalyticsConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "VideoAnalyticsConfiguration")
 	protected VideoAnalyticsConfiguration videoAnalyticsConfiguration;
-	@XmlElement(name = "PTZConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "PTZConfiguration")
 	protected PTZConfiguration ptzConfiguration;
-	@XmlElement(name = "MetadataConfiguration")
+
+    /**
+     *
+     */
+    @XmlElement(name = "MetadataConfiguration")
 	protected MetadataConfiguration metadataConfiguration;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ProfileExtension extension;
-	@XmlAttribute(name = "token", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "token", required = true)
 	protected String token;
-	@XmlAttribute(name = "fixed")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "fixed")
 	protected Boolean fixed;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der name-Eigenschaft ab.

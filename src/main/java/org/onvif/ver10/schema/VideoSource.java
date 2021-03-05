@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,23 +23,23 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r VideoSource complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="VideoSource">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}DeviceEntity">
- *       <sequence>
+         <sequence>
  *         <element name="Framerate" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         <element name="Resolution" type="{http://www.onvif.org/ver10/schema}VideoResolution"/>
  *         <element name="Imaging" type="{http://www.onvif.org/ver10/schema}ImagingSettings" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}VideoSourceExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
+         </sequence>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,20 +47,36 @@ import javax.xml.namespace.QName;
 @XmlType(name = "VideoSource", propOrder = { "framerate", "resolution", "imaging", "extension" })
 public class VideoSource extends DeviceEntity {
 
-	@XmlElement(name = "Framerate")
+    /**
+     *
+     */
+    @XmlElement(name = "Framerate")
 	protected float framerate;
-	@XmlElement(name = "Resolution", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "Resolution", required = true)
 	protected VideoResolution resolution;
-	@XmlElement(name = "Imaging")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Imaging")
 	protected ImagingSettings imaging;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected VideoSourceExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der framerate-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public float getFramerate() {
 		return framerate;
@@ -69,6 +85,7 @@ public class VideoSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der framerate-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setFramerate(float value) {
 		this.framerate = value;

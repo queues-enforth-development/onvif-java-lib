@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.w3._2005._08.addressing;
@@ -22,20 +22,20 @@ import org.w3c.dom.Element;
  * Java-Klasse f�r AttributedAnyType complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="AttributedAnyType">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
- *         <any processContents='lax'/>
- *       </sequence>
- *       <anyAttribute processContents='lax' namespace='##other'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
+           <any processContents='lax'/>
+         </sequence>
+         <anyAttribute processContents='lax' namespace='##other'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -43,10 +43,13 @@ import org.w3c.dom.Element;
 @XmlType(name = "AttributedAnyType", propOrder = { "any" })
 public class AttributedAnyType {
 
-	@XmlAnyElement(lax = true)
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected Object any;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der any-Eigenschaft ab.

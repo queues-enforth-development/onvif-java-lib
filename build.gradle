@@ -1,0 +1,36 @@
+apply plugin: 'java'
+//apply plugin: 'eclipse'
+
+
+version = '2.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'ONVIF Java Library',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'de.onvif.Main'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+repositories {
+   flatDir {
+       dirs 'libs'
+   }
+   mavenCentral()
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+}
+
+dependencies {
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'    
+    implementation name: 'javaWsDiscovery-0.1'
+}

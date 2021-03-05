@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -26,25 +26,25 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r Frame complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="Frame">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="PTZStatus" type="{http://www.onvif.org/ver10/schema}PTZStatus" minOccurs="0"/>
  *         <element name="Transformation" type="{http://www.onvif.org/ver10/schema}Transformation" minOccurs="0"/>
  *         <element name="Object" type="{http://www.onvif.org/ver10/schema}Object" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="ObjectTree" type="{http://www.onvif.org/ver10/schema}ObjectTree" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}FrameExtension" minOccurs="0"/>
- *       </sequence>
+         </sequence>
  *       <attribute name="UtcTime" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -52,21 +52,44 @@ import javax.xml.namespace.QName;
 @XmlType(name = "Frame", propOrder = { "ptzStatus", "transformation", "object", "objectTree", "extension" })
 public class Frame {
 
-	@XmlElement(name = "PTZStatus")
+    /**
+     *
+     */
+    @XmlElement(name = "PTZStatus")
 	protected PTZStatus ptzStatus;
-	@XmlElement(name = "Transformation")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Transformation")
 	protected Transformation transformation;
-	@XmlElement(name = "Object")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Object")
 	protected List<Object> object;
-	@XmlElement(name = "ObjectTree")
+
+    /**
+     *
+     */
+    @XmlElement(name = "ObjectTree")
 	protected ObjectTree objectTree;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected FrameExtension extension;
-	@XmlAttribute(name = "UtcTime", required = true)
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "UtcTime", required = true)
 	@XmlSchemaType(name = "dateTime")
 	protected XMLGregorianCalendar utcTime;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der ptzStatus-Eigenschaft ab.
@@ -120,19 +143,20 @@ public class Frame {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getObject().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getObject() {
 		if (object == null) {
-			object = new ArrayList<Object>();
+			object = new ArrayList<>();
 		}
 		return this.object;
 	}

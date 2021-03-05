@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is compiled. 
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
@@ -25,9 +25,9 @@ import org.w3c.dom.Element;
 /**
  * <p>Java-Klasse für AudioEncoder2Configuration complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * &lt;complexType name="AudioEncoder2Configuration">
  *   &lt;complexContent>
  *     &lt;extension base="{http://www.onvif.org/ver10/schema}ConfigurationEntity">
@@ -42,7 +42,7 @@ import org.w3c.dom.Element;
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
- * </pre>
+ * }</pre>
  * 
  * 
  */
@@ -58,18 +58,37 @@ public class AudioEncoder2Configuration
     extends ConfigurationEntity
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "Encoding", required = true)
     protected String encoding;
+
+    /**
+     *
+     */
     @XmlElement(name = "Multicast")
     protected MulticastConfiguration multicast;
+
+    /**
+     *
+     */
     @XmlElement(name = "Bitrate")
     protected int bitrate;
+
+    /**
+     *
+     */
     @XmlElement(name = "SampleRate")
     protected int sampleRate;
+
+    /**
+     *
+     */
     @XmlAnyElement(lax = true)
     protected List<java.lang.Object> any;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Ruft den Wert der encoding-Eigenschaft ab.
@@ -122,6 +141,7 @@ public class AudioEncoder2Configuration
     /**
      * Ruft den Wert der bitrate-Eigenschaft ab.
      * 
+     * @return 
      */
     public int getBitrate() {
         return bitrate;
@@ -130,6 +150,7 @@ public class AudioEncoder2Configuration
     /**
      * Legt den Wert der bitrate-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setBitrate(int value) {
         this.bitrate = value;
@@ -138,6 +159,7 @@ public class AudioEncoder2Configuration
     /**
      * Ruft den Wert der sampleRate-Eigenschaft ab.
      * 
+     * @return 
      */
     public int getSampleRate() {
         return sampleRate;
@@ -146,6 +168,7 @@ public class AudioEncoder2Configuration
     /**
      * Legt den Wert der sampleRate-Eigenschaft fest.
      * 
+     * @param value
      */
     public void setSampleRate(int value) {
         this.sampleRate = value;
@@ -162,9 +185,9 @@ public class AudioEncoder2Configuration
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * <pre>
+     * <pre>{@code
      *    getAny().add(newItem);
-     * </pre>
+     * }</pre>
      * 
      * 
      * <p>
@@ -173,10 +196,11 @@ public class AudioEncoder2Configuration
      * {@link java.lang.Object }
      * 
      * 
+     * @return 
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
-            any = new ArrayList<java.lang.Object>();
+            any = new ArrayList<>();
         }
         return this.any;
     }

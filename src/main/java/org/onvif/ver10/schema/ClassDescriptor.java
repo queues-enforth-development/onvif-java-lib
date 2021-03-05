@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -19,31 +19,31 @@ import javax.xml.bind.annotation.XmlType;
  * Java-Klasse f�r ClassDescriptor complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ClassDescriptor">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="ClassCandidate" maxOccurs="unbounded" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 <sequence>
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                   <sequence>
  *                   <element name="Type" type="{http://www.onvif.org/ver10/schema}ClassType"/>
  *                   <element name="Likelihood" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *                 </sequence>
- *               </restriction>
- *             </complexContent>
+                   </sequence>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ClassDescriptorExtension" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,9 +51,16 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ClassDescriptor", propOrder = { "classCandidate", "extension" })
 public class ClassDescriptor {
 
-	@XmlElement(name = "ClassCandidate")
+    /**
+     *
+     */
+    @XmlElement(name = "ClassCandidate")
 	protected List<ClassDescriptor.ClassCandidate> classCandidate;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ClassDescriptorExtension extension;
 
 	/**
@@ -66,19 +73,20 @@ public class ClassDescriptor {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getClassCandidate().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link ClassDescriptor.ClassCandidate }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<ClassDescriptor.ClassCandidate> getClassCandidate() {
 		if (classCandidate == null) {
-			classCandidate = new ArrayList<ClassDescriptor.ClassCandidate>();
+			classCandidate = new ArrayList<>();
 		}
 		return this.classCandidate;
 	}
@@ -106,23 +114,23 @@ public class ClassDescriptor {
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-	 *       <sequence>
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	         <sequence>
 	 *         <element name="Type" type="{http://www.onvif.org/ver10/schema}ClassType"/>
 	 *         <element name="Likelihood" type="{http://www.w3.org/2001/XMLSchema}float"/>
-	 *       </sequence>
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	         </sequence>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -130,9 +138,16 @@ public class ClassDescriptor {
 	@XmlType(name = "", propOrder = { "type", "likelihood" })
 	public static class ClassCandidate {
 
-		@XmlElement(name = "Type", required = true)
+        /**
+         *
+         */
+        @XmlElement(name = "Type", required = true)
 		protected ClassType type;
-		@XmlElement(name = "Likelihood")
+
+        /**
+         *
+         */
+        @XmlElement(name = "Likelihood")
 		protected float likelihood;
 
 		/**
@@ -159,6 +174,7 @@ public class ClassDescriptor {
 		/**
 		 * Ruft den Wert der likelihood-Eigenschaft ab.
 		 * 
+         * @return 
 		 */
 		public float getLikelihood() {
 			return likelihood;
@@ -167,6 +183,7 @@ public class ClassDescriptor {
 		/**
 		 * Legt den Wert der likelihood-Eigenschaft fest.
 		 * 
+         * @param value
 		 */
 		public void setLikelihood(float value) {
 			this.likelihood = value;

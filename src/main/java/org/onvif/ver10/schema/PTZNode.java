@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -24,26 +24,26 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r PTZNode complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="PTZNode">
- *   <complexContent>
+     <complexContent>
  *     <extension base="{http://www.onvif.org/ver10/schema}DeviceEntity">
- *       <sequence>
+         <sequence>
  *         <element name="Name" type="{http://www.onvif.org/ver10/schema}Name" minOccurs="0"/>
  *         <element name="SupportedPTZSpaces" type="{http://www.onvif.org/ver10/schema}PTZSpaces"/>
  *         <element name="MaximumNumberOfPresets" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="HomeSupported" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         <element name="AuxiliaryCommands" type="{http://www.onvif.org/ver10/schema}AuxiliaryData" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}PTZNodeExtension" minOccurs="0"/>
- *       </sequence>
+         </sequence>
  *       <attribute name="FixedHomePosition" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       <anyAttribute processContents='lax'/>
+         <anyAttribute processContents='lax'/>
  *     </extension>
- *   </complexContent>
- * </complexType>
- * </pre>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,22 +51,49 @@ import javax.xml.namespace.QName;
 @XmlType(name = "PTZNode", propOrder = { "name", "supportedPTZSpaces", "maximumNumberOfPresets", "homeSupported", "auxiliaryCommands", "extension" })
 public class PTZNode extends DeviceEntity {
 
-	@XmlElement(name = "Name")
+    /**
+     *
+     */
+    @XmlElement(name = "Name")
 	protected String name;
-	@XmlElement(name = "SupportedPTZSpaces", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "SupportedPTZSpaces", required = true)
 	protected PTZSpaces supportedPTZSpaces;
-	@XmlElement(name = "MaximumNumberOfPresets")
+
+    /**
+     *
+     */
+    @XmlElement(name = "MaximumNumberOfPresets")
 	protected int maximumNumberOfPresets;
-	@XmlElement(name = "HomeSupported")
+
+    /**
+     *
+     */
+    @XmlElement(name = "HomeSupported")
 	protected boolean homeSupported;
-	@XmlElement(name = "AuxiliaryCommands")
+
+    /**
+     *
+     */
+    @XmlElement(name = "AuxiliaryCommands")
 	protected List<String> auxiliaryCommands;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected PTZNodeExtension extension;
-	@XmlAttribute(name = "FixedHomePosition")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "FixedHomePosition")
 	protected Boolean fixedHomePosition;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der name-Eigenschaft ab.
@@ -113,6 +140,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Ruft den Wert der maximumNumberOfPresets-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public int getMaximumNumberOfPresets() {
 		return maximumNumberOfPresets;
@@ -121,6 +149,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der maximumNumberOfPresets-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setMaximumNumberOfPresets(int value) {
 		this.maximumNumberOfPresets = value;
@@ -129,6 +158,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Ruft den Wert der homeSupported-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isHomeSupported() {
 		return homeSupported;
@@ -137,6 +167,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der homeSupported-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setHomeSupported(boolean value) {
 		this.homeSupported = value;
@@ -152,19 +183,20 @@ public class PTZNode extends DeviceEntity {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAuxiliaryCommands().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getAuxiliaryCommands() {
 		if (auxiliaryCommands == null) {
-			auxiliaryCommands = new ArrayList<String>();
+			auxiliaryCommands = new ArrayList<>();
 		}
 		return this.auxiliaryCommands;
 	}

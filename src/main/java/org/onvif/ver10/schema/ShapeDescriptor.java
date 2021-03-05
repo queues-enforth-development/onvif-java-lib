@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -23,23 +23,23 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r ShapeDescriptor complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="ShapeDescriptor">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="BoundingBox" type="{http://www.onvif.org/ver10/schema}Rectangle"/>
  *         <element name="CenterOfGravity" type="{http://www.onvif.org/ver10/schema}Vector"/>
  *         <element name="Polygon" type="{http://www.onvif.org/ver10/schema}Polygon" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}ShapeDescriptorExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,16 +47,31 @@ import javax.xml.namespace.QName;
 @XmlType(name = "ShapeDescriptor", propOrder = { "boundingBox", "centerOfGravity", "polygon", "extension" })
 public class ShapeDescriptor {
 
-	@XmlElement(name = "BoundingBox", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "BoundingBox", required = true)
 	protected Rectangle boundingBox;
-	@XmlElement(name = "CenterOfGravity", required = true)
+
+    /**
+     *
+     */
+    @XmlElement(name = "CenterOfGravity", required = true)
 	protected Vector centerOfGravity;
-	@XmlElement(name = "Polygon")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Polygon")
 	protected List<Polygon> polygon;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected ShapeDescriptorExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Ruft den Wert der boundingBox-Eigenschaft ab.
@@ -110,19 +125,20 @@ public class ShapeDescriptor {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getPolygon().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Polygon }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Polygon> getPolygon() {
 		if (polygon == null) {
-			polygon = new ArrayList<Polygon>();
+			polygon = new ArrayList<>();
 		}
 		return this.polygon;
 	}

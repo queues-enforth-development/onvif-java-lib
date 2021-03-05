@@ -24,19 +24,35 @@ import org.onvif.ver10.schema.VideoEncoderConfiguration;
 import org.onvif.ver10.schema.VideoEncoderConfigurationOptions;
 import org.onvif.ver10.schema.VideoSource;
 
-import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.onvifDevice;
 import de.onvif.soap.SOAP;
 
+/**
+ *
+ *
+ */
 public class MediaDevices {
-	private OnvifDevice onvifDevice;
-	private SOAP soap;
+	private final onvifDevice onvifDevice;
+	private final SOAP soap;
 
-	public MediaDevices(OnvifDevice onvifDevice) {
+    /**
+     *
+     * @param onvifDevice
+     */
+    public MediaDevices(onvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}
 
-	@Deprecated
+    /**
+     *
+     * @param profileNumber
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     * @deprecated
+     */
+    @Deprecated
 	public String getHTTPStreamUri(int profileNumber) throws ConnectException, SOAPException {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
@@ -46,7 +62,14 @@ public class MediaDevices {
 		return getStreamUri(setup, profileNumber);
 	}
 
-	public String getHTTPStreamUri(String profileToken) throws ConnectException, SOAPException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     */
+    public String getHTTPStreamUri(String profileToken) throws ConnectException, SOAPException {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
 		Transport transport = new Transport();
@@ -55,8 +78,18 @@ public class MediaDevices {
 		return getStreamUri(profileToken, setup);
 	}
 
-	@Deprecated
-	public String getUDPStreamUri(int profileNumber) throws ConnectException, SOAPException {
+    /**
+     *
+     * @param profileNumber
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     * @deprecated
+     */
+    @Deprecated
+	public String getUDPStreamUri(int profileNumber) 
+            throws ConnectException, SOAPException 
+    {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
 		Transport transport = new Transport();
@@ -65,7 +98,16 @@ public class MediaDevices {
 		return getStreamUri(setup, profileNumber);
 	}
 
-	public String getUDPStreamUri(String profileToken) throws ConnectException, SOAPException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     */
+    public String getUDPStreamUri(String profileToken) 
+            throws ConnectException, SOAPException 
+    {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
 		Transport transport = new Transport();
@@ -74,7 +116,15 @@ public class MediaDevices {
 		return getStreamUri(profileToken, setup);
 	}
 
-	@Deprecated
+    /**
+     *
+     * @param profileNumber
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     * @deprecated
+     */
+    @Deprecated
 	public String getTCPStreamUri(int profileNumber) throws ConnectException, SOAPException {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
@@ -84,7 +134,14 @@ public class MediaDevices {
 		return getStreamUri(setup, profileNumber);
 	}
 
-	public String getTCPStreamUri(String profileToken) throws ConnectException, SOAPException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     */
+    public String getTCPStreamUri(String profileToken) throws ConnectException, SOAPException {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
 		Transport transport = new Transport();
@@ -93,7 +150,15 @@ public class MediaDevices {
 		return getStreamUri(profileToken, setup);
 	}
 
-	@Deprecated
+    /**
+     *
+     * @param profileNumber
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     * @deprecated
+     */
+    @Deprecated
 	public String getRTSPStreamUri(int profileNumber) throws ConnectException, SOAPException {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
@@ -103,7 +168,14 @@ public class MediaDevices {
 		return getStreamUri(setup, profileNumber);
 	}
 	
-	public String getRTSPStreamUri(String profileToken) throws ConnectException, SOAPException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     */
+    public String getRTSPStreamUri(String profileToken) throws ConnectException, SOAPException {
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
 		Transport transport = new Transport();
@@ -112,18 +184,44 @@ public class MediaDevices {
 		return getStreamUri(profileToken, setup);
 	}
 	
-	@Deprecated
+    /**
+     *
+     * @param streamSetup
+     * @param profileNumber
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     * @deprecated
+     */
+    @Deprecated
 	public String getStreamUri(StreamSetup streamSetup, int profileNumber) throws ConnectException, SOAPException {
 		Profile profile = onvifDevice.getDevices().getProfiles().get(profileNumber);
 		return getStreamUri(profile, streamSetup);
 	}
 
-	@Deprecated
+    /**
+     *
+     * @param profile
+     * @param streamSetup
+     * @return
+     * @throws ConnectException
+     * @throws SOAPException
+     * @deprecated
+     */
+    @Deprecated
 	public String getStreamUri(Profile profile, StreamSetup streamSetup) throws ConnectException, SOAPException {
 		return getStreamUri(profile.getToken(), streamSetup);
 	}
 
-	public String getStreamUri(String profileToken, StreamSetup streamSetup) throws SOAPException, ConnectException {
+    /**
+     *
+     * @param profileToken
+     * @param streamSetup
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public String getStreamUri(String profileToken, StreamSetup streamSetup) throws SOAPException, ConnectException {
 		GetStreamUri request = new GetStreamUri();
 		GetStreamUriResponse response = new GetStreamUriResponse();
 
@@ -132,8 +230,7 @@ public class MediaDevices {
 
 		try {
 			response = (GetStreamUriResponse) soap.createSOAPMediaRequest(request, response, false);
-		}
-		catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
 
@@ -144,11 +241,23 @@ public class MediaDevices {
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
 
-	public static VideoEncoderConfiguration getVideoEncoderConfiguration(Profile profile) {
+    /**
+     *
+     * @param profile
+     * @return
+     */
+    public static VideoEncoderConfiguration getVideoEncoderConfiguration(Profile profile) {
 		return profile.getVideoEncoderConfiguration();
 	}
 
-	public VideoEncoderConfigurationOptions getVideoEncoderConfigurationOptions(String profileToken) throws SOAPException, ConnectException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public VideoEncoderConfigurationOptions getVideoEncoderConfigurationOptions(String profileToken) throws SOAPException, ConnectException {
 		GetVideoEncoderConfigurationOptions request = new GetVideoEncoderConfigurationOptions();
 		GetVideoEncoderConfigurationOptionsResponse response = new GetVideoEncoderConfigurationOptionsResponse();
 
@@ -156,8 +265,7 @@ public class MediaDevices {
 
 		try {
 			response = (GetVideoEncoderConfigurationOptionsResponse) soap.createSOAPMediaRequest(request, response, false);
-		}
-		catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
 
@@ -168,7 +276,14 @@ public class MediaDevices {
 		return response.getOptions();
 	}
 
-	public boolean setVideoEncoderConfiguration(VideoEncoderConfiguration videoEncoderConfiguration) throws SOAPException, ConnectException {
+    /**
+     *
+     * @param videoEncoderConfiguration
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public boolean setVideoEncoderConfiguration(VideoEncoderConfiguration videoEncoderConfiguration) throws SOAPException, ConnectException {
 		SetVideoEncoderConfiguration request = new SetVideoEncoderConfiguration();
 		SetVideoEncoderConfigurationResponse response = new SetVideoEncoderConfigurationResponse();
 
@@ -177,23 +292,32 @@ public class MediaDevices {
 
 		try {
 			response = (SetVideoEncoderConfigurationResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
 
-		if (response == null) {
-			return false;
-		}
-
-		return true;
+		return response != null;
 	}
 
-	public String getSceenshotUri(String profileToken) throws SOAPException, ConnectException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public String getSceenshotUri(String profileToken) throws SOAPException, ConnectException {
 		return getSnapshotUri(profileToken);
 	}
 
-	public String getSnapshotUri(String profileToken) throws SOAPException, ConnectException {
+    /**
+     *
+     * @param profileToken
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public String getSnapshotUri(String profileToken) throws SOAPException, ConnectException {
 		GetSnapshotUri request = new GetSnapshotUri();
 		GetSnapshotUriResponse response = new GetSnapshotUriResponse();
 
@@ -201,8 +325,7 @@ public class MediaDevices {
 
 		try {
 			response = (GetSnapshotUriResponse) soap.createSOAPMediaRequest(request, response, true);
-		}
-		catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
 		
@@ -213,14 +336,19 @@ public class MediaDevices {
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
 
-	public List<VideoSource> getVideoSources() throws SOAPException, ConnectException {
+    /**
+     *
+     * @return
+     * @throws SOAPException
+     * @throws ConnectException
+     */
+    public List<VideoSource> getVideoSources() throws SOAPException, ConnectException {
 		GetVideoSources request = new GetVideoSources();
 		GetVideoSourcesResponse response = new GetVideoSourcesResponse();
 
 		try {
 			response = (GetVideoSourcesResponse) soap.createSOAPMediaRequest(request, response, false);
-		}
-		catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
 

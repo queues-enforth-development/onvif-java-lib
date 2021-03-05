@@ -1,7 +1,7 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
 // Generiert: 2014.02.19 um 02:35:56 PM CET 
 //
 
@@ -15,22 +15,22 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="Reboot" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,12 +39,16 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SetVideoSourceModeResponse")
 public class SetVideoSourceModeResponse {
 
-	@XmlElement(name = "Reboot")
+    /**
+     *
+     */
+    @XmlElement(name = "Reboot")
 	protected boolean reboot;
 
 	/**
 	 * Ruft den Wert der reboot-Eigenschaft ab.
 	 * 
+     * @return 
 	 */
 	public boolean isReboot() {
 		return reboot;
@@ -53,6 +57,7 @@ public class SetVideoSourceModeResponse {
 	/**
 	 * Legt den Wert der reboot-Eigenschaft fest.
 	 * 
+     * @param value
 	 */
 	public void setReboot(boolean value) {
 		this.reboot = value;

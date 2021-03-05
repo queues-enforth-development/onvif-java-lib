@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.oasis_open.docs.wsn.b_2;
@@ -22,36 +22,36 @@ import org.w3c.dom.Element;
 
 /**
  * <p>
- * Java-Klasse f�r anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
- * <complexType>
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+ * <pre>{@code
+   <complexType>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="ConsumerReference" type="{http://www.w3.org/2005/08/addressing}EndpointReferenceType"/>
  *         <element name="Filter" type="{http://docs.oasis-open.org/wsn/b-2}FilterType" minOccurs="0"/>
  *         <element name="InitialTerminationTime" type="{http://docs.oasis-open.org/wsn/b-2}AbsoluteOrRelativeTimeType" minOccurs="0"/>
  *         <element name="SubscriptionPolicy" minOccurs="0">
  *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 <sequence>
- *                   <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *                 </sequence>
- *               </restriction>
- *             </complexContent>
+               <complexContent>
+                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                   <sequence>
+                     <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+                   </sequence>
+                 </restriction>
+               </complexContent>
  *           </complexType>
  *         </element>
- *         <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *       </sequence>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+           <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+         </sequence>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -60,15 +60,34 @@ import org.w3c.dom.Element;
 @XmlRootElement(name = "Subscribe")
 public class Subscribe {
 
-	@XmlElement(name = "ConsumerReference", required = true)
+    /**
+     *
+     */
+    @XmlElement(name = "ConsumerReference", required = true)
 	protected EndpointReferenceType consumerReference;
-	@XmlElement(name = "Filter")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Filter")
 	protected FilterType filter;
-	@XmlElementRef(name = "InitialTerminationTime", namespace = "http://docs.oasis-open.org/wsn/b-2", type = JAXBElement.class, required = false)
+
+    /**
+     *
+     */
+    @XmlElementRef(name = "InitialTerminationTime", namespace = "http://docs.oasis-open.org/wsn/b-2", type = JAXBElement.class, required = false)
 	protected JAXBElement<String> initialTerminationTime;
-	@XmlElement(name = "SubscriptionPolicy")
+
+    /**
+     *
+     */
+    @XmlElement(name = "SubscriptionPolicy")
 	protected Subscribe.SubscriptionPolicy subscriptionPolicy;
-	@XmlAnyElement(lax = true)
+
+    /**
+     *
+     */
+    @XmlAnyElement(lax = true)
 	protected List<Object> any;
 
 	/**
@@ -165,41 +184,42 @@ public class Subscribe {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getAny().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
-			any = new ArrayList<Object>();
+			any = new ArrayList<>();
 		}
 		return this.any;
 	}
 
 	/**
 	 * <p>
-	 * Java-Klasse f�r anonymous complex type.
+	 * Java-Class for anonymous complex type.
 	 * 
 	 * <p>
-	 * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
-	 * <pre>
-	 * <complexType>
-	 *   <complexContent>
-	 *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-	 *       <sequence>
-	 *         <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
-	 *       </sequence>
-	 *     </restriction>
-	 *   </complexContent>
-	 * </complexType>
-	 * </pre>
+	 * <pre>{@code
+	   <complexType>
+	     <complexContent>
+	       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	         <sequence>
+	           <any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
+	         </sequence>
+	       </restriction>
+	     </complexContent>
+	   </complexType>
+	 * }</pre>
 	 * 
 	 * 
 	 */
@@ -207,7 +227,10 @@ public class Subscribe {
 	@XmlType(name = "", propOrder = { "any" })
 	public static class SubscriptionPolicy {
 
-		@XmlAnyElement(lax = true)
+        /**
+         *
+         */
+        @XmlAnyElement(lax = true)
 		protected List<Object> any;
 
 		/**
@@ -220,19 +243,20 @@ public class Subscribe {
 		 * <p>
 		 * For example, to add a new item, do as follows:
 		 * 
-		 * <pre>
+		 * <pre>{@code
 		 * getAny().add(newItem);
-		 * </pre>
+		 * }</pre>
 		 * 
 		 * 
 		 * <p>
 		 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 		 * 
 		 * 
+         * @return 
 		 */
 		public List<Object> getAny() {
 			if (any == null) {
-				any = new ArrayList<Object>();
+				any = new ArrayList<>();
 			}
 			return this.any;
 		}

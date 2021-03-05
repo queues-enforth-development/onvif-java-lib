@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.onvif.ver10.schema;
@@ -25,23 +25,23 @@ import javax.xml.namespace.QName;
  * Java-Klasse f�r SearchScope complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="SearchScope">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <sequence>
+     <complexContent>
+       <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         <sequence>
  *         <element name="IncludedSources" type="{http://www.onvif.org/ver10/schema}SourceReference" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="IncludedRecordings" type="{http://www.onvif.org/ver10/schema}RecordingReference" maxOccurs="unbounded" minOccurs="0"/>
  *         <element name="RecordingInformationFilter" type="{http://www.onvif.org/ver10/schema}XPathExpression" minOccurs="0"/>
  *         <element name="Extension" type="{http://www.onvif.org/ver10/schema}SearchScopeExtension" minOccurs="0"/>
- *       </sequence>
- *       <anyAttribute processContents='lax'/>
- *     </restriction>
- *   </complexContent>
- * </complexType>
- * </pre>
+         </sequence>
+         <anyAttribute processContents='lax'/>
+       </restriction>
+     </complexContent>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -49,16 +49,31 @@ import javax.xml.namespace.QName;
 @XmlType(name = "SearchScope", propOrder = { "includedSources", "includedRecordings", "recordingInformationFilter", "extension" })
 public class SearchScope {
 
-	@XmlElement(name = "IncludedSources")
+    /**
+     *
+     */
+    @XmlElement(name = "IncludedSources")
 	protected List<SourceReference> includedSources;
-	@XmlElement(name = "IncludedRecordings")
+
+    /**
+     *
+     */
+    @XmlElement(name = "IncludedRecordings")
 	protected List<String> includedRecordings;
-	@XmlElement(name = "RecordingInformationFilter")
+
+    /**
+     *
+     */
+    @XmlElement(name = "RecordingInformationFilter")
 	protected String recordingInformationFilter;
-	@XmlElement(name = "Extension")
+
+    /**
+     *
+     */
+    @XmlElement(name = "Extension")
 	protected SearchScopeExtension extension;
 	@XmlAnyAttribute
-	private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
 	 * Gets the value of the includedSources property.
@@ -70,19 +85,20 @@ public class SearchScope {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getIncludedSources().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link SourceReference }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<SourceReference> getIncludedSources() {
 		if (includedSources == null) {
-			includedSources = new ArrayList<SourceReference>();
+			includedSources = new ArrayList<>();
 		}
 		return this.includedSources;
 	}
@@ -97,19 +113,20 @@ public class SearchScope {
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * 
-	 * <pre>
+	 * <pre>{@code
 	 * getIncludedRecordings().add(newItem);
-	 * </pre>
+	 * }</pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
+     * @return 
 	 */
 	public List<String> getIncludedRecordings() {
 		if (includedRecordings == null) {
-			includedRecordings = new ArrayList<String>();
+			includedRecordings = new ArrayList<>();
 		}
 		return this.includedRecordings;
 	}

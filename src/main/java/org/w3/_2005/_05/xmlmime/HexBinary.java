@@ -1,8 +1,8 @@
 //
-// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.5-2 generiert 
-// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2014.02.04 um 12:22:03 PM CET 
+// This file was generated with the JavaTM Architecture for XML Binding (JAXB) Reference Implementation, v2.2.5-2 
+// Seehref="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Changes to this file are lost when the source schema is recompiled. 
+// Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
 package org.w3._2005._05.xmlmime;
@@ -21,17 +21,17 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * Java-Klasse f�r hexBinary complex type.
  * 
  * <p>
- * Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
- * <pre>
+ * <pre>{@code
  * <complexType name="hexBinary">
  *   <simpleContent>
  *     <extension base="<http://www.w3.org/2001/XMLSchema>hexBinary">
  *       <attribute ref="{http://www.w3.org/2005/05/xmlmime}contentType"/>
  *     </extension>
  *   </simpleContent>
- * </complexType>
- * </pre>
+   </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,11 +39,18 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlType(name = "hexBinary", propOrder = { "value" })
 public class HexBinary {
 
-	@XmlValue
+    /**
+     *
+     */
+    @XmlValue
 	@XmlJavaTypeAdapter(HexBinaryAdapter.class)
 	@XmlSchemaType(name = "hexBinary")
 	protected byte[] value;
-	@XmlAttribute(name = "contentType", namespace = "http://www.w3.org/2005/05/xmlmime")
+
+    /**
+     *
+     */
+    @XmlAttribute(name = "contentType", namespace = "http://www.w3.org/2005/05/xmlmime")
 	protected String contentType;
 
 	/**
