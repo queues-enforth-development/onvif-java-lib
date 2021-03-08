@@ -36,7 +36,6 @@ public class ImagingDevices {
     /**
      *
      * @param onvifDevice
-
      */
     public ImagingDevices(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;

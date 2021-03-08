@@ -212,7 +212,9 @@ public class PtzDevices
 	 *            Tilt-Position
 	 * @param zoom
 	 *            Zoom
-	 * @see getPanSpaces(), getTiltSpaces(), getZoomSpaces()
+	 * @see de.onvif.soap.devices.PtzDevices#getPanSpaces(String) 
+     * @see de.onvif.soap.devices.PtzDevices#getTiltSpaces(String)
+     * @see de.onvif.soap.devices.PtzDevices#getZoomSpaces(String)
 	 * @return True if move successful
 	 * @throws SOAPException
 	 */

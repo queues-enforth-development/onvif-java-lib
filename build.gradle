@@ -1,5 +1,5 @@
 apply plugin: 'java'
-//apply plugin: 'eclipse'
+apply plugin: 'eclipse'
 
 
 version = '2.0'
@@ -25,12 +25,19 @@ repositories {
    mavenCentral()
 }
 
+java {
+    withJavadocJar()
+}
+
 javadoc {
+    options.tags = [ "date" ] 
     source = sourceSets.main.allJava
     classpath = configurations.compile
 }
 
 dependencies {
-    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'    
-    implementation name: 'javaWsDiscovery-0.1'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'    
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
+    compile name: 'javaWsDiscovery-0.1'
 }

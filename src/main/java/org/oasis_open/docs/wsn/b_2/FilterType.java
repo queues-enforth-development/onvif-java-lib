@@ -18,7 +18,7 @@ import org.onvif.ver10.schema.EventFilter;
 
 /**
  * <p>
- * Java-Klasse f�r FilterType complex type.
+ * Java class for FilterType complex type.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.
