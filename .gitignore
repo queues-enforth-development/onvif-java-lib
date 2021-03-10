@@ -1,3 +1,7 @@
 /out/
 *.iml
 /build/
+
+### Gradle ###
+.gradle
+
