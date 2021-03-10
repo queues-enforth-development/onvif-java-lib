@@ -12,7 +12,7 @@ Included in the jar are the following libraries:
 * javaWsDiscovery (this was included in the original repository)  
     Repository: https://github.com/queues-enforth-development/javaWsDiscovery  
 
-# onvif-java-lib (Original comments from the original repository)
+# onvif-java-lib (Original README.md contents)
 ONVIF (Open Network Video Interface Forum) is a community to standardize communication between IP-based security products (like cameras).
 
 I developed a Java library for the ONVIF spezification. It helps you with the basics (you don't need to learn SOAP e.g.) but you may need to learn a few basics about the ONVIF spezification. As far as I know, this is the first public Java project for the ONVIF spezification.
