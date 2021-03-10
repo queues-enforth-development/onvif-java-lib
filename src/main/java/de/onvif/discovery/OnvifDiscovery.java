@@ -17,7 +17,7 @@ public class OnvifDiscovery {
     private static final Logger LOGGER = Logger.getLogger(OnvifDiscovery.class.getPackage().getName());
 
     /**
-     *
+     * Possibly returns a list of discovered devices? 
      * @return
      */
     public static List<OnvifPointer> discoverOnvifDevices() {
@@ -30,6 +30,7 @@ public class OnvifDiscovery {
                 LOGGER.log(Level.WARNING,"An error occurred in the discoverOnvifDevices method.",e);
             }
         });
+        
 		return onvifPointers;
 	}
 }
