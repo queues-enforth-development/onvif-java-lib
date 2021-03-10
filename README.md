@@ -6,7 +6,7 @@ I changed the versioning scheme to be more of a standard versioning.  I am start
 Currently, the jar produced is a fat jar containing all the dependencies.  I may change this in the future.
 
 Included in the jar are the following libraries:  
-* Apache Commons Codec 1.15 (commons-codec-1.15)  
+* Apache Commons Codec 1.15 (commons-codec-1.15)<br>
     Website: https://commons.apache.org/proper/commons-codec/  
     License: Apache License; Version 2.0, January 2004; http://www.apache.org/licenses/  
 * javaWsDiscovery (this was included in the original repository)  
