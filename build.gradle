@@ -15,11 +15,11 @@ jar {
     }
     
     dependsOn configurations.runtimeClasspath
-//    from {
-//        configurations.runtimeClasspath.findAll { 
-//            it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))            
-//        }.collect { zipTree(it) }
-//    }
+    from {
+        configurations.runtimeClasspath.findAll { 
+            it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))            
+        }.collect { zipTree(it) }
+    }
 }
 
 repositories {

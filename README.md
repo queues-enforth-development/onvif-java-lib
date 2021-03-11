@@ -1,5 +1,3 @@
-#Update 03/11/2021
-I am no longer building a fat jar.  This may change again.
 
 # Update 03/10/2021
 I forked this product to possibly use it in another project for the company I work for currently.  I have made some changes to clean up the code, and I created a Gradle build system for the project.  The version of Gradle I am currently using is Gradle 6.8.2.
