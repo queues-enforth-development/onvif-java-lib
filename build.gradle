@@ -46,6 +46,7 @@ dependencies {
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15'    
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
-    compile name: 'javaWsDiscovery-0.1'
+    implementation 'junit:junit:4.13.2'
+//    compile name: 'javaWsDiscovery-0.1'
 }
 
