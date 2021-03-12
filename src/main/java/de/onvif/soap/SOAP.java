@@ -125,8 +125,9 @@ public class SOAP {
 	 * @throws SOAPException
 	 * @throws ConnectException
 	 */
-	public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsAuthentification) throws ConnectException,
-			SOAPException {
+	public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsAuthentification) 
+            throws ConnectException, SOAPException 
+    {
 		SOAPConnection soapConnection = null;
 		SOAPMessage soapResponse = null;
 

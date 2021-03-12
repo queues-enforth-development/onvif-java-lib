@@ -16,6 +16,8 @@ import java.net.*;
 import java.security.SecureRandom;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -25,6 +27,10 @@ import java.util.concurrent.*;
  * @date 2017/11/14 15:40
  */
 public class DeviceDiscovery {
+    private static final Logger LOGGER = Logger.getLogger(DeviceDiscovery.class.getPackage().getName());
+    private static final String ERROR_MSG = "An error occurred in %s.%s at %d while trying to discover the devices.";
+
+        
     private static final Random random = new SecureRandom();
     public static String WS_DISCOVERY_SOAP_VERSION = "SOAP 1.2 Protocol";
     public static String WS_DISCOVERY_CONTENT_TYPE = "application/soap+xml";
@@ -50,17 +56,14 @@ public class DeviceDiscovery {
     /**
      * Discover WS device on the local network with specified filter
      *
-     * @param regexpProtocol url protocol matching regexp like "^http$", might be empty ""
-     * @param regexpPath     url path matching regexp like "onvif", might be empty ""
-     * @return list of unique device urls filtered
+     * @param regexpProtocol URL protocol matching regexp like "^http$", might be empty ""
+     * @param regexpPath     URL path matching regexp like "onvif", might be empty ""
+     * @return list of unique device URLS filtered
      */
     public static Collection<URL> discoverWsDevicesAsUrls(String regexpProtocol, String regexpPath) {
-        final Collection<URL> urls = new TreeSet<>(new Comparator<URL>() {
-            public int compare(URL o1, URL o2) {
-                return o1.toString().compareTo(o2.toString());
-            }
-        });
-        for (String key : discoverWsDevices()) {
+
+        final Collection<URL> urls = new TreeSet<>((URL o1, URL o2) -> o1.toString().compareTo(o2.toString()));
+        discoverWsDevices().forEach(key -> {
             try {
                 final URL url = new URL(key);
                 boolean ok = true;
@@ -70,9 +73,10 @@ public class DeviceDiscovery {
                     ok = false;
                 if (ok) urls.add(url);
             } catch (MalformedURLException e) {
-                e.printStackTrace();
+                StackTraceElement t =  e.getCause().getStackTrace()[0];
+                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
             }
-        }
+        });
         return urls;
     }
 
@@ -91,81 +95,88 @@ public class DeviceDiscovery {
             if (interfaces != null) {
                 while (interfaces.hasMoreElements()) {
                     NetworkInterface anInterface = interfaces.nextElement();
-//               System.out.println("networkInterface:"+anInterface);
                     if (!anInterface.isLoopback()) {
                         final List<InterfaceAddress> interfaceAddresses = anInterface.getInterfaceAddresses();
-                        for (InterfaceAddress address : interfaceAddresses) {
+                        interfaceAddresses.stream().map(address -> {
                             InetAddress inetAddress = address.getAddress();
-//                     if(inetAddress instanceof Inet4Address) {
+                            return address;
+                        }).forEachOrdered(address -> {
                             addressList.add(address.getAddress());
-//                        System.out.println(address.getAddress());
-//                     }
-                        }
+                        });
                     }
                 }
             }
         } catch (SocketException e) {
-            e.printStackTrace();
+            StackTraceElement t =  e.getCause().getStackTrace()[0];
+            LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
         }
         ExecutorService executorService = Executors.newCachedThreadPool();
-        for (final InetAddress address : addressList) {
-            Runnable runnable = new Runnable() {
-                public void run() {
-                    try {
-                        final String uuid = UUID.randomUUID().toString();
-                        final String probe = WS_DISCOVERY_PROBE_MESSAGE.replaceAll("<wsa:MessageID>urn:uuid:.*</wsa:MessageID>", "<wsa:MessageID>urn:uuid:" + uuid + "</wsa:MessageID>");
-                        final int port = random.nextInt(20000) + 40000;
-                        @SuppressWarnings("SocketOpenedButNotSafelyClosed")
-                        final DatagramSocket server = new DatagramSocket(port, address);
-                        new Thread() {
-                            public void run() {
-                                try {
-                                    final DatagramPacket packet = new DatagramPacket(new byte[4096], 4096);
-                                    server.setSoTimeout(WS_DISCOVERY_TIMEOUT);
-                                    long timerStarted = System.currentTimeMillis();
-                                    while (System.currentTimeMillis() - timerStarted < (WS_DISCOVERY_TIMEOUT)) {
-                                        serverStarted.countDown();
-                                        server.receive(packet);
-                                        final Collection<String> collection = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
-                                        for (String key : collection) {
-                                            addresses.add(key);
-                                        }
-                                    }
-                                } catch (SocketTimeoutException ignored) {
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                } finally {
-                                    serverFinished.countDown();
-                                    server.close();
+        addressList.stream().map(address -> {
+            return (Runnable) () -> {
+                try {
+                    final String uuid = UUID.randomUUID().toString();
+                    final String probe = WS_DISCOVERY_PROBE_MESSAGE.replaceAll("<wsa:MessageID>urn:uuid:.*</wsa:MessageID>", "<wsa:MessageID>urn:uuid:" + uuid + "</wsa:MessageID>");
+                    final int port = random.nextInt(20000) + 40000;
+                    @SuppressWarnings("SocketOpenedButNotSafelyClosed")
+                    final DatagramSocket server = new DatagramSocket(port, address);
+                    new Thread() {
+                        @Override
+                        public void run() {
+                            try {
+                                final DatagramPacket packet = new DatagramPacket(new byte[4096], 4096);
+                                server.setSoTimeout(WS_DISCOVERY_TIMEOUT);
+                                long timerStarted = System.currentTimeMillis();
+                                while (System.currentTimeMillis() - timerStarted < (WS_DISCOVERY_TIMEOUT)) {
+                                    serverStarted.countDown();
+                                    server.receive(packet);
+                                    final Collection<String> collection = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
+                                    collection.forEach(key -> {
+                                        addresses.add(key);
+                                    });
                                 }
+                            }catch (SocketTimeoutException e) {
+                                StackTraceElement t =  e.getCause().getStackTrace()[0];
+                                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
+                            }catch (IOException | SOAPException e) {
+                                StackTraceElement t =  e.getCause().getStackTrace()[0];
+                                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
+                            } finally {
+                                serverFinished.countDown();
+                                server.close();
                             }
-                        }.start();
-                        try {
-                            serverStarted.await(1000, TimeUnit.MILLISECONDS);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
                         }
-                        if (address instanceof Inet4Address) {
-                            server.send(new DatagramPacket(probe.getBytes(), probe.length(), InetAddress.getByName(WS_DISCOVERY_ADDRESS_IPv4), WS_DISCOVERY_PORT));
-                        } else {
-                            server.send(new DatagramPacket(probe.getBytes(), probe.length(), InetAddress.getByName(WS_DISCOVERY_ADDRESS_IPv6), WS_DISCOVERY_PORT));
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                    }.start();
                     try {
-                        serverFinished.await((WS_DISCOVERY_TIMEOUT), TimeUnit.MILLISECONDS);
+                        serverStarted.await(1000, TimeUnit.MILLISECONDS);
                     } catch (InterruptedException e) {
-                        e.printStackTrace();
+                        StackTraceElement t =  e.getCause().getStackTrace()[0];
+                        LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
                     }
+                    if (address instanceof Inet4Address) {
+                        server.send(new DatagramPacket(probe.getBytes(), probe.length(), InetAddress.getByName(WS_DISCOVERY_ADDRESS_IPv4), WS_DISCOVERY_PORT));
+                    } else {
+                        server.send(new DatagramPacket(probe.getBytes(), probe.length(), InetAddress.getByName(WS_DISCOVERY_ADDRESS_IPv6), WS_DISCOVERY_PORT));
+                    }
+                }catch (IOException e) {
+                    StackTraceElement t =  e.getCause().getStackTrace()[0];
+                    LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
+                }
+                try {
+                    serverFinished.await((WS_DISCOVERY_TIMEOUT), TimeUnit.MILLISECONDS);
+                } catch (InterruptedException e) {
+                    StackTraceElement t =  e.getCause().getStackTrace()[0];
+                    LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
                 }
             };
+        }).forEachOrdered(runnable -> {
             executorService.submit(runnable);
-        }
+        });
         try {
             executorService.shutdown();
             executorService.awaitTermination(WS_DISCOVERY_TIMEOUT + 2000, TimeUnit.MILLISECONDS);
-        } catch (InterruptedException ignored) {
+        } catch (InterruptedException e) {
+            StackTraceElement t =  e.getCause().getStackTrace()[0];
+            LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
         }
         return addresses;
     }
@@ -190,12 +201,9 @@ public class DeviceDiscovery {
         headers.addHeader("Content-type", WS_DISCOVERY_CONTENT_TYPE);
         SOAPMessage message = factory.createMessage(headers, new ByteArrayInputStream(data));
         SOAPBody body = message.getSOAPBody();
-        for (Node node : getNodeMatching(body, ".*:XAddrs")) {
-            if (node.getTextContent().length() > 0) {
-                //èŽ·å?–æ‘„åƒ?å¤´ URLåœ°å?€ä¿¡æ?¯ï¼Œå…¶ä¸­åŒ…æ‹¬Ipv6åœ°å?€ï¼Œé»˜è®¤ipv6åœ°å?€ä¿¡æ?¯ä¸­å?«æœ‰MACåœ°å?€ä¿¡æ?¯
-                urls.addAll(Arrays.asList(node.getTextContent().split(" ")));
-            }
-        }
+        getNodeMatching(body, ".*:XAddrs").stream().filter(node -> (node.getTextContent().length() > 0)).forEachOrdered(node -> {
+            urls.addAll(Arrays.asList(node.getTextContent().split(" ")));
+        });
         return urls;
     }
 }
