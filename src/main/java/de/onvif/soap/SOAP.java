@@ -1,8 +1,7 @@
 package de.onvif.soap;
 
-import java.io.IOException;
+import de.onvif.Logger;
 import java.net.ConnectException;
-import java.net.SocketException;
 import java.util.logging.Level;
 
 import javax.xml.bind.JAXBContext;
@@ -29,8 +28,9 @@ import org.w3c.dom.Document;
  *
  *
  */
-public class SOAP {
-
+public class SOAP 
+        implements Logger
+{
 	private boolean logging = true;
 
 	private final OnvifDevice onvifDevice;
@@ -53,8 +53,9 @@ public class SOAP {
      * @throws SOAPException
      * @throws ConnectException
      */
-    public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException,
-			ConnectException {
+    public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
+            throws SOAPException, ConnectException 
+    {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getDeviceUri(), needsAuthentification);
 	}
 
@@ -67,7 +68,9 @@ public class SOAP {
      * @throws SOAPException
      * @throws ConnectException
      */
-    public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException, ConnectException {
+    public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
+            throws SOAPException, ConnectException 
+    {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getPtzUri(), needsAuthentification);
 	}
 
@@ -80,7 +83,9 @@ public class SOAP {
      * @throws SOAPException
      * @throws ConnectException
      */
-    public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException, ConnectException {
+    public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
+            throws SOAPException, ConnectException 
+    {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getMediaUri(), needsAuthentification);
 	}
 
@@ -138,18 +143,14 @@ public class SOAP {
 
 			// Print the request message
 			if (isLogging()) {
-				System.out.print(String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
-				soapMessage.writeTo(System.out);
-				System.out.println();
+                logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
 			}
 
 			soapResponse = soapConnection.call(soapMessage, soapUri);
 
 			// print SOAP Response
 			if (isLogging()) {
-				System.out.print(String.format("Response SOAP Message (%s): ", soapResponseElem.getClass().getSimpleName()));
-				soapResponse.writeTo(System.out);
-				System.out.println();
+                logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ",soapResponseElem.getClass().getSimpleName()));
 			}
 
 			if (soapResponseElem == null) {
@@ -173,13 +174,11 @@ public class SOAP {
 			}
 
 			return soapResponseElem;
-		} catch (SocketException e) {
-			throw new ConnectException(e.getMessage());
 		} catch (SOAPException e) {
 			onvifDevice.getLogger().log(Level.WARNING,
 					String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
 			throw e;
-		} catch (ParserConfigurationException | JAXBException | IOException e) {
+		} catch (ParserConfigurationException | JAXBException  e) {
 			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
 			return null;
 		}
