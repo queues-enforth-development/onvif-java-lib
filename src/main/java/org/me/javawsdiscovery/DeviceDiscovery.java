@@ -81,6 +81,35 @@ public class DeviceDiscovery {
     }
 
     /**
+     * Discover WS device on the local network with specified filter
+     *
+     * @param regexpProtocol URL protocol matching regexp like "^http$", might be empty ""
+     * @param regexpPath     URL path matching regexp like "onvif", might be empty ""
+     * @param devices
+     * @return list of unique device URLS filtered
+     */
+    public static List<URL> discoverWsDevicesAsUrls(String regexpProtocol, String regexpPath, List<URL> devices) {
+        discoverWsDevices().forEach(key -> {
+            try {
+                final URL url = new URL(key);
+                boolean ok = true;
+                if (null != regexpProtocol && regexpProtocol.length() > 0 && !url.getProtocol().matches(regexpProtocol)) {
+                    ok = false;
+                }
+                if (null != regexpPath && regexpPath.length() > 0 && !url.getPath().matches(regexpPath)) {
+                    ok = false;
+                }
+                if (ok) {
+                    devices.add(url);
+                }
+            } catch (MalformedURLException e) {
+                StackTraceElement t =  e.getCause().getStackTrace()[0];
+                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
+            }
+        });
+        return devices;       
+    }
+    /**
      * Discover WS device on the local network
      *
      * @return list of unique devices access strings which might be URLs in most cases
@@ -134,10 +163,11 @@ public class DeviceDiscovery {
                                         addresses.add(key);
                                     });
                                 }
-                            }catch (SocketTimeoutException e) {
-                                StackTraceElement t =  e.getCause().getStackTrace()[0];
-                                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
-                            }catch (IOException | SOAPException e) {
+                            } catch (SocketTimeoutException e) {
+                                LOGGER.log(Level.INFO, "A connection timed out while searching for an ONVIF device.  This is only an informational message as no error has really occurred.");
+//                                StackTraceElement t =  e.getCause().getStackTrace()[0];
+//                                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
+                            } catch (IOException | SOAPException e) {
                                 StackTraceElement t =  e.getCause().getStackTrace()[0];
                                 LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
                             } finally {

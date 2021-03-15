@@ -14,9 +14,9 @@ import de.onvif.soap.OnvifDevice;
  * @author th
  * @date 2015-06-19
  */
-public class OnvifPointer {
-	private final String address;
-	private final String name;
+public class OnvifPointer extends URLDevicePointer {
+//	private final String address;
+//	private final String name;
 
     /**
      *
@@ -30,16 +30,17 @@ public class OnvifPointer {
      *
      * @return
      */
+    @Override
     public String getName() {
-		return name;
+		return super.getName();
 	}
 
     /**
-     *
+     * 
      * @return
      */
     public String getAddress() {
-		return address;
+		return getURLAddress().toString();
 	}
 
 	private final String snapshotUrl;
@@ -49,10 +50,10 @@ public class OnvifPointer {
      * @param address
      */
     public OnvifPointer(String address) {
-		this.address = address;
+        super(address);
 		try {
 			final OnvifDevice device = new OnvifDevice(address);
-			this.name = device.getName();
+			super.setName(device.getName());
 			final List<Profile> profiles = device.getDevices().getProfiles();
 			final Profile profile = profiles.get(0);
 			this.snapshotUrl = device.getMedia().getSnapshotUri(profile.getToken());
@@ -60,7 +61,7 @@ public class OnvifPointer {
 			throw new RuntimeException("no onvif device or device not configured", e);
 		}
 	}
-
+    
     /**
      *
      * @param service
@@ -76,11 +77,11 @@ public class OnvifPointer {
      * @throws ConnectException
      */
     public OnvifDevice getOnvifDevice() throws SOAPException, ConnectException {
-		return new OnvifDevice(address);
+		return new OnvifDevice(getAddress());
 	}
 
     @Override
 	public String toString() {
-		return "ONVIF: " + name + "@" + address;
+		return String.format("ONVIF: %s@%s", super.getName(), getAddress());
 	}
 }

@@ -3,6 +3,7 @@ package de.onvif.discovery;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,4 +34,14 @@ public class OnvifDiscovery {
         
 		return onvifPointers;
 	}
+    
+    /**
+     * 
+     * @return 
+     */
+    public static List<URL> searchOnvifDevices() {
+        List<URL> deviceURLs = new LinkedList<>();
+        deviceURLs.addAll(DeviceDiscovery.discoverWsDevicesAsUrls("^http$", ".*onvif.*"));
+        return deviceURLs;
+    }
 }

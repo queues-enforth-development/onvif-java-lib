@@ -41,8 +41,6 @@ public class SOAP {
 
      */
     public SOAP(OnvifDevice onvifDevice) {
-		super();
-
 		this.onvifDevice = onvifDevice;
 	}
 
@@ -140,7 +138,7 @@ public class SOAP {
 
 			// Print the request message
 			if (isLogging()) {
-				System.out.print("Request SOAP Message (" + soapRequestElem.getClass().getSimpleName() + "): ");
+				System.out.print(String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
 				soapMessage.writeTo(System.out);
 				System.out.println();
 			}
@@ -149,7 +147,7 @@ public class SOAP {
 
 			// print SOAP Response
 			if (isLogging()) {
-				System.out.print("Response SOAP Message (" + soapResponseElem.getClass().getSimpleName() + "): ");
+				System.out.print(String.format("Response SOAP Message (%s): ", soapResponseElem.getClass().getSimpleName()));
 				soapResponse.writeTo(System.out);
 				System.out.println();
 			}
@@ -182,7 +180,7 @@ public class SOAP {
 					String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
 			throw e;
 		} catch (ParserConfigurationException | JAXBException | IOException e) {
-			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage(), e));
+			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
 			return null;
 		}
 		finally {
