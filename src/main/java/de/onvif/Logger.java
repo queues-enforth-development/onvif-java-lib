@@ -17,6 +17,7 @@ import javax.xml.soap.SOAPMessage;
  * @author jmccay
  */
 public interface Logger {
+    final ByteArrayOutputStream baos = new ByteArrayOutputStream();
     
     static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(Logger.class.getPackage().getName());
     
@@ -27,8 +28,7 @@ public interface Logger {
     
     default public void logSoapMessage(SOAPMessage soapMessage, String message) {
         try {
-            LOGGER.log(Level.INFO, String.format("Request SOAP Message (%s): ", message.getClass().getSimpleName()));
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            LOGGER.log(Level.INFO, String.format("Request SOAP Message (%s): ", soapMessage.getClass().getSimpleName()));
             baos.reset();
             soapMessage.writeTo(baos);
             LOGGER.log(Level.INFO, baos.toString("ISO-8859-1"));
