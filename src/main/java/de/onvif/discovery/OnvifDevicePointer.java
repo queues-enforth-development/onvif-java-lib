@@ -21,8 +21,8 @@ public class OnvifDevicePointer
         extends URLDevicePointer 
 {
 
-    private String user = null;
-    private String password = null;
+    private String user;
+    private String password;
     private OnvifDevice device;
     private List<Profile> profiles;
     private String snapshotUrl;
