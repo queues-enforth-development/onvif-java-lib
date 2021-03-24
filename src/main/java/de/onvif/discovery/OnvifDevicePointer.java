@@ -91,4 +91,18 @@ public class OnvifDevicePointer
     public void setPassword(String password) {
         this.password = password;
     }
+    
+    public OnvifDevice getDevice() {
+        return device;
+    }
+
+    public List<Profile> getProfiles() {
+        return profiles;
+    }
+
+    public String getSnapshotUrl() {
+        return snapshotUrl;
+    }
+    
+    
 }

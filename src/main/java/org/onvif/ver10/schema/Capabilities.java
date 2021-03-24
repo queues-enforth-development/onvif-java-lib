@@ -18,7 +18,10 @@ import javax.xml.namespace.QName;
 
 /**
  * <p>
- * Java-Klasse f�r Capabilities complex type.
+ * Java class for capabilities complex type.
+ * 
+ * This class holds the results returned by the ONVIF device as contained in it's WSDL
+ * 
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.

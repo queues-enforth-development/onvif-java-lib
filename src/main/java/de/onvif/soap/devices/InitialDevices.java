@@ -168,7 +168,7 @@ public class InitialDevices {
      */
     public Capabilities getCapabilities() throws ConnectException, SOAPException {
 		GetCapabilities getCapabilities = new GetCapabilities();
-		GetCapabilitiesResponse response = null; //new GetCapabilitiesResponse();
+		GetCapabilitiesResponse response = new GetCapabilitiesResponse();
 
 		try {
 			response = (GetCapabilitiesResponse) soap.createSOAPRequest(getCapabilities, response, onvifDevice.getDeviceUri(), false);
