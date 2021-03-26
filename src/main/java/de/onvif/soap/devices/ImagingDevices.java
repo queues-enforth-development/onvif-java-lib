@@ -19,6 +19,7 @@ import org.onvif.ver20.imaging.wsdl.SetImagingSettingsResponse;
 
 import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
+import de.onvif.soap.exception.SOAPFaultException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -59,7 +60,7 @@ public class ImagingDevices {
 
 		try {
 			response = (GetOptionsResponse) soap.createSOAPImagingRequest(request, response, false);
-		} catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException | SOAPFaultException e) {
             LOGGER.log(Level.WARNING,"An error occurred in getOptions.",e);
 			return null;
 		}
@@ -96,7 +97,7 @@ public class ImagingDevices {
 
 		try {
 			response = (MoveResponse) soap.createSOAPImagingRequest(request, response, true);
-		} catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException | SOAPFaultException e) {
             LOGGER.log(Level.WARNING,"An error occurred in moveFucus.",e);
 			return false;
 		}
@@ -121,7 +122,7 @@ public class ImagingDevices {
 
 		try {
 			response = (GetImagingSettingsResponse) soap.createSOAPImagingRequest(request, response, true);
-		} catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException | SOAPFaultException e) {
             LOGGER.log(Level.WARNING,"An error occurred in getImageSettings.",e);
 			return null;
 		}
@@ -152,7 +153,7 @@ public class ImagingDevices {
 
 		try {
 			response = (SetImagingSettingsResponse) soap.createSOAPImagingRequest(request, response, true);
-		} catch (SOAPException | ConnectException e) {
+		} catch (SOAPException | ConnectException | SOAPFaultException e) {
             LOGGER.log(Level.WARNING,"An error occurred in setImageSettings.",e);
 			return false;
 		}

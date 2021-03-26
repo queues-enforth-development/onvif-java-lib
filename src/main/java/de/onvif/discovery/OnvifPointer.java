@@ -9,6 +9,7 @@ import javax.xml.soap.SOAPException;
 import org.onvif.ver10.schema.Profile;
 
 import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.exception.SOAPFaultException;
 
 /**
  * @author th
@@ -57,7 +58,7 @@ public class OnvifPointer extends URLDevicePointer {
 			final List<Profile> profiles = device.getDevices().getProfiles();
 			final Profile profile = profiles.get(0);
 			this.snapshotUrl = device.getMedia().getSnapshotUri(profile.getToken());
-		} catch (ConnectException | SOAPException e) {
+		} catch (ConnectException | SOAPException | SOAPFaultException e) {
 			throw new RuntimeException("no onvif device or device not configured", e);
 		}
 	}
@@ -75,8 +76,11 @@ public class OnvifPointer extends URLDevicePointer {
      * @return
      * @throws SOAPException
      * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public OnvifDevice getOnvifDevice() throws SOAPException, ConnectException {
+    public OnvifDevice getOnvifDevice() 
+            throws SOAPException, ConnectException, SOAPFaultException 
+    {
 		return new OnvifDevice(getAddress());
 	}
 

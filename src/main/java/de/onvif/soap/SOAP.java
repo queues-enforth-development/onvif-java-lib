@@ -1,6 +1,7 @@
 package de.onvif.soap;
 
 import de.onvif.Logger;
+import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.util.logging.Level;
 
@@ -52,9 +53,10 @@ public class SOAP
      * @return
      * @throws SOAPException
      * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
-            throws SOAPException, ConnectException 
+            throws SOAPException, ConnectException, SOAPFaultException 
     {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getDeviceUri(), needsAuthentification);
 	}
@@ -67,9 +69,10 @@ public class SOAP
      * @return
      * @throws SOAPException
      * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
-            throws SOAPException, ConnectException 
+            throws SOAPException, ConnectException, SOAPFaultException 
     {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getPtzUri(), needsAuthentification);
 	}
@@ -82,9 +85,10 @@ public class SOAP
      * @return
      * @throws SOAPException
      * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
-            throws SOAPException, ConnectException 
+            throws SOAPException, ConnectException, SOAPFaultException 
     {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getMediaUri(), needsAuthentification);
 	}
@@ -97,9 +101,11 @@ public class SOAP
      * @return
      * @throws SOAPException
      * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPImagingRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException,
-			ConnectException {
+			ConnectException,
+			SOAPFaultException {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getImagingUri(), needsAuthentification);
 	}
 
@@ -111,9 +117,11 @@ public class SOAP
      * @return
      * @throws SOAPException
      * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPEventsRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException,
-			ConnectException {
+			ConnectException, SOAPFaultException 
+    {
 		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getEventsUri(), needsAuthentification);
 	}
 
@@ -127,9 +135,10 @@ public class SOAP
 	 * @return SOAP Response Element
 	 * @throws SOAPException
 	 * @throws ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
 	public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsAuthentification) 
-            throws ConnectException, SOAPException 
+            throws ConnectException, SOAPException, SOAPFaultException 
     {
 		SOAPConnection soapConnection = null;
 		SOAPMessage soapResponse = null;
@@ -144,34 +153,46 @@ public class SOAP
 			// Print the request message
 			if (isLogging()) {
                 logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
+                logSoapMessage2File("C:\\github\\onvif\\research\\snc-wr630\\soap", soapMessage);
 			}
 
 			soapResponse = soapConnection.call(soapMessage, soapUri);
 
 			// print SOAP Response
 			if (isLogging()) {
-                logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ",soapResponseElem.getClass().getSimpleName()));
+                String name = soapResponse.getSOAPBody().getChildNodes().item(0).getLocalName();
+                logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
+                if (name.toLowerCase().contains("fault")) {
+                    logSoapFaultMessage("C:\\github\\onvif\\research\\snc-wr630\\soap", soapResponse, soapMessage);
+                } else {
+                    logSoapMessage2File("C:\\github\\onvif\\research\\snc-wr630\\soap", soapResponse);
+                }
 			}
 
 			if (soapResponseElem == null) {
 				throw new NullPointerException("Improper SOAP Response Element given (is null).");
 			}
+            
+            if (soapResponse.getSOAPBody().hasFault()) {
+                throw new SOAPFaultException(soapResponse, "An error occurred with the SOAP call.");
+            } else {
 
-			Unmarshaller unmarshaller = JAXBContext.newInstance(soapResponseElem.getClass()).createUnmarshaller();
-			try {
-				try {
-					soapResponseElem = unmarshaller.unmarshal(soapResponse.getSOAPBody().extractContentAsDocument());
-				} catch (SOAPException e) {
-					// Second try for SOAP 1.2
-					// Sorry, I don't know why it works, it just does o.o
-					soapResponseElem = unmarshaller.unmarshal(soapResponse.getSOAPBody().extractContentAsDocument());
-				}
-			} catch (UnmarshalException e) {
-				// Fault soapFault = (Fault)
-				// unmarshaller.unmarshal(soapResponse.getSOAPBody().extractContentAsDocument());
-				onvifDevice.getLogger().log(Level.WARNING, "Could not unmarshal, ended in SOAP fault.", e);
-				// throw new SOAPFaultException(soapFault);
-			}
+                Unmarshaller unmarshaller = JAXBContext.newInstance(soapResponseElem.getClass()).createUnmarshaller();
+                try {
+                    try {
+                        soapResponseElem = unmarshaller.unmarshal(soapResponse.getSOAPBody().extractContentAsDocument());
+                    } catch (SOAPException e) {
+                        // Second try for SOAP 1.2
+                        // Sorry, I don't know why it works, it just does o.o
+                        soapResponseElem = unmarshaller.unmarshal(soapResponse.getSOAPBody().extractContentAsDocument());
+                    }
+                } catch (UnmarshalException e) {
+                    // Fault soapFault = (Fault)
+                    // unmarshaller.unmarshal(soapResponse.getSOAPBody().extractContentAsDocument());
+                    onvifDevice.getLogger().log(Level.WARNING, "Could not unmarshal, ended in SOAP fault.", e);
+                    // throw new SOAPFaultException(soapFault);
+                }
+            }
 
 			return soapResponseElem;
 		} catch (SOAPException e) {

@@ -24,6 +24,7 @@ import de.onvif.soap.devices.ImagingDevices;
 import de.onvif.soap.devices.InitialDevices;
 import de.onvif.soap.devices.MediaDevices;
 import de.onvif.soap.devices.PtzDevices;
+import de.onvif.soap.exception.SOAPFaultException;
 import java.util.logging.Level;
 
 /**
@@ -68,8 +69,11 @@ public class OnvifDevice {
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
 	 * @throws SOAPException 
+     * @throws de.onvif.soap.exception.SOAPFaultException 
 	 */
-	public OnvifDevice(String hostIp, String user, String password) throws ConnectException, SOAPException {
+	public OnvifDevice(String hostIp, String user, String password) 
+            throws ConnectException, SOAPException, SOAPFaultException 
+    {
 		this.HOST_IP = hostIp;
 
 		if (!isOnline()) {
@@ -98,8 +102,11 @@ public class OnvifDevice {
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
 	 * @throws SOAPException 
+     * @throws de.onvif.soap.exception.SOAPFaultException 
 	 */
-	public OnvifDevice(String hostIp) throws ConnectException, SOAPException {
+	public OnvifDevice(String hostIp) 
+            throws ConnectException, SOAPException, SOAPFaultException 
+    {
 		this(hostIp, null, null);
 	}
 
@@ -139,8 +146,11 @@ public class OnvifDevice {
 	 *             Get thrown if device doesn't give answers to
 	 *             GetCapabilities()
 	 * @throws SOAPException 
+     * @throws de.onvif.soap.exception.SOAPFaultException 
 	 */
-	protected void init() throws ConnectException, SOAPException {
+	protected void init() 
+            throws ConnectException, SOAPException, SOAPFaultException 
+    {
 		Capabilities capabilities = getDevices().getCapabilities();
 
 		if (capabilities == null) {
@@ -406,8 +416,11 @@ public class OnvifDevice {
      * @return
      * @throws ConnectException
      * @throws SOAPException
+     * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public String reboot() throws ConnectException, SOAPException {
+    public String reboot() 
+            throws ConnectException, SOAPException, SOAPFaultException 
+    {
 		return initialDevices.reboot();
 	}
 }

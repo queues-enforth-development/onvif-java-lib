@@ -1,5 +1,6 @@
 package de.onvif.log;
 
+@Deprecated
 public class Logger {
 	public void debug(String text) {
 		System.out.println(text);

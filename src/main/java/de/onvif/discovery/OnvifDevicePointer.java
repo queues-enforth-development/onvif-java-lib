@@ -6,6 +6,7 @@
 package de.onvif.discovery;
 
 import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.net.URL;
 import java.util.List;
@@ -46,7 +47,7 @@ public class OnvifDevicePointer
 			profiles = device.getDevices().getProfiles();
  			this.snapshotUrl = device.getMedia().getSnapshotUri(profiles.get(0).getToken());
             
-        } catch (ConnectException | SOAPException e) {
+        } catch (ConnectException | SOAPException | SOAPFaultException e) {
             throw new RuntimeException("no onvif device or device not configured", e);
         }
     }

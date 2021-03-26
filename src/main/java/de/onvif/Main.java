@@ -11,6 +11,7 @@ import javax.xml.soap.SOAPException;
 import org.onvif.ver10.schema.Profile;
 
 import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.exception.SOAPFaultException;
 
 /**
  *
@@ -48,7 +49,10 @@ public class Main {
 		} catch (ConnectException | SOAPException e1) {
 			System.err.println("No connection to camera, please try again.");
 			return;
-		}
+		} catch (SOAPFaultException e) {
+            System.err.println(String.format("A SOAP error occurred: %s", e.toString()));
+            return;
+        }
 		System.out.println("Connection to camera successful!");
 
 		while (true) {
@@ -63,8 +67,8 @@ public class Main {
 					for (Profile p : profiles) {
 						try {
 							System.out.println("URL from Profile \'" + p.getName() + "\': " + cam.getMedia().getSnapshotUri(p.getToken()));
-						} catch (SOAPException e) {
-							System.err.println("Cannot grap snapshot URL, got Exception "+e.getMessage());
+						} catch (SOAPException | SOAPFaultException e) {
+							System.err.println("Cannot grab the snapshot URL, got an Exception "+e.getMessage());
 						}
 					}
 					break;
@@ -91,6 +95,7 @@ public class Main {
 					break;
 				}
 			} catch (IOException e) {
+//TODO this does nothing and should be changed                
 				e.printStackTrace();
 			}
 		}
