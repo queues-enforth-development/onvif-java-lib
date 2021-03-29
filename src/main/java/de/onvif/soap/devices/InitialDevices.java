@@ -1,6 +1,7 @@
 package de.onvif.soap.devices;
 
-import de.onvif.Logger;
+import de.onvif.LibLogger;
+import de.onvif.LoggerInterface;
 import java.net.ConnectException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -50,7 +51,7 @@ import java.util.logging.Level;
  *
  */
 public class InitialDevices 
-        implements Logger
+        implements LoggerInterface
 {
 	private final SOAP soap;
 	private final OnvifDevice onvifDevice;
@@ -76,7 +77,7 @@ public class InitialDevices
 		try {
 			response = (GetSystemDateAndTimeResponse) soap.createSOAPDeviceRequest(new GetSystemDateAndTime(), response, false);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDate.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDate.",e);
 			return null;
 		}
 
@@ -97,7 +98,7 @@ public class InitialDevices
 		try {
 			response = (GetDeviceInformationResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDeviceInformation.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDeviceInformation.",e);
 			return null;
 		}
 
@@ -114,7 +115,7 @@ public class InitialDevices
 		try {
 			response = (GetHostnameResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getHostname.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getHostname.",e);
 			return null;
 		}
 
@@ -133,7 +134,7 @@ public class InitialDevices
 		try {
 			soap.createSOAPDeviceRequest(setHostname, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.setHostname.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.setHostname.",e);
 			return false;
 		}
 
@@ -150,7 +151,7 @@ public class InitialDevices
 		try {
 			response = (GetUsersResponse) soap.createSOAPDeviceRequest(getUsers, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getUsers.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getUsers.",e);
 			return null;
 		}
 
@@ -177,7 +178,7 @@ public class InitialDevices
 		try {
 			response = (GetCapabilitiesResponse) soap.createSOAPRequest(getCapabilities, response, onvifDevice.getDeviceUri(), false);
 		} catch (SOAPException | SOAPFaultException  e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getgetCapabilities.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getgetCapabilities.",e);
 			throw e;
 		}
 
@@ -199,7 +200,7 @@ public class InitialDevices
 		try {
 			response = (GetProfilesResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfiles.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfiles.",e);
 			return null;
 		}
 
@@ -224,7 +225,7 @@ public class InitialDevices
 		try {
 			response = (GetProfileResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfile.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfile.",e);
 			return null;
 		}
 
@@ -249,7 +250,7 @@ public class InitialDevices
 		try {
 			response = (CreateProfileResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.createProfile.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.createProfile.",e);
 			return null;
 		}
 
@@ -274,7 +275,7 @@ public class InitialDevices
 		try {
 			response = (GetServicesResponse) soap.createSOAPDeviceRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getServices.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getServices.",e);
 			return null;
 		}
 
@@ -296,7 +297,7 @@ public class InitialDevices
 		try {
 			response = (GetScopesResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getScope.",e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getScope.",e);
 			return null;
 		}
 

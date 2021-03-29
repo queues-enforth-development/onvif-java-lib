@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.net.URL;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Created by G_C on 2017/11/13.
@@ -20,11 +19,9 @@ public class TestDeviceDiscovery {
         Collection<URL> urls=DeviceDiscovery.discoverWsDevicesAsUrls(HTTP, ONVIF);
         int size=urls.size();
         System.out.println(size);
-        for (URL url : urls) {
-            if(url.getAuthority().split(":")[0].matches(IPV4)) {
-                System.out.println(" Device discovered : " + url.toString());
-            }
-        }
+        urls.stream().filter(url -> (url.getAuthority().split(":")[0].matches(IPV4))).forEachOrdered(url -> {
+            System.out.println(" Device discovered : " + url.toString());
+        });
 
     }
     @Test

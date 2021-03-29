@@ -1,6 +1,7 @@
 package de.onvif.soap;
 
-import de.onvif.Logger;
+import de.onvif.LoggerInterface;
+import de.onvif.soap.devices.PtzDevices;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.util.logging.Level;
@@ -30,11 +31,14 @@ import org.w3c.dom.Document;
  *
  */
 public class SOAP 
-        implements Logger
+        implements LoggerInterface
 {
 	private boolean logging = true;
 
 	private final OnvifDevice onvifDevice;
+    
+    private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
+    String writeOutputLocation = OUTPUT_LOCATION;
 
     /**
      *
@@ -152,8 +156,8 @@ public class SOAP
 
 			// Print the request message
 			if (isLogging()) {
-                logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
-                logSoapMessage2File("C:\\github\\onvif\\research\\snc-wr630\\soap", soapMessage);
+                PtzDevices.logger.logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
+                PtzDevices.logger.logSoapMessage2File(OUTPUT_LOCATION, soapMessage);
 			}
 
 			soapResponse = soapConnection.call(soapMessage, soapUri);
@@ -161,11 +165,11 @@ public class SOAP
 			// print SOAP Response
 			if (isLogging()) {
                 String name = soapResponse.getSOAPBody().getChildNodes().item(0).getLocalName();
-                logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
+                PtzDevices.logger.logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
                 if (name.toLowerCase().contains("fault")) {
-                    logSoapFaultMessage("C:\\github\\onvif\\research\\snc-wr630\\soap", soapResponse, soapMessage);
+                    PtzDevices.logger.logSoapFaultMessage(OUTPUT_LOCATION, soapResponse, soapMessage);
                 } else {
-                    logSoapMessage2File("C:\\github\\onvif\\research\\snc-wr630\\soap", soapResponse);
+                    PtzDevices.logger.logSoapMessage2File(OUTPUT_LOCATION, soapResponse);
                 }
 			}
 
@@ -277,7 +281,7 @@ public class SOAP
 	}
 
     /**
-     *
+     * Are we logging?
      * @return
      */
     public boolean isLogging() {
@@ -285,10 +289,26 @@ public class SOAP
 	}
 
     /**
-     *
+     * Turn logging on and off;
      * @param logging
      */
     public void setLogging(boolean logging) {
 		this.logging = logging;
 	}
+
+    /**
+     * Get the location to write the output.
+     * @return 
+     */
+    public String getWriteOutputLocation() {
+        return writeOutputLocation;
+    }
+
+    /**
+     * Set the output file location for writing the XML SOAP message to a hard disk.
+     * @param writeOutputLocation The location in which the XML output will be written.
+     */
+    public void setWriteOutputLocation(String writeOutputLocation) {
+        this.writeOutputLocation = writeOutputLocation;
+    }
 }

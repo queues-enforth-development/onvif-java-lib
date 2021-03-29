@@ -51,7 +51,7 @@ import de.onvif.soap.exception.SOAPFaultException;
  *
  */
 public class PtzDevices 
-        implements de.onvif.Logger
+        implements de.onvif.LoggerInterface
 {
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
@@ -103,7 +103,7 @@ public class PtzDevices
 		try {
 			response = (GetNodesResponse) soap.createSOAPDeviceRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return null;
 		}
 
@@ -140,7 +140,7 @@ public class PtzDevices
 		try {
 			response = (GetNodeResponse) soap.createSOAPDeviceRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return null;
 		}
 
@@ -217,8 +217,12 @@ public class PtzDevices
      * @see de.onvif.soap.devices.PtzDevices#getZoomSpaces(String)
 	 * @return True if move successful
 	 * @throws SOAPException
+     * @throws java.net.ConnectException
+     * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
-	public boolean absoluteMove(String profileToken, float x, float y, float zoom) throws SOAPException {
+	public boolean absoluteMove(String profileToken, float x, float y, float zoom) 
+            throws SOAPException, SOAPFaultException, ConnectException 
+    {
 		PTZNode node = getNode(profileToken);
 		if (node != null) {
 			FloatRange xRange = node.getSupportedPTZSpaces().getAbsolutePanTiltPositionSpace().get(0).getXRange();
@@ -257,8 +261,8 @@ public class PtzDevices
 		} catch (SOAPException e) {
 			throw e;
 		} catch (ConnectException | SOAPFaultException e) {
-			logError(e);
-			return false;
+			logger.logError(e);
+            throw e;
 		}
 
 		return response != null;
@@ -308,7 +312,7 @@ public class PtzDevices
 		try {
 			response = (RelativeMoveResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return false;
 		}
 
@@ -359,7 +363,7 @@ public class PtzDevices
 		try {
 			response = (ContinuousMoveResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return false;
 		}
 
@@ -382,7 +386,7 @@ public class PtzDevices
 		try {
 			response = (StopResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return false;
 		}
 
@@ -403,7 +407,7 @@ public class PtzDevices
 		try {
 			response = (GetStatusResponse) soap.createSOAPPtzRequest(request, response, false);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return null;
 		}
 
@@ -443,7 +447,7 @@ public class PtzDevices
 		try {
 			response = (SetHomePositionResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return false;
 		}
 
@@ -464,7 +468,7 @@ public class PtzDevices
 		try {
 			response = (GetPresetsResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return null;
 		}
 
@@ -493,7 +497,7 @@ public class PtzDevices
 		try {
 			response = (SetPresetResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return null;
 		}
 
@@ -530,7 +534,7 @@ public class PtzDevices
 		try {
 			response = (RemovePresetResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return false;
 		}
 
@@ -553,7 +557,7 @@ public class PtzDevices
 		try {
 			response = (GotoPresetResponse) soap.createSOAPPtzRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-			logError(e);
+			logger.logError(e);
 			return false;
 		}
 
