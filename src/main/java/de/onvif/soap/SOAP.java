@@ -1,7 +1,7 @@
 package de.onvif.soap;
 
 import de.onvif.LoggerInterface;
-import de.onvif.soap.devices.PtzDevices;
+import de.onvif.soap.devices.PtzDevice;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.util.logging.Level;
@@ -156,8 +156,8 @@ public class SOAP
 
 			// Print the request message
 			if (isLogging()) {
-                PtzDevices.logger.logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
-                PtzDevices.logger.logSoapMessage2File(OUTPUT_LOCATION, soapMessage);
+                PtzDevice.logger.logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
+                PtzDevice.logger.logSoapMessage2File(OUTPUT_LOCATION, soapMessage);
 			}
 
 			soapResponse = soapConnection.call(soapMessage, soapUri);
@@ -165,11 +165,11 @@ public class SOAP
 			// print SOAP Response
 			if (isLogging()) {
                 String name = soapResponse.getSOAPBody().getChildNodes().item(0).getLocalName();
-                PtzDevices.logger.logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
+                PtzDevice.logger.logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
                 if (name.toLowerCase().contains("fault")) {
-                    PtzDevices.logger.logSoapFaultMessage(OUTPUT_LOCATION, soapResponse, soapMessage);
+                    PtzDevice.logger.logSoapFaultMessage(OUTPUT_LOCATION, soapResponse, soapMessage);
                 } else {
-                    PtzDevices.logger.logSoapMessage2File(OUTPUT_LOCATION, soapResponse);
+                    PtzDevice.logger.logSoapMessage2File(OUTPUT_LOCATION, soapResponse);
                 }
 			}
 

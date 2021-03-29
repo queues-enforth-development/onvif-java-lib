@@ -50,7 +50,7 @@ import java.util.logging.Level;
  *
  *
  */
-public class InitialDevices 
+public class InitialDevice 
         implements LoggerInterface
 {
 	private final SOAP soap;
@@ -60,7 +60,7 @@ public class InitialDevices
      *
      * @param onvifDevice
      */
-    public InitialDevices(OnvifDevice onvifDevice) {
+    public InitialDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}

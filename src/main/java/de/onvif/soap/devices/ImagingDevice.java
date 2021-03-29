@@ -27,8 +27,8 @@ import java.util.logging.Logger;
  *
  *
  */
-public class ImagingDevices {
-    private static final Logger LOGGER = Logger.getLogger(ImagingDevices.class.getPackage().getName());
+public class ImagingDevice {
+    private static final Logger LOGGER = Logger.getLogger(ImagingDevice.class.getPackage().getName());
     
 	@SuppressWarnings("unused")
 	private final OnvifDevice onvifDevice;
@@ -38,7 +38,7 @@ public class ImagingDevices {
      *
      * @param onvifDevice
      */
-    public ImagingDevices(OnvifDevice onvifDevice) {
+    public ImagingDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}

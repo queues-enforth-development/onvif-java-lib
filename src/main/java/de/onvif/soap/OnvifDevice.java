@@ -20,10 +20,10 @@ import javax.xml.soap.SOAPException;
 import org.apache.commons.codec.binary.Base64;
 import org.onvif.ver10.schema.Capabilities;
 
-import de.onvif.soap.devices.ImagingDevices;
-import de.onvif.soap.devices.InitialDevices;
-import de.onvif.soap.devices.MediaDevices;
-import de.onvif.soap.devices.PtzDevices;
+import de.onvif.soap.devices.ImagingDevice;
+import de.onvif.soap.devices.InitialDevice;
+import de.onvif.soap.devices.MediaDevice;
+import de.onvif.soap.devices.PtzDevice;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.util.logging.Level;
 
@@ -52,10 +52,10 @@ public class OnvifDevice {
 
 	private SOAP soap;
 
-	private InitialDevices initialDevices;
-	private PtzDevices ptzDevices;
-	private MediaDevices mediaDevices;
-	private ImagingDevices imagingDevices;
+	private InitialDevice initialDevice;
+	private PtzDevice ptzDevices;
+	private MediaDevice mediaDevice;
+	private ImagingDevice imagingDevice;
 
     private static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(OnvifDevice.class.getPackage().getName());
 
@@ -86,10 +86,10 @@ public class OnvifDevice {
 		this.password = password;
 
 		this.soap = new SOAP(this);
-		this.initialDevices = new InitialDevices(this);
-		this.ptzDevices = new PtzDevices(this);
-		this.mediaDevices = new MediaDevices(this);
-		this.imagingDevices = new ImagingDevices(this);
+		this.initialDevice = new InitialDevice(this);
+		this.ptzDevices = new PtzDevice(this);
+		this.mediaDevice = new MediaDevice(this);
+		this.imagingDevice = new ImagingDevice(this);
 		
 		init();
 	}
@@ -311,15 +311,15 @@ public class OnvifDevice {
 	 * Is used for basic devices and requests of given ONVIF Device
      * @return 
 	 */
-	public InitialDevices getDevices() {
-		return initialDevices;
+	public InitialDevice getDevices() {
+		return initialDevice;
 	}
 
 	/**
 	 * Can be used for PTZ controlling requests, may not be supported by device!
      * @return 
 	 */
-	public PtzDevices getPtz() {
+	public PtzDevice getPtz() {
 		return ptzDevices;
 	}
 
@@ -327,16 +327,16 @@ public class OnvifDevice {
 	 * Can be used to get media data from OnvifDevice
 	 * @return
 	 */
-	public MediaDevices getMedia() {
-		return mediaDevices;
+	public MediaDevice getMedia() {
+		return mediaDevice;
 	}
 
 	/**
 	 * Can be used to get media data from OnvifDevice
 	 * @return
 	 */
-	public ImagingDevices getImaging() {
-		return imagingDevices;
+	public ImagingDevice getImaging() {
+		return imagingDevice;
 	}
 
     /**
@@ -392,7 +392,7 @@ public class OnvifDevice {
      * @return
      */
     public Date getDate() {
-		return initialDevices.getDate();
+		return initialDevice.getDate();
 	}
 	
     /**
@@ -400,7 +400,7 @@ public class OnvifDevice {
      * @return
      */
     public String getName() {
-		return initialDevices.getDeviceInformation().getModel();
+		return initialDevice.getDeviceInformation().getModel();
 	}
 	
     /**
@@ -408,7 +408,7 @@ public class OnvifDevice {
      * @return
      */
     public String getHostname() {
-		return initialDevices.getHostname();
+		return initialDevice.getHostname();
 	}
 	
     /**
@@ -421,6 +421,6 @@ public class OnvifDevice {
     public String reboot() 
             throws ConnectException, SOAPException, SOAPFaultException 
     {
-		return initialDevices.reboot();
+		return initialDevice.reboot();
 	}
 }

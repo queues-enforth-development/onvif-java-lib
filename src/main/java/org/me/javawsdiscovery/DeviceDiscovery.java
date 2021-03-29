@@ -109,6 +109,7 @@ public class DeviceDiscovery {
         });
         return devices;       
     }
+    
     /**
      * Discover WS device on the local network
      *

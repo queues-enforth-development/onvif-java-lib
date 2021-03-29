@@ -50,17 +50,17 @@ import de.onvif.soap.exception.SOAPFaultException;
  *
  *
  */
-public class PtzDevices 
+public class PtzDevice 
         implements de.onvif.LoggerInterface
 {
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
-
+    
     /**
      *
      * @param onvifDevice
      */
-    public PtzDevices(OnvifDevice onvifDevice) {
+    public PtzDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}
@@ -212,9 +212,9 @@ public class PtzDevices
 	 *            Tilt-Position
 	 * @param zoom
 	 *            Zoom
-	 * @see de.onvif.soap.devices.PtzDevices#getPanSpaces(String) 
-     * @see de.onvif.soap.devices.PtzDevices#getTiltSpaces(String)
-     * @see de.onvif.soap.devices.PtzDevices#getZoomSpaces(String)
+	 * @see de.onvif.soap.devices.PtzDevice#getPanSpaces(String) 
+     * @see de.onvif.soap.devices.PtzDevice#getTiltSpaces(String)
+     * @see de.onvif.soap.devices.PtzDevice#getZoomSpaces(String)
 	 * @return True if move successful
 	 * @throws SOAPException
      * @throws java.net.ConnectException

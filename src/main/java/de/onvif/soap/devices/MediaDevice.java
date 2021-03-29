@@ -32,7 +32,7 @@ import de.onvif.soap.exception.SOAPFaultException;
  *
  *
  */
-public class MediaDevices {
+public class MediaDevice {
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
 
@@ -40,7 +40,7 @@ public class MediaDevices {
      *
      * @param onvifDevice
      */
-    public MediaDevices(OnvifDevice onvifDevice) {
+    public MediaDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
 	}
