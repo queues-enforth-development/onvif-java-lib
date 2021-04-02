@@ -47,6 +47,12 @@ dependencies {
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
     implementation 'junit:junit:4.13.2'
+    
+    // Original project page: https://www.javatuples.org/index.html
+    // Library: https://search.maven.org/artifact/com.flipkart.utils/javatuples/3.0/jar
+    implementation 'com.flipkart.utils:javatuples:3.0'
+    compile 'com.flipkart.utils:javatuples:3.0:sources'
+    compile 'com.flipkart.utils:javatuples:3.0:javadoc'
 //    compile name: 'javaWsDiscovery-0.1'
 }
 

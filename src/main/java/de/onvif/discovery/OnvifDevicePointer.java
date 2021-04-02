@@ -24,7 +24,7 @@ public class OnvifDevicePointer
 
     private String user = null;
     private String password = null;
-    private OnvifDevice device;
+    private OnvifDevice device = null;
     private List<Profile> profiles;
     private String snapshotUrl;
     
@@ -53,13 +53,29 @@ public class OnvifDevicePointer
     }
 
     /**
-     * Constructor for just the URL.  It is still possible to pass the user and password through setters?
-     * @param deviceUrl 
+     * Constructor for just the URL.It is still possible to pass the user and password through setters?
+     * @param deviceUrl
      */
-    public OnvifDevicePointer(URL deviceUrl) 
+    public OnvifDevicePointer(URL deviceUrl)  
     {
         this(deviceUrl, null, null);
     }
+    
+    /**
+     * Constructor for just the URL.It is still possible to pass the user and password through setters?
+     * @param device
+     */
+    public OnvifDevicePointer(OnvifDevice device) {
+        super(device.getDeviceUri());
+        try {
+            this.device = device;
+            super.setName(device.getName());
+            profiles = device.getDevices().getProfiles();
+            this.snapshotUrl = device.getMedia().getSnapshotUri(profiles.get(0).getToken());
+        } catch (ConnectException | SOAPException | SOAPFaultException e) {
+            throw new RuntimeException("no onvif device or device not configured", e);
+        }
+    } 
     
     /**
      * Returns the User value used to connect to the ONVIF device.
@@ -104,6 +120,7 @@ public class OnvifDevicePointer
     public String getSnapshotUrl() {
         return snapshotUrl;
     }
+    
     
     
 }

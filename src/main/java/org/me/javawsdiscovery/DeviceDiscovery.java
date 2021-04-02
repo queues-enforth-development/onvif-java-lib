@@ -6,6 +6,7 @@
 
 package org.me.javawsdiscovery;
 
+import de.onvif.LoggerInterface;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -18,6 +19,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.javatuples.Pair;
 
 
 /**
@@ -26,10 +28,19 @@ import java.util.logging.Logger;
  *
  * @date 2017/11/14 15:40
  */
-public class DeviceDiscovery {
+public class DeviceDiscovery 
+        implements LoggerInterface
+{
+    // Default location to write output.  This probably should be refactored because it is a hack.  
+    // I am not expecting others to use this library.
+    private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
+
     private static final Logger LOGGER = Logger.getLogger(DeviceDiscovery.class.getPackage().getName());
     private static final String ERROR_MSG = "An error occurred in %s.%s at %d while trying to discover the devices.";
+    private static String outputLocation = OUTPUT_LOCATION;
 
+    // change this when done
+    private static boolean isLoggingToFile = true;
         
     private static final Random random = new SecureRandom();
     public static String WS_DISCOVERY_SOAP_VERSION = "SOAP 1.2 Protocol";
@@ -159,7 +170,16 @@ public class DeviceDiscovery {
                                 while (System.currentTimeMillis() - timerStarted < (WS_DISCOVERY_TIMEOUT)) {
                                     serverStarted.countDown();
                                     server.receive(packet);
-                                    final Collection<String> collection = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
+                                    
+                                    Pair<Collection<String>, SOAPMessage> urlResponseMessage;
+                                    
+//                                    final Collection<String> collection = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
+                                    Pair<Collection<String>, SOAPMessage> pair = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
+                                    final Collection<String> collection = pair.getValue0();
+
+                                    SOAPMessage message = pair.getValue1();
+                                    
+
                                     collection.forEach(key -> {
                                         addresses.add(key);
                                     });
@@ -224,17 +244,45 @@ public class DeviceDiscovery {
         return nodes;
     }
 
-    private static Collection<String> parseSoapResponseForUrls(byte[] data) throws SOAPException, IOException {
+//    private static Collection<String> parseSoapResponseForUrls(byte[] data) throws SOAPException, IOException {
+    private static Pair<Collection<String>, SOAPMessage> parseSoapResponseForUrls(byte[] data) throws SOAPException, IOException {
         //System.out.println(new String(data));
         final Collection<String> urls = new ArrayList<>();
+        
+        Pair<Collection<String>, SOAPMessage> urlResponseMessage;
+        
         MessageFactory factory = MessageFactory.newInstance(WS_DISCOVERY_SOAP_VERSION);
         final MimeHeaders headers = new MimeHeaders();
         headers.addHeader("Content-type", WS_DISCOVERY_CONTENT_TYPE);
         SOAPMessage message = factory.createMessage(headers, new ByteArrayInputStream(data));
+
+        if (isLoggingToFile) {
+            logger.logSoapMessage2File(outputLocation, message);
+        }
+        
         SOAPBody body = message.getSOAPBody();
         getNodeMatching(body, ".*:XAddrs").stream().filter(node -> (node.getTextContent().length() > 0)).forEachOrdered(node -> {
             urls.addAll(Arrays.asList(node.getTextContent().split(" ")));
         });
-        return urls;
+        
+        urlResponseMessage = Pair.with(urls, message);
+//        return urls;
+        return urlResponseMessage;
+    }
+
+    public String getOutputLocation() {
+        return outputLocation;
+    }
+
+    public void setOutputLocation(String outputLocation) {
+        DeviceDiscovery.outputLocation = outputLocation;
+    }
+
+    public static boolean isIsLogging() {
+        return isLoggingToFile;
+    }
+
+    public static void setIsLogging(boolean isLogging) {
+        DeviceDiscovery.isLoggingToFile = isLogging;
     }
 }
