@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.time.Instant;
 import java.util.logging.Level;
 import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
@@ -91,6 +92,9 @@ public class LibLogger {
                 sb.append('/');
             }
             sb.append(soapMessage.getSOAPBody().getChildNodes().item(0).getLocalName());
+            // make sure we get all the responses.
+            Instant instant = Instant.now();
+            sb.append("-").append(instant.toEpochMilli());
             sb.append(".xml");
             
             file = new File(sb.toString());

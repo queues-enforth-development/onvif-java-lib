@@ -177,8 +177,7 @@ public class DeviceDiscovery
                                     Pair<Collection<String>, SOAPMessage> pair = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
                                     final Collection<String> collection = pair.getValue0();
 
-                                    SOAPMessage message = pair.getValue1();
-                                    
+//                                    SOAPMessage message = pair.getValue1();
 
                                     collection.forEach(key -> {
                                         addresses.add(key);
