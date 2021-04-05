@@ -1,4 +1,7 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+    id 'application'
+}
 //apply plugin: 'eclipse'
 
 
@@ -21,6 +24,10 @@ jar {
             it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))            
         }.collect { zipTree(it) }
     }
+}
+
+application {
+    mainClass = 'org.me.javawsdiscovery.JavaWSDiscovery'
 }
 
 repositories {
