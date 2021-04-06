@@ -83,10 +83,6 @@ public class LibLogger {
         StringBuilder sb = new StringBuilder();
         File file;
         try {
-//            Transformer prettyPrint = TransformerFactory.newInstance().newTransformer();
-//            prettyPrint.setOutputProperty(OutputKeys.INDENT , "yes");
-//            prettyPrint.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
-            
             sb.append(filePath.replace("\\", "/"));
             if ('/' != filePath.charAt(filePath.length() - 1)) {
                 sb.append('/');

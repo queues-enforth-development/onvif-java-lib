@@ -26,9 +26,11 @@ jar {
     }
 }
 
+/*
 application {
     mainClass = 'org.me.javawsdiscovery.JavaWSDiscovery'
 }
+*/
 
 repositories {
    flatDir {
