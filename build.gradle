@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'application'
 }
 //apply plugin: 'eclipse'
 
@@ -26,11 +25,6 @@ jar {
     }
 }
 
-/*
-application {
-    mainClass = 'org.me.javawsdiscovery.JavaWSDiscovery'
-}
-*/
 
 repositories {
    flatDir {
