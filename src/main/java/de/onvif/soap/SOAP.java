@@ -14,17 +14,20 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.soap.MessageFactory;
+import javax.xml.soap.SOAPBody;
 import javax.xml.soap.SOAPConnection;
 import javax.xml.soap.SOAPConnectionFactory;
 import javax.xml.soap.SOAPConstants;
 import javax.xml.soap.SOAPElement;
 import javax.xml.soap.SOAPEnvelope;
 import javax.xml.soap.SOAPException;
+import javax.xml.soap.SOAPFault;
 import javax.xml.soap.SOAPHeader;
 import javax.xml.soap.SOAPMessage;
 import javax.xml.soap.SOAPPart;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
 /**
  *
@@ -161,10 +164,30 @@ public class SOAP
 			}
 
 			soapResponse = soapConnection.call(soapMessage, soapUri);
+            
+            SOAPBody body = soapResponse.getSOAPBody();
+            SOAPFault fault = null;
+            if (body.hasFault()) {
+                fault = body.getFault();
+            }
+            
+            if (null!=fault) {
+                StringBuilder sb1 = new StringBuilder("[");
 
+                
+                sb1.append(soapMessage.getSOAPBody().getFirstChild().getNodeName()).append("\r\n    ");
+                sb1.append(fault.getFaultString()).append(", ");
+                sb1.append(fault.getDetail().getTextContent());
+
+                sb1.append("]");
+                System.out.println(sb1.toString());
+            } else {
+                fault = null;
+            }
+            
 			// print SOAP Response
 			if (isLogging()) {
-                String name = soapResponse.getSOAPBody().getChildNodes().item(0).getLocalName();
+                String name = body.getChildNodes().item(0).getLocalName();
                 PtzDevice.logger.logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
                 if (name.toLowerCase().contains("fault")) {
                     PtzDevice.logger.logSoapFaultMessage(OUTPUT_LOCATION, soapResponse, soapMessage);

@@ -50,7 +50,9 @@ public class LibLogger {
     
     public void logError(Throwable e) {
         StackTraceElement loc = e.getStackTrace()[0];
-        LOGGER.log(java.util.logging.Level.WARNING,String.format("An error occurred in %s.%s", loc.getClassName(), loc.getMethodName()),e);
+        String stringLoc = String.format("An error occurred in %s.%s", loc.getClassName(), loc.getMethodName());
+        System.out.println(stringLoc);
+        LOGGER.log(java.util.logging.Level.WARNING, stringLoc, e);
         LOGGER.log(java.util.logging.Level.WARNING, e.toString());
         LOGGER.log(java.util.logging.Level.WARNING, e.getMessage());
         StringWriter sw = new StringWriter();

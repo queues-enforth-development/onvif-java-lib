@@ -20,7 +20,7 @@ import javax.xml.namespace.QName;
  * 
  * 
  * <p>
- * Java-Klasse f�r Fault complex type.
+ * Java class for fault complex type.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.
@@ -70,7 +70,7 @@ public class Fault {
     protected Detail detail;
 
 	/**
-	 * Ruft den Wert der faultcode-Eigenschaft ab.
+	 * Gets the value of the fault code property.
 	 * 
 	 * @return possible object is {@link QName }
 	 * 
@@ -80,7 +80,7 @@ public class Fault {
 	}
 
 	/**
-	 * Legt den Wert der faultcode-Eigenschaft fest.
+	 * Sets the value of the faultcode property.
 	 * 
 	 * @param value
 	 *            allowed object is {@link QName }
@@ -91,7 +91,7 @@ public class Fault {
 	}
 
 	/**
-	 * Ruft den Wert der faultstring-Eigenschaft ab.
+	 * Gets the value of the faultstring property.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -101,7 +101,7 @@ public class Fault {
 	}
 
 	/**
-	 * Legt den Wert der faultstring-Eigenschaft fest.
+	 * Sets the value of the faultstring property.
 	 * 
 	 * @param value
 	 *            allowed object is {@link String }
@@ -112,7 +112,7 @@ public class Fault {
 	}
 
 	/**
-	 * Ruft den Wert der faultactor-Eigenschaft ab.
+	 * Gets the value of the faultactor property.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -122,7 +122,7 @@ public class Fault {
 	}
 
 	/**
-	 * Legt den Wert der faultactor-Eigenschaft fest.
+	 * Sets the value of the faultactor property.
 	 * 
 	 * @param value
 	 *            allowed object is {@link String }
@@ -133,7 +133,7 @@ public class Fault {
 	}
 
 	/**
-	 * Ruft den Wert der detail-Eigenschaft ab.
+	 * Gets the value of the detail property.
 	 * 
 	 * @return possible object is {@link Detail }
 	 * 
@@ -143,7 +143,7 @@ public class Fault {
 	}
 
 	/**
-	 * Legt den Wert der detail-Eigenschaft fest.
+	 * Sets the value of the detail property.
 	 * 
 	 * @param value
 	 *            allowed object is {@link Detail }

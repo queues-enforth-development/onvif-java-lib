@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>
- * Java-Klasse f�r PTZSpeed complex type.
+ * Java class for PTZSpeed ??complex type.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.
@@ -51,7 +51,7 @@ public class PTZSpeed {
 	protected Vector1D zoom;
 
 	/**
-	 * Ruft den Wert der panTilt-Eigenschaft ab.
+	 * Gets the value of the panTilt property.
 	 * 
 	 * @return possible object is {@link Vector2D }
 	 * 
@@ -61,7 +61,7 @@ public class PTZSpeed {
 	}
 
 	/**
-	 * Legt den Wert der panTilt-Eigenschaft fest.
+	 * Sets the value of the panTilt property.
 	 * 
 	 * @param value
 	 *            allowed object is {@link Vector2D }
@@ -72,7 +72,7 @@ public class PTZSpeed {
 	}
 
 	/**
-	 * Ruft den Wert der zoom-Eigenschaft ab.
+	 * Gets the value of the zoom property.
 	 * 
 	 * @return possible object is {@link Vector1D }
 	 * 
@@ -82,7 +82,7 @@ public class PTZSpeed {
 	}
 
 	/**
-	 * Legt den Wert der zoom-Eigenschaft fest.
+	 * Sets the value of the zoom property.
 	 * 
 	 * @param value
 	 *            allowed object is {@link Vector1D }

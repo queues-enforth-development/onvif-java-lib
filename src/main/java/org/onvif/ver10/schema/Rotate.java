@@ -18,7 +18,7 @@ import javax.xml.namespace.QName;
 
 /**
  * <p>
- * Java-Klasse f�r Rotate complex type.
+ * Java class for Rotate complex type.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.

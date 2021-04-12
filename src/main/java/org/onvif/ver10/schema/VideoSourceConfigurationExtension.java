@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>
- * Java-Klasse f�r VideoSourceConfigurationExtension complex type.
+ * Java class for VideoSourceConfigurationExtension complex type.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.
