@@ -5,7 +5,7 @@
 // Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
-package org.xmlsoap.schemas.soap.envelope;
+package org.xmlsoap.schemas.soap.envelope.soap12;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,25 +15,22 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAnyAttribute;
 import javax.xml.bind.annotation.XmlAnyElement;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 import org.w3c.dom.Element;
 
 /**
  * <p>
- * Java class for envelope complex type.
+ * Java class for complex type headers.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
- * <complexType name="Envelope">
+ * <complexType name="Header">
      <complexContent>
        <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          <sequence>
- *         <element ref="{http://schemas.xmlsoap.org/soap/envelope/}Header" minOccurs="0"/>
- *         <element ref="{http://schemas.xmlsoap.org/soap/envelope/}Body"/>
            <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
          </sequence>
          <anyAttribute processContents='lax' namespace='##other'/>
@@ -45,20 +42,8 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Envelope", propOrder = { "header", "body", "any" })
-public class Envelope {
-
-    /**
-     *
-     */
-    @XmlElement(name = "Header", namespace = "http://schemas.xmlsoap.org/soap/envelope/")
-	protected Header header;
-
-    /**
-     *
-     */
-    @XmlElement(name = "Body", namespace = "http://schemas.xmlsoap.org/soap/envelope/", required = true)
-	protected Body body;
+@XmlType(name = "Header", propOrder = { "any" })
+public class Header {
 
     /**
      *
@@ -67,48 +52,6 @@ public class Envelope {
 	protected List<Object> any;
 	@XmlAnyAttribute
 	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
-
-	/**
-	 * Gets the value of the header property.
-	 * 
-	 * @return possible object is {@link Header }
-	 * 
-	 */
-	public Header getHeader() {
-		return header;
-	}
-
-	/**
-	 * Sets the value of the header property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link Header }
-	 * 
-	 */
-	public void setHeader(Header value) {
-		this.header = value;
-	}
-
-	/**
-	 * Gets the value of the body property.
-	 * 
-	 * @return possible object is {@link Body }
-	 * 
-	 */
-	public Body getBody() {
-		return body;
-	}
-
-	/**
-	 * Sets the value of the body property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link Body }
-	 * 
-	 */
-	public void setBody(Body value) {
-		this.body = value;
-	}
 
 	/**
 	 * Gets the value of the any property.

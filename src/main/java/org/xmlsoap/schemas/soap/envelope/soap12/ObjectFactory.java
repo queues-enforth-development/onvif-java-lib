@@ -5,7 +5,7 @@
 // Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
-package org.xmlsoap.schemas.soap.envelope;
+package org.xmlsoap.schemas.soap.envelope.soap12;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -23,10 +23,10 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-	private final static QName _Body_QNAME = new QName("http://schemas.xmlsoap.org/soap/envelope/", "Body");
-	private final static QName _Envelope_QNAME = new QName("http://schemas.xmlsoap.org/soap/envelope/", "Envelope");
-	private final static QName _Fault_QNAME = new QName("http://schemas.xmlsoap.org/soap/envelope/", "Fault");
-	private final static QName _Header_QNAME = new QName("http://schemas.xmlsoap.org/soap/envelope/", "Header");
+	private final static QName _Body_QNAME = new QName("http://www.w3.org/2003/05/soap-envelope/", "Body");
+	private final static QName _Envelope_QNAME = new QName("http://www.w3.org/2003/05/soap-envelope/", "Envelope");
+	private final static QName _Fault_QNAME = new QName("http://www.w3.org/2003/05/soap-envelope/", "Fault");
+	private final static QName _Header_QNAME = new QName("http://www.w3.org/2003/05/soap-envelope/", "Header");
 
 	/**
 	 * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.xmlsoap.schemas.soap.envelope
@@ -86,7 +86,7 @@ public class ObjectFactory {
      * @param value
      * @return 
 	 */
-	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Body")
+	@XmlElementDecl(namespace = "http://www.w3.org/2003/05/soap-envelope/", name = "Body")
 	public JAXBElement<Body> createBody(Body value) {
 		return new JAXBElement<>(_Body_QNAME, Body.class, null, value);
 	}
@@ -97,7 +97,7 @@ public class ObjectFactory {
      * @param value
      * @return 
 	 */
-	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Envelope")
+	@XmlElementDecl(namespace = "http://www.w3.org/2003/05/soap-envelope/", name = "Envelope")
 	public JAXBElement<Envelope> createEnvelope(Envelope value) {
 		return new JAXBElement<>(_Envelope_QNAME, Envelope.class, null, value);
 	}
@@ -108,7 +108,7 @@ public class ObjectFactory {
      * @param value
      * @return 
 	 */
-	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Fault")
+	@XmlElementDecl(namespace = "http://www.w3.org/2003/05/soap-envelope/", name = "Fault")
 	public JAXBElement<Fault> createFault(Fault value) {
 		return new JAXBElement<>(_Fault_QNAME, Fault.class, null, value);
 	}
@@ -119,7 +119,7 @@ public class ObjectFactory {
      * @param value
      * @return 
 	 */
-	@XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/envelope/", name = "Header")
+	@XmlElementDecl(namespace = "http://www.w3.org/2003/05/soap-envelope/", name = "Header")
 	public JAXBElement<Header> createHeader(Header value) {
 		return new JAXBElement<>(_Header_QNAME, Header.class, null, value);
 	}

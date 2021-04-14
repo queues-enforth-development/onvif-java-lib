@@ -1,0 +1,71 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element type = " xs: string" name = "s:Value"/>
+<xs:element type = " xs: string" name = "s:Value"/>
+<xs:element name = "s:Subcode"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Value"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "s:Text"/>
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="xml:lang"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element type = " xs: string" name = "s:Text"/>
+<xs:element name = "s:Code"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Value"/>
+<xs:element ref = "s:Subcode"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "s:Reason"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Text"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element type = " xs: string" name = "s:Node"/>
+<xs:element type = " xs: string" name = "s:Role"/>
+<xs:element name = "s:Detail"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Text"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "s:Fault"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Code"/>
+<xs:element ref = "s:Reason"/>
+<xs:element ref = "s:Node"/>
+<xs:element ref = "s:Role"/>
+<xs:element ref = "s:Detail"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "s:Body"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Fault"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "s:Envelope"/>
+<xs:complexType>
+<xs:sequence>
+<xs:element ref = "s:Body"/>
+ </xs:sequence>
+<xs:attribute type = "xs:string" name = "xmlns:s"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>

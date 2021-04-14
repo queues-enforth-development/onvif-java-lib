@@ -169,20 +169,19 @@ public class SOAP
             SOAPFault fault = null;
             if (body.hasFault()) {
                 fault = body.getFault();
+                
+                
             }
             
             if (null!=fault) {
                 StringBuilder sb1 = new StringBuilder("[");
-
                 
-                sb1.append(soapMessage.getSOAPBody().getFirstChild().getNodeName()).append("\r\n    ");
+                sb1.append(soapMessage.getSOAPBody().getFirstChild().getNodeName()).append(", ");
                 sb1.append(fault.getFaultString()).append(", ");
                 sb1.append(fault.getDetail().getTextContent());
 
                 sb1.append("]");
                 System.out.println(sb1.toString());
-            } else {
-                fault = null;
             }
             
 			// print SOAP Response
@@ -250,7 +249,8 @@ public class SOAP
      * @throws JAXBException
      */
     protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean needAuthentification) throws SOAPException, ParserConfigurationException,
-			JAXBException {
+			JAXBException 
+    {
 		MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
 		SOAPMessage soapMessage = messageFactory.createMessage();
 

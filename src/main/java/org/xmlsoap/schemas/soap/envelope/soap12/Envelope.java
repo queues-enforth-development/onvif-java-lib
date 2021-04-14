@@ -5,7 +5,7 @@
 // Generated: 02/04/2014 at 12:22:03 PM CET 
 //
 
-package org.xmlsoap.schemas.soap.envelope;
+package org.xmlsoap.schemas.soap.envelope.soap12;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,8 +32,8 @@ import org.w3c.dom.Element;
      <complexContent>
        <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          <sequence>
- *         <element ref="{http://schemas.xmlsoap.org/soap/envelope/}Header" minOccurs="0"/>
- *         <element ref="{http://schemas.xmlsoap.org/soap/envelope/}Body"/>
+ *         <element ref="{http://www.w3.org/2003/05/soap-envelope/}Header" minOccurs="0"/>
+ *         <element ref="{http://www.w3.org/2003/05/soap-envelope/}Body"/>
            <any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
          </sequence>
          <anyAttribute processContents='lax' namespace='##other'/>
@@ -51,13 +51,13 @@ public class Envelope {
     /**
      *
      */
-    @XmlElement(name = "Header", namespace = "http://schemas.xmlsoap.org/soap/envelope/")
+    @XmlElement(name = "Header", namespace = "http://www.w3.org/2003/05/soap-envelope/")
 	protected Header header;
 
     /**
      *
      */
-    @XmlElement(name = "Body", namespace = "http://schemas.xmlsoap.org/soap/envelope/", required = true)
+    @XmlElement(name = "Body", namespace = "http://www.w3.org/2003/05/soap-envelope/", required = true)
 	protected Body body;
 
     /**
@@ -69,7 +69,7 @@ public class Envelope {
 	private final Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 	/**
-	 * Gets the value of the header property.
+	 * Ruft den Wert der header-Eigenschaft ab.
 	 * 
 	 * @return possible object is {@link Header }
 	 * 
@@ -79,7 +79,7 @@ public class Envelope {
 	}
 
 	/**
-	 * Sets the value of the header property.
+	 * Legt den Wert der header-Eigenschaft fest.
 	 * 
 	 * @param value
 	 *            allowed object is {@link Header }
@@ -90,7 +90,7 @@ public class Envelope {
 	}
 
 	/**
-	 * Gets the value of the body property.
+	 * Ruft den Wert der body-Eigenschaft ab.
 	 * 
 	 * @return possible object is {@link Body }
 	 * 
@@ -100,7 +100,7 @@ public class Envelope {
 	}
 
 	/**
-	 * Sets the value of the body property.
+	 * Legt den Wert der body-Eigenschaft fest.
 	 * 
 	 * @param value
 	 *            allowed object is {@link Body }
