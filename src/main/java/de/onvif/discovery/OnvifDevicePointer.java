@@ -53,8 +53,8 @@ public class OnvifDevicePointer
     }
 
     /**
-     * Constructor for just the URL.It is still possible to pass the user and password through setters?
-     * @param deviceUrl
+     * Constructor for just the URL.  It is still possible to pass the user and password through setters?
+     * @param deviceUrl 
      */
     public OnvifDevicePointer(URL deviceUrl)  
     {

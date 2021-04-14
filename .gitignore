@@ -2,6 +2,79 @@
 *.iml
 /build/
 
-### Gradle ###
-.gradle
+/build/
+/data-model/build/
+/view/build/
+/api-controller/build/
 
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/PropertySuite/.nb-gradle/
+/PropertySuite/PropertyEntities/build/
+/PropertySuite/PropertyLabel/build/
+/PropertySuite/PropertyLabel/PropertyLabel-ejb/build/
+/PropertySuite/PropertyLabel/PropertyLabel-war/build/
+/BookingSuite/.nb-gradle/
+/BookingSuite/Booking/Booking-ejb/.nb-gradle/
+/BookingSuite/Booking/Booking-war/.nb-gradle/
+/BookingSuite/Booking/BookingEntities/.nb-gradle/
+/BookingSuite/BookingEntities/build/
+/BookingSuite/Booking/Booking-war/build/
+/BookingSuite/Booking/Booking-ejb/build/
+/BookingSuite/Booking/build/
+
+# Java and Gradle #
+############
+build/*
+.gradle/*
+/aes-camera/poc/qed-onvif-poc/.gradle/
+/aes-camera/poc/qed-onvif-poc/libs/main/build/
+/aes-camera/poc/qed-onvif-poc/main/build/
+/aes-camera/poc/qed-onvif-poc/build/
+/aes-camera/poc/qed-onvif-poc/setup/build/
+/mainapp/build/

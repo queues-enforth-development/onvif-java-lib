@@ -1,0 +1,136 @@
+<<<<<<< HEAD
+plugins {
+    id 'java'
+}
+//apply plugin: 'eclipse'
+
+
+version = '2.0.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'ONVIF Java Library',  
+        	'Implementation-Version': version,
+//        	'Main-Class': 'de.onvif.Main'
+        	'Main-Class': 'org.me.javawsdiscovery.JavaWSDiscovery'
+    }
+    
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.findAll { 
+            it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))            
+        }.collect { zipTree(it) }
+    }
+}
+
+
+repositories {
+   flatDir {
+       dirs 'libs'
+   }
+   mavenCentral()
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+    
+    libsDirName = "../release"
+}
+
+javadoc {
+    options.tags = [ "date" ] 
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+}
+
+dependencies {
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'    
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
+    implementation 'junit:junit:4.13.2'
+    
+    // Original project page: https://www.javatuples.org/index.html
+    // Library: https://search.maven.org/artifact/com.flipkart.utils/javatuples/3.0/jar
+    implementation 'com.flipkart.utils:javatuples:3.0'
+    compile 'com.flipkart.utils:javatuples:3.0:sources'
+    compile 'com.flipkart.utils:javatuples:3.0:javadoc'
+//    compile name: 'javaWsDiscovery-0.1'
+}
+
+=======
+apply plugin: 'java'
+//apply plugin: 'eclipse'
+
+
+version = '2.0.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+archivesBaseName = 'onvif-java-lib'
+group = 'com.qed.aes.camera'
+
+java {
+//    libsDirName = "../release"
+    
+    withJavadocJar()
+    withSourcesJar()    
+}
+
+build {
+    doLast {
+        copy {
+            from 'build/libs'
+            into 'release'
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'ONVIF Java Library',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'de.onvif.Main'
+    }
+    
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.findAll { 
+            it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))            
+        }.collect { zipTree(it) }
+    }
+}
+
+repositories {
+   flatDir {
+       dirs 'libs'
+   }
+   mavenCentral()
+}
+
+
+javadoc {
+    options.tags = [ "date" ] 
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+}
+
+dependencies {
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'    
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
+    implementation 'junit:junit:4.13.2'
+//    compile name: 'javaWsDiscovery-0.1'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.version = project.version
+        pom.artifactId = project.archivesBaseName
+        pom.groupId = project.group
+    }
+}
+>>>>>>> master

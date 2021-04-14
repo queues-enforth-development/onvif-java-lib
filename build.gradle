@@ -8,6 +8,24 @@ version = '2.0.0'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+archivesBaseName = 'onvif-java-lib'
+group = 'com.qed.aes.camera'
+
+java {
+//    libsDirName = "../release"
+    
+    withJavadocJar()
+    withSourcesJar()    
+}
+
+build {
+    doLast {
+        copy {
+            from 'build/libs'
+            into 'release'
+        }
+    }
+}
 
 jar {
     manifest {
@@ -33,12 +51,6 @@ repositories {
    mavenCentral()
 }
 
-java {
-    withJavadocJar()
-    withSourcesJar()
-    
-    libsDirName = "../release"
-}
 
 javadoc {
     options.tags = [ "date" ] 
@@ -47,7 +59,7 @@ javadoc {
 }
 
 dependencies {
-    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'    
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'    
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
     implementation 'junit:junit:4.13.2'
@@ -60,3 +72,10 @@ dependencies {
 //    compile name: 'javaWsDiscovery-0.1'
 }
 
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.version = project.version
+        pom.artifactId = project.archivesBaseName
+        pom.groupId = project.group
+    }
+}
