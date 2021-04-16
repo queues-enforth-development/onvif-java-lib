@@ -4,7 +4,7 @@ plugins {
 //apply plugin: 'eclipse'
 
 
-version = '2.0.0'
+version = '2.0.1'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -12,8 +12,6 @@ archivesBaseName = 'onvif-java-lib'
 group = 'com.qed.aes.camera'
 
 java {
-//    libsDirName = "../release"
-    
     withJavadocJar()
     withSourcesJar()    
 }
@@ -69,13 +67,14 @@ dependencies {
     implementation 'com.flipkart.utils:javatuples:3.0'
     compile 'com.flipkart.utils:javatuples:3.0:sources'
     compile 'com.flipkart.utils:javatuples:3.0:javadoc'
-//    compile name: 'javaWsDiscovery-0.1'
 }
 
 uploadArchives {
+    
     repositories.mavenDeployer {
         pom.version = project.version
         pom.artifactId = project.archivesBaseName
         pom.groupId = project.group
     }
 }
+
