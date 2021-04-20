@@ -41,6 +41,14 @@ jar {
     }
 }
 
+/*
+task listrepos {
+    doLast {
+        println "Repositories:"
+        project.repositories.each { println it.getName(); }
+   }
+}
+*/
 
 repositories {
    flatDir {
