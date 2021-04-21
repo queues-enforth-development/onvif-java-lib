@@ -166,11 +166,10 @@ public class SOAP
 			soapResponse = soapConnection.call(soapMessage, soapUri);
             
             SOAPBody body = soapResponse.getSOAPBody();
+            boolean hasFault = body.hasFault();
             SOAPFault fault = null;
-            if (body.hasFault()) {
+            if (hasFault) {
                 fault = body.getFault();
-                
-                
             }
             
             if (null!=fault) {
@@ -199,7 +198,8 @@ public class SOAP
 				throw new NullPointerException("Improper SOAP Response Element given (is null).");
 			}
             
-            if (soapResponse.getSOAPBody().hasFault()) {
+//            if (soapResponse.getSOAPBody().hasFault()) {
+            if (hasFault) {
                 throw new SOAPFaultException(soapResponse, "An error occurred with the SOAP call.");
             } else {
 
