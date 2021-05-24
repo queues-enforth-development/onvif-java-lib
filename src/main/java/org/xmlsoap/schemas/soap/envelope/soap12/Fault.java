@@ -7,7 +7,6 @@
 
 package org.xmlsoap.schemas.soap.envelope.soap12;
 
-import org.xmlsoap.schemas.soap.envelope.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -44,7 +43,8 @@ import javax.xml.namespace.QName;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Fault", propOrder = { "Code", "Reason", "Role", "Detail" })
+//@XmlType(name = "Fault", propOrder = { "Code", "Reason", "Role", "Detail" })
+@XmlType(name = "Fault", propOrder = { "code", "reason", "role", "detail" })
 public class Fault {
 
     /**

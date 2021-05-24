@@ -171,6 +171,8 @@ public class SOAP
             if (hasFault) {
                 fault = body.getFault();
             }
+            //hasFault = soapResponseElem;
+            
             
             if (null!=fault) {
                 StringBuilder sb1 = new StringBuilder("[");
