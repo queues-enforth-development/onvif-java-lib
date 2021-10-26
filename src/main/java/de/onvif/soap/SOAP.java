@@ -27,7 +27,6 @@ import javax.xml.soap.SOAPMessage;
 import javax.xml.soap.SOAPPart;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 
 /**
  *
