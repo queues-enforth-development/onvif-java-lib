@@ -1,13 +1,9 @@
 plugins {
     id 'java'
-///    id 'java-library'
-///    id 'maven-publish'
-///    id 'signing'
-}
-//apply plugin: 'eclipse'
-
+    id 'maven-publish'
+ }
  
-version = '2.0.6'
+version = '2.0.8'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -44,15 +40,6 @@ jar {
     }
 }
 
-/*
-task listrepos {
-    doLast {
-        println "Repositories:"
-        project.repositories.each { println it.getName(); }
-   }
-}
-*/
-
 repositories {
    flatDir {
        dirs 'libs'
@@ -80,9 +67,18 @@ dependencies {
     compile 'com.flipkart.utils:javatuples:3.0:javadoc'
 }
 
+publishing {
+    publications {
+        myJava(MavenPublication) {
+           from components.java
+       }
+    }
+}
+
 uploadArchives {
     
     repositories.mavenDeployer {
+        
         pom.version = project.version
         pom.artifactId = project.archivesBaseName
         pom.groupId = project.group
