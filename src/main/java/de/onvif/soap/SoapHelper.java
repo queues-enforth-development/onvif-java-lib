@@ -23,8 +23,10 @@ import javax.xml.soap.SOAPMessage;
 /**
  *  This is a simple helper to just get the SOAP Message and Response.
  * @author jmccay
+ * @param <T>
+ * @param <R>
  */
-public class SoapHelper extends SOAP 
+public class SoapHelper<T, R> extends SOAP 
 {
     private static final Logger LOGGER = Logger.getLogger(SoapHelper.class.getPackage().getName());
     private static final String MARSHALING_ERROR = "Error: An error occurred while marshaling %s.";
@@ -38,25 +40,22 @@ public class SoapHelper extends SOAP
     }
 
     /**
-     * THis method gets the soap message object, but no message is ever sent.  This allows the user to find our what will be sent.
-     * @param <P> The Object representing the message.  For example, the object GetCapabilities could be used.
-     * @param object A specific instance of P.
+     * This method gets the soap message object, but no message is ever sent.  This allows the user to find our what will be sent.
+     * @param obj A specific instance of T.
      * @param needAuthentication Does authentication need to be used?
      * @return SOAPMessage A SOAPMessage object that can be sent.
      * @throws SOAPException
      * @throws JAXBException
      * @throws ParserConfigurationException 
      */
-    public <P> SOAPMessage getSoapMessage(P object, boolean needAuthentication) 
+    public SOAPMessage getSoapMessage(T obj, boolean needAuthentication) 
             throws SOAPException, JAXBException, ParserConfigurationException 
     {
-        return (SOAPMessage)this.createSoapMessage(object, needAuthentication);
+        return (SOAPMessage)this.createSoapMessage(obj, needAuthentication);
     }
         
     /**
      * This class sens out a message by calling createSOAPRequest in the parent object to create a message and get the response.
-     * @param <R> The response object from the SOAP request.  For example, GetCapabilitiesResponse would be one example.
-     * @param <P> The Object representing the message.  For example, the object GetCapabilities could be used.
      * @param object A specific instance of P.
      * @param response A specific instance of R.
      * @param needAuthentication Does authentication need to be used?
@@ -67,7 +66,7 @@ public class SoapHelper extends SOAP
      * @throws ConnectException
      * @throws SOAPFaultException 
      */
-    public <R, P> R getSoapResponseMessage(P object, R response, boolean needAuthentication)
+    public R getSoapResponseMessage(T object, R response, boolean needAuthentication)
             throws SOAPException, JAXBException, ParserConfigurationException, ConnectException, SOAPFaultException 
     {
         return (R)this.createSOAPRequest(object, response, onvifDevice.getDeviceUri(), needAuthentication);
@@ -75,10 +74,10 @@ public class SoapHelper extends SOAP
     
     /**
      * Marshall an object (like those returned by getSoapResponseMessage and getSoapMessage) to a string 
-     * @param <T> The class to marshall
+     * @param <T> The class to marshal
      * @param obj A specific instance of T.
      * @param theClass the Class of T.
-     * @return The object marshalled to a string.
+     * @return The object marshaled to a string.
      * @throws JAXBException 
      */
     public <T> String marshalObjectToString(T obj, Class<T> theClass) throws JAXBException {
