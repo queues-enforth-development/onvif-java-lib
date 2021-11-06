@@ -1,5 +1,7 @@
 package de.onvif.soap.devices;
 
+import de.onvif.de.onvif.traits.SoapBookkeeping;
+import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.net.ConnectException;
 import java.util.List;
 
@@ -27,14 +29,19 @@ import org.onvif.ver10.schema.VideoSource;
 import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
+import javax.xml.soap.SOAPMessage;
 
 /**
  *
  *
  */
-public class MediaDevice {
+public class MediaDevice 
+        implements SoapBookkeeping
+{
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
+
+    private SoapLedger<SOAPMessage> ledger;
 
     /**
      *
@@ -43,6 +50,7 @@ public class MediaDevice {
     public MediaDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
+        this.ledger = SoapBookkeeping.createLedger();
 	}
 
     /**
@@ -268,6 +276,9 @@ public class MediaDevice {
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+        
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
 
@@ -306,6 +317,9 @@ public class MediaDevice {
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+        
 		return response.getOptions();
 	}
 
@@ -332,6 +346,9 @@ public class MediaDevice {
 			throw e;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+        
 		return response != null;
 	}
 
@@ -375,6 +392,9 @@ public class MediaDevice {
 			return null;
 		}
 		
+        // Store the SOAP call and response
+        recordSoapMessages();
+        
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
 
@@ -400,7 +420,25 @@ public class MediaDevice {
 		if (response == null) {
 			return null;
 		}
-
+        
+        // Store the SOAP call and response
+        recordSoapMessages();
+        
 		return response.getVideoSources();
 	}
+
+    @Override
+    public SoapLedger<SOAPMessage> getLedger() {
+        return ledger;
+    }
+
+    @Override
+    public SOAP getSoap() {
+        return soap;
+    }
+
+    @Override
+    public void setLedger(SoapLedger<SOAPMessage> ledger) {
+        this.ledger = ledger;
+    }
 }

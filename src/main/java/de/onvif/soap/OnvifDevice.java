@@ -1,5 +1,6 @@
 package de.onvif.soap;
 
+import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.io.IOException;
 import java.net.ConnectException;
 import java.net.InetSocketAddress;
@@ -26,13 +27,13 @@ import de.onvif.soap.devices.MediaDevice;
 import de.onvif.soap.devices.PtzDevice;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.util.logging.Level;
+import javax.xml.soap.SOAPMessage;
 
 /**
  * 
  * @author Robin Dick
  * 
  */
-@SuppressWarnings("OverridableMethodCallInConstructor")
 public class OnvifDevice {
 	private final String HOST_IP;
 	private String originalIp;
@@ -56,6 +57,9 @@ public class OnvifDevice {
 	private PtzDevice ptzDevices;
 	private MediaDevice mediaDevice;
 	private ImagingDevice imagingDevice;
+    
+    private SoapLedger<SOAPMessage> ledger;
+
 
     private static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(OnvifDevice.class.getPackage().getName());
 
@@ -90,6 +94,8 @@ public class OnvifDevice {
 		this.ptzDevices = new PtzDevice(this);
 		this.mediaDevice = new MediaDevice(this);
 		this.imagingDevice = new ImagingDevice(this);
+        
+        this.ledger = new SoapLedger<>();
 		
 		init();
 	}
@@ -126,8 +132,7 @@ public class OnvifDevice {
 			socket.connect(sockaddr, 5000);
 		} catch (NumberFormatException | IOException e) {
 			return false;
-		}
-		finally {
+		} finally {
 			try {
 				if (socket != null) {
 					socket.close();
@@ -148,7 +153,7 @@ public class OnvifDevice {
 	 * @throws SOAPException 
      * @throws de.onvif.soap.exception.SOAPFaultException 
 	 */
-	protected void init() 
+	private void init() 
             throws ConnectException, SOAPException, SOAPFaultException 
     {
 		Capabilities capabilities = getDevices().getCapabilities();

@@ -2,6 +2,8 @@ package de.onvif.soap.devices;
 
 import de.onvif.LibLogger;
 import de.onvif.LoggerInterface;
+import de.onvif.de.onvif.traits.SoapBookkeeping;
+import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.net.ConnectException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -45,16 +47,19 @@ import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.util.logging.Level;
+import javax.xml.soap.SOAPMessage;
 
 /**
  *
  *
  */
 public class InitialDevice 
-        implements LoggerInterface
+        implements LoggerInterface, SoapBookkeeping
 {
 	private final SOAP soap;
 	private final OnvifDevice onvifDevice;
+    private SoapLedger<SOAPMessage> ledger;
+
 
     /**
      *
@@ -63,6 +68,7 @@ public class InitialDevice
     public InitialDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
+        this.ledger = SoapBookkeeping.createLedger();
 	}
 
     /**
@@ -85,6 +91,9 @@ public class InitialDevice
 		Time time = response.getSystemDateAndTime().getUTCDateTime().getTime();
 		cal = new GregorianCalendar(date.getYear(), date.getMonth() - 1, date.getDay(), time.getHour(), time.getMinute(), time.getSecond());
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return cal.getTime();
 	}
 
@@ -102,6 +111,9 @@ public class InitialDevice
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response;
 	}
 
@@ -118,6 +130,9 @@ public class InitialDevice
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getHostname.",e);
 			return null;
 		}
+
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return response.getHostnameInformation().getName();
 	}
@@ -137,6 +152,9 @@ public class InitialDevice
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.setHostname.",e);
 			return false;
 		}
+
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return true;
 	}
@@ -158,6 +176,9 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
+
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return response.getUser();
 	}
@@ -186,6 +207,9 @@ public class InitialDevice
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response.getCapabilities();
 	}
 
@@ -207,6 +231,9 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
+
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return response.getProfiles();
 	}
@@ -233,6 +260,9 @@ public class InitialDevice
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response.getProfile();
 	}
 
@@ -257,6 +287,9 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
+
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return response.getProfile();
 	}
@@ -283,6 +316,9 @@ public class InitialDevice
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response.getService();
 	}
 
@@ -304,6 +340,9 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
+
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return response.getScopes();
 	}
@@ -330,7 +369,25 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
+        
+        // Store the SOAP call and response
+        recordSoapMessages();
 
 		return response.getMessage();
 	}
+
+    @Override
+    public SoapLedger<SOAPMessage> getLedger() {
+        return ledger;
+    }
+
+    @Override
+    public SOAP getSoap() {
+        return soap;
+    }
+
+    @Override
+    public void setLedger(SoapLedger<SOAPMessage> ledger) {
+        this.ledger = ledger;
+    }
 }

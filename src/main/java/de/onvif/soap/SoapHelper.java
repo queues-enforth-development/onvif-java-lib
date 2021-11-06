@@ -16,9 +16,13 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.namespace.QName;
+import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.soap.MessageFactory;
+import javax.xml.soap.SOAPConstants;
 import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
+import org.w3c.dom.Document;
 
 /**
  *  This is a simple helper to just get the SOAP Message and Response.
@@ -117,4 +121,51 @@ public class SoapHelper<T, R> extends SOAP
         }
         return result;
     }
+    
+    /**
+     * Create a SOAP Message for the object.
+     * @param soapRequestElem
+     * @param needAuthentification
+     * @return
+     * @throws SOAPException
+     * @throws ParserConfigurationException
+     * @throws JAXBException
+     */
+//    @Override
+    public SOAPMessage generateMessage(T soapRequestElem, boolean needAuthentification) 
+            throws SOAPException, ParserConfigurationException, JAXBException 
+    {
+		MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
+		SOAPMessage soapMessage = messageFactory.createMessage();
+
+		Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+		Marshaller marshaller = JAXBContext.newInstance(soapRequestElem.getClass()).createMarshaller();
+		marshaller.marshal(soapRequestElem, document);
+		soapMessage.getSOAPBody().addDocument(document);
+
+		// if (needAuthentification)
+		createSoapHeader(soapMessage);
+
+		soapMessage.saveChanges();
+		return soapMessage;
+//        return createSoapMessage(soapRequestElem, needAuthentification);
+	}
+    
+//    protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean needAuthentification) throws SOAPException, ParserConfigurationException,
+//			JAXBException 
+//    {
+//		MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
+//		SOAPMessage soapMessage = messageFactory.createMessage();
+//
+//		Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+//		Marshaller marshaller = JAXBContext.newInstance(soapRequestElem.getClass()).createMarshaller();
+//		marshaller.marshal(soapRequestElem, document);
+//		soapMessage.getSOAPBody().addDocument(document);
+//
+//		// if (needAuthentification)
+//		createSoapHeader(soapMessage);
+//
+//		soapMessage.saveChanges();
+//		return soapMessage;
+//	}
 }

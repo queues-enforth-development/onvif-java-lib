@@ -1,7 +1,9 @@
 package de.onvif.soap;
 
 import de.onvif.LoggerInterface;
+import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import de.onvif.soap.devices.PtzDevice;
+import de.onvif.soap.exception.InvalidLedgerState;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.util.logging.Level;
@@ -41,6 +43,8 @@ public class SOAP
     
     private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
     String writeOutputLocation = OUTPUT_LOCATION;
+    
+    private SoapLedger<SOAPMessage> ledger;
 
     /**
      *
@@ -49,7 +53,8 @@ public class SOAP
      */
     public SOAP(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
-	}
+        this.ledger = new SoapLedger<>();
+    }
 
     /**
      *
@@ -162,7 +167,11 @@ public class SOAP
                 PtzDevice.logger.logSoapMessage2File(OUTPUT_LOCATION, soapMessage);
 			}
 
+            ledger.addMessage(soapMessage);
+            
 			soapResponse = soapConnection.call(soapMessage, soapUri);
+            
+            ledger.addResponse(soapResponse);
             
             SOAPBody body = soapResponse.getSOAPBody();
             boolean hasFault = body.hasFault();
@@ -226,11 +235,10 @@ public class SOAP
 			onvifDevice.getLogger().log(Level.WARNING,
 					String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
 			throw e;
-		} catch (ParserConfigurationException | JAXBException  e) {
+		} catch (InvalidLedgerState | ParserConfigurationException | JAXBException  e) {
 			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
 			return null;
-		}
-		finally {
+		} finally {
 			try {
                 if (null!=soapConnection)
                     soapConnection.close();
@@ -335,4 +343,17 @@ public class SOAP
     public void setWriteOutputLocation(String writeOutputLocation) {
         this.writeOutputLocation = writeOutputLocation;
     }
+
+    public SoapLedger<SOAPMessage> getLedger() {
+        return ledger;
+    }
+
+    public void setLedger(SoapLedger<SOAPMessage> ledger) {
+        this.ledger = ledger;
+    }
+    
+    public void claerLedger() {
+        ledger.clear();
+    }
+    
 }

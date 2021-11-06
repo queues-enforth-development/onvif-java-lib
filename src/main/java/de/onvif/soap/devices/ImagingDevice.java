@@ -1,5 +1,7 @@
 package de.onvif.soap.devices;
 
+import de.onvif.de.onvif.traits.SoapBookkeeping;
+import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.net.ConnectException;
 
 import javax.xml.soap.SOAPException;
@@ -22,17 +24,22 @@ import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.xml.soap.SOAPMessage;
 
 /**
  *
  *
  */
-public class ImagingDevice {
+public class ImagingDevice 
+        implements SoapBookkeeping
+{
     private static final Logger LOGGER = Logger.getLogger(ImagingDevice.class.getPackage().getName());
     
 	@SuppressWarnings("unused")
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
+
+    private SoapLedger<SOAPMessage> ledger;
 
     /**
      *
@@ -41,8 +48,9 @@ public class ImagingDevice {
     public ImagingDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
+        this.ledger = SoapBookkeeping.createLedger();
 	}
-
+    
     /**
      *
      * @param videoSourceToken
@@ -69,6 +77,9 @@ public class ImagingDevice {
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+        
 		return response.getImagingOptions();
 	}
 
@@ -102,6 +113,9 @@ public class ImagingDevice {
 			return false;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response != null;
 	}
 
@@ -131,6 +145,9 @@ public class ImagingDevice {
 			return null;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response.getImagingSettings();
 	}
 
@@ -158,6 +175,25 @@ public class ImagingDevice {
 			return false;
 		}
 
+        // Store the SOAP call and response
+        recordSoapMessages();
+
 		return response != null;
 	}
+
+    @Override
+    public void setLedger(SoapLedger<SOAPMessage> ledger) {
+        this.ledger = ledger;
+    }
+
+    @Override
+    public SoapLedger<SOAPMessage> getLedger() {
+        return ledger;
+    }
+
+    @Override
+    public SOAP getSoap() {
+        return soap;
+    }
 }
+
