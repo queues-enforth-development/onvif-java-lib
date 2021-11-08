@@ -85,6 +85,7 @@ public class MediaDevice
     public String getHTTPStreamUri(String profileToken) 
             throws ConnectException, SOAPException, SOAPFaultException 
     {
+        // get profile token...
 		StreamSetup setup = new StreamSetup();
 		setup.setStream(StreamType.RTP_UNICAST);
 		Transport transport = new Transport();
