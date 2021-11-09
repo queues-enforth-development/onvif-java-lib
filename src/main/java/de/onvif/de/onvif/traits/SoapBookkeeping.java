@@ -29,6 +29,6 @@ public interface SoapBookkeeping {
 
         // Store the SOAP call and response
         ledger.addAll(soap.getLedger());
-        soap.claerLedger();
+//        soap.clearLedger();
     }
 }

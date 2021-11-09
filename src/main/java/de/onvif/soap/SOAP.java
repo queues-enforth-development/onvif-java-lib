@@ -352,7 +352,7 @@ public class SOAP
         this.ledger = ledger;
     }
     
-    public void claerLedger() {
+    public void clearLedger() {
         ledger.clear();
     }
     

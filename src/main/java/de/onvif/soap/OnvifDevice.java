@@ -54,7 +54,7 @@ public class OnvifDevice {
 	private SOAP soap;
 
 	private InitialDevice initialDevice;
-	private PtzDevice ptzDevices;
+	private PtzDevice ptzDevice;
 	private MediaDevice mediaDevice;
 	private ImagingDevice imagingDevice;
     
@@ -91,7 +91,7 @@ public class OnvifDevice {
 
 		this.soap = new SOAP(this);
 		this.initialDevice = new InitialDevice(this);
-		this.ptzDevices = new PtzDevice(this);
+		this.ptzDevice = new PtzDevice(this);
 		this.mediaDevice = new MediaDevice(this);
 		this.imagingDevice = new ImagingDevice(this);
         
@@ -325,7 +325,7 @@ public class OnvifDevice {
      * @return 
 	 */
 	public PtzDevice getPtz() {
-		return ptzDevices;
+		return ptzDevice;
 	}
 
 	/**
