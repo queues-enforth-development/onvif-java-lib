@@ -1,5 +1,6 @@
 package de.onvif.soap;
 
+import de.onvif.de.onvif.traits.SoapBookkeeping;
 import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.io.IOException;
 import java.net.ConnectException;
@@ -26,6 +27,8 @@ import de.onvif.soap.devices.InitialDevice;
 import de.onvif.soap.devices.MediaDevice;
 import de.onvif.soap.devices.PtzDevice;
 import de.onvif.soap.exception.SOAPFaultException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.logging.Level;
 import javax.xml.soap.SOAPMessage;
 
@@ -34,7 +37,9 @@ import javax.xml.soap.SOAPMessage;
  * @author Robin Dick
  * 
  */
-public class OnvifDevice {
+public class OnvifDevice 
+        implements SoapBookkeeping
+{
 	private final String HOST_IP;
 	private String originalIp;
 
@@ -78,7 +83,9 @@ public class OnvifDevice {
 	public OnvifDevice(String hostIp, String user, String password) 
             throws ConnectException, SOAPException, SOAPFaultException 
     {
-		this.HOST_IP = hostIp;
+        
+        
+		this.HOST_IP = parseUrl(hostIp);
 
 		if (!isOnline()) {
 			throw new ConnectException("Host not available.");
@@ -190,6 +197,8 @@ public class OnvifDevice {
 		if (capabilities.getMedia() != null && capabilities.getEvents().getXAddr() != null) {
 			serverEventsUri = replaceLocalIpWithProxyIp(capabilities.getEvents().getXAddr());
 		}
+        
+        ledger.addAll(soap.getLedger());
 	}
 
     /**
@@ -308,6 +317,7 @@ public class OnvifDevice {
      *
      * @return
      */
+    @Override
     public SOAP getSoap() {
 		return soap;
 	}
@@ -428,4 +438,30 @@ public class OnvifDevice {
     {
 		return initialDevice.reboot();
 	}
+
+    @Override
+    public SoapLedger<SOAPMessage> getLedger() {
+        return this.ledger;
+    }
+
+    @Override
+    public void setLedger(SoapLedger<SOAPMessage> ledger) {
+        this.ledger = ledger;
+    }
+    
+    private String parseUrl(String hostIp) {
+        String result = hostIp;
+        
+        if (result.toUpperCase().contains("HTTP")) {
+            try {
+                URL url = new URL(hostIp);
+                result = url.getAuthority();
+            } catch (MalformedURLException e) {
+                LOGGER.log(Level.WARNING, "Error: An error occurred parsing the host IP URL.", e);
+                result = hostIp;
+            }
+        }
+        
+        return result;
+    }
 }

@@ -23,12 +23,14 @@ public interface SoapBookkeeping {
     public abstract SOAP getSoap();
     public abstract void setLedger(SoapLedger<SOAPMessage> ledger);
 
-    public default void recordSoapMessages() {
+    public default SoapLedger<SOAPMessage> recordSoapMessages() {
         SoapLedger<SOAPMessage> ledger = getLedger();
         SOAP soap = getSoap();
 
         // Store the SOAP call and response
         ledger.addAll(soap.getLedger());
 //        soap.clearLedger();
+        
+        return ledger;
     }
 }

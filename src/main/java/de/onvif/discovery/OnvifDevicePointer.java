@@ -5,12 +5,16 @@
  */
 package de.onvif.discovery;
 
+import de.onvif.de.onvif.traits.implmentation.SoapLedger;
+import de.onvif.de.onvif.traits.SoapBookkeeping;
 import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.net.URL;
 import java.util.List;
 import javax.xml.soap.SOAPException;
+import javax.xml.soap.SOAPMessage;
 import org.onvif.ver10.schema.Profile;
 
 /**
@@ -19,7 +23,8 @@ import org.onvif.ver10.schema.Profile;
  * @author jmccay
  */
 public class OnvifDevicePointer 
-        extends URLDevicePointer 
+        extends URLDevicePointer
+        implements SoapBookkeeping 
 {
 
     private String user = null;
@@ -27,6 +32,9 @@ public class OnvifDevicePointer
     private OnvifDevice device = null;
     private List<Profile> profiles;
     private String snapshotUrl;
+    
+    private SoapLedger<SOAPMessage> ledger;
+
     
     /**
      * Constructor for a device requiring a password
@@ -43,6 +51,7 @@ public class OnvifDevicePointer
         try {
             
             this.device = new OnvifDevice(address.getHost(), user, password);
+            this.ledger = device.getLedger();
             super.setName(device.getName());
 			profiles = device.getDevices().getProfiles();
  			this.snapshotUrl = device.getMedia().getSnapshotUri(profiles.get(0).getToken());
@@ -69,6 +78,7 @@ public class OnvifDevicePointer
         super(device.getDeviceUri());
         try {
             this.device = device;
+            this.ledger = device.getLedger();
             super.setName(device.getName());
             profiles = device.getDevices().getProfiles();
             this.snapshotUrl = device.getMedia().getSnapshotUri(profiles.get(0).getToken());
@@ -119,6 +129,21 @@ public class OnvifDevicePointer
 
     public String getSnapshotUrl() {
         return snapshotUrl;
+    }
+
+    @Override
+    public SoapLedger<SOAPMessage> getLedger() {
+        return this.ledger;
+    }
+
+    @Override
+    public SOAP getSoap() {
+        return this.device.getSoap();
+    }
+
+    @Override
+    public void setLedger(SoapLedger<SOAPMessage> ledger) {
+        this.ledger = ledger;
     }
     
     
