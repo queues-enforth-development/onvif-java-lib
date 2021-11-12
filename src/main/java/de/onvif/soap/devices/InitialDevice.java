@@ -92,7 +92,7 @@ public class InitialDevice
 		cal = new GregorianCalendar(date.getYear(), date.getMonth() - 1, date.getDay(), time.getHour(), time.getMinute(), time.getSecond());
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return cal.getTime();
 	}
@@ -112,7 +112,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response;
 	}
@@ -132,7 +132,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getHostnameInformation().getName();
 	}
@@ -154,7 +154,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return true;
 	}
@@ -178,7 +178,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getUser();
 	}
@@ -208,7 +208,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getCapabilities();
 	}
@@ -233,7 +233,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getProfiles();
 	}
@@ -261,7 +261,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getProfile();
 	}
@@ -289,7 +289,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getProfile();
 	}
@@ -317,7 +317,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getService();
 	}
@@ -342,7 +342,7 @@ public class InitialDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getScopes();
 	}
@@ -371,7 +371,7 @@ public class InitialDevice
 		}
         
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getMessage();
 	}

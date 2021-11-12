@@ -59,7 +59,7 @@ public class PtzDevice
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
     
-    private SoapLedger<SOAPMessage> ledger;
+    private SoapLedger<SOAPMessage> ledger = null;
 
     /**
      *
@@ -118,7 +118,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getPTZNode();
 	}
@@ -161,7 +161,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getPTZNode();
 	}
@@ -282,7 +282,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -336,7 +336,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -390,7 +390,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -416,7 +416,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -444,7 +444,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getPTZStatus();
 	}
@@ -483,7 +483,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -511,7 +511,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getPreset();
 	}
@@ -543,7 +543,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getPresetToken();
 	}
@@ -579,7 +579,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -605,7 +605,7 @@ public class PtzDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}

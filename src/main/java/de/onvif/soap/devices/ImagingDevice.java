@@ -78,7 +78,7 @@ public class ImagingDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
         
 		return response.getImagingOptions();
 	}
@@ -114,7 +114,7 @@ public class ImagingDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -146,7 +146,7 @@ public class ImagingDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response.getImagingSettings();
 	}
@@ -176,7 +176,7 @@ public class ImagingDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
 
 		return response != null;
 	}

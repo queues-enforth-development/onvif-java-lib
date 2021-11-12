@@ -5,25 +5,14 @@
  */
 package de.onvif.de.onvif.traits.implmentation;
 
-import de.onvif.de.onvif.traits.Auditor;
-import de.onvif.de.onvif.traits.AuditorNode;
+import de.onvif.de.onvif.traits.AuditorNodeImpl;
 import de.onvif.de.onvif.traits.Loggable;
-import de.onvif.soap.exception.InvalidLedgerState;
-import java.io.StringWriter;
+import de.onvif.soap.exception.InvalidLedgerStateException;
 import java.io.Writer;
 import java.util.Collection;
 import java.util.LinkedList;
-import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
-import javax.xml.soap.SOAPPart;
-import javax.xml.transform.Result;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.stream.StreamResult;
 
 /**
  *    This is a simple class to store Messages and their Responses together.  It needs to write the 
@@ -32,41 +21,24 @@ import javax.xml.transform.stream.StreamResult;
  * @param <E>
  */
 public class SoapLedger<E extends SOAPMessage> 
-        extends LinkedList< AuditorNode<E> > 
-        implements Auditor<E>, Loggable
+        extends LinkedList< AuditorNodeImpl<E> > 
+        implements Loggable
 {
     private static final Logger LOGGER = Logger.getLogger(SoapLedger.class.getPackage().getName());
 //    private final SoapLedger<E> storage = new SoapLedger<>();
-    private Transformer prettyPrint = null;
     private Writer writer;
     
     private boolean expectMessage = true;
 
     public SoapLedger() {
-        initializePrettyPrint();
         writer = null;
     }
 
-    public SoapLedger(Collection<? extends AuditorNode<E>> clctn) {
+    public SoapLedger(Collection<? extends AuditorNodeImpl<E>> clctn) {
         super(clctn);
-        initializePrettyPrint();
         writer = null;
     }
     
-    private Transformer initializePrettyPrint() {
-        try {
-            prettyPrint = TransformerFactory.newInstance().newTransformer();
-        } catch (TransformerConfigurationException ex) {
-            LOGGER.log(Level.WARNING, "Error: unable to create SOAP Message formatter!", ex);
-        }
-        return prettyPrint;
-    }
-    
-    @Override
-    public SoapLedger<E> getStorage() {
-        return this;
-    }
-
     @Override
     public Logger getLogger() {
         return LOGGER;
@@ -80,74 +52,27 @@ public class SoapLedger<E extends SOAPMessage>
         this.writer = writer;
     }
     
-    protected String formatToString(E soapmessage) {
-        if (null==writer) {
-            writer = new StringWriter();
-        }
-        
-        Result result = new StreamResult(writer);
-        try {
-            SOAPPart soapPart = soapmessage.getSOAPPart();
-            prettyPrint.transform(soapPart.getContent(), result);
-        } catch (SOAPException | TransformerException ex) {
-            LOGGER.log(Level.WARNING, "Error: An error occurred while trying to format the SOAPMessage.", ex);
-        }
-        return result.toString();
-    }
-
-    @Override
-    public String getFirstMessageAsString() {
-        return formatToString(get(0).getMessage());
-    }
-
-    @Override
-    public String getMessageAtAsString(int index) {
-        return formatToString(get(index).getMessage());
-    }
-
-    @Override
-    public String getLastMessageAsString() {
-        return formatToString(getLastMessage());
-    }
-
-    @Override
-    public String getFirstResponseAsString() {
-        return formatToString(get(0).getResponse());
-    }
-
-    @Override
-    public String getResponseAtAsString(int index) {
-        return formatToString(get(index).getResponse());
-    }
-
-    @Override
-    public String getLastResponseAsString() {
-        return formatToString(getLastResponse());
-    }
-
-    @Override
     public void addMessage(E message) 
-            throws InvalidLedgerState
+            throws InvalidLedgerStateException
     {
         if (!expectMessage) {
-            throw new InvalidLedgerState("Error: expecting a response not a Message");
+            throw new InvalidLedgerStateException("Error: expecting a response not a Message");
         }
   
-        AuditorNode<E> temp = new AuditorNode();
+        AuditorNodeImpl<E> temp = new AuditorNodeImpl();
         temp.setMessage(message);
         expectMessage = false;
         this.addLast(temp);
     }
 
-    @Override
     public void addResponse(E response) 
-        throws InvalidLedgerState    
+        throws InvalidLedgerStateException    
     {
         if (expectMessage) {
-            throw new InvalidLedgerState("Error: expecting a message not a response.");
+            throw new InvalidLedgerStateException("Error: expecting a message not a response.");
         }
         
-        AuditorNode<E> temp = this.getLast();
+        AuditorNodeImpl<E> temp = this.getLast();
         temp.setResponse(response);
         expectMessage = true;
         this.addLast(temp);

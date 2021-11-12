@@ -1,9 +1,10 @@
 package de.onvif.soap;
 
 import de.onvif.LoggerInterface;
+import de.onvif.de.onvif.traits.SoapBookkeeping;
 import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import de.onvif.soap.devices.PtzDevice;
-import de.onvif.soap.exception.InvalidLedgerState;
+import de.onvif.soap.exception.InvalidLedgerStateException;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.util.logging.Level;
@@ -53,7 +54,7 @@ public class SOAP
      */
     public SOAP(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
-        this.ledger = new SoapLedger<>();
+        this.ledger = SoapBookkeeping.createLedger();
     }
 
     /**
@@ -235,7 +236,7 @@ public class SOAP
 			onvifDevice.getLogger().log(Level.WARNING,
 					String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
 			throw e;
-		} catch (InvalidLedgerState | ParserConfigurationException | JAXBException  e) {
+		} catch (InvalidLedgerStateException | ParserConfigurationException | JAXBException  e) {
 			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
 			return null;
 		} finally {

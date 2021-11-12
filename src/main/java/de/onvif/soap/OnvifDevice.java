@@ -102,7 +102,7 @@ public class OnvifDevice
 		this.mediaDevice = new MediaDevice(this);
 		this.imagingDevice = new ImagingDevice(this);
         
-        this.ledger = new SoapLedger<>();
+        this.ledger = SoapBookkeeping.createLedger();
 		
 		init();
 	}
@@ -198,7 +198,8 @@ public class OnvifDevice
 			serverEventsUri = replaceLocalIpWithProxyIp(capabilities.getEvents().getXAddr());
 		}
         
-        ledger.addAll(soap.getLedger());
+        ledger = recordSoapMessages();
+//        ledger.addAll(soap.getLedger());
 	}
 
     /**

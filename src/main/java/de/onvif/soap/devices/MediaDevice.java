@@ -278,7 +278,7 @@ public class MediaDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
         
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
@@ -319,7 +319,7 @@ public class MediaDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
         
 		return response.getOptions();
 	}
@@ -348,7 +348,7 @@ public class MediaDevice
 		}
 
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
         
 		return response != null;
 	}
@@ -394,7 +394,7 @@ public class MediaDevice
 		}
 		
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
         
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
@@ -423,7 +423,7 @@ public class MediaDevice
 		}
         
         // Store the SOAP call and response
-        recordSoapMessages();
+        ledger = recordSoapMessages();
         
 		return response.getVideoSources();
 	}

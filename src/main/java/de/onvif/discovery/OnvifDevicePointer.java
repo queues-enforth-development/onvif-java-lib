@@ -51,7 +51,8 @@ public class OnvifDevicePointer
         try {
             
             this.device = new OnvifDevice(address.getHost(), user, password);
-            this.ledger = device.getLedger();
+//            this.ledger = device.getLedger();
+            this.ledger = SoapBookkeeping.createLedger();
             super.setName(device.getName());
 			profiles = device.getDevices().getProfiles();
  			this.snapshotUrl = device.getMedia().getSnapshotUri(profiles.get(0).getToken());

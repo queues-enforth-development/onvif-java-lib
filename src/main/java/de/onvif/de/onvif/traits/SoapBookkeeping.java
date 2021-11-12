@@ -29,7 +29,7 @@ public interface SoapBookkeeping {
 
         // Store the SOAP call and response
         ledger.addAll(soap.getLedger());
-//        soap.clearLedger();
+        soap.clearLedger();
         
         return ledger;
     }

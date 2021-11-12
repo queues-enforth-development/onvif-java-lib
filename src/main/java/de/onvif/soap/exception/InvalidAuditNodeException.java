@@ -9,25 +9,25 @@ package de.onvif.soap.exception;
  *
  * @author jmccay
  */
-public class InvalidLedgerState extends Throwable
+public class InvalidAuditNodeException extends Throwable
 {
 
-    public InvalidLedgerState() {
+    public InvalidAuditNodeException() {
     }
 
-    public InvalidLedgerState(String string) {
+    public InvalidAuditNodeException(String string) {
         super(string);
     }
 
-    public InvalidLedgerState(String string, Throwable thrwbl) {
+    public InvalidAuditNodeException(String string, Throwable thrwbl) {
         super(string, thrwbl);
     }
 
-    public InvalidLedgerState(Throwable thrwbl) {
+    public InvalidAuditNodeException(Throwable thrwbl) {
         super(thrwbl);
     }
 
-    public InvalidLedgerState(String string, Throwable thrwbl, boolean bln, boolean bln1) {
+    public InvalidAuditNodeException(String string, Throwable thrwbl, boolean bln, boolean bln1) {
         super(string, thrwbl, bln, bln1);
     }
     

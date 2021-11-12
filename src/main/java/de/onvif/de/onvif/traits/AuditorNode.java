@@ -5,69 +5,46 @@
  */
 package de.onvif.de.onvif.traits;
 
+import de.onvif.soap.exception.InvalidAuditNodeException;
+import java.io.IOException;
+import java.io.Writer;
 import java.time.LocalDateTime;
+import javax.xml.soap.SOAPMessage;
 
 /**
- * Store a Message and Response pair of SOAP messages
+ *
  * @author jmccay
  * @param <T>
  */
-public class AuditorNode<T> 
+public interface AuditorNode<T extends SOAPMessage> 
 {
-    private LocalDateTime timeStampMessage;
-    private LocalDateTime timeStampResponse;
-    private T message;
-    private T response;
-    
-    public AuditorNode() {
-    }
-   
-    public AuditorNode(T message) {
-        setMessageImpl(message);
-    }
-    
-    public AuditorNode(T message, T response) {
-        setMessageImpl(message);
-        setResponseImpl(response);
+    public static void writeObject(AuditorNode obj, Writer writer) 
+            throws IOException, InvalidAuditNodeException 
+    {
+        writer.append("Message:");
+        writer.append(String.format("%n"));
+        writer.append(obj.getMessageAsString());
+
+        writer.append("Response:");
+        writer.append(String.format("%n"));
+        writer.append(obj.getResponseAsString());
     }
 
-    public T getMessage() {
-        return message;
-    }
+    public abstract String formatMessage(T soapmessage, Writer writer);
+    
+    public abstract T getMessage() throws InvalidAuditNodeException;
+    
+    public abstract void setMessage(T message) throws InvalidAuditNodeException;
+    
+    public abstract T getResponse() throws InvalidAuditNodeException;
 
-    public void setMessage(T message) {
-        setMessageImpl(message);
-    }
+    public abstract void setResponse(T response) throws InvalidAuditNodeException;
     
-    public T getResponse() {
-        return response;
-    }
+    public abstract LocalDateTime getMessageTimeStamp();
 
-    public void setResponse(T response) {
-        setResponseImpl(response);
-    }
-
-    public LocalDateTime getTimeStampMessage() {
-        return timeStampMessage;
-    }
-
-    public LocalDateTime getTimeStampResponse() {
-        return timeStampResponse;
-    }
+    public abstract LocalDateTime getResponseTimeStamp();
     
-        
-    //
-    // Implementations for code reuse.
-    //
+    public abstract String getMessageAsString() throws InvalidAuditNodeException;
     
-    private void setMessageImpl(T message) {
-        timeStampMessage = LocalDateTime.now();
-        this.message = message;
-    }
-    
-    private void setResponseImpl(T response) {
-        timeStampResponse = LocalDateTime.now();
-        this.response = response;
-    }
-    
+    public abstract String getResponseAsString() throws InvalidAuditNodeException;
 }
