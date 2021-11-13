@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
  }
  
-version = '2.0.28'
+version = '2.0.29'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
