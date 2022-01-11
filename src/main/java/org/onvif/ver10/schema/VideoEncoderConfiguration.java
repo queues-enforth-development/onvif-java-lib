@@ -23,7 +23,7 @@ import org.w3c.dom.Element;
 
 /**
  * <p>
- * Java-Klasse f�r VideoEncoderConfiguration complex type.
+ * Java class for VideoEncoderConfiguration complex type.
  * 
  * <p>
  * The following schema fragment indicates the expected content contained in this class.
