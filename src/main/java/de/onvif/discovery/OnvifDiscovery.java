@@ -1,7 +1,6 @@
 package de.onvif.discovery;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,8 +21,8 @@ public class OnvifDiscovery {
      * @return
      */
     public static List<OnvifPointer> discoverOnvifDevices() {
-		final ArrayList<OnvifPointer> onvifPointers = new ArrayList<>();
-		final Collection<URL> urls = DeviceDiscovery.discoverWsDevicesAsUrls("^http$", ".*onvif.*");
+		LinkedList<OnvifPointer> onvifPointers = new LinkedList<>();
+		Collection<URL> urls = DeviceDiscovery.discoverWsDevicesAsUrls("^http$", ".*onvif.*");
         urls.forEach(url -> {
             try {
                 onvifPointers.add(new OnvifPointer(url));
