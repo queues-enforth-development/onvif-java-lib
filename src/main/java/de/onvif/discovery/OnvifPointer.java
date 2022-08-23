@@ -56,7 +56,7 @@ public class OnvifPointer extends URLDevicePointer {
 			final OnvifDevice device = new OnvifDevice(address);
 			super.setName(device.getName());
 			final List<Profile> profiles = device.getDevices().getProfiles();
-			final Profile profile = profiles.get(0);
+			final Profile profile = (null!=profiles)? ((profiles.size() > 0)? profiles.get(0):null):null;
 			this.snapshotUrl = device.getMedia().getSnapshotUri(profile.getToken());
 		} catch (ConnectException | SOAPException | SOAPFaultException e) {
 			throw new RuntimeException("no onvif device or device not configured", e);
@@ -69,6 +69,8 @@ public class OnvifPointer extends URLDevicePointer {
      */
     public OnvifPointer(URL service) {
 		this(service.getHost());
+        String s = service.getHost();
+        String t = service.getAuthority();
 	}
 
     /**

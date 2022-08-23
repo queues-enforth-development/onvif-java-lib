@@ -21,10 +21,24 @@ public class OnvifDiscovery {
      * @return
      */
     public static List<OnvifPointer> discoverOnvifDevices() {
-		LinkedList<OnvifPointer> onvifPointers = new LinkedList<>();
-		Collection<URL> urls = DeviceDiscovery.discoverWsDevicesAsUrls("^http$", ".*onvif.*");
+		final LinkedList<OnvifPointer> onvifPointers = new LinkedList<>();
+		final Collection<URL> urls = DeviceDiscovery.discoverWsDevicesAsUrls("^http$", ".*onvif.*");
         urls.forEach(url -> {
+            String authority;
             try {
+                // Just for testing
+                System.out.println("------------------");
+                System.out.println("Host: " + url.getHost());
+                System.out.println("Authority: " + url.getAuthority());
+                System.out.println("Path: " + url.getPath());
+                System.out.println("Protocol: " + url.getProtocol());
+                System.out.println("Query: " + url.getQuery());
+                System.out.println("Ref: " + url.getRef());
+                System.out.println("" + url.getHost());
+                System.out.println("------------------");
+                
+                authority = String.format("%s://%s",  url.getProtocol(), url.getAuthority());
+//                onvifPointers.add(new OnvifPointer(authority));
                 onvifPointers.add(new OnvifPointer(url));
             } catch (Exception e) {
                 LOGGER.log(Level.WARNING,"An error occurred in the discoverOnvifDevices method.",e);
