@@ -22,7 +22,7 @@ public abstract class URLDevicePointer {
     private String deviceName = null;
     
     // Insure the class has a proper state
-    private URLDevicePointer(){}
+    protected URLDevicePointer(){}
 
     /**
      * Constructor for a String URL address.

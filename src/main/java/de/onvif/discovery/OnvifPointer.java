@@ -68,9 +68,9 @@ public class OnvifPointer extends URLDevicePointer {
      * @param service
      */
     public OnvifPointer(URL service) {
-		this(service.getHost());
-        String s = service.getHost();
-        String t = service.getAuthority();
+//		this(service.getHost());
+        this(service.toString());
+//		this(String.format("%s://%s", service.getProtocol(), service.getHost()));
 	}
 
     /**
