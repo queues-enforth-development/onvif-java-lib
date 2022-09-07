@@ -9,6 +9,7 @@ import javax.xml.soap.SOAPException;
 import org.onvif.ver10.schema.Profile;
 
 import de.onvif.soap.OnvifDevice;
+import de.onvif.soap.devices.MediaDevice;
 import de.onvif.soap.exception.SOAPFaultException;
 
 /**
@@ -16,8 +17,6 @@ import de.onvif.soap.exception.SOAPFaultException;
  * @date 2015-06-19
  */
 public class OnvifPointer extends URLDevicePointer {
-//	private final String address;
-//	private final String name;
 
     /**
      *
@@ -37,7 +36,7 @@ public class OnvifPointer extends URLDevicePointer {
 	}
 
     /**
-     * 
+     *
      * @return
      */
     public String getAddress() {
@@ -57,20 +56,27 @@ public class OnvifPointer extends URLDevicePointer {
 			super.setName(device.getName());
 			final List<Profile> profiles = device.getDevices().getProfiles();
 			final Profile profile = (null!=profiles)? ((profiles.size() > 0)? profiles.get(0):null):null;
-			this.snapshotUrl = device.getMedia().getSnapshotUri(profile.getToken());
+            if (null != device && null != profile) {
+                MediaDevice media = device.getMedia();
+                if (null != media) {
+                    this.snapshotUrl = media.getSnapshotUri(profile.getToken());
+                } else {
+                    snapshotUrl= null;
+                }
+            } else {
+                snapshotUrl = null;
+            }
 		} catch (ConnectException | SOAPException | SOAPFaultException e) {
 			throw new RuntimeException("no onvif device or device not configured", e);
 		}
 	}
-    
+
     /**
      *
      * @param service
      */
     public OnvifPointer(URL service) {
-//		this(service.getHost());
         this(service.toString());
-//		this(String.format("%s://%s", service.getProtocol(), service.getHost()));
 	}
 
     /**
@@ -80,8 +86,8 @@ public class OnvifPointer extends URLDevicePointer {
      * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public OnvifDevice getOnvifDevice() 
-            throws SOAPException, ConnectException, SOAPFaultException 
+    public OnvifDevice getOnvifDevice()
+        throws SOAPException, ConnectException, SOAPFaultException
     {
 		return new OnvifDevice(getAddress());
 	}

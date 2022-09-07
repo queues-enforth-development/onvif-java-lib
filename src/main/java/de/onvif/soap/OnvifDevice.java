@@ -1,7 +1,5 @@
 package de.onvif.soap;
 
-import de.onvif.de.onvif.traits.SoapBookkeeping;
-import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.io.IOException;
 import java.net.ConnectException;
 import java.net.InetSocketAddress;
@@ -29,16 +27,20 @@ import de.onvif.soap.devices.PtzDevice;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.logging.Level;
-import javax.xml.soap.SOAPMessage;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.onvif.ver10.device.wsdl.GetDeviceInformationResponse;
+import de.onvif.de.onvif.traits.SoapUser;
 
 /**
- * 
+ *
  * @author Robin Dick
- * 
+ *
  */
-public class OnvifDevice 
-        implements SoapBookkeeping
+public class OnvifDevice
+        implements SoapUser
 {
 	private final String HOST_IP;
 	private String originalIp;
@@ -62,29 +64,29 @@ public class OnvifDevice
 	private PtzDevice ptzDevice;
 	private MediaDevice mediaDevice;
 	private ImagingDevice imagingDevice;
-    
-    private SoapLedger<SOAPMessage> ledger;
 
+    private static final String UNKNOWN_CAMERA = "Unknown camera model";
+    private static final String EMPTY_STRING = "".intern();
+    private static final String UNAUTHORIZED = "unauthorized".intern();
+    private static final Pattern UNAUTHORIZED_REGEX = Pattern.compile(UNAUTHORIZED, Pattern.CASE_INSENSITIVE);
 
     private static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(OnvifDevice.class.getPackage().getName());
 
 	/**
 	 * Initializes an ONVIF device, e.g.a Network Video Transmitter (NVT) with logindata.
-	 * 
+	 *
      * @param hostIp
      * @param user
      * @param password
 	 * @throws ConnectException
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
-	 * @throws SOAPException 
-     * @throws de.onvif.soap.exception.SOAPFaultException 
+	 * @throws SOAPException
+     * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
-	public OnvifDevice(String hostIp, String user, String password) 
-            throws ConnectException, SOAPException, SOAPFaultException 
+	public OnvifDevice(String hostIp, String user, String password)
+            throws ConnectException, SOAPException, SOAPFaultException
     {
-        
-        
 		this.HOST_IP = parseUrl(hostIp);
 
 		if (!isOnline()) {
@@ -101,24 +103,22 @@ public class OnvifDevice
 		this.ptzDevice = new PtzDevice(this);
 		this.mediaDevice = new MediaDevice(this);
 		this.imagingDevice = new ImagingDevice(this);
-        
-        this.ledger = SoapBookkeeping.createLedger();
-		
+
 		init();
 	}
 
 	/**
 	 * Initializes an ONVIF device, e.g.a Network Video Transmitter (NVT) with logindata.
-	 * 
+	 *
      * @param hostIp
 	 * @throws ConnectException
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
-	 * @throws SOAPException 
-     * @throws de.onvif.soap.exception.SOAPFaultException 
+	 * @throws SOAPException
+     * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
-	public OnvifDevice(String hostIp) 
-            throws ConnectException, SOAPException, SOAPFaultException 
+	public OnvifDevice(String hostIp)
+            throws ConnectException, SOAPException, SOAPFaultException
     {
 		this(hostIp, null, null);
 	}
@@ -130,7 +130,7 @@ public class OnvifDevice
 	private boolean isOnline() {
 		String port = HOST_IP.contains(":") ? HOST_IP.substring(HOST_IP.indexOf(':') + 1) : "80";
 		String ip = HOST_IP.contains(":") ? HOST_IP.substring(0, HOST_IP.indexOf(':')) : HOST_IP;
-		
+
 		Socket socket = null;
 		try {
 			SocketAddress sockaddr = new InetSocketAddress(ip, new Integer(port));
@@ -153,15 +153,15 @@ public class OnvifDevice
 	/**
 	 * Initializes the addresses used for SOAP messages and to get the internal
 	 * IP, if given IP is a proxy.
-	 * 
+	 *
 	 * @throws ConnectException
 	 *             Get thrown if device doesn't give answers to
 	 *             GetCapabilities()
-	 * @throws SOAPException 
-     * @throws de.onvif.soap.exception.SOAPFaultException 
+	 * @throws SOAPException
+     * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
-	private void init() 
-            throws ConnectException, SOAPException, SOAPFaultException 
+	private void init()
+            throws ConnectException, SOAPException, SOAPFaultException
     {
 		Capabilities capabilities = getDevices().getCapabilities();
 
@@ -177,7 +177,7 @@ public class OnvifDevice
 		} else {
 			LOGGER.log(Level.WARNING, "Unknown/Not implemented local procotol!");
 		}
-			
+
 		if (!originalIp.equals(HOST_IP)) {
 			isProxy = true;
 		}
@@ -189,7 +189,7 @@ public class OnvifDevice
 		if (capabilities.getPTZ() != null && capabilities.getPTZ().getXAddr() != null) {
 			serverPtzUri = replaceLocalIpWithProxyIp(capabilities.getPTZ().getXAddr());
 		}
-		
+
 		if (capabilities.getImaging() != null && capabilities.getImaging().getXAddr() != null) {
 			serverImagingUri = replaceLocalIpWithProxyIp(capabilities.getImaging().getXAddr());
 		}
@@ -197,9 +197,6 @@ public class OnvifDevice
 		if (capabilities.getMedia() != null && capabilities.getEvents().getXAddr() != null) {
 			serverEventsUri = replaceLocalIpWithProxyIp(capabilities.getEvents().getXAddr());
 		}
-        
-        ledger = recordSoapMessages();
-//        ledger.addAll(soap.getLedger());
 	}
 
     /**
@@ -211,7 +208,7 @@ public class OnvifDevice
 		if (original.startsWith("http:///")) {
 			original = original.replace("http:///", "http://"+HOST_IP);
 		}
-		
+
 		if (isProxy) {
 			return original.replace(originalIp, HOST_IP);
 		}
@@ -236,7 +233,7 @@ public class OnvifDevice
 
 	/**
 	 * Returns encrypted version of given password like algorithm like in WS-UsernameToken
-     * @return 
+     * @return
 	 */
 	public String encryptPassword() {
 		String nonceLocal = getNonce();
@@ -325,7 +322,7 @@ public class OnvifDevice
 
 	/**
 	 * Is used for basic devices and requests of given ONVIF Device
-     * @return 
+     * @return
 	 */
 	public InitialDevice getDevices() {
 		return initialDevice;
@@ -333,7 +330,7 @@ public class OnvifDevice
 
 	/**
 	 * Can be used for PTZ controlling requests, may not be supported by device!
-     * @return 
+     * @return
 	 */
 	public PtzDevice getPtz() {
 		return ptzDevice;
@@ -402,7 +399,7 @@ public class OnvifDevice
     protected String getEventsUri() {
 		return serverEventsUri;
 	}
-	
+
     /**
      *
      * @return
@@ -410,23 +407,62 @@ public class OnvifDevice
     public Date getDate() {
 		return initialDevice.getDate();
 	}
-	
+
     /**
      *
      * @return
      */
     public String getName() {
-		return initialDevice.getDeviceInformation().getModel();
+        String result = UNKNOWN_CAMERA;
+        try {
+
+            Optional<GetDeviceInformationResponse> deviceInfo = initialDevice.getDeviceInformation();
+            if (deviceInfo.isPresent()) {
+                result = deviceInfo.get().getModel();
+            } else {
+                // see find the problem and check host name instead
+                Throwable e = initialDevice.getLastException();
+                if (isUnauthorised(e)) {
+                    result = checkHostname();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(String.format("Unknown camera Name response: %s", result));
+        }
+		return result;
 	}
-	
+
+    protected String checkHostname() {
+        Optional<String> hostname = initialDevice.getHostname(false);
+
+        return hostname.orElse(UNKNOWN_CAMERA);
+    }
+
+    protected boolean isUnauthorised(Throwable e) {
+        Throwable cause = e;
+        boolean result = false;
+        Matcher matcher;
+        String message;
+        do {
+            message = e.getMessage();
+            matcher = UNAUTHORIZED_REGEX.matcher(message);
+            if (matcher.find()) {
+                result = true;
+            }
+            cause = cause.getCause();
+        } while (null!=cause && !result);
+
+        return result;
+    }
+
     /**
      *
      * @return
      */
     public String getHostname() {
-		return initialDevice.getHostname();
+        return initialDevice.getHostname().orElse(EMPTY_STRING);
 	}
-	
+
     /**
      *
      * @return
@@ -434,25 +470,15 @@ public class OnvifDevice
      * @throws SOAPException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public String reboot() 
-            throws ConnectException, SOAPException, SOAPFaultException 
+    public String reboot()
+            throws ConnectException, SOAPException, SOAPFaultException
     {
 		return initialDevice.reboot();
 	}
 
-    @Override
-    public SoapLedger<SOAPMessage> getLedger() {
-        return this.ledger;
-    }
-
-    @Override
-    public void setLedger(SoapLedger<SOAPMessage> ledger) {
-        this.ledger = ledger;
-    }
-    
     private String parseUrl(String hostIp) {
         String result = hostIp;
-        
+
         if (result.toUpperCase().contains("HTTP")) {
             try {
                 URL url = new URL(hostIp);
@@ -462,7 +488,23 @@ public class OnvifDevice
                 result = hostIp;
             }
         }
-        
+
+        return result;
+    }
+
+    /**
+     * This method creates a JSON object string containing all the URIs.
+     * @return
+     */
+    public String getUrisAsJsonString() {
+        jakarta.json.JsonObject jsonObject = jakarta.json.Json.createObjectBuilder()
+                                                .add("device", this.serverDeviceUri)
+                                                .add("events", this.serverEventsUri)
+                                                .add("image", this.serverImagingUri)
+                                                .add("media", this.serverMediaUri)
+                                                .add("ptz", this.serverPtzUri)
+                                                .build();
+        String result = jsonObject.toString();
         return result;
     }
 }

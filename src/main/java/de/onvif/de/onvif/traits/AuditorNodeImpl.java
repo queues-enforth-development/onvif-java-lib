@@ -31,22 +31,22 @@ public class AuditorNodeImpl<T extends SOAPMessage>
         implements AuditorNode<T> 
 {
     private static final Logger LOGGER = Logger.getLogger(AuditorNodeImpl.class.getPackage().getName());
-    
+
     private LocalDateTime timeStampMessage;
     private LocalDateTime timeStampResponse;
     private T message;
     private T response;
     private Transformer prettyPrint = null;
-    
+
     public AuditorNodeImpl() {
         initializePrettyPrint();
     }
-   
+
     public AuditorNodeImpl(T message) {
         initializePrettyPrint();
         setMessageImpl(message);
     }
-    
+
     public AuditorNodeImpl(T message, T response) {
         initializePrettyPrint();
         setMessageImpl(message);
@@ -62,7 +62,7 @@ public class AuditorNodeImpl<T extends SOAPMessage>
     public void setMessage(T message) {
         setMessageImpl(message);
     }
-    
+
     @Override
     public T getResponse() {
         return response;
@@ -80,17 +80,16 @@ public class AuditorNodeImpl<T extends SOAPMessage>
     public LocalDateTime getTimeStampResponse() {
         return timeStampResponse;
     }
-    
-        
+
     //
     // Implementations for code reuse.
     //
-    
+
     private void setMessageImpl(T message) {
         timeStampMessage = LocalDateTime.now();
         this.message = message;
     }
-    
+
     private void setResponseImpl(T response) {
         timeStampResponse = LocalDateTime.now();
         this.response = response;
@@ -103,7 +102,7 @@ public class AuditorNodeImpl<T extends SOAPMessage>
             writer = new StringWriter();
             ownWriter = true;
         }
-        
+
         Result result = new StreamResult(writer);
         try {
             SOAPPart soapPart = soapmessage.getSOAPPart();
@@ -142,7 +141,6 @@ public class AuditorNodeImpl<T extends SOAPMessage>
         return result;
     }
 
-    
     public String formatMessage(T soapmessage) throws IOException {
         String result;
         try (Writer writer = new StringWriter()) {
@@ -169,5 +167,5 @@ public class AuditorNodeImpl<T extends SOAPMessage>
         }
         return prettyPrint;
     }
-    
+
 }

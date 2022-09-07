@@ -5,7 +5,6 @@
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
-
 package org.onvif.ver20.media.wsdl;
 
 import java.util.HashMap;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
-
 
 /**
  * 

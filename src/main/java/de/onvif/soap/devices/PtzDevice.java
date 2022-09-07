@@ -1,7 +1,5 @@
 package de.onvif.soap.devices;
 
-import de.onvif.de.onvif.traits.SoapBookkeeping;
-import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.net.ConnectException;
 import java.util.List;
 
@@ -46,20 +44,17 @@ import org.onvif.ver20.ptz.wsdl.StopResponse;
 import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
-import javax.xml.soap.SOAPMessage;
-
+import de.onvif.de.onvif.traits.SoapUser;
 
 /**
  *
  *
  */
 public class PtzDevice 
-        implements de.onvif.LoggerInterface, SoapBookkeeping
+        implements de.onvif.LoggerInterface, SoapUser
 {
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
-    
-    private SoapLedger<SOAPMessage> ledger = null;
 
     /**
      *
@@ -68,7 +63,7 @@ public class PtzDevice
     public PtzDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
-        this.ledger = SoapBookkeeping.createLedger();
+
 	}
 
     /**
@@ -117,9 +112,6 @@ public class PtzDevice
 			return null;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return response.getPTZNode();
 	}
 
@@ -144,14 +136,14 @@ public class PtzDevice
 		if (ptzConfiguration == null) {
 			return null; // no PTZ support
 		}
-        
+
         String nodeToken = ptzConfiguration.getNodeToken();
 		request.setNodeToken(nodeToken);
 
 		try {
 			response = (GetNodeResponse) soap.createSOAPDeviceRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-//            String t = response.toString();
+
 			logger.logError(e);
 			return null;
 		}
@@ -159,9 +151,6 @@ public class PtzDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getPTZNode();
 	}
@@ -281,9 +270,6 @@ public class PtzDevice
             throw e;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return response != null;
 	}
 
@@ -334,9 +320,6 @@ public class PtzDevice
 			logger.logError(e);
 			return false;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -389,9 +372,6 @@ public class PtzDevice
 			return false;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return response != null;
 	}
 
@@ -414,9 +394,6 @@ public class PtzDevice
 			logger.logError(e);
 			return false;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response != null;
 	}
@@ -442,9 +419,6 @@ public class PtzDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getPTZStatus();
 	}
@@ -482,9 +456,6 @@ public class PtzDevice
 			return false;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return response != null;
 	}
 
@@ -509,9 +480,6 @@ public class PtzDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getPreset();
 	}
@@ -541,9 +509,6 @@ public class PtzDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getPresetToken();
 	}
@@ -578,9 +543,6 @@ public class PtzDevice
 			return false;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return response != null;
 	}
 
@@ -604,21 +566,8 @@ public class PtzDevice
 			return false;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return response != null;
 	}
-
-    @Override
-    public void setLedger(SoapLedger<SOAPMessage> ledger) {
-        this.ledger = ledger;
-    }
-
-    @Override
-    public SoapLedger<SOAPMessage> getLedger() {
-        return ledger;
-    }
 
     @Override
     public SOAP getSoap() {

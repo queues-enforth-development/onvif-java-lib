@@ -21,7 +21,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.javatuples.Pair;
 
-
 /**
  * 
  * Device discovery class to list local accessible devices probed per UDP probe messages.
@@ -41,7 +40,7 @@ public class DeviceDiscovery
 
     // change this when done
     private static boolean isLoggingToFile = true;
-        
+
     private static final Random random = new SecureRandom();
     public static String WS_DISCOVERY_SOAP_VERSION = "SOAP 1.2 Protocol";
     public static String WS_DISCOVERY_CONTENT_TYPE = "application/soap+xml";
@@ -53,7 +52,6 @@ public class DeviceDiscovery
      */
     public static String WS_DISCOVERY_ADDRESS_IPv6 = "[FF02::C]";
     public static String WS_DISCOVERY_PROBE_MESSAGE = "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:wsa=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:tns=\"http://schemas.xmlsoap.org/ws/2005/04/discovery\"><soap:Header><wsa:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Probe</wsa:Action><wsa:MessageID>urn:uuid:c032cfdd-c3ca-49dc-820e-ee6696ad63e2</wsa:MessageID><wsa:To>urn:schemas-xmlsoap-org:ws:2005:04:discovery</wsa:To></soap:Header><soap:Body><tns:Probe/></soap:Body></soap:Envelope>";
-
 
     /**
      * Discover WS device on the local network and returns Urls
@@ -120,7 +118,7 @@ public class DeviceDiscovery
         });
         return devices;       
     }
-    
+
     /**
      * Discover WS device on the local network
      *
@@ -170,14 +168,11 @@ public class DeviceDiscovery
                                 while (System.currentTimeMillis() - timerStarted < (WS_DISCOVERY_TIMEOUT)) {
                                     serverStarted.countDown();
                                     server.receive(packet);
-                                    
+
                                     Pair<Collection<String>, SOAPMessage> urlResponseMessage;
-                                    
-//                                    final Collection<String> collection = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
+
                                     Pair<Collection<String>, SOAPMessage> pair = parseSoapResponseForUrls(Arrays.copyOf(packet.getData(), packet.getLength()));
                                     final Collection<String> collection = pair.getValue0();
-
-//                                    SOAPMessage message = pair.getValue1();
 
                                     collection.forEach(key -> {
                                         addresses.add(key);
@@ -185,8 +180,7 @@ public class DeviceDiscovery
                                 }
                             } catch (SocketTimeoutException e) {
                                 LOGGER.log(Level.INFO, "A connection timed out while searching for an ONVIF device.  This is only an informational message as no error has really occurred.");
-//                                StackTraceElement t =  e.getCause().getStackTrace()[0];
-//                                LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
+
                             } catch (IOException | SOAPException e) {
                                 StackTraceElement t =  e.getCause().getStackTrace()[0];
                                 LOGGER.log(Level.WARNING, String.format(ERROR_MSG, t.getClassName(), t.getMethodName(), t.getLineNumber()), e);
@@ -243,13 +237,12 @@ public class DeviceDiscovery
         return nodes;
     }
 
-//    private static Collection<String> parseSoapResponseForUrls(byte[] data) throws SOAPException, IOException {
     private static Pair<Collection<String>, SOAPMessage> parseSoapResponseForUrls(byte[] data) throws SOAPException, IOException {
         //System.out.println(new String(data));
         final Collection<String> urls = new ArrayList<>();
-        
+
         Pair<Collection<String>, SOAPMessage> urlResponseMessage;
-        
+
         MessageFactory factory = MessageFactory.newInstance(WS_DISCOVERY_SOAP_VERSION);
         final MimeHeaders headers = new MimeHeaders();
         headers.addHeader("Content-type", WS_DISCOVERY_CONTENT_TYPE);
@@ -258,14 +251,14 @@ public class DeviceDiscovery
         if (isLoggingToFile) {
             logger.logSoapMessage2File(outputLocation, message);
         }
-        
+
         SOAPBody body = message.getSOAPBody();
         getNodeMatching(body, ".*:XAddrs").stream().filter(node -> (node.getTextContent().length() > 0)).forEachOrdered(node -> {
             urls.addAll(Arrays.asList(node.getTextContent().split(" ")));
         });
-        
+
         urlResponseMessage = Pair.with(urls, message);
-//        return urls;
+
         return urlResponseMessage;
     }
 

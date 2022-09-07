@@ -1,7 +1,5 @@
 package de.onvif.soap.devices;
 
-import de.onvif.de.onvif.traits.SoapBookkeeping;
-import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.net.ConnectException;
 import java.util.List;
 
@@ -29,19 +27,17 @@ import org.onvif.ver10.schema.VideoSource;
 import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
-import javax.xml.soap.SOAPMessage;
+import de.onvif.de.onvif.traits.SoapUser;
 
 /**
  *
  *
  */
 public class MediaDevice 
-        implements SoapBookkeeping
+        implements SoapUser
 {
 	private final OnvifDevice onvifDevice;
 	private final SOAP soap;
-
-    private SoapLedger<SOAPMessage> ledger;
 
     /**
      *
@@ -50,7 +46,7 @@ public class MediaDevice
     public MediaDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
-        this.ledger = SoapBookkeeping.createLedger();
+
 	}
 
     /**
@@ -194,7 +190,7 @@ public class MediaDevice
 		setup.setTransport(transport);
 		return getStreamUri(setup, profileNumber);
 	}
-	
+
     /**
      *
      * @param profileToken
@@ -213,7 +209,7 @@ public class MediaDevice
 		setup.setTransport(transport);
 		return getStreamUri(profileToken, setup);
 	}
-	
+
     /**
      *
      * @param streamSetup
@@ -277,9 +273,6 @@ public class MediaDevice
 			return null;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-        
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
 
@@ -318,9 +311,6 @@ public class MediaDevice
 			return null;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-        
 		return response.getOptions();
 	}
 
@@ -347,9 +337,6 @@ public class MediaDevice
 			throw e;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-        
 		return response != null;
 	}
 
@@ -388,14 +375,11 @@ public class MediaDevice
 		} catch (SOAPException | ConnectException e) {
 			throw e;
 		}
-		
+
 		if (response == null || response.getMediaUri() == null) {
 			return null;
 		}
-		
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-        
+
 		return onvifDevice.replaceLocalIpWithProxyIp(response.getMediaUri().getUri());
 	}
 
@@ -421,25 +405,13 @@ public class MediaDevice
 		if (response == null) {
 			return null;
 		}
-        
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-        
+
 		return response.getVideoSources();
 	}
-
-    @Override
-    public SoapLedger<SOAPMessage> getLedger() {
-        return ledger;
-    }
 
     @Override
     public SOAP getSoap() {
         return soap;
     }
 
-    @Override
-    public void setLedger(SoapLedger<SOAPMessage> ledger) {
-        this.ledger = ledger;
-    }
 }

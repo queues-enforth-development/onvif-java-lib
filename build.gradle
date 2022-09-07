@@ -2,8 +2,8 @@ plugins {
     id 'java'
     id 'maven-publish'
  }
- 
-version = '2.0.45'
+
+version = '2.1.0001'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -12,7 +12,7 @@ group = 'com.qed.aes.camera'
 
 java {
     withJavadocJar()
-    withSourcesJar()    
+    withSourcesJar()
 }
 
 build {
@@ -26,16 +26,16 @@ build {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'ONVIF Java Library',  
+        attributes 'Implementation-Title': 'ONVIF Java Library',
         	'Implementation-Version': version,
 //        	'Main-Class': 'de.onvif.Main'
         	'Main-Class': 'org.me.javawsdiscovery.JavaWSDiscovery'
     }
-    
+
     dependsOn configurations.runtimeClasspath
     from {
-        configurations.runtimeClasspath.findAll { 
-            it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))            
+        configurations.runtimeClasspath.findAll {
+            it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))
         }.collect { zipTree(it) }
     }
 }
@@ -49,17 +49,23 @@ repositories {
 
 
 javadoc {
-    options.tags = [ "date" ] 
+    options.tags = [ "date" ]
     source = sourceSets.main.allJava
     classpath = configurations.compile
 }
 
 dependencies {
-    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'    
+
+    implementation 'jakarta.json:jakarta.json-api:2.1.1'
+    compile group: 'jakarta.json', name: 'jakarta.json-api', version: '2.1.1', classifier:'sources'
+    compile group: 'jakarta.json', name: 'jakarta.json-api', version: '2.1.1', classifier:'javadoc'
+
+
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'sources'
-    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'    
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15', classifier: 'javadoc'
     implementation 'junit:junit:4.13.2'
-    
+
     // Original project page: https://www.javatuples.org/index.html
     // Library: https://search.maven.org/artifact/com.flipkart.utils/javatuples/3.0/jar
     implementation 'com.flipkart.utils:javatuples:3.0'
@@ -75,17 +81,48 @@ afterEvaluate {
             pom.groupId = project.group
         }
     }
-    
+
     publishing {
         publications {
         }
     }
 }
 
+task addTag() {
+    // todo
+}
+
+/*
+    In version 1.9.0.1:
+        1: Major revision (new UI, lots of new features, conceptual change, etc.)
+
+        9: Minor revision (maybe a change to a search box, 1 feature added, collection of bug fixes)
+
+        0: Bug fix release
+
+        1: Build number (if used)—that's why you see the .NET framework using something like 2.0.4.2709
+
+    source: https://stackoverflow.com/questions/65718/what-do-the-numbers-in-a-version-typically-represent-i-e-v1-9-0-1
+*/
+task incrementVerion() {
+    // todo finish this
+    String[] versionParts = project.version.split('.');
+    int major = 0;
+    int minor = 0;
+    int bugBuild = 0;
+
+    if (versionParts.size() > 0) {
+        major = versionParts.toInteger();
+        minor = versionParts.toInteger();
+        bugBuild = versionParts.toInteger();
+    }
+
+}
+
 //uploadArchives {
-//    
+//
 //    repositories.mavenDeployer {
-//        
+//
 //        pom.version = project.version
 //        pom.artifactId = project.archivesBaseName
 //        pom.groupId = project.group

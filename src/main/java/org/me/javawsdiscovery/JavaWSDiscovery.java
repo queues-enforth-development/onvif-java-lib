@@ -20,8 +20,8 @@ public class JavaWSDiscovery {
      */
     public static void main(String[] args) {
         List<URL> deviceUrls;
-        
+
         deviceUrls = OnvifDiscovery.searchOnvifDevices();
     }
-    
+
 }

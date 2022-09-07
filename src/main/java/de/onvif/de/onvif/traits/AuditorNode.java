@@ -31,20 +31,20 @@ public interface AuditorNode<T extends SOAPMessage>
     }
 
     public abstract String formatMessage(T soapmessage, Writer writer);
-    
+
     public abstract T getMessage() throws InvalidAuditNodeException;
-    
+
     public abstract void setMessage(T message) throws InvalidAuditNodeException;
-    
+
     public abstract T getResponse() throws InvalidAuditNodeException;
 
     public abstract void setResponse(T response) throws InvalidAuditNodeException;
-    
+
     public abstract LocalDateTime getMessageTimeStamp();
 
     public abstract LocalDateTime getResponseTimeStamp();
-    
+
     public abstract String getMessageAsString() throws InvalidAuditNodeException;
-    
+
     public abstract String getResponseAsString() throws InvalidAuditNodeException;
 }

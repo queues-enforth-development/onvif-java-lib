@@ -13,10 +13,10 @@ import javax.xml.soap.SOAPMessage;
  */
 public class SOAPFaultException extends Throwable {
     private SOAPMessage fault;
-    
+
     // Insure there is always a fault
     private SOAPFaultException() {}
-    
+
     /**
      * Constructor for the object. 
      * @param message The message to pass
@@ -27,7 +27,7 @@ public class SOAPFaultException extends Throwable {
         super(message, exception);
         this.fault = fault;
     }
-    
+
     /**
      * Constructor for the object. 
      * @param message The message to pass

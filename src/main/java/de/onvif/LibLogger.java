@@ -34,9 +34,9 @@ public class LibLogger {
     private Transformer prettyPrint = null;
     private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
     String writeOutputLocation = OUTPUT_LOCATION;
-    
+
     public static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(LibLogger.class.getPackage().getName());
-    
+
     public LibLogger() {
         try {
             prettyPrint = TransformerFactory.newInstance().newTransformer();
@@ -47,7 +47,7 @@ public class LibLogger {
         prettyPrint.setOutputProperty(OutputKeys.INDENT , "yes");
         prettyPrint.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
     }    
-    
+
     public void logError(Throwable e) {
         StackTraceElement loc = e.getStackTrace()[0];
         String stringLoc = String.format("An error occurred in %s.%s", loc.getClassName(), loc.getMethodName());
@@ -60,12 +60,12 @@ public class LibLogger {
         e.printStackTrace(pw);
         LOGGER.log(java.util.logging.Level.WARNING, sw.toString());
     }
-    
+
     public void logError(String message, Throwable e) {
         LOGGER.log(Level.WARNING, message);
         logError(e);
     }
-    
+
     public void logSoapMessage(SOAPMessage soapMessage, String message) {
         String temp = String.format("Request SOAP Message (%s):\r\n", soapMessage.getClass().getCanonicalName());
         System.out.println(temp);
@@ -74,7 +74,7 @@ public class LibLogger {
         LOGGER.log(Level.INFO, temp);
         System.out.println(temp);
     }
-    
+
     /**
      *    This method will write the SOAP message to the location provided by the value in filePath.  The file name will be taken from 
      * the first node in the SOAP body.  Existing files are deleted.
@@ -94,7 +94,7 @@ public class LibLogger {
             Instant instant = Instant.now();
             sb.append("-").append(instant.toEpochMilli());
             sb.append(".xml");
-            
+
             file = new File(sb.toString());
             if (file.exists()) {
                 file.delete();
@@ -104,14 +104,14 @@ public class LibLogger {
             StreamResult result = new StreamResult(new FileWriter(file));
 
             prettyPrint.transform(new DOMSource(soapMessage.getSOAPPart()), result);
-            
+
         } catch (SOAPException | IOException | TransformerConfigurationException e) {
             logError(e);
         } catch (TransformerException e) {
             logError(e);
         }       
     }
-    
+
     /**
      *    This method will write the SOAP fault message to the location provided by the value in filePath.  The file name 
      * will be taken from the first node in the SOAP body and the name passed in to allow grouping of fault.  Existing 
@@ -132,13 +132,13 @@ public class LibLogger {
             sb.append("-");
             sb.append(soapMessageResponse.getSOAPBody().getChildNodes().item(0).getLocalName());
             sb.append(".xml");
-            
+
             file = new File(sb.toString());
             if (file.exists()) {
                 file.delete();
             }
             file.createNewFile();
-            
+
             transformXmlSoap2PrettyPtrintedString(file, soapMessageResponse);
         } catch (SOAPException | IOException | TransformerConfigurationException e) {
             logError(e);
@@ -146,7 +146,7 @@ public class LibLogger {
             logError(e);
         }       
     }
-    
+
     private String getStringFromSoapMessage(SOAPMessage soapMessage) {
         String temp;
         try {
@@ -161,7 +161,7 @@ public class LibLogger {
         }
         return temp;
     }
-    
+
     private void transformXmlSoap2PrettyPtrintedString(File file, SOAPMessage soapMessage) 
             throws IOException, TransformerException 
     {

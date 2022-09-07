@@ -5,7 +5,6 @@
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
-
 package org.onvif.ver20.media.wsdl;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * <p>Java-Class for anonymous complex type.

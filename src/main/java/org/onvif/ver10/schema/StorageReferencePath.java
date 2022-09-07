@@ -5,7 +5,6 @@
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
-
 package org.onvif.ver10.schema;
 
 import java.util.HashMap;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlAnyAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
-
 
 /**
  * <p>Java-Klasse für StorageReferencePath complex type.

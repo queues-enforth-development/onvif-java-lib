@@ -5,7 +5,6 @@
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
-
 package org.onvif.ver20.media.wsdl;
 
 import java.util.ArrayList;
@@ -21,7 +20,6 @@ import javax.xml.bind.annotation.XmlList;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 import org.onvif.ver10.schema.VideoResolution;
-
 
 /**
  * <p>Java-Klasse für VideoSourceMode complex type.

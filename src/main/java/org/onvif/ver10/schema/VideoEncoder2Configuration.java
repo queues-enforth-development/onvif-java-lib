@@ -5,7 +5,6 @@
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
-
 package org.onvif.ver10.schema;
 
 import java.util.ArrayList;
@@ -21,7 +20,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 import org.w3c.dom.Element;
-
 
 /**
  * <p>Java-Klasse für VideoEncoder2Configuration complex type.

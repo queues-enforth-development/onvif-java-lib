@@ -17,6 +17,10 @@ import javax.xml.soap.SOAPMessage;
 /**
  *    This is a simple class to store Messages and their Responses together.  It needs to write the 
  * message and them the Response afterwards since the messages don't have ids that I can't tell.
+ * 
+ * 
+ *    ZTHis has a fundamental flaw in it's state.
+ * 
  * @author jmccay
  * @param <E>
  */
@@ -25,10 +29,14 @@ public class SoapLedger<E extends SOAPMessage>
         implements Loggable
 {
     private static final Logger LOGGER = Logger.getLogger(SoapLedger.class.getPackage().getName());
-//    private final SoapLedger<E> storage = new SoapLedger<>();
+
     private Writer writer;
-    
+
     private boolean expectMessage = true;
+
+    public void resetLedger() {
+        this.clear();
+    }
 
     public SoapLedger() {
         writer = null;
@@ -38,7 +46,7 @@ public class SoapLedger<E extends SOAPMessage>
         super(clctn);
         writer = null;
     }
-    
+
     @Override
     public Logger getLogger() {
         return LOGGER;
@@ -51,14 +59,14 @@ public class SoapLedger<E extends SOAPMessage>
     public void setWriter(Writer writer) {
         this.writer = writer;
     }
-    
+
     public void addMessage(E message) 
             throws InvalidLedgerStateException
     {
         if (!expectMessage) {
             throw new InvalidLedgerStateException("Error: expecting a response not a Message");
         }
-  
+
         AuditorNodeImpl<E> temp = new AuditorNodeImpl();
         temp.setMessage(message);
         expectMessage = false;
@@ -71,12 +79,10 @@ public class SoapLedger<E extends SOAPMessage>
         if (expectMessage) {
             throw new InvalidLedgerStateException("Error: expecting a message not a response.");
         }
-        
+
         AuditorNodeImpl<E> temp = this.getLast();
         temp.setResponse(response);
         expectMessage = true;
         this.addLast(temp);
     }
-    
-    
 }

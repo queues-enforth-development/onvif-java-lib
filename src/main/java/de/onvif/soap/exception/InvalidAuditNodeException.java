@@ -30,5 +30,5 @@ public class InvalidAuditNodeException extends Throwable
     public InvalidAuditNodeException(String string, Throwable thrwbl, boolean bln, boolean bln1) {
         super(string, thrwbl, bln, bln1);
     }
-    
+
 }

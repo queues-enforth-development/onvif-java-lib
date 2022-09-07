@@ -5,7 +5,6 @@
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
-
 package org.onvif.ver10.events.wsdl;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * <p>Java-Class for anonymous complex type.

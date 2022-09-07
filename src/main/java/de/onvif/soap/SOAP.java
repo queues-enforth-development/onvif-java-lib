@@ -1,10 +1,7 @@
 package de.onvif.soap;
 
 import de.onvif.LoggerInterface;
-import de.onvif.de.onvif.traits.SoapBookkeeping;
-import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import de.onvif.soap.devices.PtzDevice;
-import de.onvif.soap.exception.InvalidLedgerStateException;
 import de.onvif.soap.exception.SOAPFaultException;
 import java.net.ConnectException;
 import java.util.logging.Level;
@@ -35,17 +32,15 @@ import org.w3c.dom.Document;
  *
  *
  */
-public class SOAP 
+public class SOAP
         implements LoggerInterface
 {
 	private boolean logging = true;
 
 	private final OnvifDevice onvifDevice;
-    
+
     private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
     String writeOutputLocation = OUTPUT_LOCATION;
-    
-    private SoapLedger<SOAPMessage> ledger;
 
     /**
      *
@@ -54,103 +49,103 @@ public class SOAP
      */
     public SOAP(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
-        this.ledger = SoapBookkeeping.createLedger();
+
     }
 
     /**
      *
      * @param soapRequestElem
      * @param soapResponseElem
-     * @param needsAuthentification
+     * @param needsSecurity
      * @return
      * @throws SOAPException
      * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
-            throws SOAPException, ConnectException, SOAPFaultException 
+    public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
+            throws SOAPException, ConnectException, SOAPFaultException
     {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getDeviceUri(), needsAuthentification);
+		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getDeviceUri(), needsSecurity);
 	}
 
     /**
      *
      * @param soapRequestElem
      * @param soapResponseElem
-     * @param needsAuthentification
+     * @param needsSecurity
      * @return
      * @throws SOAPException
      * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
-            throws SOAPException, ConnectException, SOAPFaultException 
+    public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
+            throws SOAPException, ConnectException, SOAPFaultException
     {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getPtzUri(), needsAuthentification);
+		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getPtzUri(), needsSecurity);
 	}
 
     /**
      *
      * @param soapRequestElem
      * @param soapResponseElem
-     * @param needsAuthentification
+     * @param needsSecurity
      * @return
      * @throws SOAPException
      * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) 
-            throws SOAPException, ConnectException, SOAPFaultException 
+    public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
+            throws SOAPException, ConnectException, SOAPFaultException
     {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getMediaUri(), needsAuthentification);
+		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getMediaUri(), needsSecurity);
 	}
 
     /**
      *
      * @param soapRequestElem
      * @param soapResponseElem
-     * @param needsAuthentification
+     * @param needsSecurity
      * @return
      * @throws SOAPException
      * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public Object createSOAPImagingRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException,
+    public Object createSOAPImagingRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
 			ConnectException,
 			SOAPFaultException {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getImagingUri(), needsAuthentification);
+		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getImagingUri(), needsSecurity);
 	}
 
     /**
      *
      * @param soapRequestElem
      * @param soapResponseElem
-     * @param needsAuthentification
+     * @param needsSecurity
      * @return
      * @throws SOAPException
      * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public Object createSOAPEventsRequest(Object soapRequestElem, Object soapResponseElem, boolean needsAuthentification) throws SOAPException,
-			ConnectException, SOAPFaultException 
+    public Object createSOAPEventsRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
+			ConnectException, SOAPFaultException
     {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getEventsUri(), needsAuthentification);
+		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getEventsUri(), needsSecurity);
 	}
 
 	/**
-	 * 
+	 *
      * @param soapRequestElem
 	 * @param soapResponseElem
 	 *            Answer object for SOAP request
      * @param soapUri
-     * @param needsAuthentification
+     * @param needsSecurity
 	 * @return SOAP Response Element
 	 * @throws SOAPException
 	 * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
-	public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsAuthentification) 
-            throws ConnectException, SOAPException, SOAPFaultException 
+	public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsSecurity)
+            throws ConnectException, SOAPException, SOAPFaultException
     {
 		SOAPConnection soapConnection = null;
 		SOAPMessage soapResponse = null;
@@ -160,7 +155,7 @@ public class SOAP
 			SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
 			soapConnection = soapConnectionFactory.createConnection();
 
-			SOAPMessage soapMessage = createSoapMessage(soapRequestElem, needsAuthentification);
+			SOAPMessage soapMessage = createSoapMessage(soapRequestElem, needsSecurity);
 
 			// Print the request message
 			if (isLogging()) {
@@ -168,12 +163,8 @@ public class SOAP
                 PtzDevice.logger.logSoapMessage2File(OUTPUT_LOCATION, soapMessage);
 			}
 
-            ledger.addMessage(soapMessage);
-            
 			soapResponse = soapConnection.call(soapMessage, soapUri);
-            
-            ledger.addResponse(soapResponse);
-            
+
             SOAPBody body = soapResponse.getSOAPBody();
             boolean hasFault = body.hasFault();
             SOAPFault fault = null;
@@ -181,11 +172,10 @@ public class SOAP
                 fault = body.getFault();
             }
             //hasFault = soapResponseElem;
-            
-            
+
             if (null!=fault) {
                 StringBuilder sb1 = new StringBuilder("[");
-                
+
                 sb1.append(soapMessage.getSOAPBody().getFirstChild().getNodeName()).append(", ");
                 sb1.append(fault.getFaultString()).append(", ");
                 sb1.append(fault.getDetail().getTextContent());
@@ -193,7 +183,7 @@ public class SOAP
                 sb1.append("]");
                 System.out.println(sb1.toString());
             }
-            
+
 			// print SOAP Response
 			if (isLogging()) {
                 String name = body.getChildNodes().item(0).getLocalName();
@@ -208,8 +198,7 @@ public class SOAP
 			if (soapResponseElem == null) {
 				throw new NullPointerException("Improper SOAP Response Element given (is null).");
 			}
-            
-//            if (soapResponse.getSOAPBody().hasFault()) {
+
             if (hasFault) {
                 throw new SOAPFaultException(soapResponse, "An error occurred with the SOAP call.");
             } else {
@@ -236,7 +225,7 @@ public class SOAP
 			onvifDevice.getLogger().log(Level.WARNING,
 					String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
 			throw e;
-		} catch (InvalidLedgerStateException | ParserConfigurationException | JAXBException  e) {
+		} catch (ParserConfigurationException | JAXBException  e) {
 			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
 			return null;
 		} finally {
@@ -252,14 +241,14 @@ public class SOAP
     /**
      *
      * @param soapRequestElem
-     * @param needAuthentification
+     * @param useSecurity
      * @return
      * @throws SOAPException
      * @throws ParserConfigurationException
      * @throws JAXBException
      */
-    protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean needAuthentification) throws SOAPException, ParserConfigurationException,
-			JAXBException 
+    protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean useSecurity) throws SOAPException, ParserConfigurationException,
+			JAXBException
     {
 		MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
 		SOAPMessage soapMessage = messageFactory.createMessage();
@@ -269,47 +258,57 @@ public class SOAP
 		marshaller.marshal(soapRequestElem, document);
 		soapMessage.getSOAPBody().addDocument(document);
 
-		// if (needAuthentification)
-		createSoapHeader(soapMessage);
+		createSoapHeader(soapMessage, useSecurity);
 
 		soapMessage.saveChanges();
 		return soapMessage;
 	}
 
+    protected void createSoapHeader(SOAPMessage soapMessage)
+        throws SOAPException
+    {
+        createSoapHeader(soapMessage, true);
+    }
+
     /**
      *
      * @param soapMessage
+     * @param useSecurity
      * @throws SOAPException
      */
-    protected void createSoapHeader(SOAPMessage soapMessage) throws SOAPException {
-		onvifDevice.createNonce();
-		String encrypedPassword = onvifDevice.getEncryptedPassword();
-		if (encrypedPassword != null && onvifDevice.getUsername() != null) {
+    protected void createSoapHeader(SOAPMessage soapMessage, boolean useSecurity)
+            throws SOAPException
+    {
+        SOAPPart sp = soapMessage.getSOAPPart();
+        SOAPEnvelope se = sp.getEnvelope();
+        SOAPHeader header = soapMessage.getSOAPHeader();
+        se.addNamespaceDeclaration("wsse", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd");
+        se.addNamespaceDeclaration("wsu", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
 
-			SOAPPart sp = soapMessage.getSOAPPart();
-			SOAPEnvelope se = sp.getEnvelope();
-			SOAPHeader header = soapMessage.getSOAPHeader();
-			se.addNamespaceDeclaration("wsse", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd");
-			se.addNamespaceDeclaration("wsu", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
+        if (useSecurity) {
+            onvifDevice.createNonce();
+            String encrypedPassword = onvifDevice.getEncryptedPassword();
 
-			SOAPElement securityElem = header.addChildElement("Security", "wsse");
-			// securityElem.setAttribute("SOAP-ENV:mustUnderstand", "1");
+            if (encrypedPassword != null && onvifDevice.getUsername() != null) {
+                SOAPElement securityElem = header.addChildElement("Security", "wsse");
+                // securityElem.setAttribute("SOAP-ENV:mustUnderstand", "1");
 
-			SOAPElement usernameTokenElem = securityElem.addChildElement("UsernameToken", "wsse");
+                SOAPElement usernameTokenElem = securityElem.addChildElement("UsernameToken", "wsse");
 
-			SOAPElement usernameElem = usernameTokenElem.addChildElement("Username", "wsse");
-			usernameElem.setTextContent(onvifDevice.getUsername());
+                SOAPElement usernameElem = usernameTokenElem.addChildElement("Username", "wsse");
+                usernameElem.setTextContent(onvifDevice.getUsername());
 
-			SOAPElement passwordElem = usernameTokenElem.addChildElement("Password", "wsse");
-			passwordElem.setAttribute("Type", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest");
-			passwordElem.setTextContent(encrypedPassword);
+                SOAPElement passwordElem = usernameTokenElem.addChildElement("Password", "wsse");
+                passwordElem.setAttribute("Type", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest");
+                passwordElem.setTextContent(encrypedPassword);
 
-			SOAPElement nonceElem = usernameTokenElem.addChildElement("Nonce", "wsse");
-			nonceElem.setAttribute("EncodingType", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary");
-			nonceElem.setTextContent(onvifDevice.getEncryptedNonce());
+                SOAPElement nonceElem = usernameTokenElem.addChildElement("Nonce", "wsse");
+                nonceElem.setAttribute("EncodingType", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary");
+                nonceElem.setTextContent(onvifDevice.getEncryptedNonce());
 
-			SOAPElement createdElem = usernameTokenElem.addChildElement("Created", "wsu");
-			createdElem.setTextContent(onvifDevice.getLastUTCTime());
+                SOAPElement createdElem = usernameTokenElem.addChildElement("Created", "wsu");
+                createdElem.setTextContent(onvifDevice.getLastUTCTime());
+            }
 		}
 	}
 
@@ -331,7 +330,7 @@ public class SOAP
 
     /**
      * Get the location to write the output.
-     * @return 
+     * @return
      */
     public String getWriteOutputLocation() {
         return writeOutputLocation;
@@ -344,17 +343,4 @@ public class SOAP
     public void setWriteOutputLocation(String writeOutputLocation) {
         this.writeOutputLocation = writeOutputLocation;
     }
-
-    public SoapLedger<SOAPMessage> getLedger() {
-        return ledger;
-    }
-
-    public void setLedger(SoapLedger<SOAPMessage> ledger) {
-        this.ledger = ledger;
-    }
-    
-    public void clearLedger() {
-        ledger.clear();
-    }
-    
 }

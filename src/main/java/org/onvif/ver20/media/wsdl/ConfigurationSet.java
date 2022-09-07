@@ -5,7 +5,6 @@
 // Generiert: 2016.02.05 um 06:25:30 PM CET 
 //
 
-
 package org.onvif.ver20.media.wsdl;
 
 import java.util.ArrayList;
@@ -29,7 +28,6 @@ import org.onvif.ver10.schema.PTZConfiguration;
 import org.onvif.ver10.schema.VideoEncoder2Configuration;
 import org.onvif.ver10.schema.VideoSourceConfiguration;
 import org.w3c.dom.Element;
-
 
 /**
  * 

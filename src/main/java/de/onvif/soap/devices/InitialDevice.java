@@ -2,8 +2,6 @@ package de.onvif.soap.devices;
 
 import de.onvif.LibLogger;
 import de.onvif.LoggerInterface;
-import de.onvif.de.onvif.traits.SoapBookkeeping;
-import de.onvif.de.onvif.traits.implmentation.SoapLedger;
 import java.net.ConnectException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -46,20 +44,20 @@ import org.onvif.ver10.schema.User;
 import de.onvif.soap.OnvifDevice;
 import de.onvif.soap.SOAP;
 import de.onvif.soap.exception.SOAPFaultException;
+import java.util.Optional;
 import java.util.logging.Level;
-import javax.xml.soap.SOAPMessage;
+import de.onvif.de.onvif.traits.SoapUser;
 
 /**
  *
  *
  */
-public class InitialDevice 
-        implements LoggerInterface, SoapBookkeeping
+public class InitialDevice
+        implements LoggerInterface, SoapUser
 {
+    private Throwable lastException = null;
 	private final SOAP soap;
 	private final OnvifDevice onvifDevice;
-    private SoapLedger<SOAPMessage> ledger;
-
 
     /**
      *
@@ -68,7 +66,7 @@ public class InitialDevice
     public InitialDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
 		this.soap = onvifDevice.getSoap();
-        this.ledger = SoapBookkeeping.createLedger();
+
 	}
 
     /**
@@ -81,8 +79,10 @@ public class InitialDevice
 		GetSystemDateAndTimeResponse response = new GetSystemDateAndTimeResponse();
 
 		try {
-			response = (GetSystemDateAndTimeResponse) soap.createSOAPDeviceRequest(new GetSystemDateAndTime(), response, false);
+            resetLastException();
+            response = (GetSystemDateAndTimeResponse) soap.createSOAPDeviceRequest(new GetSystemDateAndTime(), response, false);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDate.",e);
 			return null;
 		}
@@ -91,9 +91,6 @@ public class InitialDevice
 		Time time = response.getSystemDateAndTime().getUTCDateTime().getTime();
 		cal = new GregorianCalendar(date.getYear(), date.getMonth() - 1, date.getDay(), time.getHour(), time.getMinute(), time.getSecond());
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
-
 		return cal.getTime();
 	}
 
@@ -101,40 +98,97 @@ public class InitialDevice
      *
      * @return
      */
-    public GetDeviceInformationResponse getDeviceInformation() {
-		GetDeviceInformation getHostname = new GetDeviceInformation();
+    public Optional<GetDeviceInformationResponse> getDeviceInformation() {
+
+        boolean hasError = false;
+		GetDeviceInformation getDeviceInfo = new GetDeviceInformation();
 		GetDeviceInformationResponse response = new GetDeviceInformationResponse();
 		try {
-			response = (GetDeviceInformationResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
+            resetLastException();
+			response = (GetDeviceInformationResponse) soap.createSOAPDeviceRequest(getDeviceInfo, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
-            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDeviceInformation.",e);
-			return null;
+
+/*
+            Throwable cause = e.getCause();
+            boolean unAuthorized = false;
+            Matcher matcher;
+            String message;
+
+            // check if the response is unauthorized.
+            do {
+                if (null!=cause) {
+                    message = cause.getMessage();
+                    matcher = UNAUTHORIZED_REGEX.matcher(message);
+                    if (matcher.find()) {
+                        unAuthorized = true;
+                        // maybe put a break here?
+                    }
+                    cause = cause.getCause();
+                }
+            } while (null != cause && !unAuthorized);
+
+            // check for the hostname.
+            if (unAuthorized) {
+                Optional<GetHostnameResponse> result = getHostnameResponse();
+            } else {
+                LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDeviceInformation.",e);
+                hasError = true;
+            }
+*/
+            setLastException(e);
+            hasError = true;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
+             Optional<GetDeviceInformationResponse> result = Optional.ofNullable(((hasError)? null:response));
 
-		return response;
+		return result;
 	}
+
+    protected Optional<GetHostnameResponse> getHostnameResponse() {
+        boolean hasError = false;
+        GetHostname getHostname = new GetHostname();
+        GetHostnameResponse response = new GetHostnameResponse();
+
+        try {
+            resetLastException();
+			response = (GetHostnameResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
+        } catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
+            LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getDate.",e);
+            hasError = true;
+        }
+
+        Optional<GetHostnameResponse> result = Optional.ofNullable( ((hasError)? null:response) );
+
+        return result;
+    }
+
+    public Optional<String> getHostname() {
+        return getHostname(true);
+    }
 
     /**
      *
+     * @param useAuthentication
      * @return
      */
-    public String getHostname() {
+    public Optional<String> getHostname(boolean useAuthentication) {
+        boolean hasError = false;
 		GetHostname getHostname = new GetHostname();
 		GetHostnameResponse response = new GetHostnameResponse();
 		try {
-			response = (GetHostnameResponse) soap.createSOAPDeviceRequest(getHostname, response, true);
+            resetLastException();
+
+			response = (GetHostnameResponse) soap.createSOAPDeviceRequest(getHostname, response, useAuthentication);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getHostname.",e);
-			return null;
+            hasError = true;
 		}
 
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
+        Optional<String> result = Optional.ofNullable(( (hasError)? null:response.getHostnameInformation().getName() ));
 
-		return response.getHostnameInformation().getName();
+		return result;
 	}
 
     /**
@@ -147,14 +201,13 @@ public class InitialDevice
 		setHostname.setName(hostname);
 		SetHostnameResponse response = new SetHostnameResponse();
 		try {
+            resetLastException();
 			soap.createSOAPDeviceRequest(setHostname, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.setHostname.",e);
 			return false;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return true;
 	}
@@ -167,8 +220,10 @@ public class InitialDevice
 		GetUsers getUsers = new GetUsers();
 		GetUsersResponse response = new GetUsersResponse();
 		try {
+            resetLastException();
 			response = (GetUsersResponse) soap.createSOAPDeviceRequest(getUsers, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getUsers.",e);
 			return null;
 		}
@@ -176,9 +231,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getUser();
 	}
@@ -190,15 +242,17 @@ public class InitialDevice
      * @throws SOAPException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public Capabilities getCapabilities() 
-            throws ConnectException, SOAPException, SOAPFaultException 
+    public Capabilities getCapabilities()
+            throws ConnectException, SOAPException, SOAPFaultException
     {
 		GetCapabilities getCapabilities = new GetCapabilities();
 		GetCapabilitiesResponse response = new GetCapabilitiesResponse();
 
 		try {
+            resetLastException();
 			response = (GetCapabilitiesResponse) soap.createSOAPRequest(getCapabilities, response, onvifDevice.getDeviceUri(), false);
 		} catch (SOAPException | SOAPFaultException  e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getgetCapabilities.",e);
 			throw e;
 		}
@@ -206,9 +260,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getCapabilities();
 	}
@@ -222,8 +273,10 @@ public class InitialDevice
 		GetProfilesResponse response = new GetProfilesResponse();
 
 		try {
+            resetLastException();
 			response = (GetProfilesResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfiles.",e);
 			return null;
 		}
@@ -231,9 +284,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getProfiles();
 	}
@@ -250,8 +300,10 @@ public class InitialDevice
 		request.setProfileToken(profileToken);
 
 		try {
+            resetLastException();
 			response = (GetProfileResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getProfile.",e);
 			return null;
 		}
@@ -259,9 +311,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getProfile();
 	}
@@ -278,8 +327,10 @@ public class InitialDevice
 		request.setName(name);
 
 		try {
+            resetLastException();
 			response = (CreateProfileResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.createProfile.",e);
 			return null;
 		}
@@ -287,9 +338,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getProfile();
 	}
@@ -306,8 +354,10 @@ public class InitialDevice
 		request.setIncludeCapability(includeCapability);
 
 		try {
+            resetLastException();
 			response = (GetServicesResponse) soap.createSOAPDeviceRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getServices.",e);
 			return null;
 		}
@@ -315,9 +365,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getService();
 	}
@@ -331,8 +378,10 @@ public class InitialDevice
 		GetScopesResponse response = new GetScopesResponse();
 
 		try {
+            resetLastException();
 			response = (GetScopesResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
+            setLastException(e);
             LibLogger.LOGGER.log(Level.WARNING,"An error occurred in InitialDevices.getScope.",e);
 			return null;
 		}
@@ -340,9 +389,6 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getScopes();
 	}
@@ -354,13 +400,14 @@ public class InitialDevice
      * @throws SOAPException
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
-    public String reboot() 
-            throws ConnectException, SOAPException, SOAPFaultException 
+    public String reboot()
+            throws ConnectException, SOAPException, SOAPFaultException
     {
 		SystemReboot request = new SystemReboot();
 		SystemRebootResponse response = new SystemRebootResponse();
 
 		try {
+            resetLastException();
 			response = (SystemRebootResponse) soap.createSOAPMediaRequest(request, response, true);
 		} catch (SOAPException | ConnectException | SOAPFaultException e) {
 			throw e;
@@ -369,25 +416,30 @@ public class InitialDevice
 		if (response == null) {
 			return null;
 		}
-        
-        // Store the SOAP call and response
-        ledger = recordSoapMessages();
 
 		return response.getMessage();
 	}
-
-    @Override
-    public SoapLedger<SOAPMessage> getLedger() {
-        return ledger;
-    }
 
     @Override
     public SOAP getSoap() {
         return soap;
     }
 
-    @Override
-    public void setLedger(SoapLedger<SOAPMessage> ledger) {
-        this.ledger = ledger;
+    public Throwable getLastException() {
+        Throwable err = this.lastException;
+        resetLastException();
+        return err;
+    }
+
+    protected void setLastException(Throwable e) {
+        this.lastException = e;
+    }
+
+    public boolean hasException() {
+        return null!=this.lastException;
+    }
+
+    protected void resetLastException() {
+        this.lastException = null;
     }
 }

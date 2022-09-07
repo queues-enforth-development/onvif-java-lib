@@ -5,7 +5,6 @@
 // Generiert: 2016.03.16 um 01:52:47 PM CET 
 //
 
-
 package org.onvif.ver10.events.wsdl;
 
 import java.util.ArrayList;
@@ -20,7 +19,6 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import org.w3._2005._08.addressing.EndpointReferenceType;
 import org.w3c.dom.Element;
-
 
 /**
  * <p>Java-Class for anonymous complex type.

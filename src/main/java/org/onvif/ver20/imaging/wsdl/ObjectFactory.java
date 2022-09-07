@@ -5,14 +5,12 @@
 // Generiert: 2014.04.25 um 04:22:13 PM CEST 
 //
 
-
 package org.onvif.ver20.imaging.wsdl;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-
 
 /**
  * This object contains factory methods for each 

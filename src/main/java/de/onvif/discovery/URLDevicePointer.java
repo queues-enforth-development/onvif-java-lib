@@ -10,7 +10,6 @@ import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 /**
  *
  * @author jmccay
@@ -20,7 +19,7 @@ public abstract class URLDevicePointer {
     private static final Logger LOGGER = Logger.getLogger(URLDevicePointer.class.getPackage().getName());
     private URL address = null;
     private String deviceName = null;
-    
+
     // Insure the class has a proper state
     protected URLDevicePointer(){}
 
@@ -31,7 +30,7 @@ public abstract class URLDevicePointer {
     protected URLDevicePointer(String address) {
         setAddress(address);
     }
-    
+
     /**
      * Constructor requiring a URL.
      * @param address The URL for the pointer.
@@ -39,7 +38,7 @@ public abstract class URLDevicePointer {
     public URLDevicePointer(URL address) {
         this.address = address;
     }
-    
+
     /**
      * Constructor requiring a URL and deviceName.
      * @param address The URL for the pointer.
@@ -49,7 +48,7 @@ public abstract class URLDevicePointer {
         this.address = address;
         this.deviceName = name;
     }
-    
+
     /**
      * Return the URL for this pointer. 
      * @return 
@@ -81,13 +80,12 @@ public abstract class URLDevicePointer {
     protected void setName(String name) {
         this.deviceName = name;
     }
-    
+
     protected void setAddress(String address) {
         try {
             this.address = new URL(address);
         } catch (MalformedURLException e) {
             LOGGER.log(Level.WARNING, "Error: a malformed URL address was passed to the clase", e);
         }
-        
     }
 }

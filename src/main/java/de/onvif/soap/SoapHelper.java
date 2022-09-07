@@ -34,8 +34,7 @@ public class SoapHelper<T, R> extends SOAP
 {
     private static final Logger LOGGER = Logger.getLogger(SoapHelper.class.getPackage().getName());
     private static final String MARSHALING_ERROR = "Error: An error occurred while marshaling %s.";
-    
-    
+
     protected final OnvifDevice onvifDevice;
 
     public SoapHelper(OnvifDevice onvifDevice) {
@@ -57,7 +56,7 @@ public class SoapHelper<T, R> extends SOAP
     {
         return (SOAPMessage)this.createSoapMessage(obj, needAuthentication);
     }
-        
+
     /**
      * This class sens out a message by calling createSOAPRequest in the parent object to create a message and get the response.
      * @param object A specific instance of P.
@@ -75,7 +74,7 @@ public class SoapHelper<T, R> extends SOAP
     {
         return (R)this.createSOAPRequest(object, response, onvifDevice.getDeviceUri(), needAuthentication);
     }
-    
+
     /**
      * Marshall an object (like those returned by getSoapResponseMessage and getSoapMessage) to a string 
      * @param <T> The class to marshal
@@ -117,11 +116,11 @@ public class SoapHelper<T, R> extends SOAP
                     throw new JAXBException(temp, ex);
                 } 
             }
-            
+
         }
         return result;
     }
-    
+
     /**
      * Create a SOAP Message for the object.
      * @param soapRequestElem
@@ -131,7 +130,7 @@ public class SoapHelper<T, R> extends SOAP
      * @throws ParserConfigurationException
      * @throws JAXBException
      */
-//    @Override
+
     public SOAPMessage generateMessage(T soapRequestElem, boolean needAuthentification) 
             throws SOAPException, ParserConfigurationException, JAXBException 
     {
@@ -148,24 +147,7 @@ public class SoapHelper<T, R> extends SOAP
 
 		soapMessage.saveChanges();
 		return soapMessage;
-//        return createSoapMessage(soapRequestElem, needAuthentification);
+
 	}
-    
-//    protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean needAuthentification) throws SOAPException, ParserConfigurationException,
-//			JAXBException 
-//    {
-//		MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
-//		SOAPMessage soapMessage = messageFactory.createMessage();
-//
-//		Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-//		Marshaller marshaller = JAXBContext.newInstance(soapRequestElem.getClass()).createMarshaller();
-//		marshaller.marshal(soapRequestElem, document);
-//		soapMessage.getSOAPBody().addDocument(document);
-//
-//		// if (needAuthentification)
-//		createSoapHeader(soapMessage);
-//
-//		soapMessage.saveChanges();
-//		return soapMessage;
-//	}
+
 }

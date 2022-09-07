@@ -5,7 +5,6 @@
 // Generiert: 2014.04.25 um 04:22:13 PM CEST 
 //
 
-
 package org.onvif.ver20.imaging.wsdl;
 
 import java.util.ArrayList;
@@ -20,7 +19,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 import org.w3c.dom.Element;
-
 
 /**
  * <p>Java-Klasse für Capabilities complex type.
