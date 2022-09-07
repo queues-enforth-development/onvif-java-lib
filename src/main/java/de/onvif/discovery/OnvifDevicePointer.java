@@ -125,17 +125,6 @@ public class OnvifDevicePointer
         return snapshotUrl;
     }
 
-/*
-    @Override
-    public SoapLedger<SOAPMessage> getLedger() {
-        return this.ledger;
-    }
-
-    @Override
-    public void setLedger(SoapLedger<SOAPMessage> ledger) {
-        this.ledger = ledger;
-    }
-*/    
     @Override
     public SOAP getSoap() {
         return this.device.getSoap();
