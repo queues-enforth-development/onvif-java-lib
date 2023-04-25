@@ -15,14 +15,14 @@ java {
     withSourcesJar()
 }
 
-build {
-    doLast {
-//        copy {
-//            from 'build/libs'
-//            into 'release'
-//        }
-    }
+// task to list deprecated stuff in the compile
+tasks.withType(JavaCompile) {
+//    options.encoding = 'UTF-8'
+    options.deprecation = true
+    options.compilerArgs += ['-Xlint:deprecation']
 }
+
+//compileJava.options.encoding = 'UTF-8'
 
 jar {
     manifest {
@@ -73,24 +73,6 @@ dependencies {
     compile 'com.flipkart.utils:javatuples:3.0:javadoc'
 }
 
-afterEvaluate {
-    uploadArchives {
-        repositories.mavenDeployer {
-            pom.version = project.version
-            pom.artifactId = project.archivesBaseName
-            pom.groupId = project.group
-        }
-    }
-
-    publishing {
-        publications {
-        }
-    }
-}
-
-task addTag() {
-    // todo
-}
 
 /*
     In version 1.9.0.1:
@@ -100,7 +82,7 @@ task addTag() {
 
         0: Bug fix release
 
-        1: Build number (if used)—that's why you see the .NET framework using something like 2.0.4.2709
+        1: Build number (if used)ï¿½that's why you see the .NET framework using something like 2.0.4.2709
 
     source: https://stackoverflow.com/questions/65718/what-do-the-numbers-in-a-version-typically-represent-i-e-v1-9-0-1
 */
