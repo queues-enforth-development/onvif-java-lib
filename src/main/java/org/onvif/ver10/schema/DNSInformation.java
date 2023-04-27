@@ -88,7 +88,7 @@ public class DNSInformation {
 	/**
 	 * Ruft den Wert der fromDHCP-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isFromDHCP() {
 		return fromDHCP;
@@ -122,7 +122,7 @@ public class DNSInformation {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getSearchDomain() {
 		if (searchDomain == null) {
@@ -150,7 +150,7 @@ public class DNSInformation {
 	 * Objects of the following type(s) are allowed in the list {@link IPAddress }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<IPAddress> getDNSFromDHCP() {
 		if (dnsFromDHCP == null) {
@@ -178,7 +178,7 @@ public class DNSInformation {
 	 * Objects of the following type(s) are allowed in the list {@link IPAddress }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<IPAddress> getDNSManual() {
 		if (dnsManual == null) {

@@ -48,7 +48,7 @@ public class SetSynchronizationPoint {
     /**
      * Ruft den Wert der profileToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

@@ -65,7 +65,7 @@ public class SetImagingSettings {
     /**
      * Ruft den Wert der videoSourceToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -89,7 +89,7 @@ public class SetImagingSettings {
     /**
      * Ruft den Wert der imagingSettings-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ImagingSettings20 }
      *     
@@ -113,7 +113,7 @@ public class SetImagingSettings {
     /**
      * Ruft den Wert der forcePersistence-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     

@@ -70,7 +70,7 @@ public enum ReceiverMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -79,7 +79,7 @@ public enum ReceiverMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ReceiverMode fromValue(String v) {
 		for (ReceiverMode c : ReceiverMode.values()) {

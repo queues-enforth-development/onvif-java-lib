@@ -67,7 +67,7 @@ public class GetCompatibleAudioSourceConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link AudioSourceConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioSourceConfiguration> getConfigurations() {
 		if (configurations == null) {

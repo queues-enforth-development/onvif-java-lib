@@ -74,7 +74,7 @@ public class FocusStatus20 {
 	/**
 	 * Ruft den Wert der position-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getPosition() {
 		return position;

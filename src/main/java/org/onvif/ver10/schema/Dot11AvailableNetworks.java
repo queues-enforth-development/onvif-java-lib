@@ -158,7 +158,7 @@ public class Dot11AvailableNetworks {
 	 * Objects of the following type(s) are allowed in the list {@link Dot11AuthAndMangementSuite }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot11AuthAndMangementSuite> getAuthAndMangementSuite() {
 		if (authAndMangementSuite == null) {
@@ -186,7 +186,7 @@ public class Dot11AvailableNetworks {
 	 * Objects of the following type(s) are allowed in the list {@link Dot11Cipher }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot11Cipher> getPairCipher() {
 		if (pairCipher == null) {
@@ -214,7 +214,7 @@ public class Dot11AvailableNetworks {
 	 * Objects of the following type(s) are allowed in the list {@link Dot11Cipher }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot11Cipher> getGroupCipher() {
 		if (groupCipher == null) {

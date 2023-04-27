@@ -66,7 +66,7 @@ public class PTZStream {
 	 * Objects of the following type(s) are allowed in the list {@link PTZStatus } {@link PTZStreamExtension }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getPTZStatusOrExtension() {
 		if (ptzStatusOrExtension == null) {

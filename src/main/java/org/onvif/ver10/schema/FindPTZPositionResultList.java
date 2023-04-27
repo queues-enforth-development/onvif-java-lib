@@ -92,7 +92,7 @@ public class FindPTZPositionResultList {
 	 * Objects of the following type(s) are allowed in the list {@link FindPTZPositionResult }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<FindPTZPositionResult> getResult() {
 		if (result == null) {

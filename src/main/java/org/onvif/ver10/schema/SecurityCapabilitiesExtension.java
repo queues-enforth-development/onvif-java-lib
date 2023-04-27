@@ -53,7 +53,7 @@ public class SecurityCapabilitiesExtension {
 	/**
 	 * Ruft den Wert der tls10-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isTLS10() {
 		return tls10;

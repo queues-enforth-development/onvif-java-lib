@@ -64,7 +64,7 @@ public class SystemLogUriList {
 	 * Objects of the following type(s) are allowed in the list {@link SystemLogUri }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<SystemLogUri> getSystemLog() {
 		if (systemLog == null) {

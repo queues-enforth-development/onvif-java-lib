@@ -106,7 +106,7 @@ public class MulticastConfiguration {
 	/**
 	 * Ruft den Wert der port-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getPort() {
 		return port;
@@ -124,7 +124,7 @@ public class MulticastConfiguration {
 	/**
 	 * Ruft den Wert der ttl-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getTTL() {
 		return ttl;
@@ -142,7 +142,7 @@ public class MulticastConfiguration {
 	/**
 	 * Ruft den Wert der autoStart-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAutoStart() {
 		return autoStart;
@@ -176,7 +176,7 @@ public class MulticastConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -92,7 +92,7 @@ public class AudioClassCandidate {
 	/**
 	 * Ruft den Wert der likelihood-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getLikelihood() {
 		return likelihood;
@@ -126,7 +126,7 @@ public class AudioClassCandidate {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

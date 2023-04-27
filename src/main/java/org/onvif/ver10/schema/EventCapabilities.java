@@ -109,7 +109,7 @@ public class EventCapabilities {
 	/**
 	 * Ruft den Wert der wsSubscriptionPolicySupport-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isWSSubscriptionPolicySupport() {
 		return wsSubscriptionPolicySupport;
@@ -127,7 +127,7 @@ public class EventCapabilities {
 	/**
 	 * Ruft den Wert der wsPullPointSupport-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isWSPullPointSupport() {
 		return wsPullPointSupport;
@@ -145,7 +145,7 @@ public class EventCapabilities {
 	/**
 	 * Ruft den Wert der wsPausableSubscriptionManagerInterfaceSupport-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isWSPausableSubscriptionManagerInterfaceSupport() {
 		return wsPausableSubscriptionManagerInterfaceSupport;
@@ -179,7 +179,7 @@ public class EventCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

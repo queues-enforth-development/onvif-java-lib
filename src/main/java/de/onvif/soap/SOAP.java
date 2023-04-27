@@ -57,7 +57,7 @@ public class SOAP
      * @param soapRequestElem -
      * @param soapResponseElem -
      * @param needsSecurity -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -72,7 +72,7 @@ public class SOAP
      * @param soapRequestElem -
      * @param soapResponseElem -
      * @param needsSecurity -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -87,7 +87,7 @@ public class SOAP
      * @param soapRequestElem -
      * @param soapResponseElem -
      * @param needsSecurity -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -102,7 +102,7 @@ public class SOAP
      * @param soapRequestElem -
      * @param soapResponseElem -
      * @param needsSecurity -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -118,7 +118,7 @@ public class SOAP
      * @param soapRequestElem -
      * @param soapResponseElem -
      * @param needsSecurity -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -238,7 +238,7 @@ public class SOAP
      *
      * @param soapRequestElem -
      * @param useSecurity -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ParserConfigurationException -
      * @throws JAXBException -
@@ -308,7 +308,7 @@ public class SOAP
     /**
      * Are we logging?
      *
-     * @return
+     * @return -
      */
     public boolean isLogging() {
         return logging;
@@ -326,7 +326,7 @@ public class SOAP
     /**
      * Get the location to write the output.
      *
-     * @return
+     * @return -
      */
     public String getWriteOutputLocation() {
         return writeOutputLocation;

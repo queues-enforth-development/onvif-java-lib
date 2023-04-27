@@ -70,7 +70,7 @@ public class Seek {
     /**
      * Ruft den Wert der utcTime-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -94,7 +94,7 @@ public class Seek {
     /**
      * Ruft den Wert der reverse-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -136,7 +136,7 @@ public class Seek {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {

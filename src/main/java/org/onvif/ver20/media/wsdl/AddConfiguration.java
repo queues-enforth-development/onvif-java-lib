@@ -66,7 +66,7 @@ public class AddConfiguration {
     /**
      * Ruft den Wert der profileToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -90,7 +90,7 @@ public class AddConfiguration {
     /**
      * Ruft den Wert der name-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -132,7 +132,7 @@ public class AddConfiguration {
      * {@link ConfigurationRef }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<ConfigurationRef> getConfiguration() {
         if (configuration == null) {

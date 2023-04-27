@@ -48,7 +48,7 @@ public class SetNetworkInterfacesResponse {
 	/**
 	 * Ruft den Wert der rebootNeeded-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRebootNeeded() {
 		return rebootNeeded;

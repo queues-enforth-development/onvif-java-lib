@@ -54,7 +54,7 @@ public enum SystemLogType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -63,7 +63,7 @@ public enum SystemLogType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static SystemLogType fromValue(String v) {
 		for (SystemLogType c : SystemLogType.values()) {

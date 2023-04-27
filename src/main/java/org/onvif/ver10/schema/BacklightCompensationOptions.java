@@ -71,7 +71,7 @@ public class BacklightCompensationOptions {
 	 * Objects of the following type(s) are allowed in the list {@link WideDynamicMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<WideDynamicMode> getMode() {
 		if (mode == null) {

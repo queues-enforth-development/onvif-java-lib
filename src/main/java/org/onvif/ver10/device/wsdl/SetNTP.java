@@ -58,7 +58,7 @@ public class SetNTP {
 	/**
 	 * Ruft den Wert der fromDHCP-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isFromDHCP() {
 		return fromDHCP;
@@ -92,7 +92,7 @@ public class SetNTP {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkHost }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<NetworkHost> getNTPManual() {
 		if (ntpManual == null) {

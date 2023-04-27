@@ -73,7 +73,7 @@ public enum UserLevel {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -82,7 +82,7 @@ public enum UserLevel {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static UserLevel fromValue(String v) {
 		for (UserLevel c : UserLevel.values()) {

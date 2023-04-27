@@ -60,7 +60,7 @@ public class Time {
 	/**
 	 * Ruft den Wert der hour-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getHour() {
 		return hour;
@@ -78,7 +78,7 @@ public class Time {
 	/**
 	 * Ruft den Wert der minute-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMinute() {
 		return minute;
@@ -96,7 +96,7 @@ public class Time {
 	/**
 	 * Ruft den Wert der second-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getSecond() {
 		return second;

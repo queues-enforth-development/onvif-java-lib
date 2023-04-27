@@ -67,7 +67,7 @@ public enum TrackType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -76,7 +76,7 @@ public enum TrackType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static TrackType fromValue(String v) {
 		for (TrackType c : TrackType.values()) {

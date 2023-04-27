@@ -53,7 +53,7 @@ public class RelativeFocus {
 	/**
 	 * Ruft den Wert der distance-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getDistance() {
 		return distance;

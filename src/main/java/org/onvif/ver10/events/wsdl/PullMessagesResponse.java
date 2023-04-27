@@ -71,7 +71,7 @@ public class PullMessagesResponse {
     /**
      * Ruft den Wert der currentTime-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -95,7 +95,7 @@ public class PullMessagesResponse {
     /**
      * Ruft den Wert der terminationTime-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -135,7 +135,7 @@ public class PullMessagesResponse {
      * {@link NotificationMessageHolderType }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<NotificationMessageHolderType> getNotificationMessage() {
         if (notificationMessage == null) {

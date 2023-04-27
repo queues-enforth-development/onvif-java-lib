@@ -71,7 +71,7 @@ public class RecordingJobStateTracks {
 	 * Objects of the following type(s) are allowed in the list {@link RecordingJobStateTrack }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<RecordingJobStateTrack> getTrack() {
 		if (track == null) {

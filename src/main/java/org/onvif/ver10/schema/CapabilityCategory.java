@@ -86,7 +86,7 @@ public enum CapabilityCategory {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -95,7 +95,7 @@ public enum CapabilityCategory {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static CapabilityCategory fromValue(String v) {
 		for (CapabilityCategory c : CapabilityCategory.values()) {

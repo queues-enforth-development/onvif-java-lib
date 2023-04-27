@@ -122,7 +122,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Ruft den Wert der videoSources-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getVideoSources() {
 		return videoSources;
@@ -140,7 +140,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Ruft den Wert der videoOutputs-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getVideoOutputs() {
 		return videoOutputs;
@@ -158,7 +158,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Ruft den Wert der audioSources-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getAudioSources() {
 		return audioSources;
@@ -176,7 +176,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Ruft den Wert der audioOutputs-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getAudioOutputs() {
 		return audioOutputs;
@@ -194,7 +194,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Ruft den Wert der relayOutputs-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getRelayOutputs() {
 		return relayOutputs;
@@ -228,7 +228,7 @@ public class DeviceIOCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

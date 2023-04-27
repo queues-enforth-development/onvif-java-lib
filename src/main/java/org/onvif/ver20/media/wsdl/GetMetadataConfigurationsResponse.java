@@ -69,7 +69,7 @@ public class GetMetadataConfigurationsResponse {
      * {@link MetadataConfiguration }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<MetadataConfiguration> getConfigurations() {
         if (configurations == null) {

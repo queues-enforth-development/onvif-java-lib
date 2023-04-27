@@ -118,7 +118,7 @@ public class Capabilities {
      * {@link Element }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -130,7 +130,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der wsSubscriptionPolicySupport-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -154,7 +154,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der wsPullPointSupport-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -178,7 +178,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der wsPausableSubscriptionManagerInterfaceSupport-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -202,7 +202,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der maxNotificationProducers-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Integer }
      *     
@@ -226,7 +226,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der maxPullPoints-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Integer }
      *     
@@ -250,7 +250,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der persistentNotificationStorage-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -282,7 +282,7 @@ public class Capabilities {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

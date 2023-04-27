@@ -66,7 +66,7 @@ public enum H264Profile {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -75,7 +75,7 @@ public enum H264Profile {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static H264Profile fromValue(String v) {
 		for (H264Profile c : H264Profile.values()) {

@@ -62,7 +62,7 @@ public enum TransportProtocol {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return value;
@@ -71,7 +71,7 @@ public enum TransportProtocol {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static TransportProtocol fromValue(String v) {
         for (TransportProtocol c: TransportProtocol.values()) {

@@ -52,7 +52,7 @@ public enum StreamType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -61,7 +61,7 @@ public enum StreamType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static StreamType fromValue(String v) {
 		for (StreamType c : StreamType.values()) {

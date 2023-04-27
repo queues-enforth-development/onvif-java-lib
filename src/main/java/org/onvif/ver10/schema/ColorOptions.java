@@ -87,7 +87,7 @@ public class ColorOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Color }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Color> getColorList() {
 		if (colorList == null) {
@@ -115,7 +115,7 @@ public class ColorOptions {
 	 * Objects of the following type(s) are allowed in the list {@link ColorspaceRange }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ColorspaceRange> getColorspaceRange() {
 		if (colorspaceRange == null) {

@@ -69,7 +69,7 @@ public class MiscCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getAuxiliaryCommands() {
 		if (auxiliaryCommands == null) {

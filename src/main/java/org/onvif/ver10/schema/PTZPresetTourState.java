@@ -66,7 +66,7 @@ public enum PTZPresetTourState {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -75,7 +75,7 @@ public enum PTZPresetTourState {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static PTZPresetTourState fromValue(String v) {
 		for (PTZPresetTourState c : PTZPresetTourState.values()) {

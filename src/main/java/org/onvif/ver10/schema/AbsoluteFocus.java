@@ -53,7 +53,7 @@ public class AbsoluteFocus {
 	/**
 	 * Ruft den Wert der position-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getPosition() {
 		return position;

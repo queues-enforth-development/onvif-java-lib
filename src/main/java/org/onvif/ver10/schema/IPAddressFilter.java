@@ -113,7 +113,7 @@ public class IPAddressFilter {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv4Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv4Address> getIPv4Address() {
 		if (iPv4Address == null) {
@@ -141,7 +141,7 @@ public class IPAddressFilter {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv6Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv6Address> getIPv6Address() {
 		if (iPv6Address == null) {

@@ -73,7 +73,7 @@ public enum ClassType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -82,7 +82,7 @@ public enum ClassType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ClassType fromValue(String v) {
 		for (ClassType c : ClassType.values()) {

@@ -60,7 +60,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Ruft den Wert der autoNegotiation-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAutoNegotiation() {
 		return autoNegotiation;
@@ -78,7 +78,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Ruft den Wert der speed-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getSpeed() {
 		return speed;

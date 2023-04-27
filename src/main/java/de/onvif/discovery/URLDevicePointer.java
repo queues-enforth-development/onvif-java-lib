@@ -51,7 +51,7 @@ public abstract class URLDevicePointer {
 
     /**
      * Return the URL for this pointer. 
-     * @return 
+     * @return  -
      */
     public URL getURLAddress() {
         return address;
@@ -67,7 +67,7 @@ public abstract class URLDevicePointer {
 
     /**
      * Returns the deviceName of the device's connection address stored here.
-     * @return 
+     * @return  -
      */
     public String getName() {
         return deviceName;

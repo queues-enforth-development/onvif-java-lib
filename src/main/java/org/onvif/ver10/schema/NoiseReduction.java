@@ -65,7 +65,7 @@ public class NoiseReduction {
     /**
      * Ruft den Wert der level-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getLevel() {
         return level;
@@ -102,7 +102,7 @@ public class NoiseReduction {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -122,7 +122,7 @@ public class NoiseReduction {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

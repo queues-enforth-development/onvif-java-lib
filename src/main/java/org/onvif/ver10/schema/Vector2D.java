@@ -60,7 +60,7 @@ public class Vector2D {
 	/**
 	 * Ruft den Wert der x-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getX() {
 		return x;
@@ -78,7 +78,7 @@ public class Vector2D {
 	/**
 	 * Ruft den Wert der y-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getY() {
 		return y;

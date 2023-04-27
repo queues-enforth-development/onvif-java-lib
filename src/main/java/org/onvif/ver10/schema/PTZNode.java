@@ -140,7 +140,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Ruft den Wert der maximumNumberOfPresets-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMaximumNumberOfPresets() {
 		return maximumNumberOfPresets;
@@ -158,7 +158,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Ruft den Wert der homeSupported-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isHomeSupported() {
 		return homeSupported;
@@ -192,7 +192,7 @@ public class PTZNode extends DeviceEntity {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getAuxiliaryCommands() {
 		if (auxiliaryCommands == null) {

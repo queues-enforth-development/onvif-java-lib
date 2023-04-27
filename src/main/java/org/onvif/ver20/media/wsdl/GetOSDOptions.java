@@ -48,7 +48,7 @@ public class GetOSDOptions {
     /**
      * Ruft den Wert der configurationToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

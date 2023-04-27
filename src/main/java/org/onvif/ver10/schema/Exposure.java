@@ -187,7 +187,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der minExposureTime-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMinExposureTime() {
 		return minExposureTime;
@@ -205,7 +205,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der maxExposureTime-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMaxExposureTime() {
 		return maxExposureTime;
@@ -223,7 +223,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der minGain-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMinGain() {
 		return minGain;
@@ -241,7 +241,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der maxGain-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMaxGain() {
 		return maxGain;
@@ -259,7 +259,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der minIris-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMinIris() {
 		return minIris;
@@ -277,7 +277,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der maxIris-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMaxIris() {
 		return maxIris;
@@ -295,7 +295,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der exposureTime-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getExposureTime() {
 		return exposureTime;
@@ -313,7 +313,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der gain-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getGain() {
 		return gain;
@@ -331,7 +331,7 @@ public class Exposure {
 	/**
 	 * Ruft den Wert der iris-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getIris() {
 		return iris;

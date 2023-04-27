@@ -18,7 +18,7 @@ public class OnvifDiscovery {
 
     /**
      * Possibly returns a list of discovered devices? 
-     * @return
+     * @return -
      */
     public static List<OnvifPointer> discoverOnvifDevices() {
 		final LinkedList<OnvifPointer> onvifPointers = new LinkedList<>();
@@ -50,7 +50,7 @@ public class OnvifDiscovery {
 
     /**
      * 
-     * @return 
+     * @return  -
      */
     public static List<URL> searchOnvifDevices() {
         List<URL> deviceURLs = new LinkedList<>();

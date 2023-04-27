@@ -468,7 +468,7 @@ public class SecurityCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Integer }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Integer> getSupportedEAPMethods() {
 		if (supportedEAPMethods == null) {

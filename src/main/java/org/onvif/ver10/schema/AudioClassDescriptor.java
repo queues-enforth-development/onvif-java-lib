@@ -78,7 +78,7 @@ public class AudioClassDescriptor {
 	 * Objects of the following type(s) are allowed in the list {@link AudioClassCandidate }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioClassCandidate> getClassCandidate() {
 		if (classCandidate == null) {

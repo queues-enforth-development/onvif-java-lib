@@ -92,7 +92,7 @@ public class FindEventResultList {
 	 * Objects of the following type(s) are allowed in the list {@link FindEventResult }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<FindEventResult> getResult() {
 		if (result == null) {

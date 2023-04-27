@@ -69,7 +69,7 @@ public class StorageReferencePath {
     /**
      * Ruft den Wert der storageToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -93,7 +93,7 @@ public class StorageReferencePath {
     /**
      * Ruft den Wert der relativePath-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -117,7 +117,7 @@ public class StorageReferencePath {
     /**
      * Ruft den Wert der extension-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link StorageReferencePathExtension }
      *     
@@ -149,7 +149,7 @@ public class StorageReferencePath {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

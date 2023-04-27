@@ -86,7 +86,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Ruft den Wert der total-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getTotal() {
 		return total;

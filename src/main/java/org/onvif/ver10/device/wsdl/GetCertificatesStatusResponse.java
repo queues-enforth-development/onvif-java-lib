@@ -67,7 +67,7 @@ public class GetCertificatesStatusResponse {
 	 * Objects of the following type(s) are allowed in the list {@link CertificateStatus }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<CertificateStatus> getCertificateStatus() {
 		if (certificateStatus == null) {

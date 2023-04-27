@@ -78,7 +78,7 @@ public class AnalyticsDeviceEngineConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link EngineConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<EngineConfiguration> getEngineConfiguration() {
 		if (engineConfiguration == null) {

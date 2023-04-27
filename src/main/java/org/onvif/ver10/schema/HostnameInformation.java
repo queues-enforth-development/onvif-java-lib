@@ -72,7 +72,7 @@ public class HostnameInformation {
 	/**
 	 * Ruft den Wert der fromDHCP-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isFromDHCP() {
 		return fromDHCP;

@@ -121,7 +121,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der tls11-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isTLS11() {
 		return tls11;
@@ -139,7 +139,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der tls12-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isTLS12() {
 		return tls12;
@@ -157,7 +157,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der onboardKeyGeneration-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isOnboardKeyGeneration() {
 		return onboardKeyGeneration;
@@ -175,7 +175,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der accessPolicyConfig-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAccessPolicyConfig() {
 		return accessPolicyConfig;
@@ -193,7 +193,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der x509Token-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isX509Token() {
 		return x509Token;
@@ -211,7 +211,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der samlToken-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isSAMLToken() {
 		return samlToken;
@@ -229,7 +229,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der kerberosToken-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isKerberosToken() {
 		return kerberosToken;
@@ -247,7 +247,7 @@ public class SecurityCapabilities {
 	/**
 	 * Ruft den Wert der relToken-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRELToken() {
 		return relToken;
@@ -281,7 +281,7 @@ public class SecurityCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

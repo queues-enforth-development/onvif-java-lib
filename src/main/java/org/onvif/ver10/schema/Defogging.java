@@ -69,7 +69,7 @@ public class Defogging {
     /**
      * Ruft den Wert der mode-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -93,7 +93,7 @@ public class Defogging {
     /**
      * Ruft den Wert der level-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Float }
      *     
@@ -117,7 +117,7 @@ public class Defogging {
     /**
      * Ruft den Wert der extension-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link DefoggingExtension }
      *     
@@ -149,7 +149,7 @@ public class Defogging {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

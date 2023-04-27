@@ -47,7 +47,7 @@ public enum DefoggingMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return name();
@@ -56,7 +56,7 @@ public enum DefoggingMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static DefoggingMode fromValue(String v) {
         return valueOf(v);

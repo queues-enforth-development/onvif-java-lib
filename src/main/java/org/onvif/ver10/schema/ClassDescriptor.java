@@ -82,7 +82,7 @@ public class ClassDescriptor {
 	 * Objects of the following type(s) are allowed in the list {@link ClassDescriptor.ClassCandidate }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ClassDescriptor.ClassCandidate> getClassCandidate() {
 		if (classCandidate == null) {
@@ -174,7 +174,7 @@ public class ClassDescriptor {
 		/**
 		 * Ruft den Wert der likelihood-Eigenschaft ab.
 		 * 
-         * @return 
+         * @return  -
 		 */
 		public float getLikelihood() {
 			return likelihood;

@@ -54,7 +54,7 @@ public class ConfigurationRef {
     /**
      * Ruft den Wert der type-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -78,7 +78,7 @@ public class ConfigurationRef {
     /**
      * Ruft den Wert der token-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

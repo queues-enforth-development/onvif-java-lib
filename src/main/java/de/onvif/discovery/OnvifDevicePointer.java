@@ -83,7 +83,7 @@ public class OnvifDevicePointer
 
     /**
      * Returns the User value used to connect to the ONVIF device.
-     * @return User.
+     * @return User. -
      */
     public String getUser() {
         return user;

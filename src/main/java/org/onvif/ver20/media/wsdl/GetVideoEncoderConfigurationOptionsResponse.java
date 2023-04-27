@@ -69,7 +69,7 @@ public class GetVideoEncoderConfigurationOptionsResponse {
      * {@link VideoEncoder2ConfigurationOptions }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<VideoEncoder2ConfigurationOptions> getOptions() {
         if (options == null) {

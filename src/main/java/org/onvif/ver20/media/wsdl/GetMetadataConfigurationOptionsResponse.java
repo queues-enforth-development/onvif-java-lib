@@ -49,7 +49,7 @@ public class GetMetadataConfigurationOptionsResponse {
     /**
      * Ruft den Wert der options-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link MetadataConfigurationOptions }
      *     

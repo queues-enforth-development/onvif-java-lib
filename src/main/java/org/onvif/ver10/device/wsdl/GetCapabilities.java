@@ -67,7 +67,7 @@ public class GetCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link CapabilityCategory }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<CapabilityCategory> getCategory() {
 		if (category == null) {

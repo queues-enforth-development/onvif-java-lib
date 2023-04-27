@@ -90,7 +90,7 @@ public class ColorDescriptor {
 	 * Objects of the following type(s) are allowed in the list {@link ColorDescriptor.ColorCluster }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ColorDescriptor.ColorCluster> getColorCluster() {
 		if (colorCluster == null) {

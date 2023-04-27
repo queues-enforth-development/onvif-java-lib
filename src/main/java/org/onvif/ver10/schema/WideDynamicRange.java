@@ -74,7 +74,7 @@ public class WideDynamicRange {
 	/**
 	 * Ruft den Wert der level-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getLevel() {
 		return level;

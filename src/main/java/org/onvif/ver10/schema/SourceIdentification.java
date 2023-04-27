@@ -106,7 +106,7 @@ public class SourceIdentification {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getToken() {
 		if (token == null) {

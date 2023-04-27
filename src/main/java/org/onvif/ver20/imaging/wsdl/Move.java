@@ -57,7 +57,7 @@ public class Move {
     /**
      * Ruft den Wert der videoSourceToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -81,7 +81,7 @@ public class Move {
     /**
      * Ruft den Wert der focus-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link FocusMove }
      *     

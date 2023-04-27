@@ -53,7 +53,7 @@ public class OnvifVersion {
 	/**
 	 * Ruft den Wert der major-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMajor() {
 		return major;
@@ -71,7 +71,7 @@ public class OnvifVersion {
 	/**
 	 * Ruft den Wert der minor-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMinor() {
 		return minor;

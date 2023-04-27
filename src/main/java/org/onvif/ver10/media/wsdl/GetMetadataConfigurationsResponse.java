@@ -67,7 +67,7 @@ public class GetMetadataConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link MetadataConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<MetadataConfiguration> getConfigurations() {
 		if (configurations == null) {

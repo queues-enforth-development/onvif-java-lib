@@ -114,7 +114,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der bitrate-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getBitrate() {
 		return bitrate;
@@ -132,7 +132,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der sampleRate-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getSampleRate() {
 		return sampleRate;
@@ -208,7 +208,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

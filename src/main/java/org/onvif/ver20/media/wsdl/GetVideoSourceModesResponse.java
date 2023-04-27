@@ -68,7 +68,7 @@ public class GetVideoSourceModesResponse {
      * {@link VideoSourceMode }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<VideoSourceMode> getVideoSourceModes() {
         if (videoSourceModes == null) {

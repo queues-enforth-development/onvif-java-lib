@@ -113,7 +113,7 @@ public class OSDTextOptions {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getType() {
 		if (type == null) {
@@ -162,7 +162,7 @@ public class OSDTextOptions {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getDateFormat() {
 		if (dateFormat == null) {
@@ -190,7 +190,7 @@ public class OSDTextOptions {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getTimeFormat() {
 		if (timeFormat == null) {

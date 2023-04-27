@@ -59,7 +59,7 @@ public enum Direction {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -68,7 +68,7 @@ public enum Direction {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Direction fromValue(String v) {
 		for (Direction c : Direction.values()) {

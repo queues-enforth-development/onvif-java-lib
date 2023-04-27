@@ -111,7 +111,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	 * Objects of the following type(s) are allowed in the list {@link TopicNamespaceType.Topic }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<TopicNamespaceType.Topic> getTopic() {
 		if (topic == null) {
@@ -139,7 +139,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {

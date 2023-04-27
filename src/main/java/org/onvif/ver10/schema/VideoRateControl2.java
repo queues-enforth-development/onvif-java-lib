@@ -81,7 +81,7 @@ public class VideoRateControl2 {
     /**
      * Ruft den Wert der frameRateLimit-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getFrameRateLimit() {
         return frameRateLimit;
@@ -99,7 +99,7 @@ public class VideoRateControl2 {
     /**
      * Ruft den Wert der bitrateLimit-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public int getBitrateLimit() {
         return bitrateLimit;
@@ -136,7 +136,7 @@ public class VideoRateControl2 {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -148,7 +148,7 @@ public class VideoRateControl2 {
     /**
      * Ruft den Wert der constantBitRate-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -180,7 +180,7 @@ public class VideoRateControl2 {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

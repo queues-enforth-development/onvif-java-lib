@@ -67,7 +67,7 @@ public class LoadCertificateWithPrivateKey {
 	 * Objects of the following type(s) are allowed in the list {@link CertificateWithPrivateKey }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<CertificateWithPrivateKey> getCertificateWithPrivateKey() {
 		if (certificateWithPrivateKey == null) {

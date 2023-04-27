@@ -102,7 +102,7 @@ public class Capabilities2 {
     /**
      * Ruft den Wert der profileCapabilities-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ProfileCapabilities }
      *     
@@ -126,7 +126,7 @@ public class Capabilities2 {
     /**
      * Ruft den Wert der streamingCapabilities-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link StreamingCapabilities }
      *     
@@ -169,7 +169,7 @@ public class Capabilities2 {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -181,7 +181,7 @@ public class Capabilities2 {
     /**
      * Ruft den Wert der snapshotUri-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -205,7 +205,7 @@ public class Capabilities2 {
     /**
      * Ruft den Wert der rotation-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -229,7 +229,7 @@ public class Capabilities2 {
     /**
      * Ruft den Wert der videoSourceMode-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -253,7 +253,7 @@ public class Capabilities2 {
     /**
      * Ruft den Wert der osd-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -285,7 +285,7 @@ public class Capabilities2 {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

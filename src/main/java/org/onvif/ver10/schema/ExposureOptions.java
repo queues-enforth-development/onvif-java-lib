@@ -135,7 +135,7 @@ public class ExposureOptions {
 	 * Objects of the following type(s) are allowed in the list {@link ExposureMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ExposureMode> getMode() {
 		if (mode == null) {
@@ -163,7 +163,7 @@ public class ExposureOptions {
 	 * Objects of the following type(s) are allowed in the list {@link ExposurePriority }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ExposurePriority> getPriority() {
 		if (priority == null) {

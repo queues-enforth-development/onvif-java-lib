@@ -44,7 +44,7 @@ public enum WideDynamicMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -53,7 +53,7 @@ public enum WideDynamicMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static WideDynamicMode fromValue(String v) {
 		return valueOf(v);

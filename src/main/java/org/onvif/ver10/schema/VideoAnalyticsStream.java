@@ -66,7 +66,7 @@ public class VideoAnalyticsStream {
 	 * Objects of the following type(s) are allowed in the list {@link Frame } {@link VideoAnalyticsStreamExtension }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getFrameOrExtension() {
 		if (frameOrExtension == null) {

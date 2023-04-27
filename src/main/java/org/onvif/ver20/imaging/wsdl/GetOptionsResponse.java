@@ -49,7 +49,7 @@ public class GetOptionsResponse {
     /**
      * Ruft den Wert der imagingOptions-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ImagingOptions20 }
      *     

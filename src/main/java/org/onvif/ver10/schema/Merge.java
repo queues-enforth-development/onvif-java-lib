@@ -71,7 +71,7 @@ public class Merge {
 	 * Objects of the following type(s) are allowed in the list {@link ObjectId }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ObjectId> getFrom() {
 		if (from == null) {

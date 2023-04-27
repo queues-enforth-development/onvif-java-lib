@@ -44,7 +44,7 @@ public enum Enabled {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -53,7 +53,7 @@ public enum Enabled {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Enabled fromValue(String v) {
 		return valueOf(v);

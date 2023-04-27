@@ -67,7 +67,7 @@ public class GetPresetToursResponse {
 	 * Objects of the following type(s) are allowed in the list {@link PresetTour }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PresetTour> getPresetTour() {
 		if (presetTour == null) {

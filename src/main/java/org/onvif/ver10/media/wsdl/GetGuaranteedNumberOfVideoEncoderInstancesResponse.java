@@ -69,7 +69,7 @@ public class GetGuaranteedNumberOfVideoEncoderInstancesResponse {
 	/**
 	 * Ruft den Wert der totalNumber-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getTotalNumber() {
 		return totalNumber;

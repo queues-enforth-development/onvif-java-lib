@@ -127,7 +127,7 @@ public class OSDConfigurationOptions {
 	 * Objects of the following type(s) are allowed in the list {@link OSDType }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<OSDType> getType() {
 		if (type == null) {
@@ -155,7 +155,7 @@ public class OSDConfigurationOptions {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getPositionOption() {
 		if (positionOption == null) {

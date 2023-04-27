@@ -81,7 +81,7 @@ public class ArrayOfFileProgress {
      * {@link FileProgress }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<FileProgress> getFileProgress() {
         if (fileProgress == null) {
@@ -93,7 +93,7 @@ public class ArrayOfFileProgress {
     /**
      * Ruft den Wert der extension-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ArrayOfFileProgressExtension }
      *     
@@ -125,7 +125,7 @@ public class ArrayOfFileProgress {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

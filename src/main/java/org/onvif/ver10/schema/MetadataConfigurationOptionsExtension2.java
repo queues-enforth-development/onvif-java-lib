@@ -68,7 +68,7 @@ public class MetadataConfigurationOptionsExtension2 {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {

@@ -58,7 +58,7 @@ public enum NetworkHostType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -67,7 +67,7 @@ public enum NetworkHostType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static NetworkHostType fromValue(String v) {
 		for (NetworkHostType c : NetworkHostType.values()) {

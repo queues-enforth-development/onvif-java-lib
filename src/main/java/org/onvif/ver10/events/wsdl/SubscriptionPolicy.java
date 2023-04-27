@@ -85,7 +85,7 @@ public class SubscriptionPolicy {
      * {@link Element }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -97,7 +97,7 @@ public class SubscriptionPolicy {
     /**
      * Ruft den Wert der changedOnly-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -129,7 +129,7 @@ public class SubscriptionPolicy {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

@@ -59,7 +59,7 @@ public enum PTZPresetTourDirection {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -68,7 +68,7 @@ public enum PTZPresetTourDirection {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static PTZPresetTourDirection fromValue(String v) {
 		for (PTZPresetTourDirection c : PTZPresetTourDirection.values()) {

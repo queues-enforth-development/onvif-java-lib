@@ -112,7 +112,7 @@ public class ItemList {
 	 * Objects of the following type(s) are allowed in the list {@link ItemList.SimpleItem }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ItemList.SimpleItem> getSimpleItem() {
 		if (simpleItem == null) {
@@ -140,7 +140,7 @@ public class ItemList {
 	 * Objects of the following type(s) are allowed in the list {@link ItemList.ElementItem }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ItemList.ElementItem> getElementItem() {
 		if (elementItem == null) {

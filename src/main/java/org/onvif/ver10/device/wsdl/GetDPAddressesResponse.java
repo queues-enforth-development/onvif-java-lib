@@ -67,7 +67,7 @@ public class GetDPAddressesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkHost }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<NetworkHost> getDPAddress() {
 		if (dpAddress == null) {

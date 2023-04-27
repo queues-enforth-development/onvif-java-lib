@@ -56,7 +56,7 @@ public class GetStreamUri {
     /**
      * Ruft den Wert der protocol-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -80,7 +80,7 @@ public class GetStreamUri {
     /**
      * Ruft den Wert der profileToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

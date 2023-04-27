@@ -50,7 +50,7 @@ public enum MoveStatus {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -59,7 +59,7 @@ public enum MoveStatus {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static MoveStatus fromValue(String v) {
 		return valueOf(v);

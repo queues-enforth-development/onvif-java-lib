@@ -62,7 +62,7 @@ public enum VideoEncodingMimeNames {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return value;
@@ -71,7 +71,7 @@ public enum VideoEncodingMimeNames {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static VideoEncodingMimeNames fromValue(String v) {
         for (VideoEncodingMimeNames c: VideoEncodingMimeNames.values()) {

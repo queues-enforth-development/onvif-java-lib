@@ -80,7 +80,7 @@ public class JpegOptions {
 	 * Objects of the following type(s) are allowed in the list {@link VideoResolution }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoResolution> getResolutionsAvailable() {
 		if (resolutionsAvailable == null) {

@@ -85,7 +85,7 @@ public class ImageStabilizationOptions {
 	 * Objects of the following type(s) are allowed in the list {@link ImageStabilizationMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ImageStabilizationMode> getMode() {
 		if (mode == null) {

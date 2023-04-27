@@ -52,7 +52,7 @@ public enum ScopeDefinition {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -61,7 +61,7 @@ public enum ScopeDefinition {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ScopeDefinition fromValue(String v) {
 		for (ScopeDefinition c : ScopeDefinition.values()) {

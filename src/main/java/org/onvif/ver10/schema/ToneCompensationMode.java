@@ -47,7 +47,7 @@ public enum ToneCompensationMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return name();
@@ -56,7 +56,7 @@ public enum ToneCompensationMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ToneCompensationMode fromValue(String v) {
         return valueOf(v);

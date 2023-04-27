@@ -76,7 +76,7 @@ public class NTPInformation {
 	/**
 	 * Ruft den Wert der fromDHCP-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isFromDHCP() {
 		return fromDHCP;
@@ -110,7 +110,7 @@ public class NTPInformation {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkHost }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<NetworkHost> getNTPFromDHCP() {
 		if (ntpFromDHCP == null) {
@@ -138,7 +138,7 @@ public class NTPInformation {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkHost }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<NetworkHost> getNTPManual() {
 		if (ntpManual == null) {

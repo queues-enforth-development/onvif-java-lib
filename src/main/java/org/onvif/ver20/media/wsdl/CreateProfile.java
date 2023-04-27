@@ -58,7 +58,7 @@ public class CreateProfile {
     /**
      * Ruft den Wert der name-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -100,7 +100,7 @@ public class CreateProfile {
      * {@link ConfigurationRef }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<ConfigurationRef> getConfiguration() {
         if (configuration == null) {

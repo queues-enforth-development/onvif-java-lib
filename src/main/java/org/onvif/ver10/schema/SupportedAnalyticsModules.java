@@ -87,7 +87,7 @@ public class SupportedAnalyticsModules {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getAnalyticsModuleContentSchemaLocation() {
 		if (analyticsModuleContentSchemaLocation == null) {
@@ -115,7 +115,7 @@ public class SupportedAnalyticsModules {
 	 * Objects of the following type(s) are allowed in the list {@link ConfigDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ConfigDescription> getAnalyticsModuleDescription() {
 		if (analyticsModuleDescription == null) {

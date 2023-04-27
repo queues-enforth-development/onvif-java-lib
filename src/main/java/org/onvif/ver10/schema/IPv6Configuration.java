@@ -155,7 +155,7 @@ public class IPv6Configuration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv6Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv6Address> getManual() {
 		if (manual == null) {
@@ -183,7 +183,7 @@ public class IPv6Configuration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv6Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv6Address> getLinkLocal() {
 		if (linkLocal == null) {
@@ -211,7 +211,7 @@ public class IPv6Configuration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv6Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv6Address> getFromDHCP() {
 		if (fromDHCP == null) {
@@ -239,7 +239,7 @@ public class IPv6Configuration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv6Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv6Address> getFromRA() {
 		if (fromRA == null) {

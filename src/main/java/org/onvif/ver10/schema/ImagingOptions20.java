@@ -268,7 +268,7 @@ public class ImagingOptions20 {
 	 * Objects of the following type(s) are allowed in the list {@link IrCutFilterMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<IrCutFilterMode> getIrCutFilterModes() {
 		if (irCutFilterModes == null) {

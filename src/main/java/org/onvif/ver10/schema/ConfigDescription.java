@@ -125,7 +125,7 @@ public class ConfigDescription {
 	 * Objects of the following type(s) are allowed in the list {@link ConfigDescription.Messages }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ConfigDescription.Messages> getMessages() {
 		if (messages == null) {

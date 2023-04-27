@@ -94,7 +94,7 @@ public class Mpeg4Options {
 	 * Objects of the following type(s) are allowed in the list {@link VideoResolution }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoResolution> getResolutionsAvailable() {
 		if (resolutionsAvailable == null) {
@@ -185,7 +185,7 @@ public class Mpeg4Options {
 	 * Objects of the following type(s) are allowed in the list {@link Mpeg4Profile }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Mpeg4Profile> getMpeg4ProfilesSupported() {
 		if (mpeg4ProfilesSupported == null) {

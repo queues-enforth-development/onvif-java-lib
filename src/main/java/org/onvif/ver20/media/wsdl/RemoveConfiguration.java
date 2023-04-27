@@ -58,7 +58,7 @@ public class RemoveConfiguration {
     /**
      * Ruft den Wert der profileToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -100,7 +100,7 @@ public class RemoveConfiguration {
      * {@link ConfigurationRef }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<ConfigurationRef> getConfiguration() {
         if (configuration == null) {

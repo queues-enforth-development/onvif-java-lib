@@ -76,7 +76,7 @@ public class VideoSource extends DeviceEntity {
 	/**
 	 * Ruft den Wert der framerate-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getFramerate() {
 		return framerate;

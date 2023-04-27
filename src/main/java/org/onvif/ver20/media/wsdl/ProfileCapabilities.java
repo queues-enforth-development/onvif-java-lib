@@ -90,7 +90,7 @@ public class ProfileCapabilities {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -102,7 +102,7 @@ public class ProfileCapabilities {
     /**
      * Ruft den Wert der maximumNumberOfProfiles-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Integer }
      *     
@@ -144,7 +144,7 @@ public class ProfileCapabilities {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getConfigurationsSupported() {
         if (configurationsSupported == null) {
@@ -164,7 +164,7 @@ public class ProfileCapabilities {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

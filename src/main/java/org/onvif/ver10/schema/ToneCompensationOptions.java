@@ -91,7 +91,7 @@ public class ToneCompensationOptions {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getMode() {
         if (mode == null) {
@@ -103,7 +103,7 @@ public class ToneCompensationOptions {
     /**
      * Ruft den Wert der level-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public boolean isLevel() {
         return level;
@@ -140,7 +140,7 @@ public class ToneCompensationOptions {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -160,7 +160,7 @@ public class ToneCompensationOptions {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

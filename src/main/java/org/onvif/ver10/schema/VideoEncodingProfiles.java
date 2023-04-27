@@ -84,7 +84,7 @@ public enum VideoEncodingProfiles {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return value;
@@ -93,7 +93,7 @@ public enum VideoEncodingProfiles {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static VideoEncodingProfiles fromValue(String v) {
         for (VideoEncodingProfiles c: VideoEncodingProfiles.values()) {

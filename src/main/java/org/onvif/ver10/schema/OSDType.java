@@ -59,7 +59,7 @@ public enum OSDType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -68,7 +68,7 @@ public enum OSDType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static OSDType fromValue(String v) {
 		for (OSDType c : OSDType.values()) {

@@ -85,7 +85,7 @@ public class WhiteBalanceOptions20 {
 	 * Objects of the following type(s) are allowed in the list {@link WhiteBalanceMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<WhiteBalanceMode> getMode() {
 		if (mode == null) {

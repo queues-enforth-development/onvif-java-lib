@@ -120,7 +120,7 @@ public class PTZPositionFilter {
 	/**
 	 * Ruft den Wert der enterOrExit-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isEnterOrExit() {
 		return enterOrExit;
@@ -154,7 +154,7 @@ public class PTZPositionFilter {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

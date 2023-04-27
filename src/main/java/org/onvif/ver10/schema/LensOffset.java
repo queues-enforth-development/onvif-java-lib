@@ -56,7 +56,7 @@ public class LensOffset {
     /**
      * Ruft den Wert der x-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Float }
      *     
@@ -80,7 +80,7 @@ public class LensOffset {
     /**
      * Ruft den Wert der y-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Float }
      *     
@@ -112,7 +112,7 @@ public class LensOffset {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

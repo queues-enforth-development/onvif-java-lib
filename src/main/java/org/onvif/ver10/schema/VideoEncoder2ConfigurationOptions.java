@@ -125,7 +125,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der encoding-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -149,7 +149,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der qualityRange-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link IntRange }
      *     
@@ -191,7 +191,7 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link VideoResolution2 }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<VideoResolution2> getResolutionsAvailable() {
         if (resolutionsAvailable == null) {
@@ -203,7 +203,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der bitrateRange-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link IntRange }
      *     
@@ -246,7 +246,7 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -276,7 +276,7 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link Integer }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Integer> getGovLengthRange() {
         if (govLengthRange == null) {
@@ -306,7 +306,7 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link Float }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Float> getFrameRatesSupported() {
         if (frameRatesSupported == null) {
@@ -336,7 +336,7 @@ public class VideoEncoder2ConfigurationOptions {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getProfilesSupported() {
         if (profilesSupported == null) {
@@ -348,7 +348,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der constantBitRateSupported-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -372,7 +372,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der guaranteedInstances-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Integer }
      *     
@@ -404,7 +404,7 @@ public class VideoEncoder2ConfigurationOptions {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

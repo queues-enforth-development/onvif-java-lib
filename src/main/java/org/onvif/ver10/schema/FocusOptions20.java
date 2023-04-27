@@ -92,7 +92,7 @@ public class FocusOptions20 {
 	 * Objects of the following type(s) are allowed in the list {@link AutoFocusMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AutoFocusMode> getAutoFocusModes() {
 		if (autoFocusModes == null) {

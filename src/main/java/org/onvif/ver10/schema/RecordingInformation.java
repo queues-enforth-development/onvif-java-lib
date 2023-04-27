@@ -232,7 +232,7 @@ public class RecordingInformation {
 	 * Objects of the following type(s) are allowed in the list {@link TrackInformation }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<TrackInformation> getTrack() {
 		if (track == null) {
@@ -281,7 +281,7 @@ public class RecordingInformation {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -67,7 +67,7 @@ public class GetRelayOutputsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link RelayOutput }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<RelayOutput> getRelayOutputs() {
 		if (relayOutputs == null) {

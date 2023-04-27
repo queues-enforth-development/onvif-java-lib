@@ -67,7 +67,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der x-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getX() {
 		return x;
@@ -85,7 +85,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der y-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getY() {
 		return y;
@@ -103,7 +103,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der width-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getWidth() {
 		return width;
@@ -121,7 +121,7 @@ public class IntRectangle {
 	/**
 	 * Ruft den Wert der height-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getHeight() {
 		return height;

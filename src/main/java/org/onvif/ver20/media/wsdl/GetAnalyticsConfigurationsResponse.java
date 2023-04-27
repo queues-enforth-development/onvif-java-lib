@@ -69,7 +69,7 @@ public class GetAnalyticsConfigurationsResponse {
      * {@link VideoAnalyticsConfiguration }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<VideoAnalyticsConfiguration> getConfigurations() {
         if (configurations == null) {

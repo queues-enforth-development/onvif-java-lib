@@ -88,7 +88,7 @@ public class ColorCovariance {
 	/**
 	 * Ruft den Wert der xx-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getXX() {
 		return xx;
@@ -106,7 +106,7 @@ public class ColorCovariance {
 	/**
 	 * Ruft den Wert der yy-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getYY() {
 		return yy;
@@ -124,7 +124,7 @@ public class ColorCovariance {
 	/**
 	 * Ruft den Wert der zz-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getZZ() {
 		return zz;

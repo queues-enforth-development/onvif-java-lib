@@ -65,7 +65,7 @@ public enum Dot11AuthAndMangementSuite {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -74,7 +74,7 @@ public enum Dot11AuthAndMangementSuite {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Dot11AuthAndMangementSuite fromValue(String v) {
 		for (Dot11AuthAndMangementSuite c : Dot11AuthAndMangementSuite.values()) {

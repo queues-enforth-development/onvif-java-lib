@@ -49,7 +49,7 @@ public class GetOSDOptionsResponse {
     /**
      * Ruft den Wert der osdOptions-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link OSDConfigurationOptions }
      *     

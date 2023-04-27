@@ -94,7 +94,7 @@ public class H264Options {
 	 * Objects of the following type(s) are allowed in the list {@link VideoResolution }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoResolution> getResolutionsAvailable() {
 		if (resolutionsAvailable == null) {
@@ -185,7 +185,7 @@ public class H264Options {
 	 * Objects of the following type(s) are allowed in the list {@link H264Profile }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<H264Profile> getH264ProfilesSupported() {
 		if (h264ProfilesSupported == null) {

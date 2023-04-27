@@ -60,7 +60,7 @@ public class GetProfiles {
     /**
      * Ruft den Wert der token-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -102,7 +102,7 @@ public class GetProfiles {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getType() {
         if (type == null) {

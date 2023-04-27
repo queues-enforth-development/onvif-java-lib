@@ -104,7 +104,7 @@ public enum ConfigurationEnumeration {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return value;
@@ -113,7 +113,7 @@ public enum ConfigurationEnumeration {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ConfigurationEnumeration fromValue(String v) {
         for (ConfigurationEnumeration c: ConfigurationEnumeration.values()) {

@@ -64,7 +64,7 @@ public class FloatList {
 	 * Objects of the following type(s) are allowed in the list {@link Float }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Float> getItems() {
 		if (items == null) {

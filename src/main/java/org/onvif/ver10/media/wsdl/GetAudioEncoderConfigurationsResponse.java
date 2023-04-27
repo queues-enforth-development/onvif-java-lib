@@ -67,7 +67,7 @@ public class GetAudioEncoderConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link AudioEncoderConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioEncoderConfiguration> getConfigurations() {
 		if (configurations == null) {

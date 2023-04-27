@@ -69,7 +69,7 @@ public class GetAudioOutputConfigurationsResponse {
      * {@link AudioOutputConfiguration }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<AudioOutputConfiguration> getConfigurations() {
         if (configurations == null) {

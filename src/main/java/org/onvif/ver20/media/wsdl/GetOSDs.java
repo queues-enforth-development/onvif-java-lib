@@ -56,7 +56,7 @@ public class GetOSDs {
     /**
      * Ruft den Wert der osdToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -80,7 +80,7 @@ public class GetOSDs {
     /**
      * Ruft den Wert der configurationToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

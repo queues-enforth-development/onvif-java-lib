@@ -67,7 +67,7 @@ public class GetSystemBackupResponse {
 	 * Objects of the following type(s) are allowed in the list {@link BackupFile }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<BackupFile> getBackupFiles() {
 		if (backupFiles == null) {

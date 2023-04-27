@@ -69,7 +69,7 @@ public class PTZPresetTourSupported {
 	/**
 	 * Ruft den Wert der maximumNumberOfPresetTours-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMaximumNumberOfPresetTours() {
 		return maximumNumberOfPresetTours;
@@ -103,7 +103,7 @@ public class PTZPresetTourSupported {
 	 * Objects of the following type(s) are allowed in the list {@link PTZPresetTourOperation }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PTZPresetTourOperation> getPTZPresetTourOperation() {
 		if (ptzPresetTourOperation == null) {

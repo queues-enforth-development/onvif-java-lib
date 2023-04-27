@@ -53,7 +53,7 @@ public class Vector1D {
 	/**
 	 * Ruft den Wert der x-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getX() {
 		return x;

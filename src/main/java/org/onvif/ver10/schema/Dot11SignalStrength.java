@@ -80,7 +80,7 @@ public enum Dot11SignalStrength {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -89,7 +89,7 @@ public enum Dot11SignalStrength {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Dot11SignalStrength fromValue(String v) {
 		for (Dot11SignalStrength c : Dot11SignalStrength.values()) {

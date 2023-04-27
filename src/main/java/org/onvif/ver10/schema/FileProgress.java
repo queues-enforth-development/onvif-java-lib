@@ -73,7 +73,7 @@ public class FileProgress {
     /**
      * Ruft den Wert der fileName-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -97,7 +97,7 @@ public class FileProgress {
     /**
      * Ruft den Wert der progress-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getProgress() {
         return progress;
@@ -134,7 +134,7 @@ public class FileProgress {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -154,7 +154,7 @@ public class FileProgress {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

@@ -67,7 +67,7 @@ public class GetCompatibleVideoEncoderConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link VideoEncoderConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoEncoderConfiguration> getConfigurations() {
 		if (configurations == null) {

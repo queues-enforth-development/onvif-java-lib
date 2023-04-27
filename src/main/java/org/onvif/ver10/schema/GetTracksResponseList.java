@@ -71,7 +71,7 @@ public class GetTracksResponseList {
 	 * Objects of the following type(s) are allowed in the list {@link GetTracksResponseItem }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<GetTracksResponseItem> getTrack() {
 		if (track == null) {

@@ -66,7 +66,7 @@ public class AudioSource extends DeviceEntity {
 	/**
 	 * Ruft den Wert der channels-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getChannels() {
 		return channels;
@@ -100,7 +100,7 @@ public class AudioSource extends DeviceEntity {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

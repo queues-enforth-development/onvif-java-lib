@@ -193,7 +193,7 @@ public class Subscribe {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
@@ -252,7 +252,7 @@ public class Subscribe {
 		 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 		 * 
 		 * 
-         * @return 
+         * @return  -
 		 */
 		public List<Object> getAny() {
 			if (any == null) {

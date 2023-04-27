@@ -80,7 +80,7 @@ public class MediaProfile {
     /**
      * Ruft den Wert der name-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -104,7 +104,7 @@ public class MediaProfile {
     /**
      * Ruft den Wert der configurations-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ConfigurationSet }
      *     
@@ -128,7 +128,7 @@ public class MediaProfile {
     /**
      * Ruft den Wert der token-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -152,7 +152,7 @@ public class MediaProfile {
     /**
      * Ruft den Wert der fixed-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -184,7 +184,7 @@ public class MediaProfile {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

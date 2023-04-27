@@ -46,7 +46,7 @@ public enum BacklightCompensationMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -55,7 +55,7 @@ public enum BacklightCompensationMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static BacklightCompensationMode fromValue(String v) {
 		return valueOf(v);

@@ -48,7 +48,7 @@ public class SetVideoSourceModeResponse {
     /**
      * Ruft den Wert der reboot-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public boolean isReboot() {
         return reboot;

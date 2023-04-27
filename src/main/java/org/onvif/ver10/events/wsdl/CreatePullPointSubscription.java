@@ -89,7 +89,7 @@ public class CreatePullPointSubscription {
     /**
      * Ruft den Wert der filter-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link FilterType }
      *     
@@ -113,7 +113,7 @@ public class CreatePullPointSubscription {
     /**
      * Ruft den Wert der initialTerminationTime-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
@@ -137,7 +137,7 @@ public class CreatePullPointSubscription {
     /**
      * Ruft den Wert der subscriptionPolicy-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link CreatePullPointSubscription.SubscriptionPolicy }
      *     
@@ -180,7 +180,7 @@ public class CreatePullPointSubscription {
      * {@link Element }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -242,7 +242,7 @@ public class CreatePullPointSubscription {
          * {@link Element }
          * 
          * 
-         * @return 
+         * @return  -
          */
         public List<Object> getAny() {
             if (any == null) {

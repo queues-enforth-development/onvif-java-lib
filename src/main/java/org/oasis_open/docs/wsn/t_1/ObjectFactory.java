@@ -36,7 +36,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TopicNamespaceType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TopicNamespaceType createTopicNamespaceType() {
 		return new TopicNamespaceType();
@@ -45,7 +45,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TopicSetType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TopicSetType createTopicSetType() {
 		return new TopicSetType();
@@ -54,7 +54,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Documentation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Documentation createDocumentation() {
 		return new Documentation();
@@ -63,7 +63,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TopicType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TopicType createTopicType() {
 		return new TopicType();
@@ -72,7 +72,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link QueryExpressionType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public QueryExpressionType createQueryExpressionType() {
 		return new QueryExpressionType();
@@ -81,7 +81,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TopicNamespaceType.Topic }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TopicNamespaceType.Topic createTopicNamespaceTypeTopic() {
 		return new TopicNamespaceType.Topic();
@@ -91,7 +91,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicSetType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/t-1", name = "TopicSet")
 	public JAXBElement<TopicSetType> createTopicSet(TopicSetType value) {
@@ -102,7 +102,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicNamespaceType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/t-1", name = "TopicNamespace")
 	public JAXBElement<TopicNamespaceType> createTopicNamespace(TopicNamespaceType value) {

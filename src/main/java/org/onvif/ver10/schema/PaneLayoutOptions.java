@@ -80,7 +80,7 @@ public class PaneLayoutOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Rectangle }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Rectangle> getArea() {
 		if (area == null) {

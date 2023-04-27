@@ -157,7 +157,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der quality-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getQuality() {
 		return quality;
@@ -296,7 +296,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -81,7 +81,7 @@ public enum RecordingStatus {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -90,7 +90,7 @@ public enum RecordingStatus {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static RecordingStatus fromValue(String v) {
 		for (RecordingStatus c : RecordingStatus.values()) {

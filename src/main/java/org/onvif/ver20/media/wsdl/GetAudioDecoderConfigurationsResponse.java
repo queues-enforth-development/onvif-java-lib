@@ -69,7 +69,7 @@ public class GetAudioDecoderConfigurationsResponse {
      * {@link AudioDecoderConfiguration }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<AudioDecoderConfiguration> getConfigurations() {
         if (configurations == null) {

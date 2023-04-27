@@ -60,7 +60,7 @@ public class Date {
 	/**
 	 * Ruft den Wert der year-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getYear() {
 		return year;
@@ -78,7 +78,7 @@ public class Date {
 	/**
 	 * Ruft den Wert der month-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMonth() {
 		return month;
@@ -96,7 +96,7 @@ public class Date {
 	/**
 	 * Ruft den Wert der day-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getDay() {
 		return day;

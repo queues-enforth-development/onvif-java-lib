@@ -46,7 +46,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemListDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemListDescription createItemListDescription() {
 		return new ItemListDescription();
@@ -55,7 +55,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ConfigDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ConfigDescription createConfigDescription() {
 		return new ConfigDescription();
@@ -64,7 +64,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Behaviour }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Behaviour createBehaviour() {
 		return new Behaviour();
@@ -73,7 +73,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ColorDescriptor }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ColorDescriptor createColorDescriptor() {
 		return new ColorDescriptor();
@@ -82,7 +82,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EventSubscription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EventSubscription createEventSubscription() {
 		return new EventSubscription();
@@ -91,7 +91,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ClassDescriptor }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ClassDescriptor createClassDescriptor() {
 		return new ClassDescriptor();
@@ -100,7 +100,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemList createItemList() {
 		return new ItemList();
@@ -109,7 +109,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link User }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public User createUser() {
 		return new User();
@@ -118,7 +118,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Scope }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Scope createScope() {
 		return new Scope();
@@ -127,7 +127,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11AvailableNetworks }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11AvailableNetworks createDot11AvailableNetworks() {
 		return new Dot11AvailableNetworks();
@@ -136,7 +136,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NTPInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NTPInformation createNTPInformation() {
 		return new NTPInformation();
@@ -145,7 +145,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DynamicDNSInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DynamicDNSInformation createDynamicDNSInformation() {
 		return new DynamicDNSInformation();
@@ -154,7 +154,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot1XConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot1XConfiguration createDot1XConfiguration() {
 		return new Dot1XConfiguration();
@@ -163,7 +163,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttachmentData }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AttachmentData createAttachmentData() {
 		return new AttachmentData();
@@ -172,7 +172,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkZeroConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkZeroConfiguration createNetworkZeroConfiguration() {
 		return new NetworkZeroConfiguration();
@@ -181,7 +181,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Certificate }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Certificate createCertificate() {
 		return new Certificate();
@@ -190,7 +190,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BackupFile }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BackupFile createBackupFile() {
 		return new BackupFile();
@@ -199,7 +199,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelayOutput }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RelayOutput createRelayOutput() {
 		return new RelayOutput();
@@ -208,7 +208,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemDateTime }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemDateTime createSystemDateTime() {
 		return new SystemDateTime();
@@ -217,7 +217,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TimeZone }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TimeZone createTimeZone() {
 		return new TimeZone();
@@ -226,7 +226,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DateTime }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DateTime createDateTime() {
 		return new DateTime();
@@ -235,7 +235,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Capabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Capabilities createCapabilities() {
 		return new Capabilities();
@@ -244,7 +244,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateStatus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateStatus createCertificateStatus() {
 		return new CertificateStatus();
@@ -253,7 +253,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SupportInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SupportInformation createSupportInformation() {
 		return new SupportInformation();
@@ -262,7 +262,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateInformation createCertificateInformation() {
 		return new CertificateInformation();
@@ -271,7 +271,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkHost }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkHost createNetworkHost() {
 		return new NetworkHost();
@@ -280,7 +280,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RemoteUser }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RemoteUser createRemoteUser() {
 		return new RemoteUser();
@@ -289,7 +289,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelayOutputSettings }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RelayOutputSettings createRelayOutputSettings() {
 		return new RelayOutputSettings();
@@ -298,7 +298,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link HostnameInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public HostnameInformation createHostnameInformation() {
 		return new HostnameInformation();
@@ -307,7 +307,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11Status }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11Status createDot11Status() {
 		return new Dot11Status();
@@ -316,7 +316,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BinaryData }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BinaryData createBinaryData() {
 		return new BinaryData();
@@ -325,7 +325,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPAddressFilter }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPAddressFilter createIPAddressFilter() {
 		return new IPAddressFilter();
@@ -334,7 +334,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceSetConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceSetConfiguration createNetworkInterfaceSetConfiguration() {
 		return new NetworkInterfaceSetConfiguration();
@@ -343,7 +343,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkProtocol }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkProtocol createNetworkProtocol() {
 		return new NetworkProtocol();
@@ -352,7 +352,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemLogUriList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemLogUriList createSystemLogUriList() {
 		return new SystemLogUriList();
@@ -361,7 +361,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DNSInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DNSInformation createDNSInformation() {
 		return new DNSInformation();
@@ -370,7 +370,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterface }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterface createNetworkInterface() {
 		return new NetworkInterface();
@@ -379,7 +379,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateWithPrivateKey }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateWithPrivateKey createCertificateWithPrivateKey() {
 		return new CertificateWithPrivateKey();
@@ -388,7 +388,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPAddress }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPAddress createIPAddress() {
 		return new IPAddress();
@@ -397,7 +397,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11Capabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11Capabilities createDot11Capabilities() {
 		return new Dot11Capabilities();
@@ -406,7 +406,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkGateway }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkGateway createNetworkGateway() {
 		return new NetworkGateway();
@@ -415,7 +415,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemLog }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemLog createSystemLog() {
 		return new SystemLog();
@@ -424,7 +424,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioSourceConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioSourceConfiguration createAudioSourceConfiguration() {
 		return new AudioSourceConfiguration();
@@ -433,7 +433,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZConfiguration createPTZConfiguration() {
 		return new PTZConfiguration();
@@ -442,7 +442,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceConfiguration createVideoSourceConfiguration() {
 		return new VideoSourceConfiguration();
@@ -451,7 +451,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Message }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Message createMessage() {
 		return new Message();
@@ -460,7 +460,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MessageExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MessageExtension createMessageExtension() {
 		return new MessageExtension();
@@ -469,7 +469,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioEncoderConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioEncoderConfiguration createAudioEncoderConfiguration() {
 		return new AudioEncoderConfiguration();
@@ -478,7 +478,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoEncoderConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoEncoderConfiguration createVideoEncoderConfiguration() {
 		return new VideoEncoderConfiguration();
@@ -487,7 +487,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataStream }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataStream createMetadataStream() {
 		return new MetadataStream();
@@ -496,7 +496,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioDecoderConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioDecoderConfiguration createAudioDecoderConfiguration() {
 		return new AudioDecoderConfiguration();
@@ -505,7 +505,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoAnalyticsConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoAnalyticsConfiguration createVideoAnalyticsConfiguration() {
 		return new VideoAnalyticsConfiguration();
@@ -514,7 +514,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioOutputConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioOutputConfiguration createAudioOutputConfiguration() {
 		return new AudioOutputConfiguration();
@@ -523,7 +523,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Polygon }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Polygon createPolygon() {
 		return new Polygon();
@@ -532,7 +532,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataConfiguration createMetadataConfiguration() {
 		return new MetadataConfiguration();
@@ -541,7 +541,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Polyline }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Polyline createPolyline() {
 		return new Polyline();
@@ -550,7 +550,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IrCutFilterAutoAdjustment }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IrCutFilterAutoAdjustment createIrCutFilterAutoAdjustment() {
 		return new IrCutFilterAutoAdjustment();
@@ -559,7 +559,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZNodeExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZNodeExtension2 createPTZNodeExtension2() {
 		return new PTZNodeExtension2();
@@ -568,7 +568,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WideDynamicRangeOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WideDynamicRangeOptions20 createWideDynamicRangeOptions20() {
 		return new WideDynamicRangeOptions20();
@@ -577,7 +577,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateGenerationParametersExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateGenerationParametersExtension createCertificateGenerationParametersExtension() {
 		return new CertificateGenerationParametersExtension();
@@ -586,7 +586,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZSpacesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZSpacesExtension createPTZSpacesExtension() {
 		return new PTZSpacesExtension();
@@ -595,7 +595,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EFlip }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EFlip createEFlip() {
 		return new EFlip();
@@ -604,7 +604,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoAttributes }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoAttributes createVideoAttributes() {
 		return new VideoAttributes();
@@ -613,7 +613,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MediaAttributes }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MediaAttributes createMediaAttributes() {
 		return new MediaAttributes();
@@ -622,7 +622,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SearchCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SearchCapabilities createSearchCapabilities() {
 		return new SearchCapabilities();
@@ -631,7 +631,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link G726DecOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public G726DecOptions createG726DecOptions() {
 		return new G726DecOptions();
@@ -640,7 +640,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DeviceEntity }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DeviceEntity createDeviceEntity() {
 		return new DeviceEntity();
@@ -649,7 +649,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZVector }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZVector createPTZVector() {
 		return new PTZVector();
@@ -658,7 +658,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AACDecOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AACDecOptions createAACDecOptions() {
 		return new AACDecOptions();
@@ -667,7 +667,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingStatus20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingStatus20Extension createImagingStatus20Extension() {
 		return new ImagingStatus20Extension();
@@ -676,7 +676,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZConfigurationOptions createPTZConfigurationOptions() {
 		return new PTZConfigurationOptions();
@@ -685,7 +685,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv6ConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv6ConfigurationExtension createIPv6ConfigurationExtension() {
 		return new IPv6ConfigurationExtension();
@@ -694,7 +694,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoOutputConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoOutputConfigurationOptions createVideoOutputConfigurationOptions() {
 		return new VideoOutputConfigurationOptions();
@@ -703,7 +703,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Rename }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Rename createRename() {
 		return new Rename();
@@ -712,7 +712,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link G711DecOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public G711DecOptions createG711DecOptions() {
 		return new G711DecOptions();
@@ -721,7 +721,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateGenerationParameters }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateGenerationParameters createCertificateGenerationParameters() {
 		return new CertificateGenerationParameters();
@@ -730,7 +730,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Receiver }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Receiver createReceiver() {
 		return new Receiver();
@@ -739,7 +739,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Transport }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Transport createTransport() {
 		return new Transport();
@@ -748,7 +748,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourSpotOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourSpotOptions createPTZPresetTourSpotOptions() {
 		return new PTZPresetTourSpotOptions();
@@ -757,7 +757,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11Configuration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11Configuration createDot11Configuration() {
 		return new Dot11Configuration();
@@ -766,7 +766,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PolylineArrayExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PolylineArrayExtension createPolylineArrayExtension() {
 		return new PolylineArrayExtension();
@@ -775,7 +775,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EventFilter }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EventFilter createEventFilter() {
 		return new EventFilter();
@@ -784,7 +784,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PolygonConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PolygonConfiguration createPolygonConfiguration() {
 		return new PolygonConfiguration();
@@ -793,7 +793,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link GetTracksResponseList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public GetTracksResponseList createGetTracksResponseList() {
 		return new GetTracksResponseList();
@@ -802,7 +802,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RotateOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RotateOptions createRotateOptions() {
 		return new RotateOptions();
@@ -811,7 +811,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SupportedRules }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SupportedRules createSupportedRules() {
 		return new SupportedRules();
@@ -820,7 +820,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceExtension createNetworkInterfaceExtension() {
 		return new NetworkInterfaceExtension();
@@ -829,7 +829,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDConfigurationOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDConfigurationOptionsExtension createOSDConfigurationOptionsExtension() {
 		return new OSDConfigurationOptionsExtension();
@@ -838,7 +838,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BacklightCompensationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BacklightCompensationOptions createBacklightCompensationOptions() {
 		return new BacklightCompensationOptions();
@@ -847,7 +847,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioDecoderConfigurationOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioDecoderConfigurationOptionsExtension createAudioDecoderConfigurationOptionsExtension() {
 		return new AudioDecoderConfigurationOptionsExtension();
@@ -856,7 +856,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Merge }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Merge createMerge() {
 		return new Merge();
@@ -865,7 +865,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Rotate }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Rotate createRotate() {
 		return new Rotate();
@@ -874,7 +874,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDConfigurationExtension createOSDConfigurationExtension() {
 		return new OSDConfigurationExtension();
@@ -883,7 +883,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemCapabilitiesExtension createSystemCapabilitiesExtension() {
 		return new SystemCapabilitiesExtension();
@@ -892,7 +892,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PaneOptionExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PaneOptionExtension createPaneOptionExtension() {
 		return new PaneOptionExtension();
@@ -901,7 +901,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IrCutFilterAutoAdjustmentOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IrCutFilterAutoAdjustmentOptions createIrCutFilterAutoAdjustmentOptions() {
 		return new IrCutFilterAutoAdjustmentOptions();
@@ -910,7 +910,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZStatusFilterOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZStatusFilterOptionsExtension createPTZStatusFilterOptionsExtension() {
 		return new PTZStatusFilterOptionsExtension();
@@ -919,7 +919,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDColor }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDColor createOSDColor() {
 		return new OSDColor();
@@ -928,7 +928,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Split }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Split createSplit() {
 		return new Split();
@@ -937,7 +937,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourStartingConditionOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourStartingConditionOptions createPTZPresetTourStartingConditionOptions() {
 		return new PTZPresetTourStartingConditionOptions();
@@ -946,7 +946,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DisplayCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DisplayCapabilities createDisplayCapabilities() {
 		return new DisplayCapabilities();
@@ -955,7 +955,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PolylineArray }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PolylineArray createPolylineArray() {
 		return new PolylineArray();
@@ -964,7 +964,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Rectangle }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Rectangle createRectangle() {
 		return new Rectangle();
@@ -973,7 +973,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TLSConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TLSConfiguration createTLSConfiguration() {
 		return new TLSConfiguration();
@@ -982,7 +982,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceConnectionSetting }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceConnectionSetting createNetworkInterfaceConnectionSetting() {
 		return new NetworkInterfaceConnectionSetting();
@@ -991,7 +991,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SourceIdentificationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SourceIdentificationExtension createSourceIdentificationExtension() {
 		return new SourceIdentificationExtension();
@@ -1000,7 +1000,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngineInput }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngineInput createAnalyticsEngineInput() {
 		return new AnalyticsEngineInput();
@@ -1009,7 +1009,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ColorOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ColorOptions createColorOptions() {
 		return new ColorOptions();
@@ -1018,7 +1018,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsDeviceCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsDeviceCapabilities createAnalyticsDeviceCapabilities() {
 		return new AnalyticsDeviceCapabilities();
@@ -1027,7 +1027,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SourceReference }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SourceReference createSourceReference() {
 		return new SourceReference();
@@ -1036,7 +1036,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingCapabilities createRecordingCapabilities() {
 		return new RecordingCapabilities();
@@ -1045,7 +1045,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDPosConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDPosConfigurationExtension createOSDPosConfigurationExtension() {
 		return new OSDPosConfigurationExtension();
@@ -1054,7 +1054,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MediaCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MediaCapabilities createMediaCapabilities() {
 		return new MediaCapabilities();
@@ -1063,7 +1063,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkZeroConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkZeroConfigurationExtension createNetworkZeroConfigurationExtension() {
 		return new NetworkZeroConfigurationExtension();
@@ -1072,7 +1072,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusOptions20 createFocusOptions20() {
 		return new FocusOptions20();
@@ -1081,7 +1081,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ConfigDescriptionExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ConfigDescriptionExtension createConfigDescriptionExtension() {
 		return new ConfigDescriptionExtension();
@@ -1090,7 +1090,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MulticastConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MulticastConfiguration createMulticastConfiguration() {
 		return new MulticastConfiguration();
@@ -1099,7 +1099,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SourceIdentification }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SourceIdentification createSourceIdentification() {
 		return new SourceIdentification();
@@ -1108,7 +1108,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ZoomLimits }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ZoomLimits createZoomLimits() {
 		return new ZoomLimits();
@@ -1117,7 +1117,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ExposureOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ExposureOptions20 createExposureOptions20() {
 		return new ExposureOptions20();
@@ -1126,7 +1126,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoOutput }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoOutput createVideoOutput() {
 		return new VideoOutput();
@@ -1135,7 +1135,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoEncoderConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoEncoderConfigurationOptions createVideoEncoderConfigurationOptions() {
 		return new VideoEncoderConfigurationOptions();
@@ -1144,7 +1144,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JpegOptions2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public JpegOptions2 createJpegOptions2() {
 		return new JpegOptions2();
@@ -1153,7 +1153,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv6Configuration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv6Configuration createIPv6Configuration() {
 		return new IPv6Configuration();
@@ -1162,7 +1162,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataConfigurationOptions createMetadataConfigurationOptions() {
 		return new MetadataConfigurationOptions();
@@ -1171,7 +1171,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoResolution }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoResolution createVideoResolution() {
 		return new VideoResolution();
@@ -1180,7 +1180,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataAttributes }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataAttributes createMetadataAttributes() {
 		return new MetadataAttributes();
@@ -1189,7 +1189,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceConfigurationOptions createVideoSourceConfigurationOptions() {
 		return new VideoSourceConfigurationOptions();
@@ -1198,7 +1198,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JpegDecOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public JpegDecOptions createJpegDecOptions() {
 		return new JpegDecOptions();
@@ -1207,7 +1207,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemListDescriptionExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemListDescriptionExtension createItemListDescriptionExtension() {
 		return new ItemListDescriptionExtension();
@@ -1216,7 +1216,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link GenericEapPwdConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public GenericEapPwdConfigurationExtension createGenericEapPwdConfigurationExtension() {
 		return new GenericEapPwdConfigurationExtension();
@@ -1225,7 +1225,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link LayoutOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public LayoutOptionsExtension createLayoutOptionsExtension() {
 		return new LayoutOptionsExtension();
@@ -1234,7 +1234,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Mpeg4Configuration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Mpeg4Configuration createMpeg4Configuration() {
 		return new Mpeg4Configuration();
@@ -1243,7 +1243,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioSource }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioSource createAudioSource() {
 		return new AudioSource();
@@ -1252,7 +1252,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImageStabilizationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImageStabilizationOptions createImageStabilizationOptions() {
 		return new ImageStabilizationOptions();
@@ -1261,7 +1261,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EAPMethodConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EAPMethodConfiguration createEAPMethodConfiguration() {
 		return new EAPMethodConfiguration();
@@ -1270,7 +1270,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusOptions20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusOptions20Extension createFocusOptions20Extension() {
 		return new FocusOptions20Extension();
@@ -1279,7 +1279,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReverseOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReverseOptions createReverseOptions() {
 		return new ReverseOptions();
@@ -1288,7 +1288,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ColorspaceRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ColorspaceRange createColorspaceRange() {
 		return new ColorspaceRange();
@@ -1297,7 +1297,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusStatus20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusStatus20Extension createFocusStatus20Extension() {
 		return new FocusStatus20Extension();
@@ -1306,7 +1306,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link H264Options2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public H264Options2 createH264Options2() {
 		return new H264Options2();
@@ -1315,7 +1315,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link H264DecOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public H264DecOptions createH264DecOptions() {
 		return new H264DecOptions();
@@ -1324,7 +1324,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDReference }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDReference createOSDReference() {
 		return new OSDReference();
@@ -1333,7 +1333,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AbsoluteFocus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AbsoluteFocus createAbsoluteFocus() {
 		return new AbsoluteFocus();
@@ -1342,7 +1342,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZStatus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZStatus createPTZStatus() {
 		return new PTZStatus();
@@ -1351,7 +1351,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DynamicDNSInformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DynamicDNSInformationExtension createDynamicDNSInformationExtension() {
 		return new DynamicDNSInformationExtension();
@@ -1360,7 +1360,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv6NetworkInterfaceSetConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv6NetworkInterfaceSetConfiguration createIPv6NetworkInterfaceSetConfiguration() {
 		return new IPv6NetworkInterfaceSetConfiguration();
@@ -1369,7 +1369,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobConfiguration createRecordingJobConfiguration() {
 		return new RecordingJobConfiguration();
@@ -1378,7 +1378,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioClassDescriptor }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioClassDescriptor createAudioClassDescriptor() {
 		return new AudioClassDescriptor();
@@ -1387,7 +1387,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TrackConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TrackConfiguration createTrackConfiguration() {
 		return new TrackConfiguration();
@@ -1396,7 +1396,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Space2DDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Space2DDescription createSpace2DDescription() {
 		return new Space2DDescription();
@@ -1405,7 +1405,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkZeroConfigurationExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkZeroConfigurationExtension2 createNetworkZeroConfigurationExtension2() {
 		return new NetworkZeroConfigurationExtension2();
@@ -1414,7 +1414,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobStateSource }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobStateSource createRecordingJobStateSource() {
 		return new RecordingJobStateSource();
@@ -1423,7 +1423,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IOCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IOCapabilities createIOCapabilities() {
 		return new IOCapabilities();
@@ -1432,7 +1432,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DateTimeRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DateTimeRange createDateTimeRange() {
 		return new DateTimeRange();
@@ -1441,7 +1441,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TrackAttributes }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TrackAttributes createTrackAttributes() {
 		return new TrackAttributes();
@@ -1450,7 +1450,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateUsage }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateUsage createCertificateUsage() {
 		return new CertificateUsage();
@@ -1459,7 +1459,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Transformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Transformation createTransformation() {
 		return new Transformation();
@@ -1468,7 +1468,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PaneLayoutOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PaneLayoutOptions createPaneLayoutOptions() {
 		return new PaneLayoutOptions();
@@ -1477,7 +1477,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnyHolder }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnyHolder createAnyHolder() {
 		return new AnyHolder();
@@ -1486,7 +1486,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Space1DDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Space1DDescription createSpace1DDescription() {
 		return new Space1DDescription();
@@ -1495,7 +1495,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PolylineArrayConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PolylineArrayConfiguration createPolylineArrayConfiguration() {
 		return new PolylineArrayConfiguration();
@@ -1504,7 +1504,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImageStabilization }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImageStabilization createImageStabilization() {
 		return new ImageStabilization();
@@ -1513,7 +1513,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioClassDescriptorExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioClassDescriptorExtension createAudioClassDescriptorExtension() {
 		return new AudioClassDescriptorExtension();
@@ -1522,7 +1522,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11SecurityConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11SecurityConfiguration createDot11SecurityConfiguration() {
 		return new Dot11SecurityConfiguration();
@@ -1531,7 +1531,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv4NetworkInterfaceSetConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv4NetworkInterfaceSetConfiguration createIPv4NetworkInterfaceSetConfiguration() {
 		return new IPv4NetworkInterfaceSetConfiguration();
@@ -1540,7 +1540,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Vector1D }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Vector1D createVector1D() {
 		return new Vector1D();
@@ -1549,7 +1549,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourSupportedExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourSupportedExtension createPTZPresetTourSupportedExtension() {
 		return new PTZPresetTourSupportedExtension();
@@ -1558,7 +1558,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WhiteBalance }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WhiteBalance createWhiteBalance() {
 		return new WhiteBalance();
@@ -1567,7 +1567,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingInformation createRecordingInformation() {
 		return new RecordingInformation();
@@ -1576,7 +1576,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPositionFilter }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPositionFilter createPTZPositionFilter() {
 		return new PTZPositionFilter();
@@ -1585,7 +1585,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingSettings }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingSettings createImagingSettings() {
 		return new ImagingSettings();
@@ -1594,7 +1594,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Color }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Color createColor() {
 		return new Color();
@@ -1603,7 +1603,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkCapabilitiesExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkCapabilitiesExtension2 createNetworkCapabilitiesExtension2() {
 		return new NetworkCapabilitiesExtension2();
@@ -1612,7 +1612,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MediaUri }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MediaUri createMediaUri() {
 		return new MediaUri();
@@ -1621,7 +1621,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindPTZPositionResult }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindPTZPositionResult createFindPTZPositionResult() {
 		return new FindPTZPositionResult();
@@ -1630,7 +1630,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link GetRecordingsResponseItem }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public GetRecordingsResponseItem createGetRecordingsResponseItem() {
 		return new GetRecordingsResponseItem();
@@ -1639,7 +1639,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Vector2D }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Vector2D createVector2D() {
 		return new Vector2D();
@@ -1648,7 +1648,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ObjectTreeExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ObjectTreeExtension createObjectTreeExtension() {
 		return new ObjectTreeExtension();
@@ -1657,7 +1657,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobStateTrack }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobStateTrack createRecordingJobStateTrack() {
 		return new RecordingJobStateTrack();
@@ -1666,7 +1666,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZConfigurationExtension createPTZConfigurationExtension() {
 		return new PTZConfigurationExtension();
@@ -1675,7 +1675,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceLink }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceLink createNetworkInterfaceLink() {
 		return new NetworkInterfaceLink();
@@ -1684,7 +1684,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioSourceConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioSourceConfigurationOptions createAudioSourceConfigurationOptions() {
 		return new AudioSourceConfigurationOptions();
@@ -1693,7 +1693,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReverseOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReverseOptionsExtension createReverseOptionsExtension() {
 		return new ReverseOptionsExtension();
@@ -1702,7 +1702,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MessageDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MessageDescription createMessageDescription() {
 		return new MessageDescription();
@@ -1711,7 +1711,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JpegOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public JpegOptions createJpegOptions() {
 		return new JpegOptions();
@@ -1720,7 +1720,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IntRectangleRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IntRectangleRange createIntRectangleRange() {
 		return new IntRectangleRange();
@@ -1729,7 +1729,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EFlipOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EFlipOptions createEFlipOptions() {
 		return new EFlipOptions();
@@ -1738,7 +1738,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsStateInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsStateInformation createAnalyticsStateInformation() {
 		return new AnalyticsStateInformation();
@@ -1747,7 +1747,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv6NetworkInterface }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv6NetworkInterface createIPv6NetworkInterface() {
 		return new IPv6NetworkInterface();
@@ -1756,7 +1756,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioDescriptor }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioDescriptor createAudioDescriptor() {
 		return new AudioDescriptor();
@@ -1765,7 +1765,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ProfileCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ProfileCapabilities createProfileCapabilities() {
 		return new ProfileCapabilities();
@@ -1774,7 +1774,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BacklightCompensation20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BacklightCompensation20 createBacklightCompensation20() {
 		return new BacklightCompensation20();
@@ -1783,7 +1783,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImageStabilizationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImageStabilizationExtension createImageStabilizationExtension() {
 		return new ImageStabilizationExtension();
@@ -1792,7 +1792,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EventStreamExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EventStreamExtension createEventStreamExtension() {
 		return new EventStreamExtension();
@@ -1801,7 +1801,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IOCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IOCapabilitiesExtension createIOCapabilitiesExtension() {
 		return new IOCapabilitiesExtension();
@@ -1810,7 +1810,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDConfigurationOptions createOSDConfigurationOptions() {
 		return new OSDConfigurationOptions();
@@ -1819,7 +1819,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusStatus20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusStatus20 createFocusStatus20() {
 		return new FocusStatus20();
@@ -1828,7 +1828,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelativeFocusOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RelativeFocusOptions20 createRelativeFocusOptions20() {
 		return new RelativeFocusOptions20();
@@ -1837,7 +1837,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataInputExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataInputExtension createMetadataInputExtension() {
 		return new MetadataInputExtension();
@@ -1846,7 +1846,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioAnalyticsStreamExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioAnalyticsStreamExtension createAudioAnalyticsStreamExtension() {
 		return new AudioAnalyticsStreamExtension();
@@ -1855,7 +1855,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioAnalyticsStream }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioAnalyticsStream createAudioAnalyticsStream() {
 		return new AudioAnalyticsStream();
@@ -1864,7 +1864,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDColorOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDColorOptionsExtension createOSDColorOptionsExtension() {
 		return new OSDColorOptionsExtension();
@@ -1873,7 +1873,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EventCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EventCapabilities createEventCapabilities() {
 		return new EventCapabilities();
@@ -1882,7 +1882,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioEncoderConfigurationOption }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioEncoderConfigurationOption createAudioEncoderConfigurationOption() {
 		return new AudioEncoderConfigurationOption();
@@ -1891,7 +1891,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BacklightCompensationOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BacklightCompensationOptions20 createBacklightCompensationOptions20() {
 		return new BacklightCompensationOptions20();
@@ -1900,7 +1900,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataFilter }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataFilter createMetadataFilter() {
 		return new MetadataFilter();
@@ -1909,7 +1909,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZNodeExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZNodeExtension createPTZNodeExtension() {
 		return new PTZNodeExtension();
@@ -1918,7 +1918,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingStatus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingStatus createImagingStatus() {
 		return new ImagingStatus();
@@ -1927,7 +1927,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WhiteBalance20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WhiteBalance20 createWhiteBalance20() {
 		return new WhiteBalance20();
@@ -1936,7 +1936,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDConfiguration createOSDConfiguration() {
 		return new OSDConfiguration();
@@ -1945,7 +1945,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusStatus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusStatus createFocusStatus() {
 		return new FocusStatus();
@@ -1954,7 +1954,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Frame }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Frame createFrame() {
 		return new Frame();
@@ -1963,7 +1963,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPAddressFilterExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPAddressFilterExtension createIPAddressFilterExtension() {
 		return new IPAddressFilterExtension();
@@ -1972,7 +1972,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReplayCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReplayCapabilities createReplayCapabilities() {
 		return new ReplayCapabilities();
@@ -1981,7 +1981,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ContinuousFocus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ContinuousFocus createContinuousFocus() {
 		return new ContinuousFocus();
@@ -1990,7 +1990,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MotionExpressionConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MotionExpressionConfiguration createMotionExpressionConfiguration() {
 		return new MotionExpressionConfiguration();
@@ -1999,7 +1999,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobConfigurationExtension createRecordingJobConfigurationExtension() {
 		return new RecordingJobConfigurationExtension();
@@ -2008,7 +2008,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourOptions createPTZPresetTourOptions() {
 		return new PTZPresetTourOptions();
@@ -2017,7 +2017,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link StreamSetup }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public StreamSetup createStreamSetup() {
 		return new StreamSetup();
@@ -2026,7 +2026,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IntRectangle }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IntRectangle createIntRectangle() {
 		return new IntRectangle();
@@ -2035,7 +2035,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoDecoderConfigurationOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoDecoderConfigurationOptionsExtension createVideoDecoderConfigurationOptionsExtension() {
 		return new VideoDecoderConfigurationOptionsExtension();
@@ -2044,7 +2044,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTControlDirection }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTControlDirection createPTControlDirection() {
 		return new PTControlDirection();
@@ -2053,7 +2053,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoRateControl }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoRateControl createVideoRateControl() {
 		return new VideoRateControl();
@@ -2062,7 +2062,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelativeFocus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RelativeFocus createRelativeFocus() {
 		return new RelativeFocus();
@@ -2071,7 +2071,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link GetTracksResponseItem }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public GetTracksResponseItem createGetTracksResponseItem() {
 		return new GetTracksResponseItem();
@@ -2080,7 +2080,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Vector }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Vector createVector() {
 		return new Vector();
@@ -2089,7 +2089,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusConfiguration createFocusConfiguration() {
 		return new FocusConfiguration();
@@ -2098,7 +2098,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ProfileExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ProfileExtension createProfileExtension() {
 		return new ProfileExtension();
@@ -2107,7 +2107,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BehaviourExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BehaviourExtension createBehaviourExtension() {
 		return new BehaviourExtension();
@@ -2116,7 +2116,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IrCutFilterAutoAdjustmentExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IrCutFilterAutoAdjustmentExtension createIrCutFilterAutoAdjustmentExtension() {
 		return new IrCutFilterAutoAdjustmentExtension();
@@ -2125,7 +2125,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingOptions20Extension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingOptions20Extension2 createImagingOptions20Extension2() {
 		return new ImagingOptions20Extension2();
@@ -2134,7 +2134,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkCapabilities createNetworkCapabilities() {
 		return new NetworkCapabilities();
@@ -2143,7 +2143,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingOptions20Extension3 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingOptions20Extension3 createImagingOptions20Extension3() {
 		return new ImagingOptions20Extension3();
@@ -2152,7 +2152,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobStateInformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobStateInformationExtension createRecordingJobStateInformationExtension() {
 		return new RecordingJobStateInformationExtension();
@@ -2161,7 +2161,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ObjectTree }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ObjectTree createObjectTree() {
 		return new ObjectTree();
@@ -2170,7 +2170,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZCapabilities createPTZCapabilities() {
 		return new PTZCapabilities();
@@ -2179,7 +2179,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusConfiguration20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusConfiguration20 createFocusConfiguration20() {
 		return new FocusConfiguration20();
@@ -2188,7 +2188,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDImgConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDImgConfigurationExtension createOSDImgConfigurationExtension() {
 		return new OSDImgConfigurationExtension();
@@ -2197,7 +2197,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TrackAttributesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TrackAttributesExtension createTrackAttributesExtension() {
 		return new TrackAttributesExtension();
@@ -2206,7 +2206,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemCapabilities createSystemCapabilities() {
 		return new SystemCapabilities();
@@ -2215,7 +2215,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WhiteBalanceOptions20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WhiteBalanceOptions20Extension createWhiteBalanceOptions20Extension() {
 		return new WhiteBalanceOptions20Extension();
@@ -2224,7 +2224,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceInfo }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceInfo createNetworkInterfaceInfo() {
 		return new NetworkInterfaceInfo();
@@ -2233,7 +2233,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceExtension2 createVideoSourceExtension2() {
 		return new VideoSourceExtension2();
@@ -2242,7 +2242,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindMetadataResultList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindMetadataResultList createFindMetadataResultList() {
 		return new FindMetadataResultList();
@@ -2251,7 +2251,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngineInputInfoExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngineInputInfoExtension createAnalyticsEngineInputInfoExtension() {
 		return new AnalyticsEngineInputInfoExtension();
@@ -2260,7 +2260,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReceiverCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReceiverCapabilities createReceiverCapabilities() {
 		return new ReceiverCapabilities();
@@ -2269,7 +2269,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindRecordingResultList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindRecordingResultList createFindRecordingResultList() {
 		return new FindRecordingResultList();
@@ -2278,7 +2278,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemDateTimeExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemDateTimeExtension createSystemDateTimeExtension() {
 		return new SystemDateTimeExtension();
@@ -2287,7 +2287,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindPTZPositionResultList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindPTZPositionResultList createFindPTZPositionResultList() {
 		return new FindPTZPositionResultList();
@@ -2296,7 +2296,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RuleEngineConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RuleEngineConfigurationExtension createRuleEngineConfigurationExtension() {
 		return new RuleEngineConfigurationExtension();
@@ -2305,7 +2305,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ClassDescriptorExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ClassDescriptorExtension createClassDescriptorExtension() {
 		return new ClassDescriptorExtension();
@@ -2314,7 +2314,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceSetConfigurationExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceSetConfigurationExtension2 createNetworkInterfaceSetConfigurationExtension2() {
 		return new NetworkInterfaceSetConfigurationExtension2();
@@ -2323,7 +2323,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot3Configuration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot3Configuration createDot3Configuration() {
 		return new Dot3Configuration();
@@ -2332,7 +2332,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDTextConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDTextConfigurationExtension createOSDTextConfigurationExtension() {
 		return new OSDTextConfigurationExtension();
@@ -2341,7 +2341,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngineInputInfo }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngineInputInfo createAnalyticsEngineInputInfo() {
 		return new AnalyticsEngineInputInfo();
@@ -2350,7 +2350,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoOutputExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoOutputExtension createVideoOutputExtension() {
 		return new VideoOutputExtension();
@@ -2359,7 +2359,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ExposureOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ExposureOptions createExposureOptions() {
 		return new ExposureOptions();
@@ -2368,7 +2368,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceConfigurationOptionsExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceConfigurationOptionsExtension2 createVideoSourceConfigurationOptionsExtension2() {
 		return new VideoSourceConfigurationOptionsExtension2();
@@ -2377,7 +2377,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReplayConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReplayConfiguration createReplayConfiguration() {
 		return new ReplayConfiguration();
@@ -2386,7 +2386,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IrCutFilterAutoAdjustmentOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IrCutFilterAutoAdjustmentOptionsExtension createIrCutFilterAutoAdjustmentOptionsExtension() {
 		return new IrCutFilterAutoAdjustmentOptionsExtension();
@@ -2395,7 +2395,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDColorOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDColorOptions createOSDColorOptions() {
 		return new OSDColorOptions();
@@ -2404,7 +2404,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZStatusFilterOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZStatusFilterOptions createPTZStatusFilterOptions() {
 		return new PTZStatusFilterOptions();
@@ -2413,7 +2413,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemCapabilitiesExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemCapabilitiesExtension2 createSystemCapabilitiesExtension2() {
 		return new SystemCapabilitiesExtension2();
@@ -2422,7 +2422,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoEncoderOptionsExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoEncoderOptionsExtension2 createVideoEncoderOptionsExtension2() {
 		return new VideoEncoderOptionsExtension2();
@@ -2431,7 +2431,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelativeFocusOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RelativeFocusOptions createRelativeFocusOptions() {
 		return new RelativeFocusOptions();
@@ -2440,7 +2440,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceConfigurationExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceConfigurationExtension2 createVideoSourceConfigurationExtension2() {
 		return new VideoSourceConfigurationExtension2();
@@ -2449,7 +2449,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusMove }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusMove createFocusMove() {
 		return new FocusMove();
@@ -2458,7 +2458,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngineControl }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngineControl createAnalyticsEngineControl() {
 		return new AnalyticsEngineControl();
@@ -2467,7 +2467,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ObjectId }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ObjectId createObjectId() {
 		return new ObjectId();
@@ -2476,7 +2476,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CellLayout }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CellLayout createCellLayout() {
 		return new CellLayout();
@@ -2485,7 +2485,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Profile }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Profile createProfile() {
 		return new Profile();
@@ -2494,7 +2494,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingSettingsExtension202 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingSettingsExtension202 createImagingSettingsExtension202() {
 		return new ImagingSettingsExtension202();
@@ -2503,7 +2503,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SearchScopeExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SearchScopeExtension createSearchScopeExtension() {
 		return new SearchScopeExtension();
@@ -2512,7 +2512,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingSettingsExtension203 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingSettingsExtension203 createImagingSettingsExtension203() {
 		return new ImagingSettingsExtension203();
@@ -2521,7 +2521,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImageStabilizationOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImageStabilizationOptionsExtension createImageStabilizationOptionsExtension() {
 		return new ImageStabilizationOptionsExtension();
@@ -2530,7 +2530,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ColorDescriptorExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ColorDescriptorExtension createColorDescriptorExtension() {
 		return new ColorDescriptorExtension();
@@ -2539,7 +2539,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Layout }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Layout createLayout() {
 		return new Layout();
@@ -2548,7 +2548,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceSetConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceSetConfigurationExtension createNetworkInterfaceSetConfigurationExtension() {
 		return new NetworkInterfaceSetConfigurationExtension();
@@ -2557,7 +2557,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SecurityCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SecurityCapabilities createSecurityCapabilities() {
 		return new SecurityCapabilities();
@@ -2566,7 +2566,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IOCapabilitiesExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IOCapabilitiesExtension2 createIOCapabilitiesExtension2() {
 		return new IOCapabilitiesExtension2();
@@ -2575,7 +2575,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AppearanceExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AppearanceExtension createAppearanceExtension() {
 		return new AppearanceExtension();
@@ -2584,7 +2584,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobSourceExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobSourceExtension createRecordingJobSourceExtension() {
 		return new RecordingJobSourceExtension();
@@ -2593,7 +2593,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindEventResult }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindEventResult createFindEventResult() {
 		return new FindEventResult();
@@ -2602,7 +2602,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingConfiguration createRecordingConfiguration() {
 		return new RecordingConfiguration();
@@ -2611,7 +2611,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FloatList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FloatList createFloatList() {
 		return new FloatList();
@@ -2620,7 +2620,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PaneConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PaneConfiguration createPaneConfiguration() {
 		return new PaneConfiguration();
@@ -2629,7 +2629,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MediaCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MediaCapabilitiesExtension createMediaCapabilitiesExtension() {
 		return new MediaCapabilitiesExtension();
@@ -2638,7 +2638,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv4NetworkInterface }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv4NetworkInterface createIPv4NetworkInterface() {
 		return new IPv4NetworkInterface();
@@ -2647,7 +2647,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoEncoderOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoEncoderOptionsExtension createVideoEncoderOptionsExtension() {
 		return new VideoEncoderOptionsExtension();
@@ -2656,7 +2656,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioSourceOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioSourceOptionsExtension createAudioSourceOptionsExtension() {
 		return new AudioSourceOptionsExtension();
@@ -2665,7 +2665,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourSupported }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourSupported createPTZPresetTourSupported() {
 		return new PTZPresetTourSupported();
@@ -2674,7 +2674,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IntList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IntList createIntList() {
 		return new IntList();
@@ -2683,7 +2683,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CertificateInformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CertificateInformationExtension createCertificateInformationExtension() {
 		return new CertificateInformationExtension();
@@ -2692,7 +2692,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourStartingConditionExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourStartingConditionExtension createPTZPresetTourStartingConditionExtension() {
 		return new PTZPresetTourStartingConditionExtension();
@@ -2701,7 +2701,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link LayoutOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public LayoutOptions createLayoutOptions() {
 		return new LayoutOptions();
@@ -2710,7 +2710,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ContinuousFocusOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ContinuousFocusOptions createContinuousFocusOptions() {
 		return new ContinuousFocusOptions();
@@ -2719,7 +2719,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataConfigurationExtension createMetadataConfigurationExtension() {
 		return new MetadataConfigurationExtension();
@@ -2728,7 +2728,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CapabilitiesExtension createCapabilitiesExtension() {
 		return new CapabilitiesExtension();
@@ -2737,7 +2737,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZStreamExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZStreamExtension createPTZStreamExtension() {
 		return new PTZStreamExtension();
@@ -2746,7 +2746,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioDecoderConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioDecoderConfigurationOptions createAudioDecoderConfigurationOptions() {
 		return new AudioDecoderConfigurationOptions();
@@ -2755,7 +2755,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DurationRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DurationRange createDurationRange() {
 		return new DurationRange();
@@ -2764,7 +2764,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioEncoderConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioEncoderConfigurationOptions createAudioEncoderConfigurationOptions() {
 		return new AudioEncoderConfigurationOptions();
@@ -2773,7 +2773,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SystemLogUri }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SystemLogUri createSystemLogUri() {
 		return new SystemLogUri();
@@ -2782,7 +2782,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngineConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngineConfigurationExtension createAnalyticsEngineConfigurationExtension() {
 		return new AnalyticsEngineConfigurationExtension();
@@ -2791,7 +2791,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Mpeg4Options }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Mpeg4Options createMpeg4Options() {
 		return new Mpeg4Options();
@@ -2800,7 +2800,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZFilter }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZFilter createPTZFilter() {
 		return new PTZFilter();
@@ -2809,7 +2809,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DeviceCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DeviceCapabilitiesExtension createDeviceCapabilitiesExtension() {
 		return new DeviceCapabilitiesExtension();
@@ -2818,7 +2818,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11AvailableNetworksExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11AvailableNetworksExtension createDot11AvailableNetworksExtension() {
 		return new Dot11AvailableNetworksExtension();
@@ -2827,7 +2827,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11PSKSet }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11PSKSet createDot11PSKSet() {
 		return new Dot11PSKSet();
@@ -2836,7 +2836,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsCapabilities createAnalyticsCapabilities() {
 		return new AnalyticsCapabilities();
@@ -2845,7 +2845,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EapMethodExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EapMethodExtension createEapMethodExtension() {
 		return new EapMethodExtension();
@@ -2854,7 +2854,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPreset }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPreset createPTZPreset() {
 		return new PTZPreset();
@@ -2863,7 +2863,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WideDynamicRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WideDynamicRange createWideDynamicRange() {
 		return new WideDynamicRange();
@@ -2872,7 +2872,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusConfiguration20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusConfiguration20Extension createFocusConfiguration20Extension() {
 		return new FocusConfiguration20Extension();
@@ -2881,7 +2881,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link UserExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public UserExtension createUserExtension() {
 		return new UserExtension();
@@ -2890,7 +2890,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZSpaces }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZSpaces createPTZSpaces() {
 		return new PTZSpaces();
@@ -2899,7 +2899,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SupportedAnalyticsModulesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SupportedAnalyticsModulesExtension createSupportedAnalyticsModulesExtension() {
 		return new SupportedAnalyticsModulesExtension();
@@ -2908,7 +2908,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SupportedRulesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SupportedRulesExtension createSupportedRulesExtension() {
 		return new SupportedRulesExtension();
@@ -2917,7 +2917,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Exposure20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Exposure20 createExposure20() {
 		return new Exposure20();
@@ -2926,7 +2926,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngineConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngineConfiguration createAnalyticsEngineConfiguration() {
 		return new AnalyticsEngineConfiguration();
@@ -2935,7 +2935,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IPv4Configuration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IPv4Configuration createIPv4Configuration() {
 		return new IPv4Configuration();
@@ -2944,7 +2944,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Exposure }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Exposure createExposure() {
 		return new Exposure();
@@ -2953,7 +2953,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ClassDescriptorExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ClassDescriptorExtension2 createClassDescriptorExtension2() {
 		return new ClassDescriptorExtension2();
@@ -2962,7 +2962,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot1XConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot1XConfigurationExtension createDot1XConfigurationExtension() {
 		return new Dot1XConfigurationExtension();
@@ -2971,7 +2971,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ShapeDescriptor }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ShapeDescriptor createShapeDescriptor() {
 		return new ShapeDescriptor();
@@ -2980,7 +2980,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataStreamExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataStreamExtension createMetadataStreamExtension() {
 		return new MetadataStreamExtension();
@@ -2989,7 +2989,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OtherType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OtherType createOtherType() {
 		return new OtherType();
@@ -2998,7 +2998,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SearchScope }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SearchScope createSearchScope() {
 		return new SearchScope();
@@ -3007,7 +3007,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceExtension createVideoSourceExtension() {
 		return new VideoSourceExtension();
@@ -3016,7 +3016,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourStartingCondition }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourStartingCondition createPTZPresetTourStartingCondition() {
 		return new PTZPresetTourStartingCondition();
@@ -3025,7 +3025,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EngineConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EngineConfiguration createEngineConfiguration() {
 		return new EngineConfiguration();
@@ -3034,7 +3034,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SecurityCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SecurityCapabilitiesExtension createSecurityCapabilitiesExtension() {
 		return new SecurityCapabilitiesExtension();
@@ -3043,7 +3043,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FrameExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FrameExtension2 createFrameExtension2() {
 		return new FrameExtension2();
@@ -3052,7 +3052,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioOutput }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioOutput createAudioOutput() {
 		return new AudioOutput();
@@ -3061,7 +3061,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobStateTracks }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobStateTracks createRecordingJobStateTracks() {
 		return new RecordingJobStateTracks();
@@ -3070,7 +3070,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZConfigurationOptions2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZConfigurationOptions2 createPTZConfigurationOptions2() {
 		return new PTZConfigurationOptions2();
@@ -3079,7 +3079,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PrefixedIPv6Address }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PrefixedIPv6Address createPrefixedIPv6Address() {
 		return new PrefixedIPv6Address();
@@ -3088,7 +3088,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link IntRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public IntRange createIntRange() {
 		return new IntRange();
@@ -3097,7 +3097,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TransformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TransformationExtension createTransformationExtension() {
 		return new TransformationExtension();
@@ -3106,7 +3106,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link GetRecordingJobsResponseItem }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public GetRecordingJobsResponseItem createGetRecordingJobsResponseItem() {
 		return new GetRecordingJobsResponseItem();
@@ -3115,7 +3115,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CodingCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CodingCapabilities createCodingCapabilities() {
 		return new CodingCapabilities();
@@ -3124,7 +3124,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RealTimeStreamingCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RealTimeStreamingCapabilitiesExtension createRealTimeStreamingCapabilitiesExtension() {
 		return new RealTimeStreamingCapabilitiesExtension();
@@ -3133,7 +3133,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingSourceInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingSourceInformation createRecordingSourceInformation() {
 		return new RecordingSourceInformation();
@@ -3142,7 +3142,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EFlipOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EFlipOptionsExtension createEFlipOptionsExtension() {
 		return new EFlipOptionsExtension();
@@ -3151,7 +3151,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingSettings20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingSettings20 createImagingSettings20() {
 		return new ImagingSettings20();
@@ -3160,7 +3160,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PrefixedIPv4Address }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PrefixedIPv4Address createPrefixedIPv4Address() {
 		return new PrefixedIPv4Address();
@@ -3169,7 +3169,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ActionEngineEventPayload }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ActionEngineEventPayload createActionEngineEventPayload() {
 		return new ActionEngineEventPayload();
@@ -3178,7 +3178,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RealTimeStreamingCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RealTimeStreamingCapabilities createRealTimeStreamingCapabilities() {
 		return new RealTimeStreamingCapabilities();
@@ -3187,7 +3187,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OnvifVersion }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OnvifVersion createOnvifVersion() {
 		return new OnvifVersion();
@@ -3196,7 +3196,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioOutputConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioOutputConfigurationOptions createAudioOutputConfigurationOptions() {
 		return new AudioOutputConfigurationOptions();
@@ -3205,7 +3205,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ShapeDescriptorExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ShapeDescriptorExtension createShapeDescriptorExtension() {
 		return new ShapeDescriptorExtension();
@@ -3214,7 +3214,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZMoveStatus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZMoveStatus createPTZMoveStatus() {
 		return new PTZMoveStatus();
@@ -3223,7 +3223,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsDeviceEngineConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsDeviceEngineConfigurationExtension createAnalyticsDeviceEngineConfigurationExtension() {
 		return new AnalyticsDeviceEngineConfigurationExtension();
@@ -3232,7 +3232,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RotateExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RotateExtension createRotateExtension() {
 		return new RotateExtension();
@@ -3241,7 +3241,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourStartingConditionOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourStartingConditionOptionsExtension createPTZPresetTourStartingConditionOptionsExtension() {
 		return new PTZPresetTourStartingConditionOptionsExtension();
@@ -3250,7 +3250,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSource }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSource createVideoSource() {
 		return new VideoSource();
@@ -3259,7 +3259,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataStreamExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataStreamExtension2 createMetadataStreamExtension2() {
 		return new MetadataStreamExtension2();
@@ -3268,7 +3268,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTControlDirectionExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTControlDirectionExtension createPTControlDirectionExtension() {
 		return new PTControlDirectionExtension();
@@ -3277,7 +3277,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ProfileExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ProfileExtension2 createProfileExtension2() {
 		return new ProfileExtension2();
@@ -3286,7 +3286,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourPresetDetailOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourPresetDetailOptions createPTZPresetTourPresetDetailOptions() {
 		return new PTZPresetTourPresetDetailOptions();
@@ -3295,7 +3295,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link LayoutExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public LayoutExtension createLayoutExtension() {
 		return new LayoutExtension();
@@ -3304,7 +3304,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link H264Configuration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public H264Configuration createH264Configuration() {
 		return new H264Configuration();
@@ -3313,7 +3313,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Mpeg4DecOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Mpeg4DecOptions createMpeg4DecOptions() {
 		return new Mpeg4DecOptions();
@@ -3322,7 +3322,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RotateOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RotateOptionsExtension createRotateOptionsExtension() {
 		return new RotateOptionsExtension();
@@ -3331,7 +3331,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioAttributes }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioAttributes createAudioAttributes() {
 		return new AudioAttributes();
@@ -3340,7 +3340,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourStatusExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourStatusExtension createPTZPresetTourStatusExtension() {
 		return new PTZPresetTourStatusExtension();
@@ -3349,7 +3349,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MaximumNumberOfOSDs }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MaximumNumberOfOSDs createMaximumNumberOfOSDs() {
 		return new MaximumNumberOfOSDs();
@@ -3358,7 +3358,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsState }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsState createAnalyticsState() {
 		return new AnalyticsState();
@@ -3367,7 +3367,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MoveOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MoveOptions createMoveOptions() {
 		return new MoveOptions();
@@ -3376,7 +3376,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AbsoluteFocusOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AbsoluteFocusOptions createAbsoluteFocusOptions() {
 		return new AbsoluteFocusOptions();
@@ -3385,7 +3385,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WideDynamicRange20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WideDynamicRange20 createWideDynamicRange20() {
 		return new WideDynamicRange20();
@@ -3394,7 +3394,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EventStream }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EventStream createEventStream() {
 		return new EventStream();
@@ -3403,7 +3403,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FloatRange }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FloatRange createFloatRange() {
 		return new FloatRange();
@@ -3412,7 +3412,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourSpotExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourSpotExtension createPTZPresetTourSpotExtension() {
 		return new PTZPresetTourSpotExtension();
@@ -3421,7 +3421,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WideDynamicRangeOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WideDynamicRangeOptions createWideDynamicRangeOptions() {
 		return new WideDynamicRangeOptions();
@@ -3430,7 +3430,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Date }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Date createDate() {
 		return new Date();
@@ -3439,7 +3439,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDImgConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDImgConfiguration createOSDImgConfiguration() {
 		return new OSDImgConfiguration();
@@ -3448,7 +3448,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsEngine }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsEngine createAnalyticsEngine() {
 		return new AnalyticsEngine();
@@ -3457,7 +3457,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindEventResultList }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindEventResultList createFindEventResultList() {
 		return new FindEventResultList();
@@ -3466,7 +3466,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTControlDirectionOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTControlDirectionOptionsExtension createPTControlDirectionOptionsExtension() {
 		return new PTControlDirectionOptionsExtension();
@@ -3475,7 +3475,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourPresetDetail }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourPresetDetail createPTZPresetTourPresetDetail() {
 		return new PTZPresetTourPresetDetail();
@@ -3484,7 +3484,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Mpeg4Options2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Mpeg4Options2 createMpeg4Options2() {
 		return new Mpeg4Options2();
@@ -3493,7 +3493,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReceiverConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReceiverConfiguration createReceiverConfiguration() {
 		return new ReceiverConfiguration();
@@ -3502,7 +3502,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingOptions20 createImagingOptions20() {
 		return new ImagingOptions20();
@@ -3511,7 +3511,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataInput }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataInput createMetadataInput() {
 		return new MetadataInput();
@@ -3520,7 +3520,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDImgOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDImgOptionsExtension createOSDImgOptionsExtension() {
 		return new OSDImgOptionsExtension();
@@ -3529,7 +3529,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemListExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemListExtension createItemListExtension() {
 		return new ItemListExtension();
@@ -3538,7 +3538,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DNSInformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DNSInformationExtension createDNSInformationExtension() {
 		return new DNSInformationExtension();
@@ -3547,7 +3547,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Config }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Config createConfig() {
 		return new Config();
@@ -3556,7 +3556,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DeviceIOCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DeviceIOCapabilities createDeviceIOCapabilities() {
 		return new DeviceIOCapabilities();
@@ -3565,7 +3565,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZConfigurationExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZConfigurationExtension2 createPTZConfigurationExtension2() {
 		return new PTZConfigurationExtension2();
@@ -3574,7 +3574,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ActionEngineEventPayloadExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ActionEngineEventPayloadExtension createActionEngineEventPayloadExtension() {
 		return new ActionEngineEventPayloadExtension();
@@ -3583,7 +3583,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourPresetDetailOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourPresetDetailOptionsExtension createPTZPresetTourPresetDetailOptionsExtension() {
 		return new PTZPresetTourPresetDetailOptionsExtension();
@@ -3592,7 +3592,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingOptions20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingOptions20Extension createImagingOptions20Extension() {
 		return new ImagingOptions20Extension();
@@ -3601,7 +3601,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Time }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Time createTime() {
 		return new Time();
@@ -3610,7 +3610,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTControlDirectionOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTControlDirectionOptions createPTControlDirectionOptions() {
 		return new PTControlDirectionOptions();
@@ -3619,7 +3619,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MessageDescriptionExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MessageDescriptionExtension createMessageDescriptionExtension() {
 		return new MessageDescriptionExtension();
@@ -3628,7 +3628,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Object }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Object createObject() {
 		return new Object();
@@ -3637,7 +3637,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BacklightCompensation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BacklightCompensation createBacklightCompensation() {
 		return new BacklightCompensation();
@@ -3646,7 +3646,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceConfigurationOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceConfigurationOptionsExtension createVideoSourceConfigurationOptionsExtension() {
 		return new VideoSourceConfigurationOptionsExtension();
@@ -3655,7 +3655,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FindMetadataResult }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FindMetadataResult createFindMetadataResult() {
 		return new FindMetadataResult();
@@ -3664,7 +3664,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingSettingsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingSettingsExtension createImagingSettingsExtension() {
 		return new ImagingSettingsExtension();
@@ -3673,7 +3673,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobTrack }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobTrack createRecordingJobTrack() {
 		return new RecordingJobTrack();
@@ -3682,7 +3682,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11PSKSetExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11PSKSetExtension createDot11PSKSetExtension() {
 		return new Dot11PSKSetExtension();
@@ -3691,7 +3691,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WhiteBalanceOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WhiteBalanceOptions20 createWhiteBalanceOptions20() {
 		return new WhiteBalanceOptions20();
@@ -3700,7 +3700,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NTPInformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NTPInformationExtension createNTPInformationExtension() {
 		return new NTPInformationExtension();
@@ -3709,7 +3709,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobSource }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobSource createRecordingJobSource() {
 		return new RecordingJobSource();
@@ -3718,7 +3718,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingOptions createImagingOptions() {
 		return new ImagingOptions();
@@ -3727,7 +3727,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MotionInCells }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MotionInCells createMotionInCells() {
 		return new MotionInCells();
@@ -3736,7 +3736,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingStatus20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingStatus20 createImagingStatus20() {
 		return new ImagingStatus20();
@@ -3745,7 +3745,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Reverse }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Reverse createReverse() {
 		return new Reverse();
@@ -3754,7 +3754,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SupportedAnalyticsModules }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SupportedAnalyticsModules createSupportedAnalyticsModules() {
 		return new SupportedAnalyticsModules();
@@ -3763,7 +3763,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingSettingsExtension20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingSettingsExtension20 createImagingSettingsExtension20() {
 		return new ImagingSettingsExtension20();
@@ -3772,7 +3772,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DigitalInput }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DigitalInput createDigitalInput() {
 		return new DigitalInput();
@@ -3781,7 +3781,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoAnalyticsStreamExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoAnalyticsStreamExtension createVideoAnalyticsStreamExtension() {
 		return new VideoAnalyticsStreamExtension();
@@ -3790,7 +3790,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PresetTour }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PresetTour createPresetTour() {
 		return new PresetTour();
@@ -3799,7 +3799,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkInterfaceExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkInterfaceExtension2 createNetworkInterfaceExtension2() {
 		return new NetworkInterfaceExtension2();
@@ -3808,7 +3808,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoDecoderConfigurationOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoDecoderConfigurationOptions createVideoDecoderConfigurationOptions() {
 		return new VideoDecoderConfigurationOptions();
@@ -3817,7 +3817,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDImgOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDImgOptions createOSDImgOptions() {
 		return new OSDImgOptions();
@@ -3826,7 +3826,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Appearance }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Appearance createAppearance() {
 		return new Appearance();
@@ -3835,7 +3835,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WhiteBalance20Extension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WhiteBalance20Extension createWhiteBalance20Extension() {
 		return new WhiteBalance20Extension();
@@ -3844,7 +3844,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PaneLayout }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PaneLayout createPaneLayout() {
 		return new PaneLayout();
@@ -3853,7 +3853,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link WhiteBalanceOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public WhiteBalanceOptions createWhiteBalanceOptions() {
 		return new WhiteBalanceOptions();
@@ -3862,7 +3862,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link DeviceCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public DeviceCapabilities createDeviceCapabilities() {
 		return new DeviceCapabilities();
@@ -3871,7 +3871,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDTextOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDTextOptions createOSDTextOptions() {
 		return new OSDTextOptions();
@@ -3880,7 +3880,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ObjectExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ObjectExtension createObjectExtension() {
 		return new ObjectExtension();
@@ -3889,7 +3889,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link CapabilitiesExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public CapabilitiesExtension2 createCapabilitiesExtension2() {
 		return new CapabilitiesExtension2();
@@ -3898,7 +3898,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsDeviceEngineConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsDeviceEngineConfiguration createAnalyticsDeviceEngineConfiguration() {
 		return new AnalyticsDeviceEngineConfiguration();
@@ -3907,7 +3907,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDTextConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDTextConfiguration createOSDTextConfiguration() {
 		return new OSDTextConfiguration();
@@ -3916,7 +3916,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ColorCovariance }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ColorCovariance createColorCovariance() {
 		return new ColorCovariance();
@@ -3925,7 +3925,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDPosConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDPosConfiguration createOSDPosConfiguration() {
 		return new OSDPosConfiguration();
@@ -3934,7 +3934,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZSpeed }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZSpeed createPTZSpeed() {
 		return new PTZSpeed();
@@ -3943,7 +3943,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkCapabilitiesExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkCapabilitiesExtension createNetworkCapabilitiesExtension() {
 		return new NetworkCapabilitiesExtension();
@@ -3952,7 +3952,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PanTiltLimits }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PanTiltLimits createPanTiltLimits() {
 		return new PanTiltLimits();
@@ -3961,7 +3961,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingSummary }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingSummary createRecordingSummary() {
 		return new RecordingSummary();
@@ -3970,7 +3970,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link SecurityCapabilitiesExtension2 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public SecurityCapabilitiesExtension2 createSecurityCapabilitiesExtension2() {
 		return new SecurityCapabilitiesExtension2();
@@ -3979,7 +3979,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZNode }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZNode createPTZNode() {
 		return new PTZNode();
@@ -3988,7 +3988,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourStatus }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourStatus createPTZPresetTourStatus() {
 		return new PTZPresetTourStatus();
@@ -3997,7 +3997,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RuleEngineConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RuleEngineConfiguration createRuleEngineConfiguration() {
 		return new RuleEngineConfiguration();
@@ -4006,7 +4006,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoSourceConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoSourceConfigurationExtension createVideoSourceConfigurationExtension() {
 		return new VideoSourceConfigurationExtension();
@@ -4015,7 +4015,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link TrackInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public TrackInformation createTrackInformation() {
 		return new TrackInformation();
@@ -4024,7 +4024,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AnalyticsDeviceExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AnalyticsDeviceExtension createAnalyticsDeviceExtension() {
 		return new AnalyticsDeviceExtension();
@@ -4033,7 +4033,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RecordingJobStateInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RecordingJobStateInformation createRecordingJobStateInformation() {
 		return new RecordingJobStateInformation();
@@ -4042,7 +4042,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoAnalyticsStream }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoAnalyticsStream createVideoAnalyticsStream() {
 		return new VideoAnalyticsStream();
@@ -4051,7 +4051,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ConfigurationEntity }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ConfigurationEntity createConfigurationEntity() {
 		return new ConfigurationEntity();
@@ -4060,7 +4060,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MoveOptions20 }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MoveOptions20 createMoveOptions20() {
 		return new MoveOptions20();
@@ -4069,7 +4069,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link HostnameInformationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public HostnameInformationExtension createHostnameInformationExtension() {
 		return new HostnameInformationExtension();
@@ -4078,7 +4078,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourExtension createPTZPresetTourExtension() {
 		return new PTZPresetTourExtension();
@@ -4087,7 +4087,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MotionExpression }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MotionExpression createMotionExpression() {
 		return new MotionExpression();
@@ -4096,7 +4096,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link H264Options }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public H264Options createH264Options() {
 		return new H264Options();
@@ -4105,7 +4105,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReceiverStateInformation }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReceiverStateInformation createReceiverStateInformation() {
 		return new ReceiverStateInformation();
@@ -4114,7 +4114,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Dot11SecurityConfigurationExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Dot11SecurityConfigurationExtension createDot11SecurityConfigurationExtension() {
 		return new Dot11SecurityConfigurationExtension();
@@ -4123,7 +4123,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkProtocolExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkProtocolExtension createNetworkProtocolExtension() {
 		return new NetworkProtocolExtension();
@@ -4132,7 +4132,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZStream }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZStream createPTZStream() {
 		return new PTZStream();
@@ -4141,7 +4141,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FrameExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FrameExtension createFrameExtension() {
 		return new FrameExtension();
@@ -4150,7 +4150,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourSpot }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourSpot createPTZPresetTourSpot() {
 		return new PTZPresetTourSpot();
@@ -4159,7 +4159,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link PTZPresetTourTypeExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public PTZPresetTourTypeExtension createPTZPresetTourTypeExtension() {
 		return new PTZPresetTourTypeExtension();
@@ -4168,7 +4168,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link FocusOptions }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public FocusOptions createFocusOptions() {
 		return new FocusOptions();
@@ -4177,7 +4177,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link OSDTextOptionsExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public OSDTextOptionsExtension createOSDTextOptionsExtension() {
 		return new OSDTextOptionsExtension();
@@ -4186,7 +4186,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ImagingCapabilities }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ImagingCapabilities createImagingCapabilities() {
 		return new ImagingCapabilities();
@@ -4195,7 +4195,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link VideoOutputConfiguration }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public VideoOutputConfiguration createVideoOutputConfiguration() {
 		return new VideoOutputConfiguration();
@@ -4204,7 +4204,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AudioClassCandidate }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AudioClassCandidate createAudioClassCandidate() {
 		return new AudioClassCandidate();
@@ -4213,7 +4213,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link NetworkHostExtension }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public NetworkHostExtension createNetworkHostExtension() {
 		return new NetworkHostExtension();
@@ -4222,7 +4222,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemListDescription.SimpleItemDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemListDescription.SimpleItemDescription createItemListDescriptionSimpleItemDescription() {
 		return new ItemListDescription.SimpleItemDescription();
@@ -4231,7 +4231,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemListDescription.ElementItemDescription }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemListDescription.ElementItemDescription createItemListDescriptionElementItemDescription() {
 		return new ItemListDescription.ElementItemDescription();
@@ -4240,7 +4240,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ConfigDescription.Messages }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ConfigDescription.Messages createConfigDescriptionMessages() {
 		return new ConfigDescription.Messages();
@@ -4249,7 +4249,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Behaviour.Removed }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Behaviour.Removed createBehaviourRemoved() {
 		return new Behaviour.Removed();
@@ -4258,7 +4258,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Behaviour.Idle }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Behaviour.Idle createBehaviourIdle() {
 		return new Behaviour.Idle();
@@ -4267,7 +4267,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ColorDescriptor.ColorCluster }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ColorDescriptor.ColorCluster createColorDescriptorColorCluster() {
 		return new ColorDescriptor.ColorCluster();
@@ -4276,7 +4276,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EventSubscription.SubscriptionPolicy }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EventSubscription.SubscriptionPolicy createEventSubscriptionSubscriptionPolicy() {
 		return new EventSubscription.SubscriptionPolicy();
@@ -4285,7 +4285,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ClassDescriptor.ClassCandidate }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ClassDescriptor.ClassCandidate createClassDescriptorClassCandidate() {
 		return new ClassDescriptor.ClassCandidate();
@@ -4294,7 +4294,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemList.SimpleItem }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemList.SimpleItem createItemListSimpleItem() {
 		return new ItemList.SimpleItem();
@@ -4303,7 +4303,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ItemList.ElementItem }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ItemList.ElementItem createItemListElementItem() {
 		return new ItemList.ElementItem();
@@ -4313,7 +4313,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link VideoSourceConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "VideoSourceConfiguration")
 	public JAXBElement<VideoSourceConfiguration> createVideoSourceConfiguration(VideoSourceConfiguration value) {
@@ -4324,7 +4324,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MetadataStream }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "MetadataStream")
 	public JAXBElement<MetadataStream> createMetadataStream(MetadataStream value) {
@@ -4335,7 +4335,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioEncoderConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioEncoderConfiguration")
 	public JAXBElement<AudioEncoderConfiguration> createAudioEncoderConfiguration(AudioEncoderConfiguration value) {
@@ -4346,7 +4346,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link VideoEncoderConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "VideoEncoderConfiguration")
 	public JAXBElement<VideoEncoderConfiguration> createVideoEncoderConfiguration(VideoEncoderConfiguration value) {
@@ -4357,7 +4357,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link VideoAnalyticsConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "VideoAnalyticsConfiguration")
 	public JAXBElement<VideoAnalyticsConfiguration> createVideoAnalyticsConfiguration(VideoAnalyticsConfiguration value) {
@@ -4368,7 +4368,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioOutputConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioOutputConfiguration")
 	public JAXBElement<AudioOutputConfiguration> createAudioOutputConfiguration(AudioOutputConfiguration value) {
@@ -4379,7 +4379,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Polygon }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "Polygon")
 	public JAXBElement<Polygon> createPolygon(Polygon value) {
@@ -4390,7 +4390,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Polyline }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "Polyline")
 	public JAXBElement<Polyline> createPolyline(Polyline value) {
@@ -4401,7 +4401,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioSourceConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioSourceConfiguration")
 	public JAXBElement<AudioSourceConfiguration> createAudioSourceConfiguration(AudioSourceConfiguration value) {
@@ -4412,7 +4412,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MetadataConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "MetadataConfiguration")
 	public JAXBElement<MetadataConfiguration> createMetadataConfiguration(MetadataConfiguration value) {
@@ -4423,7 +4423,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link PTZConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "PTZConfiguration")
 	public JAXBElement<PTZConfiguration> createPTZConfiguration(PTZConfiguration value) {
@@ -4434,7 +4434,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioDecoderConfiguration }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioDecoderConfiguration")
 	public JAXBElement<AudioDecoderConfiguration> createAudioDecoderConfiguration(AudioDecoderConfiguration value) {

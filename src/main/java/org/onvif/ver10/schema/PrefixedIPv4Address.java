@@ -77,7 +77,7 @@ public class PrefixedIPv4Address {
 	/**
 	 * Ruft den Wert der prefixLength-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getPrefixLength() {
 		return prefixLength;

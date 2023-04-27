@@ -78,7 +78,7 @@ public class RuleEngineConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link Config }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Config> getRule() {
 		if (rule == null) {

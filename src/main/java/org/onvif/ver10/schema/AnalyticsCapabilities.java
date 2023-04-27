@@ -101,7 +101,7 @@ public class AnalyticsCapabilities {
 	/**
 	 * Ruft den Wert der ruleSupport-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRuleSupport() {
 		return ruleSupport;
@@ -119,7 +119,7 @@ public class AnalyticsCapabilities {
 	/**
 	 * Ruft den Wert der analyticsModuleSupport-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAnalyticsModuleSupport() {
 		return analyticsModuleSupport;
@@ -153,7 +153,7 @@ public class AnalyticsCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

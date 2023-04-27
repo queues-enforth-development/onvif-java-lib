@@ -52,7 +52,7 @@ public enum ExposurePriority {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -61,7 +61,7 @@ public enum ExposurePriority {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ExposurePriority fromValue(String v) {
 		for (ExposurePriority c : ExposurePriority.values()) {

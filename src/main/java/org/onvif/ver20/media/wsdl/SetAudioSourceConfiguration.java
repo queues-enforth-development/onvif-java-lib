@@ -49,7 +49,7 @@ public class SetAudioSourceConfiguration {
     /**
      * Ruft den Wert der configuration-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link AudioSourceConfiguration }
      *     

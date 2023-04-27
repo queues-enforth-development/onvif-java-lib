@@ -71,7 +71,7 @@ public class ImagingSettingsExtension202 {
 	 * Objects of the following type(s) are allowed in the list {@link IrCutFilterAutoAdjustment }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<IrCutFilterAutoAdjustment> getIrCutFilterAutoAdjustment() {
 		if (irCutFilterAutoAdjustment == null) {

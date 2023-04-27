@@ -132,7 +132,7 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getTopicNamespaceLocation() {
         if (topicNamespaceLocation == null) {
@@ -144,7 +144,7 @@ public class GetEventPropertiesResponse {
     /**
      * True when topicset is fixed for all times.
      * 
-     * @return 
+     * @return  -
      */
     public boolean isFixedTopicSet() {
         return fixedTopicSet;
@@ -162,7 +162,7 @@ public class GetEventPropertiesResponse {
     /**
      * Set of topics supported.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link TopicSetType }
      *     
@@ -215,7 +215,7 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getTopicExpressionDialect() {
         if (topicExpressionDialect == null) {
@@ -245,7 +245,7 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getMessageContentFilterDialect() {
         if (messageContentFilterDialect == null) {
@@ -275,7 +275,7 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getProducerPropertiesFilterDialect() {
         if (producerPropertiesFilterDialect == null) {
@@ -305,7 +305,7 @@ public class GetEventPropertiesResponse {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getMessageContentSchemaLocation() {
         if (messageContentSchemaLocation == null) {
@@ -335,7 +335,7 @@ public class GetEventPropertiesResponse {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {

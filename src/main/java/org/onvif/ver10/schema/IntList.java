@@ -66,7 +66,7 @@ public class IntList {
 	 * Objects of the following type(s) are allowed in the list {@link Integer }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Integer> getItems() {
 		if (items == null) {

@@ -44,7 +44,7 @@ public enum WhiteBalanceMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -53,7 +53,7 @@ public enum WhiteBalanceMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static WhiteBalanceMode fromValue(String v) {
 		return valueOf(v);

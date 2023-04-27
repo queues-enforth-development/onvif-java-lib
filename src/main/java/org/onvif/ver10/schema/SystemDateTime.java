@@ -111,7 +111,7 @@ public class SystemDateTime {
 	/**
 	 * Ruft den Wert der daylightSavings-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDaylightSavings() {
 		return daylightSavings;

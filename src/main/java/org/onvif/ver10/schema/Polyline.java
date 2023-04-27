@@ -64,7 +64,7 @@ public class Polyline {
 	 * Objects of the following type(s) are allowed in the list {@link Vector }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Vector> getPoint() {
 		if (point == null) {

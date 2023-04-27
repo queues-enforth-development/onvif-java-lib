@@ -75,7 +75,7 @@ public class NetworkGateway {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getIPv4Address() {
 		if (iPv4Address == null) {
@@ -103,7 +103,7 @@ public class NetworkGateway {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getIPv6Address() {
 		if (iPv6Address == null) {

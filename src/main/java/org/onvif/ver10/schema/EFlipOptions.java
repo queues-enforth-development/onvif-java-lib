@@ -78,7 +78,7 @@ public class EFlipOptions {
 	 * Objects of the following type(s) are allowed in the list {@link EFlipMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<EFlipMode> getMode() {
 		if (mode == null) {

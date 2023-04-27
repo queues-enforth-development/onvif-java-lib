@@ -52,7 +52,7 @@ public enum IPType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -61,7 +61,7 @@ public enum IPType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static IPType fromValue(String v) {
 		for (IPType c : IPType.values()) {

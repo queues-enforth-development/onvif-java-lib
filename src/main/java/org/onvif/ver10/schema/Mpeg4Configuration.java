@@ -53,7 +53,7 @@ public class Mpeg4Configuration {
 	/**
 	 * Ruft den Wert der govLength-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getGovLength() {
 		return govLength;

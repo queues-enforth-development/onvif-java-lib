@@ -134,7 +134,7 @@ public class RecordingJobStateInformation {
 	 * Objects of the following type(s) are allowed in the list {@link RecordingJobStateSource }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<RecordingJobStateSource> getSources() {
 		if (sources == null) {

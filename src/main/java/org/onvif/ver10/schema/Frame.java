@@ -152,7 +152,7 @@ public class Frame {
 	 * Objects of the following type(s) are allowed in the list {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getObject() {
 		if (object == null) {

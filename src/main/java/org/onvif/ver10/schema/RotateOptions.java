@@ -85,7 +85,7 @@ public class RotateOptions {
 	 * Objects of the following type(s) are allowed in the list {@link RotateMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<RotateMode> getMode() {
 		if (mode == null) {

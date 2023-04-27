@@ -49,7 +49,7 @@ public class GetImagingSettingsResponse {
     /**
      * Ruft den Wert der imagingSettings-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ImagingSettings20 }
      *     

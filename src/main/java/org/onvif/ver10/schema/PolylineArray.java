@@ -78,7 +78,7 @@ public class PolylineArray {
 	 * Objects of the following type(s) are allowed in the list {@link Polyline }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Polyline> getSegment() {
 		if (segment == null) {

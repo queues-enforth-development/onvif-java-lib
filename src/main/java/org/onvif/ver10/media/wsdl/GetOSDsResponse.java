@@ -67,7 +67,7 @@ public class GetOSDsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link OSDConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<OSDConfiguration> getOSDs() {
 		if (osDs == null) {

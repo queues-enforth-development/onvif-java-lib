@@ -80,7 +80,7 @@ public class NetworkZeroConfigurationExtension {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
@@ -108,7 +108,7 @@ public class NetworkZeroConfigurationExtension {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkZeroConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<NetworkZeroConfiguration> getAdditional() {
 		if (additional == null) {

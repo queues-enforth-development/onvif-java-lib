@@ -60,7 +60,7 @@ public class PTZFilter {
 	/**
 	 * Ruft den Wert der status-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isStatus() {
 		return status;
@@ -78,7 +78,7 @@ public class PTZFilter {
 	/**
 	 * Ruft den Wert der position-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isPosition() {
 		return position;

@@ -52,7 +52,7 @@ public enum IPAddressFilterType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -61,7 +61,7 @@ public enum IPAddressFilterType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static IPAddressFilterType fromValue(String v) {
 		for (IPAddressFilterType c : IPAddressFilterType.values()) {

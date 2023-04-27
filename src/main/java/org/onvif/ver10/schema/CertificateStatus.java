@@ -97,7 +97,7 @@ public class CertificateStatus {
 	/**
 	 * Ruft den Wert der status-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isStatus() {
 		return status;
@@ -131,7 +131,7 @@ public class CertificateStatus {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

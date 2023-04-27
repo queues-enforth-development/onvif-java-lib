@@ -66,7 +66,7 @@ public class GetVideoSourceModesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link VideoSourceMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoSourceMode> getVideoSourceModes() {
 		if (videoSourceModes == null) {

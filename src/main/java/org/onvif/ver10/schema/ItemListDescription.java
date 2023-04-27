@@ -109,7 +109,7 @@ public class ItemListDescription {
 	 * Objects of the following type(s) are allowed in the list {@link ItemListDescription.SimpleItemDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ItemListDescription.SimpleItemDescription> getSimpleItemDescription() {
 		if (simpleItemDescription == null) {
@@ -137,7 +137,7 @@ public class ItemListDescription {
 	 * Objects of the following type(s) are allowed in the list {@link ItemListDescription.ElementItemDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ItemListDescription.ElementItemDescription> getElementItemDescription() {
 		if (elementItemDescription == null) {

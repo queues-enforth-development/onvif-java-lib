@@ -48,7 +48,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link EndpointReferenceType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public EndpointReferenceType createEndpointReferenceType() {
 		return new EndpointReferenceType();
@@ -57,7 +57,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ProblemActionType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ProblemActionType createProblemActionType() {
 		return new ProblemActionType();
@@ -66,7 +66,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedAnyType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AttributedAnyType createAttributedAnyType() {
 		return new AttributedAnyType();
@@ -75,7 +75,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedURIType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AttributedURIType createAttributedURIType() {
 		return new AttributedURIType();
@@ -84,7 +84,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedQNameType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AttributedQNameType createAttributedQNameType() {
 		return new AttributedQNameType();
@@ -93,7 +93,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link AttributedUnsignedLongType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public AttributedUnsignedLongType createAttributedUnsignedLongType() {
 		return new AttributedUnsignedLongType();
@@ -102,7 +102,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link MetadataType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public MetadataType createMetadataType() {
 		return new MetadataType();
@@ -111,7 +111,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link RelatesToType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public RelatesToType createRelatesToType() {
 		return new RelatesToType();
@@ -120,7 +120,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link ReferenceParametersType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public ReferenceParametersType createReferenceParametersType() {
 		return new ReferenceParametersType();
@@ -130,7 +130,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "EndpointReference")
 	public JAXBElement<EndpointReferenceType> createEndpointReference(EndpointReferenceType value) {
@@ -141,7 +141,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedQNameType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemHeaderQName")
 	public JAXBElement<AttributedQNameType> createProblemHeaderQName(AttributedQNameType value) {
@@ -152,7 +152,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedUnsignedLongType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "RetryAfter")
 	public JAXBElement<AttributedUnsignedLongType> createRetryAfter(AttributedUnsignedLongType value) {
@@ -163,7 +163,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "To")
 	public JAXBElement<AttributedURIType> createTo(AttributedURIType value) {
@@ -174,7 +174,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedAnyType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemHeader")
 	public JAXBElement<AttributedAnyType> createProblemHeader(AttributedAnyType value) {
@@ -185,7 +185,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MetadataType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "Metadata")
 	public JAXBElement<MetadataType> createMetadata(MetadataType value) {
@@ -196,7 +196,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "MessageID")
 	public JAXBElement<AttributedURIType> createMessageID(AttributedURIType value) {
@@ -207,7 +207,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemIRI")
 	public JAXBElement<AttributedURIType> createProblemIRI(AttributedURIType value) {
@@ -218,7 +218,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "From")
 	public JAXBElement<EndpointReferenceType> createFrom(EndpointReferenceType value) {
@@ -229,7 +229,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ReplyTo")
 	public JAXBElement<EndpointReferenceType> createReplyTo(EndpointReferenceType value) {
@@ -240,7 +240,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AttributedURIType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "Action")
 	public JAXBElement<AttributedURIType> createAction(AttributedURIType value) {
@@ -251,7 +251,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "FaultTo")
 	public JAXBElement<EndpointReferenceType> createFaultTo(EndpointReferenceType value) {
@@ -262,7 +262,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link ProblemActionType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "ProblemAction")
 	public JAXBElement<ProblemActionType> createProblemAction(ProblemActionType value) {
@@ -273,7 +273,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link RelatesToType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.w3.org/2005/08/addressing", name = "RelatesTo")
 	public JAXBElement<RelatesToType> createRelatesTo(RelatesToType value) {

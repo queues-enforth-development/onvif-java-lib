@@ -94,7 +94,7 @@ public class NetworkInterfaceExtension {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
@@ -106,7 +106,7 @@ public class NetworkInterfaceExtension {
 	/**
 	 * Ruft den Wert der interfaceType-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getInterfaceType() {
 		return interfaceType;
@@ -140,7 +140,7 @@ public class NetworkInterfaceExtension {
 	 * Objects of the following type(s) are allowed in the list {@link Dot3Configuration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot3Configuration> getDot3() {
 		if (dot3 == null) {
@@ -168,7 +168,7 @@ public class NetworkInterfaceExtension {
 	 * Objects of the following type(s) are allowed in the list {@link Dot11Configuration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot11Configuration> getDot11() {
 		if (dot11 == null) {

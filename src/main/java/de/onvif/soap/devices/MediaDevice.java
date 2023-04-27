@@ -52,7 +52,7 @@ public class MediaDevice
     /**
      *
      * @param profileNumber -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -73,7 +73,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -93,7 +93,7 @@ public class MediaDevice
     /**
      *
      * @param profileNumber -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -114,7 +114,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -133,7 +133,7 @@ public class MediaDevice
     /**
      *
      * @param profileNumber -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -154,7 +154,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -173,7 +173,7 @@ public class MediaDevice
     /**
      *
      * @param profileNumber -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -194,7 +194,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -214,7 +214,7 @@ public class MediaDevice
      *
      * @param streamSetup -
      * @param profileNumber -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -232,7 +232,7 @@ public class MediaDevice
      *
      * @param profile -
      * @param streamSetup -
-     * @return -
+     * @return - -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -249,7 +249,7 @@ public class MediaDevice
      *
      * @param profileToken -
      * @param streamSetup -
-     * @return -
+     * @return - -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -279,7 +279,7 @@ public class MediaDevice
     /**
      *
      * @param profile -
-     * @return -
+     * @return - -
      */
     public static VideoEncoderConfiguration getVideoEncoderConfiguration(Profile profile) {
 		return profile.getVideoEncoderConfiguration();
@@ -288,7 +288,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -317,7 +317,7 @@ public class MediaDevice
     /**
      *
      * @param videoEncoderConfiguration -
-     * @return -
+     * @return - -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -343,7 +343,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -357,7 +357,7 @@ public class MediaDevice
     /**
      *
      * @param profileToken -
-     * @return -
+     * @return - -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -385,7 +385,7 @@ public class MediaDevice
 
     /**
      *
-     * @return -
+     * @return - -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -

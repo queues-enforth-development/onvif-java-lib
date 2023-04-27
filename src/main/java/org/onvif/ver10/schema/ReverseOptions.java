@@ -78,7 +78,7 @@ public class ReverseOptions {
 	 * Objects of the following type(s) are allowed in the list {@link ReverseMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ReverseMode> getMode() {
 		if (mode == null) {

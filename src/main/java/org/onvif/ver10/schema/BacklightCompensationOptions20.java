@@ -71,7 +71,7 @@ public class BacklightCompensationOptions20 {
 	 * Objects of the following type(s) are allowed in the list {@link BacklightCompensationMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<BacklightCompensationMode> getMode() {
 		if (mode == null) {

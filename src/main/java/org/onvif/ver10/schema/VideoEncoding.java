@@ -58,7 +58,7 @@ public enum VideoEncoding {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -67,7 +67,7 @@ public enum VideoEncoding {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static VideoEncoding fromValue(String v) {
 		for (VideoEncoding c : VideoEncoding.values()) {

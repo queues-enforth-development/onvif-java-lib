@@ -30,7 +30,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link Base64Binary }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public Base64Binary createBase64Binary() {
 		return new Base64Binary();
@@ -39,7 +39,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link HexBinary }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public HexBinary createHexBinary() {
 		return new HexBinary();

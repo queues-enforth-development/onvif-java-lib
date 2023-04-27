@@ -101,7 +101,7 @@ public class IPv4Configuration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv4Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv4Address> getManual() {
 		if (manual == null) {
@@ -155,7 +155,7 @@ public class IPv4Configuration {
 	/**
 	 * Ruft den Wert der dhcp-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDHCP() {
 		return dhcp;
@@ -189,7 +189,7 @@ public class IPv4Configuration {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

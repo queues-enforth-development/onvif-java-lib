@@ -134,7 +134,7 @@ public class ShapeDescriptor {
 	 * Objects of the following type(s) are allowed in the list {@link Polygon }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Polygon> getPolygon() {
 		if (polygon == null) {

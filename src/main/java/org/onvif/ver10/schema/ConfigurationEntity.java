@@ -88,7 +88,7 @@ public class ConfigurationEntity {
 	/**
 	 * Ruft den Wert der useCount-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getUseCount() {
 		return useCount;

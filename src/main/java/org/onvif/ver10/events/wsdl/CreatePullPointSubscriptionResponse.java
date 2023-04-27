@@ -81,7 +81,7 @@ public class CreatePullPointSubscriptionResponse {
     /**
      * Ruft den Wert der subscriptionReference-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link EndpointReferenceType }
      *     
@@ -105,7 +105,7 @@ public class CreatePullPointSubscriptionResponse {
     /**
      * Current time of the server for synchronization purposes.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -129,7 +129,7 @@ public class CreatePullPointSubscriptionResponse {
     /**
      * Date time when the PullPoint will be shut down without further pull requests.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -172,7 +172,7 @@ public class CreatePullPointSubscriptionResponse {
      * {@link Element }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {

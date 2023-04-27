@@ -50,7 +50,7 @@ public enum NetworkProtocolType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -59,7 +59,7 @@ public enum NetworkProtocolType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static NetworkProtocolType fromValue(String v) {
 		return valueOf(v);

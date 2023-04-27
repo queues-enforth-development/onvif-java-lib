@@ -60,7 +60,7 @@ public class VideoRateControl {
 	/**
 	 * Ruft den Wert der frameRateLimit-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getFrameRateLimit() {
 		return frameRateLimit;
@@ -78,7 +78,7 @@ public class VideoRateControl {
 	/**
 	 * Ruft den Wert der encodingInterval-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getEncodingInterval() {
 		return encodingInterval;
@@ -96,7 +96,7 @@ public class VideoRateControl {
 	/**
 	 * Ruft den Wert der bitrateLimit-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getBitrateLimit() {
 		return bitrateLimit;

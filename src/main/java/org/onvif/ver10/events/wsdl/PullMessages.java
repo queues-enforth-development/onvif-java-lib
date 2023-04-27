@@ -68,7 +68,7 @@ public class PullMessages {
     /**
      * Ruft den Wert der timeout-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Duration }
      *     
@@ -92,7 +92,7 @@ public class PullMessages {
     /**
      * Ruft den Wert der messageLimit-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public int getMessageLimit() {
         return messageLimit;
@@ -128,7 +128,7 @@ public class PullMessages {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {

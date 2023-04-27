@@ -48,7 +48,7 @@ public class GetServiceCapabilitiesResponse {
     /**
      * Ruft den Wert der capabilities-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Capabilities }
      *     

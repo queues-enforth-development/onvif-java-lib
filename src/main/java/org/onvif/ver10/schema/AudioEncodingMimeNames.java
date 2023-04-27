@@ -55,7 +55,7 @@ public enum AudioEncodingMimeNames {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return value;
@@ -64,7 +64,7 @@ public enum AudioEncodingMimeNames {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static AudioEncodingMimeNames fromValue(String v) {
         for (AudioEncodingMimeNames c: AudioEncodingMimeNames.values()) {

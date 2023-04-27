@@ -77,7 +77,7 @@ public class SetAudioOutputConfiguration {
 	/**
 	 * Ruft den Wert der forcePersistence-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isForcePersistence() {
 		return forcePersistence;

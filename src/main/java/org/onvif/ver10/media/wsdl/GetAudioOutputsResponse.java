@@ -67,7 +67,7 @@ public class GetAudioOutputsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link AudioOutput }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioOutput> getAudioOutputs() {
 		if (audioOutputs == null) {

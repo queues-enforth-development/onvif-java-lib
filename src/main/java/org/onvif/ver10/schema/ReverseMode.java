@@ -63,7 +63,7 @@ public enum ReverseMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -72,7 +72,7 @@ public enum ReverseMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ReverseMode fromValue(String v) {
 		for (ReverseMode c : ReverseMode.values()) {

@@ -67,7 +67,7 @@ public class UnrecognizedPolicyRequestFaultType extends BaseFaultType {
 	 * Objects of the following type(s) are allowed in the list {@link QName }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<QName> getUnrecognizedPolicy() {
 		if (unrecognizedPolicy == null) {

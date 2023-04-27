@@ -66,7 +66,7 @@ public class GetServicesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Service }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Service> getService() {
 		if (service == null) {

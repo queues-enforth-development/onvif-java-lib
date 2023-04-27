@@ -44,7 +44,7 @@ public enum AutoFocusMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -53,7 +53,7 @@ public enum AutoFocusMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static AutoFocusMode fromValue(String v) {
 		return valueOf(v);

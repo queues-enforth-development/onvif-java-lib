@@ -68,7 +68,7 @@ public class PullMessagesFaultResponse {
     /**
      * Ruft den Wert der maxTimeout-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Duration }
      *     
@@ -92,7 +92,7 @@ public class PullMessagesFaultResponse {
     /**
      * Ruft den Wert der maxMessageLimit-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public int getMaxMessageLimit() {
         return maxMessageLimit;
@@ -128,7 +128,7 @@ public class PullMessagesFaultResponse {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {

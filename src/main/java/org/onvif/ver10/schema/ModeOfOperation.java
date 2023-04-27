@@ -60,7 +60,7 @@ public enum ModeOfOperation {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -69,7 +69,7 @@ public enum ModeOfOperation {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ModeOfOperation fromValue(String v) {
 		for (ModeOfOperation c : ModeOfOperation.values()) {

@@ -63,7 +63,7 @@ public enum ImageStabilizationMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -72,7 +72,7 @@ public enum ImageStabilizationMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ImageStabilizationMode fromValue(String v) {
 		for (ImageStabilizationMode c : ImageStabilizationMode.values()) {

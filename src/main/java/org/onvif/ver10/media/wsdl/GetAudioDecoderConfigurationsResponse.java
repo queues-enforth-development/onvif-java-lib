@@ -67,7 +67,7 @@ public class GetAudioDecoderConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link AudioDecoderConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioDecoderConfiguration> getConfigurations() {
 		if (configurations == null) {

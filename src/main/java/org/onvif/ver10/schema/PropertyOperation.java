@@ -59,7 +59,7 @@ public enum PropertyOperation {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -68,7 +68,7 @@ public enum PropertyOperation {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static PropertyOperation fromValue(String v) {
 		for (PropertyOperation c : PropertyOperation.values()) {

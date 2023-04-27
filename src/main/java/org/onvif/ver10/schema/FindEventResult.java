@@ -180,7 +180,7 @@ public class FindEventResult {
 	/**
 	 * Ruft den Wert der startStateEvent-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isStartStateEvent() {
 		return startStateEvent;
@@ -214,7 +214,7 @@ public class FindEventResult {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

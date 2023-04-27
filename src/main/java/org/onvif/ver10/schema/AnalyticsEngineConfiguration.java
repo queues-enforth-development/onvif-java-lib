@@ -78,7 +78,7 @@ public class AnalyticsEngineConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link Config }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Config> getAnalyticsModule() {
 		if (analyticsModule == null) {

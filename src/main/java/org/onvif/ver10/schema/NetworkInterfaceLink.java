@@ -102,7 +102,7 @@ public class NetworkInterfaceLink {
 	/**
 	 * Ruft den Wert der interfaceType-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getInterfaceType() {
 		return interfaceType;

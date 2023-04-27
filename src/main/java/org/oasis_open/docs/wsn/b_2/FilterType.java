@@ -67,7 +67,7 @@ public class FilterType {
 	 * Objects of the following type(s) are allowed in the list {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {

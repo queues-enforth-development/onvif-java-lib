@@ -57,7 +57,7 @@ public enum EFlipMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -66,7 +66,7 @@ public enum EFlipMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static EFlipMode fromValue(String v) {
 		for (EFlipMode c : EFlipMode.values()) {

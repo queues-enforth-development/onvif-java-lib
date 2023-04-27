@@ -71,7 +71,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Ruft den Wert der dot1X-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDot1X() {
 		return dot1X;
@@ -105,7 +105,7 @@ public class SecurityCapabilitiesExtension2 {
 	 * Objects of the following type(s) are allowed in the list {@link Integer }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Integer> getSupportedEAPMethod() {
 		if (supportedEAPMethod == null) {
@@ -117,7 +117,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Ruft den Wert der remoteUserHandling-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRemoteUserHandling() {
 		return remoteUserHandling;
@@ -151,7 +151,7 @@ public class SecurityCapabilitiesExtension2 {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

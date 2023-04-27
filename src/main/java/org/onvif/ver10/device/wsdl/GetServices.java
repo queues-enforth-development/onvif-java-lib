@@ -48,7 +48,7 @@ public class GetServices {
 	/**
 	 * Gets the value of the includeCapability property.
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public boolean isIncludeCapability() {
 		return includeCapability;

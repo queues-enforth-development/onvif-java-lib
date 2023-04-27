@@ -49,7 +49,7 @@ public class SetOSD {
     /**
      * Ruft den Wert der osd-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link OSDConfiguration }
      *     

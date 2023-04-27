@@ -92,7 +92,7 @@ public class FindRecordingResultList {
 	 * Objects of the following type(s) are allowed in the list {@link RecordingInformation }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<RecordingInformation> getRecordingInformation() {
 		if (recordingInformation == null) {

@@ -66,7 +66,7 @@ public class DeleteDot1XConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<String> getDot1XConfigurationToken() {
 		if (dot1XConfigurationToken == null) {

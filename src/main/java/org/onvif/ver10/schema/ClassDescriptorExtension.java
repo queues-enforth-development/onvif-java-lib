@@ -80,7 +80,7 @@ public class ClassDescriptorExtension {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
@@ -108,7 +108,7 @@ public class ClassDescriptorExtension {
 	 * Objects of the following type(s) are allowed in the list {@link OtherType }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<OtherType> getOtherTypes() {
 		if (otherTypes == null) {

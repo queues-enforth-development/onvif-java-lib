@@ -44,7 +44,7 @@ public enum ExposureMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -53,7 +53,7 @@ public enum ExposureMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ExposureMode fromValue(String v) {
 		return valueOf(v);

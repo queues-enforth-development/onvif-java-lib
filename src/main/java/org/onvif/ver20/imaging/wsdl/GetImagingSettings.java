@@ -48,7 +48,7 @@ public class GetImagingSettings {
     /**
      * Ruft den Wert der videoSourceToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

@@ -104,7 +104,7 @@ public class StreamingCapabilities {
      * {@link Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -116,7 +116,7 @@ public class StreamingCapabilities {
     /**
      * Ruft den Wert der rtspStreaming-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -140,7 +140,7 @@ public class StreamingCapabilities {
     /**
      * Ruft den Wert der rtpMulticast-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -164,7 +164,7 @@ public class StreamingCapabilities {
     /**
      * Ruft den Wert der rtprtsptcp-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -188,7 +188,7 @@ public class StreamingCapabilities {
     /**
      * Ruft den Wert der nonAggregateControl-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -220,7 +220,7 @@ public class StreamingCapabilities {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

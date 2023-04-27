@@ -92,7 +92,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der tkip-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isTKIP() {
 		return tkip;
@@ -110,7 +110,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der scanAvailableNetworks-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isScanAvailableNetworks() {
 		return scanAvailableNetworks;
@@ -128,7 +128,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der multipleConfiguration-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isMultipleConfiguration() {
 		return multipleConfiguration;
@@ -146,7 +146,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der adHocStationMode-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAdHocStationMode() {
 		return adHocStationMode;
@@ -164,7 +164,7 @@ public class Dot11Capabilities {
 	/**
 	 * Ruft den Wert der wep-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isWEP() {
 		return wep;
@@ -198,7 +198,7 @@ public class Dot11Capabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

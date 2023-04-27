@@ -67,7 +67,7 @@ public class GetNetworkInterfacesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkInterface }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<NetworkInterface> getNetworkInterfaces() {
 		if (networkInterfaces == null) {

@@ -80,7 +80,7 @@ public class Layout {
 	 * Objects of the following type(s) are allowed in the list {@link PaneLayout }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PaneLayout> getPaneLayout() {
 		if (paneLayout == null) {

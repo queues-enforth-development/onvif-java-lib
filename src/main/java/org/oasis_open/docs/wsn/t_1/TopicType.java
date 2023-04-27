@@ -135,7 +135,7 @@ public class TopicType extends ExtensibleDocumented {
 	 * Objects of the following type(s) are allowed in the list {@link TopicType }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<TopicType> getTopic() {
 		if (topic == null) {
@@ -163,7 +163,7 @@ public class TopicType extends ExtensibleDocumented {
 	 * Objects of the following type(s) are allowed in the list {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
@@ -212,7 +212,7 @@ public class TopicType extends ExtensibleDocumented {
 	 * Objects of the following type(s) are allowed in the list {@link QName }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<QName> getMessageTypes() {
 		if (messageTypes == null) {

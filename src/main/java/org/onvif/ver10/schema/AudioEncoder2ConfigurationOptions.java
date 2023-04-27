@@ -81,7 +81,7 @@ public class AudioEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der encoding-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -105,7 +105,7 @@ public class AudioEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der bitrateList-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link IntList }
      *     
@@ -129,7 +129,7 @@ public class AudioEncoder2ConfigurationOptions {
     /**
      * Ruft den Wert der sampleRateList-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link IntList }
      *     
@@ -172,7 +172,7 @@ public class AudioEncoder2ConfigurationOptions {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -192,7 +192,7 @@ public class AudioEncoder2ConfigurationOptions {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

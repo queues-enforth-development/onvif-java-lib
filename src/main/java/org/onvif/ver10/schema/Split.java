@@ -92,7 +92,7 @@ public class Split {
 	 * Objects of the following type(s) are allowed in the list {@link ObjectId }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ObjectId> getTo() {
 		if (to == null) {

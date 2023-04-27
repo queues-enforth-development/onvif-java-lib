@@ -108,7 +108,7 @@ public class VideoSourceMode {
 	/**
 	 * Ruft den Wert der maxFramerate-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMaxFramerate() {
 		return maxFramerate;
@@ -163,7 +163,7 @@ public class VideoSourceMode {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getEncodings() {
 		if (encodings == null) {
@@ -175,7 +175,7 @@ public class VideoSourceMode {
 	/**
 	 * Ruft den Wert der reboot-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isReboot() {
 		return reboot;

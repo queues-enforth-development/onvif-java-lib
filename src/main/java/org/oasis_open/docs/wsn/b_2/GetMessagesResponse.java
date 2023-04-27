@@ -82,7 +82,7 @@ public class GetMessagesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link NotificationMessageHolderType }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<NotificationMessageHolderType> getNotificationMessage() {
 		if (notificationMessage == null) {
@@ -110,7 +110,7 @@ public class GetMessagesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {

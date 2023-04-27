@@ -67,7 +67,7 @@ public class GetNodesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link PTZNode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PTZNode> getPTZNode() {
 		if (ptzNode == null) {

@@ -101,7 +101,7 @@ public class Mpeg4DecOptions {
 	 * Objects of the following type(s) are allowed in the list {@link VideoResolution }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoResolution> getResolutionsAvailable() {
 		if (resolutionsAvailable == null) {
@@ -129,7 +129,7 @@ public class Mpeg4DecOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Mpeg4Profile }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Mpeg4Profile> getSupportedMpeg4Profiles() {
 		if (supportedMpeg4Profiles == null) {
@@ -199,7 +199,7 @@ public class Mpeg4DecOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -89,7 +89,7 @@ public class LensDescription {
     /**
      * Ruft den Wert der offset-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link LensOffset }
      *     
@@ -131,7 +131,7 @@ public class LensDescription {
      * {@link LensProjection }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<LensProjection> getProjection() {
         if (projection == null) {
@@ -143,7 +143,7 @@ public class LensDescription {
     /**
      * Ruft den Wert der xFactor-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getXFactor() {
         return xFactor;
@@ -180,7 +180,7 @@ public class LensDescription {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -192,7 +192,7 @@ public class LensDescription {
     /**
      * Ruft den Wert der focalLength-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Float }
      *     
@@ -224,7 +224,7 @@ public class LensDescription {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

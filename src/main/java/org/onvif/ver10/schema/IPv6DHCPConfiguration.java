@@ -66,7 +66,7 @@ public enum IPv6DHCPConfiguration {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -75,7 +75,7 @@ public enum IPv6DHCPConfiguration {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static IPv6DHCPConfiguration fromValue(String v) {
 		for (IPv6DHCPConfiguration c : IPv6DHCPConfiguration.values()) {

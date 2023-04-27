@@ -52,7 +52,7 @@ public enum RelayIdleState {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -61,7 +61,7 @@ public enum RelayIdleState {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static RelayIdleState fromValue(String v) {
 		for (RelayIdleState c : RelayIdleState.values()) {

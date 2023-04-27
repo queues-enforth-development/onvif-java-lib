@@ -48,7 +48,7 @@ public class SetClientCertificateMode {
 	/**
 	 * Ruft den Wert der enabled-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isEnabled() {
 		return enabled;

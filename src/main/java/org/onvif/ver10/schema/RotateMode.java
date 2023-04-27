@@ -50,7 +50,7 @@ public enum RotateMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -59,7 +59,7 @@ public enum RotateMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static RotateMode fromValue(String v) {
 		return valueOf(v);

@@ -113,7 +113,7 @@ public class VideoAttributes {
 	/**
 	 * Ruft den Wert der width-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getWidth() {
 		return width;
@@ -131,7 +131,7 @@ public class VideoAttributes {
 	/**
 	 * Ruft den Wert der height-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getHeight() {
 		return height;
@@ -170,7 +170,7 @@ public class VideoAttributes {
 	/**
 	 * Ruft den Wert der framerate-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getFramerate() {
 		return framerate;
@@ -204,7 +204,7 @@ public class VideoAttributes {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

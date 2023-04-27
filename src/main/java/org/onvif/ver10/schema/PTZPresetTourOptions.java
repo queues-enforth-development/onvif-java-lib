@@ -78,7 +78,7 @@ public class PTZPresetTourOptions {
 	/**
 	 * Ruft den Wert der autoStart-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAutoStart() {
 		return autoStart;
@@ -154,7 +154,7 @@ public class PTZPresetTourOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

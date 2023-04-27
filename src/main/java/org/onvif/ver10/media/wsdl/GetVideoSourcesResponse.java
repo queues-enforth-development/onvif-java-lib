@@ -67,7 +67,7 @@ public class GetVideoSourcesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link VideoSource }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoSource> getVideoSources() {
 		if (videoSources == null) {

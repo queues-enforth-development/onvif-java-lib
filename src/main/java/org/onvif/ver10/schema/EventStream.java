@@ -68,7 +68,7 @@ public class EventStream {
 	 * Objects of the following type(s) are allowed in the list {@link NotificationMessageHolderType } {@link EventStreamExtension }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getNotificationMessageOrExtension() {
 		if (notificationMessageOrExtension == null) {

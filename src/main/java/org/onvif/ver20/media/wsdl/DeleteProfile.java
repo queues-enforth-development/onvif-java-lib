@@ -48,7 +48,7 @@ public class DeleteProfile {
     /**
      * Ruft den Wert der token-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

@@ -50,7 +50,7 @@ public class GetSnapshotUriResponse {
     /**
      * Ruft den Wert der uri-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

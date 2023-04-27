@@ -202,7 +202,7 @@ public class OnvifDevice
     /**
      *
      * @param original -
-     * @return
+     * @return -
      */
     public String replaceLocalIpWithProxyIp(String original) {
 		if (original.startsWith("http:///")) {
@@ -217,7 +217,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getUsername() {
 		return username;
@@ -225,7 +225,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getEncryptedPassword() {
 		return encryptPassword();
@@ -233,7 +233,7 @@ public class OnvifDevice
 
 	/**
 	 * Returns encrypted version of given password like algorithm like in WS-UsernameToken
-     * @return
+     * @return -
 	 */
 	public String encryptPassword() {
 		String nonceLocal = getNonce();
@@ -272,7 +272,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getEncryptedNonce() {
 		if (nonce == null) {
@@ -291,7 +291,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getLastUTCTime() {
 		return utcTime;
@@ -299,7 +299,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getUTCTime() {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d'T'HH:mm:ss'Z'");
@@ -313,7 +313,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     @Override
     public SOAP getSoap() {
@@ -322,7 +322,7 @@ public class OnvifDevice
 
 	/**
 	 * Is used for basic devices and requests of given ONVIF Device
-     * @return
+     * @return -
 	 */
 	public InitialDevice getDevices() {
 		return initialDevice;
@@ -330,7 +330,7 @@ public class OnvifDevice
 
 	/**
 	 * Can be used for PTZ controlling requests, may not be supported by device!
-     * @return
+     * @return -
 	 */
 	public PtzDevice getPtz() {
 		return ptzDevice;
@@ -338,7 +338,7 @@ public class OnvifDevice
 
 	/**
 	 * Can be used to get media data from OnvifDevice
-	 * @return
+	 * @return -
 	 */
 	public MediaDevice getMedia() {
 		return mediaDevice;
@@ -346,7 +346,7 @@ public class OnvifDevice
 
 	/**
 	 * Can be used to get media data from OnvifDevice
-	 * @return
+	 * @return -
 	 */
 	public ImagingDevice getImaging() {
 		return imagingDevice;
@@ -354,7 +354,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public java.util.logging.Logger getLogger() {
 		return LOGGER;
@@ -362,7 +362,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getDeviceUri() {
 		return serverDeviceUri;
@@ -370,7 +370,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     protected String getPtzUri() {
 		return serverPtzUri;
@@ -378,7 +378,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     protected String getMediaUri() {
 		return serverMediaUri;
@@ -386,7 +386,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     protected String getImagingUri() {
 		return serverImagingUri;
@@ -394,7 +394,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     protected String getEventsUri() {
 		return serverEventsUri;
@@ -402,7 +402,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public Date getDate() {
 		return initialDevice.getDate();
@@ -410,7 +410,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getName() {
         String result = UNKNOWN_CAMERA;
@@ -457,7 +457,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getHostname() {
         return initialDevice.getHostname().orElse(EMPTY_STRING);
@@ -465,7 +465,7 @@ public class OnvifDevice
 
     /**
      *
-     * @return
+     * @return -
      * @throws ConnectException -
      * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException -
@@ -494,7 +494,7 @@ public class OnvifDevice
 
     /**
      * This method creates a JSON object string containing all the URIs.
-     * @return
+     * @return -
      */
     public String getUrisAsJsonString() {
         jakarta.json.JsonObject jsonObject = jakarta.json.Json.createObjectBuilder()

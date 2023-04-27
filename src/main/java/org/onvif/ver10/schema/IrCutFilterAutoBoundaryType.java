@@ -66,7 +66,7 @@ public enum IrCutFilterAutoBoundaryType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -75,7 +75,7 @@ public enum IrCutFilterAutoBoundaryType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static IrCutFilterAutoBoundaryType fromValue(String v) {
 		for (IrCutFilterAutoBoundaryType c : IrCutFilterAutoBoundaryType.values()) {

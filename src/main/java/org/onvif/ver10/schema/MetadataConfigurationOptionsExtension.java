@@ -74,7 +74,7 @@ public class MetadataConfigurationOptionsExtension {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getCompressionType() {
         if (compressionType == null) {
@@ -86,7 +86,7 @@ public class MetadataConfigurationOptionsExtension {
     /**
      * Ruft den Wert der extension-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link MetadataConfigurationOptionsExtension2 }
      *     

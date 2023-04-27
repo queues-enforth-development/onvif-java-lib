@@ -68,7 +68,7 @@ public class GetProfilesResponse {
      * {@link MediaProfile }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<MediaProfile> getProfiles() {
         if (profiles == null) {

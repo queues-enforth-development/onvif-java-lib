@@ -125,7 +125,7 @@ public class RecordingJobConfiguration {
 	/**
 	 * Ruft den Wert der priority-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getPriority() {
 		return priority;
@@ -159,7 +159,7 @@ public class RecordingJobConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link RecordingJobSource }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<RecordingJobSource> getSource() {
 		if (source == null) {

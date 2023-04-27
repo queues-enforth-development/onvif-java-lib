@@ -100,7 +100,7 @@ public class NetworkZeroConfiguration {
 	/**
 	 * Ruft den Wert der enabled-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isEnabled() {
 		return enabled;
@@ -134,7 +134,7 @@ public class NetworkZeroConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getAddresses() {
 		if (addresses == null) {

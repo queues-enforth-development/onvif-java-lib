@@ -109,7 +109,7 @@ public class MediaUri {
 	/**
 	 * Ruft den Wert der invalidAfterConnect-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isInvalidAfterConnect() {
 		return invalidAfterConnect;
@@ -127,7 +127,7 @@ public class MediaUri {
 	/**
 	 * Ruft den Wert der invalidAfterReboot-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isInvalidAfterReboot() {
 		return invalidAfterReboot;
@@ -182,7 +182,7 @@ public class MediaUri {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -69,7 +69,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean isPtzOperationsSupported(String profileToken) {
 		return getPTZConfiguration(profileToken) != null;
@@ -95,7 +95,7 @@ public class PtzDevice
 
     /**
      *
-     * @return -
+     * @return - -
      */
     public List<PTZNode> getNodes() {
 		GetNodes request = new GetNodes();
@@ -118,7 +118,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public PTZNode getNode(String profileToken) {
 		return getNode(getPTZConfiguration(profileToken));
@@ -127,7 +127,7 @@ public class PtzDevice
     /**
      *
      * @param ptzConfiguration - 
-     * @return -
+     * @return - -
      */
     public PTZNode getNode(PTZConfiguration ptzConfiguration) {
 		GetNode request = new GetNode();
@@ -158,7 +158,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public FloatRange getPanSpaces(String profileToken) {
 		PTZNode node = getNode(profileToken);
@@ -170,7 +170,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public FloatRange getTiltSpaces(String profileToken) {
 		PTZNode node = getNode(profileToken);
@@ -182,7 +182,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public FloatRange getZoomSpaces(String profileToken) {
 		PTZNode node = getNode(profileToken);
@@ -194,7 +194,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean isAbsoluteMoveSupported(String profileToken) {
 		Profile profile = onvifDevice.getDevices().getProfile(profileToken);
@@ -276,7 +276,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean isRelativeMoveSupported(String profileToken) {
 		Profile profile = onvifDevice.getDevices().getProfile(profileToken);
@@ -295,7 +295,7 @@ public class PtzDevice
      * @param x - 
      * @param y - 
      * @param zoom - 
-     * @return -
+     * @return - -
      */
     public boolean relativeMove(String profileToken, float x, float y, float zoom) {
 		RelativeMove request = new RelativeMove();
@@ -327,7 +327,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean isContinuosMoveSupported(String profileToken) {
 		Profile profile = onvifDevice.getDevices().getProfile(profileToken);
@@ -346,7 +346,7 @@ public class PtzDevice
      * @param x - 
      * @param y - 
      * @param zoom - 
-     * @return -
+     * @return - -
      */
     public boolean continuousMove(String profileToken, float x, float y, float zoom) {
 		ContinuousMove request = new ContinuousMove();
@@ -378,7 +378,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean stopMove(String profileToken) {
 		Stop request = new Stop();
@@ -401,7 +401,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public PTZStatus getStatus(String profileToken) {
 		GetStatus request = new GetStatus();
@@ -426,7 +426,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public PTZVector getPosition(String profileToken) {
 		PTZStatus status = getStatus(profileToken);
@@ -441,7 +441,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean setHomePosition(String profileToken) {
 		SetHomePosition request = new SetHomePosition();
@@ -462,7 +462,7 @@ public class PtzDevice
     /**
      *
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public List<PTZPreset> getPresets(String profileToken) {
 		GetPresets request = new GetPresets();
@@ -489,7 +489,7 @@ public class PtzDevice
      * @param presetName - 
      * @param presetToken - 
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public String setPreset(String presetName, String presetToken, String profileToken) {
 		SetPreset request = new SetPreset();
@@ -517,7 +517,7 @@ public class PtzDevice
      *
      * @param presetName - 
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public String setPreset(String presetName, String profileToken) {
 		return setPreset(presetName, null, profileToken);
@@ -527,7 +527,7 @@ public class PtzDevice
      *
      * @param presetToken - 
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean removePreset(String presetToken, String profileToken) {
 		RemovePreset request = new RemovePreset();
@@ -550,7 +550,7 @@ public class PtzDevice
      *
      * @param presetToken - 
      * @param profileToken - 
-     * @return -
+     * @return - -
      */
     public boolean gotoPreset(String presetToken, String profileToken) {
 		GotoPreset request = new GotoPreset();

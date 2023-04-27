@@ -67,7 +67,7 @@ public class GetCompatibleConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link PTZConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PTZConfiguration> getPTZConfiguration() {
 		if (ptzConfiguration == null) {

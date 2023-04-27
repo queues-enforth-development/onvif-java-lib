@@ -125,7 +125,7 @@ public class SoapHelper<T, R> extends SOAP
      * Create a SOAP Message for the object.
      * @param soapRequestElem -
      * @param needAuthentification -
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ParserConfigurationException -
      * @throws JAXBException -

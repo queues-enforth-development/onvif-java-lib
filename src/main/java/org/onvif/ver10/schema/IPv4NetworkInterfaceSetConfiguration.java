@@ -99,7 +99,7 @@ public class IPv4NetworkInterfaceSetConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv4Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv4Address> getManual() {
 		if (manual == null) {

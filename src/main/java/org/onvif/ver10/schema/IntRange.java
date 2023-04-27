@@ -55,7 +55,7 @@ public class IntRange {
 	/**
 	 * Ruft den Wert der min-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMin() {
 		return min;
@@ -73,7 +73,7 @@ public class IntRange {
 	/**
 	 * Ruft den Wert der max-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMax() {
 		return max;

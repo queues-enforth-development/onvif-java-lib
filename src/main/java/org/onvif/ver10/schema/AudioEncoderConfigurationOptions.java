@@ -71,7 +71,7 @@ public class AudioEncoderConfigurationOptions {
 	 * Objects of the following type(s) are allowed in the list {@link AudioEncoderConfigurationOption }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioEncoderConfigurationOption> getOptions() {
 		if (options == null) {

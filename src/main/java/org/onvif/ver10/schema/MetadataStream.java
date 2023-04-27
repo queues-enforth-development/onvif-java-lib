@@ -78,7 +78,7 @@ public class MetadataStream {
 	 * Objects of the following type(s) are allowed in the list {@link VideoAnalyticsStream } {@link PTZStream } {@link EventStream } {@link MetadataStreamExtension }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getVideoAnalyticsOrPTZOrEvent() {
 		if (videoAnalyticsOrPTZOrEvent == null) {

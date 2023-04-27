@@ -54,7 +54,7 @@ public class GetConfiguration {
     /**
      * Ruft den Wert der configurationToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -78,7 +78,7 @@ public class GetConfiguration {
     /**
      * Ruft den Wert der profileToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

@@ -142,7 +142,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der videoSource-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link VideoSourceConfiguration }
      *     
@@ -166,7 +166,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der audioSource-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link AudioSourceConfiguration }
      *     
@@ -190,7 +190,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der videoEncoder-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link VideoEncoder2Configuration }
      *     
@@ -214,7 +214,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der audioEncoder-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link AudioEncoder2Configuration }
      *     
@@ -238,7 +238,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der analytics-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ConfigurationEntity }
      *     
@@ -262,7 +262,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der ptz-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link PTZConfiguration }
      *     
@@ -286,7 +286,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der metadata-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link MetadataConfiguration }
      *     
@@ -310,7 +310,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der audioOutput-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link AudioOutputConfiguration }
      *     
@@ -334,7 +334,7 @@ public class ConfigurationSet {
     /**
      * Ruft den Wert der audioDecoder-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link AudioDecoderConfiguration }
      *     
@@ -376,7 +376,7 @@ public class ConfigurationSet {
      * {@link Element }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Element> getAny() {
         if (any == null) {
@@ -396,7 +396,7 @@ public class ConfigurationSet {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

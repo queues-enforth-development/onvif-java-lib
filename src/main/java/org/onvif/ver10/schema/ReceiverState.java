@@ -70,7 +70,7 @@ public enum ReceiverState {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -79,7 +79,7 @@ public enum ReceiverState {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static ReceiverState fromValue(String v) {
 		for (ReceiverState c : ReceiverState.values()) {

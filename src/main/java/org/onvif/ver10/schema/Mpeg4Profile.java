@@ -44,7 +44,7 @@ public enum Mpeg4Profile {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -53,7 +53,7 @@ public enum Mpeg4Profile {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Mpeg4Profile fromValue(String v) {
 		return valueOf(v);

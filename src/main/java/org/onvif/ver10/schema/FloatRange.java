@@ -55,7 +55,7 @@ public class FloatRange {
 	/**
 	 * Ruft den Wert der min-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMin() {
 		return min;
@@ -73,7 +73,7 @@ public class FloatRange {
 	/**
 	 * Ruft den Wert der max-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getMax() {
 		return max;

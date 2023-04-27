@@ -67,7 +67,7 @@ public class GetVideoSourceConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link VideoSourceConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoSourceConfiguration> getConfigurations() {
 		if (configurations == null) {

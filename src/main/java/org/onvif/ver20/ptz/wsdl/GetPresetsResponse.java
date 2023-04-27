@@ -67,7 +67,7 @@ public class GetPresetsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link PTZPreset }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PTZPreset> getPreset() {
 		if (preset == null) {

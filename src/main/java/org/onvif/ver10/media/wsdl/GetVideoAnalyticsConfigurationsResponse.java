@@ -67,7 +67,7 @@ public class GetVideoAnalyticsConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link VideoAnalyticsConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoAnalyticsConfiguration> getConfigurations() {
 		if (configurations == null) {

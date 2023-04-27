@@ -59,7 +59,7 @@ public enum Dot11StationMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -68,7 +68,7 @@ public enum Dot11StationMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Dot11StationMode fromValue(String v) {
 		for (Dot11StationMode c : Dot11StationMode.values()) {

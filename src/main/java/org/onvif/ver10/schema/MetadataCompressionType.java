@@ -54,7 +54,7 @@ public enum MetadataCompressionType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
         return value;
@@ -63,7 +63,7 @@ public enum MetadataCompressionType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static MetadataCompressionType fromValue(String v) {
         for (MetadataCompressionType c: MetadataCompressionType.values()) {

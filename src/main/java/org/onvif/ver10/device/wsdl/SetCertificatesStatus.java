@@ -71,7 +71,7 @@ public class SetCertificatesStatus {
      * }
      *
      *
-     * @return
+     * @return -
      */
     public List<CertificateStatus> getCertificateStatus() {
         if (certificateStatus == null) {

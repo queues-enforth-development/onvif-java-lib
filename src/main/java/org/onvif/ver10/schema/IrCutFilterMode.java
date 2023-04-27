@@ -50,7 +50,7 @@ public enum IrCutFilterMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return name();
@@ -59,7 +59,7 @@ public enum IrCutFilterMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static IrCutFilterMode fromValue(String v) {
 		return valueOf(v);

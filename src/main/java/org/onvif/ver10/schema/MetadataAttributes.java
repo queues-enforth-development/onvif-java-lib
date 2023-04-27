@@ -86,7 +86,7 @@ public class MetadataAttributes {
 	/**
 	 * Ruft den Wert der canContainPTZ-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isCanContainPTZ() {
 		return canContainPTZ;
@@ -104,7 +104,7 @@ public class MetadataAttributes {
 	/**
 	 * Ruft den Wert der canContainAnalytics-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isCanContainAnalytics() {
 		return canContainAnalytics;
@@ -122,7 +122,7 @@ public class MetadataAttributes {
 	/**
 	 * Ruft den Wert der canContainNotifications-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isCanContainNotifications() {
 		return canContainNotifications;
@@ -156,7 +156,7 @@ public class MetadataAttributes {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
@@ -184,7 +184,7 @@ public class MetadataAttributes {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getPtzSpaces() {
 		if (ptzSpaces == null) {

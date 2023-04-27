@@ -97,7 +97,7 @@ public class NetworkProtocol {
 	/**
 	 * Ruft den Wert der enabled-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isEnabled() {
 		return enabled;
@@ -131,7 +131,7 @@ public class NetworkProtocol {
 	 * Objects of the following type(s) are allowed in the list {@link Integer }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Integer> getPort() {
 		if (port == null) {

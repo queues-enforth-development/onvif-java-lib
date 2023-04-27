@@ -122,7 +122,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Ruft den Wert der rtpMulticast-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRTPMulticast() {
 		return rtpMulticast;
@@ -140,7 +140,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Ruft den Wert der rtptcp-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRTPTCP() {
 		return rtptcp;
@@ -158,7 +158,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Ruft den Wert der rtprtsptcp-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRTPRTSPTCP() {
 		return rtprtsptcp;
@@ -176,7 +176,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Ruft den Wert der supportedReceivers-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getSupportedReceivers() {
 		return supportedReceivers;
@@ -194,7 +194,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Ruft den Wert der maximumRTSPURILength-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMaximumRTSPURILength() {
 		return maximumRTSPURILength;
@@ -228,7 +228,7 @@ public class ReceiverCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

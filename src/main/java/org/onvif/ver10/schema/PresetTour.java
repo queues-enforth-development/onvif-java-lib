@@ -140,7 +140,7 @@ public class PresetTour {
 	/**
 	 * Ruft den Wert der autoStart-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isAutoStart() {
 		return autoStart;
@@ -195,7 +195,7 @@ public class PresetTour {
 	 * Objects of the following type(s) are allowed in the list {@link PTZPresetTourSpot }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PTZPresetTourSpot> getTourSpot() {
 		if (tourSpot == null) {

@@ -87,7 +87,7 @@ public class SupportedRules {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getRuleContentSchemaLocation() {
 		if (ruleContentSchemaLocation == null) {
@@ -115,7 +115,7 @@ public class SupportedRules {
 	 * Objects of the following type(s) are allowed in the list {@link ConfigDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<ConfigDescription> getRuleDescription() {
 		if (ruleDescription == null) {

@@ -128,7 +128,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space2DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space2DDescription> getAbsolutePanTiltPositionSpace() {
 		if (absolutePanTiltPositionSpace == null) {
@@ -156,7 +156,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space1DDescription> getAbsoluteZoomPositionSpace() {
 		if (absoluteZoomPositionSpace == null) {
@@ -184,7 +184,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space2DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space2DDescription> getRelativePanTiltTranslationSpace() {
 		if (relativePanTiltTranslationSpace == null) {
@@ -212,7 +212,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space1DDescription> getRelativeZoomTranslationSpace() {
 		if (relativeZoomTranslationSpace == null) {
@@ -240,7 +240,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space2DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space2DDescription> getContinuousPanTiltVelocitySpace() {
 		if (continuousPanTiltVelocitySpace == null) {
@@ -268,7 +268,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space1DDescription> getContinuousZoomVelocitySpace() {
 		if (continuousZoomVelocitySpace == null) {
@@ -296,7 +296,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space1DDescription> getPanTiltSpeedSpace() {
 		if (panTiltSpeedSpace == null) {
@@ -324,7 +324,7 @@ public class PTZSpaces {
 	 * Objects of the following type(s) are allowed in the list {@link Space1DDescription }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Space1DDescription> getZoomSpeedSpace() {
 		if (zoomSpeedSpace == null) {

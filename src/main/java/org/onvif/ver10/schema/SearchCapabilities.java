@@ -94,7 +94,7 @@ public class SearchCapabilities {
 	/**
 	 * Ruft den Wert der metadataSearch-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isMetadataSearch() {
 		return metadataSearch;
@@ -128,7 +128,7 @@ public class SearchCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

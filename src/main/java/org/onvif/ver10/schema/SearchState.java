@@ -70,7 +70,7 @@ public enum SearchState {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -79,7 +79,7 @@ public enum SearchState {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static SearchState fromValue(String v) {
 		for (SearchState c : SearchState.values()) {

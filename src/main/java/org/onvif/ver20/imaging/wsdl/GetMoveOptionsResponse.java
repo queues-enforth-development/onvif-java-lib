@@ -49,7 +49,7 @@ public class GetMoveOptionsResponse {
     /**
      * Ruft den Wert der moveOptions-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link MoveOptions20 }
      *     

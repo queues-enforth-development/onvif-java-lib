@@ -123,7 +123,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der receiverSource-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isReceiverSource() {
 		return receiverSource;
@@ -141,7 +141,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der mediaProfileSource-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isMediaProfileSource() {
 		return mediaProfileSource;
@@ -159,7 +159,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der dynamicRecordings-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDynamicRecordings() {
 		return dynamicRecordings;
@@ -177,7 +177,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der dynamicTracks-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDynamicTracks() {
 		return dynamicTracks;
@@ -195,7 +195,7 @@ public class RecordingCapabilities {
 	/**
 	 * Ruft den Wert der maxStringLength-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getMaxStringLength() {
 		return maxStringLength;
@@ -229,7 +229,7 @@ public class RecordingCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

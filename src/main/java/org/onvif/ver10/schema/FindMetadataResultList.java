@@ -92,7 +92,7 @@ public class FindMetadataResultList {
 	 * Objects of the following type(s) are allowed in the list {@link FindMetadataResult }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<FindMetadataResult> getResult() {
 		if (result == null) {

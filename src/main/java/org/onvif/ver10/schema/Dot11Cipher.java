@@ -64,7 +64,7 @@ public enum Dot11Cipher {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -73,7 +73,7 @@ public enum Dot11Cipher {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Dot11Cipher fromValue(String v) {
 		for (Dot11Cipher c : Dot11Cipher.values()) {

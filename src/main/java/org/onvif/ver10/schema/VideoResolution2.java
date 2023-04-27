@@ -73,7 +73,7 @@ public class VideoResolution2 {
     /**
      * Ruft den Wert der width-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public int getWidth() {
         return width;
@@ -91,7 +91,7 @@ public class VideoResolution2 {
     /**
      * Ruft den Wert der height-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public int getHeight() {
         return height;
@@ -128,7 +128,7 @@ public class VideoResolution2 {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -148,7 +148,7 @@ public class VideoResolution2 {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

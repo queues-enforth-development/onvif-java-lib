@@ -84,7 +84,7 @@ public class TopicExpressionType {
 	 * Objects of the following type(s) are allowed in the list {@link Object } {@link Element } {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getContent() {
 		if (content == null) {

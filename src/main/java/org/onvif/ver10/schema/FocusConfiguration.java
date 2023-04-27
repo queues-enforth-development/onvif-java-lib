@@ -106,7 +106,7 @@ public class FocusConfiguration {
 	/**
 	 * Ruft den Wert der defaultSpeed-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getDefaultSpeed() {
 		return defaultSpeed;
@@ -124,7 +124,7 @@ public class FocusConfiguration {
 	/**
 	 * Ruft den Wert der nearLimit-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getNearLimit() {
 		return nearLimit;
@@ -142,7 +142,7 @@ public class FocusConfiguration {
 	/**
 	 * Ruft den Wert der farLimit-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getFarLimit() {
 		return farLimit;
@@ -176,7 +176,7 @@ public class FocusConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

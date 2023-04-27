@@ -113,7 +113,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der maxFramerate-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getMaxFramerate() {
         return maxFramerate;
@@ -131,7 +131,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der maxResolution-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link VideoResolution }
      *     
@@ -173,7 +173,7 @@ public class VideoSourceMode {
      * {@link String }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<String> getEncodings() {
         if (encodings == null) {
@@ -185,7 +185,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der reboot-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public boolean isReboot() {
         return reboot;
@@ -203,7 +203,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der description-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -227,7 +227,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der extension-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link VideoSourceModeExtension }
      *     
@@ -251,7 +251,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der token-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     
@@ -275,7 +275,7 @@ public class VideoSourceMode {
     /**
      * Ruft den Wert der enabled-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -307,7 +307,7 @@ public class VideoSourceMode {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

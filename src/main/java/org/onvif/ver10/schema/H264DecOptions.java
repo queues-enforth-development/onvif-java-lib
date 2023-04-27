@@ -101,7 +101,7 @@ public class H264DecOptions {
 	 * Objects of the following type(s) are allowed in the list {@link VideoResolution }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<VideoResolution> getResolutionsAvailable() {
 		if (resolutionsAvailable == null) {
@@ -129,7 +129,7 @@ public class H264DecOptions {
 	 * Objects of the following type(s) are allowed in the list {@link H264Profile }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<H264Profile> getSupportedH264Profiles() {
 		if (supportedH264Profiles == null) {
@@ -199,7 +199,7 @@ public class H264DecOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -46,7 +46,7 @@ public class ContinuousFocus {
 	/**
 	 * Ruft den Wert der speed-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public float getSpeed() {
 		return speed;

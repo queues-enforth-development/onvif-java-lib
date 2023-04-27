@@ -78,7 +78,7 @@ public class AudioAnalyticsStream {
 	 * Objects of the following type(s) are allowed in the list {@link AudioDescriptor }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<AudioDescriptor> getAudioDescriptor() {
 		if (audioDescriptor == null) {

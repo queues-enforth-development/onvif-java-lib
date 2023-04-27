@@ -69,7 +69,7 @@ public class GetAudioEncoderConfigurationOptionsResponse {
      * {@link AudioEncoder2ConfigurationOptions }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<AudioEncoder2ConfigurationOptions> getOptions() {
         if (options == null) {

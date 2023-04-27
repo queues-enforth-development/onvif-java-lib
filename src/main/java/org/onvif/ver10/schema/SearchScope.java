@@ -94,7 +94,7 @@ public class SearchScope {
 	 * Objects of the following type(s) are allowed in the list {@link SourceReference }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<SourceReference> getIncludedSources() {
 		if (includedSources == null) {
@@ -122,7 +122,7 @@ public class SearchScope {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getIncludedRecordings() {
 		if (includedRecordings == null) {

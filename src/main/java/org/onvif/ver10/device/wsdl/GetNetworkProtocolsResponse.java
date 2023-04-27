@@ -67,7 +67,7 @@ public class GetNetworkProtocolsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link NetworkProtocol }
 	 * 
 	 * 
-     * @return  -
+     * @return  - -
 	 */
 	public List<NetworkProtocol> getNetworkProtocols() {
 		if (networkProtocols == null) {

@@ -35,7 +35,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BaseFaultType }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BaseFaultType createBaseFaultType() {
 		return new BaseFaultType();
@@ -44,7 +44,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BaseFaultType.ErrorCode }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BaseFaultType.ErrorCode createBaseFaultTypeErrorCode() {
 		return new BaseFaultType.ErrorCode();
@@ -53,7 +53,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BaseFaultType.Description }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BaseFaultType.Description createBaseFaultTypeDescription() {
 		return new BaseFaultType.Description();
@@ -62,7 +62,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link BaseFaultType.FaultCause }
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public BaseFaultType.FaultCause createBaseFaultTypeFaultCause() {
 		return new BaseFaultType.FaultCause();
@@ -72,7 +72,7 @@ public class ObjectFactory {
 	 * Create an instance of {@link JAXBElement }{@code <}{@link BaseFaultType }{@code >}
 	 * 
      * @param value -
-     * @return 
+     * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsrf/bf-2", name = "BaseFault")
 	public JAXBElement<BaseFaultType> createBaseFault(BaseFaultType value) {

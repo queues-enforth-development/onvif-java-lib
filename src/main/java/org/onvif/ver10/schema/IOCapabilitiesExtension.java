@@ -94,7 +94,7 @@ public class IOCapabilitiesExtension {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {
@@ -143,7 +143,7 @@ public class IOCapabilitiesExtension {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getAuxiliaryCommands() {
 		if (auxiliaryCommands == null) {

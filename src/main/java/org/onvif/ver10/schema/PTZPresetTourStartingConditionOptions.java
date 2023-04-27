@@ -134,7 +134,7 @@ public class PTZPresetTourStartingConditionOptions {
 	 * Objects of the following type(s) are allowed in the list {@link PTZPresetTourDirection }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PTZPresetTourDirection> getDirection() {
 		if (direction == null) {

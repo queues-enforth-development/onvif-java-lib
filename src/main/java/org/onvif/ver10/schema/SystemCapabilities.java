@@ -105,7 +105,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der discoveryResolve-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDiscoveryResolve() {
 		return discoveryResolve;
@@ -123,7 +123,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der discoveryBye-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isDiscoveryBye() {
 		return discoveryBye;
@@ -141,7 +141,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der remoteDiscovery-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isRemoteDiscovery() {
 		return remoteDiscovery;
@@ -159,7 +159,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der systemBackup-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isSystemBackup() {
 		return systemBackup;
@@ -177,7 +177,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der systemLogging-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isSystemLogging() {
 		return systemLogging;
@@ -195,7 +195,7 @@ public class SystemCapabilities {
 	/**
 	 * Ruft den Wert der firmwareUpgrade-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isFirmwareUpgrade() {
 		return firmwareUpgrade;
@@ -229,7 +229,7 @@ public class SystemCapabilities {
 	 * Objects of the following type(s) are allowed in the list {@link OnvifVersion }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<OnvifVersion> getSupportedVersions() {
 		if (supportedVersions == null) {

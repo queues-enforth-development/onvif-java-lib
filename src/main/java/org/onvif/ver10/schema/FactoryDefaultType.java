@@ -54,7 +54,7 @@ public enum FactoryDefaultType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -63,7 +63,7 @@ public enum FactoryDefaultType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static FactoryDefaultType fromValue(String v) {
 		for (FactoryDefaultType c : FactoryDefaultType.values()) {

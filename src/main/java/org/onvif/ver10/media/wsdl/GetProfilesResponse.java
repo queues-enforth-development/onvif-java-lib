@@ -67,7 +67,7 @@ public class GetProfilesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Profile }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Profile> getProfiles() {
 		if (profiles == null) {

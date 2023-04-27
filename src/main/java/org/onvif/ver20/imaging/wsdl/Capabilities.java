@@ -83,7 +83,7 @@ public class Capabilities {
      * {@link Element }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -95,7 +95,7 @@ public class Capabilities {
     /**
      * Ruft den Wert der imageStabilization-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Boolean }
      *     
@@ -127,7 +127,7 @@ public class Capabilities {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

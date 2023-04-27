@@ -72,7 +72,7 @@ public class CertificateUsage {
 	/**
 	 * Ruft den Wert der critical-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public boolean isCritical() {
 		return critical;

@@ -134,7 +134,7 @@ public class RecordingJobSource {
 	 * Objects of the following type(s) are allowed in the list {@link RecordingJobTrack }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<RecordingJobTrack> getTracks() {
 		if (tracks == null) {

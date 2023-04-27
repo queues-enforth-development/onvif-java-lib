@@ -170,7 +170,7 @@ public class BaseFaultType {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {
@@ -261,7 +261,7 @@ public class BaseFaultType {
 	 * Objects of the following type(s) are allowed in the list {@link BaseFaultType.Description }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<BaseFaultType.Description> getDescription() {
 		if (description == null) {
@@ -444,7 +444,7 @@ public class BaseFaultType {
 		 * Objects of the following type(s) are allowed in the list {@link Element } {@link String }
 		 * 
 		 * 
-         * @return 
+         * @return  -
 		 */
 		public List<Object> getContent() {
 			if (content == null) {

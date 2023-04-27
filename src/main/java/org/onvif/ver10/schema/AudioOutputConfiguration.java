@@ -122,7 +122,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Ruft den Wert der outputLevel-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getOutputLevel() {
 		return outputLevel;
@@ -156,7 +156,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

@@ -20,7 +20,7 @@ public class OnvifPointer extends URLDevicePointer {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getSnapshotUrl() {
 		return snapshotUrl;
@@ -28,7 +28,7 @@ public class OnvifPointer extends URLDevicePointer {
 
     /**
      *
-     * @return
+     * @return -
      */
     @Override
     public String getName() {
@@ -37,7 +37,7 @@ public class OnvifPointer extends URLDevicePointer {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String getAddress() {
 		return getURLAddress().toString();
@@ -81,7 +81,7 @@ public class OnvifPointer extends URLDevicePointer {
 
     /**
      *
-     * @return
+     * @return -
      * @throws SOAPException -
      * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException -

@@ -59,7 +59,7 @@ public enum DynamicDNSType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -68,7 +68,7 @@ public enum DynamicDNSType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static DynamicDNSType fromValue(String v) {
 		for (DynamicDNSType c : DynamicDNSType.values()) {

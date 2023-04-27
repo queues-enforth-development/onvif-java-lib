@@ -53,7 +53,7 @@ public enum SetDateTimeType {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -62,7 +62,7 @@ public enum SetDateTimeType {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static SetDateTimeType fromValue(String v) {
 		for (SetDateTimeType c : SetDateTimeType.values()) {

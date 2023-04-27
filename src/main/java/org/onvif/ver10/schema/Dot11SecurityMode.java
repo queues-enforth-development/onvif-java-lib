@@ -71,7 +71,7 @@ public enum Dot11SecurityMode {
 
     /**
      *
-     * @return
+     * @return -
      */
     public String value() {
 		return value;
@@ -80,7 +80,7 @@ public enum Dot11SecurityMode {
     /**
      *
      * @param v -
-     * @return
+     * @return -
      */
     public static Dot11SecurityMode fromValue(String v) {
 		for (Dot11SecurityMode c : Dot11SecurityMode.values()) {

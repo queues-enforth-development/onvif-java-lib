@@ -166,7 +166,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Ruft den Wert der eapMethod-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getEAPMethod() {
 		return eapMethod;
@@ -200,7 +200,7 @@ public class Dot1XConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getCACertificateID() {
 		if (caCertificateID == null) {

@@ -67,7 +67,7 @@ public class ScanAvailableDot11NetworksResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Dot11AvailableNetworks }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot11AvailableNetworks> getNetworks() {
 		if (networks == null) {

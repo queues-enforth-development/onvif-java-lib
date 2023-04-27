@@ -270,7 +270,7 @@ public class ImagingOptions {
 	 * Objects of the following type(s) are allowed in the list {@link IrCutFilterMode }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<IrCutFilterMode> getIrCutFilterModes() {
 		if (irCutFilterModes == null) {
@@ -361,7 +361,7 @@ public class ImagingOptions {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<java.lang.Object> getAny() {
 		if (any == null) {

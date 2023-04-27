@@ -80,7 +80,7 @@ public class LayoutOptions {
 	 * Objects of the following type(s) are allowed in the list {@link PaneLayoutOptions }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PaneLayoutOptions> getPaneLayoutOptions() {
 		if (paneLayoutOptions == null) {

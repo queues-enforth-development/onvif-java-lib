@@ -81,7 +81,7 @@ public class LensProjection {
     /**
      * Ruft den Wert der angle-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getAngle() {
         return angle;
@@ -99,7 +99,7 @@ public class LensProjection {
     /**
      * Ruft den Wert der radius-Eigenschaft ab.
      * 
-     * @return 
+     * @return  -
      */
     public float getRadius() {
         return radius;
@@ -117,7 +117,7 @@ public class LensProjection {
     /**
      * Ruft den Wert der transmittance-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link Float }
      *     
@@ -160,7 +160,7 @@ public class LensProjection {
      * {@link java.lang.Object }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<java.lang.Object> getAny() {
         if (any == null) {
@@ -180,7 +180,7 @@ public class LensProjection {
      * by updating the map directly. Because of this design, there's no setter.
      * 
      * 
-     * @return
+     * @return -
      *     always non-null
      */
     public Map<QName, String> getOtherAttributes() {

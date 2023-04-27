@@ -127,7 +127,7 @@ public class IPv6NetworkInterfaceSetConfiguration {
 	 * Objects of the following type(s) are allowed in the list {@link PrefixedIPv6Address }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<PrefixedIPv6Address> getManual() {
 		if (manual == null) {

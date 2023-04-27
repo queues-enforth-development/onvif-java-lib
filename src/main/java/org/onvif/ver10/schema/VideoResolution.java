@@ -53,7 +53,7 @@ public class VideoResolution {
 	/**
 	 * Ruft den Wert der width-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getWidth() {
 		return width;
@@ -71,7 +71,7 @@ public class VideoResolution {
 	/**
 	 * Ruft den Wert der height-Eigenschaft ab.
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public int getHeight() {
 		return height;

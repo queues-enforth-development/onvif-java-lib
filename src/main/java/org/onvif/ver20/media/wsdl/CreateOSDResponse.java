@@ -48,7 +48,7 @@ public class CreateOSDResponse {
     /**
      * Ruft den Wert der osdToken-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link String }
      *     

@@ -49,7 +49,7 @@ public class GetStatusResponse {
     /**
      * Ruft den Wert der status-Eigenschaft ab.
      * 
-     * @return
+     * @return -
      *     possible object is
      *     {@link ImagingStatus20 }
      *     

@@ -69,7 +69,7 @@ public class GetVideoSourceConfigurationsResponse {
      * {@link VideoSourceConfiguration }
      * 
      * 
-     * @return 
+     * @return  -
      */
     public List<VideoSourceConfiguration> getConfigurations() {
         if (configurations == null) {
