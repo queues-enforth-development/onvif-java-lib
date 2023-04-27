@@ -47,9 +47,9 @@ public class SoapHelper<T, R> extends SOAP
      * @param obj A specific instance of T.
      * @param needAuthentication Does authentication need to be used?
      * @return SOAPMessage A SOAPMessage object that can be sent.
-     * @throws SOAPException
-     * @throws JAXBException
-     * @throws ParserConfigurationException 
+     * @throws SOAPException -
+     * @throws JAXBException -
+     * @throws ParserConfigurationException  -
      */
     public SOAPMessage getSoapMessage(T obj, boolean needAuthentication) 
             throws SOAPException, JAXBException, ParserConfigurationException 
@@ -63,11 +63,11 @@ public class SoapHelper<T, R> extends SOAP
      * @param response A specific instance of R.
      * @param needAuthentication Does authentication need to be used?
      * @return R The response object filled out.
-     * @throws SOAPException
-     * @throws JAXBException
-     * @throws ParserConfigurationException
-     * @throws ConnectException
-     * @throws SOAPFaultException 
+     * @throws SOAPException -
+     * @throws JAXBException -
+     * @throws ParserConfigurationException -
+     * @throws ConnectException -
+     * @throws SOAPFaultException  -
      */
     public R getSoapResponseMessage(T object, R response, boolean needAuthentication)
             throws SOAPException, JAXBException, ParserConfigurationException, ConnectException, SOAPFaultException 
@@ -81,7 +81,7 @@ public class SoapHelper<T, R> extends SOAP
      * @param obj A specific instance of T.
      * @param theClass the Class of T.
      * @return The object marshaled to a string.
-     * @throws JAXBException 
+     * @throws JAXBException  -
      */
     public <T> String marshalObjectToString(T obj, Class<T> theClass) throws JAXBException {
         StringWriter sw;
@@ -126,9 +126,9 @@ public class SoapHelper<T, R> extends SOAP
      * @param soapRequestElem -
      * @param needAuthentification -
      * @return
-     * @throws SOAPException
-     * @throws ParserConfigurationException
-     * @throws JAXBException
+     * @throws SOAPException -
+     * @throws ParserConfigurationException -
+     * @throws JAXBException -
      */
 
     public SOAPMessage generateMessage(T soapRequestElem, boolean needAuthentification) 

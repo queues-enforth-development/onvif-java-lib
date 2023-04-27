@@ -220,7 +220,7 @@ public class PtzDevice
      * @see de.onvif.soap.devices.PtzDevice#getTiltSpaces(String)
      * @see de.onvif.soap.devices.PtzDevice#getZoomSpaces(String)
 	 * @return  -True if move successful
-	 * @throws SOAPException
+	 * @throws SOAPException -
      * @throws java.net.ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
 	 */

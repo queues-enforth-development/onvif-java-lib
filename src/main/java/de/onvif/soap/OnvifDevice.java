@@ -78,10 +78,10 @@ public class OnvifDevice
      * @param hostIp -
      * @param user -
      * @param password -
-	 * @throws ConnectException
+	 * @throws ConnectException -
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
-	 * @throws SOAPException
+	 * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
 	public OnvifDevice(String hostIp, String user, String password)
@@ -111,10 +111,10 @@ public class OnvifDevice
 	 * Initializes an ONVIF device, e.g.a Network Video Transmitter (NVT) with logindata.
 	 *
      * @param hostIp -
-	 * @throws ConnectException
+	 * @throws ConnectException -
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
-	 * @throws SOAPException
+	 * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
 	public OnvifDevice(String hostIp)
@@ -154,10 +154,10 @@ public class OnvifDevice
 	 * Initializes the addresses used for SOAP messages and to get the internal
 	 * IP, if given IP is a proxy.
 	 *
-	 * @throws ConnectException
+	 * @throws ConnectException -
 	 *             Get thrown if device doesn't give answers to
 	 *             GetCapabilities()
-	 * @throws SOAPException
+	 * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException
 	 */
 	private void init()
@@ -466,8 +466,8 @@ public class OnvifDevice
     /**
      *
      * @return
-     * @throws ConnectException
-     * @throws SOAPException
+     * @throws ConnectException -
+     * @throws SOAPException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public String reboot()

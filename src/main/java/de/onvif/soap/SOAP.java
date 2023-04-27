@@ -58,8 +58,8 @@ public class SOAP
      * @param soapResponseElem -
      * @param needsSecurity -
      * @return
-     * @throws SOAPException
-     * @throws ConnectException
+     * @throws SOAPException -
+     * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
@@ -73,8 +73,8 @@ public class SOAP
      * @param soapResponseElem -
      * @param needsSecurity -
      * @return
-     * @throws SOAPException
-     * @throws ConnectException
+     * @throws SOAPException -
+     * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
@@ -88,8 +88,8 @@ public class SOAP
      * @param soapResponseElem -
      * @param needsSecurity -
      * @return
-     * @throws SOAPException
-     * @throws ConnectException
+     * @throws SOAPException -
+     * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
@@ -103,8 +103,8 @@ public class SOAP
      * @param soapResponseElem -
      * @param needsSecurity -
      * @return
-     * @throws SOAPException
-     * @throws ConnectException
+     * @throws SOAPException -
+     * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPImagingRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
@@ -119,8 +119,8 @@ public class SOAP
      * @param soapResponseElem -
      * @param needsSecurity -
      * @return
-     * @throws SOAPException
-     * @throws ConnectException
+     * @throws SOAPException -
+     * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPEventsRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
@@ -135,8 +135,8 @@ public class SOAP
      * @param soapUri -
      * @param needsSecurity -
      * @return SOAP Response Element
-     * @throws SOAPException
-     * @throws ConnectException
+     * @throws SOAPException -
+     * @throws ConnectException -
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsSecurity)
@@ -239,9 +239,9 @@ public class SOAP
      * @param soapRequestElem -
      * @param useSecurity -
      * @return
-     * @throws SOAPException
-     * @throws ParserConfigurationException
-     * @throws JAXBException
+     * @throws SOAPException -
+     * @throws ParserConfigurationException -
+     * @throws JAXBException -
      */
     protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean useSecurity) throws SOAPException, ParserConfigurationException,
             JAXBException {
@@ -268,7 +268,7 @@ public class SOAP
      *
      * @param soapMessage -
      * @param useSecurity -
-     * @throws SOAPException
+     * @throws SOAPException -
      */
     protected void createSoapHeader(SOAPMessage soapMessage, boolean useSecurity)
             throws SOAPException {
