@@ -59,7 +59,7 @@ public class GetEndpointReferenceResponse {
 	/**
 	 * Ruft den Wert der guid-Eigenschaft ab.
 	 * 
-	 * @return possible object is {@link String }
+	 * @return  -possible object is {@link String }
 	 * 
 	 */
 	public String getGUID() {
@@ -96,7 +96,7 @@ public class GetEndpointReferenceResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Object> getAny() {
 		if (any == null) {

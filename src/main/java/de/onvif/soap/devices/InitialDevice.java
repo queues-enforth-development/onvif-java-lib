@@ -52,6 +52,7 @@ import de.onvif.de.onvif.traits.SoapUser;
  *
  *
  */
+@SuppressWarnings("javadoc")
 public class InitialDevice
         implements LoggerInterface, SoapUser
 {
@@ -71,7 +72,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public java.util.Date getDate() {
 		Calendar cal;
@@ -96,7 +97,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public Optional<GetDeviceInformationResponse> getDeviceInformation() {
 
@@ -170,7 +171,7 @@ public class InitialDevice
     /**
      *
      * @param useAuthentication
-     * @return
+     * @return -
      */
     public Optional<String> getHostname(boolean useAuthentication) {
         boolean hasError = false;
@@ -194,7 +195,7 @@ public class InitialDevice
     /**
      *
      * @param hostname
-     * @return
+     * @return -
      */
     public boolean setHostname(String hostname) {
 		SetHostname setHostname = new SetHostname();
@@ -214,7 +215,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public List<User> getUsers() {
 		GetUsers getUsers = new GetUsers();
@@ -237,7 +238,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      * @throws ConnectException
      * @throws SOAPException
      * @throws de.onvif.soap.exception.SOAPFaultException
@@ -266,7 +267,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public List<Profile> getProfiles() {
 		GetProfiles request = new GetProfiles();
@@ -291,7 +292,7 @@ public class InitialDevice
     /**
      *
      * @param profileToken
-     * @return
+     * @return -
      */
     public Profile getProfile(String profileToken) {
 		GetProfile request = new GetProfile();
@@ -318,7 +319,7 @@ public class InitialDevice
     /**
      *
      * @param name
-     * @return
+     * @return -
      */
     public Profile createProfile(String name) {
 		CreateProfile request = new CreateProfile();
@@ -345,7 +346,7 @@ public class InitialDevice
     /**
      *
      * @param includeCapability
-     * @return
+     * @return -
      */
     public List<Service> getServices(boolean includeCapability) {
 		GetServices request = new GetServices();
@@ -371,7 +372,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      */
     public List<Scope> getScopes() {
 		GetScopes request = new GetScopes();
@@ -395,7 +396,7 @@ public class InitialDevice
 
     /**
      *
-     * @return
+     * @return -
      * @throws ConnectException
      * @throws SOAPException
      * @throws de.onvif.soap.exception.SOAPFaultException

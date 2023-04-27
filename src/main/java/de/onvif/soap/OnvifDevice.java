@@ -75,9 +75,9 @@ public class OnvifDevice
 	/**
 	 * Initializes an ONVIF device, e.g.a Network Video Transmitter (NVT) with logindata.
 	 *
-     * @param hostIp
-     * @param user
-     * @param password
+     * @param hostIp -
+     * @param user -
+     * @param password -
 	 * @throws ConnectException
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
@@ -110,7 +110,7 @@ public class OnvifDevice
 	/**
 	 * Initializes an ONVIF device, e.g.a Network Video Transmitter (NVT) with logindata.
 	 *
-     * @param hostIp
+     * @param hostIp -
 	 * @throws ConnectException
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
@@ -201,7 +201,7 @@ public class OnvifDevice
 
     /**
      *
-     * @param original
+     * @param original -
      * @return
      */
     public String replaceLocalIpWithProxyIp(String original) {

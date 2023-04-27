@@ -67,7 +67,7 @@ public class CreateUsers {
 	 * Objects of the following type(s) are allowed in the list {@link User }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<User> getUser() {
 		if (user == null) {

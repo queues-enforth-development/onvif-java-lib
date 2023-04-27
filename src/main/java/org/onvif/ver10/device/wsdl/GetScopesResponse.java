@@ -67,7 +67,7 @@ public class GetScopesResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Scope }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Scope> getScopes() {
 		if (scopes == null) {

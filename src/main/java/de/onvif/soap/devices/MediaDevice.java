@@ -52,10 +52,10 @@ public class MediaDevice
     /**
      *
      * @param profileNumber
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      * @deprecated
      */
     @Deprecated
@@ -73,10 +73,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getHTTPStreamUri(String profileToken) 
             throws ConnectException, SOAPException, SOAPFaultException 
@@ -93,10 +93,10 @@ public class MediaDevice
     /**
      *
      * @param profileNumber
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      * @deprecated
      */
     @Deprecated
@@ -114,10 +114,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getUDPStreamUri(String profileToken) 
             throws ConnectException, SOAPException, SOAPFaultException 
@@ -133,10 +133,10 @@ public class MediaDevice
     /**
      *
      * @param profileNumber
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      * @deprecated
      */
     @Deprecated
@@ -154,10 +154,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getTCPStreamUri(String profileToken) 
             throws ConnectException, SOAPException, SOAPFaultException 
@@ -173,10 +173,10 @@ public class MediaDevice
     /**
      *
      * @param profileNumber
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      * @deprecated
      */
     @Deprecated
@@ -194,10 +194,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getRTSPStreamUri(String profileToken) 
             throws ConnectException, SOAPException, SOAPFaultException 
@@ -214,10 +214,10 @@ public class MediaDevice
      *
      * @param streamSetup
      * @param profileNumber
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      * @deprecated
      */
     @Deprecated
@@ -232,10 +232,10 @@ public class MediaDevice
      *
      * @param profile
      * @param streamSetup
-     * @return
-     * @throws ConnectException
-     * @throws SOAPException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws ConnectException -
+     * @throws SOAPException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      * @deprecated
      */
     @Deprecated
@@ -249,10 +249,10 @@ public class MediaDevice
      *
      * @param profileToken
      * @param streamSetup
-     * @return
-     * @throws SOAPException
-     * @throws ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws SOAPException -
+     * @throws ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getStreamUri(String profileToken, StreamSetup streamSetup) 
             throws SOAPException, ConnectException, SOAPFaultException 
@@ -279,7 +279,7 @@ public class MediaDevice
     /**
      *
      * @param profile
-     * @return
+     * @return -
      */
     public static VideoEncoderConfiguration getVideoEncoderConfiguration(Profile profile) {
 		return profile.getVideoEncoderConfiguration();
@@ -288,10 +288,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws SOAPException
-     * @throws ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws SOAPException -
+     * @throws ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public VideoEncoderConfigurationOptions getVideoEncoderConfigurationOptions(String profileToken) 
             throws SOAPException, ConnectException, SOAPFaultException 
@@ -317,10 +317,10 @@ public class MediaDevice
     /**
      *
      * @param videoEncoderConfiguration
-     * @return
-     * @throws SOAPException
-     * @throws ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws SOAPException -
+     * @throws ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public boolean setVideoEncoderConfiguration(VideoEncoderConfiguration videoEncoderConfiguration) 
             throws SOAPException, ConnectException, SOAPFaultException 
@@ -343,10 +343,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws SOAPException
-     * @throws ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws SOAPException -
+     * @throws ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getSceenshotUri(String profileToken) 
             throws SOAPException, ConnectException, SOAPFaultException 
@@ -357,10 +357,10 @@ public class MediaDevice
     /**
      *
      * @param profileToken
-     * @return
-     * @throws SOAPException
-     * @throws ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws SOAPException -
+     * @throws ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String getSnapshotUri(String profileToken) 
             throws SOAPException, ConnectException, SOAPFaultException 
@@ -385,10 +385,10 @@ public class MediaDevice
 
     /**
      *
-     * @return
-     * @throws SOAPException
-     * @throws ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @return -
+     * @throws SOAPException -
+     * @throws ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public List<VideoSource> getVideoSources() 
             throws SOAPException, ConnectException, SOAPFaultException 

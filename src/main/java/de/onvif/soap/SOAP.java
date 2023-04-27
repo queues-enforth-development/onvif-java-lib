@@ -33,11 +33,11 @@ import org.w3c.dom.Document;
  *
  */
 public class SOAP
-        implements LoggerInterface
-{
-	private boolean logging = true;
+        implements LoggerInterface {
 
-	private final OnvifDevice onvifDevice;
+    private boolean logging = true;
+
+    private final OnvifDevice onvifDevice;
 
     private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
     String writeOutputLocation = OUTPUT_LOCATION;
@@ -45,10 +45,10 @@ public class SOAP
     /**
      *
      * @param onvifDevice
-
+     *
      */
     public SOAP(OnvifDevice onvifDevice) {
-		this.onvifDevice = onvifDevice;
+        this.onvifDevice = onvifDevice;
 
     }
 
@@ -63,10 +63,9 @@ public class SOAP
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
-            throws SOAPException, ConnectException, SOAPFaultException
-    {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getDeviceUri(), needsSecurity);
-	}
+            throws SOAPException, ConnectException, SOAPFaultException {
+        return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getDeviceUri(), needsSecurity);
+    }
 
     /**
      *
@@ -79,10 +78,9 @@ public class SOAP
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
-            throws SOAPException, ConnectException, SOAPFaultException
-    {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getPtzUri(), needsSecurity);
-	}
+            throws SOAPException, ConnectException, SOAPFaultException {
+        return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getPtzUri(), needsSecurity);
+    }
 
     /**
      *
@@ -95,10 +93,9 @@ public class SOAP
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
-            throws SOAPException, ConnectException, SOAPFaultException
-    {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getMediaUri(), needsSecurity);
-	}
+            throws SOAPException, ConnectException, SOAPFaultException {
+        return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getMediaUri(), needsSecurity);
+    }
 
     /**
      *
@@ -111,10 +108,10 @@ public class SOAP
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPImagingRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
-			ConnectException,
-			SOAPFaultException {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getImagingUri(), needsSecurity);
-	}
+            ConnectException,
+            SOAPFaultException {
+        return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getImagingUri(), needsSecurity);
+    }
 
     /**
      *
@@ -127,43 +124,41 @@ public class SOAP
      * @throws de.onvif.soap.exception.SOAPFaultException
      */
     public Object createSOAPEventsRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
-			ConnectException, SOAPFaultException
-    {
-		return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getEventsUri(), needsSecurity);
-	}
+            ConnectException, SOAPFaultException {
+        return createSOAPRequest(soapRequestElem, soapResponseElem, onvifDevice.getEventsUri(), needsSecurity);
+    }
 
-	/**
-	 *
+    /**
+     *
      * @param soapRequestElem
-	 * @param soapResponseElem
-	 *            Answer object for SOAP request
+     * @param soapResponseElem Answer object for SOAP request
      * @param soapUri
      * @param needsSecurity
-	 * @return SOAP Response Element
-	 * @throws SOAPException
-	 * @throws ConnectException
+     * @return SOAP Response Element
+     * @throws SOAPException
+     * @throws ConnectException
      * @throws de.onvif.soap.exception.SOAPFaultException
-	 */
-	public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsSecurity)
-            throws ConnectException, SOAPException, SOAPFaultException
+     */
+    public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsSecurity)
+            throws ConnectException, SOAPException, SOAPFaultException 
     {
-		SOAPConnection soapConnection = null;
-		SOAPMessage soapResponse = null;
+        SOAPConnection soapConnection = null;
+        SOAPMessage soapResponse = null;
 
-		try {
-			// Create SOAP Connection
-			SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
-			soapConnection = soapConnectionFactory.createConnection();
+        try {
+            // Create SOAP Connection
+            SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
+            soapConnection = soapConnectionFactory.createConnection();
 
-			SOAPMessage soapMessage = createSoapMessage(soapRequestElem, needsSecurity);
+            SOAPMessage soapMessage = createSoapMessage(soapRequestElem, needsSecurity);
 
-			// Print the request message
-			if (isLogging()) {
+            // Print the request message
+            if (isLogging()) {
                 PtzDevice.logger.logSoapMessage(soapMessage, String.format("Request SOAP Message (%s): ", soapRequestElem.getClass().getSimpleName()));
                 PtzDevice.logger.logSoapMessage2File(OUTPUT_LOCATION, soapMessage);
-			}
+            }
 
-			soapResponse = soapConnection.call(soapMessage, soapUri);
+            soapResponse = soapConnection.call(soapMessage, soapUri);
 
             SOAPBody body = soapResponse.getSOAPBody();
             boolean hasFault = body.hasFault();
@@ -173,7 +168,7 @@ public class SOAP
             }
             //hasFault = soapResponseElem;
 
-            if (null!=fault) {
+            if (null != fault) {
                 StringBuilder sb1 = new StringBuilder("[");
 
                 sb1.append(soapMessage.getSOAPBody().getFirstChild().getNodeName()).append(", ");
@@ -184,8 +179,8 @@ public class SOAP
                 System.out.println(sb1.toString());
             }
 
-			// print SOAP Response
-			if (isLogging()) {
+            // print SOAP Response
+            if (isLogging()) {
                 String name = body.getChildNodes().item(0).getLocalName();
                 PtzDevice.logger.logSoapMessage(soapResponse, String.format("Response SOAP Message (%s): ", name));
                 if (name.toLowerCase().contains("fault")) {
@@ -193,11 +188,11 @@ public class SOAP
                 } else {
                     PtzDevice.logger.logSoapMessage2File(OUTPUT_LOCATION, soapResponse);
                 }
-			}
+            }
 
-			if (soapResponseElem == null) {
-				throw new NullPointerException("Improper SOAP Response Element given (is null).");
-			}
+            if (soapResponseElem == null) {
+                throw new NullPointerException("Improper SOAP Response Element given (is null).");
+            }
 
             if (hasFault) {
                 throw new SOAPFaultException(soapResponse, "An error occurred with the SOAP call.");
@@ -220,23 +215,24 @@ public class SOAP
                 }
             }
 
-			return soapResponseElem;
-		} catch (SOAPException e) {
-			onvifDevice.getLogger().log(Level.WARNING,
-					String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
-			throw e;
-		} catch (ParserConfigurationException | JAXBException  e) {
-			onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
-			return null;
-		} finally {
-			try {
-                if (null!=soapConnection)
+            return soapResponseElem;
+        } catch (SOAPException e) {
+            onvifDevice.getLogger().log(Level.WARNING,
+                    String.format("Unexpected response. Response should be from class %s, but response is: %s", soapResponseElem.getClass(), soapResponse));
+            throw e;
+        } catch (ParserConfigurationException | JAXBException e) {
+            onvifDevice.getLogger().log(Level.WARNING, String.format("Unhandled exception: %s", e.getMessage()), e);
+            return null;
+        } finally {
+            try {
+                if (null != soapConnection) {
                     soapConnection.close();
-			} catch (SOAPException e) {
+                }
+            } catch (SOAPException e) {
                 onvifDevice.getLogger().log(Level.WARNING, "Error occurred while closing connection", e);
-			}
-		}
-	}
+            }
+        }
+    }
 
     /**
      *
@@ -248,25 +244,23 @@ public class SOAP
      * @throws JAXBException
      */
     protected SOAPMessage createSoapMessage(Object soapRequestElem, boolean useSecurity) throws SOAPException, ParserConfigurationException,
-			JAXBException
-    {
-		MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
-		SOAPMessage soapMessage = messageFactory.createMessage();
+            JAXBException {
+        MessageFactory messageFactory = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL);
+        SOAPMessage soapMessage = messageFactory.createMessage();
 
-		Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-		Marshaller marshaller = JAXBContext.newInstance(soapRequestElem.getClass()).createMarshaller();
-		marshaller.marshal(soapRequestElem, document);
-		soapMessage.getSOAPBody().addDocument(document);
+        Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        Marshaller marshaller = JAXBContext.newInstance(soapRequestElem.getClass()).createMarshaller();
+        marshaller.marshal(soapRequestElem, document);
+        soapMessage.getSOAPBody().addDocument(document);
 
-		createSoapHeader(soapMessage, useSecurity);
+        createSoapHeader(soapMessage, useSecurity);
 
-		soapMessage.saveChanges();
-		return soapMessage;
-	}
+        soapMessage.saveChanges();
+        return soapMessage;
+    }
 
     protected void createSoapHeader(SOAPMessage soapMessage)
-        throws SOAPException
-    {
+            throws SOAPException {
         createSoapHeader(soapMessage, true);
     }
 
@@ -277,8 +271,7 @@ public class SOAP
      * @throws SOAPException
      */
     protected void createSoapHeader(SOAPMessage soapMessage, boolean useSecurity)
-            throws SOAPException
-    {
+            throws SOAPException {
         SOAPPart sp = soapMessage.getSOAPPart();
         SOAPEnvelope se = sp.getEnvelope();
         SOAPHeader header = soapMessage.getSOAPHeader();
@@ -309,27 +302,30 @@ public class SOAP
                 SOAPElement createdElem = usernameTokenElem.addChildElement("Created", "wsu");
                 createdElem.setTextContent(onvifDevice.getLastUTCTime());
             }
-		}
-	}
+        }
+    }
 
     /**
      * Are we logging?
+     *
      * @return
      */
     public boolean isLogging() {
-		return logging;
-	}
+        return logging;
+    }
 
     /**
      * Turn logging on and off;
+     *
      * @param logging
      */
     public void setLogging(boolean logging) {
-		this.logging = logging;
-	}
+        this.logging = logging;
+    }
 
     /**
      * Get the location to write the output.
+     *
      * @return
      */
     public String getWriteOutputLocation() {
@@ -337,8 +333,11 @@ public class SOAP
     }
 
     /**
-     * Set the output file location for writing the XML SOAP message to a hard disk.
-     * @param writeOutputLocation The location in which the XML output will be written.
+     * Set the output file location for writing the XML SOAP message to a hard
+     * disk.
+     *
+     * @param writeOutputLocation The location in which the XML output will be
+     * written.
      */
     public void setWriteOutputLocation(String writeOutputLocation) {
         this.writeOutputLocation = writeOutputLocation;

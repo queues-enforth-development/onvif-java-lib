@@ -50,7 +50,7 @@ public class ImagingDevice
     /**
      *
      * @param videoSourceToken
-     * @return
+     * @return -
      */
     public ImagingOptions20 getOptions(String videoSourceToken) {
 		if (videoSourceToken == null) {
@@ -80,7 +80,7 @@ public class ImagingDevice
      *
      * @param videoSourceToken
      * @param absoluteFocusValue
-     * @return
+     * @return -
      */
     public boolean moveFocus(String videoSourceToken, float absoluteFocusValue) {
 		if (videoSourceToken == null) {
@@ -112,7 +112,7 @@ public class ImagingDevice
     /**
      *
      * @param videoSourceToken
-     * @return
+     * @return -
      */
     public ImagingSettings20 getImagingSettings(String videoSourceToken) {
 		if (videoSourceToken == null) {
@@ -142,7 +142,7 @@ public class ImagingDevice
      *
      * @param videoSourceToken
      * @param imagingSettings
-     * @return
+     * @return -
      */
     public boolean setImagingSettings(String videoSourceToken, ImagingSettings20 imagingSettings) {
 		if (videoSourceToken == null) {

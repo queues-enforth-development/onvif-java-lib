@@ -66,7 +66,7 @@ public class DeleteUsers {
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<String> getUsername() {
 		if (username == null) {

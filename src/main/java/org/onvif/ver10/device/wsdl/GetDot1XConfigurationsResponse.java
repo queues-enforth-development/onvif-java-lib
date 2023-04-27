@@ -67,7 +67,7 @@ public class GetDot1XConfigurationsResponse {
 	 * Objects of the following type(s) are allowed in the list {@link Dot1XConfiguration }
 	 * 
 	 * 
-     * @return 
+     * @return  -
 	 */
 	public List<Dot1XConfiguration> getDot1XConfiguration() {
 		if (dot1XConfiguration == null) {

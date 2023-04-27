@@ -72,7 +72,7 @@ public class SoapHelper<T, R> extends SOAP
     public R getSoapResponseMessage(T object, R response, boolean needAuthentication)
             throws SOAPException, JAXBException, ParserConfigurationException, ConnectException, SOAPFaultException 
     {
-        return (R)this.createSOAPRequest(object, response, onvifDevice.getDeviceUri(), needAuthentication);
+        return castToAnything(this.createSOAPRequest(object, response, onvifDevice.getDeviceUri(), needAuthentication));
     }
 
     /**
@@ -150,4 +150,15 @@ public class SoapHelper<T, R> extends SOAP
 
 	}
 
+    /**
+     *    Cast to anything with the check suppressed.  This is dangerous and 
+     * should only be called if you are sure
+     * @param <T> The type to case to
+     * @param obj the Object to cast
+     * @return An object of type T.
+     */
+    @SuppressWarnings("unchecked")
+    public static <T> T castToAnything(Object obj) {
+        return (T) obj;
+    }
 }
