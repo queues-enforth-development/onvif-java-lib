@@ -121,7 +121,7 @@ public class RecordingInformation {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -142,7 +142,7 @@ public class RecordingInformation {
 	/**
 	 * Legt den Wert der source-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingSourceInformation }
 	 * 
 	 */
@@ -163,7 +163,7 @@ public class RecordingInformation {
 	/**
 	 * Legt den Wert der earliestRecording-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -184,7 +184,7 @@ public class RecordingInformation {
 	/**
 	 * Legt den Wert der latestRecording-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -205,7 +205,7 @@ public class RecordingInformation {
 	/**
 	 * Legt den Wert der content-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -254,7 +254,7 @@ public class RecordingInformation {
 	/**
 	 * Legt den Wert der recordingStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingStatus }
 	 * 
 	 */

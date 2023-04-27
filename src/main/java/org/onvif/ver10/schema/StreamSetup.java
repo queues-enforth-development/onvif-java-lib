@@ -81,7 +81,7 @@ public class StreamSetup {
 	/**
 	 * Legt den Wert der stream-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link StreamType }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class StreamSetup {
 	/**
 	 * Legt den Wert der transport-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Transport }
 	 * 
 	 */

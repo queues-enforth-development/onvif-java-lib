@@ -112,7 +112,7 @@ public enum ConfigurationEnumeration {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static ConfigurationEnumeration fromValue(String v) {

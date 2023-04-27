@@ -108,7 +108,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der supportedPTZSpaces-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpaces }
 	 * 
 	 */
@@ -149,7 +149,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der maximumNumberOfPresets-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMaximumNumberOfPresets(int value) {
 		this.maximumNumberOfPresets = value;
@@ -167,7 +167,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der homeSupported-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setHomeSupported(boolean value) {
 		this.homeSupported = value;
@@ -214,7 +214,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZNodeExtension }
 	 * 
 	 */
@@ -235,7 +235,7 @@ public class PTZNode extends DeviceEntity {
 	/**
 	 * Legt den Wert der fixedHomePosition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

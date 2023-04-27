@@ -61,7 +61,7 @@ public class CreateOSD {
     /**
      * Legt den Wert der osd-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link OSDConfiguration }
      *     

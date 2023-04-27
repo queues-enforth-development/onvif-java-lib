@@ -62,7 +62,7 @@ public class OnvifVersion {
 	/**
 	 * Legt den Wert der major-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMajor(int value) {
 		this.major = value;
@@ -80,7 +80,7 @@ public class OnvifVersion {
 	/**
 	 * Legt den Wert der minor-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMinor(int value) {
 		this.minor = value;

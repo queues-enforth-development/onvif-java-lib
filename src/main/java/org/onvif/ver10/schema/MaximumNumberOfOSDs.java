@@ -95,7 +95,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der total-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTotal(int value) {
 		this.total = value;
@@ -114,7 +114,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der image-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -135,7 +135,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der plainText-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -156,7 +156,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der date-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -177,7 +177,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der time-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -198,7 +198,7 @@ public class MaximumNumberOfOSDs {
 	/**
 	 * Legt den Wert der dateAndTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */

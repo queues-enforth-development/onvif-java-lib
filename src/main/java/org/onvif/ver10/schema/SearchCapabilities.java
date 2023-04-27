@@ -83,7 +83,7 @@ public class SearchCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -103,7 +103,7 @@ public class SearchCapabilities {
 	/**
 	 * Legt den Wert der metadataSearch-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMetadataSearch(boolean value) {
 		this.metadataSearch = value;

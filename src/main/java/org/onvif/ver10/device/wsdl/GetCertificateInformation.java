@@ -63,7 +63,7 @@ public class GetCertificateInformation {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

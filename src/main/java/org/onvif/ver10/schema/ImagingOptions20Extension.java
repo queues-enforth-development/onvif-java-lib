@@ -102,7 +102,7 @@ public class ImagingOptions20Extension {
 	/**
 	 * Legt den Wert der imageStabilization-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImageStabilizationOptions }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class ImagingOptions20Extension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingOptions20Extension2 }
 	 * 
 	 */

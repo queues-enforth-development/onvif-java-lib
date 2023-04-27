@@ -168,7 +168,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls10-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -189,7 +189,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls11-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -210,7 +210,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls12-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -231,7 +231,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der onboardKeyGeneration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -252,7 +252,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der accessPolicyConfig-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -273,7 +273,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der defaultAccessPolicy-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -294,7 +294,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der dot1X-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -315,7 +315,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der remoteUserHandling-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -336,7 +336,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der x509Token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -357,7 +357,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der samlToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -378,7 +378,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der kerberosToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -399,7 +399,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der usernameToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -420,7 +420,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der httpDigest-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -441,7 +441,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der relToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -490,7 +490,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der maxUsers-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */

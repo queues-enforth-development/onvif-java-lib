@@ -56,7 +56,7 @@ public class ContinuousFocusOptions {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

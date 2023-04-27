@@ -62,7 +62,7 @@ public class IPv6NetworkInterface {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEnabled(boolean value) {
 		this.enabled = value;
@@ -81,7 +81,7 @@ public class IPv6NetworkInterface {
 	/**
 	 * Legt den Wert der config-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv6Configuration }
 	 * 
 	 */

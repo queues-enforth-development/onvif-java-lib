@@ -58,7 +58,7 @@ public class SendAuxiliaryCommand {
 	/**
 	 * Legt den Wert der auxiliaryCommand-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

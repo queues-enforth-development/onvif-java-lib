@@ -112,7 +112,7 @@ public class NotificationProducerRP {
 	/**
 	 * Legt den Wert der fixedTopicSet-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -161,7 +161,7 @@ public class NotificationProducerRP {
 	/**
 	 * Legt den Wert der topicSet-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TopicSetType }
 	 * 
 	 */

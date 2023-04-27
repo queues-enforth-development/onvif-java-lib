@@ -635,7 +635,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetVideoEncoderConfigurationOptions")
@@ -646,7 +646,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Capabilities2 }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "Capabilities")
@@ -657,7 +657,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StartStopMulticastStreaming }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "StopMulticastStreaming")
@@ -668,7 +668,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAnalyticsConfigurations")
@@ -679,7 +679,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StartStopMulticastStreaming }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "StartMulticastStreaming")
@@ -690,7 +690,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetVideoSourceConfigurations")
@@ -701,7 +701,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioEncoderConfigurationOptions")
@@ -712,7 +712,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetVideoSourceConfigurationOptions")
@@ -723,7 +723,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetVideoEncoderConfigurations")
@@ -734,7 +734,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetMetadataConfigurationOptions")
@@ -745,7 +745,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioOutputConfigurationOptions")
@@ -756,7 +756,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConfigurationEnumeration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "ConfigurationEnumeration")
@@ -767,7 +767,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioSourceConfigurationOptions")
@@ -778,7 +778,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioOutputConfigurations")
@@ -789,7 +789,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioDecoderConfigurationOptions")
@@ -800,7 +800,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetMetadataConfigurations")
@@ -811,7 +811,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioSourceConfigurations")
@@ -822,7 +822,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioDecoderConfigurations")
@@ -833,7 +833,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetConfiguration }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/media/wsdl", name = "GetAudioEncoderConfigurations")

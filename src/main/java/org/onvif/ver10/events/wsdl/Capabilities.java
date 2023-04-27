@@ -142,7 +142,7 @@ public class Capabilities {
     /**
      * Legt den Wert der wsSubscriptionPolicySupport-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -166,7 +166,7 @@ public class Capabilities {
     /**
      * Legt den Wert der wsPullPointSupport-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -190,7 +190,7 @@ public class Capabilities {
     /**
      * Legt den Wert der wsPausableSubscriptionManagerInterfaceSupport-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -214,7 +214,7 @@ public class Capabilities {
     /**
      * Legt den Wert der maxNotificationProducers-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Integer }
      *     
@@ -238,7 +238,7 @@ public class Capabilities {
     /**
      * Legt den Wert der maxPullPoints-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Integer }
      *     
@@ -262,7 +262,7 @@ public class Capabilities {
     /**
      * Legt den Wert der persistentNotificationStorage-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

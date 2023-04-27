@@ -101,7 +101,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der tkip-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTKIP(boolean value) {
 		this.tkip = value;
@@ -119,7 +119,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der scanAvailableNetworks-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setScanAvailableNetworks(boolean value) {
 		this.scanAvailableNetworks = value;
@@ -137,7 +137,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der multipleConfiguration-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMultipleConfiguration(boolean value) {
 		this.multipleConfiguration = value;
@@ -155,7 +155,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der adHocStationMode-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAdHocStationMode(boolean value) {
 		this.adHocStationMode = value;
@@ -173,7 +173,7 @@ public class Dot11Capabilities {
 	/**
 	 * Legt den Wert der wep-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setWEP(boolean value) {
 		this.wep = value;

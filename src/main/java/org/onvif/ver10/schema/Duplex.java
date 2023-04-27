@@ -60,7 +60,7 @@ public enum Duplex {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static Duplex fromValue(String v) {

@@ -145,7 +145,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der deviceIO-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DeviceIOCapabilities }
 	 * 
 	 */
@@ -166,7 +166,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der display-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DisplayCapabilities }
 	 * 
 	 */
@@ -187,7 +187,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der recording-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingCapabilities }
 	 * 
 	 */
@@ -208,7 +208,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der search-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SearchCapabilities }
 	 * 
 	 */
@@ -229,7 +229,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der replay-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ReplayCapabilities }
 	 * 
 	 */
@@ -250,7 +250,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der receiver-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ReceiverCapabilities }
 	 * 
 	 */
@@ -271,7 +271,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der analyticsDevice-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsDeviceCapabilities }
 	 * 
 	 */
@@ -292,7 +292,7 @@ public class CapabilitiesExtension {
 	/**
 	 * Legt den Wert der extensions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CapabilitiesExtension2 }
 	 * 
 	 */

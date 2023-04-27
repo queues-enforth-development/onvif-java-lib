@@ -91,7 +91,7 @@ public class FocusConfiguration20 {
 	/**
 	 * Legt den Wert der autoFocusMode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AutoFocusMode }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class FocusConfiguration20 {
 	/**
 	 * Legt den Wert der defaultSpeed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class FocusConfiguration20 {
 	/**
 	 * Legt den Wert der nearLimit-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class FocusConfiguration20 {
 	/**
 	 * Legt den Wert der farLimit-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class FocusConfiguration20 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusConfiguration20Extension }
 	 * 
 	 */

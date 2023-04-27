@@ -151,7 +151,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -172,7 +172,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der videoSourceConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoSourceConfiguration }
 	 * 
 	 */
@@ -193,7 +193,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der audioSourceConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioSourceConfiguration }
 	 * 
 	 */
@@ -214,7 +214,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der videoEncoderConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoEncoderConfiguration }
 	 * 
 	 */
@@ -235,7 +235,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der audioEncoderConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoderConfiguration }
 	 * 
 	 */
@@ -256,7 +256,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der videoAnalyticsConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoAnalyticsConfiguration }
 	 * 
 	 */
@@ -277,7 +277,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der ptzConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZConfiguration }
 	 * 
 	 */
@@ -298,7 +298,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der metadataConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataConfiguration }
 	 * 
 	 */
@@ -319,7 +319,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ProfileExtension }
 	 * 
 	 */
@@ -340,7 +340,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -361,7 +361,7 @@ public class Profile {
 	/**
 	 * Legt den Wert der fixed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

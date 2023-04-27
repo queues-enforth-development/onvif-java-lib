@@ -99,7 +99,7 @@ public class QueryExpressionType {
 	/**
 	 * Legt den Wert der dialect-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

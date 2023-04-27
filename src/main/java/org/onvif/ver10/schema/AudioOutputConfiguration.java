@@ -90,7 +90,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der outputToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -111,7 +111,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sendPrimacy-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -131,7 +131,7 @@ public class AudioOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der outputLevel-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setOutputLevel(int value) {
 		this.outputLevel = value;

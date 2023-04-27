@@ -93,7 +93,7 @@ public class CreatePullPointSubscriptionResponse {
     /**
      * Legt den Wert der subscriptionReference-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link EndpointReferenceType }
      *     
@@ -117,7 +117,7 @@ public class CreatePullPointSubscriptionResponse {
     /**
      * Legt den Wert der currentTime-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -141,7 +141,7 @@ public class CreatePullPointSubscriptionResponse {
     /**
      * Legt den Wert der terminationTime-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     

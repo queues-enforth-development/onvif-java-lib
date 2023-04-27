@@ -77,7 +77,7 @@ public class OSDPosConfiguration {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class OSDPosConfiguration {
 	/**
 	 * Legt den Wert der pos-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class OSDPosConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDPosConfigurationExtension }
 	 * 
 	 */

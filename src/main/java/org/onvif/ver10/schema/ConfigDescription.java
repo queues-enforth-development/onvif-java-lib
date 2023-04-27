@@ -98,7 +98,7 @@ public class ConfigDescription {
 	/**
 	 * Legt den Wert der parameters-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemListDescription }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class ConfigDescription {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ConfigDescriptionExtension }
 	 * 
 	 */
@@ -168,7 +168,7 @@ public class ConfigDescription {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link QName }
 	 * 
 	 */
@@ -236,7 +236,7 @@ public class ConfigDescription {
 		/**
 		 * Legt den Wert der parentTopic-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */

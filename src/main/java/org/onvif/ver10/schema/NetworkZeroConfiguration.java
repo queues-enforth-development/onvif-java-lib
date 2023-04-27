@@ -89,7 +89,7 @@ public class NetworkZeroConfiguration {
 	/**
 	 * Legt den Wert der interfaceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class NetworkZeroConfiguration {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEnabled(boolean value) {
 		this.enabled = value;
@@ -156,7 +156,7 @@ public class NetworkZeroConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkZeroConfigurationExtension }
 	 * 
 	 */

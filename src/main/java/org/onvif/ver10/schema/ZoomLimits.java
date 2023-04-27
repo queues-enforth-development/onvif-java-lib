@@ -56,7 +56,7 @@ public class ZoomLimits {
 	/**
 	 * Legt den Wert der range-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Space1DDescription }
 	 * 
 	 */

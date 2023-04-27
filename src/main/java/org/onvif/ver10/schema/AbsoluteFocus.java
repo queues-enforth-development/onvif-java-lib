@@ -62,7 +62,7 @@ public class AbsoluteFocus {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPosition(float value) {
 		this.position = value;
@@ -81,7 +81,7 @@ public class AbsoluteFocus {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */

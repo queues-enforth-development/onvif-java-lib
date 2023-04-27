@@ -68,7 +68,7 @@ public class Certificate {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -89,7 +89,7 @@ public class Certificate {
 	/**
 	 * Legt den Wert der certificate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BinaryData }
 	 * 
 	 */

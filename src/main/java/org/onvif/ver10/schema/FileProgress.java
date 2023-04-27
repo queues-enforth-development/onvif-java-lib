@@ -85,7 +85,7 @@ public class FileProgress {
     /**
      * Legt den Wert der fileName-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -106,7 +106,7 @@ public class FileProgress {
     /**
      * Legt den Wert der progress-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setProgress(float value) {
         this.progress = value;

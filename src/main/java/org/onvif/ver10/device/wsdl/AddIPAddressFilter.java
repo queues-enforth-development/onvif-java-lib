@@ -59,7 +59,7 @@ public class AddIPAddressFilter {
 	/**
 	 * Legt den Wert der ipAddressFilter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPAddressFilter }
 	 * 
 	 */

@@ -159,7 +159,7 @@ public class ItemListDescription {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemListDescriptionExtension }
 	 * 
 	 */
@@ -231,7 +231,7 @@ public class ItemListDescription {
 		/**
 		 * Legt den Wert der name-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -252,7 +252,7 @@ public class ItemListDescription {
 		/**
 		 * Legt den Wert der type-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link QName }
 		 * 
 		 */
@@ -311,7 +311,7 @@ public class ItemListDescription {
 		/**
 		 * Legt den Wert der name-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -332,7 +332,7 @@ public class ItemListDescription {
 		/**
 		 * Legt den Wert der type-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link QName }
 		 * 
 		 */

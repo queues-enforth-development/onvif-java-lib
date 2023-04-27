@@ -69,7 +69,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Legt den Wert der autoNegotiation-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAutoNegotiation(boolean value) {
 		this.autoNegotiation = value;
@@ -87,7 +87,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSpeed(int value) {
 		this.speed = value;
@@ -106,7 +106,7 @@ public class NetworkInterfaceConnectionSetting {
 	/**
 	 * Legt den Wert der duplex-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duplex }
 	 * 
 	 */

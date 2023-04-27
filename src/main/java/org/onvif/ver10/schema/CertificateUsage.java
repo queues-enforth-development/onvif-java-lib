@@ -61,7 +61,7 @@ public class CertificateUsage {
 	/**
 	 * Legt den Wert der value-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -81,7 +81,7 @@ public class CertificateUsage {
 	/**
 	 * Legt den Wert der critical-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setCritical(boolean value) {
 		this.critical = value;

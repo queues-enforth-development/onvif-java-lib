@@ -74,7 +74,7 @@ public class JpegOptions2 extends JpegOptions {
 	/**
 	 * Legt den Wert der bitrateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

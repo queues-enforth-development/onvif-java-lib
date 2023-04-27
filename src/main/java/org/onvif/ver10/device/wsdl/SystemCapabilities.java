@@ -124,7 +124,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der discoveryResolve-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -145,7 +145,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der discoveryBye-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -166,7 +166,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der remoteDiscovery-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -187,7 +187,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der systemBackup-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -208,7 +208,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der systemLogging-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -229,7 +229,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der firmwareUpgrade-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -250,7 +250,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der httpFirmwareUpgrade-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -271,7 +271,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der httpSystemBackup-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -292,7 +292,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der httpSystemLogging-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -313,7 +313,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der httpSupportInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

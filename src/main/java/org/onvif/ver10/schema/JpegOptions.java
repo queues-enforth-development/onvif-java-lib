@@ -102,7 +102,7 @@ public class JpegOptions {
 	/**
 	 * Legt den Wert der frameRateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class JpegOptions {
 	/**
 	 * Legt den Wert der encodingIntervalRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

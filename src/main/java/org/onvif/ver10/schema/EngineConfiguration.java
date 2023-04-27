@@ -81,7 +81,7 @@ public class EngineConfiguration {
 	/**
 	 * Legt den Wert der videoAnalyticsConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoAnalyticsConfiguration }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class EngineConfiguration {
 	/**
 	 * Legt den Wert der analyticsEngineInputInfo-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsEngineInputInfo }
 	 * 
 	 */

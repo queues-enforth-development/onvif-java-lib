@@ -70,7 +70,7 @@ public class CreateProfile {
     /**
      * Legt den Wert der name-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

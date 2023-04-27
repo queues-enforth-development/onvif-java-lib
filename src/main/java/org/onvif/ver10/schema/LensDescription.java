@@ -101,7 +101,7 @@ public class LensDescription {
     /**
      * Legt den Wert der offset-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link LensOffset }
      *     
@@ -152,7 +152,7 @@ public class LensDescription {
     /**
      * Legt den Wert der xFactor-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setXFactor(float value) {
         this.xFactor = value;
@@ -204,7 +204,7 @@ public class LensDescription {
     /**
      * Legt den Wert der focalLength-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Float }
      *     

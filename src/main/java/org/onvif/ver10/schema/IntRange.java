@@ -64,7 +64,7 @@ public class IntRange {
 	/**
 	 * Legt den Wert der min-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMin(int value) {
 		this.min = value;
@@ -82,7 +82,7 @@ public class IntRange {
 	/**
 	 * Legt den Wert der max-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMax(int value) {
 		this.max = value;

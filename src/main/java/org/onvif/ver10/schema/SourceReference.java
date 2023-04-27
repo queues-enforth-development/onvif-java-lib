@@ -84,7 +84,7 @@ public class SourceReference {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -138,7 +138,7 @@ public class SourceReference {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

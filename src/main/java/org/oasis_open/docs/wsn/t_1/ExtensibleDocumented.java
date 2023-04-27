@@ -63,7 +63,7 @@ public abstract class ExtensibleDocumented {
 	/**
 	 * Legt den Wert der documentation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Documentation }
 	 * 
 	 */

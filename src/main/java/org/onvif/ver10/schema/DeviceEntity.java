@@ -59,7 +59,7 @@ public class DeviceEntity {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

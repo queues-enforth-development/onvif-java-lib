@@ -66,7 +66,7 @@ public class SetNetworkInterfaces {
 	/**
 	 * Legt den Wert der interfaceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -87,7 +87,7 @@ public class SetNetworkInterfaces {
 	/**
 	 * Legt den Wert der networkInterface-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceSetConfiguration }
 	 * 
 	 */

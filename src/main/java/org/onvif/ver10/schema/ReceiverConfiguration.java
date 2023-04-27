@@ -94,7 +94,7 @@ public class ReceiverConfiguration {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ReceiverMode }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class ReceiverConfiguration {
 	/**
 	 * Legt den Wert der mediaUri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -136,7 +136,7 @@ public class ReceiverConfiguration {
 	/**
 	 * Legt den Wert der streamSetup-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link StreamSetup }
 	 * 
 	 */

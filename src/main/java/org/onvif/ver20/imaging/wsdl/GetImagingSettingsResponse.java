@@ -61,7 +61,7 @@ public class GetImagingSettingsResponse {
     /**
      * Legt den Wert der imagingSettings-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link ImagingSettings20 }
      *     

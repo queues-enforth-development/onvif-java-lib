@@ -74,7 +74,7 @@ public class RelayOutput extends DeviceEntity {
 	/**
 	 * Legt den Wert der properties-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RelayOutputSettings }
 	 * 
 	 */

@@ -102,7 +102,7 @@ public class FrameExtension {
 	/**
 	 * Legt den Wert der motionInCells-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MotionInCells }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class FrameExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FrameExtension2 }
 	 * 
 	 */

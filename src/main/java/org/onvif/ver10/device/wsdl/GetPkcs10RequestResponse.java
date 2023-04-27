@@ -59,7 +59,7 @@ public class GetPkcs10RequestResponse {
 	/**
 	 * Legt den Wert der pkcs10Request-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BinaryData }
 	 * 
 	 */

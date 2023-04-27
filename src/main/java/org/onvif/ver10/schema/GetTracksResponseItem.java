@@ -81,7 +81,7 @@ public class GetTracksResponseItem {
 	/**
 	 * Legt den Wert der trackToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class GetTracksResponseItem {
 	/**
 	 * Legt den Wert der configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TrackConfiguration }
 	 * 
 	 */

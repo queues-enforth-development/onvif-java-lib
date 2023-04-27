@@ -109,7 +109,7 @@ public class SubscriptionPolicy {
     /**
      * Legt den Wert der changedOnly-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

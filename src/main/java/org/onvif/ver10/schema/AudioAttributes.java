@@ -88,7 +88,7 @@ public class AudioAttributes {
 	/**
 	 * Legt den Wert der bitrate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class AudioAttributes {
 	/**
 	 * Legt den Wert der encoding-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoding }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class AudioAttributes {
 	/**
 	 * Legt den Wert der samplerate-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSamplerate(int value) {
 		this.samplerate = value;

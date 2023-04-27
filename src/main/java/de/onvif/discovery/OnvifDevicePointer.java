@@ -32,9 +32,9 @@ public class OnvifDevicePointer
 
     /**
      * Constructor for a device requiring a password
-     * @param address
-     * @param user
-     * @param password 
+     * @param address -
+     * @param user -
+     * @param password  -
      */
     public OnvifDevicePointer(URL address, String user, String password) 
     {
@@ -57,7 +57,7 @@ public class OnvifDevicePointer
 
     /**
      * Constructor for just the URL.  It is still possible to pass the user and password through setters?
-     * @param deviceUrl 
+     * @param deviceUrl  -
      */
     public OnvifDevicePointer(URL deviceUrl)  
     {
@@ -66,7 +66,7 @@ public class OnvifDevicePointer
 
     /**
      * Constructor for just the URL.It is still possible to pass the user and password through setters?
-     * @param device
+     * @param device -
      */
     public OnvifDevicePointer(OnvifDevice device) {
         super(device.getDeviceUri());
@@ -107,7 +107,7 @@ public class OnvifDevicePointer
 
     /**
      * Sets the password to be used in the connection.
-     * @param password 
+     * @param password  -
      */
     public void setPassword(String password) {
         this.password = password;

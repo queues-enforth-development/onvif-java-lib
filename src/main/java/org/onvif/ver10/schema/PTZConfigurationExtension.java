@@ -102,7 +102,7 @@ public class PTZConfigurationExtension {
 	/**
 	 * Legt den Wert der ptControlDirection-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTControlDirection }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class PTZConfigurationExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZConfigurationExtension2 }
 	 * 
 	 */

@@ -59,7 +59,7 @@ public class SetSystemFactoryDefault {
 	/**
 	 * Legt den Wert der factoryDefault-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FactoryDefaultType }
 	 * 
 	 */

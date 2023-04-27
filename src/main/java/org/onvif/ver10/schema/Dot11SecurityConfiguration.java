@@ -91,7 +91,7 @@ public class Dot11SecurityConfiguration {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11SecurityMode }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class Dot11SecurityConfiguration {
 	/**
 	 * Legt den Wert der algorithm-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11Cipher }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class Dot11SecurityConfiguration {
 	/**
 	 * Legt den Wert der psk-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11PSKSet }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class Dot11SecurityConfiguration {
 	/**
 	 * Legt den Wert der dot1X-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class Dot11SecurityConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11SecurityConfigurationExtension }
 	 * 
 	 */

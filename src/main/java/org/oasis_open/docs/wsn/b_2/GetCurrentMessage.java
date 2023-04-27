@@ -69,7 +69,7 @@ public class GetCurrentMessage {
 	/**
 	 * Legt den Wert der topic-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TopicExpressionType }
 	 * 
 	 */

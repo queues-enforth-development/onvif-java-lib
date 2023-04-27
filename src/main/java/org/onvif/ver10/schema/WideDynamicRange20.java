@@ -65,7 +65,7 @@ public class WideDynamicRange20 {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WideDynamicMode }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class WideDynamicRange20 {
 	/**
 	 * Legt den Wert der level-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */

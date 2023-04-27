@@ -91,7 +91,7 @@ public class Appearance {
 	/**
 	 * Legt den Wert der transformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Transformation }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class Appearance {
 	/**
 	 * Legt den Wert der shape-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ShapeDescriptor }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class Appearance {
 	/**
 	 * Legt den Wert der color-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ColorDescriptor }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class Appearance {
 	/**
 	 * Legt den Wert der clazz-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ClassDescriptor }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class Appearance {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AppearanceExtension }
 	 * 
 	 */

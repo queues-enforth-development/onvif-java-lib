@@ -61,7 +61,7 @@ public class GetVideoSourceConfigurationOptionsResponse {
     /**
      * Legt den Wert der options-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoSourceConfigurationOptions }
      *     

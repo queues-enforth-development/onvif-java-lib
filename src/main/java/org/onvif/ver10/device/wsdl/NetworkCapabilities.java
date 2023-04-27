@@ -117,7 +117,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der ipFilter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -138,7 +138,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der zeroConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -159,7 +159,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der ipVersion6-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -180,7 +180,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der dynDNS-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -201,7 +201,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der dot11Configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -222,7 +222,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der dot1XConfigurations-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -243,7 +243,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der hostnameFromDHCP-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -264,7 +264,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der ntp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -285,7 +285,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der dhcPv6-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

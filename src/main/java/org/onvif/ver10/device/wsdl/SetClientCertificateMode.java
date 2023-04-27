@@ -57,7 +57,7 @@ public class SetClientCertificateMode {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEnabled(boolean value) {
 		this.enabled = value;

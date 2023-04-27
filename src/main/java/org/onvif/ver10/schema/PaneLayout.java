@@ -83,7 +83,7 @@ public class PaneLayout {
 	/**
 	 * Legt den Wert der pane-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -104,7 +104,7 @@ public class PaneLayout {
 	/**
 	 * Legt den Wert der area-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Rectangle }
 	 * 
 	 */

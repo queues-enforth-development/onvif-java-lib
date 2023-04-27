@@ -65,7 +65,7 @@ public class AttachmentData {
 	/**
 	 * Legt den Wert der include-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Include }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class AttachmentData {
 	/**
 	 * Legt den Wert der contentType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -64,7 +64,7 @@ public class AttributedAnyType {
 	/**
 	 * Legt den Wert der any-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Element } {@link Object }
 	 * 
 	 */

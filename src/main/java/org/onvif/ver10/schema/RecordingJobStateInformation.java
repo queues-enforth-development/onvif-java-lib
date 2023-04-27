@@ -86,7 +86,7 @@ public class RecordingJobStateInformation {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -107,7 +107,7 @@ public class RecordingJobStateInformation {
 	/**
 	 * Legt den Wert der state-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -156,7 +156,7 @@ public class RecordingJobStateInformation {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingJobStateInformationExtension }
 	 * 
 	 */

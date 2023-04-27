@@ -58,7 +58,7 @@ public class GetDot1XConfiguration {
 	/**
 	 * Legt den Wert der dot1XConfigurationToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

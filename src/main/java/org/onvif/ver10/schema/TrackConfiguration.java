@@ -81,7 +81,7 @@ public class TrackConfiguration {
 	/**
 	 * Legt den Wert der trackType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TrackType }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class TrackConfiguration {
 	/**
 	 * Legt den Wert der description-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -74,7 +74,7 @@ public class MotionExpressionConfiguration {
 	/**
 	 * Legt den Wert der motionExpression-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MotionExpression }
 	 * 
 	 */

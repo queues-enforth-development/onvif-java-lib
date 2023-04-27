@@ -58,7 +58,7 @@ public class GetConfiguration {
 	/**
 	 * Legt den Wert der ptzConfigurationToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

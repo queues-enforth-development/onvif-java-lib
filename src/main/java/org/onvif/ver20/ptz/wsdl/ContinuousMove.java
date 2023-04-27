@@ -74,7 +74,7 @@ public class ContinuousMove {
 	/**
 	 * Legt den Wert der profileToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class ContinuousMove {
 	/**
 	 * Legt den Wert der velocity-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpeed }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class ContinuousMove {
 	/**
 	 * Legt den Wert der timeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

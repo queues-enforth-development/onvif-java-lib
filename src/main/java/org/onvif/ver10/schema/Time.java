@@ -69,7 +69,7 @@ public class Time {
 	/**
 	 * Legt den Wert der hour-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setHour(int value) {
 		this.hour = value;
@@ -87,7 +87,7 @@ public class Time {
 	/**
 	 * Legt den Wert der minute-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMinute(int value) {
 		this.minute = value;
@@ -105,7 +105,7 @@ public class Time {
 	/**
 	 * Legt den Wert der second-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSecond(int value) {
 		this.second = value;

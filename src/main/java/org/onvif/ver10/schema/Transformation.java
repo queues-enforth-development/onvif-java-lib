@@ -77,7 +77,7 @@ public class Transformation {
 	/**
 	 * Legt den Wert der translate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class Transformation {
 	/**
 	 * Legt den Wert der scale-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class Transformation {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TransformationExtension }
 	 * 
 	 */

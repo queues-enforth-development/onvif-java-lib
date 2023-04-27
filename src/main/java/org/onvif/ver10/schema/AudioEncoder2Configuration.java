@@ -103,7 +103,7 @@ public class AudioEncoder2Configuration
     /**
      * Legt den Wert der encoding-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -127,7 +127,7 @@ public class AudioEncoder2Configuration
     /**
      * Legt den Wert der multicast-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link MulticastConfiguration }
      *     
@@ -148,7 +148,7 @@ public class AudioEncoder2Configuration
     /**
      * Legt den Wert der bitrate-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setBitrate(int value) {
         this.bitrate = value;
@@ -166,7 +166,7 @@ public class AudioEncoder2Configuration
     /**
      * Legt den Wert der sampleRate-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setSampleRate(int value) {
         this.sampleRate = value;

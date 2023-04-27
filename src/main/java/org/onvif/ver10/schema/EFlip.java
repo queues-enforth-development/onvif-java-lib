@@ -74,7 +74,7 @@ public class EFlip {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EFlipMode }
 	 * 
 	 */

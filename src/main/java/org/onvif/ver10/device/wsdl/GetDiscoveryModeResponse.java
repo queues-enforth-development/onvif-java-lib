@@ -59,7 +59,7 @@ public class GetDiscoveryModeResponse {
 	/**
 	 * Legt den Wert der discoveryMode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DiscoveryMode }
 	 * 
 	 */

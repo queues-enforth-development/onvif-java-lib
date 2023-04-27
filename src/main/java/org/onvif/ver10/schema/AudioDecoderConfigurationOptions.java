@@ -84,7 +84,7 @@ public class AudioDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der aacDecOptions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AACDecOptions }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class AudioDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der g711DecOptions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link G711DecOptions }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class AudioDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der g726DecOptions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link G726DecOptions }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class AudioDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioDecoderConfigurationOptionsExtension }
 	 * 
 	 */

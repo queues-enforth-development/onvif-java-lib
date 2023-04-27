@@ -88,7 +88,7 @@ public class SubscribeResponse {
 	/**
 	 * Legt den Wert der subscriptionReference-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class SubscribeResponse {
 	/**
 	 * Legt den Wert der currentTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class SubscribeResponse {
 	/**
 	 * Legt den Wert der terminationTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

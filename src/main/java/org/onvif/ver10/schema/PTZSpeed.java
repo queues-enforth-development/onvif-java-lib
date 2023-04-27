@@ -63,7 +63,7 @@ public class PTZSpeed {
 	/**
 	 * Sets the value of the panTilt property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector2D }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class PTZSpeed {
 	/**
 	 * Sets the value of the zoom property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector1D }
 	 * 
 	 */

@@ -98,7 +98,7 @@ public class PTZStatus {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class PTZStatus {
 	/**
 	 * Legt den Wert der moveStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZMoveStatus }
 	 * 
 	 */
@@ -140,7 +140,7 @@ public class PTZStatus {
 	/**
 	 * Legt den Wert der error-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -161,7 +161,7 @@ public class PTZStatus {
 	/**
 	 * Legt den Wert der utcTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

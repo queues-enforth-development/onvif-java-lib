@@ -59,7 +59,7 @@ public class UpgradeSystemFirmware {
 	/**
 	 * Legt den Wert der firmware-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AttachmentData }
 	 * 
 	 */

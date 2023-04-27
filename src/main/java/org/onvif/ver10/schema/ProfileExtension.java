@@ -116,7 +116,7 @@ public class ProfileExtension {
 	/**
 	 * Legt den Wert der audioOutputConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioOutputConfiguration }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class ProfileExtension {
 	/**
 	 * Legt den Wert der audioDecoderConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioDecoderConfiguration }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class ProfileExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ProfileExtension2 }
 	 * 
 	 */

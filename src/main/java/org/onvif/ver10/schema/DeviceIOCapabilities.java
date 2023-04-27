@@ -111,7 +111,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -131,7 +131,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Legt den Wert der videoSources-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setVideoSources(int value) {
 		this.videoSources = value;
@@ -149,7 +149,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Legt den Wert der videoOutputs-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setVideoOutputs(int value) {
 		this.videoOutputs = value;
@@ -167,7 +167,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Legt den Wert der audioSources-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAudioSources(int value) {
 		this.audioSources = value;
@@ -185,7 +185,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Legt den Wert der audioOutputs-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAudioOutputs(int value) {
 		this.audioOutputs = value;
@@ -203,7 +203,7 @@ public class DeviceIOCapabilities {
 	/**
 	 * Legt den Wert der relayOutputs-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRelayOutputs(int value) {
 		this.relayOutputs = value;

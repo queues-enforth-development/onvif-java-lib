@@ -67,7 +67,7 @@ public class SetNTP {
 	/**
 	 * Legt den Wert der fromDHCP-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFromDHCP(boolean value) {
 		this.fromDHCP = value;

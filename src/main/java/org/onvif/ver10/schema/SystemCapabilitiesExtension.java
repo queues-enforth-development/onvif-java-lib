@@ -124,7 +124,7 @@ public class SystemCapabilitiesExtension {
 	/**
 	 * Legt den Wert der httpFirmwareUpgrade-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -145,7 +145,7 @@ public class SystemCapabilitiesExtension {
 	/**
 	 * Legt den Wert der httpSystemBackup-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -166,7 +166,7 @@ public class SystemCapabilitiesExtension {
 	/**
 	 * Legt den Wert der httpSystemLogging-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -187,7 +187,7 @@ public class SystemCapabilitiesExtension {
 	/**
 	 * Legt den Wert der httpSupportInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -208,7 +208,7 @@ public class SystemCapabilitiesExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemCapabilitiesExtension2 }
 	 * 
 	 */

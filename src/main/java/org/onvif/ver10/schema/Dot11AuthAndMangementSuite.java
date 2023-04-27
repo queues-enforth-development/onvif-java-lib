@@ -73,7 +73,7 @@ public enum Dot11AuthAndMangementSuite {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static Dot11AuthAndMangementSuite fromValue(String v) {

@@ -81,7 +81,7 @@ public class AudioClassCandidate {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -101,7 +101,7 @@ public class AudioClassCandidate {
 	/**
 	 * Legt den Wert der likelihood-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setLikelihood(float value) {
 		this.likelihood = value;

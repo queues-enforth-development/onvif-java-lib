@@ -77,7 +77,7 @@ public class IOCapabilities {
 	/**
 	 * Legt den Wert der inputConnectors-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class IOCapabilities {
 	/**
 	 * Legt den Wert der relayOutputs-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class IOCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IOCapabilitiesExtension }
 	 * 
 	 */

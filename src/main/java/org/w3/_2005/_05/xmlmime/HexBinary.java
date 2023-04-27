@@ -66,7 +66,7 @@ public class HexBinary {
 	/**
 	 * Legt den Wert der value-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -87,7 +87,7 @@ public class HexBinary {
 	/**
 	 * Legt den Wert der contentType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

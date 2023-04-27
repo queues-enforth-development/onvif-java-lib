@@ -63,7 +63,7 @@ public class DateTime {
 	/**
 	 * Legt den Wert der time-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Time }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class DateTime {
 	/**
 	 * Legt den Wert der date-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Date }
 	 * 
 	 */

@@ -192,7 +192,7 @@ public class BaseFaultType {
 	/**
 	 * Legt den Wert der timestamp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -213,7 +213,7 @@ public class BaseFaultType {
 	/**
 	 * Legt den Wert der originator-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */
@@ -234,7 +234,7 @@ public class BaseFaultType {
 	/**
 	 * Legt den Wert der errorCode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BaseFaultType.ErrorCode }
 	 * 
 	 */
@@ -283,7 +283,7 @@ public class BaseFaultType {
 	/**
 	 * Legt den Wert der faultCause-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BaseFaultType.FaultCause }
 	 * 
 	 */
@@ -354,7 +354,7 @@ public class BaseFaultType {
 		/**
 		 * Legt den Wert der value-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -375,7 +375,7 @@ public class BaseFaultType {
 		/**
 		 * Legt den Wert der lang-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -466,7 +466,7 @@ public class BaseFaultType {
 		/**
 		 * Legt den Wert der dialect-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -535,7 +535,7 @@ public class BaseFaultType {
 		/**
 		 * Legt den Wert der any-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link Element } {@link Object }
 		 * 
 		 */

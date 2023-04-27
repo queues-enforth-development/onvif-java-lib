@@ -74,7 +74,7 @@ public class PolygonConfiguration {
 	/**
 	 * Legt den Wert der polygon-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Polygon }
 	 * 
 	 */

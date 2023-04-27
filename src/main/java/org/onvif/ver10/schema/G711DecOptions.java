@@ -81,7 +81,7 @@ public class G711DecOptions {
 	/**
 	 * Legt den Wert der bitrate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class G711DecOptions {
 	/**
 	 * Legt den Wert der sampleRateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */

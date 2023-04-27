@@ -58,7 +58,7 @@ public class GetVideoSourceModes {
 	/**
 	 * Legt den Wert der videoSourceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

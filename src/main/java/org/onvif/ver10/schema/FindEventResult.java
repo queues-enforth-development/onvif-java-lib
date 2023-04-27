@@ -106,7 +106,7 @@ public class FindEventResult {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -127,7 +127,7 @@ public class FindEventResult {
 	/**
 	 * Legt den Wert der trackToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -148,7 +148,7 @@ public class FindEventResult {
 	/**
 	 * Legt den Wert der time-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -169,7 +169,7 @@ public class FindEventResult {
 	/**
 	 * Legt den Wert der event-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NotificationMessageHolderType }
 	 * 
 	 */
@@ -189,7 +189,7 @@ public class FindEventResult {
 	/**
 	 * Legt den Wert der startStateEvent-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setStartStateEvent(boolean value) {
 		this.startStateEvent = value;

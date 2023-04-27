@@ -161,7 +161,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -182,7 +182,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	/**
 	 * Legt den Wert der targetNamespace-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -208,7 +208,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	/**
 	 * Legt den Wert der final-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -260,7 +260,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 		/**
 		 * Legt den Wert der parent-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */

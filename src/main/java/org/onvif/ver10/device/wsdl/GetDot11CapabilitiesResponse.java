@@ -59,7 +59,7 @@ public class GetDot11CapabilitiesResponse {
 	/**
 	 * Legt den Wert der capabilities-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11Capabilities }
 	 * 
 	 */

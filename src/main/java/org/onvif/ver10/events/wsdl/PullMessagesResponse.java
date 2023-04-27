@@ -83,7 +83,7 @@ public class PullMessagesResponse {
     /**
      * Legt den Wert der currentTime-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -107,7 +107,7 @@ public class PullMessagesResponse {
     /**
      * Legt den Wert der terminationTime-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     

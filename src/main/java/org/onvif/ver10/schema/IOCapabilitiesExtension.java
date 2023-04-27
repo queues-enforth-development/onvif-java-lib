@@ -116,7 +116,7 @@ public class IOCapabilitiesExtension {
 	/**
 	 * Legt den Wert der auxiliary-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -165,7 +165,7 @@ public class IOCapabilitiesExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IOCapabilitiesExtension2 }
 	 * 
 	 */

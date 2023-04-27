@@ -58,7 +58,7 @@ public enum IrCutFilterMode {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static IrCutFilterMode fromValue(String v) {

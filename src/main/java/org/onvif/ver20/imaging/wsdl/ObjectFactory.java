@@ -194,7 +194,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Capabilities }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver20/imaging/wsdl", name = "Capabilities")

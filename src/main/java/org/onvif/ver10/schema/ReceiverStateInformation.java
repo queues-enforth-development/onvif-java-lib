@@ -85,7 +85,7 @@ public class ReceiverStateInformation {
 	/**
 	 * Legt den Wert der state-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ReceiverState }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class ReceiverStateInformation {
 	/**
 	 * Legt den Wert der autoCreated-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAutoCreated(boolean value) {
 		this.autoCreated = value;

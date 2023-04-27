@@ -66,7 +66,7 @@ public class SetVideoEncoderConfiguration {
 	/**
 	 * Legt den Wert der configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoEncoderConfiguration }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class SetVideoEncoderConfiguration {
 	/**
 	 * Legt den Wert der forcePersistence-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setForcePersistence(boolean value) {
 		this.forcePersistence = value;

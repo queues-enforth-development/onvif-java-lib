@@ -59,7 +59,7 @@ public class GetConfigurationResponse {
 	/**
 	 * Legt den Wert der ptzConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZConfiguration }
 	 * 
 	 */

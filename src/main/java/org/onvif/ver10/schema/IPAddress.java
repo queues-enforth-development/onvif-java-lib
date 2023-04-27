@@ -74,7 +74,7 @@ public class IPAddress {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPType }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class IPAddress {
 	/**
 	 * Legt den Wert der iPv4Address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class IPAddress {
 	/**
 	 * Legt den Wert der iPv6Address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -90,7 +90,7 @@ public class LensProjection {
     /**
      * Legt den Wert der angle-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setAngle(float value) {
         this.angle = value;
@@ -108,7 +108,7 @@ public class LensProjection {
     /**
      * Legt den Wert der radius-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setRadius(float value) {
         this.radius = value;
@@ -129,7 +129,7 @@ public class LensProjection {
     /**
      * Legt den Wert der transmittance-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Float }
      *     

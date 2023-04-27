@@ -77,7 +77,7 @@ public class Object extends ObjectId {
 	/**
 	 * Legt den Wert der appearance-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Appearance }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class Object extends ObjectId {
 	/**
 	 * Legt den Wert der behaviour-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Behaviour }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class Object extends ObjectId {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ObjectExtension }
 	 * 
 	 */

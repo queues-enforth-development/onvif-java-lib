@@ -59,7 +59,7 @@ public class GetAudioEncoderConfigurationOptionsResponse {
 	/**
 	 * Legt den Wert der options-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoderConfigurationOptions }
 	 * 
 	 */

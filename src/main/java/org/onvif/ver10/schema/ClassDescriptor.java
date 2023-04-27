@@ -104,7 +104,7 @@ public class ClassDescriptor {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ClassDescriptorExtension }
 	 * 
 	 */
@@ -163,7 +163,7 @@ public class ClassDescriptor {
 		/**
 		 * Legt den Wert der type-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link ClassType }
 		 * 
 		 */
@@ -183,7 +183,7 @@ public class ClassDescriptor {
 		/**
 		 * Legt den Wert der likelihood-Eigenschaft fest.
 		 * 
-         * @param value
+         * @param value -
 		 */
 		public void setLikelihood(float value) {
 			this.likelihood = value;

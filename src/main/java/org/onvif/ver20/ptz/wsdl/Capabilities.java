@@ -116,7 +116,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der eFlip-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der reverse-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der getCompatibleConfigurations-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

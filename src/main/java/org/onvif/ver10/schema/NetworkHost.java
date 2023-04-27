@@ -96,7 +96,7 @@ public class NetworkHost {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkHostType }
 	 * 
 	 */
@@ -117,7 +117,7 @@ public class NetworkHost {
 	/**
 	 * Legt den Wert der iPv4Address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -138,7 +138,7 @@ public class NetworkHost {
 	/**
 	 * Legt den Wert der iPv6Address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -159,7 +159,7 @@ public class NetworkHost {
 	/**
 	 * Legt den Wert der dnSname-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -180,7 +180,7 @@ public class NetworkHost {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkHostExtension }
 	 * 
 	 */

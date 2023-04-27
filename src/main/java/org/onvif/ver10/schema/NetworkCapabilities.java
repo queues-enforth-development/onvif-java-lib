@@ -91,7 +91,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der ipFilter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der zeroConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der ipVersion6-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der dynDNS-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class NetworkCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkCapabilitiesExtension }
 	 * 
 	 */

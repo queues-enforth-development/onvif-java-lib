@@ -66,7 +66,7 @@ public class PrefixedIPv4Address {
 	/**
 	 * Legt den Wert der address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class PrefixedIPv4Address {
 	/**
 	 * Legt den Wert der prefixLength-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPrefixLength(int value) {
 		this.prefixLength = value;

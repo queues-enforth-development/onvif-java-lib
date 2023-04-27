@@ -58,7 +58,7 @@ public class GetNode {
 	/**
 	 * Legt den Wert der nodeToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

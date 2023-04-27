@@ -88,7 +88,7 @@ public class RecordingJobStateSource {
 	/**
 	 * Legt den Wert der sourceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SourceReference }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class RecordingJobStateSource {
 	/**
 	 * Legt den Wert der state-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class RecordingJobStateSource {
 	/**
 	 * Legt den Wert der tracks-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingJobStateTracks }
 	 * 
 	 */

@@ -91,7 +91,7 @@ public class FindMetadataResult {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class FindMetadataResult {
 	/**
 	 * Legt den Wert der trackToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class FindMetadataResult {
 	/**
 	 * Legt den Wert der time-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

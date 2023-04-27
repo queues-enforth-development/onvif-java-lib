@@ -130,7 +130,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls11-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTLS11(boolean value) {
 		this.tls11 = value;
@@ -148,7 +148,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der tls12-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTLS12(boolean value) {
 		this.tls12 = value;
@@ -166,7 +166,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der onboardKeyGeneration-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setOnboardKeyGeneration(boolean value) {
 		this.onboardKeyGeneration = value;
@@ -184,7 +184,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der accessPolicyConfig-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAccessPolicyConfig(boolean value) {
 		this.accessPolicyConfig = value;
@@ -202,7 +202,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der x509Token-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setX509Token(boolean value) {
 		this.x509Token = value;
@@ -220,7 +220,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der samlToken-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSAMLToken(boolean value) {
 		this.samlToken = value;
@@ -238,7 +238,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der kerberosToken-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setKerberosToken(boolean value) {
 		this.kerberosToken = value;
@@ -256,7 +256,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der relToken-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRELToken(boolean value) {
 		this.relToken = value;
@@ -303,7 +303,7 @@ public class SecurityCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SecurityCapabilitiesExtension }
 	 * 
 	 */

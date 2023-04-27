@@ -88,7 +88,7 @@ public class WhiteBalance {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalanceMode }
 	 * 
 	 */
@@ -108,7 +108,7 @@ public class WhiteBalance {
 	/**
 	 * Legt den Wert der crGain-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setCrGain(float value) {
 		this.crGain = value;
@@ -126,7 +126,7 @@ public class WhiteBalance {
 	/**
 	 * Legt den Wert der cbGain-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setCbGain(float value) {
 		this.cbGain = value;

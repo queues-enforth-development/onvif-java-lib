@@ -88,7 +88,7 @@ public class RemoteUser {
 	/**
 	 * Legt den Wert der username-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class RemoteUser {
 	/**
 	 * Legt den Wert der password-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class RemoteUser {
 	/**
 	 * Legt den Wert der useDerivedPassword-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setUseDerivedPassword(boolean value) {
 		this.useDerivedPassword = value;

@@ -88,7 +88,7 @@ public class DynamicDNSInformation {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DynamicDNSType }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class DynamicDNSInformation {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class DynamicDNSInformation {
 	/**
 	 * Legt den Wert der ttl-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -151,7 +151,7 @@ public class DynamicDNSInformation {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DynamicDNSInformationExtension }
 	 * 
 	 */

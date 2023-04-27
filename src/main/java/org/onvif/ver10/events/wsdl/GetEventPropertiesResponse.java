@@ -153,7 +153,7 @@ public class GetEventPropertiesResponse {
     /**
      * Legt den Wert der fixedTopicSet-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setFixedTopicSet(boolean value) {
         this.fixedTopicSet = value;
@@ -174,7 +174,7 @@ public class GetEventPropertiesResponse {
     /**
      * Legt den Wert der topicSet-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link TopicSetType }
      *     

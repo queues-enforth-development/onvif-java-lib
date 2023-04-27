@@ -94,7 +94,7 @@ public class MessageDescription {
 	/**
 	 * Legt den Wert der source-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemListDescription }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class MessageDescription {
 	/**
 	 * Legt den Wert der key-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemListDescription }
 	 * 
 	 */
@@ -136,7 +136,7 @@ public class MessageDescription {
 	/**
 	 * Legt den Wert der data-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemListDescription }
 	 * 
 	 */
@@ -157,7 +157,7 @@ public class MessageDescription {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MessageDescriptionExtension }
 	 * 
 	 */
@@ -178,7 +178,7 @@ public class MessageDescription {
 	/**
 	 * Legt den Wert der isProperty-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

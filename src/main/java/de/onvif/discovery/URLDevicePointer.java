@@ -25,7 +25,7 @@ public abstract class URLDevicePointer {
 
     /**
      * Constructor for a String URL address.
-     * @param address 
+     * @param address  -
      */
     protected URLDevicePointer(String address) {
         setAddress(address);
@@ -59,7 +59,7 @@ public abstract class URLDevicePointer {
 
     /**
      * Sets the URL address.
-     * @param address 
+     * @param address  -
      */
     protected void setURLAddress(URL address) {
         this.address = address;
@@ -75,7 +75,7 @@ public abstract class URLDevicePointer {
 
     /**
      * Set the Name
-     * @param name 
+     * @param name  -
      */
     protected void setName(String name) {
         this.deviceName = name;

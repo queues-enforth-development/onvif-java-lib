@@ -59,7 +59,7 @@ public class GetRemoteUserResponse {
 	/**
 	 * Legt den Wert der remoteUser-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RemoteUser }
 	 * 
 	 */

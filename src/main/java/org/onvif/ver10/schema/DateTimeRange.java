@@ -85,7 +85,7 @@ public class DateTimeRange {
 	/**
 	 * Legt den Wert der from-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -106,7 +106,7 @@ public class DateTimeRange {
 	/**
 	 * Legt den Wert der until-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

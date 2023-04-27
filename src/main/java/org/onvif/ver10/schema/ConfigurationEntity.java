@@ -77,7 +77,7 @@ public class ConfigurationEntity {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -97,7 +97,7 @@ public class ConfigurationEntity {
 	/**
 	 * Legt den Wert der useCount-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setUseCount(int value) {
 		this.useCount = value;
@@ -116,7 +116,7 @@ public class ConfigurationEntity {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

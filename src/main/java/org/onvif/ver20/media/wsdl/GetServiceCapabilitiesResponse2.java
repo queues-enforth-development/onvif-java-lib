@@ -60,7 +60,7 @@ public class GetServiceCapabilitiesResponse2 {
     /**
      * Legt den Wert der capabilities-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Capabilities2 }
      *     

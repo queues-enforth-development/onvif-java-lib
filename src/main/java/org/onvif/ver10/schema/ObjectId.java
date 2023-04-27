@@ -57,7 +57,7 @@ public class ObjectId {
 	/**
 	 * Legt den Wert der objectId-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */

@@ -112,7 +112,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -132,7 +132,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der receiverSource-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setReceiverSource(boolean value) {
 		this.receiverSource = value;
@@ -150,7 +150,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der mediaProfileSource-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMediaProfileSource(boolean value) {
 		this.mediaProfileSource = value;
@@ -168,7 +168,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der dynamicRecordings-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDynamicRecordings(boolean value) {
 		this.dynamicRecordings = value;
@@ -186,7 +186,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der dynamicTracks-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDynamicTracks(boolean value) {
 		this.dynamicTracks = value;
@@ -204,7 +204,7 @@ public class RecordingCapabilities {
 	/**
 	 * Legt den Wert der maxStringLength-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMaxStringLength(int value) {
 		this.maxStringLength = value;

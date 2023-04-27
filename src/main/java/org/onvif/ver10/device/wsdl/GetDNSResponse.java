@@ -59,7 +59,7 @@ public class GetDNSResponse {
 	/**
 	 * Legt den Wert der dnsInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DNSInformation }
 	 * 
 	 */

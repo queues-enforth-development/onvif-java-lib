@@ -79,7 +79,7 @@ public class OSDColorOptions {
 	/**
 	 * Legt den Wert der color-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ColorOptions }
 	 * 
 	 */
@@ -100,7 +100,7 @@ public class OSDColorOptions {
 	/**
 	 * Legt den Wert der transparent-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class OSDColorOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDColorOptionsExtension }
 	 * 
 	 */

@@ -102,7 +102,7 @@ public class PTZNodeExtension {
 	/**
 	 * Legt den Wert der supportedPresetTour-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourSupported }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class PTZNodeExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZNodeExtension2 }
 	 * 
 	 */

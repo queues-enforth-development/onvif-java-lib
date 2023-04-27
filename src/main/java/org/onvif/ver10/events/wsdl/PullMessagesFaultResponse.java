@@ -80,7 +80,7 @@ public class PullMessagesFaultResponse {
     /**
      * Legt den Wert der maxTimeout-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Duration }
      *     
@@ -101,7 +101,7 @@ public class PullMessagesFaultResponse {
     /**
      * Legt den Wert der maxMessageLimit-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setMaxMessageLimit(int value) {
         this.maxMessageLimit = value;

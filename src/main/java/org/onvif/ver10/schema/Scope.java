@@ -65,7 +65,7 @@ public class Scope {
 	/**
 	 * Legt den Wert der scopeDef-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ScopeDefinition }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class Scope {
 	/**
 	 * Legt den Wert der scopeItem-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

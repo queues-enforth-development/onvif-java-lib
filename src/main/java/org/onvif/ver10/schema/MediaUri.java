@@ -98,7 +98,7 @@ public class MediaUri {
 	/**
 	 * Legt den Wert der uri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -118,7 +118,7 @@ public class MediaUri {
 	/**
 	 * Legt den Wert der invalidAfterConnect-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setInvalidAfterConnect(boolean value) {
 		this.invalidAfterConnect = value;
@@ -136,7 +136,7 @@ public class MediaUri {
 	/**
 	 * Legt den Wert der invalidAfterReboot-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setInvalidAfterReboot(boolean value) {
 		this.invalidAfterReboot = value;
@@ -155,7 +155,7 @@ public class MediaUri {
 	/**
 	 * Legt den Wert der timeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

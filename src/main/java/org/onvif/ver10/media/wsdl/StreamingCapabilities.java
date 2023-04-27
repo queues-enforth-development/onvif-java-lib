@@ -130,7 +130,7 @@ public class StreamingCapabilities {
 	/**
 	 * Legt den Wert der rtpMulticast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -151,7 +151,7 @@ public class StreamingCapabilities {
 	/**
 	 * Legt den Wert der rtptcp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -172,7 +172,7 @@ public class StreamingCapabilities {
 	/**
 	 * Legt den Wert der rtprtsptcp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -193,7 +193,7 @@ public class StreamingCapabilities {
 	/**
 	 * Legt den Wert der nonAggregateControl-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -214,7 +214,7 @@ public class StreamingCapabilities {
 	/**
 	 * Legt den Wert der noRTSPStreaming-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

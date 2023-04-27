@@ -97,7 +97,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der xx-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setXX(float value) {
 		this.xx = value;
@@ -115,7 +115,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der yy-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setYY(float value) {
 		this.yy = value;
@@ -133,7 +133,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der zz-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setZZ(float value) {
 		this.zz = value;
@@ -152,7 +152,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der xy-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -173,7 +173,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der xz-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -194,7 +194,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der yz-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -215,7 +215,7 @@ public class ColorCovariance {
 	/**
 	 * Legt den Wert der colorspace-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

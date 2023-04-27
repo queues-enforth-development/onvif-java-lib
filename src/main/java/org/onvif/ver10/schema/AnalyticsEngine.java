@@ -74,7 +74,7 @@ public class AnalyticsEngine extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der analyticsEngineConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsDeviceEngineConfiguration }
 	 * 
 	 */

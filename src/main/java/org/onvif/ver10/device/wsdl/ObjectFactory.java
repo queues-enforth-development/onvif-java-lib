@@ -1583,7 +1583,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link DeviceServiceCapabilities }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return  -
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/device/wsdl", name = "Capabilities")

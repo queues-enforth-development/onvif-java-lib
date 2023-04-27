@@ -146,7 +146,7 @@ public class AudioOutputConfigurationOptions {
 	/**
 	 * Legt den Wert der outputLevelRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

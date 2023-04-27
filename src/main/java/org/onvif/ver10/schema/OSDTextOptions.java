@@ -135,7 +135,7 @@ public class OSDTextOptions {
 	/**
 	 * Legt den Wert der fontSizeRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -212,7 +212,7 @@ public class OSDTextOptions {
 	/**
 	 * Legt den Wert der fontColor-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDColorOptions }
 	 * 
 	 */
@@ -233,7 +233,7 @@ public class OSDTextOptions {
 	/**
 	 * Legt den Wert der backgroundColor-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDColorOptions }
 	 * 
 	 */
@@ -254,7 +254,7 @@ public class OSDTextOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDTextOptionsExtension }
 	 * 
 	 */

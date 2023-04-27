@@ -70,7 +70,7 @@ public class ImagingStatus20 {
 	/**
 	 * Legt den Wert der focusStatus20-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusStatus20 }
 	 * 
 	 */
@@ -91,7 +91,7 @@ public class ImagingStatus20 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingStatus20Extension }
 	 * 
 	 */

@@ -88,7 +88,7 @@ public class EndpointReferenceType {
 	/**
 	 * Legt den Wert der address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AttributedURIType }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class EndpointReferenceType {
 	/**
 	 * Legt den Wert der referenceParameters-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ReferenceParametersType }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class EndpointReferenceType {
 	/**
 	 * Legt den Wert der metadata-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataType }
 	 * 
 	 */

@@ -108,7 +108,7 @@ public class TopicType extends ExtensibleDocumented {
 	/**
 	 * Legt den Wert der messagePattern-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link QueryExpressionType }
 	 * 
 	 */
@@ -185,7 +185,7 @@ public class TopicType extends ExtensibleDocumented {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -239,7 +239,7 @@ public class TopicType extends ExtensibleDocumented {
 	/**
 	 * Legt den Wert der final-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

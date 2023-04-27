@@ -114,7 +114,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der discoveryResolve-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDiscoveryResolve(boolean value) {
 		this.discoveryResolve = value;
@@ -132,7 +132,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der discoveryBye-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDiscoveryBye(boolean value) {
 		this.discoveryBye = value;
@@ -150,7 +150,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der remoteDiscovery-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRemoteDiscovery(boolean value) {
 		this.remoteDiscovery = value;
@@ -168,7 +168,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der systemBackup-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSystemBackup(boolean value) {
 		this.systemBackup = value;
@@ -186,7 +186,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der systemLogging-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSystemLogging(boolean value) {
 		this.systemLogging = value;
@@ -204,7 +204,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der firmwareUpgrade-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFirmwareUpgrade(boolean value) {
 		this.firmwareUpgrade = value;
@@ -251,7 +251,7 @@ public class SystemCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemCapabilitiesExtension }
 	 * 
 	 */

@@ -70,7 +70,7 @@ public class RelatesToType {
 	/**
 	 * Legt den Wert der value-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -96,7 +96,7 @@ public class RelatesToType {
 	/**
 	 * Legt den Wert der relationshipType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -80,7 +80,7 @@ public class Dot11PSKSet {
 	/**
 	 * Legt den Wert der key-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -101,7 +101,7 @@ public class Dot11PSKSet {
 	/**
 	 * Legt den Wert der passphrase-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -122,7 +122,7 @@ public class Dot11PSKSet {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11PSKSetExtension }
 	 * 
 	 */

@@ -79,7 +79,7 @@ public class SourceIdentification {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class SourceIdentification {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SourceIdentificationExtension }
 	 * 
 	 */

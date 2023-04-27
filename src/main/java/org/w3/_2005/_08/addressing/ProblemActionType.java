@@ -72,7 +72,7 @@ public class ProblemActionType {
 	/**
 	 * Legt den Wert der action-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AttributedURIType }
 	 * 
 	 */
@@ -93,7 +93,7 @@ public class ProblemActionType {
 	/**
 	 * Legt den Wert der soapAction-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

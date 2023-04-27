@@ -69,7 +69,7 @@ public class GetEndpointReferenceResponse {
 	/**
 	 * Legt den Wert der guid-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -85,7 +85,7 @@ public class VideoSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der framerate-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFramerate(float value) {
 		this.framerate = value;
@@ -104,7 +104,7 @@ public class VideoSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der resolution-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoResolution }
 	 * 
 	 */
@@ -125,7 +125,7 @@ public class VideoSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der imaging-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingSettings }
 	 * 
 	 */
@@ -146,7 +146,7 @@ public class VideoSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoSourceExtension }
 	 * 
 	 */

@@ -126,7 +126,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der encoding-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -150,7 +150,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der resolution-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoResolution2 }
      *     
@@ -174,7 +174,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der rateControl-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoRateControl2 }
      *     
@@ -198,7 +198,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der multicast-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link MulticastConfiguration }
      *     
@@ -219,7 +219,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der quality-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setQuality(float value) {
         this.quality = value;
@@ -271,7 +271,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der govLength-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Integer }
      *     
@@ -295,7 +295,7 @@ public class VideoEncoder2Configuration
     /**
      * Legt den Wert der profile-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

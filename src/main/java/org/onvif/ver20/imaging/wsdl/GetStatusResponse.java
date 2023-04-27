@@ -61,7 +61,7 @@ public class GetStatusResponse {
     /**
      * Legt den Wert der status-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link ImagingStatus20 }
      *     

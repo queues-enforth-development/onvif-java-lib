@@ -79,7 +79,7 @@ public class AnalyticsDeviceCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -100,7 +100,7 @@ public class AnalyticsDeviceCapabilities {
 	/**
 	 * Legt den Wert der ruleSupport-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class AnalyticsDeviceCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsDeviceExtension }
 	 * 
 	 */

@@ -77,7 +77,7 @@ public class SetImagingSettings {
     /**
      * Legt den Wert der videoSourceToken-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -101,7 +101,7 @@ public class SetImagingSettings {
     /**
      * Legt den Wert der imagingSettings-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link ImagingSettings20 }
      *     
@@ -125,7 +125,7 @@ public class SetImagingSettings {
     /**
      * Legt den Wert der forcePersistence-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

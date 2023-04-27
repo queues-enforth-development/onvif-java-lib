@@ -60,7 +60,7 @@ public class DeleteProfile {
     /**
      * Legt den Wert der token-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

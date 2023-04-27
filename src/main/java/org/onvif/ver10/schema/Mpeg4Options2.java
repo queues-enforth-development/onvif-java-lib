@@ -74,7 +74,7 @@ public class Mpeg4Options2 extends Mpeg4Options {
 	/**
 	 * Legt den Wert der bitrateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

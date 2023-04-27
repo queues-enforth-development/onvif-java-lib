@@ -59,7 +59,7 @@ public class GetProfileResponse {
 	/**
 	 * Legt den Wert der profile-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Profile }
 	 * 
 	 */

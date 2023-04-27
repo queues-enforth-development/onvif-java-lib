@@ -72,7 +72,7 @@ public class Config {
 	/**
 	 * Legt den Wert der parameters-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemList }
 	 * 
 	 */
@@ -93,7 +93,7 @@ public class Config {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -114,7 +114,7 @@ public class Config {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link QName }
 	 * 
 	 */

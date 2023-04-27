@@ -113,7 +113,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der dot1XConfigurationToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -134,7 +134,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der identity-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -155,7 +155,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der anonymousID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der eapMethod-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEAPMethod(int value) {
 		this.eapMethod = value;
@@ -222,7 +222,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der eapMethodConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EAPMethodConfiguration }
 	 * 
 	 */
@@ -243,7 +243,7 @@ public class Dot1XConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot1XConfigurationExtension }
 	 * 
 	 */

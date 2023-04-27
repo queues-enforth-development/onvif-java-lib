@@ -112,7 +112,7 @@ public class ColorDescriptor {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ColorDescriptorExtension }
 	 * 
 	 */
@@ -193,7 +193,7 @@ public class ColorDescriptor {
 		/**
 		 * Legt den Wert der color-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link Color }
 		 * 
 		 */
@@ -214,7 +214,7 @@ public class ColorDescriptor {
 		/**
 		 * Legt den Wert der weight-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link Float }
 		 * 
 		 */
@@ -235,7 +235,7 @@ public class ColorDescriptor {
 		/**
 		 * Legt den Wert der covariance-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link ColorCovariance }
 		 * 
 		 */

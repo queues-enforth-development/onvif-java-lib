@@ -62,7 +62,7 @@ public class SecurityCapabilitiesExtension {
 	/**
 	 * Legt den Wert der tls10-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTLS10(boolean value) {
 		this.tls10 = value;
@@ -81,7 +81,7 @@ public class SecurityCapabilitiesExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SecurityCapabilitiesExtension2 }
 	 * 
 	 */

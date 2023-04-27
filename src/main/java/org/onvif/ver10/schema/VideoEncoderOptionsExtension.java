@@ -116,7 +116,7 @@ public class VideoEncoderOptionsExtension {
 	/**
 	 * Legt den Wert der jpeg-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link JpegOptions2 }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class VideoEncoderOptionsExtension {
 	/**
 	 * Legt den Wert der mpeg4-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Mpeg4Options2 }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class VideoEncoderOptionsExtension {
 	/**
 	 * Legt den Wert der h264-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link H264Options2 }
 	 * 
 	 */
@@ -179,7 +179,7 @@ public class VideoEncoderOptionsExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoEncoderOptionsExtension2 }
 	 * 
 	 */

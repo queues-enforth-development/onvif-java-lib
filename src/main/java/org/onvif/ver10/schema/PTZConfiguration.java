@@ -150,7 +150,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der nodeToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -171,7 +171,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultAbsolutePantTiltPositionSpace property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -192,7 +192,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultAbsoluteZoomPositionSpace property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -213,7 +213,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultRelativePanTiltTranslationSpace property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -234,7 +234,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultRelativeZoomTranslationSpace property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -255,7 +255,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultContinuousPanTiltVelocitySpace property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -276,7 +276,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultContinuousZoomVelocitySpace property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -297,7 +297,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultPTZSpeed ??property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpeed }
 	 * 
 	 */
@@ -318,7 +318,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the defaultPTZTimeout property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -339,7 +339,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the panTiltLimits property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PanTiltLimits }
 	 * 
 	 */
@@ -360,7 +360,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the zoomLimits property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ZoomLimits }
 	 * 
 	 */
@@ -381,7 +381,7 @@ public class PTZConfiguration extends ConfigurationEntity {
 	/**
 	 * Sets the value of the extension property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZConfigurationExtension }
 	 * 
 	 */

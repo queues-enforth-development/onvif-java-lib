@@ -62,7 +62,7 @@ public class InitialDevice
 
     /**
      *
-     * @param onvifDevice
+     * @param onvifDevice -
      */
     public InitialDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
@@ -170,7 +170,7 @@ public class InitialDevice
 
     /**
      *
-     * @param useAuthentication
+     * @param useAuthentication -
      * @return -
      */
     public Optional<String> getHostname(boolean useAuthentication) {
@@ -194,7 +194,7 @@ public class InitialDevice
 
     /**
      *
-     * @param hostname
+     * @param hostname -
      * @return -
      */
     public boolean setHostname(String hostname) {
@@ -291,7 +291,7 @@ public class InitialDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      */
     public Profile getProfile(String profileToken) {
@@ -318,7 +318,7 @@ public class InitialDevice
 
     /**
      *
-     * @param name
+     * @param name -
      * @return -
      */
     public Profile createProfile(String name) {
@@ -345,7 +345,7 @@ public class InitialDevice
 
     /**
      *
-     * @param includeCapability
+     * @param includeCapability -
      * @return -
      */
     public List<Service> getServices(boolean includeCapability) {

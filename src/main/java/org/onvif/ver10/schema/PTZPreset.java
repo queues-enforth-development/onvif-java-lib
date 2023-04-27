@@ -78,7 +78,7 @@ public class PTZPreset {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -99,7 +99,7 @@ public class PTZPreset {
 	/**
 	 * Legt den Wert der ptzPosition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -120,7 +120,7 @@ public class PTZPreset {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

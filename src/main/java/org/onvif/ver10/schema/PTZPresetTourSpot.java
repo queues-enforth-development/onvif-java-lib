@@ -85,7 +85,7 @@ public class PTZPresetTourSpot {
 	/**
 	 * Legt den Wert der presetDetail-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourPresetDetail }
 	 * 
 	 */
@@ -106,7 +106,7 @@ public class PTZPresetTourSpot {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpeed }
 	 * 
 	 */
@@ -127,7 +127,7 @@ public class PTZPresetTourSpot {
 	/**
 	 * Legt den Wert der stayTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -148,7 +148,7 @@ public class PTZPresetTourSpot {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourSpotExtension }
 	 * 
 	 */

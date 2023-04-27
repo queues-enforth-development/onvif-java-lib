@@ -84,7 +84,7 @@ public class User {
 	/**
 	 * Legt den Wert der username-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class User {
 	/**
 	 * Legt den Wert der password-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class User {
 	/**
 	 * Legt den Wert der userLevel-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link UserLevel }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class User {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link UserExtension }
 	 * 
 	 */

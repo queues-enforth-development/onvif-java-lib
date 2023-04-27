@@ -108,7 +108,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der analytics-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsCapabilities }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der device-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DeviceCapabilities }
 	 * 
 	 */
@@ -150,7 +150,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der events-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EventCapabilities }
 	 * 
 	 */
@@ -171,7 +171,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der imaging-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingCapabilities }
 	 * 
 	 */
@@ -192,7 +192,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der media-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MediaCapabilities }
 	 * 
 	 */
@@ -213,7 +213,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der ptz-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZCapabilities }
 	 * 
 	 */
@@ -234,7 +234,7 @@ public class Capabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CapabilitiesExtension }
 	 * 
 	 */

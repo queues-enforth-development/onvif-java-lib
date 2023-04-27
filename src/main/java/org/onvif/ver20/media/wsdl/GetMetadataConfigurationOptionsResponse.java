@@ -61,7 +61,7 @@ public class GetMetadataConfigurationOptionsResponse {
     /**
      * Legt den Wert der options-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link MetadataConfigurationOptions }
      *     

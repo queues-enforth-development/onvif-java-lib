@@ -81,7 +81,7 @@ public class Envelope {
 	/**
 	 * Legt den Wert der header-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Header }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class Envelope {
 	/**
 	 * Legt den Wert der body-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Body }
 	 * 
 	 */

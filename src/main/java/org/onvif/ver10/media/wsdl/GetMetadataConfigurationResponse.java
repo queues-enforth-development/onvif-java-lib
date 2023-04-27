@@ -59,7 +59,7 @@ public class GetMetadataConfigurationResponse {
 	/**
 	 * Legt den Wert der configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataConfiguration }
 	 * 
 	 */

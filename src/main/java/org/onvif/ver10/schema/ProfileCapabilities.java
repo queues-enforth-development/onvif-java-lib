@@ -73,7 +73,7 @@ public class ProfileCapabilities {
 	/**
 	 * Legt den Wert der maximumNumberOfProfiles-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMaximumNumberOfProfiles(int value) {
 		this.maximumNumberOfProfiles = value;

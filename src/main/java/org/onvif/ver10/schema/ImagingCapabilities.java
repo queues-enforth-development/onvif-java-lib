@@ -65,7 +65,7 @@ public class ImagingCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

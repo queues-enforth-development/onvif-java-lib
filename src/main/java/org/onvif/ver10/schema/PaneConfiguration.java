@@ -112,7 +112,7 @@ public class PaneConfiguration {
 	/**
 	 * Legt den Wert der paneName-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class PaneConfiguration {
 	/**
 	 * Legt den Wert der audioOutputToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class PaneConfiguration {
 	/**
 	 * Legt den Wert der audioSourceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class PaneConfiguration {
 	/**
 	 * Legt den Wert der audioEncoderConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoderConfiguration }
 	 * 
 	 */
@@ -196,7 +196,7 @@ public class PaneConfiguration {
 	/**
 	 * Legt den Wert der receiverToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -217,7 +217,7 @@ public class PaneConfiguration {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

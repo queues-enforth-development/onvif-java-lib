@@ -81,7 +81,7 @@ public class Envelope {
 	/**
 	 * Sets the value of the header property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Header }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class Envelope {
 	/**
 	 * Sets the value of the body property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Body }
 	 * 
 	 */

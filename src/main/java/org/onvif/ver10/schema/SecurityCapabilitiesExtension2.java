@@ -80,7 +80,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Legt den Wert der dot1X-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDot1X(boolean value) {
 		this.dot1X = value;
@@ -126,7 +126,7 @@ public class SecurityCapabilitiesExtension2 {
 	/**
 	 * Legt den Wert der remoteUserHandling-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRemoteUserHandling(boolean value) {
 		this.remoteUserHandling = value;

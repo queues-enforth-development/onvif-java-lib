@@ -86,7 +86,7 @@ public class CertificateStatus {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -106,7 +106,7 @@ public class CertificateStatus {
 	/**
 	 * Legt den Wert der status-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setStatus(boolean value) {
 		this.status = value;

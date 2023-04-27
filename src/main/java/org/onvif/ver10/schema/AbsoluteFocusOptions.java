@@ -63,7 +63,7 @@ public class AbsoluteFocusOptions {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class AbsoluteFocusOptions {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

@@ -137,7 +137,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Legt den Wert der encoding-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -161,7 +161,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Legt den Wert der qualityRange-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link IntRange }
      *     
@@ -215,7 +215,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Legt den Wert der bitrateRange-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link IntRange }
      *     
@@ -360,7 +360,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Legt den Wert der constantBitRateSupported-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -384,7 +384,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Legt den Wert der guaranteedInstances-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Integer }
      *     

@@ -92,7 +92,7 @@ public class MediaProfile {
     /**
      * Legt den Wert der name-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -116,7 +116,7 @@ public class MediaProfile {
     /**
      * Legt den Wert der configurations-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link ConfigurationSet }
      *     
@@ -140,7 +140,7 @@ public class MediaProfile {
     /**
      * Legt den Wert der token-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -164,7 +164,7 @@ public class MediaProfile {
     /**
      * Legt den Wert der fixed-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

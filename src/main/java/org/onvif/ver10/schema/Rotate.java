@@ -77,7 +77,7 @@ public class Rotate {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RotateMode }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class Rotate {
 	/**
 	 * Legt den Wert der degree-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class Rotate {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RotateExtension }
 	 * 
 	 */

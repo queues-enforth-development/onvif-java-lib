@@ -98,7 +98,7 @@ public class OSDConfiguration extends DeviceEntity {
 	/**
 	 * Legt den Wert der videoSourceConfigurationToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDReference }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class OSDConfiguration extends DeviceEntity {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDType }
 	 * 
 	 */
@@ -140,7 +140,7 @@ public class OSDConfiguration extends DeviceEntity {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDPosConfiguration }
 	 * 
 	 */
@@ -161,7 +161,7 @@ public class OSDConfiguration extends DeviceEntity {
 	/**
 	 * Legt den Wert der textString-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDTextConfiguration }
 	 * 
 	 */
@@ -182,7 +182,7 @@ public class OSDConfiguration extends DeviceEntity {
 	/**
 	 * Legt den Wert der image-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDImgConfiguration }
 	 * 
 	 */
@@ -203,7 +203,7 @@ public class OSDConfiguration extends DeviceEntity {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDConfigurationExtension }
 	 * 
 	 */

@@ -72,7 +72,7 @@ public class GetProfiles {
     /**
      * Legt den Wert der token-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

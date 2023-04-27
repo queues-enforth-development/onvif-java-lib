@@ -100,7 +100,7 @@ public class Behaviour {
 	/**
 	 * Legt den Wert der removed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Behaviour.Removed }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class Behaviour {
 	/**
 	 * Legt den Wert der idle-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Behaviour.Idle }
 	 * 
 	 */
@@ -142,7 +142,7 @@ public class Behaviour {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BehaviourExtension }
 	 * 
 	 */

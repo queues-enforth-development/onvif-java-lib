@@ -90,7 +90,7 @@ public class AnalyticsCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -110,7 +110,7 @@ public class AnalyticsCapabilities {
 	/**
 	 * Legt den Wert der ruleSupport-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRuleSupport(boolean value) {
 		this.ruleSupport = value;
@@ -128,7 +128,7 @@ public class AnalyticsCapabilities {
 	/**
 	 * Legt den Wert der analyticsModuleSupport-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAnalyticsModuleSupport(boolean value) {
 		this.analyticsModuleSupport = value;

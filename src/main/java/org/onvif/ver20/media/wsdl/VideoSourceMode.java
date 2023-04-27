@@ -122,7 +122,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der maxFramerate-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setMaxFramerate(float value) {
         this.maxFramerate = value;
@@ -143,7 +143,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der maxResolution-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoResolution }
      *     
@@ -194,7 +194,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der reboot-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setReboot(boolean value) {
         this.reboot = value;
@@ -215,7 +215,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der description-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -239,7 +239,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der extension-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoSourceModeExtension }
      *     
@@ -263,7 +263,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der token-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -287,7 +287,7 @@ public class VideoSourceMode {
     /**
      * Legt den Wert der enabled-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

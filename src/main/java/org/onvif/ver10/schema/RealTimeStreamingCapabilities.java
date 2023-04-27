@@ -84,7 +84,7 @@ public class RealTimeStreamingCapabilities {
 	/**
 	 * Legt den Wert der rtpMulticast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class RealTimeStreamingCapabilities {
 	/**
 	 * Legt den Wert der rtptcp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class RealTimeStreamingCapabilities {
 	/**
 	 * Legt den Wert der rtprtsptcp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class RealTimeStreamingCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RealTimeStreamingCapabilitiesExtension }
 	 * 
 	 */

@@ -78,7 +78,7 @@ public enum ReceiverMode {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static ReceiverMode fromValue(String v) {

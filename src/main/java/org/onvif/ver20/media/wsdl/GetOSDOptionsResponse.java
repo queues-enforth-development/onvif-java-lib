@@ -61,7 +61,7 @@ public class GetOSDOptionsResponse {
     /**
      * Legt den Wert der osdOptions-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link OSDConfigurationOptions }
      *     

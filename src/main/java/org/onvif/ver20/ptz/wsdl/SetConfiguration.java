@@ -66,7 +66,7 @@ public class SetConfiguration {
 	/**
 	 * Legt den Wert der ptzConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZConfiguration }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class SetConfiguration {
 	/**
 	 * Legt den Wert der forcePersistence-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setForcePersistence(boolean value) {
 		this.forcePersistence = value;

@@ -95,7 +95,7 @@ public class RecordingJobStateTrack {
 	/**
 	 * Legt den Wert der sourceTag-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class RecordingJobStateTrack {
 	/**
 	 * Legt den Wert der destination-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class RecordingJobStateTrack {
 	/**
 	 * Legt den Wert der error-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class RecordingJobStateTrack {
 	/**
 	 * Legt den Wert der state-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

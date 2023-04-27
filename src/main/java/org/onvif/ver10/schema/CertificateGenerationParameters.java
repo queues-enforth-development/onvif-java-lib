@@ -100,7 +100,7 @@ public class CertificateGenerationParameters {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class CertificateGenerationParameters {
 	/**
 	 * Legt den Wert der subject-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -142,7 +142,7 @@ public class CertificateGenerationParameters {
 	/**
 	 * Legt den Wert der validNotBefore-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -163,7 +163,7 @@ public class CertificateGenerationParameters {
 	/**
 	 * Legt den Wert der validNotAfter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -184,7 +184,7 @@ public class CertificateGenerationParameters {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CertificateGenerationParametersExtension }
 	 * 
 	 */

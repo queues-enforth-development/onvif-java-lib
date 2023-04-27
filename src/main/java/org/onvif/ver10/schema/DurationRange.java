@@ -66,7 +66,7 @@ public class DurationRange {
 	/**
 	 * Legt den Wert der min-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -87,7 +87,7 @@ public class DurationRange {
 	/**
 	 * Legt den Wert der max-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

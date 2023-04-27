@@ -123,7 +123,7 @@ public class TimeZone {
 	/**
 	 * Legt den Wert der tz-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

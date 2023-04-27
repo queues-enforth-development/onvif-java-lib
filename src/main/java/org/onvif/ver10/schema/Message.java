@@ -104,7 +104,7 @@ public class Message {
 	/**
 	 * Legt den Wert der source-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemList }
 	 * 
 	 */
@@ -125,7 +125,7 @@ public class Message {
 	/**
 	 * Legt den Wert der key-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemList }
 	 * 
 	 */
@@ -146,7 +146,7 @@ public class Message {
 	/**
 	 * Legt den Wert der data-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemList }
 	 * 
 	 */
@@ -167,7 +167,7 @@ public class Message {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MessageExtension }
 	 * 
 	 */
@@ -188,7 +188,7 @@ public class Message {
 	/**
 	 * Legt den Wert der utcTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -209,7 +209,7 @@ public class Message {
 	/**
 	 * Legt den Wert der propertyOperation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PropertyOperation }
 	 * 
 	 */

@@ -66,7 +66,7 @@ public class GotoHomePosition {
 	/**
 	 * Legt den Wert der profileToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -87,7 +87,7 @@ public class GotoHomePosition {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpeed }
 	 * 
 	 */

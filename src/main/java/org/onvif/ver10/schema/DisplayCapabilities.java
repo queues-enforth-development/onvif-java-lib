@@ -83,7 +83,7 @@ public class DisplayCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -103,7 +103,7 @@ public class DisplayCapabilities {
 	/**
 	 * Legt den Wert der fixedLayout-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFixedLayout(boolean value) {
 		this.fixedLayout = value;

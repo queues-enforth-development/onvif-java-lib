@@ -102,7 +102,7 @@ public class NetworkCapabilitiesExtension {
 	/**
 	 * Legt den Wert der dot11Configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class NetworkCapabilitiesExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkCapabilitiesExtension2 }
 	 * 
 	 */

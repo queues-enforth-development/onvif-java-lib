@@ -98,7 +98,7 @@ public class EventCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -118,7 +118,7 @@ public class EventCapabilities {
 	/**
 	 * Legt den Wert der wsSubscriptionPolicySupport-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setWSSubscriptionPolicySupport(boolean value) {
 		this.wsSubscriptionPolicySupport = value;
@@ -136,7 +136,7 @@ public class EventCapabilities {
 	/**
 	 * Legt den Wert der wsPullPointSupport-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setWSPullPointSupport(boolean value) {
 		this.wsPullPointSupport = value;
@@ -154,7 +154,7 @@ public class EventCapabilities {
 	/**
 	 * Legt den Wert der wsPausableSubscriptionManagerInterfaceSupport-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setWSPausableSubscriptionManagerInterfaceSupport(boolean value) {
 		this.wsPausableSubscriptionManagerInterfaceSupport = value;

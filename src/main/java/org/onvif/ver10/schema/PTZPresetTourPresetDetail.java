@@ -97,7 +97,7 @@ public class PTZPresetTourPresetDetail {
 	/**
 	 * Legt den Wert der presetToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -118,7 +118,7 @@ public class PTZPresetTourPresetDetail {
 	/**
 	 * Legt den Wert der home-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -139,7 +139,7 @@ public class PTZPresetTourPresetDetail {
 	/**
 	 * Legt den Wert der ptzPosition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class PTZPresetTourPresetDetail {
 	/**
 	 * Legt den Wert der typeExtension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourTypeExtension }
 	 * 
 	 */

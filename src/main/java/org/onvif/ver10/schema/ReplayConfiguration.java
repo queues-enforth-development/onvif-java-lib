@@ -79,7 +79,7 @@ public class ReplayConfiguration {
 	/**
 	 * Legt den Wert der sessionTimeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

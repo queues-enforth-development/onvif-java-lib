@@ -90,7 +90,7 @@ public class CodingCapabilities {
 	/**
 	 * Legt den Wert der audioEncodingCapabilities-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoderConfigurationOptions }
 	 * 
 	 */
@@ -111,7 +111,7 @@ public class CodingCapabilities {
 	/**
 	 * Legt den Wert der audioDecodingCapabilities-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioDecoderConfigurationOptions }
 	 * 
 	 */
@@ -132,7 +132,7 @@ public class CodingCapabilities {
 	/**
 	 * Legt den Wert der videoDecodingCapabilities-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoDecoderConfigurationOptions }
 	 * 
 	 */

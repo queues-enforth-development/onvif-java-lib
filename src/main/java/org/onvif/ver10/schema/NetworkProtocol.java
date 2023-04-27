@@ -86,7 +86,7 @@ public class NetworkProtocol {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkProtocolType }
 	 * 
 	 */
@@ -106,7 +106,7 @@ public class NetworkProtocol {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEnabled(boolean value) {
 		this.enabled = value;
@@ -153,7 +153,7 @@ public class NetworkProtocol {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkProtocolExtension }
 	 * 
 	 */

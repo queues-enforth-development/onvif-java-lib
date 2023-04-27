@@ -62,7 +62,7 @@ public class Mpeg4Configuration {
 	/**
 	 * Legt den Wert der govLength-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setGovLength(int value) {
 		this.govLength = value;
@@ -81,7 +81,7 @@ public class Mpeg4Configuration {
 	/**
 	 * Legt den Wert der mpeg4Profile-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Mpeg4Profile }
 	 * 
 	 */

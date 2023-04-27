@@ -62,7 +62,7 @@ public class VideoResolution {
 	/**
 	 * Legt den Wert der width-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setWidth(int value) {
 		this.width = value;
@@ -80,7 +80,7 @@ public class VideoResolution {
 	/**
 	 * Legt den Wert der height-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setHeight(int value) {
 		this.height = value;

@@ -75,7 +75,7 @@ public class StartFirmwareUpgradeResponse {
 	/**
 	 * Legt den Wert der uploadUri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -96,7 +96,7 @@ public class StartFirmwareUpgradeResponse {
 	/**
 	 * Legt den Wert der uploadDelay-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -117,7 +117,7 @@ public class StartFirmwareUpgradeResponse {
 	/**
 	 * Legt den Wert der expectedDownTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

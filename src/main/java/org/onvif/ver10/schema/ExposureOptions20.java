@@ -185,7 +185,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der minExposureTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -206,7 +206,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der maxExposureTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -227,7 +227,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der minGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -248,7 +248,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der maxGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -269,7 +269,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der minIris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -290,7 +290,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der maxIris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -311,7 +311,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der exposureTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -332,7 +332,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der gain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -353,7 +353,7 @@ public class ExposureOptions20 {
 	/**
 	 * Legt den Wert der iris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

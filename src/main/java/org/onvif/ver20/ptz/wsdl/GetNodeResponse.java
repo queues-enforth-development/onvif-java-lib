@@ -59,7 +59,7 @@ public class GetNodeResponse {
 	/**
 	 * Legt den Wert der ptzNode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZNode }
 	 * 
 	 */

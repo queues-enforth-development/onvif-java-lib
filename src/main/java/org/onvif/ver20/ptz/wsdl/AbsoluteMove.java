@@ -74,7 +74,7 @@ public class AbsoluteMove {
 	/**
 	 * Legt den Wert der profileToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class AbsoluteMove {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class AbsoluteMove {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpeed }
 	 * 
 	 */

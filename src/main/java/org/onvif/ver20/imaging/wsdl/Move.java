@@ -69,7 +69,7 @@ public class Move {
     /**
      * Legt den Wert der videoSourceToken-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -93,7 +93,7 @@ public class Move {
     /**
      * Legt den Wert der focus-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link FocusMove }
      *     

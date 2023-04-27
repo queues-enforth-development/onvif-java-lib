@@ -39,7 +39,7 @@ public class ImagingDevice
 
     /**
      *
-     * @param onvifDevice
+     * @param onvifDevice -
      */
     public ImagingDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
@@ -49,7 +49,7 @@ public class ImagingDevice
 
     /**
      *
-     * @param videoSourceToken
+     * @param videoSourceToken -
      * @return -
      */
     public ImagingOptions20 getOptions(String videoSourceToken) {
@@ -78,8 +78,8 @@ public class ImagingDevice
 
     /**
      *
-     * @param videoSourceToken
-     * @param absoluteFocusValue
+     * @param videoSourceToken -
+     * @param absoluteFocusValue -
      * @return -
      */
     public boolean moveFocus(String videoSourceToken, float absoluteFocusValue) {
@@ -111,7 +111,7 @@ public class ImagingDevice
 
     /**
      *
-     * @param videoSourceToken
+     * @param videoSourceToken -
      * @return -
      */
     public ImagingSettings20 getImagingSettings(String videoSourceToken) {
@@ -140,8 +140,8 @@ public class ImagingDevice
 
     /**
      *
-     * @param videoSourceToken
-     * @param imagingSettings
+     * @param videoSourceToken -
+     * @param imagingSettings -
      * @return -
      */
     public boolean setImagingSettings(String videoSourceToken, ImagingSettings20 imagingSettings) {

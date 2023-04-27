@@ -59,7 +59,7 @@ public class GetSnapshotUriResponse {
 	/**
 	 * Legt den Wert der mediaUri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MediaUri }
 	 * 
 	 */

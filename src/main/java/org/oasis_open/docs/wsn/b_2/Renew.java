@@ -69,7 +69,7 @@ public class Renew {
 	/**
 	 * Legt den Wert der terminationTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

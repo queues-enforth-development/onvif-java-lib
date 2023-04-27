@@ -75,7 +75,7 @@ public class Rectangle {
 	/**
 	 * Legt den Wert der bottom-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -96,7 +96,7 @@ public class Rectangle {
 	/**
 	 * Legt den Wert der top-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -117,7 +117,7 @@ public class Rectangle {
 	/**
 	 * Legt den Wert der right-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -138,7 +138,7 @@ public class Rectangle {
 	/**
 	 * Legt den Wert der left-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */

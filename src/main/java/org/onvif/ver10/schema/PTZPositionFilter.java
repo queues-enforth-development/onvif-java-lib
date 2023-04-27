@@ -88,7 +88,7 @@ public class PTZPositionFilter {
 	/**
 	 * Legt den Wert der minPosition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class PTZPositionFilter {
 	/**
 	 * Legt den Wert der maxPosition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class PTZPositionFilter {
 	/**
 	 * Legt den Wert der enterOrExit-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEnterOrExit(boolean value) {
 		this.enterOrExit = value;

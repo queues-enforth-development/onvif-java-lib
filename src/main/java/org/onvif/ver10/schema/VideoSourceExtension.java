@@ -102,7 +102,7 @@ public class VideoSourceExtension {
 	/**
 	 * Legt den Wert der imaging-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingSettings20 }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class VideoSourceExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoSourceExtension2 }
 	 * 
 	 */

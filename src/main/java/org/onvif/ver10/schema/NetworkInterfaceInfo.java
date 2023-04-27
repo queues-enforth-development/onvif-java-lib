@@ -73,7 +73,7 @@ public class NetworkInterfaceInfo {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -94,7 +94,7 @@ public class NetworkInterfaceInfo {
 	/**
 	 * Legt den Wert der hwAddress-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class NetworkInterfaceInfo {
 	/**
 	 * Legt den Wert der mtu-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */

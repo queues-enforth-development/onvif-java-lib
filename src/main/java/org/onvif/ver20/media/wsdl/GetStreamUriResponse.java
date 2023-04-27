@@ -62,7 +62,7 @@ public class GetStreamUriResponse {
     /**
      * Legt den Wert der uri-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

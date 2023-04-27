@@ -134,7 +134,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der backlightCompensation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BacklightCompensation }
 	 * 
 	 */
@@ -155,7 +155,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der brightness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -176,7 +176,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der colorSaturation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -197,7 +197,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der contrast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -218,7 +218,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der exposure-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Exposure }
 	 * 
 	 */
@@ -239,7 +239,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der focus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusConfiguration }
 	 * 
 	 */
@@ -260,7 +260,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der irCutFilter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IrCutFilterMode }
 	 * 
 	 */
@@ -281,7 +281,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der sharpness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -302,7 +302,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der wideDynamicRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WideDynamicRange }
 	 * 
 	 */
@@ -323,7 +323,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der whiteBalance-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalance }
 	 * 
 	 */
@@ -344,7 +344,7 @@ public class ImagingSettings {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingSettingsExtension }
 	 * 
 	 */

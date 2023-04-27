@@ -62,7 +62,7 @@ public class H264Configuration {
 	/**
 	 * Legt den Wert der govLength-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setGovLength(int value) {
 		this.govLength = value;
@@ -81,7 +81,7 @@ public class H264Configuration {
 	/**
 	 * Legt den Wert der h264Profile-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link H264Profile }
 	 * 
 	 */

@@ -74,7 +74,7 @@ public class AudioSourceConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sourceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

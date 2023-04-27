@@ -4312,7 +4312,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link VideoSourceConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "VideoSourceConfiguration")
@@ -4323,7 +4323,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MetadataStream }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "MetadataStream")
@@ -4334,7 +4334,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioEncoderConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioEncoderConfiguration")
@@ -4345,7 +4345,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link VideoEncoderConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "VideoEncoderConfiguration")
@@ -4356,7 +4356,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link VideoAnalyticsConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "VideoAnalyticsConfiguration")
@@ -4367,7 +4367,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioOutputConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioOutputConfiguration")
@@ -4378,7 +4378,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Polygon }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "Polygon")
@@ -4389,7 +4389,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Polyline }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "Polyline")
@@ -4400,7 +4400,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioSourceConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioSourceConfiguration")
@@ -4411,7 +4411,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MetadataConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "MetadataConfiguration")
@@ -4422,7 +4422,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link PTZConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "PTZConfiguration")
@@ -4433,7 +4433,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link AudioDecoderConfiguration }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://www.onvif.org/ver10/schema", name = "AudioDecoderConfiguration")

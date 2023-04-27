@@ -70,7 +70,7 @@ public class NetworkInterfaceLink {
 	/**
 	 * Legt den Wert der adminSettings-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceConnectionSetting }
 	 * 
 	 */
@@ -91,7 +91,7 @@ public class NetworkInterfaceLink {
 	/**
 	 * Legt den Wert der operSettings-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceConnectionSetting }
 	 * 
 	 */
@@ -111,7 +111,7 @@ public class NetworkInterfaceLink {
 	/**
 	 * Legt den Wert der interfaceType-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setInterfaceType(int value) {
 		this.interfaceType = value;

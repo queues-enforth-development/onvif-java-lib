@@ -60,7 +60,7 @@ public class Base64Binary {
 	/**
 	 * Legt den Wert der value-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is byte[]
 	 */
 	public void setValue(byte[] value) {
@@ -80,7 +80,7 @@ public class Base64Binary {
 	/**
 	 * Legt den Wert der contentType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

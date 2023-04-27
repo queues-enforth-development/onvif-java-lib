@@ -84,7 +84,7 @@ public class VideoDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der jpegDecOptions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link JpegDecOptions }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class VideoDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der h264DecOptions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link H264DecOptions }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class VideoDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der mpeg4DecOptions-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Mpeg4DecOptions }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class VideoDecoderConfigurationOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoDecoderConfigurationOptionsExtension }
 	 * 
 	 */

@@ -87,7 +87,7 @@ public class PTZPresetTourOptions {
 	/**
 	 * Legt den Wert der autoStart-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAutoStart(boolean value) {
 		this.autoStart = value;
@@ -106,7 +106,7 @@ public class PTZPresetTourOptions {
 	/**
 	 * Legt den Wert der startingCondition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourStartingConditionOptions }
 	 * 
 	 */
@@ -127,7 +127,7 @@ public class PTZPresetTourOptions {
 	/**
 	 * Legt den Wert der tourSpot-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourSpotOptions }
 	 * 
 	 */

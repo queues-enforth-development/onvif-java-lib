@@ -57,7 +57,7 @@ public class SetHostnameFromDHCPResponse {
 	/**
 	 * Legt den Wert der rebootNeeded-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRebootNeeded(boolean value) {
 		this.rebootNeeded = value;

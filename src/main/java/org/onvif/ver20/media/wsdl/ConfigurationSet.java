@@ -154,7 +154,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der videoSource-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoSourceConfiguration }
      *     
@@ -178,7 +178,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der audioSource-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link AudioSourceConfiguration }
      *     
@@ -202,7 +202,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der videoEncoder-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoEncoder2Configuration }
      *     
@@ -226,7 +226,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der audioEncoder-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link AudioEncoder2Configuration }
      *     
@@ -250,7 +250,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der analytics-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link ConfigurationEntity }
      *     
@@ -274,7 +274,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der ptz-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link PTZConfiguration }
      *     
@@ -298,7 +298,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der metadata-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link MetadataConfiguration }
      *     
@@ -322,7 +322,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der audioOutput-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link AudioOutputConfiguration }
      *     
@@ -346,7 +346,7 @@ public class ConfigurationSet {
     /**
      * Legt den Wert der audioDecoder-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link AudioDecoderConfiguration }
      *     

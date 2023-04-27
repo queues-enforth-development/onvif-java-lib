@@ -186,7 +186,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Capabilities }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver10/events/wsdl", name = "Capabilities")
@@ -197,7 +197,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value
+     * @param value -
      * @return 
      */
     @XmlElementDecl(namespace = "http://www.onvif.org/ver10/events/wsdl", name = "InitialTerminationTime", scope = CreatePullPointSubscription.class)

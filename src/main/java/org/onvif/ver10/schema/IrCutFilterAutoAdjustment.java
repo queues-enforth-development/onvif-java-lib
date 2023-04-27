@@ -85,7 +85,7 @@ public class IrCutFilterAutoAdjustment {
 	/**
 	 * Legt den Wert der boundaryType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -106,7 +106,7 @@ public class IrCutFilterAutoAdjustment {
 	/**
 	 * Legt den Wert der boundaryOffset-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -127,7 +127,7 @@ public class IrCutFilterAutoAdjustment {
 	/**
 	 * Legt den Wert der responseTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -148,7 +148,7 @@ public class IrCutFilterAutoAdjustment {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IrCutFilterAutoAdjustmentExtension }
 	 * 
 	 */

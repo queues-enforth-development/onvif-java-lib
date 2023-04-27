@@ -59,7 +59,7 @@ public class GetSystemSupportInformationResponse {
 	/**
 	 * Legt den Wert der supportInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SupportInformation }
 	 * 
 	 */

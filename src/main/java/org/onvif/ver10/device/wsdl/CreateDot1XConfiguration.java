@@ -59,7 +59,7 @@ public class CreateDot1XConfiguration {
 	/**
 	 * Legt den Wert der dot1XConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot1XConfiguration }
 	 * 
 	 */

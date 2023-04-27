@@ -78,7 +78,7 @@ public class GetGuaranteedNumberOfVideoEncoderInstancesResponse {
 	/**
 	 * Legt den Wert der totalNumber-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTotalNumber(int value) {
 		this.totalNumber = value;
@@ -97,7 +97,7 @@ public class GetGuaranteedNumberOfVideoEncoderInstancesResponse {
 	/**
 	 * Legt den Wert der jpeg-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -118,7 +118,7 @@ public class GetGuaranteedNumberOfVideoEncoderInstancesResponse {
 	/**
 	 * Legt den Wert der h264-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -139,7 +139,7 @@ public class GetGuaranteedNumberOfVideoEncoderInstancesResponse {
 	/**
 	 * Legt den Wert der mpeg4-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */

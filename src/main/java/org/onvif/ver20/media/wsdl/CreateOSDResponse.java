@@ -60,7 +60,7 @@ public class CreateOSDResponse {
     /**
      * Legt den Wert der osdToken-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

@@ -95,7 +95,7 @@ public class MetadataAttributes {
 	/**
 	 * Legt den Wert der canContainPTZ-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setCanContainPTZ(boolean value) {
 		this.canContainPTZ = value;
@@ -113,7 +113,7 @@ public class MetadataAttributes {
 	/**
 	 * Legt den Wert der canContainAnalytics-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setCanContainAnalytics(boolean value) {
 		this.canContainAnalytics = value;
@@ -131,7 +131,7 @@ public class MetadataAttributes {
 	/**
 	 * Legt den Wert der canContainNotifications-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setCanContainNotifications(boolean value) {
 		this.canContainNotifications = value;

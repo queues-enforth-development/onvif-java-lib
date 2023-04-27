@@ -57,7 +57,7 @@ public enum DigitalIdleState {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static DigitalIdleState fromValue(String v) {

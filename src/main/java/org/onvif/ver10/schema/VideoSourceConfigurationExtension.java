@@ -63,7 +63,7 @@ public class VideoSourceConfigurationExtension {
 	/**
 	 * Legt den Wert der rotate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Rotate }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class VideoSourceConfigurationExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoSourceConfigurationExtension2 }
 	 * 
 	 */

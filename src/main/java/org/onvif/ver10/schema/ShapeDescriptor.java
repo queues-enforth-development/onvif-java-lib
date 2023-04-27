@@ -86,7 +86,7 @@ public class ShapeDescriptor {
 	/**
 	 * Legt den Wert der boundingBox-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Rectangle }
 	 * 
 	 */
@@ -107,7 +107,7 @@ public class ShapeDescriptor {
 	/**
 	 * Legt den Wert der centerOfGravity-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector }
 	 * 
 	 */
@@ -156,7 +156,7 @@ public class ShapeDescriptor {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ShapeDescriptorExtension }
 	 * 
 	 */

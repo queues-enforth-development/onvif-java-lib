@@ -81,7 +81,7 @@ public class Defogging {
     /**
      * Legt den Wert der mode-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -105,7 +105,7 @@ public class Defogging {
     /**
      * Legt den Wert der level-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Float }
      *     
@@ -129,7 +129,7 @@ public class Defogging {
     /**
      * Legt den Wert der extension-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link DefoggingExtension }
      *     

@@ -69,7 +69,7 @@ public class VideoRateControl {
 	/**
 	 * Legt den Wert der frameRateLimit-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFrameRateLimit(int value) {
 		this.frameRateLimit = value;
@@ -87,7 +87,7 @@ public class VideoRateControl {
 	/**
 	 * Legt den Wert der encodingInterval-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEncodingInterval(int value) {
 		this.encodingInterval = value;
@@ -105,7 +105,7 @@ public class VideoRateControl {
 	/**
 	 * Legt den Wert der bitrateLimit-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setBitrateLimit(int value) {
 		this.bitrateLimit = value;

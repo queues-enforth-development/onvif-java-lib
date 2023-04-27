@@ -81,7 +81,7 @@ public class AACDecOptions {
 	/**
 	 * Legt den Wert der bitrate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class AACDecOptions {
 	/**
 	 * Legt den Wert der sampleRateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */

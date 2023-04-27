@@ -102,7 +102,7 @@ public class VideoAttributes {
 	/**
 	 * Legt den Wert der bitrate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -122,7 +122,7 @@ public class VideoAttributes {
 	/**
 	 * Legt den Wert der width-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setWidth(int value) {
 		this.width = value;
@@ -140,7 +140,7 @@ public class VideoAttributes {
 	/**
 	 * Legt den Wert der height-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setHeight(int value) {
 		this.height = value;
@@ -159,7 +159,7 @@ public class VideoAttributes {
 	/**
 	 * Legt den Wert der encoding-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoEncoding }
 	 * 
 	 */
@@ -179,7 +179,7 @@ public class VideoAttributes {
 	/**
 	 * Legt den Wert der framerate-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFramerate(float value) {
 		this.framerate = value;

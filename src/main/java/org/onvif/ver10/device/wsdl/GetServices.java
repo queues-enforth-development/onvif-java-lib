@@ -57,7 +57,7 @@ public class GetServices {
 	/**
 	 * Sets the value of the includeCapability property.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setIncludeCapability(boolean value) {
 		this.includeCapability = value;

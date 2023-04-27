@@ -59,7 +59,7 @@ public class GetSystemLogResponse {
 	/**
 	 * Legt den Wert der systemLog-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemLog }
 	 * 
 	 */

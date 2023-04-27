@@ -93,7 +93,7 @@ public class VideoOutput extends DeviceEntity {
 	/**
 	 * Legt den Wert der layout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Layout }
 	 * 
 	 */
@@ -114,7 +114,7 @@ public class VideoOutput extends DeviceEntity {
 	/**
 	 * Legt den Wert der resolution-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoResolution }
 	 * 
 	 */
@@ -135,7 +135,7 @@ public class VideoOutput extends DeviceEntity {
 	/**
 	 * Legt den Wert der refreshRate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -156,7 +156,7 @@ public class VideoOutput extends DeviceEntity {
 	/**
 	 * Legt den Wert der aspectRatio-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -177,7 +177,7 @@ public class VideoOutput extends DeviceEntity {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoOutputExtension }
 	 * 
 	 */

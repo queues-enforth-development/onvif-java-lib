@@ -98,7 +98,7 @@ public class FindPTZPositionResult {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class FindPTZPositionResult {
 	/**
 	 * Legt den Wert der trackToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -140,7 +140,7 @@ public class FindPTZPositionResult {
 	/**
 	 * Legt den Wert der time-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -161,7 +161,7 @@ public class FindPTZPositionResult {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */

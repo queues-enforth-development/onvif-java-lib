@@ -107,7 +107,7 @@ public class RotateOptions {
 	/**
 	 * Legt den Wert der degreeList-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class RotateOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RotateOptionsExtension }
 	 * 
 	 */

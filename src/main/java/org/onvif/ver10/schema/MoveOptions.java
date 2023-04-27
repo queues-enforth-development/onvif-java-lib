@@ -70,7 +70,7 @@ public class MoveOptions {
 	/**
 	 * Legt den Wert der absolute-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AbsoluteFocusOptions }
 	 * 
 	 */
@@ -91,7 +91,7 @@ public class MoveOptions {
 	/**
 	 * Legt den Wert der relative-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RelativeFocusOptions }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class MoveOptions {
 	/**
 	 * Legt den Wert der continuous-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ContinuousFocusOptions }
 	 * 
 	 */

@@ -136,7 +136,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der backlightCompensation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BacklightCompensation20 }
 	 * 
 	 */
@@ -157,7 +157,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der brightness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -178,7 +178,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der colorSaturation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -199,7 +199,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der contrast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -220,7 +220,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der exposure-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Exposure20 }
 	 * 
 	 */
@@ -241,7 +241,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der focus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusConfiguration20 }
 	 * 
 	 */
@@ -262,7 +262,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der irCutFilter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IrCutFilterMode }
 	 * 
 	 */
@@ -283,7 +283,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der sharpness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -304,7 +304,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der wideDynamicRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WideDynamicRange20 }
 	 * 
 	 */
@@ -325,7 +325,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der whiteBalance-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalance20 }
 	 * 
 	 */
@@ -346,7 +346,7 @@ public class ImagingSettings20 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingSettingsExtension20 }
 	 * 
 	 */

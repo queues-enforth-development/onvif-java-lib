@@ -63,7 +63,7 @@ public class SystemLog {
 	/**
 	 * Legt den Wert der binary-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AttachmentData }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class SystemLog {
 	/**
 	 * Legt den Wert der string-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

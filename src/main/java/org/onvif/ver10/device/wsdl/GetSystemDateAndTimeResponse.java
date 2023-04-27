@@ -59,7 +59,7 @@ public class GetSystemDateAndTimeResponse {
 	/**
 	 * Legt den Wert der systemDateAndTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemDateTime }
 	 * 
 	 */

@@ -102,7 +102,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der panTiltStatusSupported-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPanTiltStatusSupported(boolean value) {
 		this.panTiltStatusSupported = value;
@@ -120,7 +120,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der zoomStatusSupported-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setZoomStatusSupported(boolean value) {
 		this.zoomStatusSupported = value;
@@ -167,7 +167,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der panTiltPositionSupported-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -188,7 +188,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der zoomPositionSupported-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -209,7 +209,7 @@ public class PTZStatusFilterOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZStatusFilterOptionsExtension }
 	 * 
 	 */

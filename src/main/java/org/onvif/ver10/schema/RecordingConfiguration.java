@@ -89,7 +89,7 @@ public class RecordingConfiguration {
 	/**
 	 * Legt den Wert der source-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingSourceInformation }
 	 * 
 	 */
@@ -110,7 +110,7 @@ public class RecordingConfiguration {
 	/**
 	 * Legt den Wert der content-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -131,7 +131,7 @@ public class RecordingConfiguration {
 	/**
 	 * Legt den Wert der maximumRetentionTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

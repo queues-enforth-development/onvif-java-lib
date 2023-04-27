@@ -136,7 +136,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der backlightCompensation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BacklightCompensationOptions20 }
 	 * 
 	 */
@@ -157,7 +157,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der brightness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -178,7 +178,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der colorSaturation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -199,7 +199,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der contrast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -220,7 +220,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der exposure-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ExposureOptions20 }
 	 * 
 	 */
@@ -241,7 +241,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der focus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusOptions20 }
 	 * 
 	 */
@@ -290,7 +290,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der sharpness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -311,7 +311,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der wideDynamicRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WideDynamicRangeOptions20 }
 	 * 
 	 */
@@ -332,7 +332,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der whiteBalance-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalanceOptions20 }
 	 * 
 	 */
@@ -353,7 +353,7 @@ public class ImagingOptions20 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingOptions20Extension }
 	 * 
 	 */

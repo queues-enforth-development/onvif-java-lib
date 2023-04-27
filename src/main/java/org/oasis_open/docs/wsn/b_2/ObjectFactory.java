@@ -516,7 +516,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "TerminationTime")
@@ -527,7 +527,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link NotifyMessageNotSupportedFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "NotifyMessageNotSupportedFault")
@@ -538,7 +538,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "ConsumerReference")
@@ -549,7 +549,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnsupportedPolicyRequestFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnsupportedPolicyRequestFault")
@@ -560,7 +560,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link SubscriptionPolicyType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "SubscriptionPolicy")
@@ -571,7 +571,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link NotificationMessageHolderType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "NotificationMessage")
@@ -582,7 +582,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnacceptableInitialTerminationTimeFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnacceptableInitialTerminationTimeFault")
@@ -595,7 +595,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link InvalidTopicExpressionFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "InvalidTopicExpressionFault")
@@ -606,7 +606,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "TopicExpressionDialect")
@@ -617,7 +617,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link FilterType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "Filter")
@@ -628,7 +628,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnableToCreatePullPointFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnableToCreatePullPointFault")
@@ -639,7 +639,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "CreationTime")
@@ -650,7 +650,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link ResumeFailedFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "ResumeFailedFault")
@@ -661,7 +661,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link InvalidProducerPropertiesExpressionFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "InvalidProducerPropertiesExpressionFault")
@@ -674,7 +674,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnableToGetMessagesFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnableToGetMessagesFault")
@@ -685,7 +685,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link QueryExpressionType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "MessageContent")
@@ -696,7 +696,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicExpressionDialectUnknownFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "TopicExpressionDialectUnknownFault")
@@ -708,7 +708,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnableToDestroySubscriptionFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnableToDestroySubscriptionFault")
@@ -720,7 +720,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnrecognizedPolicyRequestFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnrecognizedPolicyRequestFault")
@@ -731,7 +731,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link SubscribeCreationFailedFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "SubscribeCreationFailedFault")
@@ -742,7 +742,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "ProducerReference")
@@ -753,7 +753,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link NoCurrentMessageOnTopicFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "NoCurrentMessageOnTopicFault")
@@ -764,7 +764,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link MultipleTopicsSpecifiedFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "MultipleTopicsSpecifiedFault")
@@ -775,7 +775,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnacceptableTerminationTimeFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnacceptableTerminationTimeFault")
@@ -787,7 +787,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "CurrentTime")
@@ -798,7 +798,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicExpressionType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "TopicExpression")
@@ -809,7 +809,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link QueryExpressionType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "ProducerProperties")
@@ -820,7 +820,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicNotSupportedFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "TopicNotSupportedFault")
@@ -831,7 +831,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link InvalidFilterFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "InvalidFilterFault")
@@ -842,7 +842,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "FixedTopicSet", defaultValue = "true")
@@ -853,7 +853,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicExpressionType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "Topic")
@@ -864,7 +864,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link UnableToDestroyPullPointFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "UnableToDestroyPullPointFault")
@@ -875,7 +875,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link InvalidMessageContentExpressionFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "InvalidMessageContentExpressionFault")
@@ -887,7 +887,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link PauseFailedFaultType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "PauseFailedFault")
@@ -898,7 +898,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link EndpointReferenceType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "SubscriptionReference")
@@ -909,7 +909,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/b-2", name = "InitialTerminationTime", scope = Subscribe.class)

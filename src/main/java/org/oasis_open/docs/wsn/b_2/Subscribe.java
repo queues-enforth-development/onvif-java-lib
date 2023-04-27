@@ -103,7 +103,7 @@ public class Subscribe {
 	/**
 	 * Legt den Wert der consumerReference-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */
@@ -124,7 +124,7 @@ public class Subscribe {
 	/**
 	 * Legt den Wert der filter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FilterType }
 	 * 
 	 */
@@ -145,7 +145,7 @@ public class Subscribe {
 	/**
 	 * Legt den Wert der initialTerminationTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
 	 * 
 	 */
@@ -166,7 +166,7 @@ public class Subscribe {
 	/**
 	 * Legt den Wert der subscriptionPolicy-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Subscribe.SubscriptionPolicy }
 	 * 
 	 */

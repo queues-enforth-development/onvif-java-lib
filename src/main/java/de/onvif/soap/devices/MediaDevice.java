@@ -41,7 +41,7 @@ public class MediaDevice
 
     /**
      *
-     * @param onvifDevice
+     * @param onvifDevice -
      */
     public MediaDevice(OnvifDevice onvifDevice) {
 		this.onvifDevice = onvifDevice;
@@ -51,7 +51,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileNumber
+     * @param profileNumber -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -72,7 +72,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -92,7 +92,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileNumber
+     * @param profileNumber -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -113,7 +113,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -132,7 +132,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileNumber
+     * @param profileNumber -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -153,7 +153,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -172,7 +172,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileNumber
+     * @param profileNumber -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -193,7 +193,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -212,8 +212,8 @@ public class MediaDevice
 
     /**
      *
-     * @param streamSetup
-     * @param profileNumber
+     * @param streamSetup -
+     * @param profileNumber -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -230,8 +230,8 @@ public class MediaDevice
 
     /**
      *
-     * @param profile
-     * @param streamSetup
+     * @param profile -
+     * @param streamSetup -
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
@@ -247,8 +247,8 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
-     * @param streamSetup
+     * @param profileToken -
+     * @param streamSetup -
      * @return -
      * @throws SOAPException -
      * @throws ConnectException -
@@ -278,7 +278,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profile
+     * @param profile -
      * @return -
      */
     public static VideoEncoderConfiguration getVideoEncoderConfiguration(Profile profile) {
@@ -287,7 +287,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws SOAPException -
      * @throws ConnectException -
@@ -316,7 +316,7 @@ public class MediaDevice
 
     /**
      *
-     * @param videoEncoderConfiguration
+     * @param videoEncoderConfiguration -
      * @return -
      * @throws SOAPException -
      * @throws ConnectException -
@@ -342,7 +342,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws SOAPException -
      * @throws ConnectException -
@@ -356,7 +356,7 @@ public class MediaDevice
 
     /**
      *
-     * @param profileToken
+     * @param profileToken -
      * @return -
      * @throws SOAPException -
      * @throws ConnectException -

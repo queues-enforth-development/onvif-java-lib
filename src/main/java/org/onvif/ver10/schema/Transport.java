@@ -63,7 +63,7 @@ public class Transport {
 	/**
 	 * Legt den Wert der protocol-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TransportProtocol }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class Transport {
 	/**
 	 * Legt den Wert der tunnel-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Transport }
 	 * 
 	 */

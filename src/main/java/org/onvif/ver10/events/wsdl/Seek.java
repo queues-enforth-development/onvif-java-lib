@@ -82,7 +82,7 @@ public class Seek {
     /**
      * Legt den Wert der utcTime-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -106,7 +106,7 @@ public class Seek {
     /**
      * Legt den Wert der reverse-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

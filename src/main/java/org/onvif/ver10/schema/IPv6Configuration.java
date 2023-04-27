@@ -107,7 +107,7 @@ public class IPv6Configuration {
 	/**
 	 * Legt den Wert der acceptRouterAdvert-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class IPv6Configuration {
 	/**
 	 * Legt den Wert der dhcp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv6DHCPConfiguration }
 	 * 
 	 */
@@ -261,7 +261,7 @@ public class IPv6Configuration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv6ConfigurationExtension }
 	 * 
 	 */

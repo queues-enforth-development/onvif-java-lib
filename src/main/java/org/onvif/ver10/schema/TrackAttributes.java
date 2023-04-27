@@ -91,7 +91,7 @@ public class TrackAttributes {
 	/**
 	 * Legt den Wert der trackInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TrackInformation }
 	 * 
 	 */
@@ -112,7 +112,7 @@ public class TrackAttributes {
 	/**
 	 * Legt den Wert der videoAttributes-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoAttributes }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class TrackAttributes {
 	/**
 	 * Legt den Wert der audioAttributes-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioAttributes }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class TrackAttributes {
 	/**
 	 * Legt den Wert der metadataAttributes-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataAttributes }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class TrackAttributes {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TrackAttributesExtension }
 	 * 
 	 */

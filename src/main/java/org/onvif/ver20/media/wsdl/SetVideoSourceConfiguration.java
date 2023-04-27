@@ -61,7 +61,7 @@ public class SetVideoSourceConfiguration {
     /**
      * Legt den Wert der configuration-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link VideoSourceConfiguration }
      *     

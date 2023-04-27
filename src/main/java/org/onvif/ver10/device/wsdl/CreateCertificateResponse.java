@@ -59,7 +59,7 @@ public class CreateCertificateResponse {
 	/**
 	 * Legt den Wert der nvtCertificate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Certificate }
 	 * 
 	 */

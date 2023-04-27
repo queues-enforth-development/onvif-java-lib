@@ -90,7 +90,7 @@ public class VideoRateControl2 {
     /**
      * Legt den Wert der frameRateLimit-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setFrameRateLimit(float value) {
         this.frameRateLimit = value;
@@ -108,7 +108,7 @@ public class VideoRateControl2 {
     /**
      * Legt den Wert der bitrateLimit-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setBitrateLimit(int value) {
         this.bitrateLimit = value;
@@ -160,7 +160,7 @@ public class VideoRateControl2 {
     /**
      * Legt den Wert der constantBitRate-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

@@ -74,7 +74,7 @@ public class VideoOutputConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der outputToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

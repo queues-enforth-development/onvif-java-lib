@@ -69,7 +69,7 @@ public class UnacceptableTerminationTimeFaultType extends BaseFaultType {
 	/**
 	 * Legt den Wert der minimumTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -90,7 +90,7 @@ public class UnacceptableTerminationTimeFaultType extends BaseFaultType {
 	/**
 	 * Legt den Wert der maximumTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

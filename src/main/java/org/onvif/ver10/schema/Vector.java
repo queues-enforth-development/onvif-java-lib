@@ -61,7 +61,7 @@ public class Vector {
 	/**
 	 * Legt den Wert der x-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -82,7 +82,7 @@ public class Vector {
 	/**
 	 * Legt den Wert der y-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */

@@ -86,7 +86,7 @@ public class PTZPresetTourStartingConditionOptions {
 	/**
 	 * Legt den Wert der recurringTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -107,7 +107,7 @@ public class PTZPresetTourStartingConditionOptions {
 	/**
 	 * Legt den Wert der recurringDuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DurationRange }
 	 * 
 	 */
@@ -156,7 +156,7 @@ public class PTZPresetTourStartingConditionOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourStartingConditionOptionsExtension }
 	 * 
 	 */

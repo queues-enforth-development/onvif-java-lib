@@ -59,7 +59,7 @@ public class GetZeroConfigurationResponse {
 	/**
 	 * Legt den Wert der zeroConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkZeroConfiguration }
 	 * 
 	 */

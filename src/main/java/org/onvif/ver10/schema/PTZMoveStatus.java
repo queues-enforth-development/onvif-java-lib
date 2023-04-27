@@ -63,7 +63,7 @@ public class PTZMoveStatus {
 	/**
 	 * Legt den Wert der panTilt-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MoveStatus }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class PTZMoveStatus {
 	/**
 	 * Legt den Wert der zoom-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MoveStatus }
 	 * 
 	 */

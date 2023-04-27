@@ -117,7 +117,7 @@ public class MotionInCells {
 	/**
 	 * Legt den Wert der columns-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */
@@ -138,7 +138,7 @@ public class MotionInCells {
 	/**
 	 * Legt den Wert der rows-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class MotionInCells {
 	/**
 	 * Legt den Wert der cells-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is byte[]
 	 */
 	public void setCells(byte[] value) {

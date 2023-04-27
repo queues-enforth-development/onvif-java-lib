@@ -63,7 +63,7 @@ public class PTZVector {
 	/**
 	 * Legt den Wert der panTilt-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector2D }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class PTZVector {
 	/**
 	 * Legt den Wert der zoom-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Vector1D }
 	 * 
 	 */

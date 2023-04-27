@@ -136,7 +136,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ExposureMode }
 	 * 
 	 */
@@ -157,7 +157,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der priority-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ExposurePriority }
 	 * 
 	 */
@@ -178,7 +178,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der window-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Rectangle }
 	 * 
 	 */
@@ -199,7 +199,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der minExposureTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -220,7 +220,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der maxExposureTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -241,7 +241,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der minGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -262,7 +262,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der maxGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -283,7 +283,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der minIris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -304,7 +304,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der maxIris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -325,7 +325,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der exposureTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -346,7 +346,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der gain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -367,7 +367,7 @@ public class Exposure20 {
 	/**
 	 * Legt den Wert der iris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */

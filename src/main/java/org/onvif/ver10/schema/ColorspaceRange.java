@@ -86,7 +86,7 @@ public class ColorspaceRange {
 	/**
 	 * Legt den Wert der x-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -107,7 +107,7 @@ public class ColorspaceRange {
 	/**
 	 * Legt den Wert der y-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class ColorspaceRange {
 	/**
 	 * Legt den Wert der z-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -149,7 +149,7 @@ public class ColorspaceRange {
 	/**
 	 * Legt den Wert der colorspace-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -123,7 +123,7 @@ public class IPv4Configuration {
 	/**
 	 * Legt den Wert der linkLocal-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PrefixedIPv4Address }
 	 * 
 	 */
@@ -144,7 +144,7 @@ public class IPv4Configuration {
 	/**
 	 * Legt den Wert der fromDHCP-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PrefixedIPv4Address }
 	 * 
 	 */
@@ -164,7 +164,7 @@ public class IPv4Configuration {
 	/**
 	 * Legt den Wert der dhcp-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDHCP(boolean value) {
 		this.dhcp = value;

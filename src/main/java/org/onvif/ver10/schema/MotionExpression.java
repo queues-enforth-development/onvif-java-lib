@@ -82,7 +82,7 @@ public class MotionExpression {
 	/**
 	 * Legt den Wert der expression-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -131,7 +131,7 @@ public class MotionExpression {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

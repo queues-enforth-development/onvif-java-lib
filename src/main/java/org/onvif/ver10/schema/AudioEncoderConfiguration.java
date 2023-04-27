@@ -103,7 +103,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der encoding-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoding }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der bitrate-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setBitrate(int value) {
 		this.bitrate = value;
@@ -141,7 +141,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sampleRate-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSampleRate(int value) {
 		this.sampleRate = value;
@@ -160,7 +160,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der multicast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MulticastConfiguration }
 	 * 
 	 */
@@ -181,7 +181,7 @@ public class AudioEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sessionTimeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

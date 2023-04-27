@@ -86,7 +86,7 @@ public class IPAddressFilter {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPAddressFilterType }
 	 * 
 	 */
@@ -163,7 +163,7 @@ public class IPAddressFilter {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPAddressFilterExtension }
 	 * 
 	 */

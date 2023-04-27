@@ -88,7 +88,7 @@ public class AudioEncoderConfigurationOption {
 	/**
 	 * Legt den Wert der encoding-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioEncoding }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class AudioEncoderConfigurationOption {
 	/**
 	 * Legt den Wert der bitrateList-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class AudioEncoderConfigurationOption {
 	/**
 	 * Legt den Wert der sampleRateList-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntList }
 	 * 
 	 */

@@ -87,7 +87,7 @@ public class CreateCertificate {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -108,7 +108,7 @@ public class CreateCertificate {
 	/**
 	 * Legt den Wert der subject-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class CreateCertificate {
 	/**
 	 * Legt den Wert der validNotBefore-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -150,7 +150,7 @@ public class CreateCertificate {
 	/**
 	 * Legt den Wert der validNotAfter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

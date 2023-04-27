@@ -100,7 +100,7 @@ public class DeviceCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class DeviceCapabilities {
 	/**
 	 * Legt den Wert der network-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkCapabilities }
 	 * 
 	 */
@@ -142,7 +142,7 @@ public class DeviceCapabilities {
 	/**
 	 * Legt den Wert der system-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemCapabilities }
 	 * 
 	 */
@@ -163,7 +163,7 @@ public class DeviceCapabilities {
 	/**
 	 * Legt den Wert der io-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IOCapabilities }
 	 * 
 	 */
@@ -184,7 +184,7 @@ public class DeviceCapabilities {
 	/**
 	 * Legt den Wert der security-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SecurityCapabilities }
 	 * 
 	 */
@@ -205,7 +205,7 @@ public class DeviceCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DeviceCapabilitiesExtension }
 	 * 
 	 */

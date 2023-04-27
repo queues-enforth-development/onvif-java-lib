@@ -86,7 +86,7 @@ public class RecordingJobSource {
 	/**
 	 * Legt den Wert der sourceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SourceReference }
 	 * 
 	 */
@@ -107,7 +107,7 @@ public class RecordingJobSource {
 	/**
 	 * Legt den Wert der autoCreateReceiver-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -156,7 +156,7 @@ public class RecordingJobSource {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingJobSourceExtension }
 	 * 
 	 */

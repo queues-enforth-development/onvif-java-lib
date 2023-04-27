@@ -73,7 +73,7 @@ public class OSDColor {
 	/**
 	 * Legt den Wert der color-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Color }
 	 * 
 	 */
@@ -94,7 +94,7 @@ public class OSDColor {
 	/**
 	 * Legt den Wert der transparent-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */

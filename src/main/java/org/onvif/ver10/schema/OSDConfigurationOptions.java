@@ -100,7 +100,7 @@ public class OSDConfigurationOptions {
 	/**
 	 * Legt den Wert der maximumNumberOfOSDs-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MaximumNumberOfOSDs }
 	 * 
 	 */
@@ -177,7 +177,7 @@ public class OSDConfigurationOptions {
 	/**
 	 * Legt den Wert der textOption-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDTextOptions }
 	 * 
 	 */
@@ -198,7 +198,7 @@ public class OSDConfigurationOptions {
 	/**
 	 * Legt den Wert der imageOption-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDImgOptions }
 	 * 
 	 */
@@ -219,7 +219,7 @@ public class OSDConfigurationOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDConfigurationOptionsExtension }
 	 * 
 	 */

@@ -73,7 +73,7 @@ public class OperatePresetTour {
 	/**
 	 * Legt den Wert der profileToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -94,7 +94,7 @@ public class OperatePresetTour {
 	/**
 	 * Legt den Wert der presetTourToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class OperatePresetTour {
 	/**
 	 * Legt den Wert der operation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourOperation }
 	 * 
 	 */

@@ -84,7 +84,7 @@ public class WhiteBalance20 {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalanceMode }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class WhiteBalance20 {
 	/**
 	 * Legt den Wert der crGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class WhiteBalance20 {
 	/**
 	 * Legt den Wert der cbGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class WhiteBalance20 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalance20Extension }
 	 * 
 	 */

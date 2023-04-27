@@ -114,7 +114,7 @@ public class Capabilities2 {
     /**
      * Legt den Wert der profileCapabilities-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link ProfileCapabilities }
      *     
@@ -138,7 +138,7 @@ public class Capabilities2 {
     /**
      * Legt den Wert der streamingCapabilities-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link StreamingCapabilities }
      *     
@@ -193,7 +193,7 @@ public class Capabilities2 {
     /**
      * Legt den Wert der snapshotUri-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -217,7 +217,7 @@ public class Capabilities2 {
     /**
      * Legt den Wert der rotation-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -241,7 +241,7 @@ public class Capabilities2 {
     /**
      * Legt den Wert der videoSourceMode-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -265,7 +265,7 @@ public class Capabilities2 {
     /**
      * Legt den Wert der osd-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

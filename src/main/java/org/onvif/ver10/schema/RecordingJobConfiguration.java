@@ -93,7 +93,7 @@ public class RecordingJobConfiguration {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -114,7 +114,7 @@ public class RecordingJobConfiguration {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -134,7 +134,7 @@ public class RecordingJobConfiguration {
 	/**
 	 * Legt den Wert der priority-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPriority(int value) {
 		this.priority = value;
@@ -181,7 +181,7 @@ public class RecordingJobConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingJobConfigurationExtension }
 	 * 
 	 */

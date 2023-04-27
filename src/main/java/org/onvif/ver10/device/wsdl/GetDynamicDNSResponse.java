@@ -59,7 +59,7 @@ public class GetDynamicDNSResponse {
 	/**
 	 * Legt den Wert der dynamicDNSInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DynamicDNSInformation }
 	 * 
 	 */

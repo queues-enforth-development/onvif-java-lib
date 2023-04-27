@@ -81,7 +81,7 @@ public class PTZPresetTourSpotOptions {
 	/**
 	 * Legt den Wert der presetDetail-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourPresetDetailOptions }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class PTZPresetTourSpotOptions {
 	/**
 	 * Legt den Wert der stayTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DurationRange }
 	 * 
 	 */

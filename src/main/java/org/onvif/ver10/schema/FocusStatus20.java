@@ -83,7 +83,7 @@ public class FocusStatus20 {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPosition(float value) {
 		this.position = value;
@@ -102,7 +102,7 @@ public class FocusStatus20 {
 	/**
 	 * Legt den Wert der moveStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MoveStatus }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class FocusStatus20 {
 	/**
 	 * Legt den Wert der error-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -144,7 +144,7 @@ public class FocusStatus20 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusStatus20Extension }
 	 * 
 	 */

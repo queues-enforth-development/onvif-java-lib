@@ -121,7 +121,7 @@ public class PTZPresetTourPresetDetailOptions {
 	/**
 	 * Legt den Wert der home-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -142,7 +142,7 @@ public class PTZPresetTourPresetDetailOptions {
 	/**
 	 * Legt den Wert der panTiltPositionSpace-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Space2DDescription }
 	 * 
 	 */
@@ -163,7 +163,7 @@ public class PTZPresetTourPresetDetailOptions {
 	/**
 	 * Legt den Wert der zoomPositionSpace-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Space1DDescription }
 	 * 
 	 */
@@ -184,7 +184,7 @@ public class PTZPresetTourPresetDetailOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourPresetDetailOptionsExtension }
 	 * 
 	 */

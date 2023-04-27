@@ -47,7 +47,7 @@ public class OnvifPointer extends URLDevicePointer {
 
     /**
      *
-     * @param address
+     * @param address -
      */
     public OnvifPointer(String address) {
         super(address);
@@ -73,7 +73,7 @@ public class OnvifPointer extends URLDevicePointer {
 
     /**
      *
-     * @param service
+     * @param service -
      */
     public OnvifPointer(URL service) {
         this(service.toString());

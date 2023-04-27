@@ -66,7 +66,7 @@ public class SetRelayOutputState {
 	/**
 	 * Legt den Wert der relayOutputToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -87,7 +87,7 @@ public class SetRelayOutputState {
 	/**
 	 * Legt den Wert der logicalState-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RelayLogicalState }
 	 * 
 	 */

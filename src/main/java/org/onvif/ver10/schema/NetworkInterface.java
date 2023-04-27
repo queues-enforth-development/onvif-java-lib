@@ -97,7 +97,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setEnabled(boolean value) {
 		this.enabled = value;
@@ -116,7 +116,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der info-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceInfo }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der link-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceLink }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der iPv4-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv4NetworkInterface }
 	 * 
 	 */
@@ -179,7 +179,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der iPv6-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv6NetworkInterface }
 	 * 
 	 */
@@ -200,7 +200,7 @@ public class NetworkInterface extends DeviceEntity {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceExtension }
 	 * 
 	 */

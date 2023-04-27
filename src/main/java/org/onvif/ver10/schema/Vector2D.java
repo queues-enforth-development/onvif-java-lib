@@ -69,7 +69,7 @@ public class Vector2D {
 	/**
 	 * Legt den Wert der x-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setX(float value) {
 		this.x = value;
@@ -87,7 +87,7 @@ public class Vector2D {
 	/**
 	 * Legt den Wert der y-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setY(float value) {
 		this.y = value;
@@ -106,7 +106,7 @@ public class Vector2D {
 	/**
 	 * Legt den Wert der space-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

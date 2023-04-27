@@ -100,7 +100,7 @@ public class AudioAnalyticsStream {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioAnalyticsStreamExtension }
 	 * 
 	 */

@@ -78,7 +78,7 @@ public class PTZPresetTourSupported {
 	/**
 	 * Legt den Wert der maximumNumberOfPresetTours-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMaximumNumberOfPresetTours(int value) {
 		this.maximumNumberOfPresetTours = value;
@@ -125,7 +125,7 @@ public class PTZPresetTourSupported {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourSupportedExtension }
 	 * 
 	 */

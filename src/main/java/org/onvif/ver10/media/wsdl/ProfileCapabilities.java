@@ -102,7 +102,7 @@ public class ProfileCapabilities {
 	/**
 	 * Legt den Wert der maximumNumberOfProfiles-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */

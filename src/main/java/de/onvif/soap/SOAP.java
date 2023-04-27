@@ -44,7 +44,7 @@ public class SOAP
 
     /**
      *
-     * @param onvifDevice
+     * @param onvifDevice -
      *
      */
     public SOAP(OnvifDevice onvifDevice) {
@@ -54,9 +54,9 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
-     * @param soapResponseElem
-     * @param needsSecurity
+     * @param soapRequestElem -
+     * @param soapResponseElem -
+     * @param needsSecurity -
      * @return
      * @throws SOAPException
      * @throws ConnectException
@@ -69,9 +69,9 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
-     * @param soapResponseElem
-     * @param needsSecurity
+     * @param soapRequestElem -
+     * @param soapResponseElem -
+     * @param needsSecurity -
      * @return
      * @throws SOAPException
      * @throws ConnectException
@@ -84,9 +84,9 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
-     * @param soapResponseElem
-     * @param needsSecurity
+     * @param soapRequestElem -
+     * @param soapResponseElem -
+     * @param needsSecurity -
      * @return
      * @throws SOAPException
      * @throws ConnectException
@@ -99,9 +99,9 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
-     * @param soapResponseElem
-     * @param needsSecurity
+     * @param soapRequestElem -
+     * @param soapResponseElem -
+     * @param needsSecurity -
      * @return
      * @throws SOAPException
      * @throws ConnectException
@@ -115,9 +115,9 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
-     * @param soapResponseElem
-     * @param needsSecurity
+     * @param soapRequestElem -
+     * @param soapResponseElem -
+     * @param needsSecurity -
      * @return
      * @throws SOAPException
      * @throws ConnectException
@@ -130,10 +130,10 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
+     * @param soapRequestElem -
      * @param soapResponseElem Answer object for SOAP request
-     * @param soapUri
-     * @param needsSecurity
+     * @param soapUri -
+     * @param needsSecurity -
      * @return SOAP Response Element
      * @throws SOAPException
      * @throws ConnectException
@@ -236,8 +236,8 @@ public class SOAP
 
     /**
      *
-     * @param soapRequestElem
-     * @param useSecurity
+     * @param soapRequestElem -
+     * @param useSecurity -
      * @return
      * @throws SOAPException
      * @throws ParserConfigurationException
@@ -266,8 +266,8 @@ public class SOAP
 
     /**
      *
-     * @param soapMessage
-     * @param useSecurity
+     * @param soapMessage -
+     * @param useSecurity -
      * @throws SOAPException
      */
     protected void createSoapHeader(SOAPMessage soapMessage, boolean useSecurity)
@@ -317,7 +317,7 @@ public class SOAP
     /**
      * Turn logging on and off;
      *
-     * @param logging
+     * @param logging -
      */
     public void setLogging(boolean logging) {
         this.logging = logging;

@@ -98,7 +98,7 @@ public class NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der link-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceConnectionSetting }
 	 * 
 	 */
@@ -140,7 +140,7 @@ public class NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der mtu-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -161,7 +161,7 @@ public class NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der iPv4-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv4NetworkInterfaceSetConfiguration }
 	 * 
 	 */
@@ -182,7 +182,7 @@ public class NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der iPv6-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPv6NetworkInterfaceSetConfiguration }
 	 * 
 	 */
@@ -203,7 +203,7 @@ public class NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceSetConfigurationExtension }
 	 * 
 	 */

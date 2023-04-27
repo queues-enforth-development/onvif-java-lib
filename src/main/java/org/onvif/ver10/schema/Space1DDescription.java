@@ -65,7 +65,7 @@ public class Space1DDescription {
 	/**
 	 * Legt den Wert der uri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class Space1DDescription {
 	/**
 	 * Legt den Wert der xRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

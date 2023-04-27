@@ -74,7 +74,7 @@ public class MetadataFilter {
 	/**
 	 * Legt den Wert der metadataStreamFilter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

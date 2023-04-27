@@ -110,7 +110,7 @@ public class Dot11AvailableNetworks {
 	/**
 	 * Legt den Wert der ssid-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -131,7 +131,7 @@ public class Dot11AvailableNetworks {
 	/**
 	 * Legt den Wert der bssid-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -236,7 +236,7 @@ public class Dot11AvailableNetworks {
 	/**
 	 * Legt den Wert der signalStrength-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11SignalStrength }
 	 * 
 	 */
@@ -257,7 +257,7 @@ public class Dot11AvailableNetworks {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11AvailableNetworksExtension }
 	 * 
 	 */

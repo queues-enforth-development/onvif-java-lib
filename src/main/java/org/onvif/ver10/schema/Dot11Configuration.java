@@ -105,7 +105,7 @@ public class Dot11Configuration {
 	/**
 	 * Legt den Wert der ssid-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class Dot11Configuration {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11StationMode }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class Dot11Configuration {
 	/**
 	 * Legt den Wert der alias-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -167,7 +167,7 @@ public class Dot11Configuration {
 	/**
 	 * Legt den Wert der priority-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPriority(int value) {
 		this.priority = value;
@@ -186,7 +186,7 @@ public class Dot11Configuration {
 	/**
 	 * Legt den Wert der security-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11SecurityConfiguration }
 	 * 
 	 */

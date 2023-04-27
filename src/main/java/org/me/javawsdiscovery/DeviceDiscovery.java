@@ -94,7 +94,7 @@ public class DeviceDiscovery
      *
      * @param regexpProtocol URL protocol matching regexp like "^http$", might be empty ""
      * @param regexpPath     URL path matching regexp like "onvif", might be empty ""
-     * @param devices
+     * @param devices -
      * @return list of unique device URLS filtered
      */
     public static List<URL> discoverWsDevicesAsUrls(String regexpProtocol, String regexpPath, List<URL> devices) {

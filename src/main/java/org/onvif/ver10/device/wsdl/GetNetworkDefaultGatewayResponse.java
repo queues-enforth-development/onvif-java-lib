@@ -59,7 +59,7 @@ public class GetNetworkDefaultGatewayResponse {
 	/**
 	 * Legt den Wert der networkGateway-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkGateway }
 	 * 
 	 */

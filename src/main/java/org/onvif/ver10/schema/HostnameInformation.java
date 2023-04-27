@@ -81,7 +81,7 @@ public class HostnameInformation {
 	/**
 	 * Legt den Wert der fromDHCP-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFromDHCP(boolean value) {
 		this.fromDHCP = value;
@@ -100,7 +100,7 @@ public class HostnameInformation {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class HostnameInformation {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link HostnameInformationExtension }
 	 * 
 	 */

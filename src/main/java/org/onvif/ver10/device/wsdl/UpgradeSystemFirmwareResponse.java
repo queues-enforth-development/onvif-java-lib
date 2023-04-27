@@ -58,7 +58,7 @@ public class UpgradeSystemFirmwareResponse {
 	/**
 	 * Legt den Wert der message-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

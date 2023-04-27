@@ -74,7 +74,7 @@ public class H264Options2 extends H264Options {
 	/**
 	 * Legt den Wert der bitrateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

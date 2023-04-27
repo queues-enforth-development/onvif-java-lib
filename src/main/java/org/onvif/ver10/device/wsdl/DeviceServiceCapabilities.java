@@ -77,7 +77,7 @@ public class DeviceServiceCapabilities {
 	/**
 	 * Legt den Wert der network-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkCapabilities }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class DeviceServiceCapabilities {
 	/**
 	 * Legt den Wert der security-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SecurityCapabilities }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class DeviceServiceCapabilities {
 	/**
 	 * Legt den Wert der system-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemCapabilities }
 	 * 
 	 */
@@ -140,7 +140,7 @@ public class DeviceServiceCapabilities {
 	/**
 	 * Legt den Wert der misc-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MiscCapabilities }
 	 * 
 	 */

@@ -79,7 +79,7 @@ public class VideoSourceConfigurationOptions {
 	/**
 	 * Legt den Wert der boundsRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRectangleRange }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class VideoSourceConfigurationOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoSourceConfigurationOptionsExtension }
 	 * 
 	 */

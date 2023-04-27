@@ -116,7 +116,7 @@ public class Mpeg4Options {
 	/**
 	 * Legt den Wert der govLengthRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class Mpeg4Options {
 	/**
 	 * Legt den Wert der frameRateRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -158,7 +158,7 @@ public class Mpeg4Options {
 	/**
 	 * Legt den Wert der encodingIntervalRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

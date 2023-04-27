@@ -139,7 +139,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der issuerDN-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -181,7 +181,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der subjectDN-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -202,7 +202,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der keyUsage-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CertificateUsage }
 	 * 
 	 */
@@ -223,7 +223,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der extendedKeyUsage-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CertificateUsage }
 	 * 
 	 */
@@ -244,7 +244,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der keyLength-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -265,7 +265,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der version-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -286,7 +286,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der serialNum-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -307,7 +307,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der signatureAlgorithm-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -328,7 +328,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der validity-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DateTimeRange }
 	 * 
 	 */
@@ -349,7 +349,7 @@ public class CertificateInformation {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CertificateInformationExtension }
 	 * 
 	 */

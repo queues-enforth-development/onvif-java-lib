@@ -97,7 +97,7 @@ public class GetSystemUrisResponse {
 	/**
 	 * Legt den Wert der systemLogUris-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemLogUriList }
 	 * 
 	 */
@@ -118,7 +118,7 @@ public class GetSystemUrisResponse {
 	/**
 	 * Legt den Wert der supportInfoUri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -139,7 +139,7 @@ public class GetSystemUrisResponse {
 	/**
 	 * Legt den Wert der systemBackupUri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class GetSystemUrisResponse {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link GetSystemUrisResponse.Extension }
 	 * 
 	 */

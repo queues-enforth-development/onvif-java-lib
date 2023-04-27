@@ -112,7 +112,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der dateFormat-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -154,7 +154,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der timeFormat-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -175,7 +175,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der fontSize-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Integer }
 	 * 
 	 */
@@ -196,7 +196,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der fontColor-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDColor }
 	 * 
 	 */
@@ -217,7 +217,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der backgroundColor-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDColor }
 	 * 
 	 */
@@ -238,7 +238,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der plainText-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -259,7 +259,7 @@ public class OSDTextConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDTextConfigurationExtension }
 	 * 
 	 */

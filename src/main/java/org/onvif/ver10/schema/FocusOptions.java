@@ -107,7 +107,7 @@ public class FocusOptions {
 	/**
 	 * Legt den Wert der defaultSpeed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class FocusOptions {
 	/**
 	 * Legt den Wert der nearLimit-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -149,7 +149,7 @@ public class FocusOptions {
 	/**
 	 * Legt den Wert der farLimit-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

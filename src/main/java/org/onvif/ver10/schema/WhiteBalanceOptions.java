@@ -100,7 +100,7 @@ public class WhiteBalanceOptions {
 	/**
 	 * Legt den Wert der yrGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class WhiteBalanceOptions {
 	/**
 	 * Legt den Wert der ybGain-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

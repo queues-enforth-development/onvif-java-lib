@@ -57,7 +57,7 @@ public class SetVideoSourceModeResponse {
 	/**
 	 * Legt den Wert der reboot-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setReboot(boolean value) {
 		this.reboot = value;

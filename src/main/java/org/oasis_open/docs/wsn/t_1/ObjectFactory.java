@@ -90,7 +90,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicSetType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/t-1", name = "TopicSet")
@@ -101,7 +101,7 @@ public class ObjectFactory {
 	/**
 	 * Create an instance of {@link JAXBElement }{@code <}{@link TopicNamespaceType }{@code >}
 	 * 
-     * @param value
+     * @param value -
      * @return 
 	 */
 	@XmlElementDecl(namespace = "http://docs.oasis-open.org/wsn/t-1", name = "TopicNamespace")

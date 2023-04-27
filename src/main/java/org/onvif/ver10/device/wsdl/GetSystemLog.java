@@ -59,7 +59,7 @@ public class GetSystemLog {
 	/**
 	 * Legt den Wert der logType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemLogType }
 	 * 
 	 */

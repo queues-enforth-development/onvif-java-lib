@@ -80,7 +80,7 @@ public class PullMessages {
     /**
      * Legt den Wert der timeout-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Duration }
      *     
@@ -101,7 +101,7 @@ public class PullMessages {
     /**
      * Legt den Wert der messageLimit-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setMessageLimit(int value) {
         this.messageLimit = value;

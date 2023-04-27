@@ -117,7 +117,7 @@ public class AnalyticsEngineControl extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der engineToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -138,7 +138,7 @@ public class AnalyticsEngineControl extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der engineConfigToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -215,7 +215,7 @@ public class AnalyticsEngineControl extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der multicast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MulticastConfiguration }
 	 * 
 	 */
@@ -236,7 +236,7 @@ public class AnalyticsEngineControl extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der subscription-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Config }
 	 * 
 	 */
@@ -257,7 +257,7 @@ public class AnalyticsEngineControl extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ModeOfOperation }
 	 * 
 	 */

@@ -72,7 +72,7 @@ public class OSDImgConfiguration {
 	/**
 	 * Legt den Wert der imgPath-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -93,7 +93,7 @@ public class OSDImgConfiguration {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link OSDImgConfigurationExtension }
 	 * 
 	 */

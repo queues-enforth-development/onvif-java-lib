@@ -59,7 +59,7 @@ public class GetNTPResponse {
 	/**
 	 * Legt den Wert der ntpInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NTPInformation }
 	 * 
 	 */

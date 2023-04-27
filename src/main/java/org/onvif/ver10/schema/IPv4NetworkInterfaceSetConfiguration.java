@@ -72,7 +72,7 @@ public class IPv4NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der enabled-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class IPv4NetworkInterfaceSetConfiguration {
 	/**
 	 * Legt den Wert der dhcp-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

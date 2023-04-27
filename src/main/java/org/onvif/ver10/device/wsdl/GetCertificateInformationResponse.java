@@ -59,7 +59,7 @@ public class GetCertificateInformationResponse {
 	/**
 	 * Legt den Wert der certificateInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link CertificateInformation }
 	 * 
 	 */

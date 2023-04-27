@@ -63,7 +63,7 @@ public class BinaryData {
 	/**
 	 * Legt den Wert der data-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is byte[]
 	 */
 	public void setData(byte[] value) {
@@ -83,7 +83,7 @@ public class BinaryData {
 	/**
 	 * Legt den Wert der contentType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

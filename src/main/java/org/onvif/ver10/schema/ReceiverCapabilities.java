@@ -111,7 +111,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -131,7 +131,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Legt den Wert der rtpMulticast-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRTPMulticast(boolean value) {
 		this.rtpMulticast = value;
@@ -149,7 +149,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Legt den Wert der rtptcp-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRTPTCP(boolean value) {
 		this.rtptcp = value;
@@ -167,7 +167,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Legt den Wert der rtprtsptcp-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setRTPRTSPTCP(boolean value) {
 		this.rtprtsptcp = value;
@@ -185,7 +185,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Legt den Wert der supportedReceivers-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSupportedReceivers(int value) {
 		this.supportedReceivers = value;
@@ -203,7 +203,7 @@ public class ReceiverCapabilities {
 	/**
 	 * Legt den Wert der maximumRTSPURILength-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMaximumRTSPURILength(int value) {
 		this.maximumRTSPURILength = value;

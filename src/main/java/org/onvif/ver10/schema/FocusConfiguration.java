@@ -95,7 +95,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der autoFocusMode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AutoFocusMode }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der defaultSpeed-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDefaultSpeed(float value) {
 		this.defaultSpeed = value;
@@ -133,7 +133,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der nearLimit-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setNearLimit(float value) {
 		this.nearLimit = value;
@@ -151,7 +151,7 @@ public class FocusConfiguration {
 	/**
 	 * Legt den Wert der farLimit-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setFarLimit(float value) {
 		this.farLimit = value;

@@ -74,7 +74,7 @@ public class MediaCapabilitiesExtension {
 	/**
 	 * Legt den Wert der profileCapabilities-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ProfileCapabilities }
 	 * 
 	 */

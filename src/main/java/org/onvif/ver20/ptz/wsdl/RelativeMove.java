@@ -74,7 +74,7 @@ public class RelativeMove {
 	/**
 	 * Legt den Wert der profileToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class RelativeMove {
 	/**
 	 * Legt den Wert der translation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZVector }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class RelativeMove {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpeed }
 	 * 
 	 */

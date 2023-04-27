@@ -79,7 +79,7 @@ public class IntRectangleRange {
 	/**
 	 * Legt den Wert der xRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -100,7 +100,7 @@ public class IntRectangleRange {
 	/**
 	 * Legt den Wert der yRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -121,7 +121,7 @@ public class IntRectangleRange {
 	/**
 	 * Legt den Wert der widthRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -142,7 +142,7 @@ public class IntRectangleRange {
 	/**
 	 * Legt den Wert der heightRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

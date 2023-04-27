@@ -118,7 +118,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der ptzStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZFilter }
 	 * 
 	 */
@@ -139,7 +139,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der events-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EventSubscription }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der analytics-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -181,7 +181,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der multicast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MulticastConfiguration }
 	 * 
 	 */
@@ -202,7 +202,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sessionTimeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -251,7 +251,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der analyticsEngineConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsEngineConfiguration }
 	 * 
 	 */
@@ -272,7 +272,7 @@ public class MetadataConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataConfigurationExtension }
 	 * 
 	 */

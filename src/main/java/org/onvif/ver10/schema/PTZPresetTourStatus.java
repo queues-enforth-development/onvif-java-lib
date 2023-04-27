@@ -77,7 +77,7 @@ public class PTZPresetTourStatus {
 	/**
 	 * Legt den Wert der state-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourState }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class PTZPresetTourStatus {
 	/**
 	 * Legt den Wert der currentTourSpot-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourSpot }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class PTZPresetTourStatus {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourStatusExtension }
 	 * 
 	 */

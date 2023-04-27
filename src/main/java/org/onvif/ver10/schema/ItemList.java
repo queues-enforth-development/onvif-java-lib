@@ -162,7 +162,7 @@ public class ItemList {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ItemListExtension }
 	 * 
 	 */
@@ -236,7 +236,7 @@ public class ItemList {
 		/**
 		 * Legt den Wert der any-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link java.lang.Object }
 		 * 
 		 */
@@ -257,7 +257,7 @@ public class ItemList {
 		/**
 		 * Legt den Wert der name-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -317,7 +317,7 @@ public class ItemList {
 		/**
 		 * Legt den Wert der name-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */
@@ -338,7 +338,7 @@ public class ItemList {
 		/**
 		 * Legt den Wert der value-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link String }
 		 * 
 		 */

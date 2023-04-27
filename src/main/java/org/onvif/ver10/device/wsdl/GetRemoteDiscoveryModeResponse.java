@@ -59,7 +59,7 @@ public class GetRemoteDiscoveryModeResponse {
 	/**
 	 * Legt den Wert der remoteDiscoveryMode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DiscoveryMode }
 	 * 
 	 */

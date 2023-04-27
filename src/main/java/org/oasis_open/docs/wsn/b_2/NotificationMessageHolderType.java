@@ -90,7 +90,7 @@ public class NotificationMessageHolderType {
 	/**
 	 * Legt den Wert der subscriptionReference-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */
@@ -111,7 +111,7 @@ public class NotificationMessageHolderType {
 	/**
 	 * Legt den Wert der topic-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TopicExpressionType }
 	 * 
 	 */
@@ -132,7 +132,7 @@ public class NotificationMessageHolderType {
 	/**
 	 * Legt den Wert der producerReference-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */
@@ -153,7 +153,7 @@ public class NotificationMessageHolderType {
 	/**
 	 * Legt den Wert der message-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NotificationMessageHolderType.Message }
 	 * 
 	 */
@@ -205,7 +205,7 @@ public class NotificationMessageHolderType {
 		/**
 		 * Legt den Wert der any-Eigenschaft fest.
 		 * 
-		 * @param value
+		 * @param value -
 		 *            allowed object is {@link Element } {@link Object }
 		 * 
 		 */

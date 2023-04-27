@@ -69,7 +69,7 @@ public class PTZFilter {
 	/**
 	 * Legt den Wert der status-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setStatus(boolean value) {
 		this.status = value;
@@ -87,7 +87,7 @@ public class PTZFilter {
 	/**
 	 * Legt den Wert der position-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPosition(boolean value) {
 		this.position = value;

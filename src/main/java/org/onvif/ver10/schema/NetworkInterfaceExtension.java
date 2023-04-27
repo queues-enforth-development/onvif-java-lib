@@ -115,7 +115,7 @@ public class NetworkInterfaceExtension {
 	/**
 	 * Legt den Wert der interfaceType-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setInterfaceType(int value) {
 		this.interfaceType = value;
@@ -190,7 +190,7 @@ public class NetworkInterfaceExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link NetworkInterfaceExtension2 }
 	 * 
 	 */

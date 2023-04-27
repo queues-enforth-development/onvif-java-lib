@@ -65,7 +65,7 @@ public class FindRecordingResultList {
 	/**
 	 * Legt den Wert der searchState-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SearchState }
 	 * 
 	 */

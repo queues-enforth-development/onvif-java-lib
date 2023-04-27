@@ -88,7 +88,7 @@ public class GetRecordingsResponseItem {
 	/**
 	 * Legt den Wert der recordingToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class GetRecordingsResponseItem {
 	/**
 	 * Legt den Wert der configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingConfiguration }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class GetRecordingsResponseItem {
 	/**
 	 * Legt den Wert der tracks-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link GetTracksResponseList }
 	 * 
 	 */

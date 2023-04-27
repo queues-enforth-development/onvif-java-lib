@@ -125,7 +125,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der encoding-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoEncoding }
 	 * 
 	 */
@@ -146,7 +146,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der resolution-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoResolution }
 	 * 
 	 */
@@ -166,7 +166,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der quality-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setQuality(float value) {
 		this.quality = value;
@@ -185,7 +185,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der rateControl-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoRateControl }
 	 * 
 	 */
@@ -206,7 +206,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der mpeg4-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Mpeg4Configuration }
 	 * 
 	 */
@@ -227,7 +227,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der h264-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link H264Configuration }
 	 * 
 	 */
@@ -248,7 +248,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der multicast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MulticastConfiguration }
 	 * 
 	 */
@@ -269,7 +269,7 @@ public class VideoEncoderConfiguration extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sessionTimeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */

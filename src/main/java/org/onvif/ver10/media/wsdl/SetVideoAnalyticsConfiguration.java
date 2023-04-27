@@ -66,7 +66,7 @@ public class SetVideoAnalyticsConfiguration {
 	/**
 	 * Legt den Wert der configuration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoAnalyticsConfiguration }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class SetVideoAnalyticsConfiguration {
 	/**
 	 * Legt den Wert der forcePersistence-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setForcePersistence(boolean value) {
 		this.forcePersistence = value;

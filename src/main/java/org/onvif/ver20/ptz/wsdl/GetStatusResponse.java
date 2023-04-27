@@ -59,7 +59,7 @@ public class GetStatusResponse {
 	/**
 	 * Legt den Wert der ptzStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZStatus }
 	 * 
 	 */

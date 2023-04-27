@@ -65,7 +65,7 @@ public class SetVideoSourceMode {
 	/**
 	 * Legt den Wert der videoSourceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -86,7 +86,7 @@ public class SetVideoSourceMode {
 	/**
 	 * Legt den Wert der videoSourceModeToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

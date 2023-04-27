@@ -60,7 +60,7 @@ public enum RelayLogicalState {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static RelayLogicalState fromValue(String v) {

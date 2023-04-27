@@ -75,7 +75,7 @@ public class AudioSource extends DeviceEntity {
 	/**
 	 * Legt den Wert der channels-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setChannels(int value) {
 		this.channels = value;

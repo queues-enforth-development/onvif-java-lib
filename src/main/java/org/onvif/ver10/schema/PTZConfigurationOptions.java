@@ -95,7 +95,7 @@ public class PTZConfigurationOptions {
 	/**
 	 * Legt den Wert der spaces-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZSpaces }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class PTZConfigurationOptions {
 	/**
 	 * Legt den Wert der ptzTimeout-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DurationRange }
 	 * 
 	 */
@@ -165,7 +165,7 @@ public class PTZConfigurationOptions {
 	/**
 	 * Legt den Wert der ptControlDirection-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTControlDirectionOptions }
 	 * 
 	 */
@@ -186,7 +186,7 @@ public class PTZConfigurationOptions {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZConfigurationOptions2 }
 	 * 
 	 */

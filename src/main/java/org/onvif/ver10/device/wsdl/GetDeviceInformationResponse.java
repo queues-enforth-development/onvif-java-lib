@@ -86,7 +86,7 @@ public class GetDeviceInformationResponse {
 	/**
 	 * Legt den Wert der manufacturer-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -107,7 +107,7 @@ public class GetDeviceInformationResponse {
 	/**
 	 * Legt den Wert der model-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -128,7 +128,7 @@ public class GetDeviceInformationResponse {
 	/**
 	 * Legt den Wert der firmwareVersion-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -149,7 +149,7 @@ public class GetDeviceInformationResponse {
 	/**
 	 * Legt den Wert der serialNumber-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -170,7 +170,7 @@ public class GetDeviceInformationResponse {
 	/**
 	 * Legt den Wert der hardwareId-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

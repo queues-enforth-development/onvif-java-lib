@@ -82,7 +82,7 @@ public class Fault {
 	/**
 	 * Sets the value of the faultcode property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link QName }
 	 * 
 	 */
@@ -103,7 +103,7 @@ public class Fault {
 	/**
 	 * Sets the value of the faultstring property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -124,7 +124,7 @@ public class Fault {
 	/**
 	 * Sets the value of the faultactor property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -145,7 +145,7 @@ public class Fault {
 	/**
 	 * Sets the value of the detail property.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Detail }
 	 * 
 	 */

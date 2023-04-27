@@ -104,7 +104,7 @@ public class Frame {
 	/**
 	 * Legt den Wert der ptzStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZStatus }
 	 * 
 	 */
@@ -125,7 +125,7 @@ public class Frame {
 	/**
 	 * Legt den Wert der transformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Transformation }
 	 * 
 	 */
@@ -174,7 +174,7 @@ public class Frame {
 	/**
 	 * Legt den Wert der objectTree-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ObjectTree }
 	 * 
 	 */
@@ -195,7 +195,7 @@ public class Frame {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FrameExtension }
 	 * 
 	 */
@@ -216,7 +216,7 @@ public class Frame {
 	/**
 	 * Legt den Wert der utcTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

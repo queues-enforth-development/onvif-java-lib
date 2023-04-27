@@ -55,7 +55,7 @@ public class ContinuousFocus {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setSpeed(float value) {
 		this.speed = value;

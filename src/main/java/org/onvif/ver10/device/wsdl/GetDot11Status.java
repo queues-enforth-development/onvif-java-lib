@@ -58,7 +58,7 @@ public class GetDot11Status {
 	/**
 	 * Legt den Wert der interfaceToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -61,7 +61,7 @@ public class GetMoveOptionsResponse {
     /**
      * Legt den Wert der moveOptions-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link MoveOptions20 }
      *     

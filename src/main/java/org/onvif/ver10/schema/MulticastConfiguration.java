@@ -95,7 +95,7 @@ public class MulticastConfiguration {
 	/**
 	 * Legt den Wert der address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IPAddress }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class MulticastConfiguration {
 	/**
 	 * Legt den Wert der port-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setPort(int value) {
 		this.port = value;
@@ -133,7 +133,7 @@ public class MulticastConfiguration {
 	/**
 	 * Legt den Wert der ttl-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setTTL(int value) {
 		this.ttl = value;
@@ -151,7 +151,7 @@ public class MulticastConfiguration {
 	/**
 	 * Legt den Wert der autoStart-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAutoStart(boolean value) {
 		this.autoStart = value;

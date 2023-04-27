@@ -70,7 +70,7 @@ public class AnalyticsEngineInputInfo {
 	/**
 	 * Legt den Wert der inputInfo-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Config }
 	 * 
 	 */
@@ -91,7 +91,7 @@ public class AnalyticsEngineInputInfo {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AnalyticsEngineInputInfoExtension }
 	 * 
 	 */

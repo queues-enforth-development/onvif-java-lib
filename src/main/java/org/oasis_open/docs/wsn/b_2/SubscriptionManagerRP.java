@@ -83,7 +83,7 @@ public class SubscriptionManagerRP {
 	/**
 	 * Legt den Wert der consumerReference-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */
@@ -104,7 +104,7 @@ public class SubscriptionManagerRP {
 	/**
 	 * Legt den Wert der filter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FilterType }
 	 * 
 	 */
@@ -125,7 +125,7 @@ public class SubscriptionManagerRP {
 	/**
 	 * Legt den Wert der subscriptionPolicy-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SubscriptionPolicyType }
 	 * 
 	 */
@@ -146,7 +146,7 @@ public class SubscriptionManagerRP {
 	/**
 	 * Legt den Wert der creationTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

@@ -71,7 +71,7 @@ public class RelayOutputSettings {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RelayMode }
 	 * 
 	 */
@@ -92,7 +92,7 @@ public class RelayOutputSettings {
 	/**
 	 * Legt den Wert der delayTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Duration }
 	 * 
 	 */
@@ -113,7 +113,7 @@ public class RelayOutputSettings {
 	/**
 	 * Legt den Wert der idleState-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RelayIdleState }
 	 * 
 	 */

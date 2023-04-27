@@ -78,7 +78,7 @@ public class GetPkcs10Request {
 	/**
 	 * Legt den Wert der certificateID-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -99,7 +99,7 @@ public class GetPkcs10Request {
 	/**
 	 * Legt den Wert der subject-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -120,7 +120,7 @@ public class GetPkcs10Request {
 	/**
 	 * Legt den Wert der attributes-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BinaryData }
 	 * 
 	 */

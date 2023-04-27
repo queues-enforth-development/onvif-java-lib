@@ -138,7 +138,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der backlightCompensation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BacklightCompensationOptions }
 	 * 
 	 */
@@ -159,7 +159,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der brightness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -180,7 +180,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der colorSaturation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -201,7 +201,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der contrast-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -222,7 +222,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der exposure-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ExposureOptions }
 	 * 
 	 */
@@ -243,7 +243,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der focus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusOptions }
 	 * 
 	 */
@@ -292,7 +292,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der sharpness-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -313,7 +313,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der wideDynamicRange-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WideDynamicRangeOptions }
 	 * 
 	 */
@@ -334,7 +334,7 @@ public class ImagingOptions {
 	/**
 	 * Legt den Wert der whiteBalance-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link WhiteBalanceOptions }
 	 * 
 	 */

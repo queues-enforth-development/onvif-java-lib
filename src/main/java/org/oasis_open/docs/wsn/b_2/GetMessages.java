@@ -79,7 +79,7 @@ public class GetMessages {
 	/**
 	 * Legt den Wert der maximumNumber-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */

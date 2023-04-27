@@ -65,7 +65,7 @@ public class Split {
 	/**
 	 * Legt den Wert der from-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ObjectId }
 	 * 
 	 */

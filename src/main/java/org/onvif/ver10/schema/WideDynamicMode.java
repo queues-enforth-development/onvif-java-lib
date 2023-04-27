@@ -52,7 +52,7 @@ public enum WideDynamicMode {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static WideDynamicMode fromValue(String v) {

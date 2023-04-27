@@ -56,7 +56,7 @@ public class PanTiltLimits {
 	/**
 	 * Legt den Wert der range-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Space2DDescription }
 	 * 
 	 */

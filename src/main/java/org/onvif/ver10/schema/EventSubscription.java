@@ -94,7 +94,7 @@ public class EventSubscription {
 	/**
 	 * Legt den Wert der filter-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FilterType }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class EventSubscription {
 	/**
 	 * Legt den Wert der subscriptionPolicy-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EventSubscription.SubscriptionPolicy }
 	 * 
 	 */

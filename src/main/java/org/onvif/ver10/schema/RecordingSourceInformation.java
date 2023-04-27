@@ -109,7 +109,7 @@ public class RecordingSourceInformation {
 	/**
 	 * Legt den Wert der sourceId-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class RecordingSourceInformation {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -151,7 +151,7 @@ public class RecordingSourceInformation {
 	/**
 	 * Legt den Wert der location-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -172,7 +172,7 @@ public class RecordingSourceInformation {
 	/**
 	 * Legt den Wert der description-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -193,7 +193,7 @@ public class RecordingSourceInformation {
 	/**
 	 * Legt den Wert der address-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

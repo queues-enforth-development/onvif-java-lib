@@ -59,7 +59,7 @@ public class GetHostnameResponse {
 	/**
 	 * Legt den Wert der hostnameInformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link HostnameInformation }
 	 * 
 	 */

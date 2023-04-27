@@ -74,7 +74,7 @@ public class Reverse {
 	/**
 	 * Legt den Wert der mode-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ReverseMode }
 	 * 
 	 */

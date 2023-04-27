@@ -107,7 +107,7 @@ public class Capabilities {
     /**
      * Legt den Wert der imageStabilization-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link Boolean }
      *     

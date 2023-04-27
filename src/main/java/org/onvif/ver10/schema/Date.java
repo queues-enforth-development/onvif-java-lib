@@ -69,7 +69,7 @@ public class Date {
 	/**
 	 * Legt den Wert der year-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setYear(int value) {
 		this.year = value;
@@ -87,7 +87,7 @@ public class Date {
 	/**
 	 * Legt den Wert der month-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setMonth(int value) {
 		this.month = value;
@@ -105,7 +105,7 @@ public class Date {
 	/**
 	 * Legt den Wert der day-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDay(int value) {
 		this.day = value;

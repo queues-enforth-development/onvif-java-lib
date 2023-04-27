@@ -58,7 +58,7 @@ public class CreatePresetTourResponse {
 	/**
 	 * Legt den Wert der presetTourToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

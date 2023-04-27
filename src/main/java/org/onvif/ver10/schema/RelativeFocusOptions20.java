@@ -63,7 +63,7 @@ public class RelativeFocusOptions20 {
 	/**
 	 * Legt den Wert der distance-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class RelativeFocusOptions20 {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

@@ -60,7 +60,7 @@ public class GetWsdlUrlResponse {
 	/**
 	 * Legt den Wert der wsdlUrl-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

@@ -59,7 +59,7 @@ public class GetDot11StatusResponse {
 	/**
 	 * Legt den Wert der status-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Dot11Status }
 	 * 
 	 */

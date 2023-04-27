@@ -74,7 +74,7 @@ public class PolylineArrayConfiguration {
 	/**
 	 * Legt den Wert der polylineArray-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PolylineArray }
 	 * 
 	 */

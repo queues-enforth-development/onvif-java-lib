@@ -92,7 +92,7 @@ public class RecordingSummary {
 	/**
 	 * Legt den Wert der dataFrom-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -113,7 +113,7 @@ public class RecordingSummary {
 	/**
 	 * Legt den Wert der dataUntil-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -133,7 +133,7 @@ public class RecordingSummary {
 	/**
 	 * Legt den Wert der numberRecordings-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setNumberRecordings(int value) {
 		this.numberRecordings = value;

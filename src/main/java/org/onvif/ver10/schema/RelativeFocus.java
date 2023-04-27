@@ -62,7 +62,7 @@ public class RelativeFocus {
 	/**
 	 * Legt den Wert der distance-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDistance(float value) {
 		this.distance = value;
@@ -81,7 +81,7 @@ public class RelativeFocus {
 	/**
 	 * Legt den Wert der speed-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Float }
 	 * 
 	 */

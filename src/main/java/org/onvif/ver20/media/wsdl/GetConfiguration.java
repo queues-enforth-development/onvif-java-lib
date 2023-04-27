@@ -66,7 +66,7 @@ public class GetConfiguration {
     /**
      * Legt den Wert der configurationToken-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     
@@ -90,7 +90,7 @@ public class GetConfiguration {
     /**
      * Legt den Wert der profileToken-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      *     allowed object is
      *     {@link String }
      *     

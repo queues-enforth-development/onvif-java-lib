@@ -93,7 +93,7 @@ public class BacklightCompensationOptions {
 	/**
 	 * Legt den Wert der level-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FloatRange }
 	 * 
 	 */

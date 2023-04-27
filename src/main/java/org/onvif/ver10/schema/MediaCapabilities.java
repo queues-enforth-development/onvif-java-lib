@@ -90,7 +90,7 @@ public class MediaCapabilities {
 	/**
 	 * Legt den Wert der xAddr-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -111,7 +111,7 @@ public class MediaCapabilities {
 	/**
 	 * Legt den Wert der streamingCapabilities-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RealTimeStreamingCapabilities }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class MediaCapabilities {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MediaCapabilitiesExtension }
 	 * 
 	 */

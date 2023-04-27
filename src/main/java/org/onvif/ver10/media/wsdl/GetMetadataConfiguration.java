@@ -58,7 +58,7 @@ public class GetMetadataConfiguration {
 	/**
 	 * Legt den Wert der configurationToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

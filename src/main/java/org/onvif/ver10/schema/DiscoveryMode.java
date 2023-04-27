@@ -60,7 +60,7 @@ public enum DiscoveryMode {
 
     /**
      *
-     * @param v
+     * @param v -
      * @return
      */
     public static DiscoveryMode fromValue(String v) {

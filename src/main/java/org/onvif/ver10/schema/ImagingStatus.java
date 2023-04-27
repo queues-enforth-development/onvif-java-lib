@@ -74,7 +74,7 @@ public class ImagingStatus {
 	/**
 	 * Legt den Wert der focusStatus-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link FocusStatus }
 	 * 
 	 */

@@ -63,7 +63,7 @@ public class ImagingOptions20Extension2 {
 	/**
 	 * Legt den Wert der irCutFilterAutoAdjustment-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IrCutFilterAutoAdjustmentOptions }
 	 * 
 	 */
@@ -84,7 +84,7 @@ public class ImagingOptions20Extension2 {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ImagingOptions20Extension3 }
 	 * 
 	 */

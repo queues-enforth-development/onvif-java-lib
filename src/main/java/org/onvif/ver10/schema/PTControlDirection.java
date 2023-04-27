@@ -77,7 +77,7 @@ public class PTControlDirection {
 	/**
 	 * Legt den Wert der eFlip-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EFlip }
 	 * 
 	 */
@@ -98,7 +98,7 @@ public class PTControlDirection {
 	/**
 	 * Legt den Wert der reverse-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Reverse }
 	 * 
 	 */
@@ -119,7 +119,7 @@ public class PTControlDirection {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTControlDirectionExtension }
 	 * 
 	 */

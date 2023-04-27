@@ -83,7 +83,7 @@ public class SystemLogUri {
 	/**
 	 * Legt den Wert der type-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemLogType }
 	 * 
 	 */
@@ -104,7 +104,7 @@ public class SystemLogUri {
 	/**
 	 * Legt den Wert der uri-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */

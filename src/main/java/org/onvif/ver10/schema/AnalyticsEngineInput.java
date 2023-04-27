@@ -88,7 +88,7 @@ public class AnalyticsEngineInput extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der sourceIdentification-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SourceIdentification }
 	 * 
 	 */
@@ -109,7 +109,7 @@ public class AnalyticsEngineInput extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der videoInput-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link VideoEncoderConfiguration }
 	 * 
 	 */
@@ -130,7 +130,7 @@ public class AnalyticsEngineInput extends ConfigurationEntity {
 	/**
 	 * Legt den Wert der metadataInput-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataInput }
 	 * 
 	 */

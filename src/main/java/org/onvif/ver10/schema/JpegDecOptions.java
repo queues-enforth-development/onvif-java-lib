@@ -116,7 +116,7 @@ public class JpegDecOptions {
 	/**
 	 * Legt den Wert der supportedInputBitrate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */
@@ -137,7 +137,7 @@ public class JpegDecOptions {
 	/**
 	 * Legt den Wert der supportedFrameRate-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link IntRange }
 	 * 
 	 */

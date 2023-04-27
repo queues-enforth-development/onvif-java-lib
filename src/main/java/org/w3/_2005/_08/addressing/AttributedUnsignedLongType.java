@@ -63,7 +63,7 @@ public class AttributedUnsignedLongType {
 	/**
 	 * Legt den Wert der value-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */

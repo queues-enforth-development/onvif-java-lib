@@ -93,7 +93,7 @@ public class Merge {
 	/**
 	 * Legt den Wert der to-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link ObjectId }
 	 * 
 	 */

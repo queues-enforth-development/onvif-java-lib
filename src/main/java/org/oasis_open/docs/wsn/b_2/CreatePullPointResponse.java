@@ -77,7 +77,7 @@ public class CreatePullPointResponse {
 	/**
 	 * Legt den Wert der pullPoint-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link EndpointReferenceType }
 	 * 
 	 */

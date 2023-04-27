@@ -105,7 +105,7 @@ public class AudioDescriptor {
 	/**
 	 * Legt den Wert der utcTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

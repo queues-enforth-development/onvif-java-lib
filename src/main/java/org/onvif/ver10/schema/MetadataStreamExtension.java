@@ -102,7 +102,7 @@ public class MetadataStreamExtension {
 	/**
 	 * Legt den Wert der audioAnalyticsStream-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link AudioAnalyticsStream }
 	 * 
 	 */
@@ -123,7 +123,7 @@ public class MetadataStreamExtension {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link MetadataStreamExtension2 }
 	 * 
 	 */

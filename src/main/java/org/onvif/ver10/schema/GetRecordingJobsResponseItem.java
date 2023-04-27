@@ -81,7 +81,7 @@ public class GetRecordingJobsResponseItem {
 	/**
 	 * Legt den Wert der jobToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class GetRecordingJobsResponseItem {
 	/**
 	 * Legt den Wert der jobConfiguration-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link RecordingJobConfiguration }
 	 * 
 	 */

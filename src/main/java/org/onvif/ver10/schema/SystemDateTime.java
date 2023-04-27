@@ -100,7 +100,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der dateTimeType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SetDateTimeType }
 	 * 
 	 */
@@ -120,7 +120,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der daylightSavings-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setDaylightSavings(boolean value) {
 		this.daylightSavings = value;
@@ -139,7 +139,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der timeZone-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TimeZone }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der utcDateTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DateTime }
 	 * 
 	 */
@@ -181,7 +181,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der localDateTime-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link DateTime }
 	 * 
 	 */
@@ -202,7 +202,7 @@ public class SystemDateTime {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link SystemDateTimeExtension }
 	 * 
 	 */

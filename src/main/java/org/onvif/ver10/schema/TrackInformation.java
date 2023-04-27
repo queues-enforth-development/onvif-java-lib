@@ -106,7 +106,7 @@ public class TrackInformation {
 	/**
 	 * Legt den Wert der trackToken-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -127,7 +127,7 @@ public class TrackInformation {
 	/**
 	 * Legt den Wert der trackType-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link TrackType }
 	 * 
 	 */
@@ -148,7 +148,7 @@ public class TrackInformation {
 	/**
 	 * Legt den Wert der description-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -169,7 +169,7 @@ public class TrackInformation {
 	/**
 	 * Legt den Wert der dataFrom-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */
@@ -190,7 +190,7 @@ public class TrackInformation {
 	/**
 	 * Legt den Wert der dataTo-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link XMLGregorianCalendar }
 	 * 
 	 */

@@ -90,7 +90,7 @@ public class CellLayout {
 	/**
 	 * Legt den Wert der transformation-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link Transformation }
 	 * 
 	 */
@@ -139,7 +139,7 @@ public class CellLayout {
 	/**
 	 * Legt den Wert der columns-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */
@@ -160,7 +160,7 @@ public class CellLayout {
 	/**
 	 * Legt den Wert der rows-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link BigInteger }
 	 * 
 	 */

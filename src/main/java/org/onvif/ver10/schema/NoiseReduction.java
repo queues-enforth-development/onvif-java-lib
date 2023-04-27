@@ -74,7 +74,7 @@ public class NoiseReduction {
     /**
      * Legt den Wert der level-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setLevel(float value) {
         this.level = value;

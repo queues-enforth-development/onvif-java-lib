@@ -112,7 +112,7 @@ public class ToneCompensationOptions {
     /**
      * Legt den Wert der level-Eigenschaft fest.
      * 
-     * @param value
+     * @param value -
      */
     public void setLevel(boolean value) {
         this.level = value;

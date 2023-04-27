@@ -108,7 +108,7 @@ public class PresetTour {
 	/**
 	 * Legt den Wert der name-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class PresetTour {
 	/**
 	 * Legt den Wert der status-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourStatus }
 	 * 
 	 */
@@ -149,7 +149,7 @@ public class PresetTour {
 	/**
 	 * Legt den Wert der autoStart-Eigenschaft fest.
 	 * 
-     * @param value
+     * @param value -
 	 */
 	public void setAutoStart(boolean value) {
 		this.autoStart = value;
@@ -168,7 +168,7 @@ public class PresetTour {
 	/**
 	 * Legt den Wert der startingCondition-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourStartingCondition }
 	 * 
 	 */
@@ -217,7 +217,7 @@ public class PresetTour {
 	/**
 	 * Legt den Wert der extension-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link PTZPresetTourExtension }
 	 * 
 	 */
@@ -238,7 +238,7 @@ public class PresetTour {
 	/**
 	 * Legt den Wert der token-Eigenschaft fest.
 	 * 
-	 * @param value
+	 * @param value -
 	 *            allowed object is {@link String }
 	 * 
 	 */
