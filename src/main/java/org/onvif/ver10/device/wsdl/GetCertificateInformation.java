@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
- * <p>
+ * 
  * Java-Class for anonymous complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

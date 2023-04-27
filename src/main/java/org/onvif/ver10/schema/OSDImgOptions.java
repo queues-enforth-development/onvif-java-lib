@@ -20,10 +20,10 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r OSDImgOptions complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -64,11 +64,11 @@ public class OSDImgOptions {
 	/**
 	 * Gets the value of the imagePath property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the imagePath property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -76,7 +76,7 @@ public class OSDImgOptions {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
@@ -113,7 +113,7 @@ public class OSDImgOptions {
 	/**
 	 * Gets a map that contains attributes that aren't bound to any typed property on this class.
 	 * 
-	 * <p>
+	 * 
 	 * the map is keyed by the name of the attribute and the value is the string value of the attribute.
 	 * 
 	 * the map returned by this method is live, and you can add new attribute by updating the map directly. Because of this design, there's no setter.

@@ -14,10 +14,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r BinaryData complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

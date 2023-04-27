@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java-Class for anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
  * &lt;complexType>

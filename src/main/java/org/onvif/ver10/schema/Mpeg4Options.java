@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r Mpeg4Options complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -78,11 +78,11 @@ public class Mpeg4Options {
 	/**
 	 * Gets the value of the resolutionsAvailable property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the resolutionsAvailable property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -90,7 +90,7 @@ public class Mpeg4Options {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link VideoResolution }
 	 * 
 	 * 
@@ -169,11 +169,11 @@ public class Mpeg4Options {
 	/**
 	 * Gets the value of the mpeg4ProfilesSupported property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the mpeg4ProfilesSupported property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -181,7 +181,7 @@ public class Mpeg4Options {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Mpeg4Profile }
 	 * 
 	 * 

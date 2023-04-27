@@ -13,10 +13,10 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r Rectangle complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

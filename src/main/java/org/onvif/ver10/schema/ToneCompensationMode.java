@@ -11,10 +11,10 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java-Klasse für ToneCompensationMode.
+ * Java-Klasse für ToneCompensationMode.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
- * <p>
+ * The following schema fragment indicates the expected content contained in this class.
+ * 
  * <pre>{@code
  * &lt;simpleType name="ToneCompensationMode">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">

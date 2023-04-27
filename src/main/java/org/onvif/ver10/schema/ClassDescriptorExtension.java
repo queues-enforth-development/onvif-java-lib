@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
 import org.w3c.dom.Element;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r ClassDescriptorExtension complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -64,11 +64,11 @@ public class ClassDescriptorExtension {
 	/**
 	 * Gets the value of the any property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the any property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -76,7 +76,7 @@ public class ClassDescriptorExtension {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
@@ -92,11 +92,11 @@ public class ClassDescriptorExtension {
 	/**
 	 * Gets the value of the otherTypes property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the otherTypes property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -104,7 +104,7 @@ public class ClassDescriptorExtension {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link OtherType }
 	 * 
 	 * 

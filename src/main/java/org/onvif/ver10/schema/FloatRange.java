@@ -15,10 +15,10 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Range of values greater equal Min value and less equal Max value.
  * 
- * <p>
+ * 
  * Java-Klasse f�r FloatRange complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

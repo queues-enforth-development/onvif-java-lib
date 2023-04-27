@@ -13,10 +13,10 @@ import javax.xml.bind.annotation.XmlType;
 import org.oasis_open.docs.wsrf.bf_2.BaseFaultType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r TopicNotSupportedFaultType complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

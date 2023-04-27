@@ -14,10 +14,10 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.Duration;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r RelayOutputSettings complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

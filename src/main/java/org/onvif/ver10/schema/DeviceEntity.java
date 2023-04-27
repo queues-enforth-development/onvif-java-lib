@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Base class for physical entities like inputs and outputs.
  * 
- * <p>
+ * 
  * Java-Klasse f�r DeviceEntity complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

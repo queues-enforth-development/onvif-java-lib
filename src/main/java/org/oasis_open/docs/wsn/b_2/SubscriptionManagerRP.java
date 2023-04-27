@@ -17,10 +17,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.w3._2005._08.addressing.EndpointReferenceType;
 
 /**
- * <p>
+ * 
  * Java-Class for anonymous complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

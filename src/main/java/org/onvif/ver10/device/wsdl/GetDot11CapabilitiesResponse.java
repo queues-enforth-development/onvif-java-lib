@@ -15,10 +15,10 @@ import javax.xml.bind.annotation.XmlType;
 import org.onvif.ver10.schema.Dot11Capabilities;
 
 /**
- * <p>
+ * 
  * Java-Class for anonymous complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

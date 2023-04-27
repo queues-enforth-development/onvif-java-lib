@@ -16,10 +16,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.oasis_open.docs.wsrf.bf_2.BaseFaultType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r UnacceptableTerminationTimeFaultType complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

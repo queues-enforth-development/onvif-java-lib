@@ -21,9 +21,9 @@ import javax.xml.namespace.QName;
 import org.w3c.dom.Element;
 
 /**
- * <p>Java-Klasse für VideoResolution2 complex type.
+ * Java-Klasse für VideoResolution2 complex type.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
  * &lt;complexType name="VideoResolution2">
@@ -109,20 +109,20 @@ public class VideoResolution2 {
     /**
      * Gets the value of the any property.
      * 
-     * <p>
+     * 
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the any property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getAny().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link Element }
      * {@link java.lang.Object }
@@ -140,7 +140,7 @@ public class VideoResolution2 {
     /**
      * Gets a map that contains attributes that aren't bound to any typed property on this class.
      * 
-     * <p>
+     * 
      * the map is keyed by the name of the attribute and 
      * the value is the string value of the attribute.
      * 

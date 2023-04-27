@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
 import org.w3c.dom.Element;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r NetworkInterfaceSetConfigurationExtension complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -71,11 +71,11 @@ public class NetworkInterfaceSetConfigurationExtension {
 	/**
 	 * Gets the value of the any property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the any property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -83,7 +83,7 @@ public class NetworkInterfaceSetConfigurationExtension {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link java.lang.Object }
 	 * 
 	 * 
@@ -99,11 +99,11 @@ public class NetworkInterfaceSetConfigurationExtension {
 	/**
 	 * Gets the value of the dot3 property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the dot3 property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -111,7 +111,7 @@ public class NetworkInterfaceSetConfigurationExtension {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Dot3Configuration }
 	 * 
 	 * 
@@ -127,11 +127,11 @@ public class NetworkInterfaceSetConfigurationExtension {
 	/**
 	 * Gets the value of the dot11 property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the dot11 property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -139,7 +139,7 @@ public class NetworkInterfaceSetConfigurationExtension {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Dot11Configuration }
 	 * 
 	 * 

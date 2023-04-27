@@ -20,10 +20,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.onvif.ver10.schema.IPAddress;
 
 /**
- * <p>
+ * 
  * Java-Class for anonymous complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -88,11 +88,11 @@ public class SetDNS {
 	/**
 	 * Gets the value of the searchDomain property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the searchDomain property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -100,7 +100,7 @@ public class SetDNS {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link String }
 	 * 
 	 * 
@@ -116,11 +116,11 @@ public class SetDNS {
 	/**
 	 * Gets the value of the dnsManual property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the dnsManual property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -128,7 +128,7 @@ public class SetDNS {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link IPAddress }
 	 * 
 	 * 

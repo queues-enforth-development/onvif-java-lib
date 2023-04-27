@@ -19,9 +19,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.oasis_open.docs.wsn.b_2.NotificationMessageHolderType;
 
 /**
- * <p>Java-Class for anonymous complex type.
+ * Java-Class for anonymous complex type.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
  * &lt;complexType>
@@ -117,20 +117,20 @@ public class PullMessagesResponse {
     }
 
     /**
-     * List of messages.This list shall be empty in case of a timeout.Gets the value of the notificationMessage property.<p>
+     * List of messages.This list shall be empty in case of a timeout.Gets the value of the notificationMessage property.
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the notificationMessage property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getNotificationMessage().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link NotificationMessageHolderType }
      * 

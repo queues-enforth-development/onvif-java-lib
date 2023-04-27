@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r PropertyOperation.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
- * <p>
+ * 
  * 
  * <pre>{@code
  * <simpleType name="PropertyOperation">

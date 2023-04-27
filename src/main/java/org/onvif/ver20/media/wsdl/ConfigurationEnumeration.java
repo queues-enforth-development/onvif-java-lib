@@ -12,10 +12,10 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java-Klasse für ConfigurationEnumeration.
+ * Java-Klasse für ConfigurationEnumeration.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
- * <p>
+ * The following schema fragment indicates the expected content contained in this class.
+ * 
  * <pre>{@code
  * &lt;simpleType name="ConfigurationEnumeration">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">

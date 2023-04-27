@@ -16,10 +16,10 @@ import org.w3._2005._08.addressing.EndpointReferenceType;
 import org.w3c.dom.Element;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r NotificationMessageHolderType complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -162,10 +162,10 @@ public class NotificationMessageHolderType {
 	}
 
 	/**
-	 * <p>
+	 * 
 	 * Java-Class for anonymous complex type.
 	 * 
-	 * <p>
+	 * 
 	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
 	 * <pre>{@code

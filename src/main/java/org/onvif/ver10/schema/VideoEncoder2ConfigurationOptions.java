@@ -22,9 +22,9 @@ import javax.xml.namespace.QName;
 import org.w3c.dom.Element;
 
 /**
- * <p>Java-Klasse für VideoEncoder2ConfigurationOptions complex type.
+ * Java-Klasse für VideoEncoder2ConfigurationOptions complex type.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
  * &lt;complexType name="VideoEncoder2ConfigurationOptions">
@@ -173,20 +173,20 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Gets the value of the resolutionsAvailable property.
      * 
-     * <p>
+     * 
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the resolutionsAvailable property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getResolutionsAvailable().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link VideoResolution2 }
      * 
@@ -227,20 +227,20 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Gets the value of the any property.
      * 
-     * <p>
+     * 
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the any property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getAny().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link Element }
      * {@link java.lang.Object }
@@ -258,20 +258,20 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Gets the value of the govLengthRange property.
      * 
-     * <p>
+     * 
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the govLengthRange property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getGovLengthRange().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link Integer }
      * 
@@ -288,20 +288,20 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Gets the value of the frameRatesSupported property.
      * 
-     * <p>
+     * 
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the frameRatesSupported property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getFrameRatesSupported().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link Float }
      * 
@@ -318,20 +318,20 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Gets the value of the profilesSupported property.
      * 
-     * <p>
+     * 
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the profilesSupported property.
      * 
-     * <p>
+     * 
      * For example, to add a new item, do as follows:
      * <pre>{@code
      *    getProfilesSupported().add(newItem);
      * }</pre>
      * 
      * 
-     * <p>
+     * 
      * Objects of the following type(s) are allowed in the list
      * {@link String }
      * 
@@ -396,7 +396,7 @@ public class VideoEncoder2ConfigurationOptions {
     /**
      * Gets a map that contains attributes that aren't bound to any typed property on this class.
      * 
-     * <p>
+     * 
      * the map is keyed by the name of the attribute and 
      * the value is the string value of the attribute.
      * 

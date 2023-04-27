@@ -11,12 +11,12 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r BacklightCompensationMode.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
- * <p>
+ * 
  * 
  * <pre>{@code
  * <simpleType name="BacklightCompensationMode">

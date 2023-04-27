@@ -15,10 +15,10 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Type describing the exposure settings.
  * 
- * <p>
+ * 
  * Java-Klasse f�r Exposure20 complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

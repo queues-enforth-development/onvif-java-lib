@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 
 /**
- * <p>Java-Klasse für StorageReferencePath complex type.
+ * Java-Klasse für StorageReferencePath complex type.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
  * &lt;complexType name="StorageReferencePath">
@@ -141,7 +141,7 @@ public class StorageReferencePath {
     /**
      * Gets a map that contains attributes that aren't bound to any typed property on this class.
      * 
-     * <p>
+     * 
      * the map is keyed by the name of the attribute and 
      * the value is the string value of the attribute.
      * 

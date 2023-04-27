@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 
 /**
- * <p>Java-Klasse für LensOffset complex type.
+ * Java-Klasse für LensOffset complex type.
  * 
- * <p>The following schema fragment indicates the expected content contained in this class.
+ * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
  * &lt;complexType name="LensOffset">
@@ -104,7 +104,7 @@ public class LensOffset {
     /**
      * Gets a map that contains attributes that aren't bound to any typed property on this class.
      * 
-     * <p>
+     * 
      * the map is keyed by the name of the attribute and 
      * the value is the string value of the attribute.
      * 

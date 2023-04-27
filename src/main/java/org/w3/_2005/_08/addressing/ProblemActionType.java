@@ -18,10 +18,10 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r ProblemActionType complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -104,7 +104,7 @@ public class ProblemActionType {
 	/**
 	 * Gets a map that contains attributes that aren't bound to any typed property on this class.
 	 * 
-	 * <p>
+	 * 
 	 * the map is keyed by the name of the attribute and the value is the string value of the attribute.
 	 * 
 	 * the map returned by this method is live, and you can add new attribute by updating the map directly. Because of this design, there's no setter.

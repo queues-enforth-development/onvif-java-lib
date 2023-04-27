@@ -15,10 +15,10 @@ import javax.xml.bind.annotation.XmlType;
 import org.w3._2004._08.xop.include.Include;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r AttachmentData complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

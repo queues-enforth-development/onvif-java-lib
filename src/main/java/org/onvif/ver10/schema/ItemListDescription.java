@@ -25,10 +25,10 @@ import javax.xml.namespace.QName;
  * when complex structures are inevitable.
  * 
  * 
- * <p>
+ * 
  * Java-Klasse f�r ItemListDescription complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -93,11 +93,11 @@ public class ItemListDescription {
 	/**
 	 * Gets the value of the simpleItemDescription property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the simpleItemDescription property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -105,7 +105,7 @@ public class ItemListDescription {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link ItemListDescription.SimpleItemDescription }
 	 * 
 	 * 
@@ -121,11 +121,11 @@ public class ItemListDescription {
 	/**
 	 * Gets the value of the elementItemDescription property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the elementItemDescription property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -133,7 +133,7 @@ public class ItemListDescription {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link ItemListDescription.ElementItemDescription }
 	 * 
 	 * 
@@ -170,7 +170,7 @@ public class ItemListDescription {
 	/**
 	 * Gets a map that contains attributes that aren't bound to any typed property on this class.
 	 * 
-	 * <p>
+	 * 
 	 * the map is keyed by the name of the attribute and the value is the string value of the attribute.
 	 * 
 	 * the map returned by this method is live, and you can add new attribute by updating the map directly. Because of this design, there's no setter.
@@ -183,10 +183,10 @@ public class ItemListDescription {
 	}
 
 	/**
-	 * <p>
+	 * 
 	 * Java-Class for anonymous complex type.
 	 * 
-	 * <p>
+	 * 
 	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
 	 * <pre>{@code
@@ -263,10 +263,10 @@ public class ItemListDescription {
 	}
 
 	/**
-	 * <p>
+	 * 
 	 * Java-Class for anonymous complex type.
 	 * 
-	 * <p>
+	 * 
 	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
 	 * <pre>{@code

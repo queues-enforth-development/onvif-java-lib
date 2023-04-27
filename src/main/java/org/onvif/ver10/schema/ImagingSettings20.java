@@ -19,10 +19,10 @@ import javax.xml.namespace.QName;
 /**
  * Type describing the ImagingSettings of a VideoSource. The supported options and ranges can be obtained via the GetOptions command.
  * 
- * <p>
+ * 
  * Java-Klasse f�r ImagingSettings20 complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -357,7 +357,7 @@ public class ImagingSettings20 {
 	/**
 	 * Gets a map that contains attributes that aren't bound to any typed property on this class.
 	 * 
-	 * <p>
+	 * 
 	 * the map is keyed by the name of the attribute and the value is the string value of the attribute.
 	 * 
 	 * the map returned by this method is live, and you can add new attribute by updating the map directly. Because of this design, there's no setter.

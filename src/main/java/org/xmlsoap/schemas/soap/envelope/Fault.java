@@ -19,10 +19,10 @@ import javax.xml.namespace.QName;
  * Fault reporting structure
  * 
  * 
- * <p>
+ * 
  * Java class for fault complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

@@ -21,10 +21,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.w3c.dom.Element;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r TopicNamespaceType complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -95,11 +95,11 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	/**
 	 * Gets the value of the topic property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the topic property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -107,7 +107,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link TopicNamespaceType.Topic }
 	 * 
 	 * 
@@ -123,11 +123,11 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	/**
 	 * Gets the value of the any property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the any property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -135,7 +135,7 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
 	 * 
 	 * 
@@ -217,10 +217,10 @@ public class TopicNamespaceType extends ExtensibleDocumented {
 	}
 
 	/**
-	 * <p>
+	 * 
 	 * Java-Class for anonymous complex type.
 	 * 
-	 * <p>
+	 * 
 	 * The following schema fragment indicates the expected content contained in this class.
 	 * 
 	 * <pre>{@code

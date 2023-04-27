@@ -16,10 +16,10 @@ import javax.xml.datatype.Duration;
 /**
  * Range of duration greater equal Min duration and less equal Max duration.
  * 
- * <p>
+ * 
  * Java-Klasse f�r DurationRange complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

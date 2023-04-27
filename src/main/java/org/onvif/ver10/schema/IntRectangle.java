@@ -15,10 +15,10 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Rectangle defined by lower left corner position and size. Units are pixel.
  * 
- * <p>
+ * 
  * Java-Klasse f�r IntRectangle complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

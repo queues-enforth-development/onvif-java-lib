@@ -19,10 +19,10 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.namespace.QName;
 
 /**
- * <p>
+ * 
  * Java-Klasse f�r ObjectTree complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
@@ -83,11 +83,11 @@ public class ObjectTree {
 	/**
 	 * Gets the value of the rename property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the rename property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -95,7 +95,7 @@ public class ObjectTree {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Rename }
 	 * 
 	 * 
@@ -111,11 +111,11 @@ public class ObjectTree {
 	/**
 	 * Gets the value of the split property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the split property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -123,7 +123,7 @@ public class ObjectTree {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Split }
 	 * 
 	 * 
@@ -139,11 +139,11 @@ public class ObjectTree {
 	/**
 	 * Gets the value of the merge property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the merge property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -151,7 +151,7 @@ public class ObjectTree {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link Merge }
 	 * 
 	 * 
@@ -167,11 +167,11 @@ public class ObjectTree {
 	/**
 	 * Gets the value of the delete property.
 	 * 
-	 * <p>
+	 * 
 	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
 	 * This is why there is not a <CODE>set</CODE> method for the delete property.
 	 * 
-	 * <p>
+	 * 
 	 * For example, to add a new item, do as follows:
 	 * 
 	 * <pre>{@code
@@ -179,7 +179,7 @@ public class ObjectTree {
 	 * }</pre>
 	 * 
 	 * 
-	 * <p>
+	 * 
 	 * Objects of the following type(s) are allowed in the list {@link ObjectId }
 	 * 
 	 * 
@@ -216,7 +216,7 @@ public class ObjectTree {
 	/**
 	 * Gets a map that contains attributes that aren't bound to any typed property on this class.
 	 * 
-	 * <p>
+	 * 
 	 * the map is keyed by the name of the attribute and the value is the string value of the attribute.
 	 * 
 	 * the map returned by this method is live, and you can add new attribute by updating the map directly. Because of this design, there's no setter.

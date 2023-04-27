@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Base type defining the common properties of a configuration.
  * 
- * <p>
+ * 
  * Java-Klasse f�r ConfigurationEntity complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code

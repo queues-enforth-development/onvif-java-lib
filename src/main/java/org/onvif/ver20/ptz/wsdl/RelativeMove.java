@@ -16,10 +16,10 @@ import org.onvif.ver10.schema.PTZSpeed;
 import org.onvif.ver10.schema.PTZVector;
 
 /**
- * <p>
+ * 
  * Java-Class for anonymous complex type.
  * 
- * <p>
+ * 
  * The following schema fragment indicates the expected content contained in this class.
  * 
  * <pre>{@code
