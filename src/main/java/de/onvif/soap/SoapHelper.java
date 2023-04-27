@@ -27,8 +27,8 @@ import org.w3c.dom.Document;
 /**
  *  This is a simple helper to just get the SOAP Message and Response.
  * @author jmccay
- * @param <T>
- * @param <R>
+ * @param <T> -
+ * @param <R> -
  */
 public class SoapHelper<T, R> extends SOAP 
 {

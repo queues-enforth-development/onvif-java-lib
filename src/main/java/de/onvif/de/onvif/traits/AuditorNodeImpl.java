@@ -25,7 +25,7 @@ import javax.xml.transform.stream.StreamResult;
 /**
  * Store a Message and Response pair of SOAP messages
  * @author jmccay
- * @param <T>
+ * @param <T> -
  */
 public class AuditorNodeImpl<T extends SOAPMessage> 
         implements AuditorNode<T> 

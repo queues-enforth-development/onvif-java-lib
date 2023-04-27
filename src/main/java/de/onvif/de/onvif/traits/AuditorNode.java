@@ -14,7 +14,7 @@ import javax.xml.soap.SOAPMessage;
 /**
  *
  * @author jmccay
- * @param <T>
+ * @param <T> -
  */
 public interface AuditorNode<T extends SOAPMessage> 
 {
