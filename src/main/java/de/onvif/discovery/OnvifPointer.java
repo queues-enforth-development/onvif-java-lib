@@ -84,7 +84,7 @@ public class OnvifPointer extends URLDevicePointer {
      * @return
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public OnvifDevice getOnvifDevice()
         throws SOAPException, ConnectException, SOAPFaultException

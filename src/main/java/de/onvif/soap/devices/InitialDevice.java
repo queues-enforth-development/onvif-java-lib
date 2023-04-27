@@ -241,7 +241,7 @@ public class InitialDevice
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Capabilities getCapabilities()
             throws ConnectException, SOAPException, SOAPFaultException
@@ -399,7 +399,7 @@ public class InitialDevice
      * @return -
      * @throws ConnectException -
      * @throws SOAPException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String reboot()
             throws ConnectException, SOAPException, SOAPFaultException

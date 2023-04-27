@@ -82,7 +82,7 @@ public class OnvifDevice
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
 	 * @throws SOAPException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
 	 */
 	public OnvifDevice(String hostIp, String user, String password)
             throws ConnectException, SOAPException, SOAPFaultException
@@ -115,7 +115,7 @@ public class OnvifDevice
 	 *             Exception gets thrown, if device isn't accessible or invalid
 	 *             and doesn't answer to SOAP messages
 	 * @throws SOAPException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
 	 */
 	public OnvifDevice(String hostIp)
             throws ConnectException, SOAPException, SOAPFaultException
@@ -158,7 +158,7 @@ public class OnvifDevice
 	 *             Get thrown if device doesn't give answers to
 	 *             GetCapabilities()
 	 * @throws SOAPException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
 	 */
 	private void init()
             throws ConnectException, SOAPException, SOAPFaultException
@@ -468,7 +468,7 @@ public class OnvifDevice
      * @return
      * @throws ConnectException -
      * @throws SOAPException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public String reboot()
             throws ConnectException, SOAPException, SOAPFaultException

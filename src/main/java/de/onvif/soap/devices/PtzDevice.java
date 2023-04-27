@@ -221,8 +221,8 @@ public class PtzDevice
      * @see de.onvif.soap.devices.PtzDevice#getZoomSpaces(String)
 	 * @return  -True if move successful
 	 * @throws SOAPException -
-     * @throws java.net.ConnectException
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws java.net.ConnectException -
+     * @throws de.onvif.soap.exception.SOAPFaultException -
 	 */
 	public boolean absoluteMove(String profileToken, float x, float y, float zoom) 
             throws SOAPException, SOAPFaultException, ConnectException 

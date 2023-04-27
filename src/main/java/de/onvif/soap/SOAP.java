@@ -60,7 +60,7 @@ public class SOAP
      * @return
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Object createSOAPDeviceRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
             throws SOAPException, ConnectException, SOAPFaultException {
@@ -75,7 +75,7 @@ public class SOAP
      * @return
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Object createSOAPPtzRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
             throws SOAPException, ConnectException, SOAPFaultException {
@@ -90,7 +90,7 @@ public class SOAP
      * @return
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Object createSOAPMediaRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity)
             throws SOAPException, ConnectException, SOAPFaultException {
@@ -105,7 +105,7 @@ public class SOAP
      * @return
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Object createSOAPImagingRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
             ConnectException,
@@ -121,7 +121,7 @@ public class SOAP
      * @return
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Object createSOAPEventsRequest(Object soapRequestElem, Object soapResponseElem, boolean needsSecurity) throws SOAPException,
             ConnectException, SOAPFaultException {
@@ -137,7 +137,7 @@ public class SOAP
      * @return SOAP Response Element
      * @throws SOAPException -
      * @throws ConnectException -
-     * @throws de.onvif.soap.exception.SOAPFaultException
+     * @throws de.onvif.soap.exception.SOAPFaultException -
      */
     public Object createSOAPRequest(Object soapRequestElem, Object soapResponseElem, String soapUri, boolean needsSecurity)
             throws ConnectException, SOAPException, SOAPFaultException 
