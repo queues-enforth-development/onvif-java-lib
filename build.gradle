@@ -3,7 +3,7 @@ plugins {
     id 'java'
     id 'maven-publish'
 }
-version = '2.1.0003'
+version = '2.1.0005'
 jar.archiveVersion = version
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -39,25 +39,35 @@ jar {
         	'Implementation-Version': archiveVersion,
         	'Main-Class': 'org.me.javawsdiscovery.JavaWSDiscovery'
     }
-    
+
     String libName;
     String newName;
     dependsOn configurations.runtimeClasspath
     from {
         configurations.runtimeClasspath.findAll {
             it.name.endsWith('jar') && (!it.name.contains('javadoc')) && (!it.name.contains('sources'))
-        }.collect { 
-            libName = it.getName();
-            libName = libName.substring(0,libName.indexOf(".jar"));
-            // this will not work until we get the zipped file
-//            newName = String.format("LICENSE-%s.txt",libName)
-//            it.renameTo(newName)
-            zipTree(it) 
-        }.each { tree ->
-            tree.visit { file ->
-                println file.class.getName()
-            }
+        }.collect {
+            zipTree(it)
+//TODO: add publishing & get the code below to workk            
             
+/*            
+            libName = it.getName();
+            libName = libName.substring(0,libName.indexOf(".jar")).toUpperCase();
+
+            FileTree tree = zipTree(it);
+            String name;
+            String path;
+            File newFileName;
+            tree.each { treeFile ->
+                name = treeFile.getName().toUpperCase();
+                path = treeFile.getAbsolutePath();
+                path = path.substring(0, path.lastIndexOf(File.separator))
+                if (name.contains("LICENSE") && !name.contains(libName)) {
+                    newFileName = new File(String.format("%s%s%s_%s", path, File.separator, libName, treeFile.getName()));
+                    (treeFile.renameTo(newFileName))? println("Rename successful!"):println("Rename failed!")
+                }
+            }
+*/            
         }
         
     }
