@@ -3,7 +3,7 @@ plugins {
     id 'java'
     id 'maven-publish'
 }
-version = '2.1.0005'
+version = '2.1.0006'
 jar.archiveVersion = version
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
