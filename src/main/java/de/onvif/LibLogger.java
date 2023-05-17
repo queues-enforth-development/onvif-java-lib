@@ -118,7 +118,7 @@ public class LibLogger {
  files are deleted.
      * @param soapMessageResponse The soap message to write to the location provided.
      * @param soapMessage The message that caused the problem.
-     * @param logger
+     * @param logger The Logger to write the fault too.
      */
     public void logSoapFaultMessage(SOAPMessage soapMessageResponse, SOAPMessage soapMessage, Logger logger) {
         String result;
