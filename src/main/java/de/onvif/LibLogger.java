@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.time.Instant;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
 import javax.xml.transform.OutputKeys;
@@ -30,10 +31,9 @@ import javax.xml.transform.stream.StreamResult;
  * @author jmccay
  */
 public class LibLogger {
+    private static final String LINE_SEPARATOR = System.lineSeparator();
     private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
     private Transformer prettyPrint = null;
-    private static final String OUTPUT_LOCATION = "C:\\github\\onvif\\research\\snc-wr630\\soap";
-    String writeOutputLocation = OUTPUT_LOCATION;
 
     public static final java.util.logging.Logger LOGGER = java.util.logging.Logger.getLogger(LibLogger.class.getPackage().getName());
 
@@ -113,6 +113,40 @@ public class LibLogger {
     }
 
     /**
+     *    This method will write the SOAP fault message to the location provided by the value in filePath.The file name 
+ will be taken from the first node in the SOAP body and the name passed in to allow grouping of fault.  Existing 
+ files are deleted.
+     * @param soapMessageResponse The soap message to write to the location provided.
+     * @param soapMessage The message that caused the problem.
+     * @param logger
+     */
+    public void logSoapFaultMessage(SOAPMessage soapMessageResponse, SOAPMessage soapMessage, Logger logger) {
+        String result;
+        StringBuilder sb = new StringBuilder("A soap error occurred.");
+        try {
+            result = transformXmlSoap2PrettyPtrintedString(soapMessageResponse);
+            if (null!=soapMessage) {
+                sb.append(LINE_SEPARATOR);
+                sb.append("Soap message:");
+                sb.append(LINE_SEPARATOR);
+                sb.append(transformXmlSoap2PrettyPtrintedString(soapMessage));
+                sb.append(LINE_SEPARATOR);
+            }
+            if (null!=soapMessageResponse) {
+                sb.append(LINE_SEPARATOR);
+                sb.append("Error Response:");
+                sb.append(LINE_SEPARATOR);
+                sb.append(result);
+                sb.append(LINE_SEPARATOR);
+            }
+            
+            logger.log(Level.WARNING, sb.toString());
+        } catch (IOException | TransformerException e) {
+            logger.log(Level.WARNING, "Error occurreed while trying to write the error to the logger.", e);
+        }
+    }    
+    
+    /**
      *    This method will write the SOAP fault message to the location provided by the value in filePath.  The file name 
      * will be taken from the first node in the SOAP body and the name passed in to allow grouping of fault.  Existing 
      * files are deleted.
@@ -171,4 +205,15 @@ public class LibLogger {
 
         result.toString();
     }
+
+    private String transformXmlSoap2PrettyPtrintedString(SOAPMessage soapMessage) 
+            throws IOException, TransformerException 
+    {
+        StreamResult result = new StreamResult(new StringWriter());
+
+        prettyPrint.transform(new DOMSource(soapMessage.getSOAPPart()), result);
+
+        return result.toString();
+    }
+
 }
